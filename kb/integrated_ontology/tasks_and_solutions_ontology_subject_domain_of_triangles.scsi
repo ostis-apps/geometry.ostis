@@ -1,0 +1,43 @@
+concept_isosceles_triangle <- rrel_key_sc_element:
+	task_of_finding_square_for_isosceles_triangle_use_base_and_length_of_medians
+	(*
+	=> nrel_main_idtf: [Задача. Нахождение площади равнобедренного треугольника через 
+	основание и длины медиан, проведённых к боковым сторонам](* <- lang_ru;; *);;
+	<- sc_task;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+        	-> rrel_example: 
+			[В равнобедренном треугольнике длины медиан, проведенных к боковым сторонам, равны 30, 
+			длина основания равна 32. Найти площадь треугольника.]
+			(* <- lang_ru;; *);;
+		*);;
+	=> nrel_solution:
+		...
+		(*
+		=> nrel_main_idtf: [Решение. Нахождение площади равнобедренного треугольника через основание 
+		и длины медиан, проведённых к боковым сторонам](* <- lang_ru;; *);;
+		<= nrel_using_statements:
+			{
+			stat_triangle_area_multiplication_height_base;
+			stat_hypotenuse_sum_cathetus;
+			stat_median_isosceles_triangle_bisectrix_height;
+			stat_triangle_median_intersection_point_vertex
+			};;
+		*);;
+	*);;
+	
+task_of_finding_square_for_isosceles_triangle_use_base_and_length_of_medians <- sc_node_struct;;
+	
+stat_triangle_area_multiplication_height_base <- sc_node_struct;
+=> nrel_main_idtf: [Форм. Утв.(треугольник; площадь*; высота*; основание*)] (* <- lang_ru;; *);;
+
+stat_hypotenuse_sum_cathetus <- sc_node_struct;
+=> nrel_main_idtf: [Форм. Теорема Пифагора] (* <- lang_ru;; *);;
+
+stat_triangle_median_intersection_point_vertex <- sc_node_struct;
+=> nrel_main_idtf: [Форм. Утв.(треугольник; медиана*; вершина*; длина*)] (* <- lang_ru;; *);;
+	
+	
+	
+

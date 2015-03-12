@@ -1,0 +1,42 @@
+/*sc_node_norole_relation -> nrel_perimeter;;
+
+nrel_perimeter => nrel_main_idtf:
+	[периметр*]
+	(* <- lang_ru;; *);
+	[perimeter*]
+	(* <- lang_en;; *);;
+
+nrel_perimeter => nrel_idtf: [быть периметром*] (* <- lang_ru;; *);;
+
+nrel_perimeter => nrel_idtf: [периметр геометрической фигуры*] (* <- lang_ru;; *);;
+
+nrel_perimeter => nrel_idtf: [быть периметром геометрической фигуры*] (* <- lang_ru;; *);;
+
+nrel_median <- sc_relation;;
+
+nrel_median <- binary_relation;;
+
+nrel_median <- oriented_relation;;
+
+nrel_perimeter => nrel_definitional_domain: 
+	...
+	(*
+	<= nrel_combination: 
+		{	 
+		concept_polygon;
+		concept_quantity
+		};;
+	*);;
+
+nrel_perimeter => nrel_first_domain: 
+	concept_polygon;;
+
+nrel_perimeter => nrel_second_domain: 
+	concept_quantity;;
+
+nrel_perimeter <= nrel_using_constants:
+	{
+	nrel_length; 
+	nrel_side
+	};;*/
+

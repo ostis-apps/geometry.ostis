@@ -1,0 +1,189 @@
+logical_ontology_of_subject_domain_of_triangles
+<- logical_ontology;
+=> nrel_main_idtf:
+	[Логическая онтология Предметной области треугольников]
+	(* <- lang_ru;; *);
+	[Logical ontology of subject domain of triangles]
+	(* <- lang_en;; *);;
+	
+logical_hierarchy_of_concepts_of_subject_domain_of_triangles
+=> nrel_main_idtf:
+	[Логическая иерархия понятий Предметной области треугольников]
+	(* <- lang_ru;; *);
+	[Logical hierarchy of concepts of subject domain of triangles]
+	(* <- lang_en;; *);;
+	
+logical_hierarchy_of_statements_of_subject_domain_of_triangles
+=> nrel_main_idtf:
+	[Логическая иерархия высказываний Предметной области треугольников]
+	(* <- lang_ru;; *);
+	[Logical hierarchy of statements of subject domain of triangles]
+	(* <- lang_en;; *);;
+	
+logical_ontology_of_subject_domain_of_triangles => nrel_metaknowledge:
+	logical_hierarchy_of_concepts_of_subject_domain_of_triangles;;
+	
+logical_ontology_of_subject_domain_of_triangles => nrel_metaknowledge:
+	logical_hierarchy_of_statements_of_subject_domain_of_triangles;;
+
+logical_hierarchy_of_concepts_of_subject_domain_of_triangles = [*^"file://logical_hierarchy_of_concepts_of_subject_domain_of_triangles.scsi"*];;
+
+logical_hierarchy_of_statements_of_subject_domain_of_triangles = [*^"file://logical_hierarchy_of_statements_of_subject_domain_of_triangles.scsi"*];;
+
+logical_ontology_of_subject_domain_of_triangles = [*^"file://logical_ontology_of_subject_domain_of_triangles.scsi"*];;
+
+rrel_key_sc_element -> (logical_hierarchy_of_statements_of_subject_domain_of_triangles -> stat_isosceles_triangle_congruence_angle)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_base_order: (logical_hierarchy_of_statements_of_subject_domain_of_triangles -> stat_angle_measure_external_angle_equality_quantities_sum_internal_angle_triangle)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_base_order: (logical_hierarchy_of_statements_of_subject_domain_of_triangles -> 			stat_median_isosceles_triangle_bisectrix_height)
+(* <- rrel_key_sc_element;; *);;
+*);;*);;
+
+rrel_key_sc_element -> (logical_ontology_of_subject_domain_of_triangles -> concept_triangle)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_base_order: (logical_hierarchy_of_concepts_of_subject_domain_of_triangles -> concept_acute_angled_triangle)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_base_order: (logical_hierarchy_of_concepts_of_subject_domain_of_triangles -> concept_obtuse_triangle)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_base_order: (logical_hierarchy_of_concepts_of_subject_domain_of_triangles -> concept_rectangular_triangle)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_base_order: (logical_hierarchy_of_concepts_of_subject_domain_of_triangles -> concept_equilateral_triangle)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_base_order: (logical_hierarchy_of_concepts_of_subject_domain_of_triangles -> concept_isosceles_triangle)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_base_order: (logical_hierarchy_of_concepts_of_subject_domain_of_triangles -> nrel_area)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_base_order: (logical_hierarchy_of_concepts_of_subject_domain_of_triangles -> nrel_base)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_base_order: (logical_hierarchy_of_concepts_of_subject_domain_of_triangles -> nrel_vertex)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_base_order: (logical_hierarchy_of_concepts_of_subject_domain_of_triangles -> nrel_side)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_base_order: (logical_hierarchy_of_concepts_of_subject_domain_of_triangles -> nrel_internal_angle)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_base_order: (logical_hierarchy_of_concepts_of_subject_domain_of_triangles -> nrel_be_inscribed)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_base_order: (logical_hierarchy_of_concepts_of_subject_domain_of_triangles -> nrel_bisectrix_of_triangle)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_base_order: (logical_hierarchy_of_concepts_of_subject_domain_of_triangles -> nrel_center_line)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_base_order: (logical_hierarchy_of_concepts_of_subject_domain_of_triangles -> nrel_center_of_regular_polygon)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_base_order: (logical_hierarchy_of_concepts_of_subject_domain_of_triangles -> nrel_congruence)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_base_order: (logical_hierarchy_of_concepts_of_subject_domain_of_triangles -> nrel_height)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_base_order: (logical_hierarchy_of_concepts_of_subject_domain_of_triangles -> nrel_median)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_base_order: (logical_hierarchy_of_concepts_of_subject_domain_of_triangles -> nrel_middle_perpendicular)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_base_order: (logical_hierarchy_of_concepts_of_subject_domain_of_triangles -> nrel_external_angle)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_base_order: (logical_hierarchy_of_concepts_of_subject_domain_of_triangles -> nrel_lateral_side)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_base_order: (logical_hierarchy_of_concepts_of_subject_domain_of_triangles -> nrel_opposite)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_base_order: (logical_hierarchy_of_concepts_of_subject_domain_of_triangles -> nrel_perimeter)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_base_order: (logical_hierarchy_of_concepts_of_subject_domain_of_triangles -> nrel_similarity)
+	(* <- rrel_key_sc_element;; *);;
+*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;
+	
+rrel_key_sc_element -> (logical_ontology_of_subject_domain_of_triangles -> concept_triangle)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_base_order: (logical_ontology_of_subject_domain_of_triangles -> concept_acute_angled_triangle)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_base_order: (logical_ontology_of_subject_domain_of_triangles -> concept_obtuse_triangle)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_base_order: (logical_ontology_of_subject_domain_of_triangles -> concept_rectangular_triangle)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_base_order: (logical_ontology_of_subject_domain_of_triangles -> concept_equilateral_triangle)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_base_order: (logical_ontology_of_subject_domain_of_triangles -> concept_isosceles_triangle)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_base_order: (logical_ontology_of_subject_domain_of_triangles -> nrel_area)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_base_order: (logical_ontology_of_subject_domain_of_triangles -> nrel_base)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_base_order: (logical_ontology_of_subject_domain_of_triangles -> nrel_vertex)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_base_order: (logical_ontology_of_subject_domain_of_triangles -> nrel_side)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_base_order: (logical_ontology_of_subject_domain_of_triangles -> nrel_internal_angle)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_base_order: (logical_ontology_of_subject_domain_of_triangles -> nrel_be_inscribed)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_base_order: (logical_ontology_of_subject_domain_of_triangles -> nrel_bisectrix_of_triangle)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_base_order: (logical_ontology_of_subject_domain_of_triangles -> nrel_center_line)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_base_order: (logical_ontology_of_subject_domain_of_triangles -> nrel_center_of_regular_polygon)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_base_order: (logical_ontology_of_subject_domain_of_triangles -> nrel_congruence)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_base_order: (logical_ontology_of_subject_domain_of_triangles -> nrel_height)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_base_order: (logical_ontology_of_subject_domain_of_triangles -> nrel_median)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_base_order: (logical_ontology_of_subject_domain_of_triangles -> nrel_middle_perpendicular)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_base_order: (logical_ontology_of_subject_domain_of_triangles -> nrel_external_angle)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_base_order: (logical_ontology_of_subject_domain_of_triangles -> nrel_lateral_side)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_base_order: (logical_ontology_of_subject_domain_of_triangles -> nrel_opposite)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_base_order: (logical_ontology_of_subject_domain_of_triangles -> nrel_perimeter)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_base_order: (logical_ontology_of_subject_domain_of_triangles -> nrel_similarity)
+	(* <- rrel_key_sc_element;; *);;
+*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;

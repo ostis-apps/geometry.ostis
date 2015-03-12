@@ -1,0 +1,15 @@
+ui_menu_file_for_lab <- ui_user_command_class_atom; ui_user_command_class_view_kb;;
+
+ui_menu_file_for_lab => nrel_main_idtf: [манагер] (* <- lang_ru;; *);;
+ui_menu_file_for_lab => nrel_main_idtf: [manager] (* <- lang_en;; *);;
+ui_menu_file_for_lab => ui_nrel_command_template:
+	[*
+		question_lab _-> ._question_lab_instance
+			(*
+				_-> ui_arg_1;;				
+			*);;
+		._question_lab_instance _<- question;;
+	*];;
+
+ui_menu_file_for_lab => ui_nrel_command_lang_template: [манагер: $ui_arg_1] (* <- lang_ru;; *);;
+ui_menu_file_for_lab => ui_nrel_command_lang_template: [manager: $ui_arg_1] (* <- lang_en;; *);;

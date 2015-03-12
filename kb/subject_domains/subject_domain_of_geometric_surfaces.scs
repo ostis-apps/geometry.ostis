@@ -1,0 +1,34 @@
+sc_node_struct -> subject_domain_of_geometric_surfaces;;
+
+subject_domain_of_geometric_surfaces
+=> nrel_main_idtf:
+	[Предметная область геометрических поверхностей]
+	(* <- lang_ru;; *);
+	[Subject domain of geometric surfaces]
+	(* <- lang_en;; *);;
+	
+subject_domain_of_geometric_surfaces -> rrel_maximum_studied_object_class: concept_surface;;
+
+subject_domain_of_geometric_surfaces -> rrel_not_maximum_studied_object_class: concept_non_planar_surface;;
+
+subject_domain_of_geometric_surfaces -> rrel_not_maximum_studied_object_class: concept_planar_surface;;
+
+subject_domain_of_geometric_surfaces -> rrel_not_maximum_studied_object_class: concept_plane;;
+
+//subject_domain_of_geometric_surfaces -> rrel_not_maximum_studied_object_class: concept_oriented_surface;;
+
+//subject_domain_of_geometric_surfaces -> rrel_not_maximum_studied_object_class: concept_closed_surface;;
+
+//subject_domain_of_geometric_surfaces -> rrel_not_maximum_studied_object_class: concept_non_oriented_surface;;
+
+//subject_domain_of_geometric_surfaces -> rrel_not_maximum_studied_object_class: concept_opened_surface;;
+
+subject_domain_of_geometric_surfaces -> rrel_studied_relation:
+	nrel_distance;
+	nrel_parallelism;
+	nrel_perpendicularity;;
+
+
+	
+
+subject_domain_of_geometric_surfaces <- subject_domain;;

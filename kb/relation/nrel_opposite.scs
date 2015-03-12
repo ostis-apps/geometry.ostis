@@ -1,0 +1,39 @@
+/*sc_node_norole_relation -> nrel_opposite;;
+
+nrel_opposite => nrel_main_idtf:
+	[противолежащий*]
+	(* <- lang_ru;; *);
+	[opposite*]
+	(* <- lang_en;; *);;
+
+nrel_opposite => nrel_idtf: [быть противолежащим*] (* <- lang_ru;; *);;
+
+nrel_opposite <- sc_relation;;
+
+nrel_opposite <- binary_relation;;
+
+nrel_opposite <- non_oriented_relation;;
+
+nrel_opposite => nrel_definitional_domain: 
+	...
+	(*
+	<= nrel_combination: 
+		{	 
+		concept_planar_angle;
+		concept_segment
+		};;
+	*);;
+	
+nrel_opposite => nrel_first_domain: 
+	concept_planar_angle;;
+
+nrel_opposite => nrel_second_domain: 
+	concept_segment;;
+
+nrel_opposite <= nrel_using_constants:
+	{
+	nrel_internal_angle; 
+	concept_polygon; 
+	concept_segment; 
+	nrel_side
+	};;*/

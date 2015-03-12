@@ -1,0 +1,15 @@
+d_nrel_hypotenuse <- rrel_main_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр.(гипотенуза*)] (* <- lang_ru;; *);;
+	-> rrel_key_sc_element: nrel_hypotenuse;;
+	<- sc_definition;;   
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Гипотенуза - сторона треуольника, противолежащая прямому углу.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+

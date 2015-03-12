@@ -1,0 +1,14 @@
+d_nrel_chord <- rrel_main_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр.(хорда*)] (* <- lang_ru;; *);;
+	-> rrel_key_sc_element: nrel_chord;;
+	<- sc_definition;;   
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Хорда - это отрезок, соединяющий две точки окружности.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);; 

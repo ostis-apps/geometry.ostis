@@ -1,0 +1,14 @@
+d_concept_range <- rrel_main_key_sc_element: 
+	...
+	(*
+	=> nrel_main_idtf: [Опр.(интервал)] (* <- lang_ru;; *);;
+	<- sc_definition;; 
+	-> rrel_key_sc_element: concept_range;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Интервал - это отрезок, которому не принадлежат его граничные точки.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;

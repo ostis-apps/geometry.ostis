@@ -1,0 +1,15 @@
+ui_menu_pow <- ui_user_command_class_atom; ui_user_command_class_view_kb;;
+
+ui_menu_pow => nrel_main_idtf: [Возв в степ] (* <- lang_ru;; *);;
+ui_menu_pow => nrel_main_idtf: [Stepen] (* <- lang_en;; *);;
+ui_menu_pow => ui_nrel_command_template:
+	[*
+		question_calc _-> ._question_calc_instance
+			(*
+				_-> ui_arg_1;;				
+			*);;
+		._question_calc_instance _<- question;;
+	*];;
+
+ui_menu_pow => ui_nrel_command_lang_template: [Возв в степ: $ui_arg_1] (* <- lang_ru;; *);;
+ui_menu_pow => ui_nrel_command_lang_template: [Stepen: $ui_arg_1] (* <- lang_en;; *);;

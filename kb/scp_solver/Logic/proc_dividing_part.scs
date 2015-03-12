@@ -1,0 +1,129 @@
+scp_program -> proc_dividing_part (*	
+	-> rrel_params: .proc_dividing_part_params (*
+		-> rrel_1: rrel_in: _first_pattern;;
+		-> rrel_2: rrel_in: _second_pattern;;
+		-> rrel_3: rrel_in: _connection_vars;;
+	*);;
+
+       -> rrel_operators: .proc_dividing_part_operator_set (*
+
+		 -> rrel_init: .proc_dividing_part_operator_1A (*
+		  <- searchSetStr3;;
+		  -> rrel_1: rrel_fixed: rrel_scp_var: _pattern;;
+		  -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+		  -> rrel_3: rrel_assign: rrel_scp_var: _elem;;
+		  
+		  -> rrel_set_3: rrel_assign: rrel_scp_var: _set1;;
+
+                  => nrel_then: .proc_dividing_part_operator_1B;;
+		  => nrel_else: .proc_dividing_part_operator_return;;
+		*);;
+
+		 -> .proc_dividing_part_operator_1B (*
+		  <- searchElStr3;;
+		  -> rrel_1: rrel_fixed: rrel_scp_var: _set1;;
+		  -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+		  -> rrel_3: rrel_assign: rrel_scp_var: _elem2;;
+
+		  => nrel_goto: .proc_dividing_part_operator_1C;;
+		*);;
+
+                 -> .proc_dividing_part_operator_1C (*
+		  <- eraseEl;;
+		  -> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _arc2;;
+
+		  => nrel_goto: .proc_dividing_part_operator_1D;;
+		*);; 
+		
+		-> .proc_dividing_part_operator_1D (*
+		  <- searchElStr3;;
+		  -> rrel_1: rrel_fixed: rrel_scp_var: _connection_vars;;
+		  -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+		  -> rrel_3: rrel_fixed: rrel_scp_var: _elem2;;
+
+		  => nrel_then: .proc_dividing_part_operator_1E1;;
+		  => nrel_else: .proc_dividing_part_operator_1B;;
+		*);;
+		
+		-> .proc_dividing_part_operator_1E1 (*
+		  <- searchSetStr5;;
+		  -> rrel_1: rrel_fixed: rrel_scp_var: _elem2;;
+		  -> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc2;;
+		  -> rrel_3: rrel_assign: rrel_scp_var: _elem3;;
+		  -> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc3;;
+		  -> rrel_5: rrel_assign: rrel_scp_var: _var1;;
+		  
+		  -> rrel_3: rrel_fixed: rrel_scp_var: _output_relations;;
+		
+		  => nrel_then: .proc_dividing_part_operator_1E2;;
+		  => nrel_else: .proc_dividing_part_operator_1B;;
+		*);;
+		
+		-> .proc_dividing_part_operator_1E2 (*
+		  <- searchSetStr5;;
+		  -> rrel_1: rrel_assign: rrel_scp_var: _elem3;;
+		  -> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc2;;
+		  -> rrel_3: rrel_fixed: rrel_scp_var: _elem2;;
+		  -> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc3;;
+		  -> rrel_5: rrel_assign: rrel_scp_var: _var1;;
+		  
+		  -> rrel_3: rrel_fixed: rrel_scp_var: _input_relations;;
+		
+		  => nrel_then: .proc_dividing_part_operator_1E3;;
+		  => nrel_else: .proc_dividing_part_operator_1B;;
+		*);;
+		
+		-> .proc_dividing_part_operator_1E3 (*
+		  <- searchSetStr5;;
+		  -> rrel_1: rrel_fixed: rrel_scp_var: _elem2;;
+		  -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+		  -> rrel_3: rrel_assign: rrel_scp_var: _elem3;;
+		  -> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc3;;
+		  -> rrel_5: rrel_assign: rrel_scp_var: _var1;;
+		  
+		  -> rrel_3: rrel_fixed: rrel_scp_var: _output_attributes;;
+		
+		  => nrel_then: .proc_dividing_part_operator_1E4;;
+		  => nrel_else: .proc_dividing_part_operator_1B;;
+		*);;
+		
+		-> .proc_dividing_part_operator_1E4 (*
+		  <- searchSetStr5;;
+		  -> rrel_1: rrel_assign: rrel_scp_var: _elem3;;
+		  -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+		  -> rrel_3: rrel_fixed: rrel_scp_var: _elem2;;
+		  -> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc3;;
+		  -> rrel_5: rrel_assign: rrel_scp_var: _var1;;
+		  
+		  -> rrel_3: rrel_fixed: rrel_scp_var: _input_attributes;;
+		
+		  => nrel_then: .proc_dividing_part_operator_1E;;
+		  => nrel_else: .proc_dividing_part_operator_1B;;
+		*);;
+		
+		-> .proc_dividing_part_operator_1E (*
+		  <- searchSetStr5;;
+		  -> rrel_1: rrel_assign: rrel_scp_var: _elem2;;
+		  -> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc2;;
+		  -> rrel_3: rrel_assign: rrel_scp_var: _elem2;;
+		  -> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc3;;
+		  -> rrel_5: rrel_assign: rrel_scp_var: _var1;;
+		  
+		  -> rrel_3: rrel_fixed: rrel_scp_var: _input_arcs;;
+		
+		  => nrel_then: .proc_dividing_part_operator_1E;;
+		  => nrel_else: .proc_dividing_part_operator_1B;;
+		*);;
+		
+		
+		
+		
+		
+		
+		
+             
+		-> .proc_dividing_part_operator_return (*
+		<- return;;
+		*);;
+	*);;
+*);;

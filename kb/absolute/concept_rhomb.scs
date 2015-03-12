@@ -1,0 +1,148 @@
+sc_node_not_relation -> concept_rhomb;;
+
+concept_rhomb => nrel_main_idtf:
+	[ромб] 
+	(* <- lang_ru;; *);
+	[rhombus] 
+	(* <- lang_en;; *);;
+
+concept_rhomb => nrel_idtf: [Класс ромбов] (* <- lang_ru;; *);;
+
+concept_rhomb => nrel_idtf: [Понятие ромба] (* <- lang_ru;; *);;
+
+concept_rhomb => nrel_idtf: [Множество ромбов] (* <- lang_ru;; *);;
+
+concept_rhomb <= nrel_strict_inclusion: concept_parallelogram;;
+
+concept_rhomb => nrel_strict_inclusion: concept_square;;
+
+concept_rhomb <= nrel_using_constants:
+	{
+	concept_parallelogram;
+	nrel_side;
+	nrel_congruence
+	};;	
+	
+
+concept_rhomb <- rrel_key_sc_element: 
+     	... 
+	(*
+	=> nrel_main_idtf: [Утв.(ромб; диагональ*; площадь*)] (* <- lang_ru;; *);;
+	<- sc_statement;;   
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Площадь ромба вычисляется как половина произведения его диагоналей.]
+			(* 
+			<- lang_ru;;
+			*);;
+		*);;
+	*);
+
+     	...
+	(*
+	=> nrel_main_idtf: [Утв.(ромб; диагональ*; середина*)] (* <- lang_ru;; *);;
+	<- sc_statement;;   
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Диагонали ромба пересекаются и в точке пересечения делятся пополам.]
+			(* 
+			<- lang_ru;;
+			*);;
+		*);;
+	*);
+
+     	...
+	(*
+	=> nrel_main_idtf: [Утв.(ромб; диагональ*; биссектриса*; прямой угол)] (* <- lang_ru;; *);;
+	-> rrel_main_key_sc_element: stat_rhomb_diagonal_perpendicular_bisectrix_angle;;
+	-> rrel_key_sc_element: nrel_diagonal; nrel_bisectrix; concept_right_angle;;
+	<- sc_statement;;   
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Диагонали ромба пересекаются под прямым углом и являются биссектрисами его углов.]
+			(* <- lang_ru;;	*);;
+		*);;
+	*);
+
+     	... 
+	(*
+	=> nrel_main_idtf: [Утв.(ромб; диагональ*; ось симметрии*; прямая)] (* <- lang_ru;; *);;
+	<- sc_statement;;   
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Прямые, на которых лежат диагонали ромба, являются его осями симметрии.]
+			(* 
+			<- lang_ru;;
+			*);;
+		*);;
+	*);
+
+     	... 
+	(*
+	=> nrel_main_idtf: [Утв.(ромб; высота*; конгруэнтность*)] (* <- lang_ru;; *);;
+	<- sc_statement;;   
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Высоты ромба равны.]
+			(* 
+			<- lang_ru;;
+			*);;
+		*);;
+	*);
+
+     	... 
+	(*
+	=> nrel_main_idtf: [Утв.(ромб; площадь*; произведение*; высота*, основание*)] (* <- lang_ru;; *);;
+	<- sc_statement;;   
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Площадь ромба равна произведению его основания на высоту.]
+			(* 
+			<- lang_ru;;
+			*);;
+		*);;
+	*);
+
+     	...
+	(*
+	=> nrel_main_idtf: [Утв.(ромб; площадь*; произведение*; диагональ*)] (* <- lang_ru;; *);;
+	<- sc_statement;;   
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Площадь ромба равна половине произведения его диагоналей.]
+			(* 
+			<- lang_ru;;
+			*);;
+		*);;
+	*);
+
+     	...
+	(*
+	=> nrel_main_idtf: [Утв.(ромб; площадь*; произведение*; сторона*; угол; синус угла*)] (* <- lang_ru;; *);;
+	<- sc_statement;;   
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Площадь ромба произведению квадрата его стороны на синус угла между сторонами.]
+			(* 
+			<- lang_ru;;
+			*);;
+		*);;
+	*);;
+
+concept_rhomb -> rrel_example: struct_Rhomb_E_F_G_H;;

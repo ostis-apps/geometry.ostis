@@ -1,0 +1,140 @@
+sc_node_not_relation -> concept_isosceles_trapezoid;;
+
+concept_isosceles_trapezoid => nrel_main_idtf:
+	[равнобедренная трапеция]
+	(* <- lang_ru;;	*);
+	[isosceles trapezoid]
+	(* <- lang_en;; *);;
+
+concept_isosceles_trapezoid => nrel_idtf: [равнобокая трапеция] (* <- lang_ru;; *);;
+
+concept_isosceles_trapezoid => nrel_idtf: [Класс равнобедренная трапеций] (* <- lang_ru;; *);;
+
+concept_isosceles_trapezoid => nrel_idtf: [Понятие равнобедренная трапеции] (* <- lang_ru;; *);;
+
+concept_isosceles_trapezoid => nrel_idtf: [Множество всевозможных равнобедренных трапеций] (* <- lang_ru;; *);;
+
+concept_isosceles_trapezoid => nrel_idtf: [Множество знаков всевозможных равнобедренных трапеций] (* <- lang_ru;; *);;
+
+concept_isosceles_trapezoid <= nrel_strict_inclusion: concept_trapezoid;;
+
+concept_isosceles_trapezoid <= nrel_using_constants:
+	{
+	concept_trapezoid; 
+	nrel_lateral_side; 
+	nrel_congruence
+	};;
+	
+concept_isosceles_trapezoid <- rrel_key_sc_element: 
+        ...
+	(*
+	=> nrel_main_idtf: [Утв.(равнобедренная трапеция; угол; основание*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[В равнобедренной трапеции углы при основании равны.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_isosceles_trapezoid <- rrel_key_sc_element: 
+        ...
+	(*
+	=> nrel_main_idtf: [Утв.(равнобедренная трапеция ; высота* ; основание*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[В равнобедренной трапеции высоты отсекают на большем основании равные отрезки.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_isosceles_trapezoid <- rrel_key_sc_element: 
+        ...
+	(*
+	=> nrel_main_idtf: [Утв.(равнобедренная трапеция; диагональ*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[В равнобедренной трапеции диагонали равны: d1=d2 , где d1,d2 - диагонали равнобедренной трапеции.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_isosceles_trapezoid <- rrel_key_sc_element: 
+        ...
+	(*
+	=> nrel_main_idtf: [Утв.(равнобедренная трапеция; диагональ*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[В равнобедренной трапеции высота, опущенная из вершины на большее основание, делит его на два отрезка, длина одного из которых равна полусумме длин оснований, длина другого - полуразности длин оснований.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_isosceles_trapezoid <- rrel_key_sc_element: 
+        ...
+	(*
+	=> nrel_main_idtf: [Утв.(равнобедренная трапеция; середина*; основание*; перпендикулярность*; ось симметрии*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[В равнобедренной трапеции прямая, проходящая через середины оснований, перпендикулярна основаниям и является осью симметрии трапеции.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_isosceles_trapezoid <- rrel_key_sc_element: 
+        ...
+	(*
+	=> nrel_main_idtf: [Утв.(равнобедренная трапеция; описанность*; окружность; треугольник; вершина*; центр*; серединный перпендикуляр*; основание*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Около равнобедренной трапеции можно описать окружность. Она совпадает с окружностью, описанной около любого треугольника с вершинами в вершинах трапеции. Центр этой окружности лежит на серединном перпендикуляре к основанию трапеции.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_isosceles_trapezoid <- rrel_key_sc_element: 
+        ...
+	(*
+	=> nrel_main_idtf: [Утв.(равнобедренная трапеция; описанность*; окружность; основание*; диагональ*; перпендикулярность*; сторона*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Если центр окружности, описанной около равнобедренной трапеции лежит на основании трапеции, то её диагональ перпендикулярна боковой стороне.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_isosceles_trapezoid <- rrel_key_sc_element: 
+        ...
+	(*
+	=> nrel_main_idtf: [Утв.(равнобедренная трапеция; вписаность*; окружность; сторона*; средняя линия; радиус*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[В равнобедренную трапецию можно вписать окружность, если боковая сторона трапеции равна её средней линии. Радиус этой окружности равен половине высоте трапеции.]
+			(* <- lang_ru;; *);;		
+		*);;
+	*);;
+
+concept_isosceles_trapezoid -> rrel_example: struct_Isosceles_trapezoid_K_L_M_N;;

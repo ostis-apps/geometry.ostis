@@ -1,0 +1,15 @@
+ui_menu_file_for_prod <- ui_user_command_class_atom; ui_user_command_class_view_kb;;
+
+ui_menu_file_for_prod => nrel_main_idtf: [Произведение] (* <- lang_ru;; *);;
+ui_menu_file_for_prod => nrel_main_idtf: [Production] (* <- lang_en;; *);;
+ui_menu_file_for_prod => ui_nrel_command_template:
+	[*
+		question_prod _-> ._question_prod_instance
+			(*
+				_-> ui_arg_1;;				
+			*);;
+		._question_prod_instance _<- question;;
+	*];;
+
+ui_menu_file_for_prod => ui_nrel_command_lang_template: [Произведение: $ui_arg_1] (* <- lang_ru;; *);;
+ui_menu_file_for_prod => ui_nrel_command_lang_template: [Production: $ui_arg_1] (* <- lang_en;; *);;

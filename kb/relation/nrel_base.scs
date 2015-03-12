@@ -1,0 +1,41 @@
+/*sc_node_norole_relation -> nrel_base;;
+
+nrel_base => nrel_main_idtf:
+	[основание*]
+	(* <- lang_ru;; *);
+	[base*]
+	(* <- lang_en;; *);;
+
+nrel_base => nrel_idtf:
+	[быть основанием*]
+	(* <- lang_ru;; *);;
+
+nrel_base <- sc_relation;;
+
+nrel_base <- binary_relation;;
+
+nrel_base => nrel_definitional_domain: 
+	...
+	(*
+	<= nrel_combination: 
+		{
+		concept_polygon;
+		concept_segment
+		};;
+	*);;		
+
+nrel_base => nrel_first_domain: 
+	concept_polygon;;		
+
+nrel_base => nrel_second_domain: 
+	concept_segment;;
+
+nrel_base <= nrel_using_constants:
+	{
+	nrel_side; 
+	nrel_perpendicularity; 
+	nrel_height; 
+	concept_isosceles_triangle; 
+	concept_parallelogram; 
+	concept_isosceles_trapezoid
+	};;*/

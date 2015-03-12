@@ -1,0 +1,145 @@
+sc_node_not_relation -> concept_trapezoid;;
+
+concept_trapezoid => nrel_main_idtf:
+	[трапеция]
+	(* <- lang_ru;;	*);
+	[trapezoid]
+	(* <- lang_en;;	*);;
+
+concept_trapezoid => nrel_idtf: [Класс трапеций] (* <- lang_ru;; *);;
+
+concept_trapezoid => nrel_idtf: [Понятие трапеции] (* <- lang_ru;; *);;
+
+concept_trapezoid => nrel_idtf: [Множество всевозможных трапеций] (* <- lang_ru;; *);;
+
+concept_trapezoid => nrel_idtf: [Множество знаков всевозможных трапеций] (* <- lang_ru;; *);;
+
+concept_trapezoid <= nrel_strict_inclusion: concept_quadrilateral;;
+
+concept_trapezoid => nrel_strict_inclusion: concept_isosceles_trapezoid;;	
+
+concept_trapezoid => nrel_strict_inclusion: concept_rectangular_trapezoid;;
+
+concept_trapezoid <= nrel_using_constants:
+	{
+	 nrel_side; 
+	 nrel_parallelism;  
+	 nrel_opposite
+	};;	
+		
+concept_trapezoid <- rrel_key_sc_element: 
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(трапеция; средняя линия трапеции*; основание*)] (* <- lang_ru;; *);;
+	-> rrel_main_key_sc_element: stat_average_line_trapezoid;; 
+	-> rrel_key_sc_element: nrel_center_line; nrel_base;;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Длина средней линии трапеции равна полусумме длин оснований.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_trapezoid <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(трапеция; внутренний угол*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Сумма углов трапеции равна 360 градусов.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_trapezoid <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(трапеция; диагональ*; боковая сторона*; основание*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Сумма квадратов диагоналей трапеции равна сумме квадратов боковых сторон и удвоенного произведения её оснований.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_trapezoid <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(диагональ*; боковая сторона*; прямая)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Середины боковых сторон и середины диагоналей трапеции лежат на одной прямой.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_trapezoid <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(основание*; диагональ*; боковая сторона*; трапеция)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Середины оснований, точка пересечения диагоналей и точка пересечения продолжений боковых сторон трапеции лежат на одной прямой.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_trapezoid <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(трапеция; отрезок; диагональ*; основание*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Отрезок, соединяющий середины диагоналей трапеции, равен полуразности оснований.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_trapezoid <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(трапеция; отрезок; основание*; быть равновеликими*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Отрезок, параллельный основаниям трапеции и делящий ее на 2 равновеликие части, равен квадратному корню из суммы квадратов длин оснований, деленной на 2.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_trapezoid <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(трапеция; окружность; основание*; сторона*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[В трапецию можно вписать окружность тогда и только тогда, когда сумма оснований трапеции равна сумме ее боковых сторон.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_trapezoid -> rrel_example: struct_Isosceles_trapezoid_K_L_M_N;;
+concept_trapezoid -> rrel_example: struct_Versatile_trapezoid_Z_X_C_V;;

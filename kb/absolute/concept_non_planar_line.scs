@@ -1,0 +1,15 @@
+sc_node_not_relation -> concept_non_planar_line;;
+
+concept_non_planar_line => nrel_main_idtf:
+	[непланарная линия]
+	(* <- lang_ru;;	*);
+	[non planar line]
+	(* <- lang_en;;	*);;
+
+concept_non_planar_line <= nrel_strict_inclusion: concept_line;;
+
+concept_non_planar_line <= nrel_using_constants:
+	{
+	concept_plane; 
+	concept_straight_line
+	};;

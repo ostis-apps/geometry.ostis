@@ -1,0 +1,15 @@
+d_concept_irregular_polygon <- rrel_main_key_sc_element: 
+     	...
+	(*
+	=> nrel_main_idtf: [Опр.(неправильный многоугольник)] (* <- lang_ru;; *);;
+	-> rrel_main_key_sc_element: d_concept_irregular_polygon;;
+	<- sc_definition;; 
+	-> rrel_key_sc_element: concept_irregular_polygon;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Неправильный многоугольник - выпуклый многоугольник, у которого стороны не равны между собой.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;

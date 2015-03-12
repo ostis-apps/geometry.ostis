@@ -1,0 +1,15 @@
+ui_menu_file_for_sum <- ui_user_command_class_atom; ui_user_command_class_view_kb;;
+
+ui_menu_file_for_sum => nrel_main_idtf: [Сумма и разность] (* <- lang_ru;; *);;
+ui_menu_file_for_sum => nrel_main_idtf: [Summa] (* <- lang_en;; *);;
+ui_menu_file_for_sum => ui_nrel_command_template:
+	[*
+		question_calc _-> ._question_calc_instance
+			(*
+				_-> ui_arg_1;;				
+			*);;
+		._question_calc_instance _<- question;;
+	*];;
+
+ui_menu_file_for_sum => ui_nrel_command_lang_template: [Сумма: $ui_arg_1] (* <- lang_ru;; *);;
+ui_menu_file_for_sum => ui_nrel_command_lang_template: [Sum: $ui_arg_1] (* <- lang_en;; *);;

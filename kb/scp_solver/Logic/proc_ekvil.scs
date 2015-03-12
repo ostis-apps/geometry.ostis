@@ -1,0 +1,82 @@
+scp_program -> proc_ekvil (*
+	-> rrel_params: .proc_ekvil_params (*
+		-> rrel_1: rrel_in: _param;;
+                -> rrel_2: rrel_in: _param1;;
+		-> rrel_3: rrel_in: _answer;;
+	*);;
+	
+	-> rrel_operators: .proc_ekvil_operator_set (*
+		
+                  -> rrel_init: .proc_ekvil_operator1A (*
+		  <- searchSetStr3;;
+		  -> rrel_1: rrel_fixed: rrel_scp_var: _param;;
+		  -> rrel_2: rrel_assign: rrel_scp_var: _arc12;;
+		  -> rrel_3: rrel_assign: rrel_scp_var: _zver;;
+
+		  -> rrel_set_3: rrel_assign: rrel_scp_var: _ans;;
+
+		  => nrel_then: .proc_ekvil_operator1B;;
+		  => nrel_else: .proc_ekvil_operator_return;;
+		*);; 
+
+                  -> .proc_ekvil_operator1B (*
+		  <- searchSetStr3;;
+		  -> rrel_1: rrel_fixed: rrel_scp_var: _param1;;
+		  -> rrel_2: rrel_assign: rrel_scp_var: _arc13;;
+		  -> rrel_3: rrel_assign: rrel_scp_var: _zver1;;
+
+		  -> rrel_set_3: rrel_assign: rrel_scp_var: _ans1;;
+
+		  => nrel_then: .proc_ekvil_operator1C;;
+		  => nrel_else: .proc_ekvil_operator_return;;
+		*);; 
+
+                  -> .proc_ekvil_operator1C (*
+		  <- searchElStr3;;
+		  -> rrel_1: rrel_fixed: rrel_scp_var: _ans;;
+		  -> rrel_2: rrel_assign: rrel_scp_var: _arc1;;
+		  -> rrel_3: rrel_assign: rrel_scp_var: _loc;;
+
+		  => nrel_then: .proc_ekvil_operator1D;;
+		  => nrel_else: .proc_ekvil_operator_return;;
+		*);;  
+
+                   
+                  -> .proc_ekvil_operator1D (*
+		  <- eraseEl;;
+		  -> rrel_1: rrel_erase: rrel_fixed: rrel_scp_var: _arc1;;
+
+		   => nrel_goto: .proc_ekvil_operator1E;;
+		*);; 
+
+                  -> .proc_ekvil_operator1E (*
+		  <- searchElStr3;;
+		  -> rrel_1: rrel_fixed: rrel_scp_var: _ans1;;
+		  -> rrel_2: rrel_assign: rrel_scp_var: _arc2;;
+		  -> rrel_3: rrel_fixed: rrel_scp_var: _loc;;
+
+		  => nrel_then: .proc_ekvil_operator1F;;
+		  => nrel_else: .proc_ekvil_operator1C;;
+		*);; 
+
+                  -> .proc_ekvil_operator1F(*
+		  <- eraseEl;;
+		  -> rrel_1: rrel_erase: rrel_fixed: rrel_scp_var: _arc2;;
+
+		   => nrel_goto: .proc_ekvil_operator1H;;
+		*);; 
+
+                  -> .proc_ekvil_operator1H (*
+                  <- genElStr3;;
+		  -> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+		  -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc12;;
+		  -> rrel_3: rrel_fixed: rrel_scp_var: _loc;;
+             
+                   => nrel_goto: .proc_ekvil_operator1C;;
+                  *);;
+			
+		-> .proc_ekvil_operator_return (*
+		  <- return;;
+		*);;
+	*);;
+*);;

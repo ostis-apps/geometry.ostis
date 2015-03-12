@@ -1,0 +1,86 @@
+sc_node_not_relation -> concept_round_segment;;
+
+concept_round_segment => nrel_main_idtf:
+	[круговой сегмент]
+	(* <- lang_ru;;	*);
+	[round segment]
+	(* <- lang_en;;	*);;
+
+concept_round_segment => nrel_idtf: [Класс круговых сегментов] (* <- lang_ru;; *);;
+
+concept_round_segment => nrel_idtf: [Понятие кругового сегмента] (* <- lang_ru;; *);;
+
+concept_round_segment => nrel_idtf: [Множество всевозможных круговых сегментов] (* <- lang_ru;; *);;
+
+concept_round_segment => nrel_idtf: [Множество знаков всевозможных круговых сегментов] (* <- lang_ru;; *);;
+
+concept_round_segment <= nrel_strict_inclusion: concept_planar_figure;;
+
+concept_round_segment <= nrel_strict_inclusion: concept_flat_geometric_figure;;
+
+concept_round_segment <= nrel_using_constants:
+	{
+	concept_round;  
+	concept_circle_arc;  
+	concept_circle; 
+	nrel_chord
+	};;	
+	
+concept_round_segment <- rrel_key_sc_element: 
+        ...
+	(*
+	=> nrel_main_idtf: [Утв.(круговой сегмент; центральный угол*; радиус*; площадь*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[...html]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_round_segment <- rrel_key_sc_element: 
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(круговой сегмент; треугольник; сектор; центральный угол*; радиус*; площадь*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[...html]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_round_segment <- rrel_key_sc_element: 
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(круговой сегмент; основание*; радиус*; центральный угол*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[...html]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+	
+concept_round_segment <- rrel_key_sc_element: 
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(круговой сегмент; высота*; основание*; радиус*; центральный угол*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[...html]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+	
+
+

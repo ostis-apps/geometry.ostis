@@ -1,0 +1,980 @@
+scp_program -> proc_prod (*	
+	-> rrel_params: .proc_prod_params (*
+			-> rrel_1: rrel_in: _connection;;
+                        -> rrel_2: rrel_in: _otvet;;	
+	*);;
+
+       -> rrel_operators: .proc_prod_operator_set (*
+
+		 -> rrel_init: .proc_prod_operator0B (*
+		  <- call;;
+		  -> rrel_1: rrel_fixed: rrel_scp_const: proc_check;;
+		  -> rrel_2: rrel_fixed: rrel_scp_const: .proc_prod_operator0B_params (*
+				-> rrel_1: rrel_fixed: rrel_scp_var: _connection;;
+                                -> rrel_2: rrel_fixed: rrel_scp_var: _otvet;;
+			*);;
+		  -> rrel_3: rrel_assign: rrel_scp_var: _descr22;;
+
+		  => nrel_goto: .proc_prod_operator0C;;
+		*);;
+
+		  -> .proc_prod_operator0C (*
+		  <- waitReturn;;
+		  -> rrel_1: rrel_fixed: rrel_scp_var: _descr22;;
+
+		  => nrel_goto: .proc_prod_operator0D;;
+		*);;
+
+                  -> .proc_prod_operator0D (*
+		  <- searchElStr3;;
+		  -> rrel_1: rrel_fixed: rrel_scp_var: _otvet;;
+		  -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+		  -> rrel_3: rrel_assign: rrel_scp_var: _mmm;;
+                  
+                  => nrel_then: .proc_prod_operator0AA;;
+		  => nrel_else: .proc_prod_operator_return;;
+		*);;
+
+             
+
+                 -> .proc_prod_operator0AA (*
+		 <- genEl;;
+		 -> rrel_1: rrel_assign: rrel_const: rrel_node: rrel_scp_var: _check1;;
+
+		 => nrel_goto: .proc_prod_operator0BB;;
+		 *);; 
+
+                  -> .proc_prod_operator0BB (*
+		  <- call;;
+		  -> rrel_1: rrel_fixed: rrel_scp_const: proc_razm;;
+		  -> rrel_2: rrel_fixed: rrel_scp_const: .proc_prod_operator0BB_params (*
+				-> rrel_1: rrel_fixed: rrel_scp_var: _connection;;
+                                -> rrel_2: rrel_fixed: rrel_scp_var: _check1;;
+			*);;
+		  -> rrel_3: rrel_assign: rrel_scp_var: _descr37;;
+
+		  => nrel_goto: .proc_prod_operator0CC;;
+		*);;
+
+		  -> .proc_prod_operator0CC (*
+		  <- waitReturn;;
+		  -> rrel_1: rrel_fixed: rrel_scp_var: _descr37;;
+
+		  => nrel_goto: .proc_prod_operator0DD;;
+		*);;
+
+                 -> .proc_prod_operator0DD (*
+		  <- searchElStr3;;
+		  -> rrel_1: rrel_fixed: rrel_scp_var: _check1;;
+		  -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+		  -> rrel_3: rrel_assign: rrel_scp_var: _mm1;;
+                  
+                  => nrel_then: .proc_prod_operator_0EE;;
+		  => nrel_else: .proc_prod_operator1B;;
+		*);;
+
+                 -> .proc_prod_operator_0EE (*
+		 <- eraseEl;;
+		 -> rrel_1: rrel_erase: rrel_fixed: rrel_scp_var: _check1;;
+
+		 => nrel_goto: .proc_prod_operator_return;;
+		 *);;
+
+                  -> .proc_prod_operator1B (*
+		  <- searchElStr3;;
+		  -> rrel_1: rrel_fixed: rrel_scp_var: _connection;;
+		  -> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
+		  -> rrel_3: rrel_assign: rrel_scp_var: _xz1;;
+                  
+                  => nrel_then: .proc_prod_operator1CO;;
+		  => nrel_else: .proc_prod_operator_return;;
+		*);;
+
+                 -> .proc_prod_operator1CO (*
+		 <- eraseEl;;
+		 -> rrel_1: rrel_erase: rrel_fixed: rrel_scp_var: _check1;;
+
+		 => nrel_goto: .proc_prod_operator1C;;
+		 *);;
+
+                 -> .proc_prod_operator1C (*
+		 <- genEl;;
+		 -> rrel_1: rrel_assign: rrel_const: rrel_node: rrel_scp_var: _razm;;
+
+		 => nrel_goto: .proc_prod_operator1D;;
+		 *);;
+
+                   -> .proc_prod_operator1D (*
+		 <- genEl;;
+		 -> rrel_1: rrel_assign: rrel_const: rrel_node: rrel_scp_var: _ssilk;;
+
+		 => nrel_goto: .proc_prod_operator1E;;
+		 *);;
+
+                   -> .proc_prod_operator1E (*
+		 <- genEl;;
+		 -> rrel_1: rrel_assign: rrel_const: rrel_node: rrel_scp_var: _razm2;;
+
+		 => nrel_goto: .proc_prod_operator1F;;
+		 *);;
+
+                   -> .proc_prod_operator1F (*
+		 <- genEl;;
+		 -> rrel_1: rrel_assign: rrel_const: rrel_node: rrel_scp_var: _ssilk2;;
+
+		 => nrel_goto: .proc_prod_operator1G;;
+		 *);;
+
+                   -> .proc_prod_operator1G (*
+		 <- genEl;;
+		 -> rrel_1: rrel_assign: rrel_const: rrel_node: rrel_scp_var: _razm3;;
+
+		 => nrel_goto: .proc_prod_operator1H;;
+		 *);;
+
+                   -> .proc_prod_operator1H (*
+		 <- genEl;;
+		 -> rrel_1: rrel_assign: rrel_const: rrel_node: rrel_scp_var: _ssilk3;;
+
+		 => nrel_goto: .proc_prod_operator1I;;
+		 *);;
+
+                  -> .proc_prod_operator1I (*
+		  <- searchElStr5;;
+		  -> rrel_1: rrel_assign: rrel_scp_var: _zver;;
+		  -> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc5;;
+		  -> rrel_3: rrel_fixed: rrel_scp_var: _xz1;;
+                  -> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc6;;
+                  -> rrel_5: rrel_fixed: rrel_scp_const: nrel_value;;
+
+		  => nrel_then: .proc_prod_operator2A;;
+		  => nrel_else: .proc_prod_operator3A;;
+		*);;
+
+                  -> .proc_prod_operator2A (*
+		  <- call;;
+		  -> rrel_1: rrel_fixed: rrel_scp_const: proc_findingrvalue125;;
+		  -> rrel_2: rrel_fixed: rrel_scp_const: .proc_prod_operator2A_params (*
+				-> rrel_1: rrel_fixed: rrel_scp_var: _xz1;;
+                                -> rrel_2: rrel_fixed: rrel_scp_var: _razm;;
+				-> rrel_3: rrel_fixed: rrel_scp_var: _ssilk;;
+                               
+			*);;
+		  -> rrel_3: rrel_assign: rrel_scp_var: _descr2;;
+
+		  => nrel_goto: .proc_prod_operator2B;;
+		*);;
+
+		-> .proc_prod_operator2B (*
+		  <- waitReturn;;
+		  -> rrel_1: rrel_fixed: rrel_scp_var: _descr2;;
+
+		  => nrel_goto: .proc_prod_operator10A;;
+		*);;
+
+                 
+                   -> .proc_prod_operator10A (*
+		  <- call;;
+		  -> rrel_1: rrel_fixed: rrel_scp_const: proc_genera_prod;;
+		  -> rrel_2: rrel_fixed: rrel_scp_const: .proc_prod_operator10A_params (*
+				-> rrel_1: rrel_fixed: rrel_scp_var: _mmm;;
+                                -> rrel_2: rrel_fixed: rrel_scp_var: _razm;; 
+                                -> rrel_3: rrel_fixed: rrel_scp_var: _ssilk2;;   
+			*);;
+		  -> rrel_3: rrel_assign: rrel_scp_var: _descr11;;
+
+		  => nrel_goto: .proc_prod_operator10B;;
+		*);;
+
+                 -> .proc_prod_operator10B (*
+		  <- waitReturn;;
+		  -> rrel_1: rrel_fixed: rrel_scp_var: _descr11;;
+
+		  => nrel_goto: .proc_prod_operator_7Ev_cool_A;;
+		*);;
+
+                
+                  -> .proc_prod_operator3A (*
+		  <- searchElStr5;;
+
+		  -> rrel_1: rrel_assign: rrel_scp_var: _Tomm;;
+		  -> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc;;
+		  -> rrel_3: rrel_fixed: rrel_scp_var: _xz1;;
+		  -> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+		  -> rrel_5: rrel_fixed: rrel_scp_const: nrel_identification;;
+
+		   => nrel_then: .proc_prod_operator3B;;
+		  => nrel_else: .proc_prod_operator_CH1;;  // здесь умножение
+		*);;
+
+
+		-> .proc_prod_operator3B(*
+		  <- searchElStr5;;
+		  -> rrel_1: rrel_fixed: rrel_scp_var: _Tomm;;
+		  -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc3;;
+		  -> rrel_3: rrel_assign: rrel_scp_var: _row;;
+                  -> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc4;;
+                  -> rrel_5: rrel_assign: rrel_scp_var: _decimal;;
+
+		  => nrel_then: .proc_prod_operator3C;;
+		  => nrel_else: .proc_prod_operator_return;;
+		*);;
+
+                  -> .proc_prod_operator3C (*
+		  <- genElStr3;;
+		  -> rrel_1: rrel_fixed: rrel_scp_var: _ssilk;;
+		  -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+		  -> rrel_3: rrel_fixed: rrel_scp_var: _row;;
+
+		  => nrel_goto: .proc_prod_operator4A;;
+		*);;
+
+		-> .proc_prod_operator4A (*
+		  <- searchSetStr3;;
+
+		  -> rrel_1: rrel_fixed: rrel_scp_var: _connection;;
+		  -> rrel_2: rrel_assign:  rrel_pos_const_perm: rrel_scp_var: _arc01;; 
+		  -> rrel_3: rrel_assign: rrel_scp_var: _kon12;;
+
+		  -> rrel_set_3: rrel_assign: rrel_scp_var: _funfun12;;   
+
+		  => nrel_then: .proc_prod_operator4B;;
+		  => nrel_else: .proc_prod_operator_return;;
+		*);;
+                      
+		-> .proc_prod_operator4B (*
+		  <- searchElStr3;;
+
+		  -> rrel_1: rrel_fixed: rrel_scp_var: _funfun12;;
+		  -> rrel_2: rrel_assign:  rrel_pos_const_perm: rrel_scp_var: _arc02;; 
+		  -> rrel_3: rrel_assign: rrel_scp_var: _kon1;;
+
+		  => nrel_then: .proc_prod_operator4C;;
+		  => nrel_else: .proc_prod_operator_return;;
+		*);;
+
+                  -> .proc_prod_operator4C (*
+		 <- eraseEl;;
+		 -> rrel_1: rrel_erase: rrel_fixed: rrel_scp_var: _arc02;;
+
+		 => nrel_goto: .proc_prod_operator4DD;;
+		 *);;
+
+                  -> .proc_prod_operator4DD (*
+		  <- searchElStr3;;
+		  -> rrel_1: rrel_assign: rrel_scp_var: _otvet;;
+		  -> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc;;
+		  -> rrel_3: rrel_fixed: rrel_scp_var: _kon1;;
+
+		  => nrel_then: .proc_prod_operator4B;;
+		  => nrel_else: .proc_prod_operator4D;;
+		*);; 
+
+                  -> .proc_prod_operator4D (*
+		  <- searchElStr5;;
+		  -> rrel_1: rrel_assign: rrel_scp_var: _uno;;
+		  -> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc;;
+		  -> rrel_3: rrel_fixed: rrel_scp_var: _kon1;;
+                  -> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+                  -> rrel_5: rrel_fixed: rrel_scp_const: nrel_value;;
+
+		  => nrel_then: .proc_prod_operator5A;;
+		  => nrel_else: .proc_prod_operator4B;;
+		*);;
+
+                  -> .proc_prod_operator5A (*
+		  <- call;;
+		  -> rrel_1: rrel_fixed: rrel_scp_const: proc_findingrvalue125;;
+		  -> rrel_2: rrel_fixed: rrel_scp_const: .proc_prod_operator5A_params (*
+				-> rrel_1: rrel_fixed: rrel_scp_var: _kon1;;
+                                -> rrel_2: rrel_fixed: rrel_scp_var: _razm3;;
+				-> rrel_3: rrel_fixed: rrel_scp_var: _ssilk3;;
+                               
+			*);;
+		  -> rrel_3: rrel_assign: rrel_scp_var: _descr2552;;
+
+		  => nrel_goto: .proc_prod_operator5B;;
+		*);;
+
+		-> .proc_prod_operator5B (*
+		  <- waitReturn;;
+		  -> rrel_1: rrel_fixed: rrel_scp_var: _descr2552;;
+
+		  => nrel_goto: .proc_prod_operator7C;;
+		*);; 
+
+                  -> .proc_prod_operator7C (*
+		  <- call;;
+		  -> rrel_1: rrel_fixed: rrel_scp_const: proc_genera_prod;;
+		  -> rrel_2: rrel_fixed: rrel_scp_const: .proc_prod_operator7C_params (*
+				-> rrel_1: rrel_fixed: rrel_scp_var: _chip;;
+                                -> rrel_2: rrel_fixed: rrel_scp_var: _razm3;;
+				-> rrel_3: rrel_fixed: rrel_scp_var: _ssilk2;;   
+			*);;
+		  -> rrel_3: rrel_assign: rrel_scp_var: _descr19;;
+
+		  => nrel_goto: .proc_prod_operator7D;;
+		*);;
+
+		-> .proc_prod_operator7D (*
+		  <- waitReturn;;
+		  -> rrel_1: rrel_fixed: rrel_scp_var: _descr19;;
+
+		  => nrel_goto: .proc_prod_operator_7U1;;
+		*);;
+
+                 -> .proc_prod_operator_7U1 (*
+		 <- eraseEl;;
+		 -> rrel_1: rrel_erase: rrel_fixed: rrel_scp_var: _ssilk3;;
+
+		 => nrel_goto: .proc_prod_operator_7U2;;
+		 *);;
+
+                 -> .proc_prod_operator_7U2 (*
+		 <- eraseEl;;
+		 -> rrel_1: rrel_erase: rrel_fixed: rrel_scp_var: _razm3;;
+
+		 => nrel_goto: .proc_prod_operator_7Ev_cool_A;;
+		 *);;
+
+                  -> .proc_prod_operator_7Ev_cool_A(*
+		  <- contAssign;;
+		  -> rrel_1: rrel_assign: rrel_scp_var: _two;;
+		  -> rrel_2: rrel_fixed: rrel_scp_const: [1];;
+
+		  => nrel_goto: .proc_prod_operator_7Ev_cool;;
+		*);; 
+
+                 -> .proc_prod_operator_7Ev_cool(*
+		  <- searchElStr3;;
+		  -> rrel_1: rrel_fixed: rrel_scp_var: _ssilk;;
+		  -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+		  -> rrel_3: rrel_assign: rrel_scp_var: _one;;
+
+		  => nrel_then: .proc_prod_operator_7Ev_cool_2;;
+		  => nrel_else: .proc_prod_operator_return;;
+		*);;
+                 
+		-> .proc_prod_operator_7Ev_cool_2(*
+                  <- contMult;;
+                   -> rrel_1: rrel_fixed: rrel_scp_var: _two;;
+                   -> rrel_2: rrel_fixed: rrel_scp_var: _one;;
+		   -> rrel_3: rrel_fixed: rrel_scp_var: _two;;
+         		
+                    => nrel_goto: .proc_prod_operator_7Ev;;
+		   *);;
+
+		 -> .proc_prod_operator_7Ev (*
+		  <- searchSetStr3;;
+
+		  -> rrel_1: rrel_fixed: rrel_scp_var: _connection;;
+		  -> rrel_2: rrel_assign:  rrel_pos_const_perm: rrel_scp_var: _arc01;; 
+		  -> rrel_3: rrel_assign: rrel_scp_var: _fon;;
+
+		  -> rrel_set_3: rrel_assign: rrel_scp_var: _rty;;
+
+		  => nrel_then: .proc_prod_operator_123;;
+		  => nrel_else: .proc_prod_operator_return;;
+		*);; 
+
+		-> .proc_prod_operator_123 (*
+		  <- searchElStr3;;
+
+		  -> rrel_1: rrel_fixed: rrel_scp_var: _rty;;
+		  -> rrel_2: rrel_assign:  rrel_pos_const_perm: rrel_scp_var: _arc02;; 
+		  -> rrel_3: rrel_assign: rrel_scp_var: _non;;
+
+		  => nrel_then: .proc_prod_operator_1234;;
+		  => nrel_else: .proc_prod_operator8A;;
+		*);;
+
+                  -> .proc_prod_operator_1234 (*
+		 <- eraseEl;;
+		 -> rrel_1: rrel_erase: rrel_fixed: rrel_scp_var: _arc02;;
+
+		 => nrel_goto: .proc_prod_operator_110;;
+		 *);;
+
+                -> .proc_prod_operator_110 (*
+		  <- searchElStr3;;
+
+		  -> rrel_1: rrel_fixed: rrel_scp_var: _otvet;;
+		  -> rrel_2: rrel_assign:  rrel_pos_const_perm: rrel_scp_var: _arc02;; 
+		  -> rrel_3: rrel_fixed: rrel_scp_var: _non;;
+
+		  => nrel_then: .proc_prod_operator_123;;
+		  => nrel_else: .proc_prod_operator_bga1;;
+		*);; 
+
+                 -> .proc_prod_operator_bga1 (*
+		  <- searchElStr5;;
+		  -> rrel_1: rrel_assign: rrel_scp_var: _Tom1;;
+		  -> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc;;
+		  -> rrel_3: rrel_fixed: rrel_scp_var: _non;;
+		  -> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+		  -> rrel_5: rrel_fixed: rrel_scp_const: nrel_value;;
+
+		   => nrel_then: .proc_prod1_operator_zv19_bum;;
+		  => nrel_else: .proc_prod_operator_bga2;;
+		*);;
+
+	          -> .proc_prod_operator_bga2 (*
+		  <- searchElStr5;;
+		  -> rrel_1: rrel_assign: rrel_scp_var: _Tom2;;
+		  -> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc;;
+		  -> rrel_3: rrel_fixed: rrel_scp_var: _non;;
+		  -> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+		  -> rrel_5: rrel_fixed: rrel_scp_const: nrel_identification;;
+
+		   => nrel_then: .proc_prod_operator_bga1_um_Ch2;;
+		  => nrel_else: .proc_prod_operator_return;;
+		*);;
+
+   		-> .proc_prod1_operator_zv19_bum (*
+		  <- call;;
+
+		  -> rrel_1: rrel_fixed: rrel_scp_const: proc_findingrvalue125;;
+		  -> rrel_2: rrel_fixed: rrel_scp_const: .proc_prod1_operator_zv19_bum_params (*
+				-> rrel_1: rrel_fixed: rrel_scp_var: _non;;
+                                -> rrel_2: rrel_fixed: rrel_scp_var: _razm3;;
+				-> rrel_3: rrel_fixed: rrel_scp_var: _ssilk3;;
+                               
+			*);;
+		  -> rrel_3: rrel_assign: rrel_scp_var: _descr710;;
+
+		  => nrel_goto: .proc_prod_operator1_zvoo7_um;;
+		*);;
+
+
+		-> .proc_prod_operator1_zvoo7_um (*
+		  <- waitReturn;;
+		  -> rrel_1: rrel_fixed: rrel_scp_var: _descr710;;
+
+		  => nrel_goto: .proc_prod_operator_7G;;
+		*);;
+
+               
+                   -> .proc_prod_operator7G (*
+		  <- searchElStr3;;
+		  -> rrel_1: rrel_fixed: rrel_scp_var: _ssilk3;;
+		  -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+		  -> rrel_3: rrel_assign: rrel_scp_var: _three;;
+
+		  => nrel_then: .proc_prod_operator7H;;
+		  => nrel_else: .proc_prod_operator_return;;
+		*);;
+
+                  -> .proc_prod_operator7H (*
+                  <- contDiv;;
+                  -> rrel_1: rrel_fixed: rrel_scp_var: _two;;
+                  -> rrel_2: rrel_fixed: rrel_scp_var: _two;;
+		  -> rrel_3: rrel_fixed: rrel_scp_var: _three;;
+                    	
+                   => nrel_goto: .proc_prod_operator7II3;;
+		   *);;
+
+                  
+
+                  -> .proc_prod_operator7II3(*
+		 <- eraseEl;;
+		 -> rrel_1: rrel_fixed: rrel_const: rrel_erase: rrel_node: rrel_scp_var: _razm3;;
+
+		 => nrel_goto: .proc_prod_operator7II4;;
+		 *);;
+
+                -> .proc_prod_operator7II4(*
+		 <- eraseEl;;
+		 -> rrel_1: rrel_fixed: rrel_const: rrel_erase: rrel_node: rrel_scp_var: _ssilk3;;
+
+		 => nrel_goto: .proc_prod_operator_7II5;;
+		 *);;
+
+                 -> .proc_prod_operator_7II5 (*
+		 <- genEl;;
+		 -> rrel_1: rrel_assign: rrel_const: rrel_node: rrel_scp_var: _razm3;;
+
+		 => nrel_goto: .proc_prod_operator_7II6;;
+		 *);;
+
+                   -> .proc_prod_operator_7II6 (*
+		 <- genEl;;
+		 -> rrel_1: rrel_assign: rrel_const: rrel_node: rrel_scp_var: _ssilk3;;
+
+		 => nrel_goto: .proc_prod_operator_123;;
+		 *);;
+                                             
+		-> .proc_prod_operator_bga1_um_Ch2 (*
+		  <- searchElStr5;;
+		  -> rrel_1: rrel_fixed: rrel_scp_var: _Tom2;;
+		  -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc3;;
+		  -> rrel_3: rrel_assign: rrel_scp_var: _three;;
+                  -> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc4;;
+                  -> rrel_5: rrel_assign: rrel_scp_var: _dec;;
+
+		  => nrel_then: .proc_prod_operator12H;;
+		  => nrel_else: .proc_prod_operator_return;;
+		*);;
+
+                                                     
+                 
+                  -> .proc_prod_operator12H (*
+                  <- contDiv;;
+                  -> rrel_1: rrel_fixed: rrel_scp_var: _two;;
+                  -> rrel_2: rrel_fixed: rrel_scp_var: _two;;
+		  -> rrel_3: rrel_fixed: rrel_scp_var: _three;;
+                    	
+                   => nrel_goto: .proc_prod_operator12II11;;
+		   *);;
+
+                 -> .proc_prod_operator12II11 (*
+		  <- printNl;;
+		  -> rrel_1: rrel_fixed: rrel_scp_var: _two;;
+
+		  => nrel_goto: .proc_prod_operator_123;;
+		*);; 
+
+                
+                 -> .proc_prod_operator8A (*
+		 <- eraseEl;;
+		 -> rrel_1: rrel_erase: rrel_fixed: rrel_scp_var: _rty;;
+
+		 => nrel_goto: .proc_prod_operator8D;;
+		 *);;
+
+                 -> .proc_prod_operator8D (*
+		  <- searchElStr5;;
+		  -> rrel_1: rrel_fixed: rrel_scp_var: _razm;;
+		  -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc66;;
+		  -> rrel_3: rrel_assign: rrel_scp_var: _kbos;;
+                  -> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc633;;
+                  -> rrel_5: rrel_fixed: rrel_scp_const: rrel_second;;
+
+		  => nrel_then: .proc_prod_operator8E;;
+		  => nrel_else: .proc_prod_operator_return;;
+		*);;
+
+                 
+
+                  -> .proc_prod_operator8E (*
+		  <- searchElStr3;;
+		  -> rrel_1: rrel_fixed: rrel_scp_var: _ssilk2;;
+		  -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc6;;
+		  -> rrel_3: rrel_assign: rrel_scp_var: _jimi;;
+
+		  => nrel_then: .proc_prod_operator8F;;
+		  => nrel_else: .proc_prod_operator_return;;
+		  *);;
+
+                 
+                 -> .proc_prod_operator8F (*
+		  <- genElStr5;;
+		  -> rrel_1: rrel_fixed: rrel_scp_var: _jimi;;
+		  -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+		  -> rrel_3: rrel_fixed: rrel_scp_var: _two;;
+		  -> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+		  -> rrel_5: rrel_fixed: rrel_scp_var: _kbos;;
+
+		  => nrel_goto: .proc_prod_operator_djum1;;
+		*);;
+
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+//Умножение
+                 -> .proc_prod_operator_CH1 (*
+		  <- searchSetStr3;;
+		  -> rrel_1: rrel_fixed: rrel_scp_var: _connection;;
+		  -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc12;;
+		  -> rrel_3: rrel_assign: rrel_scp_var: _repas;;
+
+                 -> rrel_set_3: rrel_assign: rrel_scp_var: _XXX;; 
+
+		  => nrel_then:  .proc_prod_operator_CH2;;
+                  => nrel_else: .proc_prod_operator_return;;
+		*);;
+
+		->  .proc_prod_operator_CH2 (*
+		  <- searchElStr3;;
+		  -> rrel_1: rrel_fixed: rrel_scp_var: _XXX;;
+		  -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc7;;
+		  -> rrel_3: rrel_assign: rrel_scp_var: _vota;;
+               
+                  => nrel_then: .proc_prod_operator_CH3;;
+		  => nrel_else: .proc_prod_operator_return;;
+		*);;
+
+		 -> .proc_prod_operator_CH3 (*
+		 <- eraseEl;;
+		 -> rrel_1: rrel_erase: rrel_fixed: rrel_scp_var: _arc7;;
+
+		 => nrel_goto: .proc_prod_operator_CH4;;
+		 *);;
+
+		 -> .proc_prod_operator_CH4 (*
+		  <- searchElStr5;;
+		  -> rrel_1: rrel_assign: rrel_scp_var: _zub01;;
+		  -> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc;;
+		  -> rrel_3: rrel_fixed: rrel_scp_var: _vota;;
+		  -> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+		  -> rrel_5: rrel_fixed: rrel_scp_const: nrel_value;;
+
+		   => nrel_then: .proc_prod_operator_CH5A;;
+		  => nrel_else: .proc_prod_operator_CH2;;
+		*);;
+		
+		-> .proc_prod_operator_CH5A(*
+		 <- eraseEl;;
+		 -> rrel_1: rrel_fixed: rrel_const: rrel_erase: rrel_node: rrel_scp_var: _XXX;;
+
+		 => nrel_goto: .proc_prod_operator_CH5;;
+		 *);;
+
+                -> .proc_prod_operator_CH5 (*
+		 <- genEl;;
+		 -> rrel_1: rrel_assign: rrel_const: rrel_node: rrel_scp_var: _checked;;
+
+		 => nrel_goto: .proc_prod_operator_U1;;
+		 *);;
+
+                -> .proc_prod_operator_U1 (*
+		  <- genElStr3;;
+		  -> rrel_1: rrel_fixed: rrel_scp_var: _checked;;
+		  -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+		  -> rrel_3: rrel_fixed: rrel_scp_var: _vota;;
+
+		  => nrel_goto: .proc_prod_operator_R1;;
+		*);;
+                 
+		-> .proc_prod_operator_R1 (*
+		  <- call;;
+		  -> rrel_1: rrel_fixed: rrel_scp_const: proc_findingrvalue125;;
+		  -> rrel_2: rrel_fixed: rrel_scp_const: .proc_prod_operator_R1_params (*
+				-> rrel_1: rrel_fixed: rrel_scp_var: _vota;;
+                                -> rrel_2: rrel_fixed: rrel_scp_var: _razm3;;
+				-> rrel_3: rrel_fixed: rrel_scp_var: _ssilk3;;
+                               
+			*);;
+		  -> rrel_3: rrel_assign: rrel_scp_var: _descr71;;
+
+		  => nrel_goto: .proc_prod_operator_ZV7;;
+		*);;
+
+		-> .proc_prod_operator_ZV7 (*
+		  <- waitReturn;;
+		  -> rrel_1: rrel_fixed: rrel_scp_var: _descr71;;
+
+		  => nrel_goto: .proc_prod_operator_ZV14B;;
+		*);;
+		
+		-> .proc_prod_operator_ZV14B (*
+		  <- call;;
+		  -> rrel_1: rrel_fixed: rrel_scp_const: proc_genera_prod;;
+		  -> rrel_2: rrel_fixed: rrel_scp_const: .proc_prod_operator_ZV14B_params (*
+				-> rrel_1: rrel_fixed: rrel_scp_var: _xz1;;
+                                -> rrel_2: rrel_fixed: rrel_scp_var: _razm3;; 
+                                -> rrel_3: rrel_fixed: rrel_scp_var: _ssilk2;;   
+			*);;
+		  -> rrel_3: rrel_assign: rrel_scp_var: _descr110;;
+
+		  => nrel_goto:  .proc_prod_operator_ZV15B;;
+		*);;
+
+                -> .proc_prod_operator_ZV15B (*
+		  <- waitReturn;;
+		  -> rrel_1: rrel_fixed: rrel_scp_var: _descr110;;
+
+		  => nrel_goto: .proc_prod_operator_Dt222;;
+		*);;
+
+                 -> .proc_prod_operator_Dt222 (*
+		  <- contAssign;;
+		  -> rrel_1: rrel_assign: rrel_scp_var: _two;;
+		  -> rrel_2: rrel_fixed: rrel_scp_const: [1];;
+
+		  => nrel_goto: .proc_prod_operator_Dt2;;
+		*);; 
+
+		  -> .proc_prod_operator_Dt2 (*
+		  <- searchSetStr3;;
+
+		  -> rrel_1: rrel_fixed: rrel_scp_var: _connection;;
+		  -> rrel_2: rrel_assign:  rrel_pos_const_perm: rrel_scp_var: _arc01;; 
+		  -> rrel_3: rrel_assign: rrel_scp_var: _kon;;
+
+		  -> rrel_set_3: rrel_assign: rrel_scp_var: _fufu1;;
+
+		  => nrel_then: .proc_prod_operator_ZV9a;;
+		  => nrel_else: .proc_prod_operator_return;;
+		*);;
+
+		  -> .proc_prod_operator_ZV9a (*
+		  <- searchElStr3;;
+
+		  -> rrel_1: rrel_fixed: rrel_scp_var: _fufu1;;
+		  -> rrel_2: rrel_assign:  rrel_pos_const_perm: rrel_scp_var: _arc02;; 
+		  -> rrel_3: rrel_assign: rrel_scp_var: _kon15;;
+
+		  => nrel_then: .proc_prod_operator_ZV10a;;
+		  => nrel_else: .proc_prod_operator_xxx1;;
+		*);;
+
+
+                 -> .proc_prod_operator_ZV10a (*
+		 <- eraseEl;;
+		 -> rrel_1: rrel_erase: rrel_fixed: rrel_scp_var: _arc02;;
+
+		 => nrel_goto: .proc_prod_operator_tyrok;;
+		 *);;
+
+                -> .proc_prod_operator_tyrok (*
+		  <- searchElStr3;;
+
+		  -> rrel_1: rrel_fixed: rrel_scp_var: _checked;;
+		  -> rrel_2: rrel_assign:  rrel_pos_const_perm: rrel_scp_var: _arc02;; 
+		  -> rrel_3: rrel_fixed: rrel_scp_var: _kon15;;
+
+		  => nrel_then: .proc_prod_operator_ZV9a;;
+		  => nrel_else: .proc_prod_operator_gg1;;
+		*);;
+
+                  -> .proc_prod_operator_gg1 (*
+		  <- searchElStr5;;
+		  -> rrel_1: rrel_assign: rrel_scp_var: _T1;;
+		  -> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc;;
+		  -> rrel_3: rrel_fixed: rrel_scp_var: _kon15;;
+		  -> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+		  -> rrel_5: rrel_fixed: rrel_scp_const: nrel_value;;
+
+		   => nrel_then: .proc_prod_operator_yy1;;
+		  => nrel_else: .proc_prod_operator_gg2;;
+		*);;
+
+	          -> .proc_prod_operator_gg2 (*
+		  <- searchElStr5;;
+		  -> rrel_1: rrel_assign: rrel_scp_var: _T2;;
+		  -> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc;;
+		  -> rrel_3: rrel_fixed: rrel_scp_var: _kon15;;
+		  -> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+		  -> rrel_5: rrel_fixed: rrel_scp_const: nrel_identification;;
+
+		   => nrel_then: .proc_prod_operator_zz1;;
+		  => nrel_else: .proc_prod_operator_return;;
+		*);;
+
+                 -> .proc_prod_operator_yy1 (*
+		  <- call;;
+		  -> rrel_1: rrel_fixed: rrel_scp_const: proc_findingrvalue125;;
+		  -> rrel_2: rrel_fixed: rrel_scp_const: .proc_prod_operator_yy1_params (*
+				-> rrel_1: rrel_fixed: rrel_scp_var: _kon15;;
+                                -> rrel_2: rrel_fixed: rrel_scp_var: _razm;;
+				-> rrel_3: rrel_fixed: rrel_scp_var: _ssilk;;
+                               
+			*);;
+		  -> rrel_3: rrel_assign: rrel_scp_var: _descr7;;
+
+		  => nrel_goto: .proc_prod_operator_yy2;;
+		*);;
+
+		-> .proc_prod_operator_yy2 (*
+		  <- waitReturn;;
+		  -> rrel_1: rrel_fixed: rrel_scp_var: _descr7;;
+
+		  => nrel_goto: .proc_prod_operator_yy3;;
+		*);;
+
+                -> .proc_prod_operator_yy3 (*
+		  <- searchElStr3;;
+		  -> rrel_1: rrel_fixed: rrel_scp_var: _ssilk;;
+		  -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc66;;
+		  -> rrel_3: rrel_assign: rrel_scp_var: _one;;
+
+		  => nrel_then: .proc_prod_operator_yy5;;
+		  => nrel_else: .proc_prod_operator_return;;
+		*);;
+
+              
+		 -> .proc_prod_operator_yy5 (*
+                  <- contMult;;
+                   -> rrel_1: rrel_fixed: rrel_scp_var: _two;;
+                   -> rrel_2: rrel_fixed: rrel_scp_var: _one;;
+		   -> rrel_3: rrel_fixed: rrel_scp_var: _two;;
+         		
+                    => nrel_goto: .proc_prod_operator_yy6;;
+		   *);;
+
+                 -> .proc_prod_operator_yy6 (*
+		 <- eraseEl;;
+		 -> rrel_1: rrel_fixed: rrel_const: rrel_erase: rrel_node: rrel_scp_var: _razm;;
+
+		 => nrel_goto: .proc_prod_operator_yy7;;
+		 *);;
+
+                -> .proc_prod_operator_yy7 (*
+		 <- eraseEl;;
+		 -> rrel_1: rrel_fixed: rrel_const: rrel_erase: rrel_node: rrel_scp_var: _ssilk;;
+
+		 => nrel_goto: .proc_prod_operator_yy8;;
+		 *);;
+
+                 ->.proc_prod_operator_yy8 (*
+		 <- genEl;;
+		 -> rrel_1: rrel_assign: rrel_const: rrel_node: rrel_scp_var: _razm;;
+
+		 => nrel_goto: .proc_prod_operator_yy9;;
+		 *);; 
+
+                 -> .proc_prod_operator_yy9 (*
+		 <- genEl;;
+		 -> rrel_1: rrel_assign: rrel_const: rrel_node: rrel_scp_var: _ssilk;;
+
+		 => nrel_goto: .proc_prod_operator_ZV9a;;
+		 *);; 
+
+		-> .proc_prod_operator_zz1 (*
+		  <- searchElStr5;;
+		  -> rrel_1: rrel_fixed: rrel_scp_var: _T2;;
+		  -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc3;;
+		  -> rrel_3: rrel_assign: rrel_scp_var: _one;;
+                  -> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc4;;
+                  -> rrel_5: rrel_assign: rrel_scp_var: _dec;;
+
+		  => nrel_then: .proc_prod_operator_zz3;;
+		  => nrel_else: .proc_prod_operator_return;;
+		*);;
+
+              
+                  -> .proc_prod_operator_zz3 (*
+                  <- contMult;;
+                   -> rrel_1: rrel_fixed: rrel_scp_var: _two;;
+                   -> rrel_2: rrel_fixed: rrel_scp_var: _one;;
+		   -> rrel_3: rrel_fixed: rrel_scp_var: _two;;
+         		
+                    => nrel_goto: .proc_prod_operator_ZV9a;;
+		   *);;
+
+                   -> .proc_prod_operator_xxx1 (*
+		  <- searchElStr3;;
+		  -> rrel_1: rrel_fixed: rrel_scp_var: _ssilk3;;
+		  -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc66;;
+		  -> rrel_3: rrel_assign: rrel_scp_var: _three;;
+
+		  => nrel_then: .proc_prod_operator_xxx2;;
+		  => nrel_else: .proc_prod_operator_return;;
+		*);;
+
+                  -> .proc_prod_operator_xxx2 (*
+                  <- contMult;;
+                   -> rrel_1: rrel_fixed: rrel_scp_var: _two;;
+                   -> rrel_2: rrel_fixed: rrel_scp_var: _three;;
+		   -> rrel_3: rrel_fixed: rrel_scp_var: _two;;
+         		
+                    => nrel_goto: .proc_prod_operator_xxx33;;
+		   *);;
+
+                 -> .proc_prod_operator_xxx33 (*
+		  <- ifEq;;
+		  -> rrel_1: rrel_fixed: rrel_scp_var: _two;;
+		  -> rrel_2: rrel_fixed: rrel_scp_const: [36];;
+
+		  => nrel_then: .proc_prod_operator_ppp3;;
+		  => nrel_else: .proc_prod_operator_xxx3;;
+		*);; 
+
+                
+                   -> .proc_prod_operator_ppp3 (*
+		  <- searchElStr5;;
+		  -> rrel_1: rrel_fixed: rrel_scp_var: _razm3;;
+		  -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc66;;
+		  -> rrel_3: rrel_assign: rrel_scp_var: _kbos;;
+                  -> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc633;;
+                  -> rrel_5: rrel_fixed: rrel_scp_const: rrel_second;;
+
+		  => nrel_then: .proc_prod_operator_ppp4;;
+		  => nrel_else: .proc_prod_operator_return;;
+		*);;
+
+                  -> .proc_prod_operator_ppp4 (*
+		  <- searchElStr3;;
+		  -> rrel_1: rrel_fixed: rrel_scp_var: _ssilk2;;
+		  -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc6;;
+		  -> rrel_3: rrel_assign: rrel_scp_var: _jimi;;
+
+		  => nrel_then: .proc_prod_operator_ppp5;;
+		  => nrel_else: .proc_prod_operator_return;;
+		  *);;
+
+                 -> .proc_prod_operator_ppp5 (*
+		  <- genElStr5;;
+		  -> rrel_1: rrel_fixed: rrel_scp_var: _jimi;;
+		  -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+		  -> rrel_3: rrel_fixed: rrel_scp_var: _two;;
+		  -> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+		  -> rrel_5: rrel_fixed: rrel_scp_var: _kbos;;
+
+		  => nrel_goto: .proc_prod_operator_JJJ;;
+		*);;
+
+		-> .proc_prod_operator_JJJ (*
+		 <- eraseEl;;
+		 -> rrel_1: rrel_fixed: rrel_const: rrel_erase: rrel_node: rrel_scp_var: _fufu1;;
+
+		 => nrel_goto: .proc_prod_operator_xxx4;;
+		 *);;
+
+                 -> .proc_prod_operator_xxx4(*
+		 <- eraseEl;;
+		 -> rrel_1: rrel_fixed: rrel_const: rrel_erase: rrel_node: rrel_scp_var: _checked;;
+
+		 => nrel_goto: .proc_prod_operator_djum1;;
+		 *);;
+		
+                  -> .proc_prod_operator_djum1 (*
+		 <- eraseEl;;
+		 -> rrel_1: rrel_fixed: rrel_const: rrel_erase: rrel_node: rrel_scp_var: _ssilk;;
+
+		 => nrel_goto: .proc_prod_operator_djum2;;
+		 *);;
+
+                 -> .proc_prod_operator_djum2(*
+		 <- eraseEl;;
+		 -> rrel_1: rrel_fixed: rrel_const: rrel_erase: rrel_node: rrel_scp_var: _razm;;
+
+		 => nrel_goto: .proc_prod_operator_djum7;;
+		 *);;
+
+                 -> .proc_prod_operator_djum7(*
+		 <- eraseEl;;
+		 -> rrel_1: rrel_fixed: rrel_const: rrel_erase: rrel_node: rrel_scp_var: _ssilk3;;
+
+		 => nrel_goto: .proc_prod_operator_djum8;;
+		 *);;
+
+                 -> .proc_prod_operator_djum8(*
+		 <- eraseEl;;
+		 -> rrel_1: rrel_fixed: rrel_const: rrel_erase: rrel_node: rrel_scp_var: _razm3;;
+
+		 => nrel_goto: .proc_prod_operator_djum3;;
+		 *);;
+
+                
+                  -> .proc_prod_operator_djum3(*
+		 <- eraseEl;;
+		 -> rrel_1: rrel_fixed: rrel_const: rrel_erase: rrel_node: rrel_scp_var: _ssilk2;;
+
+		 => nrel_goto: .proc_prod_operator_djum4;;
+		 *);;
+
+                 -> .proc_prod_operator_djum4(*
+		 <- eraseEl;;
+		 -> rrel_1: rrel_fixed: rrel_const: rrel_erase: rrel_node: rrel_scp_var: _razm2;;
+
+		 => nrel_goto: .proc_prod_operator_return;;
+		 *);;
+
+		-> .proc_prod_operator_return (*
+		<- return;;
+		*);;
+	*);;
+*);;
+             
+		
+	

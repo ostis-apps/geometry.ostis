@@ -1,0 +1,78 @@
+sc_node_not_relation -> concept_segment;;
+
+concept_segment => nrel_main_idtf:
+	[отрезок]
+	(* <- lang_ru;;	*);
+	[segment]
+	(* <- lang_en;;	*);;
+
+concept_segment => nrel_idtf: [Геометрический отрезок] (* <- lang_ru;; *);;
+
+concept_segment => nrel_idtf: [Понятие отрезка] (* <- lang_ru;; *);;
+
+concept_segment => nrel_idtf: [Понятие геометрического отрезка] (* <- lang_ru;; *);;
+
+concept_segment => nrel_idtf: [Класс отрезков] (* <- lang_ru;; *);;
+
+concept_segment => nrel_idtf: [Множество всевозможных отрезков] (* <- lang_ru;; *);;
+
+concept_segment => nrel_idtf: [Множество знаков всевозможных отрезков] (* <- lang_ru;; *);;
+
+concept_segment <= nrel_strict_inclusion: concept_rectilinear_figure;;
+
+concept_segment <= nrel_strict_inclusion: concept_geometric_figure_with_all_boundary_points;;
+
+concept_segment <= nrel_strict_inclusion: concept_geometric_figure_of_limited_size;;
+
+concept_segment <= nrel_using_constants:
+	{
+	concept_straight_line; 
+	concept_geometric_point; 
+	rrel_between
+	};;	
+	
+concept_segment <- rrel_key_sc_element: 
+        ... 
+	(*
+	=> nrel_main_idtf: [Утв.(отрезок; длина*)] (* <- lang_ru;; *);;
+	-> rrel_main_key_sc_element: stat_length_segment;;
+	-> rrel_key_sc_element: nrel_length;;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Каждый отрезок имеет определенную длину, отличную от нуля.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+	
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(отрезок; конгруэнтность*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Два отрезка называются равными, если равны их длины.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(отрезок; длина*; геометрическая точка)] (* <- lang_ru;; *);;
+	-> rrel_main_key_sc_element: stat_segment_length_sum_geometric_point;;
+	-> rrel_key_sc_element: nrel_length; concept_geometric_point;;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Длина отрезка равна сумме длин частей, на которые он разбивается любой его точкой.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+	
+concept_segment -> rrel_example: struct_Segment_A_B;;

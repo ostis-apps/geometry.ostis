@@ -1,0 +1,67 @@
+sc_node_struct -> ut7; ut8; ut9; segment_BC; segment_CD; struct_Circle_A_B; struct_Circle_P_O; struct_Square_A_B_C_D; struct_Square_C_D_M_N; struct_Triangle_P_Q_R; struct_Triangle_D_E_F; struct_Triangle_K_L_M;;
+ut8 => nrel_main_idtf: [Формула вычисления длины окружности] (* <- lang_ru;; *);;
+ut9 => nrel_main_idtf: [Формула вычисления площади квадрата] (* <- lang_ru;; *);;
+struct_Circle_A_B => nrel_main_idtf: [Окружность (A;B)] (* <- lang_ru;; *);;
+struct_Circle_P_O => nrel_main_idtf: [Окружность (P;O)] (* <- lang_ru;; *);;
+struct_Square_A_B_C_D => nrel_main_idtf: [Квадрат (A;B;C;D)] (* <- lang_ru;; *);;
+struct_Square_C_D_M_N => nrel_main_idtf: [Квадрат (C;D;M;N)] (* <- lang_ru;; *);;
+struct_Triangle_P_Q_R => nrel_main_idtf: [Треугольник (P;Q;R)] (* <- lang_ru;; *);;
+struct_Triangle_D_E_F => nrel_main_idtf: [Треугольник (D;E;F)] (* <- lang_ru;; *);;
+struct_Triangle_K_L_M => nrel_main_idtf: [Треугольник (K;L;M)] (* <- lang_ru;; *);;
+segment_BC => nrel_main_idtf: [Отрезок (B;C)] (* <- lang_ru;; *);;
+segment_CD => nrel_main_idtf: [Отрезок (C;D)] (* <- lang_ru;; *);;
+concept_circle -> rrel_example: struct_Circle_A_B; struct_Circle_P_O;;
+concept_square -> rrel_example: struct_Square_A_B_C_D; struct_Square_C_D_M_N;;
+concept_segment -> rrel_example: segment_BC;;
+struct_Square_A_B_C_D => nrel_side: segment_BC; segment_CD;;
+struct_Square_C_D_M_N => nrel_side: segment_CD;;
+struct_Square_A_B_C_D => nrel_area: s;;
+struct_Circle_A_B => nrel_length: len;;
+struct_Circle_A_B => nrel_radius: segment_BC;;
+segment_BC => nrel_length: BC;;
+nrel_similarity -> 
+	...
+	(* -> struct_Triangle_P_Q_R;; 
+	   -> struct_Triangle_D_E_F;; *);;
+nrel_similarity -> 
+	...
+	(* -> struct_Triangle_P_Q_R;; 
+           -> struct_Triangle_K_L_M;; *);;
+nrel_be_inscribed -> 
+	... 
+	(* -> rrel_inscribed_geometric_figure: struct_Circle_P_O;;
+	   -> rrel_described_geometric_figure: struct_Square_C_D_M_N;; *);;
+	   
+628 <= nrel_identification: ... (* -> rrel_decimal: [6,28];; *);;
+200 <= nrel_identification: ... (* -> rrel_decimal: [2];; *);;
+
+len <= nrel_value:
+		      len1
+		      (* -> rrel_m:
+ 				   ...
+				   (* <= nrel_identification:
+						             ...
+						             (* -> rrel_decimal: [18,84];; *);;
+				    *);;
+                      *);;
+
+concept_circle <= nrel_main_statements: 
+                                         ...
+					 (* 
+                                            -> ut8	 
+                                                   (* 
+                                                   -> rrel_if: Pattern3;;
+                                                   -> rrel_then: Pattern4;; 
+                                                   *);;
+                                         *);;
+                                         
+concept_square <= nrel_main_statements: 
+                                         ...
+					 (* 
+                                            -> ut9	 
+                                                   (* 
+                                                   -> rrel_if: Pattern6;;
+                                                   -> rrel_then: Pattern9;; 
+                                                   *);;
+                                         *);;
+                                         

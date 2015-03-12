@@ -1,0 +1,131 @@
+sc_node_not_relation -> concept_angle;;
+
+concept_angle => nrel_main_idtf:
+	[угол]
+	(* <- lang_ru;; *);
+	[angle]
+	(* <- lang_en;; *);;
+
+concept_angle => nrel_idtf: [плоский угол] (* <- lang_ru;; *);;
+
+concept_angle => nrel_idtf: [планарный угол] (* <- lang_ru;; *);;
+
+concept_angle => nrel_idtf: [Понятие угла] (* <- lang_ru;; *);;
+
+concept_angle => nrel_idtf: [Класс углов] (* <- lang_ru;; *);;
+
+concept_angle => nrel_idtf: [Множество всевозможных углов] (* <- lang_ru;; *);;
+
+concept_angle => nrel_idtf: [Множество знаков всевозможных углов] (* <- lang_ru;; *);;
+
+concept_angle <= nrel_strict_inclusion: concept_geometric_figure_of_unlimited_size;;
+
+concept_angle => nrel_strict_inclusion: concept_planar_angle;;
+
+concept_angle => nrel_strict_inclusion: concept_linear_angle;;
+
+concept_angle => nrel_strict_inclusion: concept_non_convex_angle;;
+
+concept_angle => nrel_strict_inclusion: concept_straight_angle;;
+
+concept_angle => nrel_strict_inclusion: concept_full_angle;;
+
+concept_angle => nrel_strict_inclusion: concept_zero_angle;;
+
+concept_angle <= nrel_subdividing:
+	...
+	(*
+	=> nrel_main_idtf: [Разбиение по признаку величины угла] (* <- lang_ru;; *);;
+	-> concept_acute_angle;
+	concept_right_angle;
+	concept_obtuse_angle;;	
+	*);;
+
+concept_angle <= nrel_using_constants:
+	{
+	concept_geometric_figure;
+	concept_ray; 
+	nrel_vertex
+	};;
+	
+concept_angle <- rrel_key_sc_element: 
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(угол; совпадение*; сторона*; вершина*; конгруэнтность*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Два угла называются равными, если они могут быть совмещены так, что совпадут их вершины и соответствующие стороны.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_angle <- rrel_key_sc_element: 
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(угол; мера угла*; конгруэнтность*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Равные углы имеют одинаковую угловую меру.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_angle <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(угол; сторона*; параллельность*; мера угла*; конгруэнтность*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Если стороны одного угла соответственно параллельны сторонам другого угла, то такие угли или равны, или в сумме составляют 180 градусов.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_angle <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(угол; сторона*; параллельность*)] (* <- lang_ru;; *);;
+	-> rrel_main_key_sc_element: stat_straight_line_parallelism_intersection_ray_side_of_the_angle_proportionality;;
+	-> rrel_key_sc_element: nrel_side; nrel_parallelism;;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Параллельные прямые, пересекающие стороны угла, отсекают на сторонах пропорциональные отрезки.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+	
+concept_angle <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(угол; сторона*; параллельность*; отрезок; конгруэнтность*)] (* <- lang_ru;; *);;
+	-> rrel_main_key_sc_element: stat_straight_line_parallelism_intersection_ray_side_of_the_angle_proportionality_congruence;;
+	-> rrel_key_sc_element: nrel_side; nrel_parallelism; concept_segment; nrel_congruence;;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Если параллельные прямые, пересекающие стороны угла, отсекают на одной его стороне равные  отрезки, то они отсекают равные отрезки и на другой его стороне.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_angle -> rrel_example: struct_Acute_Angle_K_L_M;;
+concept_angle -> rrel_example: struct_Non_convex_angle_A_B_K;;
+concept_angle -> rrel_example: struct_Straight_angle_A_O_B;;
+concept_angle -> rrel_example: struct_Zero_Angle_N_K_N;;
+concept_angle -> rrel_example: struct_Full_angle_P_K_P;;
+concept_angle -> rrel_example: struct_Right_Angle_P_T_R;;
+concept_angle -> rrel_example: struct_Obtuse_angle_T_P_R;;

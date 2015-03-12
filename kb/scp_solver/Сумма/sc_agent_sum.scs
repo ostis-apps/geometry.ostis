@@ -1,0 +1,56 @@
+sc_agent_sum
+=> nrel_main_idtf:
+	[sc-агент сумм] (* <- lang_ru;; *);
+	[sc-agent of su] (* <- lang_en;; *);
+<- abstract_sc_agent;
+=> nrel_primary_initiation_condition: (sc_event_add_output_arc => question_initiated);
+=> nrel_initiation_condition_and_result: (..sc_agent_sum_condition => ..sc_agent_sum_result);
+<= nrel_sc_agent_key_sc_elements: 
+	{
+		question_initiated;
+		question;
+		question_calc
+	};
+<- key_sc_element:
+	...
+	(*
+	<- sc_description_of_sc_agent_behavior;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Задачей sc-агента является сумм.];;
+		*);;
+	*);
+=> nrel_inclusion: ...
+	(*
+		<- platform_independent_abstract_sc_agent;;
+		<= nrel_sc_agent_program: 
+		{
+			agent_sum;
+                        proc_sum;
+      	                proc_findingrvalue125;
+			proc_finding_value;
+                        proc_genera;
+                        proc_check;
+                        proc_razm
+		};;
+		-> sc_agent_sum_scp (* <- active_sc_agent;; *);;
+	*);;
+
+..sc_agent_sum_condition
+= [*
+	question_calc _-> .._question;;
+	question_initiated _-> .._question;;
+	question _-> .._question;;
+	.._question _-> .._parameter;;
+*];;
+
+..sc_agent_sum_result
+= [*
+	question_calc _-> .._question;;
+	question_finished _-> .._question;;
+	question _-> .._question;;
+	.._question _=> nrel_answer:: .._answer;;
+	.._question _-> .._parameter;;
+*];;

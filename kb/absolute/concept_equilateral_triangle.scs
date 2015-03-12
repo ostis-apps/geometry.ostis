@@ -1,0 +1,210 @@
+/*sc_node_not_relation -> concept_equilateral_triangle;;
+
+concept_equilateral_triangle => nrel_main_idtf:
+	[равносторонний треугольник]
+	(* <- lang_ru;; *);
+	[equilateral triangle]
+	(* <- lang_en;;	*);;
+
+concept_equilateral_triangle => nrel_idtf: [Правильный треугольник] (* <- lang_ru;; *);;
+
+concept_equilateral_triangle => nrel_idtf: [Класс равносторонних треугольников] (* <- lang_ru;; *);;
+
+concept_equilateral_triangle => nrel_idtf: [Класс правильных треугольников] (* <- lang_ru;; *);;
+
+concept_equilateral_triangle => nrel_idtf: [Понятие равностороннего треугольника] (* <- lang_ru;; *);;
+
+concept_equilateral_triangle => nrel_idtf: [Понятие правильных треугольника] (* <- lang_ru;; *);;
+
+concept_equilateral_triangle => nrel_idtf: [Множество всевозможных равносторонних треугольников] (* <- lang_ru;; *);;
+
+concept_equilateral_triangle => nrel_idtf: [Множество всевозможных правильных треугольников] (* <- lang_ru;; *);;
+
+concept_equilateral_triangle => nrel_idtf: [Множество знаков всевозможных равносторонних треугольников] (* <- lang_ru;; *);;
+
+concept_equilateral_triangle => nrel_idtf: [Множество знаков всевозможных правильных треугольников] (* <- lang_ru;; *);;
+
+concept_equilateral_triangle => nrel_idtf: [Треугольник с тремя равными сторонами] (* <- lang_ru;; *);;
+
+concept_equilateral_triangle => nrel_idtf: [Равносторонний многоугольник с тремя сторонами] (* <- lang_ru;; *);;
+
+concept_equilateral_triangle => nrel_idtf: [Правильный многоугольник с тремя сторонами] (* <- lang_ru;; *);;
+
+concept_equilateral_triangle <= nrel_strict_inclusion: concept_isosceles_triangle;;
+
+concept_equilateral_triangle <= nrel_using_constants:
+				{
+				concept_triangle; 
+				nrel_side; 
+				nrel_congruence
+				};;	
+
+concept_equilateral_triangle <- rrel_key_sc_element: 
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(равносторонний треугольник; внутренний угол*; острый угол)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[В любом равностороннем треугольнике мера каждого из углов равна 60 угловым градусам.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_equilateral_triangle <- rrel_key_sc_element: 
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(равносторонний треугольник; высота*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[В любом равностороннем треугольнике все высоты конгруэнтны между собой.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_equilateral_triangle <- rrel_key_sc_element: 
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(равносторонний треугольник; медиана*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[В любом равностороннем треугольнике все медианы конгруэнтны между собой.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_equilateral_triangle <- rrel_key_sc_element: 
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(равносторонний треугольник; биссектриса*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[В любом равностороннем треугольнике все биссектрисы конгруэнтны между собой.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_equilateral_triangle <- rrel_key_sc_element: 
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(равносторонний треугольник; высота*; медиана*; биссектриса*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Медиана, высота и биссектриса, принадлежащие одному равностороннему треугольнику, конгруэнтны между собой.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_equilateral_triangle <- rrel_key_sc_element: 
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(равносторонний треугольник; внутренний угол*; острый угол)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[В любом равностороннем треугольнике мера каждого из углов равна 60 угловым градусам.]
+			(* <- lang_ru;; *);; 
+		*);;
+	*);;
+
+concept_equilateral_triangle <- rrel_key_sc_element: 
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(равносторонний треугольник; радиус*; вписанность*; описанность*; окружность)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Радиус описанной окружности равностороннего треугольника равен удвоенному радиусу вписанной окружности того же треугольника.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_equilateral_triangle <- rrel_key_sc_element: 
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(равносторонний треугольник; радиус*; вписанность*; окружность; сторона*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Для каждого равностороннего треугольника выполняется следующее числовое соотношение: r^2 = (3*a^2)/36 где r - величина радиуса вписанной окружности указанного треугольника, a - величина стороны этого треугольника.] 
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_equilateral_triangle <- rrel_key_sc_element: 
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(равносторонний треугольник; радиус*; описанность*; окружность; сторона*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Для каждого равностороннего треугольника выполняется следующее числовое соотношение: R^2 = (3*a^2)/9, где R - величина радиуса описанной окружности указанного треугольника, a - величина стороны этого треугольника.]
+			(* <- lang_ru;; *);;		
+		*);;
+	*);;
+
+concept_equilateral_triangle <- rrel_key_sc_element: 
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(равносторонний треугольник; радиус*; описанность*; окружность; сторона*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Для каждого равностороннего треугольника выполняется следующее числовое соотношение: P^2 = 9*a^2 = 27R^2 = 108r^2
+			где P - величина периметра указанного треугольника, r - величина радиуса вписанной окружности этого треугольника,R - величина радиуса описанной окружности рассматриваемого треугольника,a - величина стороны этого треугольника.] (* <- lang_ru;; *);; 
+		*);;
+	*);;
+
+concept_equilateral_triangle <- rrel_key_sc_element: 
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(равносторонний треугольник; высота*; сторона*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Для каждого равностороннего треугольника выполняется следующее числовое соотношение: h = 3a/2, где h - величина высоты указанного треугольника, a - величина стороны этого треугольника.] 
+			(* <- lang_ru;; *);; 
+		*);;
+	*);;
+
+concept_equilateral_triangle <- rrel_key_sc_element: 
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(равносторонний треугольник; высота*; сторона*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Для каждого равностороннего треугольника выполняется следующее числовое соотношение: S^2 = (3a^4)/16 = (27R^4)/16 = 27r^4 где S - величина площади указанного треугольника,r - величина радиуса вписанной окружности этого треугольника,R - величина радиуса описанной окружности рассматриваемого треугольника,a - величина стороны описываемого треугольника.]
+			(* <- lang_ru;; *);;		
+		*);;
+	*);;
+
+concept_equilateral_triangle -> rrel_example: struct_Equilateral_triangle_X_Y_Z;;*/

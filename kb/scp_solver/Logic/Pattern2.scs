@@ -1,0 +1,9 @@
+Pattern2 = [*  concept_triangle _-> _xyz;;
+    _xyz _=> nrel_side:: _a2; _b2; _c2;;
+    _a2 _=> nrel_length:: _a1;;
+    _b2 _=> nrel_length:: _b1;;
+    _c2 _=> nrel_length:: _c1;;
+    _xyz _=> nrel_perimeter:: _perim;;
+ *];;
+
+

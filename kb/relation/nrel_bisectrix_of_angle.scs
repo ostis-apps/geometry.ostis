@@ -1,0 +1,85 @@
+sc_node_norole_relation -> nrel_bisectrix_of_angle;;
+
+nrel_bisectrix_of_angle => nrel_main_idtf:
+	[биссектриса угла*]
+	(* <- lang_ru;; *);
+	[bisectrix of angle*]
+	(* <- lang_en;; *);;
+
+nrel_bisectrix_of_angle => nrel_idtf:
+	[быть биссектрисой угла*]
+	(* <- lang_ru;; *);;
+
+nrel_bisectrix_of_angle <- sc_relation;;
+
+nrel_bisectrix_of_angle <- binary_relation;;
+
+nrel_bisectrix_of_angle <- oriented_relation;;
+
+nrel_bisectrix_of_angle => nrel_definitional_domain:
+	... 
+	(*
+	<= nrel_combination: 
+		{	 
+		concept_planar_angle;
+		concept_closed_ray
+		};;
+	*);;
+	
+
+nrel_bisectrix_of_angle => nrel_first_domain: 
+	concept_planar_angle;;
+
+nrel_bisectrix_of_angle => nrel_second_domain: 
+	concept_closed_ray;;
+
+	
+nrel_bisectrix_of_angle <= nrel_using_constants:
+	{ 
+	concept_ray; 
+	nrel_vertex_of_angle; 
+	concept_angle;  
+	nrel_side
+	};;
+
+nrel_bisectrix_of_angle <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(угол; биссектриса*; точка; расстояние*, конгруэнтность*, сторона*, продолжение*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Любая точка биссектрисы угла равноудалена от его сторон (или продолжения сторон).]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(угол; биссектриса*; точка; вершина*, центр*, окружность, касаться*, сторона*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Любая точка биссектрисы угла, за исключением вершины угла, является центром окружности, касающейся сторон (или продолжений сторон) этого угла.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(угол; биссектриса*; ось симметрии*, продолжение*, сторона*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Биссектриса угла является осью симметрии самого угла, а также угла, образованного продолжением его сторон.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+

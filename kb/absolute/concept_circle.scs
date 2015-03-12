@@ -1,0 +1,168 @@
+sc_node_not_relation -> concept_circle;;
+
+concept_circle => nrel_main_idtf:
+	[окружность]
+	(* <- lang_ru;;	*);
+	[circle]
+	(*<- lang_en;; *);;
+
+concept_circle => nrel_idtf: [Класс окружностей] (* <- lang_ru;; *);;
+
+concept_circle => nrel_idtf: [Понятие окружности] (* <- lang_ru;; *);;
+
+concept_circle => nrel_idtf: [Множество всевозможных окружностей] (* <- lang_ru;; *);;
+
+concept_circle => nrel_idtf: [Множество знаков всевозможных окружностей] (* <- lang_ru;; *);;
+
+concept_circle <= nrel_strict_inclusion: concept_planar_line;;
+
+concept_circle <= nrel_strict_inclusion: concept_geometric_figure_of_limited_size;;
+
+concept_circle <= nrel_strict_inclusion: concept_linear_figure;;
+
+concept_circle => nrel_strict_inclusion: concept_circle_arc;;
+
+concept_circle <= nrel_using_constants:
+	{
+	concept_geometric_figure; 
+	concept_geometric_point; 
+	concept_plane; 
+	nrel_distance; 
+	nrel_centre
+	};;
+	
+concept_circle <- rrel_key_sc_element: 
+        ...
+	(*
+	=> nrel_main_idtf: [Утв.(окружность; длина*; радиус*)] (* <- lang_ru;; *);;
+	-> rrel_main_key_sc_element: stat_circle_length;;
+	-> rrel_key_sc_element: nrel_radius; nrel_lenght;;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+        -> rrel_example: 
+		[Длина окружности вычисляется как произведение удвоенного радиуса на число Пи.]
+		(* <- lang_ru;; *);;
+		*);;
+	*);;
+	
+concept_circle <- rrel_key_sc_element: 
+        ...
+	(*
+	=> nrel_main_idtf: [Утв.(окружность; длина*; диаметр*)] (* <- lang_ru;; *);;
+	-> rrel_main_key_sc_element: stat_lenght_circle_diameter;;
+	-> rrel_key_sc_element: nrel_length; nrel_diameter;;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+          -> rrel_example: 
+			[Отношение длины окружности к ее диаметру не зависит от окружности, т.е одно и то же для любых двух окружностей.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+
+concept_circle <- rrel_key_sc_element: 
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(окружность; хорда*; перпендикуляр*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Диаметр окружности, перпендикулярный хорде, делит эту хорду пополам.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_circle <- rrel_key_sc_element: 
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(окружность; хорда*; конгруэнтность*; расстояние*; центр окружности*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Равные(конгруэнтные) хорды окружности находятся на равном расстоянии от центра окружности.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+	
+concept_circle <- rrel_key_sc_element: 
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(окружность; геометрическая точка; перпендикуляр*; диаметр*; среднее геометрическое*; отрезок)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Перпендикуляр, опущенный из точки окружности на диаметр, есть среднее геометрическое отрезков диаметра.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+	
+concept_circle <- rrel_key_sc_element: 
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(окружность; геометрическая точка; прямая; касательная*; перпендикуляр*; радиус*; диаметр*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Прямая касается окружности тогда и только тогда, когда радиус (и диаметр) окружности, проходящий через общую точку прямой и этой окружности, перпендикулярен данной прямой.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+	
+concept_circle <- rrel_key_sc_element: 
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(окружность; геометрическая точка; плоскость; касательная*; отрезок; конгруэнтность*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Если из некоторой точки плоскости проведены две касательные к окружности, то отрезки касательных от этой точки до точек касания равны (конгруэнтны).]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+	
+concept_circle <- rrel_key_sc_element: 
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(окружность; геометрическая точка; плоскость; касательная*; прямая; центр*; угол)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Если из некоторой точки плоскости проведены две касательные к окружности, то прямая, проходящая через центр окружности и эту точку, делит угол между касательными пополам.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+	
+concept_circle <- rrel_key_sc_element: 
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(окружность; касательная*; прямая; радиус*)] (* <- lang_ru;; *);;
+	-> rrel_main_key_sc_element: stat_circle_tangent_perpendicular_radius;;
+	-> rrel_key_sc_element: nrel_radius; nrel_perpendicularity; nrel_tangent;;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Касательная к окружности перпендикулярна радиусу этой окружности.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;	
+
+concept_circle -> rrel_example: struct_Circle_O_R;;

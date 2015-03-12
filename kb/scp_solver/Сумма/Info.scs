@@ -1,0 +1,5 @@
+sc_node_not_relation-> arifmetic_operation;;
+sc_node_norole_relation->nrel_sum; nrel_pow; nrel_prod;;
+arifmetic_operation -> nrel_sum; nrel_pow; nrel_prod;;
+physical_quantities -> rrel_m; rrel_sm; rrel_dm;;
+question_calc <- sc_node_not_relation;;

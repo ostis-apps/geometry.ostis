@@ -1,0 +1,66 @@
+sc_node_norole_relation -> nrel_center_of_circle;;
+
+nrel_center_of_circle => nrel_main_ru_idtf:
+	[центр окружности*]
+	(* <- lang_ru;; *);
+	[center of circle*]
+	(* <- lang_en;; *);;
+
+nrel_center_of_circle => nrel_idtf:[быть центром окружности*]
+	(* <- lang_ru;; *);;
+
+nrel_center_of_circle <- sc_relation;;
+
+nrel_center_of_circle <- binary_relation;;
+
+nrel_center_of_circle <- oriented_relation;;
+
+nrel_center_of_circle => nrel_definitional_domain: 
+	...
+	(*
+	<= nrel_combination: 
+		{
+		concept_circle; 
+		concept_geometric_point
+		};;
+	*);;	
+
+nrel_center_of_circle => nrel_first_domain:
+	concept_circle;;	
+
+nrel_center_of_circle => nrel_second_domain: 
+	concept_geometric_point;;
+
+nrel_center_of_circle <= nrel_using_constants:
+	{
+	concept_geometric_point; 
+	concept_circle; 
+	nrel_distance
+	};;
+
+nrel_center_of_circle <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf:[Утв.(окружность; прямая; центр окружности*)](* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Точка касания двух окружностей лежит на прямой, проходящей через их центры.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+
+	...
+	(*
+	=> nrel_main_idtf:[Утв.(окружность; касательная*; центр окружности*; геометрическая точка; конгруэнтность*; угол)](* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Отрезки касательных к окружности, проведённых из одной точки, не лежащей на окружности, равны и составляют равные углы с прямой, проходящей через эту точку и центр окружности.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;

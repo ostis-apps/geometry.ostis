@@ -1,0 +1,154 @@
+sc_node_struct -> struct_Angle_Alpha;;
+sc_node_struct -> struct_Angle_Beta;;
+sc_node_struct -> struct_Angle_Delta;;
+sc_node_struct -> struct_Angle_Epsilon;;
+sc_node_struct -> struct_Angle_Gamma;;
+sc_node_struct -> struct_Angle_Sigma;;
+sc_node_struct -> struct_Acute_angle_Alpha;;
+sc_node_struct -> struct_Acute_angle_Beta;;
+sc_node_struct -> struct_Acute_angle_Gamma;;
+sc_node_struct -> struct_Acute_Angle_K_L_M;;
+sc_node_struct -> struct_Full_angle_P_K_P;;
+sc_node_struct -> struct_Non_convex_angle_A_B_K;;
+sc_node_struct -> struct_Obtuse_angle_Alpha;;
+sc_node_struct -> struct_Obtuse_angle_Beta;;
+sc_node_struct -> struct_Obtuse_angle_Gamma;;
+sc_node_struct -> struct_Obtuse_angle_T_P_R;;
+sc_node_struct -> struct_Right_Angle_P_T_R;;
+sc_node_struct -> struct_Straight_angle_A_O_B;;
+sc_node_struct -> struct_Zero_Angle_N_K_N;;
+
+struct_Angle_Alpha <- rrel_example: concept_angle;;
+struct_Angle_Beta <- rrel_example: concept_angle;;
+struct_Angle_Delta <- rrel_example: concept_angle;;
+struct_Angle_Epsilon <- rrel_example: concept_angle;;
+struct_Angle_Gamma <- rrel_example: concept_angle;;
+struct_Angle_Sigma <- rrel_example: concept_angle;;
+struct_Acute_angle_Alpha <- rrel_example: concept_acute_angle;;
+struct_Acute_angle_Beta <- rrel_example: concept_acute_angle;;
+struct_Acute_angle_Gamma <- rrel_example: concept_acute_angle;;
+struct_Acute_Angle_K_L_M <- rrel_example: concept_acute_angle;;
+struct_Full_angle_P_K_P <- rrel_example: concept_full_angle;;
+struct_Non_convex_angle_A_B_K <- rrel_example: concept_non_convex_angle;;
+struct_Obtuse_angle_Alpha <- rrel_example: concept_obtuse_angle;;
+struct_Obtuse_angle_Beta <- rrel_example: concept_obtuse_angle;;
+struct_Obtuse_angle_Gamma <- rrel_example: concept_obtuse_angle;;
+struct_Obtuse_angle_T_P_R <- rrel_example: concept_obtuse_angle;;
+struct_Right_Angle_P_T_R <- rrel_example: concept_right_angle;;
+struct_Straight_angle_A_O_B <- rrel_example: concept_straight_angle;;
+struct_Straight_angle_A_O_B <- rrel_example: concept_straight_angle;;
+struct_Zero_Angle_N_K_N <- rrel_example: concept_zero_angle;;
+
+struct_Angle_Alpha => nrel_main_idtf:
+	[Угол Alpha]
+	(* <- lang_ru;;	*);
+	[Angle Alpha]
+	(* <- lang_en;; *);;
+
+struct_Angle_Beta => nrel_main_idtf:
+	[Угол Beta]
+	(* <- lang_ru;; *);
+	[Angle Beta]
+	(* <- lang_en;;	*);;
+
+struct_Angle_Delta => nrel_main_idtf:
+	[Угол Delta]
+	(* <- lang_ru;;	*);
+	[Angle Delta]
+	(* <- lang_en;;	*);;
+
+struct_Angle_Epsilon => nrel_main_idtf:
+	[Угол Epsilon]
+	(* <- lang_ru;;	*);
+	[Angle Epsilon]
+	(* <- lang_en;;	*);;
+
+struct_Angle_Gamma => nrel_main_idtf:
+	[Угол Gamma]
+	(* <- lang_ru;;	*);
+	[Angle Gamma]
+	(* <- lang_en;;	*);;
+
+struct_Angle_Sigma => nrel_main_idtf:
+	[Угол Sigma]
+	(* <- lang_ru;;	*);
+	[Angle Sigma]
+	(* <- lang_en;;	*);;
+
+struct_Acute_angle_Alpha => nrel_main_idtf:
+	[Острый угол Alpha]
+	(* <- lang_ru;; *);
+	[Acute angle Alpha]
+	(* <- lang_en;; *);;
+
+struct_Acute_angle_Beta => nrel_main_idtf:
+	[Острый угол Beta]
+	(* <- lang_ru;; *);
+	[Acute angle Beta]
+	(* <- lang_en;;	*);;
+
+struct_Acute_angle_Gamma => nrel_main_idtf:
+	[Острый угол Gamma]
+	(* <- lang_ru;;	*);
+	[Acute angle Gamma]
+	(* <- lang_en;;	*);;
+
+struct_Acute_Angle_K_L_M => nrel_main_idtf:
+	[Острый угол KLM]
+	(*<- lang_ru;;*);
+	[Acute angle KLM]
+	(*<- lang_en;;*);;
+
+struct_Full_angle_P_K_P => nrel_main_idtf:
+	[Полный угол PKP]
+	(*<- lang_ru;;*);
+	[Full angle PKP]
+	(*<- lang_en;;*);;
+
+struct_Non_convex_angle_A_B_K => nrel_main_idtf:
+	[Невыпуклый угол ABK]
+	(*<- lang_ru;;*);
+	[Non Convex Angle ABK]
+	(*<- lang_en;;*);;
+
+struct_Obtuse_angle_Alpha => nrel_main_idtf:
+	[Тупой угол Alpha]
+	(* <- lang_ru;;	*);
+	[Obtuse angled Alpha]
+	(* <- lang_en;;	*);;
+
+struct_Obtuse_angle_Beta => nrel_main_idtf:
+	[Тупой угол Beta]
+	(* <- lang_ru;;	*);
+	[Obtuse angled Beta]
+	(* <- lang_en;;	*);;
+
+struct_Obtuse_angle_Gamma => nrel_main_idtf:
+	[Тупой угол Gamma]
+	(* <- lang_ru;;	*);
+	[Obtuse angled Gamma]
+	(* <- lang_en;;	*);;
+
+struct_Obtuse_angle_T_P_R => nrel_main_idtf:
+	[Тупой угол TPR]
+	(*<- lang_ru;;*);
+	[Obtuse angled TPR]
+	(*<- lang_en;;*);;
+
+struct_Right_Angle_P_T_R => nrel_main_idtf:
+	[Прямой угол PTR]
+	(*<- lang_ru;;*);
+	[Right Angle PTR]
+	(*<- lang_en;;*);;
+
+struct_Straight_angle_A_O_B => nrel_main_idtf:
+	[Развернутый угол AOB]
+	(*<- lang_ru;;*);
+	[Straight angle AOB]
+	(*<- lang_en;;*);;
+
+struct_Zero_Angle_N_K_N => nrel_main_idtf:
+	[Нулевой угол NKN]
+	(*<- lang_ru;;*);
+	[Zero Angle NKN]
+	(*<- lang_en;;*);;

@@ -1,0 +1,67 @@
+sc_node_not_relation -> concept_circle_arc;;
+
+concept_circle_arc => nrel_main_idtf:
+	[дуга]
+	(* <- lang_ru;;	*);
+	[circle arc]
+	(* <- lang_en;; *);;
+
+concept_circle_arc => nrel_idtf: [Класс дуг] (* <- lang_ru;; *);;
+
+concept_circle_arc => nrel_idtf: [Понятие дуги] (* <- lang_ru;; *);;
+
+concept_circle_arc => nrel_idtf: [Множество всевозможных дуг] (* <- lang_ru;; *);;
+
+concept_circle_arc => nrel_idtf: [Множество знаков всевозможных дуг] (* <- lang_ru;; *);;
+
+concept_circle_arc <= nrel_strict_inclusion: concept_circle;;
+
+concept_circle_arc <= nrel_using_constants:
+	{
+	concept_circle; 
+	rrel_between; 
+	concept_geometric_point
+	};;
+	
+concept_circle_arc <- rrel_key_sc_element: 
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(дуга; длина*; радиус*; центральный угол*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Длина дуги вычисляется по формуле L= pi*a*R/180, где L – длина дуги, a – центральный угол в градусах,
+R – радиус окружности.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_circle_arc <- rrel_key_sc_element: 
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(дуга; параллельность*; хорда*; конгруэнтность*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Дуги, заключенные между параллельными хордами, равны.]
+			(* <- lang_ru;; *);;			
+		*);;
+	*);;
+
+concept_circle_arc <- rrel_key_sc_element: 
+	...
+	(*
+	=> nrel_main_idtf: [Утв. (угол; дуга; конгруэнтность*; вписанность*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Вписанный угол равен(конгруэнтен) половине дуги, на которую он опирается.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;

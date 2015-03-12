@@ -1,0 +1,118 @@
+sc_node_norole_relation -> nrel_distance;;
+
+nrel_distance => nrel_main_idtf:
+	[расстояние*]
+	(* <- lang_ru;; *);
+	[distance*]
+	(* <- lang_en;; *);;
+
+nrel_distance => nrel_idtf: [быть расстоянием*] (* <- lang_ru;; *);;
+
+nrel_distance <- sc_relation;;
+
+nrel_distance <- binary_relation;;
+
+nrel_distance <- oriented_relation;;
+
+nrel_distance => nrel_definitional_domain: 
+	...
+	(*
+	<= nrel_combination: 
+		{
+		concept_pair_of_points;
+		concept_quantity
+		};;
+	*);;	
+	
+
+nrel_distance => nrel_first_domain: 
+	concept_pair_of_points;;
+
+nrel_distance => nrel_second_domain: 
+	concept_quantity;;
+
+nrel_distance <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(прямая; пересекающиеся прямые*; расстояние*)] (* <- lang_ru;; *);;  
+	<- sc_statement;;   
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Расстояние между пересекающимися прямыми равно нулю.]
+			(* <- lang_ru;;	*);;
+		*);;
+	*);
+ 
+     	...
+	(*
+	=> nrel_main_idtf: [Утв.(прямая; скрещивающиеся*; расстояние*; общий перпендикуляр*; длина*)] (* <- lang_ru;; *);;
+	<- sc_statement;;   
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Расстояние между скрещивающимися прямыми равно длине общего для данных прямых перпендикуляра.]
+			(* <- lang_ru;;	*);;
+		*);;
+	*);
+
+     	...
+	(*
+	=> nrel_main_idtf: [Утв.(геометрическая точка; прямая; расстояние*; перпендикуляр*; длина*)] (* <- lang_ru;; *);;
+	<- sc_statement;;   
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Расстояние от точки до прямой равно длине перпендикуляра, опущенного из этой точки на прямую.]
+			(* <- lang_ru;;	*);;
+		*);;
+	*);
+
+     	...
+	(*
+	=> nrel_main_idtf: [Утв.(геометрическая точка; плоскость; расстояние*; перпендикуляр*; длина*)] (* <- lang_ru;; *);;
+	<- sc_statement;;   
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Расстояние от точки до плоскости равно длине перпендикуляра, опущенного из этой точки на данную плоскость.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+
+     	...
+	(*
+	=> nrel_main_idtf: [Утв.(прямая; параллельность*; расстояние*; общий перпендикуляр*; длина*)] (* <- lang_ru;; *);; 
+	<- sc_statement;;   
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Расстояние между параллельными прямыми - это длина общего для параллельных прямых перпендикуляра.]
+			(* <- lang_ru;;	*);;
+		*);;
+	*);
+
+     	...
+	(*
+	=> nrel_main_idtf: [Утв.(плоскость; параллельность*; расстояние*; общий перпендикуляр*; длина*)] (* <- lang_ru;; *);; 
+	<- sc_statement;;   
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Расстояние между параллельными плоскостями равно длине их общего перпендикуляра.]
+			(* <- lang_ru;;	*);;
+		*);;
+	*);;
+
+
+nrel_distance <= nrel_using_constants:
+	{
+	concept_geometric_point; 
+	concept_segment
+	};;

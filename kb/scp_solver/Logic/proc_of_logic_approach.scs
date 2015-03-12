@@ -1,0 +1,421 @@
+scp_program -> proc_of_logic_approach (*	
+	-> rrel_params: .proc_of_logic_approach_params (*
+		-> rrel_1: rrel_in: _utv;;
+                -> rrel_2: rrel_in: _jog;;
+		-> rrel_3: rrel_in: _answer;;
+                -> rrel_4: rrel_in: _try;;
+	*);;
+
+       -> rrel_operators: .proc_of_logic_approach_operator_set (*
+
+		 -> rrel_init: .proc_of_logic_approach_operator1A (*
+		  <- searchElStr3;;
+		  -> rrel_1: rrel_fixed: rrel_scp_var: _utv;;
+		  -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc5;;
+		  -> rrel_3: rrel_assign: rrel_scp_var: _el1;;
+
+		  => nrel_then: .proc_of_logic_approach_operator1B;;
+		  => nrel_else: .proc_of_logic_approach_operator_return;;
+		*);;
+
+                 -> .proc_of_logic_approach_operator1B (*
+		  <- searchElStr3;;
+		  -> rrel_1: rrel_fixed: rrel_scp_var: _jog;;
+		  -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc5;;
+		  -> rrel_3: rrel_assign: rrel_scp_var: _el2;;
+
+                  => nrel_then: .proc_of_logic_approach_operator1C;;
+                  => nrel_else: .proc_of_logic_approach_operator_return;;
+		*);; 
+
+                   -> .proc_of_logic_approach_operator1C (*
+		  <- searchSetStr3;;
+		  -> rrel_1: rrel_assign: rrel_scp_var: _zver;;
+		  -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc3;;
+		  -> rrel_3: rrel_fixed: rrel_scp_var: _el2;;
+
+                  -> rrel_set_1: rrel_assign: rrel_scp_var: _smth;;
+
+		  => nrel_then: .proc_of_logic_approach_operator1D;;
+		  => nrel_else: .proc_of_logic_approach_operator_return;;
+		*);; 
+
+                 -> .proc_of_logic_approach_operator1D (*
+		  <- searchElStr3;;
+		  -> rrel_1: rrel_fixed: rrel_scp_var: _smth;;
+		  -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc5;;
+		  -> rrel_3: rrel_assign: rrel_scp_var: _zubr;;
+
+		  => nrel_then: .proc_of_logic_approach_operator1E;;
+		  => nrel_else: .proc_of_logic_approach_operator_return;;
+		*);; 
+
+                 -> .proc_of_logic_approach_operator1E (*
+		 <- eraseEl;;
+		 -> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _arc5;;
+
+		 => nrel_goto: .proc_of_logic_approach_operator1F1;;
+		 *);;
+
+                 -> .proc_of_logic_approach_operator1F1 (*
+		  <- searchElStr5;;
+		  -> rrel_1: rrel_assign: rrel_scp_var: _sub;;
+		  -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+		  -> rrel_3: rrel_fixed: rrel_scp_var: _zubr;;
+		  -> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+                  -> rrel_5: rrel_fixed: rrel_scp_const: rrel_maximum_studied_object_class;;
+
+		  => nrel_then: .proc_of_logic_approach_operator1G;;
+		  => nrel_else: .proc_of_logic_approach_operator1F2;;
+		*);; 
+		
+		-> .proc_of_logic_approach_operator1F2 (*
+		  <- searchElStr5;;
+		  -> rrel_1: rrel_assign: rrel_scp_var: _sub;;
+		  -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+		  -> rrel_3: rrel_fixed: rrel_scp_var: _zubr;;
+		  -> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+                  -> rrel_5: rrel_fixed: rrel_scp_const: rrel_not_maximum_studied_object_class;;
+
+		  => nrel_then: .proc_of_logic_approach_operator1G;;
+		  => nrel_else: .proc_of_logic_approach_operator1D;;
+		*);; 
+
+                  -> .proc_of_logic_approach_operator1G (*
+		  <- searchElStr3;;
+		  -> rrel_1: rrel_fixed: rrel_scp_var: _el1;;
+		  -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc5;;
+		  -> rrel_3: rrel_fixed: rrel_scp_var: _zubr;;
+
+		  => nrel_then: .proc_of_logic_approach_operator2A;;
+		  => nrel_else: .proc_of_logic_approach_operator1D;;
+		*);; 
+
+                 -> .proc_of_logic_approach_operator2A (*
+		  <- searchSetStr3;;
+		  -> rrel_1: rrel_fixed: rrel_scp_var: _el1;;
+		  -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc5;;
+		  -> rrel_3: rrel_assign: rrel_scp_var: _non;;
+
+                 -> rrel_set_3: rrel_assign: rrel_scp_var: _smth2;;
+
+		  => nrel_then: .proc_of_logic_approach_operator2B;;
+		  => nrel_else: .proc_of_logic_approach_operator1D;;
+		*);; 
+
+                -> .proc_of_logic_approach_operator2B (*
+		  <- searchElStr3;;
+		  -> rrel_1: rrel_fixed: rrel_scp_var: _smth2;;
+		  -> rrel_2: rrel_assign: rrel_scp_var: _arc9;;
+		  -> rrel_3: rrel_assign: rrel_scp_var: _xz;;
+
+		  => nrel_then: .proc_of_logic_approach_operator2C;;
+		  => nrel_else: .proc_of_logic_approach_operator_return;;
+		*);;
+
+                -> .proc_of_logic_approach_operator2C (*
+		 <- eraseEl;;
+		 -> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _arc9;;
+
+		 => nrel_goto: .proc_of_logic_approach_operator2D;;
+		 *);;
+
+                 -> .proc_of_logic_approach_operator2D (*
+		  <- searchElStr3;;
+		  -> rrel_1: rrel_fixed: rrel_scp_var: _zubr;;
+		  -> rrel_2: rrel_assign: rrel_scp_var: _arc9;;
+		  -> rrel_3: rrel_fixed: rrel_scp_var: _xz;;
+
+		  => nrel_then: .proc_of_logic_approach_operator3B;;
+		  => nrel_else: .proc_of_logic_approach_operator2B;;
+		*);;
+                
+                 -> .proc_of_logic_approach_operator3B (*
+		 <- sys_search;;
+
+		 -> rrel_1: rrel_fixed: rrel_scp_var: _el1;;
+		 -> rrel_2: rrel_assign: rrel_scp_var: _derevo;;
+
+		 -> rrel_3: rrel_fixed: rrel_scp_const: ... (* -> ... (* -> rrel_1: rrel_fixed: rrel_scp_var: _xz;;
+                                                                         -> rrel_2: rrel_fixed: rrel_scp_var: _el2;; *);;  
+                                                            *);;
+
+                 => nrel_then: .proc_of_logic_approach_operator4A;;
+                 => nrel_else: .proc_of_logic_approach_operator_lol;;
+		 *);;
+
+                 -> .proc_of_logic_approach_operator_lol (*
+		  <- genElStr3;;
+		  -> rrel_1: rrel_fixed: rrel_scp_var: _try;;
+		  -> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc10;;
+		  -> rrel_3: rrel_fixed: rrel_scp_const: [Can't do this];;
+		  
+		  => nrel_goto: .proc_of_logic_approach_operator_return;;
+		*);;
+                
+                 -> .proc_of_logic_approach_operator4A (*
+	         <- searchElStr5;;
+		  -> rrel_1: rrel_assign: rrel_scp_var: _cony;;
+		  -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+		  -> rrel_3: rrel_fixed: rrel_scp_var: _el1;;
+                  -> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+		  -> rrel_5: rrel_fixed: rrel_scp_const: rrel_if;;
+
+		  => nrel_then: .proc_of_logic_approach_operator4B;;
+		  => nrel_else: .proc_of_logic_approach_operator_return;;
+		*);;
+               
+                 -> .proc_of_logic_approach_operator4B (*
+		  <- searchElStr5;;
+		  -> rrel_1: rrel_fixed: rrel_scp_var: _cony;;
+		  -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc123;;
+		  -> rrel_3: rrel_assign: rrel_scp_var: _pat;;
+                  -> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc21;;
+		  -> rrel_5: rrel_fixed: rrel_scp_const: rrel_then;;
+
+		  => nrel_then: .proc_of_logic_approach_operator4C;;
+		  => nrel_else: .proc_of_logic_approach_operator_return;;
+		*);;
+
+                -> .proc_of_logic_approach_operator4C (*
+		 <- genEl;;
+		 -> rrel_1: rrel_assign: rrel_const: rrel_node: rrel_scp_var: _trip;;
+
+		 => nrel_goto: .proc_of_logic_approach_operator4D;;
+		 *);;
+                
+                -> .proc_of_logic_approach_operator4D (*
+		  <- call;;
+		  -> rrel_1: rrel_fixed: rrel_scp_const: proc_ekvil;;
+		  -> rrel_2: rrel_fixed: rrel_scp_const: .proc_of_logic_approach_operator4D_params (*
+				-> rrel_1: rrel_fixed: rrel_scp_var: _el1;;
+                                -> rrel_2: rrel_fixed: rrel_scp_var: _pat;;
+                                -> rrel_3: rrel_fixed: rrel_scp_var: _trip;;
+			*);;
+		  -> rrel_3: rrel_assign: rrel_scp_var: _descr15;;
+
+		  => nrel_goto: .proc_of_logic_approach_operator4E;;
+		*);;
+
+                  -> .proc_of_logic_approach_operator4E (*
+		  <- waitReturn;;
+		  -> rrel_1: rrel_fixed: rrel_scp_var: _descr15;;
+
+		  => nrel_goto: .proc_of_logic_approach_operator4EF;;
+		*);;
+
+                -> .proc_of_logic_approach_operator4EF (*
+		 <- genEl;;
+		 -> rrel_1: rrel_assign: rrel_const: rrel_node: rrel_scp_var: _gen;;
+
+		 => nrel_goto: .proc_of_logic_approach_operator4G;;
+		 *);;
+                
+                  -> .proc_of_logic_approach_operator4G (*
+		  <- searchElStr3;;
+
+		  -> rrel_1: rrel_fixed: rrel_scp_var: _trip;;
+		  -> rrel_2: rrel_assign: rrel_scp_var: _arc3;;
+		  -> rrel_3: rrel_assign: rrel_scp_var: _boy;;
+
+		  => nrel_then: .proc_of_logic_approach_operator5AA;;
+		  => nrel_else: .proc_of_logic_approach_operator5K;;
+		*);;
+
+                 -> .proc_of_logic_approach_operator5AA (*
+		 <- eraseEl;;
+		 -> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _arc3;;
+
+		 => nrel_goto: .proc_of_logic_approach_operator5A;;
+		 *);;
+                 
+                  -> .proc_of_logic_approach_operator5A (*
+		  <- searchElStr3;;
+
+		  -> rrel_1: rrel_fixed: rrel_scp_var: _derevo;;
+		  -> rrel_2: rrel_assign: rrel_scp_var: _arc5;;
+		  -> rrel_3: rrel_assign: rrel_scp_var: _lif;;
+
+		  => nrel_then: .proc_of_logic_approach_operator5C;;
+		  => nrel_else: .proc_of_logic_approach_operator_return;;
+		*);;
+
+                  -> .proc_of_logic_approach_operator5C (*
+		  <- searchSetStr3;;
+
+		  -> rrel_1: rrel_fixed: rrel_scp_var: _lif;;
+		  -> rrel_2: rrel_assign: rrel_scp_var: _arc5;;
+		  -> rrel_3: rrel_assign: rrel_scp_var: _er;;
+
+                  -> rrel_set_3: rrel_assign: rrel_scp_var: _sher;; 
+
+		  => nrel_then: .proc_of_logic_approach_operator5CC;;
+		  => nrel_else: .proc_of_logic_approach_operator5K;;
+		*);;
+
+                  -> .proc_of_logic_approach_operator5CC (*
+		  <- searchElStr3;;
+
+		  -> rrel_1: rrel_fixed: rrel_scp_var: _sher;;
+		  -> rrel_2: rrel_assign: rrel_scp_var: _arc51;;
+		  -> rrel_3: rrel_assign: rrel_scp_var: _erip;;
+
+		  => nrel_then: .proc_of_logic_approach_operator5CD;;
+		  => nrel_else: .proc_of_logic_approach_operator5K;;
+		*);;
+
+                -> .proc_of_logic_approach_operator5CD (*
+		 <- eraseEl;;
+		 -> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _arc51;;
+
+		 => nrel_goto: .proc_of_logic_approach_operator5D;;
+		 *);;
+
+                 -> .proc_of_logic_approach_operator5D (*
+		  <- searchElStr3;;
+
+		  -> rrel_1: rrel_assign: rrel_scp_var: _kol;;
+		  -> rrel_2: rrel_fixed: rrel_scp_var: _erip;;
+		  -> rrel_3: rrel_assign: rrel_scp_var: _kol2;;
+
+		  => nrel_then: .proc_of_logic_approach_operator5E;;
+		  => nrel_else: .proc_of_logic_approach_operator_return;;
+		*);;
+
+                 -> .proc_of_logic_approach_operator5E (*
+		 <- ifCoin;;
+
+		 -> rrel_1: rrel_fixed: rrel_scp_var: _kol;;
+                 -> rrel_2: rrel_fixed: rrel_scp_var: _boy;;
+
+		 => nrel_then: .proc_of_logic_approach_operator5F;;
+		 => nrel_else: .proc_of_logic_approach_operator5CC;;
+		 *);; 
+
+                 -> .proc_of_logic_approach_operator5F (*
+		 <- genEl;;
+		 -> rrel_1: rrel_assign: rrel_const: rrel_node: rrel_scp_var: _ford;;
+
+		 => nrel_goto: .proc_of_logic_approach_operator5FG;;
+		 *);; 
+
+		  -> .proc_of_logic_approach_operator5FG (*
+		  <- genElStr5;;
+		  -> rrel_1: rrel_fixed: rrel_scp_var: _ford;;
+		  -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+		  -> rrel_3: rrel_fixed: rrel_scp_var: _kol;;
+		  -> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+		  -> rrel_5: rrel_fixed: rrel_scp_const: rrel_1;;
+
+		  => nrel_goto: .proc_of_logic_approach_operator5GG;;
+		*);;
+
+                   -> .proc_of_logic_approach_operator5GG (*
+		  <- genElStr3;;
+		  -> rrel_1: rrel_fixed: rrel_scp_const: rrel_fixed ;;
+		  -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc10;;
+		  -> rrel_3: rrel_fixed: rrel_scp_var: _arc;;
+		  
+		  => nrel_goto: .proc_of_logic_approach_operator5G;;
+		*);;
+
+		 -> .proc_of_logic_approach_operator5G (*
+		  <- genElStr5;;
+		  -> rrel_1: rrel_fixed: rrel_scp_var: _ford;;
+		  -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc3;;
+		  -> rrel_3: rrel_fixed: rrel_scp_var: _kol2;;
+		  -> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc4;;
+		  -> rrel_5: rrel_fixed: rrel_scp_const: rrel_2;;
+
+		  => nrel_goto: .proc_of_logic_approach_operator5GGG;;
+		*);;
+
+                  -> .proc_of_logic_approach_operator5GGG (*
+		  <- genElStr3;;
+		  -> rrel_1: rrel_fixed: rrel_scp_const: rrel_fixed;;
+		  -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc30;;
+		  -> rrel_3: rrel_fixed: rrel_scp_var: _arc3;;
+		  
+		  => nrel_goto: .proc_of_logic_approach_operator5GH;;
+		*);;
+
+                -> .proc_of_logic_approach_operator5GH (*
+		  <- genElStr3;;
+
+		  -> rrel_1: rrel_fixed: rrel_scp_var: _gen;;
+		  -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc3;;
+		  -> rrel_3: rrel_fixed: rrel_scp_var: _ford;;
+
+		  => nrel_goto: .proc_of_logic_approach_operator5GHH;;
+		*);;
+
+                 -> .proc_of_logic_approach_operator5GHH (*
+		 <- eraseEl;;
+		 -> rrel_1: rrel_erase: rrel_fixed: rrel_scp_var: _sher;;
+
+		 => nrel_goto: .proc_of_logic_approach_operator4G;;
+		 *);;
+                                
+                 -> .proc_of_logic_approach_operator5K (*
+		 <- sys_gen;;
+
+		 -> rrel_1: rrel_fixed: rrel_scp_var: _pat;;
+		 -> rrel_2: rrel_assign: rrel_scp_var: ...;;
+                 -> rrel_3: rrel_fixed: rrel_scp_var: _gen;;
+                 -> rrel_4: rrel_fixed: rrel_scp_var: _answer;;
+
+                 => nrel_goto: .proc_of_logic_approach_operator6A;;
+		 *);;
+
+                  -> .proc_of_logic_approach_operator6A (*
+		  <- searchSetStr3;;
+		  -> rrel_1: rrel_fixed: rrel_scp_var: _pat;;
+		  -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc5;;
+		  -> rrel_3: rrel_assign: rrel_scp_var: rrel_const: _uu;;
+
+                 -> rrel_set_3: rrel_fixed: rrel_scp_var: _answer;;
+
+		  => nrel_then: .proc_of_logic_approach_operator11Q;;
+		  => nrel_else: .proc_of_logic_approach_operator11Q;;
+		*);; 
+                 
+
+                 -> .proc_of_logic_approach_operator11Q (*
+		  <- call;;
+		  -> rrel_1: rrel_fixed: rrel_scp_const: proc_derevo;;
+		  -> rrel_2: rrel_fixed: rrel_scp_const: .proc_of_logic_approach_operator11Q_params (*
+				-> rrel_1: rrel_fixed: rrel_scp_var: _derevo;;   
+			*);;
+		  -> rrel_3: rrel_assign: rrel_scp_var: _descr35;;
+
+		  => nrel_goto: .proc_of_logic_approach_operator11R;;
+		*);;
+
+                 -> .proc_of_logic_approach_operator11R(*
+		  <- waitReturn;;
+		  -> rrel_1: rrel_fixed: rrel_scp_var: _descr35;;
+
+		  => nrel_goto: .proc_of_logic_approach_operator11S;;
+		*);; 
+
+                 -> .proc_of_logic_approach_operator11S (*
+		 <- eraseEl;;
+		 -> rrel_1: rrel_erase: rrel_fixed: rrel_scp_var: _derevo;;  
+
+		 => nrel_goto: .proc_of_logic_approach_operator6RAF;;
+		 *);; 
+
+                 -> .proc_of_logic_approach_operator6RAF (*
+		  <- eraseSetStr3;;
+		  -> rrel_1: rrel_fixed: rrel_scp_var: _gen;;
+		  -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc5;;
+		  -> rrel_3: rrel_assign: rrel_erase: rrel_scp_var: _smth;;
+
+		  => nrel_goto: .proc_of_logic_approach_operator_return;;
+		*);; 
+
+		-> .proc_of_logic_approach_operator_return (*
+		<- return;;
+		*);;
+	*);;
+*);;

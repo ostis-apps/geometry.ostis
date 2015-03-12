@@ -1,0 +1,19 @@
+Pattern_Square = [* concept_square _-> rrel_example:: _sq1; _sq2;;
+		_sq1 _=> nrel_side:: _sid1;;
+		_sq2 _=> nrel_side:: _sid1;;
+	 	*];;
+	 	
+Pattern_Inscribed_Figures = [* nrel_be_inscribed _-> _inskr;;
+		 _inskr _-> rrel_inscribed_geometric_figure:: _geom1;;
+		 _inskr _-> rrel_described_geometric_figure:: _geom2;;
+		 _geom1 _<- rrel_example:: concept_circle;;
+		 _geom2 _<- rrel_example:: concept_square;; 
+	 	*];;
+	 	
+Pattern_Similarity = [* nrel_similarity _-> _sim;;
+		_sim _-> _fig;;
+		_sim _-> _fig2;;
+	 	*];;
+
+
+

@@ -1,0 +1,14 @@
+d_concept_segment <- rrel_main_key_sc_element: 
+        ... 
+	(*
+	=> nrel_main_idtf: [Опр.(отрезок)] (* <- lang_ru;; *);;
+	<- sc_definition;; 
+	-> rrel_key_sc_element: concept_segment;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Отрезок - часть прямой, которая состоит из всех точек этой прямой, лежащей между двумя данными ее точками, включая эти точки.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;

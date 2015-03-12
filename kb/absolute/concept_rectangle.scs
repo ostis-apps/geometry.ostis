@@ -1,0 +1,147 @@
+sc_node_not_relation -> concept_rectangle;;
+
+concept_rectangle => nrel_main_idtf:
+	[прямоугольник]
+	(* <- lang_ru;; *);
+	[rectangle]
+	(* <- lang_en;;	*);;
+
+concept_rectangle => nrel_idtf: [Класс прямоугольников] (* <- lang_ru;; *);;
+
+concept_rectangle => nrel_idtf: [Понятие прямоугольника] (* <- lang_ru;; *);;
+
+concept_rectangle => nrel_idtf: [Множество всевозможных прямоугольников] (* <- lang_ru;; *);;
+
+concept_rectangle => nrel_idtf: [Множество знаков всевозможных прямоугольников] (* <- lang_ru;; *);;
+
+concept_rectangle <= nrel_strict_inclusion: concept_parallelogram;;
+
+concept_rectangle => nrel_strict_inclusion: concept_square;;
+
+concept_rectangle <= nrel_using_constants:
+	{
+	concept_parallelogram; 
+	concept_right_angle
+	};;	
+	
+concept_rectangle <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(параллелограмм; диагональ*; прямоугольник; конгруэнтность*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Если в параллелограмме диагонали равны, то это - прямоугольник.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+	
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(параллелограмм; внутренний угол*; прямой угол; прямоугольник; конгруэнтность*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Если в параллелограмме один угол прямой, то это - прямоугольник.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(четырехугольник; внутренний угол*; прямой угол; прямоугольник; конгруэнтность*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Если в четырехугольнике три угла прямые, то это - прямоугольник.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(прямоугольник; точка; диагональ*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Диагонали прямоугольника в точке пересечения делятся пополам.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(прямоугольник; сторона*; перпендикуляр*; середина*; ось симметрии*, конгруэнтность*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Перпендикуляры, проходящие через середины сторон прямоугольника, являются его осями симметрии.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(прямоугольник; описанность*; окружность)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Около прямоугольника всегда можно описать окружность.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(прямоугольник; площадь*; сторона*; произведение*; конгруэнтность*; смежность*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Для каждого прямоугольника выполняется следующее числовое соотношение S = a * b ,где S - площадь указанного прямоугольника, a - сторона указанного прямоугольника, b - смежная сторона указанной стороне данного прямоугольника.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(прямоугольник; диагональ*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Диагонали прямоугольника вычисляются по формуле: d^2 = a^2+b^2, где d - диагональ указанного прямоугольника, a - сторона указанного прямоугольника, b - смежная сторона указанной стороне данного прямоугольника.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(прямоугольник; диагональ*; конгруэнтность*)] (* <- lang_ru;; *);;
+	-> rrel_main_key_sc_element: stat_rectangle_congruence_diagonal;;
+	-> rrel_key_sc_element: nrel_diagonal; nrel_congruence;;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Диагонали прямоугольника равны.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_rectangle -> rrel_example: struct_Rectangle_B_C_D_E;;
