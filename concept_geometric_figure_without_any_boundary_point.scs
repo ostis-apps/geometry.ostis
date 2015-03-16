@@ -1,0 +1,58 @@
+sc_node_not_relation->concept_geometric_figure_without_any_boundary_point;;
+
+concept_geometric_figure_without_any_boundary_point=> nrel_main_idtf:
+	[геометрическая фигура, не имеющая граничных точек]
+	(*
+	<- lang_ru;;
+	*);
+	[geometrical figure without any boundary points]
+	(*
+	<- lang_en;;
+	*);;
+
+concept_geometric_figure_without_any_boundary_point=> nrel_idtf:[Класс геометрических фигур, не имеющих граничных точек](*<-lang_ru;;*);;
+
+concept_geometric_figure_without_any_boundary_point=> nrel_idtf:[Понятие геометрической фигуры, не имеющей граничных точек](*<-lang_ru;;*);;
+
+concept_geometric_figure_without_any_boundary_point=> nrel_idtf:[Множество всевозможных геометрических фигур, не имеющих граничных точек](*<-lang_ru;;*);;
+
+concept_geometric_figure_without_any_boundary_point=> nrel_idtf:[Множество знаков всевозможных геометрических фигур, не имеющих граничных точек](*<-lang_ru;;*);;
+
+concept_geometric_figure_without_any_boundary_point <= nrel_strict_inclusion: concept_geometric_figure;;
+
+concept_geometric_figure_without_any_boundary_point <= nrel_strict_inclusion: concept_pair_of_points;;
+
+concept_geometric_figure_without_any_boundary_point => nrel_strict_inclusion: concept_surface;;
+
+concept_geometric_figure_without_any_boundary_point <- rrel_key_sc_element: 
+     [Опр.(геометрическая фигура, не имеющая граничных точек] 
+	(*
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Геометрическая фигура, не имеющая граничных точек - это фигура, для которой не существует ни одной граничной точки.]
+			(* 
+			<- lang_ru;; 
+			<= nrel_using_constants:
+				{
+				concept_geometric_figure;
+				concept_geometric_point;
+				nrel_boundary_point
+				};;
+			*);;
+		*);;
+	*);;
+
+concept_geometric_figure_without_any_boundary_point <- subject_domain_of_Euclidean_geometry;;
+
+concept_geometric_figure_without_any_boundary_point -> rrel_example : struct_Rectilinear_three_of_points_PQR;;
+
+concept_geometric_figure_without_any_boundary_point -> rrel_example : struct_Non_rectlinear_three_tuple_of_points_ABC;;
+
+concept_geometric_figure_without_any_boundary_point -> rrel_example : struct_Straight_line_a;;
+
+concept_geometric_figure_without_any_boundary_point -> rrel_example : struct_Plane_P;;
+
+concept_geometric_figure_without_any_boundary_point -> rrel_example : struct_Circle_O_R;;

@@ -1,0 +1,41 @@
+sc_node_not_relation->concept_geometric_figure_with_some_boundary_points;;
+
+concept_geometric_figure_with_some_boundary_points=> nrel_main_idtf:
+	[геометрическая фигура, в состав которой входят не все граничные точки]
+	(*
+	<- lang_ru;;
+	*);
+	[geometric figure with some boundary points]
+	(*
+	<- lang_en;;
+	*);;
+
+concept_geometric_figure_with_some_boundary_points=> nrel_idtf:[Класс геометрических фигур, в состав которых входят не все граничные точки](*<-lang_ru;;*);;
+
+concept_geometric_figure_with_some_boundary_points=> nrel_idtf:[Понятие геометрической фигуры, в состав которой входят не все граничные точки](*<-lang_ru;;*);;
+
+concept_geometric_figure_with_some_boundary_points=> nrel_idtf:[Множество геометрических фигур, в состав которых входят не все граничные точки](*<-lang_ru;;*);;
+
+concept_geometric_figure_with_some_boundary_points <= nrel_strict_inclusion: concept_geometric_figure_with_boundary_points;;
+
+concept_geometric_figure_with_some_boundary_points <- rrel_key_sc_element: 
+     [Опр.(геометрическая фигура, в состав которой входят не все граничные точки)] 
+	(*
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Геометрическая фигура, в состав которой входят не все граничные точки - это фигура, для которой существуют хотя бы две граничные точки, при этом одна из которых принадлежит данной фигуре, а другая не принадлежит.]
+			(* 
+			<- lang_ru;; 
+			<= nrel_using_constants:
+				{
+				concept_geometric_figure;
+				nrel_boundary_point
+				};;
+			*);;
+		*);;
+	*);;
+
+concept_geometric_figure_with_some_boundary_points <- subject_domain_of_Euclidean_geometry;;
