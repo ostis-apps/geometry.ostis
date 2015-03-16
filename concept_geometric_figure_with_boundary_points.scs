@@ -1,0 +1,61 @@
+sc_node_not_relation->concept_geometric_figure_with_boundary_point;;
+
+concept_geometric_figure_with_boundary_point=> nrel_main_idtf:
+	[геометрическая фигура, имеющая граничные точки]
+	(*
+	<- lang_ru;;
+	*);
+	[geometric figure with boundary point]
+	(*
+	<- lang_en;;
+	*);;
+
+concept_geometric_figure_with_boundary_point=> nrel_idtf:[Класс геометрических фигур, имеющих граничные точки](*<-lang_ru;;*);;
+
+concept_geometric_figure_with_boundary_point=> nrel_idtf:[Понятие геометрической фигуры, имеющей граничные точки](*<-lang_ru;;*);;
+
+concept_geometric_figure_with_boundary_point=> nrel_idtf:[Множество всевозможных геометрических фигур, имеющих граничные точки](*<-lang_ru;;*);;
+
+concept_geometric_figure_with_boundary_point=> nrel_idtf:[Множество знаков всевозможных геометрических фигур, имеющих граничные точки](*<-lang_ru;;*);;
+
+concept_geometric_figure_with_boundary_point <= nrel_strict_inclusion: concept_geometric_figure;;
+
+concept_geometric_figure_with_boundary_point <= nrel_strict_inclusion: concept_circle;;
+
+concept_geometric_figure_with_boundary_point => nrel_strict_inclusion: concept_polyline;;
+
+concept_geometric_figure_with_boundary_point <- rrel_key_sc_element: 
+     [Опр.(геометрическая фигура, имеющая граничные точки)] 
+	(*
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Геометрическая фигура, имеющая граничные точки - это фигура, которая имеет хотя бы одну граничную точку.]
+			(* 
+			<- lang_ru;; 
+			<= nrel_using_constants:
+				{
+				concept_geometric_figure;
+				concept_geometric_point;
+				nrel_boundary_point
+				};;
+			*);;
+		*);;
+	*);;
+
+
+concept_geometric_figure_with_boundary_point <- subject_domain_of_Euclidean_geometry;;
+
+concept_geometric_figure_with_boundary_point -> rrel_example : struct_Circle_O_R;;
+
+concept_geometric_figure_with_boundary_point -> rrel_example : struct_Closed_ray_m;;
+
+concept_geometric_figure_with_boundary_point -> rrel_example : struct_Range_A_B;;
+
+concept_geometric_figure_with_boundary_point -> rrel_example : struct_Opened_ray_k;;
+
+concept_geometric_figure_with_boundary_point -> rrel_example : struct_Opened_half_plane_K_1;;
+
+concept_geometric_figure_with_boundary_point -> rrel_example : struct_Closed_half_plane_H_1;;
