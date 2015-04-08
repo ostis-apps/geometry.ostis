@@ -1,0 +1,146 @@
+concept_quadrilateral <= nrel_using_constants:
+	{
+	concept_polyline; 
+	concept_plane; 
+	concept_geometric_point
+	};;
+	
+concept_trapezoid <= nrel_using_constants:
+	{
+	nrel_side; 
+	nrel_parallelism;  
+	nrel_opposite
+	};;
+	
+concept_parallelogram <= nrel_using_constants:
+	{
+	concept_quadrilateral; 
+	nrel_side; 
+	nrel_parallelism; 
+	nrel_opposite	
+	};;
+	
+concept_isosceles_trapezoid <= nrel_using_constants:
+	{
+	concept_trapezoid; 
+	nrel_lateral_side; 
+	nrel_congruence
+	};;
+	
+concept_rectangular_trapezoid <= nrel_using_constants:
+	{
+	concept_trapezoid; 
+	nrel_lateral_side; 
+	nrel_perpendicularity; 
+	nrel_base
+	};;
+	
+concept_rhomb <= nrel_using_constants:
+	{
+	concept_parallelogram;
+	nrel_side;
+	nrel_congruence
+	};;	
+
+concept_rectangle <= nrel_using_constants:
+	{
+	concept_parallelogram; 
+	concept_right_angle
+	};;	
+
+concept_square <= nrel_using_constants:
+	{
+	nrel_side; 
+	concept_angle
+	};;
+	
+nrel_area <= nrel_using_constants:
+	{ 
+	concept_plane; 
+	concept_polygon
+	};;
+	
+nrel_base <= nrel_using_constants:
+	{
+	nrel_side; 
+	nrel_perpendicularity; 
+	nrel_height; 
+	concept_isosceles_triangle; 
+	concept_parallelogram; 
+	concept_isosceles_trapezoid
+	};;
+
+nrel_bound <= nrel_using_constants:
+	{
+	concept_linear_figure;  
+	concept_geometric_point; 
+	concept_geometric_figure; 
+	nrel_boundary_point
+	};;
+
+nrel_congruence <= nrel_using_constants:
+	{
+	concept_geometric_figure;
+	concept_pair_of_points;
+	nrel_distance
+	};;
+	
+nrel_diagonal <= nrel_using_constants:
+	{
+    concept_segment; 
+	nrel_vertex; 
+	concept_polygon; 
+	nrel_side
+    };;
+	
+nrel_external_angle <= nrel_using_constants:
+	{
+	concept_angle; 
+	concept_polygon; 
+	nrel_vertex
+	};;
+	
+nrel_height <= nrel_using_constants:
+	{
+	concept_polygon; 
+	concept_segment; 
+	nrel_perpendicular; 
+	nrel_vertex_of_polygon; 
+	nrel_base; 
+	concept_straight_line; 
+	nrel_length
+	};;
+
+nrel_internal_angle <= nrel_using_constants:
+	{
+	concept_angle; 
+	concept_ray; 
+	nrel_vertex; 
+	concept_polygon
+	};;
+	
+nrel_vertex <= nrel_using_constants:
+	{
+	nrel_vertex_of_angle; 
+	nrel_vertex_of_polygon	
+	};;
+	
+nrel_side <= nrel_using_constants:
+	{
+	nrel_side_of_angle; 
+	nrel_side_of_polygon
+	};;
+
+nrel_be_inscribed <= nrel_using_constants:
+	{
+	concept_circle; 
+	concept_polygon; 
+	nrel_vertex
+	};;
+
+nrel_perimeter <= nrel_using_constants:
+	{
+	nrel_length; 
+	nrel_side
+	};;
+

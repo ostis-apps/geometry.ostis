@@ -1,0 +1,378 @@
+concept_quadrilateral <- rrel_key_sc_element: 
+        ...
+	(*
+	=> nrel_main_idtf: [Опр.(четырехугольник)] (* <- lang_ru;; *);;
+	<- sc_definition;; 
+	-> rrel_main_key_sc_element: d_concept_quadrilateral;;
+	-> rrel_key_sc_element: concept_quadrilateral; concept_polyline; concept_plane; concept_geometric_point;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Четырехугольник - замкнутая ломаная линия, обазованная четырьмя различными, 
+			но лежащими в одной плоскости точками.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+
+concept_trapezoid <- rrel_key_sc_element: 
+        ...
+	(*
+	=> nrel_main_idtf: [Опр.(трапеция)] (* <- lang_ru;; *);;
+	<- sc_definition;; 
+	-> rrel_main_key_sc_element: d_concept_trapezoid;;
+	-> rrel_key_sc_element: concept_trapezoid; nrel_side; nrel_parallelism;  nrel_opposite;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Трапеция - четырёхугольник, у которого две противоположные стороны параллельны, 
+			а две другие непараллельны.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+	
+nrel_center_line <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр.(средняя линия*)] (* <- lang_ru;; *);; 
+	-> rrel_main_key_sc_element: stat_triangle_center_line_middle_parallelism_half;;
+	-> rrel_key_sc_element: concept_segment; nrel_center_line; nrel_lateral_side; concept_triangle; concept_quadrilateral;;
+	<- sc_statement;;   
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Средняя линия - отрезок, соединяющий середины боковых сторон треугольника, четырехугольника.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+	
+concept_rectangle <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр.(прямоугольник)] (* <- lang_ru;; *);; 
+	-> rrel_main_key_sc_element: d_concept_rectangle;;
+	-> rrel_key_sc_element: concept_rectangle; concept_parallelogram; concept_right_angle;;
+	<- sc_statement;;   
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Прямоугольник - параллелограмм, у которого все углы прямые.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+	
+concept_rhomb <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр.(ромб)] (* <- lang_ru;; *);; 
+	-> rrel_main_key_sc_element: d_concept_rhomb;;
+	-> rrel_key_sc_element: concept_rhomb; nrel_side; concept_parallelogram; nrel_congruence;;
+	<- sc_statement;;   
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Ромб - параллелограмм, у которого все стороны равны.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+nrel_base <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр.(основание*)] (* <- lang_ru;; *);; 
+	-> rrel_main_key_sc_element: d_nrel_base;;
+	-> rrel_key_sc_element: nrel_base; nrel_side; nrel_perpendicularity; nrel_height; concept_isosceles_triangle; concept_parallelogram; concept_isosceles_trapezoid;;
+	<- sc_statement;;   
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Основание - это сторона равнобедренного треугольника, трапеции или 
+			параллелограмма, перпендикулярная их высоте.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+	
+concept_parallelogram <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр.(параллелограмм)] (* <- lang_ru;; *);; 
+	-> rrel_main_key_sc_element: d_concept_parallelogram;;
+	-> rrel_key_sc_element: concept_parallelogram; concept_quadrilateral; nrel_side; nrel_parallelism; nrel_opposite;;
+	<- sc_statement;;   
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Параллелограмм - это четырёхугольник, у которого противоположные стороны попарно параллельны.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+	
+concept_square <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр.(квадрат)] (* <- lang_ru;; *);; 
+	-> rrel_main_key_sc_element: d_concept_square;;
+	-> rrel_key_sc_element: concept_square; nrel_side; concept_angle;;
+	<- sc_statement;;   
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Квадрат - четырёхугольник, у которого все стороны и все углы равны друг другу.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+	
+concept_isosceles_trapezoid <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр.(равнобедренная трапеция)] (* <- lang_ru;; *);; 
+	-> rrel_main_key_sc_element: d_concept_isosceles_trapezoid;;
+	-> rrel_key_sc_element: concept_isosceles_trapezoid; concept_trapezoid; nrel_lateral_side; nrel_congruence;;
+	<- sc_statement;;   
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Равнобедренная трапеция - трапеция, у которой  боковые стороны равны.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+nrel_lateral_side <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр.(боковая сторона*)] (* <- lang_ru;; *);; 
+	-> rrel_main_key_sc_element: d_concept_isosceles_trapezoid;;
+	-> rrel_key_sc_element: nrel_lateral_side; concept_geometric_figure; concept_isosceles_triangle; concept_isosceles_trapezoid; concept_segment; nrel_side; concept_angle; nrel_base;;
+	<- sc_statement;;   
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Боковая сторона геометрической фигуры (равнобедренного треугольника или трапеции) - это 
+			отрезок, который является стороной этой геометрической фигуры и 
+			имеет общий угол с основанием той же фигуры.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_rectangular_trapezoid <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр.(прямоугольная трапеция)] (* <- lang_ru;; *);; 
+	-> rrel_main_key_sc_element: d_concept_rectangular_trapezoid;;
+	-> rrel_key_sc_element: concept_rectangular_trapezoid; concept_trapezoid; nrel_lateral_side; nrel_perpendicularity; nrel_base;; 
+	<- sc_statement;;   
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Прямоугольная трапеция - трапеция, у которой одна из боковых сторон перпендикулярна основаниям.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+	
+nrel_base <- rrel_key_sc_element: 
+	...
+	(*
+	=> nrel_main_idtf: [Опр.(основание*)] (* <- lang_ru;; *);; 
+	-> rrel_main_key_sc_element: d_nrel_base;;
+	-> rrel_key_sc_element: nrel_base; nrel_side; nrel_perpendicularity; nrel_height; concept_isosceles_triangle; concept_parallelogram; concept_isosceles_trapezoid;;
+	<- sc_definition;;   
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Основание - это сторона равнобедренного треугольника, трапеции или параллелограмма, перпендикулярная их высоте.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+nrel_area <- rrel_key_sc_element: 
+     	...
+	(*
+	=> nrel_main_idtf: [Поясн.(площадь*)] (* <- lang_ru;; *);;
+	-> rrel_main_key_sc_element: d_nrel_area;;
+	-> rrel_key_sc_element: nrel_area; concept_plane; concept_polygon;;
+	<- sc_explanation;;   
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Площадь - числовая характеристика, приписываемая конечной плоскости, ограниченной данным многоугольником.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+nrel_bound <- rrel_key_sc_element: 
+     	...
+	(*
+	=> nrel_main_idtf: [Опр.(граница*))] (* <- lang_ru;; *);;
+	-> rrel_main_key_sc_element: d_nrel_bound;;
+	-> rrel_key_sc_element: nrel_bound; concept_linear_figure;  concept_geometric_point; concept_geometric_figure; nrel_boundary_point;;
+	<- sc_explanation;;   
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Граница - линейная геометрическая фигура, каждая точка которой является граничной для заданной геометрической фигуры.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+nrel_congruence <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр.(конгруэнтность*)] (* <- lang_ru;; *);;  
+	-> rrel_main_key_sc_element: d_nrel_congruence;;
+	-> rrel_key_sc_element: nrel_congruence; concept_geometric_point; concept_geometric_figure;;
+	<- sc_definition;;   
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Конгруэнтностью называется множество соответствий между любыми парами точек одной геометрической фигуры и соответствующими парами точек другой геометрической фигуры такое, что расстояние между парами этих точек равны.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+nrel_diagonal <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр.(диагональ*)] (* <- lang_ru;; *);;  
+	-> rrel_main_key_sc_element: d_nrel_diagonal;;
+	-> rrel_key_sc_element: nrel_diagonal; concept_segment; nrel_vertex; concept_polygon; nrel_side;;
+	<- sc_definition;;   
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Диагональ - отрезок, соединяющий две вершины многоугольника, не принадлежащие одной его стороне.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+nrel_external_angle <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр.(внешний угол*)] (* <- lang_ru;; *);;
+	-> rrel_main_key_sc_element: d_nrel_external_angle;;
+	-> rrel_key_sc_element: nrel_external_angle; concept_angle; concept_polygon; nrel_vertex;;
+	<- sc_definition;;   
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Внешний угол - угол, смежный с углом многоугольника при этой вершине.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+nrel_height <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр.(высота*)] (* <- lang_ru;; *);; 
+	-> rrel_main_key_sc_element: d_nrel_height;;
+	-> rrel_key_sc_element: nrel_height; concept_polygon; concept_segment; nrel_perpendicular; nrel_vertex_of_polygon; nrel_base; concept_straight_line; nrel_length;;
+	<- sc_definition;;   
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Высота - отрезок перпендикуляра, опущенного из вершины многоугольника на его основание или на продолжение основания.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+nrel_internal_angle <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр.(внутренний угол*)] (* <- lang_ru;; *);; 
+	-> rrel_main_key_sc_element: d_nrel_internal_angle;;
+	-> rrel_key_sc_element: nrel_internal_angle; concept_angle; concept_ray; nrel_vertex; concept_polygon; nrel_be_less;; 
+	<- sc_definition;;   
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Внутренний угол - угол, образованный лучами, выходящими из вершины многоугольника, и меньший 180 градусов.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+nrel_perimeter <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр.(периметр*)] (* <- lang_ru;; *);; 
+	-> rrel_main_key_sc_element: d_nrel_perimeter;;
+	-> rrel_key_sc_element: nrel_perimeter; nrel_sum; nrel_length; nrel_side;;
+	<- sc_definition;;   
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Периметр - сумма длин всех сторон многоугольника.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+nrel_side <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр.(сторона*)] (* <- lang_ru;; *);; 
+	-> rrel_main_key_sc_element: d_nrel_side;;
+	-> rrel_key_sc_element: nrel_side; nrel_side_of_angle; nrel_side_of_polygon;;
+	<- sc_definition;;   
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Сторона - это теоретико-множественное объединение понятий стороны угла и стороны многоугольника.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+nrel_be_inscribed <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр.(вписанность*)] (* <- lang_ru;; *);; 
+	-> rrel_main_key_sc_element: d_nrel_be_inscribed;;
+	-> rrel_key_sc_element: nrel_be_inscribed; concept_circle; concept_polygon; nrel_be_inscribed; nrel_vertex;;
+	<- sc_definition;;   
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Вписанный многоугольник - многоугольник, все вершины которого лежат на данной окружности.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+nrel_vertex <- rrel_key_sc_element: 
+	...
+	(*
+	=> nrel_main_idtf: [Опр.(вершина*)] (* <- lang_ru;; *);;
+	-> rrel_main_key_sc_element: d_nrel_vertex;;
+	-> rrel_key_sc_element: nrel_vertex; nrel_vertex_of_angle; nrel_vertex_of_polygon;;
+	<- sc_definition;;  
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Вершина - объединение понятий вершины угла и вершины многоугольника]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+	
+
+
+
+	
+	

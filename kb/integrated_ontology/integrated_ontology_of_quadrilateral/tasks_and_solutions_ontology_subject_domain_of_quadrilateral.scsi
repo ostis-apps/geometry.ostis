@@ -1,0 +1,165 @@
+concept_trapezoid <- rrel_key_sc_element:
+	task_of_finding_measure_of_angles_of_trapezoid_use_another_angles
+	(*
+	=> nrel_main_idtf: [Задача. Нахождение углов трапеции по известным внутренним углам.](* <- lang_ru;; *);;
+	<- sc_task;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+        	-> rrel_example: 
+			[В трапеции MNPK MK – большее основание. Через вершину N проведена прямая, параллельная PK, 
+			до пересечения с MK в точке F, угол NMF=40°, а угол MNF=75°. Найдите углы трапеции. ]
+			(* <- lang_ru;; *);;
+		*);;
+	=> nrel_solution:
+		...
+		(*
+		=> nrel_main_idtf: [Решение. Нахождение углов трапеции по известным внутренним углам.](* <- lang_ru;; *);;
+		<= nrel_using_statements:
+			{
+			stat_sum_angle_measure_angle_triangle;
+			d_concept_parallelogram;
+			stat_sum_angle_measure_adjacent_angles;
+			stat_parallelogram_opposite_angle_congruence;
+			stat_quadrilateral_sum_internal_angle
+			};;
+		*);;
+	*);;
+	
+task_of_finding_measure_of_angles_of_trapezoid_use_another_angles <- sc_node_struct;;
+	
+stat_sum_angle_measure_angle_triangle <- sc_node_struct;
+=> nrel_main_idtf: [Форм. Утв.(треугольник; сумма*; угол*)] (* <- lang_ru;; *);;
+
+d_concept_parallelogram <- sc_node_struct;
+=> nrel_main_idtf: [Форм. Опр. (параллелограмм)] (* <- lang_ru;; *);;
+
+stat_sum_angle_measure_adjacent_angles <- sc_node_struct;
+=> nrel_main_idtf: [Форм. Утв.(смежные угол*; сумма*)] (* <- lang_ru;; *);;
+
+stat_parallelogram_opposite_angle_congruence <- sc_node_struct;
+=> nrel_main_idtf: [Форм. Утв.(параллелограмм; противолежащие углы*; конгруэнтность*)] (* <- lang_ru;; *);;
+
+stat_quadrilateral_sum_internal_angle <- sc_node_struct;
+=> nrel_main_idtf: [Форм. Утв.(четырехугольник; внутренний угол*; сумма*)] (* <- lang_ru;; *);;	
+
+
+
+concept_square <- rrel_key_sc_element:
+	task_of_finding_area_of_square_use_radius_of_described_circle
+	(*
+	=> nrel_main_idtf: [Задача. Нахождение площади квадрата по радиусу окружности, описанной около
+	этого квадрата.](* <- lang_ru;; *);;
+	<- sc_task;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+        	-> rrel_example: 
+			[Радиус окружности, в которую вписали квадрат, равен 6. Найдите площадь квадрата. ]
+			(* <- lang_ru;; *);;
+		*);;
+	=> nrel_solution:
+		...
+		(*
+		=> nrel_main_idtf: [Решение. Нахождение площади квадрата по радиусу окружности, 
+		описанной около этого квадрата.](* <- lang_ru;; *);;
+		<= nrel_using_statements:
+			{
+			stat_center_circle_around_square;
+			stat_diagonal_square;
+			stat_hypotenuse_sum_cathetus;
+			stat_area_square
+			};;
+		*);;
+	*);;
+	
+task_of_finding_area_of_square_use_radius_of_described_circle <- sc_node_struct;;
+	
+stat_center_circle_around_square <- sc_node_struct;
+=> nrel_main_idtf: [Форм. Утв.(квадрат; окружность; центр*; быть вписанным*)] (* <- lang_ru;; *);;
+
+stat_diagonal_square <- sc_node_struct;
+=> nrel_main_idtf: [Форм. Утв. (квадрат; диагональ*)] (* <- lang_ru;; *);;
+
+stat_hypotenuse_sum_cathetus <- sc_node_struct;
+=> nrel_main_idtf: [Форм. Теорема Пифагора] (* <- lang_ru;; *);;
+
+stat_area_square <- sc_node_struct;
+=> nrel_main_idtf: [Форм. Утв.(квадрат; площадь*)] (* <- lang_ru;; *);;
+
+
+concept_square <- rrel_key_sc_element:
+	task_of_finding_height_of_parallelogram_use_side_and_angle
+	(*
+	=> nrel_main_idtf: [Задача. Нахождение высоты параллелограмма по известным стороне и углу.](* <- lang_ru;; *);;
+	<- sc_task;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+        	-> rrel_example: 
+			[В параллелограмме ABCD sinC = 5/7. AD = 7. Найдите высоту, опущенную на сторону AB. ]
+			(* <- lang_ru;; *);;
+		*);;
+	=> nrel_solution:
+		...
+		(*
+		=> nrel_main_idtf: [Решение. Нахождение высоты параллелограмма по известным стороне и углу.](* <- lang_ru;; *);;
+		<= nrel_using_statements:
+			{
+			stat_parallelogram_opposite_angle_congruence;
+			struct_def_sin
+			};;
+		*);;
+	*);;
+	
+task_of_finding_height_of_parallelogram_use_side_and_angle <- sc_node_struct;;
+	
+stat_parallelogram_opposite_angle_congruence <- sc_node_struct;
+=> nrel_main_idtf: [Форм. Утв.(параллелограмм; противоположные углы*; конгруэнтность*)] (* <- lang_ru;; *);;
+
+struct_def_sin <- sc_node_struct;
+=> nrel_main_idtf: [Форм. Утв. (синус*)] (* <- lang_ru;; *);;
+
+
+
+concept_square <- rrel_key_sc_element:
+	task_of_finding_perimeter_of_rhomb_use_side_and_angle
+	(*
+	=> nrel_main_idtf: [Задача. Нахождение периметра ромба по известным стороне и углу.](* <- lang_ru;; *);;
+	<- sc_task;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+        	-> rrel_example: 
+			[ Найдите периметр ромба ABCD, если угол B равен 60°, а длина AC составляет 10,5.  ]
+			(* <- lang_ru;; *);;
+		*);;
+	=> nrel_solution:
+		...
+		(*
+		=> nrel_main_idtf: [Решение. Нахождение периметра ромба по известным стороне и углу.](* <- lang_ru;; *);;
+		<= nrel_using_statements:
+			{
+			struct_stat_congruence_angle_base_isosceles_triangle;
+			struct_stat_sum_angle_measure_angle_triangle;
+			d_equilateral_triangle;
+			d_nrel_perimeter
+			};;
+		*);;
+	*);;
+	
+task_of_finding_perimeter_of_rhomb_use_side_and_angle <- sc_node_struct;;
+	
+struct_stat_congruence_angle_base_isosceles_triangle <- sc_node_struct;
+=> nrel_main_idtf: [Форм. Утв.(равнобедренный треугольник; внутренний угол*, основание*, конгруэнтность*)] (* <- lang_ru;; *);;
+
+struct_stat_sum_angle_measure_angle_triangle <- sc_node_struct;
+=> nrel_main_idtf: [Форм. Утв. (треугольник; угол*; сумма*)] (* <- lang_ru;; *);;
+
+d_equilateral_triangle <- sc_node_struct;
+=> nrel_main_idtf: [Форм. Опр. (равносторонний треугольник)] (* <- lang_ru;; *);;
+
+d_nrel_perimeter <- sc_node_struct;
+=> nrel_main_idtf: [Форм. Опр.(периметр*)] (* <- lang_ru;; *);;
+
+
