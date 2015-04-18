@@ -1,0 +1,19 @@
+sc_node_not_relation -> concept_closed_polyline;;
+
+concept_closed_polyline => nrel_main_idtf:
+	[замкнутая ломаная]
+	(* <- lang_ru;; *);
+	[closed polyline]
+	(* <- lang_en;; *);
+	[тұйықталған бүгілме сызық]
+	(* <- lang_kz;; *);;
+
+concept_closed_polyline => nrel_idtf: [понятие замкнутой ломаной] (* <- lang_ru;; *);;
+
+concept_closed_polyline => nrel_strict_inclusion: concept_linear_polygon;;
+
+concept_closed_polyline <= nrel_using_constants:
+	{
+	concept_polyline; 
+	nrel_boundary_point
+	};;

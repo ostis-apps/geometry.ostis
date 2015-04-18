@@ -1,0 +1,39 @@
+sc_node_not_relation -> concept_range;;
+
+concept_range => nrel_main_idtf:
+	[интервал]
+	(* <- lang_ru;;	*);
+	[range]
+	(* <- lang_en;; *);
+	[интервал]
+	(* <- lang_kz;; *);;
+
+concept_range => nrel_idtf: [множество интервалов] (* <- lang_ru;; *);;
+
+concept_range => nrel_idtf: [Множество всевозможных интервалов] (* <- lang_ru;; *);;
+
+concept_range => nrel_idtf: [Множество знаков всевозможных интервалов] (* <- lang_ru;; *);;
+
+concept_range <= nrel_strict_inclusion: concept_linear_figure;;
+
+concept_range <= nrel_strict_inclusion: concept_geometric_figure_without_boundary_points;;
+
+concept_range <= nrel_using_constants:
+	{
+	concept_segment; 
+	nrel_boundary_point
+	};;
+
+concept_range <- rrel_key_sc_element: 
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(интервал; геометрическая точка; прямая; граничная точка*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Любой интервал можно однозначно задать указанием двух геометрических точек, лежащих на одной прямой, которые являются граничными точками задаваемого интервала.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;

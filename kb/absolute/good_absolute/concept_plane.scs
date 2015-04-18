@@ -1,0 +1,404 @@
+sc_node_not_relation -> concept_plane;;
+
+concept_plane => nrel_main_idtf:
+	[плоскость]
+	(* <- lang_ru;;	*);
+	[plane]
+	(* <- lang_en;;	*);
+	[жазықтық]
+	(* <- lang_kz;;	*);;
+
+
+concept_plane => nrel_idtf: [Класс плоскостей] (* <- lang_ru;; *);;
+
+concept_plane => nrel_idtf: [Понятие плоскости] (* <- lang_ru;; *);;
+
+concept_plane => nrel_idtf: [Множество всевозможных плоскостей] (* <- lang_ru;; *);;
+
+concept_plane <=  nrel_strict_inclusion: concept_surface;;
+
+concept_plane <=  nrel_strict_inclusion: concept_planar_surface;;
+
+concept_plane <- rrel_key_sc_element:
+	...  
+	(*
+	=> nrel_main_idtf: [Акс.(плоскость; непрямолинейная тройка точек)] (* <- lang_ru;; *);;
+	-> rrel_main_key_sc_element: stat_plane_straight_line_geometric_point;;
+	-> rrel_key_sc_element: concept_non_rectlinear_three_tuple_of_points;;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Через любые три точки в пространстве, не лежащие на одной прямой, можно провести плоскость, и притом только одну.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_plane <- rrel_key_sc_element:
+	...  
+	(*
+	=> nrel_main_idtf: [Акс.(плоскость; прямая; пересекающиеся*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Если две различные прямые имеют общую точку, то через эти прямые можно провести плоскость, и притом только одну.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_plane <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Акс.(плоскость; тройка точек)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[В каждой плоскости лежат по крайней мере три точки.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_plane <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Акс.(плоскость; геометрическая точка)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Какова бы ни была плоскость, существуют точки, принадлежащие этой плоскости, и точки, не принадлежащие ей.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_plane <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Акс.(плоскость; геометрическая точка; прямая)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Если две пересекающиеся плоскости имеют общую точку, то они пересекаются по прямой, проходящей через эту точку.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_plane <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Акс.(плоскость; пространство; полупространство; геометрическая точка)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Каждая плоскость делит пространство на две части(два полупространства) так, что любые две точки одного и того же полупространства лежат по одну сторону от данной плоскости, а любые две точки разных полупространств лежат по разные стороны от данной плоскости.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_plane <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(прямая; параллельность*; плоскость; пересекающиеся*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Если через каждую из двух параллельных прямых проведена произвольная плоскость, и эти плоскости пересекаются, то линия их пересечения параллельна каждой из этих прямых.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_plane <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(прямая; пересекающиеся*; геометрическая точка; плоскость; включение множества*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Если две различные прямые пересекаются в некоторой геометрической точке, то все прямые, пересекающие обе данные прямые и не проходящие через данную геометрическую точку, лежат в одной плоскости.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_plane <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(прямая; параллельность*; плоскость; отрезок; конгруэнтность*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Отрезки параллельных прямых, заключенных между двумя параллельными плоскостями, конгруэнтны.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_plane <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(прямая; параллельность*; плоскость)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Через две параллельные прямые можно провести плоскость, и при том только одну.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_plane <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(плоскость; геометрическая точка; прямая)] (* <- lang_ru;; *);;
+	-> rrel_main_key_sc_element: stat_straight_line_belonging_plane;;
+	-> rrel_key_sc_element: concept_geometric_point; concept_straight_line;;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Если две точки прямой принадлежат плоскости, то вся прямая принадлежит этой плоскости.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_plane <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(плоскость; прямая; параллельность*)] (* <- lang_ru;; *);;
+	-> rrel_main_key_sc_element: stat_straight_line_plane_parallelism;;
+	-> rrel_key_sc_element: concept_straight_line; nrel_parallelism;;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Если прямая, не принадлежащая плоскости, параллельна какой-нибудь прямой в этой плоскости, то она параллельна и самой плоскости.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_plane <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(прямая; параллельность*; плоскость; пересечение множеств*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Если прямая параллельна двум пересекающимся плоскостям, то она параллельна и их линии пересечения.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_plane <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(прямая; плоскость; параллельность*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Если одна из двух параллельных прямых параллельна некоторой плоскости, то и другая прямая параллельна этой плоскости или лежит в этой плоскости.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_plane <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(плоскость; геометрическая точка; параллельность*)] (* <- lang_ru;; *);;
+	-> rrel_main_key_sc_element: stat_plane_geometric_point_parallelism;;
+	-> rrel_key_sc_element: concept_geometric_point; nrel_parallelism;;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Через точку, не лежащую в данной плоскости можно провести плоскость, параллельную данной, и притом только одну.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_plane <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(плоскость; прямая; пересекающиеся*; параллельность*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Если две пересекающиеся прямые одной плоскости соответственно параллельны двум прямым другой плоскости, то эти плоскости параллельны.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_plane <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(плоскость; параллельность*; пересечение множеств*; прямая)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Если две параллельные плоскости пересекаются третьей, то прямые, по которым пересекаются плоскости, параллельны.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_plane <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(плоскость; перпендикулярность*; прямая; параллельность*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Если две плоскости перпендикулярны одной и той же прямой, то эти плоскости параллельны.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_plane <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(плоскость; параллельность*; совпадение*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Если две различные плоскости параллельны третьей плоскости, то эти плоскости параллельны между собой.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_plane <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(плоскость; геометрическая точка; прямая; перпендикулярность*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Через точку вне данной плоскости можно провести прямую, перпендикулярную данной плоскости, и притом только одну.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_plane <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(прямая; геометрическая точка; плоскость; перпендикулярность*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Через точку, не лежащую на данной прямой, можно провести плоскость, перпендикулярную этой прямой, и притом только одну.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_plane <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(прямая; плоскость; перпендикулярность*; параллельность*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Если две прямые перпендикулярны одной плоскости, то они параллельны.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_plane <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(прямая; плоскость; параллельность*; перпендикулярность*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Если прямая перпендикулярна одной из двух параллельных плоскостей, то она перпендикулярна и другой плоскости.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_plane <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(плоскость; прямая; пересекающиеся*; перпендикулярность*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Если прямая перпендикулярна двум пересекающимся прямым, лежащим в плоскости, то она перпендикулярна данной плоскости.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_plane <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(плоскость; прямая; параллельность*; перпендикулярность*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Если плоскость перпендикулярна одной из двух параллельных прямых, то она перпендикулярна и другой.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_plane <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(плоскость; прямая; перпендикулярность*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Если плоскость проходит через прямую,перпендикулярную другой плоскости, то эти плоскости перпендикулярны.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_plane -> rrel_example: struct_Plane_P;;
+
+concept_plane <=> nrel_analogue: concept_straight_line;;
+
+concept_plane <=> nrel_antipode: concept_non_planar_surface;;
+
+concept_convex_polygon <= nrel_using_constants:
+	{
+	concept_plane; 
+	concept_surface
+	};;

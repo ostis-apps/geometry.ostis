@@ -1,0 +1,142 @@
+sc_node_not_relation -> concept_straight_line;;
+
+concept_straight_line => nrel_main_idtf:
+	[прямая]
+	(* <- lang_ru;;	*);
+	[straight line]
+	(* <- lang_en;;	*);
+	[түзу]
+	(* <- lang_kz;;	*);;
+
+concept_straight_line => nrel_idtf: [Класс прямых] (* <- lang_ru;; *);;
+
+concept_straight_line => nrel_idtf: [Понятие прямой] (* <- lang_ru;; *);;
+
+concept_straight_line => nrel_idtf: [Множество всевозможных прямых] (* <- lang_ru;; *);;
+
+concept_straight_line => nrel_idtf: [Множество знаков всевозможных прямых] (* <- lang_ru;; *);;
+
+concept_straight_line => nrel_idtf: [прямая линия] (* <- lang_ru;; *);;
+
+concept_straight_line => nrel_idtf: [максимальная прямолинейная фигура] (* <- lang_ru;; *);;
+
+concept_straight_line <= nrel_strict_inclusion: concept_rectilinear_figure;;
+
+concept_straight_line <= nrel_strict_inclusion: concept_planar_line;;
+
+concept_straight_line <= nrel_strict_inclusion: concept_geometric_figure_of_unlimited_size;;
+
+concept_straight_line <- rrel_key_sc_element: 
+	...
+        (*
+        => nrel_main_idtf: [Акс.(прямая; геометрическая точка)] (* <- lang_ru;; *);;
+		-> rrel_main_key_sc_element: stat_singularity_geometric_point_straight_line;;
+		-> rrel_key_sc_element: concept_geometric_point;;
+		<- sc_statement;;
+		<= nrel_sc_text_translation: 
+			...
+			(*
+			-> rrel_example: 
+				[Через любые две точки можно провести прямую и только одну.]
+				(* <- lang_ru;; *);;
+			*);;
+	*);;
+
+
+
+concept_straight_line  <= nrel_using_constants:
+	{
+	concept_line
+	};;
+
+concept_straight_line <- rrel_key_sc_element: 
+	...
+    (*
+    => nrel_main_idtf: [Акс.(прямая; геометрическая точка)] (* <- lang_ru;; *);;
+	-> rrel_main_key_sc_element: stat_straight_line_point;;
+	-> rrel_key_sc_element: concept_geometric_point;;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Существуют точки, принадлежащие прямой и не принадлежащие прямой.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_straight_line <- rrel_key_sc_element: 
+	...
+        (*
+        => nrel_main_idtf: [Акс.(тройка точек; прямолинейная тройка точек; между')] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Если из трех точек одна лежит между двумя другими, то все три данные точки лежат на одной прямой.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_straight_line <- rrel_key_sc_element: 
+	...
+        (*
+        => nrel_main_idtf: [Акс.(точка; прямая; между')] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Из трёх точек прямой только одна лежит между двумя другими.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_straight_line <- rrel_key_sc_element: 
+	...
+        (*
+        => nrel_main_idtf: [Акс.(плоскость; геометрическая точка; прямая)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Если две пересекающиеся плоскости имеют общую точку, то они пересекаются по прямой, проходящей через эту точку.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+
+concept_straight_line <- rrel_key_sc_element: 
+	...
+        (*
+        => nrel_main_idtf: [Акс.(прямая; плоскость; геометрическая точка; параллельность*)] (* <- lang_ru;; *);;
+		-> rrel_main_key_sc_element: stat_straight_line_geometric_point_parallelism;;
+		-> rrel_key_sc_element: concept_plane; concept_geometric_point;;
+		<- sc_statement;;
+		<= nrel_sc_text_translation: 
+			...
+		(*
+		-> rrel_example: 
+			[На плоскости через точку, не лежащую на данной прямой, можно провести одну и только одну прямую, параллельную данной прямой.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_straight_line <- rrel_key_sc_element: 
+	...
+        (*
+        => nrel_main_idtf: [Акс.(прямая; треугольник; плоскость; сторона*; пересекающиеся*; вершина*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Если прямая, лежащая в плоскости, пересекает одну из сторон треугольника, который также лежит в этой плоскости, то она пересекает еще одну его сторону или проходит через его вершину.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_straight_line <=> nrel_analogue: concept_plane;;	
+concept_straight_line -> rrel_example: struct_Straight_Line_A;;

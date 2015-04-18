@@ -1,0 +1,57 @@
+sc_node_norole_relation -> nrel_diagonal;;
+
+nrel_diagonal => nrel_main_idtf:
+	[диагональ*]
+	(* <- lang_ru;; *);
+	[diagonal*]
+	(* <- lang_en;; *);
+	[диагональ*]
+	(* <- lang_kz;; *);;
+
+nrel_diagonal => nrel_idtf: [быть диагональю*] (* <- lang_ru;; *);;
+
+nrel_diagonal <- sc_relation;;
+
+nrel_diagonal <- binary_relation;;
+
+nrel_diagonal <- oriented_relation;;
+
+nrel_diagonal => nrel_definitional_domain: 
+	...
+	(*
+	<= nrel_combination: 
+		{
+		concept_polygon; 
+		concept_segment
+		};;
+	*);;	
+
+nrel_diagonal => nrel_first_domain:
+	concept_polygon;;	
+
+nrel_diagonal => nrel_second_domain: 
+	concept_segment;;
+
+nrel_diagonal <= nrel_using_constants:
+	{
+    	concept_segment; 
+	nrel_vertex; 
+	concept_polygon; 
+	nrel_side
+        };;
+	
+nrel_diagonal <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(диагональ*; многоугольник; вершина*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Для каждого многоугольника выполняется следующее числовое соотношение: d = (n^2-3n)/2, где d – число диагоналей в многоугольнике, n – число вершин многоугольника.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+    
+

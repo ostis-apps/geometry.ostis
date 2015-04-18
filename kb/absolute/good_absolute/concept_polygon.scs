@@ -1,0 +1,173 @@
+sc_node_not_relation -> concept_polygon;;
+
+concept_polygon => nrel_main_idtf:
+	[многоугольник]
+	(* <- lang_ru;;	*);
+	[polygon]
+	(* <- lang_en;;	*);
+	[көпбұрыш]
+	(* <- lang_kz;;	*);;
+	
+
+concept_polygon => nrel_idtf: [n-угольник] (* <- lang_ru;; *);;
+
+concept_polygon => nrel_idtf: [плоский многоугольник] (* <- lang_ru;; *);;
+
+concept_polygon => nrel_idtf: [Класс многоугольников] (* <- lang_ru;; *);;
+
+concept_polygon => nrel_idtf: [Понятие многоугольника] (* <- lang_ru;; *);;
+
+concept_polygon => nrel_idtf: [Множество всевозможных многоугольников] (* <- lang_ru;; *);;
+
+concept_polygon => nrel_idtf: [Множество знаков всевозможных многоугольников] (* <- lang_ru;; *);;
+
+concept_polygon <= nrel_strict_inclusion: concept_geometric_figure_with_all_boundary_points;;
+
+concept_polygon <= nrel_strict_inclusion: concept_planar_figure;;
+
+concept_polygon => nrel_strict_inclusion: concept_linear_polygon;;
+
+concept_polygon <= nrel_subdividing:
+	...
+	(*
+	=> nrel_main_idtf: [Разбиение по признаку выпуклости] (* <- lang_ru;; *);;
+	-> concept_convex_polygon;
+	concept_non_convex_polygon;;
+	*);;
+concept_polygon <= nrel_using_constants:
+	{
+	concept_polygon; 
+	concept_geometric_figure; 
+	concept_polyline; 
+	nrel_intersection; 
+	concept_plane
+	};;	
+	
+concept_polygon <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(многоугольник; простая замкнутая ломаная)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Каждый многоугольник однозначно задается простой замкнутой ломанной. Для каждой простой замкнутой ломанной существует единственный многоугольник.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+	
+concept_polygon <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(многоугольник; вершина*; сторона*; смежность*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Смежными сторонами n-угольника называются две его стороны, имеющие общую вершину.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_polygon <- rrel_key_sc_element:
+	...    
+	(*
+	=> nrel_main_idtf: [Утв.(многоугольник; диагональ*; отрезок; смежность*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Диагональю n-угольника называется отрезок с концами в не смежных вершинах.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_polygon <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(многоугольник; луч; внутренний угол*; смежность*; вершина*; плоскость; пересечение*; внутренняя область*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Внутренним углом n-угольника при данной его вершине называется угол, образованный лучами, имеющими начало в этой вершине и содержащими обе смежные стороны этой вершины. При этом часть плоскости, заключенная между лучами, должна иметь непустое пересечение с внутренней областью n-угольника.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_polygon <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(многоугольник; окружность; вписанность*; вершина*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Вписанным в окружность называется такой n-угольник, все вершины которого лежат на данной окружности..]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_polygon <- rrel_key_sc_element:
+	...    
+	(*
+	=> nrel_main_idtf: [Утв.(многоугольник; окружность; описанность*; вершина*; сторона*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Описанным около окружности называется такой n-угольник, все стороны которого касаются данной окружности. .]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_polygon <- rrel_key_sc_element:
+	...    
+	(*
+	=> nrel_main_idtf: [Утв.(многоугольник; коэффициент подобия*; площадь*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Площади подобных многоугольников относятся как квадраты их соответствующих линейных элементов.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_polygon <- rrel_key_sc_element:
+	...    
+	(*
+	=> nrel_main_idtf: [Утв.(многоугольник; площадь*; окружность; вписанность*; периметр*; радиус*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Площадь многоугольника, в который вписана окружность, равна половине произведения периметра многоугольника на радиус этой окружности.]
+			(* <- lang_ru;; *);;
+        *);;
+*);;
+
+concept_polygon -> rrel_example: struct_Polyhon_K_L_M_N_E_P;;
+concept_polygon -> rrel_example: struct_Regular_Polyhon_A_B_C_D_E_F;;
+concept_polygon -> rrel_example: struct_Irregular_polygon_K_A_B_C_D_E;;
+concept_polygon -> rrel_example: struct_Non_Convex_Polygon_O_P_R_S_Q_T;;
+
+concept_polygon -> rrel_example: struct_Rectangular_triangle_D_F_G;;
+concept_polygon -> rrel_example: struct_Scalene_triangle_K_L_M;;
+concept_polygon -> rrel_example: struct_Obtuse_triangle_L_D_K;;
+concept_polygon -> rrel_example: struct_Acute_angled_triangle_O_S_T;;
+concept_polygon -> rrel_example: struct_Equilateral_triangle_X_Y_Z;;
+concept_polygon -> rrel_example: struct_Rhomb_E_F_G_H;;
+concept_polygon -> rrel_example: struct_Isosceles_trapezoid_K_L_M_N;;
+concept_polygon -> rrel_example: struct_Rectangular_Trapezoid_P_Q_R_S;;
+concept_polygon -> rrel_example: struct_Versatile_trapezoid_Z_X_C_V;;
+concept_polygon -> rrel_example: struct_Parallelogram_A_B_C_D;;
+concept_polygon -> rrel_example: struct_Rectangle_B_C_D_E;;

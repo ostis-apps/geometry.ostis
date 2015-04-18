@@ -1,0 +1,30 @@
+sc_node_not_relation -> concept_discret_geometric_figure;;
+
+concept_discret_geometric_figure => nrel_main_idtf:
+	[дискретная геометрическая фигура]
+	(*
+	<- lang_ru;;
+	*);
+	[discret geometric figure]
+	(*
+	<- lang_en;;
+	*);
+	[дискреттік геометриялық пішін]
+	(* <- lang_kz;; *);;
+
+concept_discret_geometric_figure => nrel_idtf: [понятие дискретной геометрической фигуры] (* <- lang_ru;; *);;
+
+concept_discret_geometric_figure => nrel_idtf: [класс дискретных геометрических фигур] (* <- lang_ru;; *);;
+
+concept_discret_geometric_figure <= nrel_strict_inclusion: concept_geometric_figure;;
+
+concept_discret_geometric_figure => nrel_strict_inclusion: concept_pair_of_points;;
+
+concept_discret_geometric_figure => nrel_strict_inclusion: concept_triple_of_points;;
+
+concept_discret_geometric_figure <= nrel_using_constants:
+	{
+	concept_geometric_figure; 
+	concept_geometric_point
+	};;	
+	

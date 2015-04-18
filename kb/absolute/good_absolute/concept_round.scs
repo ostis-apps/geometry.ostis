@@ -1,0 +1,61 @@
+sc_node_not_relation -> concept_round;;
+
+concept_round => nrel_main_idtf:
+	[круг]
+	(* <- lang_ru;;	*);
+	[round]
+	(* <- lang_en;;	*);
+	[шеңбер]
+	(* <- lang_kz;;	*);;
+
+concept_round => nrel_idtf: [Класс кругов] (* <- lang_ru;; *);;
+
+concept_round => nrel_idtf: [Понятие круга] (* <- lang_ru;; *);;
+
+concept_round => nrel_idtf: [Множество всевозможных кругов] (* <- lang_ru;; *);;
+
+concept_round => nrel_idtf: [Множество всевозможных знаков кругов] (* <- lang_ru;; *);;
+
+concept_round <= nrel_strict_inclusion: concept_geometric_figure_of_limited_size;;
+
+concept_round <= nrel_strict_inclusion: concept_geometric_figure_with_boundary_points;;
+
+concept_round <= nrel_strict_inclusion: concept_planar_figure;;
+
+concept_round <= nrel_strict_inclusion: concept_flat_geometric_figure;;
+
+concept_round <= nrel_using_constants:
+	{
+	concept_circle; 
+	concept_plane
+	};;
+					
+	
+concept_round <- rrel_key_sc_element: 
+        ...
+	(*
+	=> nrel_main_idtf: [Утв.(окружность; граница*; круг)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+          	-> rrel_example: 
+			[Любой круг однозначно задается окружностью, которая является его границей.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_round <- rrel_key_sc_element: 
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(круг; площадь*; окружность; граница*; длина*; радиус*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Для каждого круга площадь вычисляется по формуле: S = c*r/2, где S - площадь круга, с - длина окружности, которая является границей указанного круга, r - радиус указанного круга.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+

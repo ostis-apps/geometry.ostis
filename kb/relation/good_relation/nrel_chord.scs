@@ -1,0 +1,87 @@
+sc_node_norole_relation -> nrel_chord;;
+
+nrel_chord => nrel_main_idtf:
+	[хорда*]
+	(* <- lang_ru;; *);
+	[chord*]
+	(* <- lang_en;; *);
+	[хорда*]
+	(* <- lang_kz;; *);;
+
+nrel_chord => nrel_idtf: [быть хордой*] (* <- lang_ru;; *);;
+
+nrel_chord => nrel_idtf: [хорда окружности*] (* <- lang_ru;; *);;
+
+nrel_chord => nrel_idtf: [быть хордой окружности*] (* <- lang_ru;; *);;
+
+nrel_center_line <- sc_relation;;
+
+nrel_center_line <- binary_relation;;
+
+nrel_center_line <- oriented_relation;;
+
+nrel_chord => nrel_definitional_domain: 
+	...
+	(*
+	<= nrel_combination: 
+		{
+		concept_circle;
+		concept_segment
+		};;
+	*);;
+
+nrel_chord => nrel_first_domain: 
+	concept_circle;;
+
+nrel_chord => nrel_second_domain: 
+	concept_segment;;
+
+nrel_chord <= nrel_using_constants:
+	{
+	concept_segment; 
+	concept_geometric_point; 
+	concept_circle
+	};;
+
+nrel_chord <- rrel_key_sc_element: 
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(дуга; параллельность*; хорда*; конгруэнтность*)] (* <- lang_ru;; *);;
+	<- sc_statement;;   
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Дуги, заключенные между параллельными хордами, равны.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+nrel_chord <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(угол; хорда*; конгруэнтность*; вписанность*; мера угла*)] (* <- lang_ru;; *);; 
+	<- sc_statement;;   
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Вписанные углы, опирающиеся на одну и ту же хорду, либо равны(конгруэнтны), либо их сумма равна 180 угловых градусов.]
+			(* <- lang_ru;;	*);;
+		*);;
+	*);;
+
+nrel_chord <- rrel_key_sc_element: 
+     	...
+	(*
+	=> nrel_main_idtf: [Утв.(хорда*; окружность; пересечение множеств*; геометрическая точка)] (* <- lang_ru;; *);;
+	<- sc_statement;;   
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Если две хорды окружности, AB и CD пересекаются в точке M, то произведение отрезков одной хорды равно произведению отрезков другой хорды. .]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+

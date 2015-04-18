@@ -1,0 +1,121 @@
+sc_node_not_relation -> concept_regular_polygon;;
+
+concept_regular_polygon => nrel_main_idtf:
+	[правильный многоугольник]
+	(* <- lang_ru;; *);
+	[regular polygon]
+	(* <- lang_en;; *);
+	[тең қабырғалы көпбұрыштың ортасы]
+	(* <- lang_kz;; *);;
+
+concept_regular_polygon => nrel_idtf: [Класс правильных многоугольников] (* <- lang_ru;; *);;
+
+concept_regular_polygon => nrel_idtf: [Понятие правильного многоугольника] (* <- lang_ru;; *);;
+
+concept_regular_polygon => nrel_idtf: [Множество всевозможных правильных многоугольников] (* <- lang_ru;; *);;
+
+concept_regular_polygon => nrel_idtf: [Множество знаков всевозможных правильных многоугольников] (* <- lang_ru;; *);;
+
+concept_regular_polygon <= nrel_strict_inclusion: concept_convex_polygon;;
+
+concept_regular_polygon => nrel_strict_inclusion: concept_regular_pentagon;;
+
+concept_regular_polygon => nrel_strict_inclusion: concept_regular_hexagon;;
+			
+concept_regular_polygon => nrel_strict_inclusion: concept_equilateral_triangle;;
+
+concept_regular_polygon => nrel_strict_inclusion: concept_square;;
+
+concept_regular_polygon <= nrel_using_constants:
+	{
+	concept_polygon; 
+	concept_angle; 
+	nrel_side; 
+	nrel_congruence
+	};;
+	
+concept_regular_polygon <- rrel_key_sc_element: 
+    ...
+	(*
+	=> nrel_main_idtf: [Утв.(правильный многоугольник; конгруэнтность*; сторона*)] (* <- lang_ru;; *);;
+	-> rrel_main_key_sc_element: stat_congruance_regular_polygon;;
+	-> rrel_key_sc_element: nrel_congruence; nrel_side;;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Правильные многоугольники равны, если равны их стороны.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+	
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(правильный многоугольник; подобие*; сторона*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Правильные многоугольники с одним и тем же числом сторон подобны друг другу.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(правильный многоугольник; сторона*; длина*; периметр*; радиус*; окружность; коэффициент подобия*; вписанность*; описанность*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[У правильных многоугольников с одним и тем же числом сторон отношение длин сторон, периметров, радиусов вписанных окружностей и радиусов описанных окружностей равны(и равны коэффициенту подобия).]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(правильный шестиугольник; диагональ*; правильный треугольник; конгруэнтность*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Диагонали правильного шестиугольника разбивают его на шесть равных правильных треугольника.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(правильный многоугольник; окружность; вписанность*; описанность*)] (* <- lang_ru;; *);;
+	-> rrel_main_key_sc_element: stat_regular_polygon_circle_inscribed_described;;
+	-> rrel_key_sc_element: nrel_be_inscribed; nrel_be_described; concept_circle;;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Правильный многоугольник может быть описан и вписан в окружность]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(правильный многоугольник; окружность; центр*; вписанность*; описанность*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Описанная около правильного многоугольника окружность и вписанная в него окружность имеют один и тот же центр.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_regular_polygon -> rrel_example: struct_Regular_Polygon_A_B_C_D_E_F;;
+concept_regular_polygon -> rrel_example: struct_Equilateral_triangle_X_Y_Z;;
