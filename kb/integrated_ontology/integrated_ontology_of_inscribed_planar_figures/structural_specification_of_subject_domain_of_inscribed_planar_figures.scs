@@ -1,0 +1,23 @@
+structural_specification_of_subject_domain_of_inscribed_planar_figures
+<- structural_specification;
+=> nrel_main_idtf:
+	[Структурная спецификация Предметной области вписанных планарных фигур]
+	(* <- lang_ru;; *);
+	[Structural specification of subject domain of inscribed planar figures]
+	(* <- lang_en;; *);;
+
+structural_specification_of_subject_domain_of_inscribed_planar_figures = 
+[*
+
+subject_domain_of_inscribed_planar_figures -> rrel_maximum_studied_object_class: 
+	concept_geometric_figure;;
+
+subject_domain_of_triangles -> rrel_not_maximum_studied_object_class: 
+	concept_polygon;
+	concept_circle;
+	concept_angle;;
+
+subject_domain_of_triangles -> rrel_studied_relation:
+	nrel_be_inscribed;;
+	
+*];;

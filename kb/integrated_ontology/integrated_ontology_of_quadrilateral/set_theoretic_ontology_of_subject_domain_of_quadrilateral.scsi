@@ -1,0 +1,319 @@
+concept_quadrilateral 
+<- sc_node_not_relation;
+<= nrel_strict_inclusion: 
+	concept_convex_polygon;
+=> nrel_strict_inclusion: 
+	concept_trapezoid;
+	concept_isosceles_trapezoid;
+	concept_rectangular_trapezoid;
+	concept_parallelogram;
+	concept_rhomb;
+	concept_rectangle;
+	concept_square;
+-> rrel_example:
+	struct_Isosceles_Trapeze_K_L_M_N;
+	struct_Rectangular_Trapeze_P_Q_R_S;
+	struct_Parallelogram_A_B_C_D;
+	struct_Rhomb_E_F_G_H;
+	struct_Rectangle_B_C_D_E;;
+	
+concept_trapezoid
+<- sc_node_not_relation;
+<= nrel_subdividing: 
+	{  
+	concept_isosceles_trapezoid;
+	concept_rectangular_trapezoid
+	};
+-> rrel_example:
+	struct_Isosceles_Trapeze_K_L_M_N;
+	struct_Rectangular_Trapeze_P_Q_R_S;;
+	
+concept_parallelogram
+<- sc_node_not_relation;
+=> nrel_strict_inclusion: 
+	concept_rhomb;
+	concept_rectangle;
+	concept_square;
+-> rrel_example:
+	struct_Parallelogram_A_B_C_D;;
+
+concept_rhomb
+<- sc_node_not_relation;
+=> nrel_strict_inclusion: 
+	concept_square;
+-> rrel_example:
+	struct_Rhomb_E_F_G_H;;
+	
+concept_rectangle
+<- sc_node_not_relation;
+=> nrel_strict_inclusion: 
+	concept_square;
+-> rrel_example:
+	struct_Rectangle_B_C_D_E;;
+	
+concept_square	
+<- sc_node_not_relation;;
+	
+concept_isosceles_trapezoid
+<- sc_node_not_relation;
+-> rrel_example:
+	struct_Isosceles_Trapeze_K_L_M_N;;
+
+concept_rectangular_trapezoid
+<- sc_node_not_relation;
+-> rrel_example:
+	struct_Rectangular_Trapeze_P_Q_R_S;;
+
+sc_node_norole_relation -> nrel_area;;
+	
+nrel_area <- sc_relation;;
+nrel_area <- binary_relation;;
+nrel_area <- oriented_relation;;
+
+nrel_area => nrel_definitional_domain: 
+	...
+	(*
+	<= nrel_combination:
+		{
+		concept_flat_geometric_figure;
+		concept_quantity
+		};;
+	*);;	
+
+nrel_area => nrel_first_domain:
+	concept_flat_geometric_figure;;	
+	
+nrel_area => nrel_second_domain: 
+	concept_quantity;;
+	
+<!--nrel_area <=> nrel_analogue: nrel_length;;-->
+
+sc_node_norole_relation -> nrel_base;;
+
+nrel_base <- sc_relation;;
+nrel_base <- binary_relation;;
+nrel_base <- oriented_relation;;
+
+nrel_base => nrel_definitional_domain: 
+	...
+	(*
+	<= nrel_combination: 
+		{
+		concept_polygon;
+		concept_segment
+		};;
+	*);;		
+
+nrel_base => nrel_first_domain: 
+	concept_polygon;;		
+
+nrel_base => nrel_second_domain: 
+	concept_segment;;
+
+sc_node_norole_relation -> nrel_vertex;;
+
+nrel_vertex <- sc_relation;;
+nrel_vertex <- binary_relation;;
+nrel_vertex <- oriented_relation;;
+
+nrel_vertex => nrel_definitional_domain:
+	...
+	(*
+	<= nrel_combination: 
+		{
+		concept_planar_angle; 
+		concept_polygon;
+		concept_geometric_point
+		};;
+	*);;
+
+nrel_vertex => nrel_first_domain: 
+	...
+	(*
+	<= nrel_combination: 
+		{
+		concept_planar_angle; 
+		concept_polygon	
+		};;
+	*);;
+
+nrel_vertex => nrel_second_domain: 
+	concept_geometric_point;;
+	
+sc_node_norole_relation -> nrel_side;;
+
+nrel_side <- sc_relation;;
+nrel_side <- binary_relation;;
+nrel_side <- oriented_relation;;
+
+nrel_side => nrel_definitional_domain: 
+	...
+	(*
+	<= nrel_combination: 
+		{
+		concept_planar_angle; 
+		concept_polygon;
+		concept_segment
+		};;
+	*);;	
+
+nrel_side => nrel_first_domain: 
+	...
+	(*
+	<= nrel_combination: 
+		{
+		concept_planar_angle; 
+		concept_polygon
+		};;
+	*);;	
+
+nrel_side => nrel_second_domain: 
+	concept_segment;;
+	
+sc_node_norole_relation -> nrel_internal_angle;;
+
+nrel_internal_angle <- sc_relation;;
+nrel_internal_angle <- binary_relation;;
+nrel_internal_angle <- oriented_relation;;
+
+nrel_internal_angle => nrel_definitional_domain:
+	...
+	(*
+	<= nrel_combination: 
+		{
+		concept_polygon; 
+		concept_planar_angle
+		};;
+	*);;
+
+nrel_internal_angle => nrel_first_domain: 
+	concept_polygon;;
+
+nrel_internal_angle => nrel_second_domain: 
+	concept_planar_angle;;
+	
+sc_node_norole_relation -> nrel_congruence;;
+
+nrel_congruence 
+	<- binary_relation; sc_relation; non_oriented_relation;;
+
+nrel_congruence => nrel_definitional_domain:
+	concept_geometric_figure;;
+	
+nrel_congruence => nrel_first_domain:
+	concept_geometric_figure;;
+
+nrel_congruence => nrel_second_domain: 
+	concept_geometric_figure;;
+
+sc_node_norole_relation -> nrel_height;;
+
+nrel_height <- sc_relation;;
+nrel_height <- binary_relation;;
+nrel_height <- oriented_relation;;
+
+nrel_height => nrel_definitional_domain:
+	...
+	(*
+	<= nrel_combination: 
+		{
+		concept_polygon; 
+		concept_segment
+		};;
+	*);;	
+
+nrel_height => nrel_first_domain:
+	concept_polygon;;	
+
+nrel_height => nrel_second_domain: 
+	concept_segment;;
+
+sc_node_norole_relation -> nrel_perimeter;;
+	
+nrel_perimeter <- sc_relation;;
+nrel_perimeter <- binary_relation;;
+nrel_perimeter <- oriented_relation;;
+
+nrel_perimeter => nrel_definitional_domain: 
+	...
+	(*
+	<= nrel_combination:
+		{
+		concept_flat_geometric_figure;
+		concept_quantity
+		};;
+	*);;	
+
+nrel_perimeter => nrel_first_domain:
+	concept_flat_geometric_figure;;	
+	
+nrel_perimeter => nrel_second_domain: 
+	concept_quantity;;
+	
+sc_node_norole_relation -> nrel_internal_angle;;
+
+nrel_internal_angle <- sc_relation;;
+nrel_internal_angle <- binary_relation;;
+nrel_internal_angle <- oriented_relation;;
+
+nrel_external_angle => nrel_definitional_domain:
+	...
+	(*
+	<= nrel_combination: 
+		{
+		concept_polygon; 
+		concept_planar_angle
+		};;
+	*);;
+
+nrel_external_angle => nrel_first_domain: 
+	concept_polygon;;
+
+nrel_external_angle => nrel_second_domain: 
+	concept_planar_angle;;	
+	
+sc_node_norole_relation -> nrel_be_inscribed;;
+
+nrel_be_inscribed <- sc_relation;;
+nrel_be_inscribed <- binary_relation;;
+nrel_be_inscribed <- oriented_relation;;
+
+nrel_be_inscribed => nrel_definitional_domain:
+...
+	(*
+	<= nrel_combination: 
+		{	 
+		concept_polygon;
+		concept_planar_angle;
+		concept_circle
+		};;
+	*);;
+	
+nrel_be_inscribed => nrel_first_domain: 
+	...
+	(*
+	<= nrel_combination: 
+		{	 
+		concept_polygon;
+		concept_planar_angle;
+		concept_circle
+		};;
+	*);;
+
+nrel_be_inscribed => nrel_second_domain: 
+	...
+	(*
+	<= nrel_combination: 
+		{	 
+		concept_polygon;
+		concept_planar_angle;
+		concept_circle
+		};;
+	*);;
+
+
+
+
+	
+	
+

@@ -1,0 +1,46 @@
+concept_geometric_point <= nrel_using_constants:
+	{
+	concept_geometric_figure
+	};;
+
+concept_pair_of_points <= nrel_using_constants:
+	{
+	concept_geometric_point
+	};;
+
+concept_non_rectlinear_three_tuple_of_points <= nrel_using_constants:
+	{
+	concept_triple_of_points; 
+	concept_geometric_point; 
+	concept_straight_line
+	};;
+
+concept_triple_of_points <= nrel_using_constants:
+	{
+	concept_geometric_point
+	};;	
+
+concept_rectilinear_three_of_points <= nrel_using_constants:
+	{
+	concept_straight_line;
+	concept_triple_of_points
+	};;
+
+nrel_between <= nrel_using_constants:
+	{
+	concept_geometric_point; 
+	concept_rectilinear_three_of_points
+	};;
+
+nrel_distance <= nrel_using_constants:
+	{
+	concept_geometric_point; 
+	concept_segment
+	};;
+
+nrel_congruence_of_pair_of_points <= nrel_using_constants:
+	{
+	concept_geometric_point; 
+	nrel_distance
+	};;
+

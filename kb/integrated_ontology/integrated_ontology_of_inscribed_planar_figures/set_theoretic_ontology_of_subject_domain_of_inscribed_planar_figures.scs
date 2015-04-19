@@ -1,0 +1,25 @@
+set_theoretic_ontology_of_subject_domain_of_inscribed_planar_figures
+<- theoretic_set_ontology;
+
+=> nrel_main_idtf:
+	[Теоретико-множественная онтология Предметной области вписанных планарных фигур]
+	(* <- lang_ru;; *);
+	[Set theoretic ontology of subject domain of inscribed planar figures]
+	(* <- lang_en;; *);;
+	
+set_theoretic_ontology_of_subject_domain_of_inscribed_planar_figures = [*^"file://set_theoretic_ontology_of_subject_domain_of_inscribed_planar_figures.scsi"*];;
+
+rrel_key_sc_element -> (set_theoretic_ontology_of_subject_domain_of_inscribed_planar_figures -> concept_geometric_figure)
+(*
+	=> nrel_key_sc_element_base_order: (set_theoretic_ontology_of_subject_domain_of_inscribed_planar_figures -> concept_polygon)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_base_order: (set_theoretic_ontology_of_subject_domain_of_inscribed_planar_figures -> concept_circle)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_base_order: (set_theoretic_ontology_of_subject_domain_of_inscribed_planar_figures -> concept_angle)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_base_order: (set_theoretic_ontology_of_subject_domain_of_inscribed_planar_figures -> nrel_be_inscribed)
+	(* <- rrel_key_sc_element;; *);;
+*);;*);;*);;*);;

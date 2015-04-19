@@ -1,0 +1,121 @@
+concept_geometric_figure
+<- sc_node_not_relation;;
+
+concept_geometric_figure <= nrel_subdividing:
+	...
+	(*
+	=> nrel_main_idtf: [Разбиение по признаку ограниченности размера] (* <- lang_ru;; *);;
+
+	-> concept_geometric_figure_of_limited_size;
+	  concept_geometric_figure_of_unlimited_size;;
+	*);;
+
+concept_geometric_figure <= nrel_subdividing:
+	...
+	(*
+	=> nrel_main_idtf: [Разбиение по признаку существования граничных точек] (* <- lang_ru;; *);;
+
+	-> concept_geometric_figure_with_boundary_points;
+	  concept_geometric_figure_without_boundary_points;;
+	*);;
+
+concept_geometric_figure <= nrel_subdividing:
+	...
+	(*
+	=> nrel_main_idtf: [Разбиение по признаку расположения в одной плоскости] (* <- lang_ru;; *);;
+
+	-> concept_planar_figure;
+	  concept_non_planar_figure;;
+	*);;
+
+concept_geometric_figure <= nrel_subdividing:
+	...
+	(*
+	=> nrel_main_idtf: [Разбиение по признаку расположения на одной прямой] (* <- lang_ru;; *);;
+
+	-> concept_rectilinear_figure;
+	  concept_non_rectlinear_geometric_figure;;
+	*);;
+
+concept_geometric_figure <= nrel_subdividing:
+	...
+	(*
+	=> nrel_main_idtf: [Разбиение по признаку счетности множества] (* <- lang_ru;; *);;
+
+	-> concept_countable_set;
+	  concept_non_countable_set;;
+	*);;
+
+
+concept_geometric_figure <= nrel_subdividing:
+	...
+	(*
+	=> nrel_main_idtf: [Разбиение по признаку размерности] (* <- lang_ru;; *);;
+
+	-> concept_linear_figure;
+	  concept_discret_geometric_figure;
+	  concept_flat_geometric_figure;
+	  concept_geometric_body;;
+	*);;
+
+	
+concept_geometric_figure -> rrel_example: 
+	struct_Rectilinear_triple_Of_Points_P_Q_R;
+	struct_Straight_Line_A;
+	struct_Rectangular_triangle_D_F_G;
+	struct_Scalene_triangle_K_L_M;
+	struct_Obtuse_triangle_L_D_K;
+	struct_Acute_angled_triangle_O_S_T;
+	struct_Equilateral_triangle_X_Y_Z;
+	struct_Opened_ray_k;
+	struct_Regular_Polyhon_A_B_C_D_E_F;
+	struct_Irregular_polygon_K_A_B_C_D_E;
+	struct_Polygon_K_A_B_C_D_E;
+	struct_Non_Convex_Polygon_O_P_R_S_Q_T;
+	struct_Circle_O_R;
+	struct_Segment_A_B;
+	struct_Parallelogram_A_B_C_D;
+	struct_Plane_P;
+	struct_Opened_Half_Plane_K1;
+	struct_Rectangle_B_C_D_E;
+	struct_Isosceles_trapezoid_K_L_M_N;
+	struct_Rectangular_Trapezoid_P_Q_R_S;
+	struct_Versatile_trapezoid_Z_X_C_V;
+	struct_Non_convex_angle_A_B_K;
+	struct_Straight_angle_A_O_B;
+	struct_Acute_Angle_K_L_M;
+	struct_Zero_Angle_N_K_N;
+	struct_Full_angle_P_K_P;
+	struct_struct_Right_Angle_P_T_R_P_T_R;
+	struct_Obtuse_angle_T_P_R;
+	struct_Rhomb_E_F_G_H;;
+	
+sc_node_norole_relation -> nrel_congruence_of_pair_of_points;;
+
+nrel_congruence_of_pair_of_points <- binary_relation;; 
+nrel_congruence_of_pair_of_points <- sc_relation;; 
+nrel_congruence_of_pair_of_points <- non_oriented_relation;;
+
+nrel_congruence_of_pair_of_points => nrel_definitional_domain:
+	concept_pair_of_points;;
+
+nrel_congruence_of_pair_of_points => nrel_first_domain:
+	concept_pair_of_points;;
+
+nrel_congruence_of_pair_of_points => nrel_second_domain: 
+	concept_pair_of_points;;
+
+sc_node_norole_relation -> nrel_congruence;;
+
+nrel_congruence <- binary_relation;;
+nrel_congruence <- sc_relation;; 
+nrel_congruence <- non_oriented_relation;;
+
+nrel_congruence => nrel_definitional_domain:
+	concept_geometric_figure;;
+	
+nrel_congruence => nrel_first_domain:
+	concept_geometric_figure;;
+
+nrel_congruence => nrel_second_domain: 
+	concept_geometric_figure;;	
