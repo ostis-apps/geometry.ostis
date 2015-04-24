@@ -1,0 +1,109 @@
+/*sc_node_norole_relation -> nrel_area;;
+
+nrel_area => nrel_main_idtf:
+	[площадь*] 
+	(* <- lang_ru;; *);
+	[area*]
+	(* <- lang_en;;	*);
+	[аудан*]
+	(* <- lang_kz;; *);;
+
+nrel_area => nrel_idtf:
+	[быть площадью*]
+	(* <- lang_ru;; *);;
+
+nrel_area => nrel_idtf:
+	[быть площадью фигуры*] 
+	(* <- lang_ru;; *);;
+
+nrel_area => nrel_idtf:
+	[быть площадью геометрической фигуры*] 
+	(* <- lang_ru;; *);;
+
+nrel_area <- sc_relation;;
+
+nrel_area <- binary_relation;;
+
+nrel_area <- oriented_relation;;
+
+nrel_area => nrel_definitional_domain: 
+	...
+	(*
+	<= nrel_combination:
+		{
+		concept_flat_geometric_figure;
+		concept_quantity
+		};;
+	*);;	
+
+nrel_area => nrel_first_domain:
+	concept_flat_geometric_figure;;	
+
+nrel_area => nrel_second_domain: 
+	concept_quantity;;
+
+nrel_area <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(поверхность; геометрическая фигура ограниченного размера; площадь*; положительная величина)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Площадь ограниченной геометрической фигуры всегда является положительной величиной.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(поверхность; геометрическая фигура ограниченного размера; конгруэнтность*; площадь*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Конгруэнтные фигуры имеют равные площади.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(поверхность; геометрическая фигура ограниченного размера; разбиение множества*; площадь*; сумма*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Если фигура состоит из нескольких не пересекающихся частей, то площадь фигуры равна сумме площадей ее частей.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+
+	...
+	(*
+	=> nrel_main_idtf:
+		[Утв.(квадрат; сторона*; длина*; площадь*)]
+		(* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Площадь квадрата, у которого длина стороны равна единице, равна единице.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+nrel_area <=> nrel_analogue: nrel_length;;
+
+
+nrel_area <= nrel_using_constants:
+	{ 
+	concept_plane; 
+	concept_polygon
+	};;*/
+
+

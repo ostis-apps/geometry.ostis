@@ -1,0 +1,27 @@
+sc_node_not_relation -> concept_non_planar_surface;;
+
+concept_non_planar_surface => nrel_main_idtf:
+	[непланарная поверхность]
+	(* <- lang_ru;;	*);
+	[non planar surface]
+	(* <- lang_en;;	*);
+	[планарлық емес бет]
+	(* <- lang_kz;;	*);;
+
+concept_non_planar_surface => nrel_idtf: [Класс непланарных поверхностей] (* <- lang_ru;; *);;
+
+concept_non_planar_surface => nrel_idtf: [Множество всевозможных непланарных поверхностей] (* <- lang_ru;; *);;
+
+concept_non_planar_surface => nrel_idtf: [Множество знаков всевозможных непланарных поверхностей] (* <- lang_ru;; *);;
+
+concept_non_planar_surface <= nrel_strict_inclusion: concept_surface;;
+
+concept_non_planar_surface <= nrel_using_constants:
+	{
+	concept_surface; 
+	concept_plane; 
+	concept_geometric_point
+	};;
+				
+concept_non_planar_surface <=> nrel_antipode: concept_planar_surface;;
+

@@ -1,0 +1,165 @@
+sc_node_not_relation -> concept_quadrilateral;;
+
+concept_quadrilateral => nrel_main_idtf:
+	[четырехугольник]
+	(* <- lang_ru;;	*);
+	[quadrilateral]
+	(* <- lang_en;;	*);
+	[төртбұрыш]
+	(* <- lang_kz;; *);;
+
+concept_quadrilateral => nrel_idtf: [Класс четырехугольников] (* <- lang_ru;; *);;
+
+concept_quadrilateral => nrel_idtf: [плоский четырехугольник] (* <- lang_ru;; *);;
+
+concept_quadrilateral => nrel_idtf: [Понятие четырехугольника] (* <- lang_ru;; *);;
+
+concept_quadrilateral => nrel_idtf: [Множество всевозможных четырехугольников] (* <- lang_ru;; *);;
+
+concept_quadrilateral => nrel_idtf: [Множество знаков всевозможных четырехугольников] (* <- lang_ru;; *);;
+
+concept_quadrilateral <=  nrel_strict_inclusion: concept_convex_polygon;;
+
+concept_quadrilateral <=  nrel_strict_inclusion: concept_polygon;;
+
+concept_quadrilateral =>  nrel_strict_inclusion: concept_parallelogram;;
+
+concept_quadrilateral =>  nrel_strict_inclusion: concept_trapezoid;;
+
+concept_quadrilateral =>  nrel_strict_inclusion: concept_square;;
+
+concept_quadrilateral <= nrel_using_constants:
+	{
+	concept_polyline; 
+	concept_plane; 
+	concept_geometric_point
+	};;
+
+concept_quadrilateral <- rrel_key_sc_element: 
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(четырехугольник; внутренний угол*; мера угла*)] (* <- lang_ru;; *);;
+	-> rrel_main_key_sc_element: stat_quadrilateral_sum_internal_angle;;
+	-> rrel_key_sc_element: nrel_internal_angle;;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Сумма мер внутренних углов четырехугольника равна 360 угловых градусов.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+
+concept_quadrilateral <- rrel_key_sc_element: 
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(четырехугольник; диагональ*; отрезок; середина*; сторона*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Сумма квадратов длин диагоналей четырёхугольника равна удвоенной сумме длин квадратов отрезков, соединяющих середины его противолежащих сторон.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+
+concept_quadrilateral <- rrel_key_sc_element: 
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(четырехугольник; описанность*; окружность; противолежащий*; внутренний угол*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Если около четырёхугольнка можно описать окружность, то сумма мер его любых противолежащих углов равна 180 угловых градусов.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+
+concept_quadrilateral <- rrel_key_sc_element: 
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(четырехугольник; вписанность*; окружность; противолежащий*; внутренний угол*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Если сумма мер противолежащих углов четырёхугольнка равна 180 угловых градусов, то четырёхугольник можно вписать в окружность.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+
+concept_quadrilateral <- rrel_key_sc_element: 
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(четырехугольник; вписанность*; окружность; противолежащий*; сторона*; диагональ*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Если четырёхугольнк вписан в окружность, то сумма произведений длин его противолежащих сторон равна произведению длин его диагоналей.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+
+concept_quadrilateral <- rrel_key_sc_element: 
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(четырехугольник; вписанность*; окружность; сторона*; диагональ*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Если четырёхугольник вписан в окружность, то между его сторонами имет место равенстово:   d1 (a*b+c*d)=d2 (a*d+b*c) , где d1, d2 - диагонали вписаного четырёхугольника,а a,b,c,d - его стороны.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+
+concept_quadrilateral <- rrel_key_sc_element: 
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(четырехугольник; описанность*; противолежащий*; сторона*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Если суммы длин противолежащих сторон четырехугольнка равны, то около него можно описать окружность.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+
+concept_quadrilateral <- rrel_key_sc_element: 
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(четырехугольник; выпуклый многоугольник; внутренний угол*; вершина*; диагональ*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Если у двух четырёхугольников равны соответствующие углы при вершинах, а также равны соответственные углы между диагоналями, то такие четырехугольники подобны.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+
+concept_quadrilateral -> rrel_example: struct_Rhomb_E_F_G_H;;
+concept_quadrilateral -> rrel_example: struct_Rectangle_B_C_D_E;;
+concept_quadrilateral -> rrel_example: struct_Parallelogram_A_B_C_D;;
+concept_quadrilateral -> rrel_example: struct_Isosceles_trapezoid_K_L_M_N;;
+concept_quadrilateral -> rrel_example: struct_Rectangular_Trapezoid_P_Q_R_S;;
+concept_quadrilateral -> rrel_example: struct_Versatile_trapezoid_Z_X_C_V;;

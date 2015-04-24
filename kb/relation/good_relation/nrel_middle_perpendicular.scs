@@ -1,0 +1,69 @@
+/*sc_node_norole_relation -> nrel_middle_perpendicular;;
+
+nrel_middle_perpendicular => nrel_main_idtf:
+	[серединный перпендикуляр*]
+	(* <- lang_ru;; *);
+	[middle perpendicular*]
+	(* <- lang_en;; *);
+	[ортадағы перпендикуляр*]
+	(* <- lang_kz;; *);;
+
+nrel_middle_perpendicular => nrel_idtf: [медиатриса*] (* <- lang_ru;; *);;
+
+nrel_middle_perpendicular <- sc_relation;;
+
+nrel_middle_perpendicular <- binary_relation;;
+
+nrel_middle_perpendicular <- oriented_relation;;
+
+nrel_middle_perpendicular => nrel_definitional_domain: 
+	...
+	(*
+	<= nrel_combination: 
+		{	 
+		concept_segment;
+		concept_straight_line
+		};;
+	*);;
+
+nrel_middle_perpendicular => nrel_first_domain: 
+	concept_segment;;
+
+nrel_middle_perpendicular => nrel_second_domain: 
+	concept_straight_line;;
+
+nrel_middle_perpendicular <= nrel_using_constants:
+	{
+	concept_straight_line; 
+	nrel_intersection; 
+	nrel_middle; 
+	concept_segment; 
+	nrel_perpendicularity
+	};;
+
+nrel_middle_perpendicular <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(серединный перпендикуляр*; прямая; геометрическая точка; граничная точка; отрезок)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Любая геометрическая точка, лежащая на прямой, являющейся серединным перпендикуляром, равноудалена от граничных точек данного отрезка.]
+			(* <- lang_ru;; *);;		
+		*);;
+	*);
+
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(серединный перпендикуляр*; пересекающиеся прямые*; сторона*; описанность*; окружность; многоугольник; геометрическая точка; центр*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Прямые, являющиеся серединными перпендикулярами к сторонам описываемого окружностью многоугольника, пересекаются в одной геометрической точке — центре описанной окружности.]
+			(* <- lang_ru;; *);;		
+		*);;
+	*);;*/

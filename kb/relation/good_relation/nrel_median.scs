@@ -1,0 +1,157 @@
+/*sc_node_norole_relation -> nrel_median;;
+
+nrel_median => nrel_main_idtf:
+	[медиана*]
+	(* <- lang_ru;; *);
+	[median*]
+	(* <- lang_en;; *);
+	[медиана*]
+	(* <- lang_kz;; *);;
+
+nrel_median => nrel_idtf: [быть медианой*] (* <- lang_ru;; *);;
+
+nrel_median => nrel_idtf: [медиана треугольника*] (* <- lang_ru;; *);;
+
+nrel_median => nrel_idtf: [быть медианой треугольника*] (* <- lang_ru;; *);;
+
+nrel_median <- sc_relation;;
+
+nrel_median <- binary_relation;;
+
+nrel_median <- oriented_relation;;
+
+nrel_median => nrel_definitional_domain:
+	...
+	(*
+	<= nrel_combination: 
+		{	 
+		concept_triangle;
+		concept_segment
+		};;
+	*);;
+
+nrel_median => nrel_first_domain: 
+	concept_triangle;;
+
+nrel_median => nrel_second_domain: 
+	concept_segment;;
+
+nrel_median <= nrel_using_constants:
+	{
+	concept_segment; 
+	nrel_vertex; 
+	concept_triangle; 
+	nrel_vertex_of_polygon; 
+	nrel_opposite; 
+	nrel_side; 
+	nrel_middle
+	};;
+	
+nrel_median <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(треугольник; медиана*; пересечение множеств*; геометрическая точка)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Все медианы треугольника пересекаются в одной точке.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+     	
+     ...
+	(*
+	=> nrel_main_idtf: [Утв.(треугольник; медиана*; вершина*; длина*)] (* <- lang_ru;; *);;
+	-> rrel_main_key_sc_element: stat_triangle_median_intersection_point_vertex;;
+	-> rrel_key_sc_element: concept_triangle;;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Длины медиан треугольника делятся точкой пересечения в отношении 2:1, считая от вершины.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+	
+    	...
+	(*
+	=> nrel_main_idtf: [Утв.(треугольник; медиана*; сторона*; противолежащий*; длина*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+        -> rrel_example: 
+			[Для любой медианы имеет место следующее числовое соотношение: m^2 = (2b^2+2c^2-a^2)/4, где m - длина указанной медианы, a - длина стороны, к которой проведена указанная медиана, b, с -длины сторон указанного треугольника.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+     	
+     	...
+	(*
+	=> nrel_main_idtf: [Утв.(треугольник; медиана*; сторона*; длина)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+        -> rrel_example: 
+			[Для любого треугольника имеет следующее место соотношение: (m_a)^2 + (m_b)^2 + (m_c)^2 = 3(a^2+b^2+c^2)/4, где m_a,m_b,m_c - длины медиан указанного треугольника, a, b, c - длины сторон указанного треугольника.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+     	
+     	...
+	(*
+	=> nrel_main_idtf: [Утв.(треугольник; медиана*; равновеликие*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Каждая медиана делит треугольник на два равновеликих треугольника..]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+     	
+     	...
+	(*
+	=> nrel_main_idtf: [Утв.(равнобедренный треугольник; основание*; медиана*; биссектриса*; высота*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[В равнобедренном треугольнике медиана, проведенная к основанию, является биссектрисой и высотой.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+     	
+     	...
+	(*
+	=> nrel_main_idtf: [Утв.(треугольник; отрезок; медиана*; параллельность*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Если отрезок с концами на двух сторонах треугольника параллелен третьей стороне треугольника, к которой проведена медиана, то этот отрезок делится медианой пополам.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+     	
+     	...
+	(*
+	=> nrel_main_idtf: [Утв.(треугольник; медиана*; равновеликие*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Три медианы треугольника делят его на шесть равновеликих треугольника.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;*/
+
+

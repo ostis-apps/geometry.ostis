@@ -1,0 +1,32 @@
+sc_node_not_relation -> concept_regular_pentagon;;
+
+concept_regular_pentagon => nrel_main_idtf:
+	[правильный пятиугольник]
+	(* <- lang_ru;;	*);
+	[right pentagon]
+	(* <- lang_en;;	*);
+	[тең қабырғалы бесбұрыш]
+	(* <- lang_kz;;	*);;
+
+concept_regular_pentagon => nrel_idtf: [Класс правильных пятиугольников] (* <- lang_ru;; *);;
+
+concept_regular_pentagon => nrel_idtf: [равносторонний пятиугольник] (* <- lang_ru;; *);;
+
+concept_regular_pentagon => nrel_idtf: [плоский правильный пятиугольник] (* <- lang_ru;; *);;
+
+concept_regular_pentagon => nrel_idtf: [Понятие правильного пятиугольника] (* <- lang_ru;; *);;
+
+concept_regular_pentagon => nrel_idtf: [Множество всевозможных правильных пятиугольников] (* <- lang_ru;; *);;
+
+concept_regular_pentagon => nrel_idtf: [Множество знаков всевозможных правильных пятиугольников] (* <- lang_ru;; *);;
+
+concept_regular_pentagon <= nrel_strict_inclusion: concept_polygon;;
+
+concept_regular_pentagon <= nrel_strict_inclusion: concept_pentagon;;
+
+concept_regular_pentagon <= nrel_using_constants:
+	{
+	nrel_side; 
+	concept_pentagon
+	};;
+

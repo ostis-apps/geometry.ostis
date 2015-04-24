@@ -1,0 +1,59 @@
+sc_node_norole_relation -> nrel_codirectional_rays;;
+
+nrel_codirectional_rays => nrel_main_idtf:
+	[сонаправленные лучи*]
+	(* <- lang_ru;; *);
+	[codirectional rays*]
+	(* <- lang_en;; *);
+	[бірге бағытталған сәулелер*]
+	(* <- lang_kz;; *);;
+
+nrel_codirectional_rays <- sc_relation;;	
+	
+nrel_codirectional_rays <- binary_relation;;
+
+nrel_codirectional_rays <- non_oriented_relation;;
+
+nrel_codirectional_rays => nrel_idtf: [быть сонаправленными лучами*] (* <- lang_ru;; *);;
+
+nrel_codirectional_rays => nrel_definitional_domain: 
+	concept_ray;;
+
+nrel_codirectional_rays => nrel_first_domain: 
+	concept_ray;;
+
+nrel_codirectional_rays => nrel_second_domain: 
+	concept_ray;;
+
+nrel_codirectional_rays <= nrel_using_constants:
+	{
+	concept_ray
+	};;
+
+nrel_codirectional_rays <- rrel_key_sc_element:
+	...
+	(*   
+	=> nrel_main_idtf: [Утв.(луч; полупрямая; прямая; параллельный перенос*; сонаправленные лучи*)] (* <- lang_ru;; *);; 
+	<- sc_statement;;   
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Если два луча (или две полупрямые) можно совместить параллельным переносом, то они называются одинаково направленными или сонаправленными.]
+			(* <- lang_ru;;	*);;
+		*);;
+	*);
+
+     	...
+	(*   
+	=> nrel_main_idtf: [Утв.(луч; сонаправленные лучи*)] (* <- lang_ru;; *);;
+	<- sc_statement;;   
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Если лучи k1 и k2 одинаково направлены и лучи k2 и k3 одинаково направлены, то лучи k1 и k3 также одинаково направлены.]
+			(* <- lang_ru;;	*);;
+		*);;
+	*);;
+

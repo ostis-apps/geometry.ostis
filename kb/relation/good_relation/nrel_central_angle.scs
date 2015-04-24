@@ -1,0 +1,72 @@
+sc_node_norole_relation -> nrel_central_angle;;
+
+nrel_central_angle => nrel_main_idtf:
+	[центральный угол*]
+	(* <- lang_ru;; *);
+	[central angle*]
+	(* <- lang_en;; *);
+	[орталық бұрыш*]
+	(* <- lang_kz;; *);;
+
+nrel_central_angle => nrel_idtf: [быть центральным углом*] (* <- lang_ru;; *);;
+
+nrel_central_angle => nrel_idtf: [центральный угол в окружности*] (* <- lang_ru;; *);;
+
+nrel_central_angle => nrel_idtf: [быть центральным углом в окружности*] (* <- lang_ru;; *);;
+
+nrel_center_line <- sc_relation;;
+
+nrel_center_line <- binary_relation;;
+
+nrel_center_line <- oriented_relation;;
+
+nrel_central_angle => nrel_definitional_domain: 
+	...
+	(*
+	<= nrel_combination: 
+		{
+		concept_circle; 
+		concept_planar_angle
+		};;
+	*);;	
+	
+
+nrel_central_angle => nrel_first_domain: 
+	concept_circle;;
+
+nrel_central_angle => nrel_second_domain: 
+	concept_planar_angle;;
+
+nrel_central_angle <= nrel_using_constants:
+	{
+	concept_angle; 
+	nrel_radius; 
+	concept_circle
+	};;
+	
+nrel_central_angle <- rrel_key_sc_element: 
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(дуга; окружность; центральный угол*)] (* <- lang_ru;; *);;
+	<- sc_statement;;   
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Угловая величина дуги окружности равна величине центрального угла, который опирается на данную дугу.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+nrel_central_angle <- rrel_key_sc_element: 
+	...
+	(*
+	<- sc_illustration;;
+	<= nrel_sc_text_translation:
+	...
+		(*
+		-> rrel_example:
+			"file://images/central_angle.png";;
+		*);;
+	*);;
+

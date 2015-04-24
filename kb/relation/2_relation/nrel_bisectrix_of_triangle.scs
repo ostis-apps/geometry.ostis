@@ -1,0 +1,114 @@
+/*sc_node_norole_relation -> nrel_bisectrix_of_triangle;;
+
+nrel_bisectrix_of_triangle => nrel_main_idtf:
+	[биссектриса треугольника*]
+	(* <- lang_ru;; *);
+	[bisectrix of triangle*]
+	(* <- lang_en;; *);
+	[үшбұрыш биссектрисасы*]
+	(* <- lang_kz;; *);;
+
+nrel_bisectrix_of_triangle => nrel_idtf: [быть биссектрисой треугольника*]
+	(* <- lang_ru;; *);;
+
+nrel_bisectrix_of_triangle <- sc_relation;;
+
+nrel_bisectrix_of_triangle <- binary_relation;;
+
+nrel_bisectrix_of_triangle <- oriented_relation;;
+
+nrel_bisectrix_of_triangle => nrel_definitional_domain:
+	... 
+	(*
+	<= nrel_combination: 
+		{	 
+		concept_triangle;
+		concept_segment
+		};;
+	*);;
+	
+
+nrel_bisectrix_of_triangle => nrel_first_domain: 
+	concept_triangle;;
+
+nrel_bisectrix_of_triangle => nrel_second_domain: 
+	concept_segment;;
+
+
+nrel_bisectrix_of_triangle <= nrel_using_constants:
+	{ 
+	nrel_bisectrix; 
+	concept_segment; 
+	nrel_internal_angle; 
+	concept_triangle;  
+	nrel_vertex_of_angle; 
+	nrel_side; 
+	nrel_opposite
+	};;
+
+
+nrel_bisectrix_of_triangle <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(треугольник; биссектриса*; внутренний угол*; внешний угол*; смежные углы*; перпендикулярность*)] (* <- lang_ru;; *);; 
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Биссектрисы внутреннего и смежного с ним внешнего угла треугольника взаимно перпендикулярны.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(треугольник; биссектриса*; внутренний угол; площадь*; пропорциональность*; сторона*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Биссектриса любого внутреннего угла треугольника делит треугольник на две части, площади которых пропорциональны прилежащим к биссектрисе сторонам треугольника.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+	
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(треугольник; биссектриса*; внутренний угол*; геометрическая точка; центр окружности*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Биссектрисы внутренних углов треугольника пересекаются в одной точке, являющейся центром вписанной в треугольник окружности.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(треугольник; биссектриса*; внешний угол*; прямая; внутренний угол*; геометрическая точка; центр окружности*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Три прямые, на которых лежат биссектрисы внешних углов треугольника, выходящие из двух любых его вершин, и биссектриса внутреннего угла треугольника, выходящая из третьей его вершины, пересекаются в одной точке, которая является центром невписанной окружности.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(треугольник; биссектриса*; внешний угол*; серединный перпендикуляр*; внутренний угол*; геометрическая точка; окружность)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Прямые, на которых лежат биссектрисы внутреннего и внешнего углов треугольника, выходящие из одной вершины, пересекаются с серединным к противолежащей стороне перпендикуляром в диаметрально противоположных точках описанной около треугольника окружности.]
+			(* <- lang_ru;; *);;
+		*);;
+*);;*/
