@@ -1,0 +1,84 @@
+sc_node_norole_relation -> nrel_inclined;;
+
+nrel_inclined => nrel_main_idtf:
+	[наклонная*]
+	(* <- lang_ru;; *);
+	[inclined*]
+	(* <- lang_en;; *);
+	[көлбеу*]
+	(* <- lang_kz;; *);;
+
+nrel_inclined => nrel_idtf:
+	[быть наклонной*]
+	(* <- lang_ru;; *);;
+
+nrel_inclined <- sc_relation;;
+
+nrel_inclined <- binary_relation;;
+
+nrel_inclined <- oriented_relation;;
+
+nrel_inclined => nrel_definitional_domain:
+...
+	(*
+	<= nrel_combination: 
+		{
+		concept_straight_line;
+		concept_segment
+		};;
+	*);;
+	
+
+nrel_inclined => nrel_first_domain: 
+	concept_straight_line;;
+
+nrel_inclined => nrel_second_domain: 
+	concept_segment;;
+
+nrel_inclined <= nrel_using_constants:
+	{ 
+	concept_segment; 
+	concept_geometric_figure; concept_plane; concept_stright_line; 
+	nrel_perpendicular
+	};;
+	
+nrel_inclined <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(длина; наклонная*; прямая; точка; перпендикуляр*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Длина наклонной, проведенной из данной точки к прямой, больше длины перпендикуляра, опущенного из этой же точки на эту прямую.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+     	
+     	...
+	(*
+	=> nrel_main_idtf: [Утв.(наклонная*; конгруэнтность*; проекция*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Равные наклонные имеют равные проекции.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+ 	
+ 	...
+	(*
+	=> nrel_main_idtf:     [Утв.(наклонная*; точка; проекция*; больше*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Из двух наклонных, выходящих из одной точки, больше та, у которо проекция больше.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+

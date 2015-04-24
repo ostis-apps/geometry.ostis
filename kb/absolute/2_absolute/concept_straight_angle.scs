@@ -1,0 +1,41 @@
+sc_node_not_relation -> concept_straight_angle;;
+
+concept_straight_angle => nrel_main_idtf:
+	[развернутый угол] (* <- lang_ru;; *);
+	[straight angle] (* <- lang_en;; *);
+	[ашық бұрыш](* <- lang_kz;;	*);;
+
+concept_straight_angle => nrel_idtf: [Понятие развернутого угла] (* <- lang_ru;; *);;
+
+concept_straight_angle => nrel_idtf: [Класс развернутых углов] (* <- lang_ru;; *);;
+
+concept_straight_angle => nrel_idtf: [Множество всевозможных развернутых углов] (* <- lang_ru;; *);;
+
+concept_straight_angle => nrel_idtf: [Множество знаков всевозможных развернутых углов] (* <- lang_ru;; *);;
+
+concept_straight_angle <= nrel_strict_inclusion: concept_angle;;
+
+concept_straight_angle <- rrel_key_sc_element: 
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(развернутый угол; мера угла*)] (* <- lang_ru;; *);;
+	-> rrel_main_key_sc_element: stat_straight_angle_degree_measure;;
+	-> rrel_key_sc_element: nrel_angle_measure;;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Величина развернутого угла равна 180 градусам.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_straight_angle <= nrel_using_constants:
+	{
+	concept_angle; 
+	nrel_side; 
+	concept_ray
+	};;
+
+concept_straight_angle -> rrel_example: struct_Straight_angle_A_O_B;;

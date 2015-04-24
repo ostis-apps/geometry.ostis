@@ -1,0 +1,90 @@
+sc_node_norole_relation -> nrel_be_described;;
+
+nrel_be_described => nrel_main_idtf:
+	[описанность*]
+	(* <- lang_ru;;	*);
+	[be described*]
+	(* <- lang_en;;	*);
+	[қоршаулы*] 
+	(* <- lang_kz;; *);;
+
+nrel_be_described => nrel_idtf: [быть описанным*] (* <- lang_ru;; *);;
+
+nrel_be_described => nrel_idtf: [быть описанной геометрической фигурой*] (* <- lang_ru;; *);;
+
+nrel_be_described <- sc_relation;;
+
+nrel_be_described <- binary_relation;;
+
+nrel_be_described <- oriented_relation;;
+
+nrel_be_described => nrel_definitional_domain:
+...
+	(*
+	<= nrel_combination: 
+		{	 
+		concept_polygon;
+		concept_planar_angle;
+		concept_circle
+		};;
+	*);;
+	
+nrel_be_described => nrel_first_domain: 
+	...
+	(*
+	<= nrel_combination: 
+		{
+		concept_polygon;
+		concept_planar_angle;
+		concept_circle
+		};;
+	*);;
+
+nrel_be_described => nrel_second_domain: 
+	...
+	(*
+	<= nrel_combination: 
+		{
+		concept_polygon;
+		concept_planar_angle;
+		concept_circle
+		};;
+	*);;
+
+nrel_be_described <= nrel_using_constants:
+	{
+	nrel_side;  
+	nrel_tangent; 
+	concept_polygon; 
+	concept_circle
+	};;
+	
+nrel_be_described <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(многоугольник; окружность; описанность*;вершина*;сторона*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Описанным около окружности называется такой n-угольник, все стороны которого касаются данной окружности.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+nrel_be_described <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(прямоугольник; диагональ*; окружность; описанность*; центр*)] (* <- lang_ru;; *);;
+	-> rrel_main_key_sc_element: stat_center_circle_around_square;;
+	-> rrel_key_sc_element: concept_rectangle; nrel_diagonal; concept_circle; nrel_center;;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Центр окружности, описанной около прямоугольника или квадрата, лежит в точке пересечения диагоналей.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;

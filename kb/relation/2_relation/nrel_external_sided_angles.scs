@@ -1,0 +1,50 @@
+sc_node_norole_relation -> nrel_external_sided_angles;;
+
+nrel_external_sided_angles => nrel_main_idtf:
+	[внешние односторонние углы*]
+	(* <- lang_ru;; *);
+	[external sided angles*]
+	(* <- lang_en;; *);
+	[бір жақта жатқан сыртқы бұрыштар*]
+	(* <- lang_kz;; *);;
+
+nrel_external_sided_angles => nrel_idtf: [быть внешними односторонними углами*]
+	(* <- lang_ru;; *);;
+
+nrel_external_sided_angles -> sc_relation;;
+
+nrel_external_sided_angles -> binary_relation;;
+
+nrel_external_sided_angles -> non_oriented_relation;;
+
+nrel_external_sided_angles => nrel_definitional_domain:
+	concept_planar_angle;;
+	
+
+nrel_external_sided_angles => nrel_first_domain:
+	concept_planar_angle;;
+
+nrel_external_sided_angles => nrel_second_domain: 
+	concept_planar_angle;;
+	
+nrel_external_sided_angles <= nrel_using_constants:
+	{
+	concept_angle; 
+	nrel_secant; 
+	rrel_between
+	};;
+
+nrel_external_sided_angles <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(соответственные углы*; пересекающиеся прямые*; конгруэнтность*; односторонние углы*; сумма*; мера угла*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Если при пересечении двух прямых третьей прямой сумма пары односторонних углов равна 180 градусов, то соответственные углы равны.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
