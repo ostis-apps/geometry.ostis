@@ -1,0 +1,335 @@
+concept_geometric_point <- rrel_key_sc_element: 
+        ...
+	(*
+	=> nrel_main_idtf: [Поясн.(геометрическая точка)] (* <- lang_ru;; *);;
+	<- sc_definition;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Геометрическая точка - это основная неделимая геометрическая фигура в пространстве, обладающая координатами, 
+			но не имеющая размеров, массы, направленности и каких-либо других геометрических или физических характеристик.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_pair_of_points <- rrel_key_sc_element: 
+        ...
+	(*
+	=> nrel_main_idtf: [Опр.(пара точек)] (* <- lang_ru;; *);;
+	<- sc_definition;; 
+	-> rrel_main_key_sc_element: d_concept_pair_of_points;;
+	-> rrel_key_sc_element: concept_geometric_point; concept_pair_of_points;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Пара точек - пара, каждый элемент которой является геометрической точкой.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: 
+	... 
+	(*
+	=> nrel_main_idtf: [Акс. (геометрическая точка; пара точек)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	-> rrel_main_key_sc_element: stat_geometrical_point_pair_of_points_straight_line;;
+	
+	-> rrel_axiom: stat_geometrical_point_pair_of_points_straight_line;;
+	
+	-> rrel_key_sc_element: concept_geometrical_point; concept_pair_of_points; concept_straight_line;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Через любые две точки в пространстве можно провести прямую, и притом только одну.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: 
+	... 
+	(*
+	=> nrel_main_idtf: [Акс. (прямая; пара точек)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	-> rrel_main_key_sc_element: stat_straight_line_pair_of_points;;
+	
+	-> rrel_axiom: stat_straight_line_pair_of_points;;
+	
+	-> rrel_key_sc_element: concept_straight_line; concept_pair_of_points;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[На каждой прямой лежат по крайней мере две точки.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: 
+	... 
+	(*
+	=> nrel_main_idtf: [Акс. (пара точек; геометрическая точка; между_)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	-> rrel_main_key_sc_element: stat_pair_of_points_geometrical_point_between;;
+	
+	-> rrel_axiom: stat_pair_of_points_geometrical_point_between;;
+	
+	-> rrel_key_sc_element: concept_pair_of_points; concept_geometrical_point; rrel_between;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Для любых двух данных точек существует третья точка, которая лежит между данными точками.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: 
+	... 
+	(*
+	=> nrel_main_idtf: [Акс. (пара точек; плоскость; прямая)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	-> rrel_main_key_sc_element: stat_axiom_accessories_straight_line_to_plane;;
+	
+	-> rrel_axiom: stat_axiom_accessories_straight_line_to_plane;;
+	
+	-> rrel_key_sc_element: concept_pair_of_points; concept_plane; concept_straight_line;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[(Аксиома о принадлежности прямой плоскости) Если две точки прямой лежат в некоторой плоскости, то все точки данной прямой лежат в этой плоскости.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: 
+	... 
+	(*
+	=> nrel_main_idtf: [Акс. (пара точек; плоскость)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	-> rrel_main_key_sc_element: stat_axiom_of_partition_of_the_space_plane;;
+	
+	-> rrel_axiom: stat_axiom_of_partition_of_the_space_plane;;
+	
+	-> rrel_key_sc_element: concept_plane; concept_pair_of_points;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[(Аксиома о разбиении пространства плоскостью) Каждая плоскость разбивает пространство на две части 
+			(два полупространства) так, что любые две точки одного и того же полупространства лежат 
+			по одну сторону от данной плоскости, а любые две точки разных полупространств лежат по разные стороны от этой плоскости.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+	
+concept_non_rectlinear_three_tuple_of_points <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр.(непрямолинейная тройка точек)] (* <- lang_ru;; *);; 
+	-> rrel_main_key_sc_element: d_concept_non_rectlinear_three_tuple_of_points;;
+	-> rrel_key_sc_element: concept_non_rectlinear_three_tuple_of_points; concept_triple_of_points; concept_geometric_point; concept_straight_line;;
+	<- sc_definition;;   
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Непрямолинейная тройка точек - тройка точек, для которой не существует прямой, на которой лежат все три элемента заданной тройки.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: 
+	... 
+	(*
+	=> nrel_main_idtf: [Акс.(плоскость; непрямолинейная тройка точек)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	-> rrel_main_key_sc_element: stat_plane_straight_line_geometric_point;;
+	
+	-> rrel_axiom: stat_plane_straight_line_geometric_point;;
+	
+	-> rrel_key_sc_element: concept_non_rectlinear_three_tuple_of_points;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Через любые три точки в пространстве, не лежащие на одной прямой, можно провести плоскость, и притом только одну.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+	
+concept_triple_of_points <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр.(тройка точек)] (* <- lang_ru;; *);; 
+	-> rrel_main_key_sc_element: d_concept_triple_of_points;;
+	-> rrel_key_sc_element: concept_triple_of_points; concept_geometric_point;;;
+	<- sc_definition;;   
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Тройка точек - множество, являющееся тройкой, каждый элемент которой является геометрической точкой.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: 
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(тройка точек; расстояние*; между_)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	-> rrel_main_key_sc_element: stat_triple_of_points_distance_between;;
+	
+	-> rrel_axiom: stat_triple_of_points_distance_between;;
+	
+	-> rrel_key_sc_element: nrel_distance; rrel_between;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Каковы бы ни были три точки, расстояние между любыми двумя из этих точек не больше суммы  расстояний от них до третьей точки.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: 
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(тройка точек; прямая)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	-> rrel_main_key_sc_element: stat_triple_of_points_straight_line;;
+	
+	-> rrel_axiom: stat_triple_of_points_straight_line;;
+	
+	-> rrel_key_sc_element: concept_triple_of_points; concept_straight_line;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Существует по крайней мере три точки, не лежащие на одной прямой.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: 
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(тройка точек; геометрическая точка; между_; пара точек; прямая)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	-> rrel_main_key_sc_element: stat_triple_of_points_geometrical_point_between_pair_of_points_straight_line;;
+	
+	-> rrel_axiom: stat_triple_of_points_geometrical_point_between_pair_of_points_straight_line;;
+	
+	-> rrel_key_sc_element: concept_triple_of_points; concept_geometrical_point; rrel_between; concept_pair_of_points; concept_straight_line;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Из трех точек прямой только одна лежит между двумя другими.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: 
+	... 
+	(*
+	=> nrel_main_idtf: [Акс. (пара точек; тройка точек; сумма*; геометрическая точка; прямая)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	-> rrel_main_key_sc_element: stat_triple_of_points_pair_of_points_sum_geometrical_point_straight_line;;
+	
+	-> rrel_axiom: stat_triple_of_points_pair_of_points_sum_geometrical_point_straight_line;;
+	
+	-> rrel_key_sc_element: concept_triple_of_points; concept_pair_of_points; nrel_sum; concept_geometrical_point; concept_straight_line;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Каковы бы ни были три точки, расстояние между любыми двумя из них не больше суммы расстояний от 
+			каждой из них до третьей точки; неравенство является строгим, когда точки не лежат на одной прямой.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+	
+<- rrel_key_sc_element: 
+	... 
+	(*
+	=> nrel_main_idtf: [Акс.(прямолинейная тройка точек; между_)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	-> rrel_main_key_sc_element: stat_triple_of_points_geometrical_point_between_pair_of_points_straight_line;;
+	
+	-> rrel_axiom: stat_triple_of_points_geometrical_point_between_pair_of_points_straight_line;;
+	
+	-> rrel_key_sc_element: concept_triple_of_points; concept_geometrical_point; rrel_between; concept_pair_of_point; concept_straight_line;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Если из трех точек одна лежит между двумя другими, то все три данные точки лежат на одной прямой.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_rectilinear_three_of_points <- rrel_key_sc_element: 
+        ...
+	(*
+	=> nrel_main_idtf: [Опр.(прямолинейная тройка точек)] (* <- lang_ru;; *);;
+	<- sc_definition;; 
+	-> rrel_main_key_sc_element: d_concept_rectilinear_three_of_points;;
+	-> rrel_key_sc_element: concept_rectilinear_three_of_points; concept_geometric_point; concept_straight_line;;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Прямолинейная тройка точек - тройка точек, для которой существует такая прямая, которой принадлежат все три точки.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+nrel_between <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Поясн.(между_)] (* <- lang_ru;; *);; 
+	-> rrel_key_sc_element: rrel_between; concept_geometric_point; concept_rectilinear_three_of_points;;
+	<- sc_definition;;   
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Между - атрибут, уточняющий роль точки в прямолинейной тройке точек, лежащей между двумя другим точками в тройке.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+nrel_distance <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Поясн.(расстояние*)] (* <- lang_ru;; *);; 
+	-> rrel_key_sc_element: concept_geometric_point; concept_segment;;
+	<- sc_definition;;   
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Расстоянием между точками A и B называют длину отрезка AB.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+nrel_congruence_of_pair_of_points <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Поясн.(конгруэнтность пар точек*)] (* <- lang_ru;; *);; 
+	-> rrel_key_sc_element: concept_angle; nrel_secant; concept_straight_line;;;
+	<- sc_definition;;   
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Конгруэнтность пары точек {t1, t2} и пары точек {t3, t4} -  равенство расстояния между точками t1 и t2 и расстояния между точками t3 и t4.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
