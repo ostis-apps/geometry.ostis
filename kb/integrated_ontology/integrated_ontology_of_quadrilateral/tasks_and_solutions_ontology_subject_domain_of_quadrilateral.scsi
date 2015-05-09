@@ -1,5 +1,5 @@
 concept_trapezoid <- rrel_key_sc_element:
-	task_of_finding_measure_of_angles_of_trapezoid_use_another_angles
+	task_trapezoid_angle
 	(*
 	=> nrel_main_idtf: [Задача. Нахождение углов трапеции по известным внутренним углам.](* <- lang_ru;; *);;
 	<- sc_task;;
@@ -26,7 +26,7 @@ concept_trapezoid <- rrel_key_sc_element:
 		*);;
 	*);;
 	
-task_of_finding_measure_of_angles_of_trapezoid_use_another_angles <- sc_node_struct;;
+task_trapezoid_angle <- sc_node_struct;;
 	
 stat_sum_angle_measure_angle_triangle <- sc_node_struct;
 => nrel_main_idtf: [Форм. Утв.(треугольник; сумма*; угол*)] (* <- lang_ru;; *);;
@@ -46,7 +46,7 @@ stat_quadrilateral_sum_internal_angle <- sc_node_struct;
 
 
 concept_square <- rrel_key_sc_element:
-	task_of_finding_area_of_square_use_radius_of_described_circle
+	task_square_area_circle
 	(*
 	=> nrel_main_idtf: [Задача. Нахождение площади квадрата по радиусу окружности, описанной около
 	этого квадрата.](* <- lang_ru;; *);;
@@ -73,7 +73,7 @@ concept_square <- rrel_key_sc_element:
 		*);;
 	*);;
 	
-task_of_finding_area_of_square_use_radius_of_described_circle <- sc_node_struct;;
+task_square_area_circle <- sc_node_struct;;
 	
 stat_center_circle_around_square <- sc_node_struct;
 => nrel_main_idtf: [Форм. Утв.(квадрат; окружность; центр*; быть вписанным*)] (* <- lang_ru;; *);;
@@ -89,7 +89,7 @@ stat_area_square <- sc_node_struct;
 
 
 concept_square <- rrel_key_sc_element:
-	task_of_finding_height_of_parallelogram_use_side_and_angle
+	task_height_parallelogram
 	(*
 	=> nrel_main_idtf: [Задача. Нахождение высоты параллелограмма по известным стороне и углу.](* <- lang_ru;; *);;
 	<- sc_task;;
@@ -112,7 +112,7 @@ concept_square <- rrel_key_sc_element:
 		*);;
 	*);;
 	
-task_of_finding_height_of_parallelogram_use_side_and_angle <- sc_node_struct;;
+task_height_parallelogram <- sc_node_struct;;
 	
 stat_parallelogram_opposite_angle_congruence <- sc_node_struct;
 => nrel_main_idtf: [Форм. Утв.(параллелограмм; противоположные углы*; конгруэнтность*)] (* <- lang_ru;; *);;
@@ -123,7 +123,7 @@ struct_def_sin <- sc_node_struct;
 
 
 concept_square <- rrel_key_sc_element:
-	task_of_finding_perimeter_of_rhomb_use_side_and_angle
+	task_rhomb_perimeter
 	(*
 	=> nrel_main_idtf: [Задача. Нахождение периметра ромба по известным стороне и углу.](* <- lang_ru;; *);;
 	<- sc_task;;
@@ -148,7 +148,7 @@ concept_square <- rrel_key_sc_element:
 		*);;
 	*);;
 	
-task_of_finding_perimeter_of_rhomb_use_side_and_angle <- sc_node_struct;;
+task_rhomb_perimeter <- sc_node_struct;;
 	
 struct_stat_congruence_angle_base_isosceles_triangle <- sc_node_struct;
 => nrel_main_idtf: [Форм. Утв.(равнобедренный треугольник; внутренний угол*, основание*, конгруэнтность*)] (* <- lang_ru;; *);;

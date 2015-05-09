@@ -1,0 +1,131 @@
+logical_ontology_of_subject_domain_of_planar_figures
+<- logical_ontology;
+=> nrel_main_idtf:
+	[Логическая онтолония Предметной области планарных фигур]
+	(* <- lang_ru;; *);
+	[Logical ontology of subject domain of planar_figures]
+	(* <- lang_en;; *);;
+	
+logical_hierarchy_of_concepts_of_subject_domain_of_planar_figures
+=> nrel_main_idtf:
+	[Логическая иерархия понятий Предметной области планарных фигур]
+	(* <- lang_ru;; *);
+	[Logical hierarchy of concepts of subject domain of planar_figures]
+	(* <- lang_en;; *);;
+	
+logical_hierarchy_of_statements_of_subject_domain_of_planar_figures
+=> nrel_main_idtf:
+	[Логическая иерархия высказываний Предметной области планарных фигур]
+	(* <- lang_ru;; *);
+	[Logical hierarchy of statements of subject domain of planar_figures]
+	(* <- lang_en;; *);;
+	
+logical_ontology_of_subject_domain_of_planar_figures => nrel_metaknowledge:
+	logical_hierarchy_of_concepts_of_subject_domain_of_planar_figures;;
+	
+logical_ontology_of_subject_domain_of_planar_figures => nrel_metaknowledge:
+	logical_hierarchy_of_statements_of_subject_domain_of_planar_figures;;
+
+logical_hierarchy_of_concepts_of_subject_domain_of_planar_figures = [*^"file://logical_hierarchy_of_concepts_of_subject_domain_of_planar_figures.scsi"*];;
+
+logical_hierarchy_of_statements_of_subject_domain_of_planar_figures = [*^"file://logical_hierarchy_of_statements_of_subject_domain_of_planar_figures.scsi"*];;
+
+logical_ontology_of_subject_domain_of_planar_figures = [*^"file://logical_ontology_of_subject_domain_of_planar_figures.scsi"*];;
+
+
+rrel_key_sc_element -> (logical_hierarchy_of_statements_of_subject_domain_of_planar_figures -> stat_diagonal_paralellogram)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_base_order: (logical_hierarchy_of_statements_of_subject_domain_of_planar_figures -> stat_planar_figures_diagonal_parallelogram)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_base_order: (logical_hierarchy_of_statements_of_subject_domain_of_planar_figures -> stat_rectangle_congruence_diagonal)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_base_order: (logical_hierarchy_of_statements_of_subject_domain_of_planar_figures -> stat_rhomb_diagonal_perpendicular_bisectrix_angle)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_base_order: (logical_hierarchy_of_statements_of_subject_domain_of_planar_figures -> stat_isosceles_triangle_congruence_angle)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_base_order: (logical_hierarchy_of_statements_of_subject_domain_of_planar_figures -> stat_angle_measure_external_angle_equality_quantities_sum_internal_angle_triangle)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_base_order: (logical_hierarchy_of_statements_of_subject_domain_of_planar_figures -> stat_median_isosceles_triangle_bisectrix_height)
+	(* <- rrel_key_sc_element;; *);;
+*);;*);;*);;*);;*);;*);;
+
+rrel_key_sc_element -> (logical_hierarchy_of_concepts_of_subject_domain_of_planar_figures -> concept_planar_figure)
+(*
+	=> nrel_key_sc_element_base_order: (logical_hierarchy_of_concepts_of_subject_domain_of_planar_figures -> concept_planar_angle)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_base_order: (logical_hierarchy_of_concepts_of_subject_domain_of_planar_figures  -> concept_polygon)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_base_order: (logical_hierarchy_of_concepts_of_subject_domain_of_planar_figures  -> concept_planar_line)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_base_order: (logical_hierarchy_of_concepts_of_subject_domain_of_planar_figures  -> nrel_boundary_point)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_base_order: (logical_hierarchy_of_concepts_of_subject_domain_of_planar_figures  -> nrel_perpendicularity)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_base_order: (logical_hierarchy_of_concepts_of_subject_domain_of_planar_figures  -> nrel_parallelism)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_base_order: (logical_hierarchy_of_concepts_of_subject_domain_of_planar_figures  -> nrel_secant)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_base_order: (logical_hierarchy_of_concepts_of_subject_domain_of_planar_figures -> nrel_tangent)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_base_order: (logical_hierarchy_of_concepts_of_subject_domain_of_planar_figures -> nrel_parallelism)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_base_order: (logical_hierarchy_of_concepts_of_subject_domain_of_planar_figures -> nrel_middle)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_base_order: (logical_hierarchy_of_concepts_of_subject_domain_of_planar_figures -> nrel_length)
+	(* <- rrel_key_sc_element;; *);;
+*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;
+
+rrel_key_sc_element -> (logical_ontology_of_subject_domain_of_planar_figures -> concept_planar_figure)
+(*
+	=> nrel_key_sc_element_base_order: (logical_ontology_of_subject_domain_of_planar_figures -> concept_planar_angle)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_base_order: (logical_ontology_of_subject_domain_of_planar_figures  -> concept_polygon)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_base_order: (logical_ontology_of_subject_domain_of_planar_figures  -> concept_planar_line)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_base_order: (logical_ontology_of_subject_domain_of_planar_figures  -> nrel_boundary_point)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_base_order: (logical_ontology_of_subject_domain_of_planar_figures  -> nrel_perpendicularity)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_base_order: (logical_ontology_of_subject_domain_of_planar_figures  -> nrel_parallelism)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_base_order: (logical_ontology_of_subject_domain_of_planar_figures  -> nrel_secant)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_base_order: (logical_ontology_of_subject_domain_of_planar_figures -> nrel_tangent)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_base_order: (logical_ontology_of_subject_domain_of_planar_figures -> nrel_parallelism)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_base_order: (logical_ontology_of_subject_domain_of_planar_figures -> nrel_middle)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_base_order: (logical_ontology_of_subject_domain_of_planar_figures -> nrel_length)
+	(* <- rrel_key_sc_element;; *);;
+*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;
+
+
+
