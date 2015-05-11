@@ -33,11 +33,8 @@ concept_pair_of_points <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Акс. (геометрическая точка; пара точек)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_axiom;;
 	-> rrel_main_key_sc_element: stat_geometrical_point_pair_of_points_straight_line;;
-	
-	-> rrel_axiom: stat_geometrical_point_pair_of_points_straight_line;;
-	
 	-> rrel_key_sc_element: concept_geometrical_point; concept_pair_of_points; concept_straight_line;;
 	<= nrel_sc_text_translation: 
 		...
@@ -52,11 +49,8 @@ concept_pair_of_points <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Акс. (прямая; пара точек)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_axiom;;
 	-> rrel_main_key_sc_element: stat_straight_line_pair_of_points;;
-	
-	-> rrel_axiom: stat_straight_line_pair_of_points;;
-	
 	-> rrel_key_sc_element: concept_straight_line; concept_pair_of_points;;
 	<= nrel_sc_text_translation: 
 		...
@@ -71,11 +65,8 @@ concept_pair_of_points <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Акс. (пара точек; геометрическая точка; между_)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_axiom;;
 	-> rrel_main_key_sc_element: stat_pair_of_points_geometrical_point_between;;
-	
-	-> rrel_axiom: stat_pair_of_points_geometrical_point_between;;
-	
 	-> rrel_key_sc_element: concept_pair_of_points; concept_geometrical_point; rrel_between;;
 	<= nrel_sc_text_translation: 
 		...
@@ -90,11 +81,8 @@ concept_pair_of_points <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Акс. (пара точек; плоскость; прямая)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_axiom;;
 	-> rrel_main_key_sc_element: stat_axiom_accessories_straight_line_to_plane;;
-	
-	-> rrel_axiom: stat_axiom_accessories_straight_line_to_plane;;
-	
 	-> rrel_key_sc_element: concept_pair_of_points; concept_plane; concept_straight_line;;
 	<= nrel_sc_text_translation: 
 		...
@@ -109,11 +97,8 @@ concept_pair_of_points <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Акс. (пара точек; плоскость)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_axiom;;
 	-> rrel_main_key_sc_element: stat_axiom_of_partition_of_the_space_plane;;
-	
-	-> rrel_axiom: stat_axiom_of_partition_of_the_space_plane;;
-	
 	-> rrel_key_sc_element: concept_plane; concept_pair_of_points;;
 	<= nrel_sc_text_translation: 
 		...
@@ -146,11 +131,8 @@ concept_non_rectlinear_three_tuple_of_points <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Акс.(плоскость; непрямолинейная тройка точек)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_axiom;;
 	-> rrel_main_key_sc_element: stat_plane_straight_line_geometric_point;;
-	
-	-> rrel_axiom: stat_plane_straight_line_geometric_point;;
-	
 	-> rrel_key_sc_element: concept_non_rectlinear_three_tuple_of_points;;
 	<= nrel_sc_text_translation: 
 		...
@@ -180,12 +162,9 @@ concept_triple_of_points <- rrel_key_sc_element:
 <- rrel_key_sc_element: 
 	... 
 	(*
-	=> nrel_main_idtf: [Утв.(тройка точек; расстояние*; между_)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	=> nrel_main_idtf: [Акс.(тройка точек; расстояние*; между_)] (* <- lang_ru;; *);;
+	<- sc_axiom;;
 	-> rrel_main_key_sc_element: stat_triple_of_points_distance_between;;
-	
-	-> rrel_axiom: stat_triple_of_points_distance_between;;
-	
 	-> rrel_key_sc_element: nrel_distance; rrel_between;;
 	<= nrel_sc_text_translation: 
 		...
@@ -199,12 +178,9 @@ concept_triple_of_points <- rrel_key_sc_element:
 <- rrel_key_sc_element: 
 	... 
 	(*
-	=> nrel_main_idtf: [Утв.(тройка точек; прямая)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	=> nrel_main_idtf: [Акс.(тройка точек; прямая)] (* <- lang_ru;; *);;
+	<- sc_axiom;;
 	-> rrel_main_key_sc_element: stat_triple_of_points_straight_line;;
-	
-	-> rrel_axiom: stat_triple_of_points_straight_line;;
-	
 	-> rrel_key_sc_element: concept_triple_of_points; concept_straight_line;;
 	<= nrel_sc_text_translation: 
 		...
@@ -218,12 +194,9 @@ concept_triple_of_points <- rrel_key_sc_element:
 <- rrel_key_sc_element: 
 	... 
 	(*
-	=> nrel_main_idtf: [Утв.(тройка точек; геометрическая точка; между_; пара точек; прямая)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	=> nrel_main_idtf: [Акс.(тройка точек; геометрическая точка; между_; пара точек; прямая)] (* <- lang_ru;; *);;
+	<- sc_axiom;;
 	-> rrel_main_key_sc_element: stat_triple_of_points_geometrical_point_between_pair_of_points_straight_line;;
-	
-	-> rrel_axiom: stat_triple_of_points_geometrical_point_between_pair_of_points_straight_line;;
-	
 	-> rrel_key_sc_element: concept_triple_of_points; concept_geometrical_point; rrel_between; concept_pair_of_points; concept_straight_line;;
 	<= nrel_sc_text_translation: 
 		...
@@ -238,11 +211,8 @@ concept_triple_of_points <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Акс. (пара точек; тройка точек; сумма*; геометрическая точка; прямая)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_axiom;;
 	-> rrel_main_key_sc_element: stat_triple_of_points_pair_of_points_sum_geometrical_point_straight_line;;
-	
-	-> rrel_axiom: stat_triple_of_points_pair_of_points_sum_geometrical_point_straight_line;;
-	
 	-> rrel_key_sc_element: concept_triple_of_points; concept_pair_of_points; nrel_sum; concept_geometrical_point; concept_straight_line;;
 	<= nrel_sc_text_translation: 
 		...
@@ -258,11 +228,8 @@ concept_triple_of_points <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Акс.(прямолинейная тройка точек; между_)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_axiom;;
 	-> rrel_main_key_sc_element: stat_triple_of_points_geometrical_point_between_pair_of_points_straight_line;;
-	
-	-> rrel_axiom: stat_triple_of_points_geometrical_point_between_pair_of_points_straight_line;;
-	
 	-> rrel_key_sc_element: concept_triple_of_points; concept_geometrical_point; rrel_between; concept_pair_of_point; concept_straight_line;;
 	<= nrel_sc_text_translation: 
 		...
@@ -294,7 +261,7 @@ nrel_between <- rrel_key_sc_element:
 	(*
 	=> nrel_main_idtf: [Поясн.(между_)] (* <- lang_ru;; *);; 
 	-> rrel_key_sc_element: rrel_between; concept_geometric_point; concept_rectilinear_three_of_points;;
-	<- sc_definition;;   
+	<- sc_explanation;;   
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -309,7 +276,7 @@ nrel_distance <- rrel_key_sc_element:
 	(*
 	=> nrel_main_idtf: [Поясн.(расстояние*)] (* <- lang_ru;; *);; 
 	-> rrel_key_sc_element: concept_geometric_point; concept_segment;;
-	<- sc_definition;;   
+	<- sc_explanation;;   
 	<= nrel_sc_text_translation: 
 		...
 		(*
