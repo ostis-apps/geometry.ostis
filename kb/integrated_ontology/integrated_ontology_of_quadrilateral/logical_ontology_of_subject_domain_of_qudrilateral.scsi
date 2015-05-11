@@ -19,11 +19,8 @@ concept_quadrilateral <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Утв. (выпуклый четырехугольник; треугольник; диагональ*; равенство*; разбиение*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_statement_of_unique_setting;;
 	-> rrel_main_key_sc_element: stat_area_triangle_diagonal_convex_quadrilateral;;
-	
-	-> rrel_statement_of_unique_setting: stat_area_triangle_diagonal_convex_quadrilateral;;
-	
 	-> rrel_key_sc_element: nrel_area; concept_triangle; nrel_diagonal; concept_convex_quadrilateral;;
 	<= nrel_sc_text_translation: 
 		...
@@ -39,11 +36,8 @@ concept_quadrilateral <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Утв. (четырехугольник; сторона*; вписанность*; окружность; описанность*; площадь*; )] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_statement_of_unique_setting;;
 	-> rrel_main_key_sc_element: stat_area_quadrilateral_side_be_inscribed_circle_be_described;;
-	
-	-> rrel_statement_of_unique_setting: stat_area_quadrilateral_side_be_inscribed_circle_be_described;;
-	
 	-> rrel_key_sc_element: nrel_area; concept_quadrilateral; nrel_side; nrel_be_inscribed; nrel_be_described;;
 	<= nrel_sc_text_translation: 
 		...
@@ -59,11 +53,8 @@ concept_quadrilateral <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Утв. (четырехугольник; сторона*; вписанность*; окружность; описанность*; периметр*; площадь*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_statement_of_unique_setting;;
 	-> rrel_main_key_sc_element: stat_area_quadrilateral_side_be_inscribed_be_described_circle;;
-	
-	-> rrel_statement_of_unique_setting: stat_area_quadrilateral_side_be_inscribed_be_described_circle;;
-	
 	-> rrel_key_sc_element: nrel_area; concept_quadrilateral; nrel_side; nrel_be_inscribed; nrel_be_described; concept_circle; nrel_perimeter;;
 	<= nrel_sc_text_translation: 
 		...
@@ -79,11 +70,8 @@ concept_quadrilateral <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Утв. (четырехугольник; площадь*; диагональ*; синус*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_statement_of_unique_setting;;
 	-> rrel_main_key_sc_element: stat_area_quadrilateral_diagonal_angle_between;;
-	
-	-> rrel_statement_of_unique_setting: stat_area_quadrilateral_diagonal_angle_between;;
-	
 	-> rrel_key_sc_element: nrel_area; concept_quadrilateral; nrel_diagonal; concept_angle; rrel_between;;
 	<= nrel_sc_text_translation: 
 		...
@@ -98,11 +86,8 @@ concept_quadrilateral <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Утв. (четырехугольник; сторона*; противолежащий*; описанность*; окружность; сумма*; конгруэнтность*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_theorem;;
 	-> rrel_main_key_sc_element: stat_opposite_side_quadrilateral_congruence_circle_be_described;;
-	
-	-> rrel_theorem: stat_opposite_side_quadrilateral_congruence_circle_be_described;;
-	
 	-> rrel_key_sc_element: nrel_opposite; nrel_side; concept_quadrilateral; nrel_congruence; concept_circle; nrel_be_described;;
 	<= nrel_sc_text_translation: 
 		...
@@ -117,11 +102,8 @@ concept_quadrilateral <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Утв. (четырехугольник; сторона*; противолежащий*; вписанность*; окружность; сумма*; конгруэнтность*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_theorem;;
 	-> rrel_main_key_sc_element: stat_quadrilateral_be_inscribed_opposite_side_congruence;;
-	
-	-> rrel_theorem: stat_quadrilateral_be_inscribed_opposite_side_congruence;;
-	
 	-> rrel_key_sc_element: concept_quadrilateral; nrel_be_inscribed; nrel_opposite; nrel_side; nrel_congruence;;
 	<= nrel_sc_text_translation: 
 		...
@@ -136,11 +118,8 @@ concept_quadrilateral <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Утв. (четырехугольник; вписанность*; окружность; сумма*; сторона*; противолежащий*; диагональ*; конгруэнтность*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_theorem;;
 	-> rrel_main_key_sc_element: stat_Ptolemy_theorem;;
-	
-	-> rrel_theorem: stat_Ptolemy_theorem;;
-	
 	-> rrel_key_sc_element: concept_quadrilateral; nrel_be_inscribed; concept_circle; nrel_opposite; nrel_side; nrel_diagonal;;
 	<= nrel_sc_text_translation: 
 		...
@@ -155,11 +134,8 @@ concept_quadrilateral <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Утв. (четырехугольник; угол*; противолежащий*; сумма*; окружность; вписанность*; конгруэнтность*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_theorem;;
 	-> rrel_main_key_sc_element: stat_opposite_angle_quadrilateral_be_inscribed_circle;;
-	
-	rrel_theorem: stat_opposite_angle_quadrilateral_be_inscribed_circle;;
-	
 	-> rrel_key_sc_element: nrel_opposite; concept_angle; concept_quadrilateral; nrel_be_inscribed; concept_circle;;
 	<= nrel_sc_text_translation: 
 		...
@@ -174,11 +150,8 @@ concept_quadrilateral <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Утв. (четырехугольник; окружность; описанность*; сумма*; угол*; противолежащий*; конгруэнтность*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_theorem;;
 	-> rrel_main_key_sc_element: stat_opposite_angle_quadrilateralbe_inscribed_circle;;
-	
-	-> rrel_theorem: stat_opposite_angle_quadrilateralbe_inscribed_circle;;
-	
 	-> rrel_key_sc_element: nrel_opposite; concept_angle; concept_quadrilateral; nrel_be_inscribed; concept_circle;;
 	<= nrel_sc_text_translation: 
 		...
@@ -193,11 +166,8 @@ concept_quadrilateral <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Утв. (четырехугольник; диагональ*; сумма*; отрезок; середина*; сторона*; противолежащий*; сторона*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_theorem;;
 	-> rrel_main_key_sc_element: stat_diagonal_quadrilateral_segment_middle_opposite_side;;
-	
-	-> rrel_theorem: stat_diagonal_quadrilateral_segment_middle_opposite_side;;
-	
 	-> rrel_key_sc_element: nrel_diagonal; concept_quadrilateral; concept_segment; nrel_middle; nrel_opposite; nrel_side;;
 	<= nrel_sc_text_translation: 
 		...
@@ -213,11 +183,8 @@ concept_quadrilateral <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Утв. (четырехугольник; внутренний угол*; сумма*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_theorem;;
 	-> rrel_main_key_sc_element: stat_internal_angle_quadrilateral_angle_measure;;
-	
-	-> rrel_theorem: stat_internal_angle_quadrilateral_angle_measure;;
-	
 	-> rrel_key_sc_element: nrel_internal_angle; concept_quadrilateral; nrel_angle_measure;;
 	<= nrel_sc_text_translation: 
 		...
@@ -232,11 +199,8 @@ concept_quadrilateral <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Утв. (четырехугольник; конгруэнтность*; соответственные углы*; вершина*; диагональ*; подобие*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_theorem;;
 	-> rrel_main_key_sc_element: stat_quadrilateral_congruence_corresponding_angles_vertex_between_diagonal_symmilarity;;
-	
-	-> rrel_theorem: stat_quadrilateral_congruence_corresponding_angles_vertex_between_diagonal_symmilarity;;
-	
 	-> rrel_key_sc_element: concept_quadrilateral; nrel_congruence; nrel_corresponding_angles; nrel_vertex; rrel_between; nrel_diagonal; nrel_symmilarity;;
 	<= nrel_sc_text_translation: 
 		...
@@ -252,11 +216,8 @@ concept_quadrilateral <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Утв. (четырехугольник; косинус*; сторона*; угол*; диагональ*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_theorem;;
 	-> rrel_main_key_sc_element: stat_theorem_cosinus_quadrilateral;;
-	
-	-> rrel_theorem: stat_theorem_cosinus_quadrilateral;;
-	
 	-> rrel_key_sc_element: concept_quadrilateral; nrel_side; nrel_diagonal; nrel_congruence; rrel_between; nrel_angle_measure;;
 	<= nrel_sc_text_translation: 
 		...
@@ -290,11 +251,8 @@ concept_trapezoid <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Утв. (трапеция; средняя линия*; параллелелизм*; основание*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_statement_of_unique_setting;;
 	-> rrel_main_key_sc_element: stat_trapeazoid_center_line_parallelism_base;;
-	
-	-> rrel_statement_of_unique_setting: stat_trapeaoid_center_line_parallelism_base;;
-	
 	-> rrel_key_sc_element: concept_trapezoid; nrel_center_line; nrel_parallelism; nrel_base;;
 	<= nrel_sc_text_translation: 
 		...
@@ -309,11 +267,8 @@ concept_trapezoid <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Утв. (трапеция; диагональ*; боковая сторона*; основание*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_statement_of_unique_setting;;
 	-> rrel_main_key_sc_element: stat_diagonal_trapezoid_lateral_side_base;;
-	
-	-> rrel_statement_of_unique_setting: stat_diagonal_trapezoid_lateral_side_base;;
-	
 	-> rrel_key_sc_element: nrel_diagonal; concept_trapezoid; nrel_lateral_side; nrel_base;;
 	<= nrel_sc_text_translation: 
 		...
@@ -328,11 +283,8 @@ concept_trapezoid <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Утв. (трапеция; боковая сторона*; основание*; диагональ*; прямая; середина*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_theorem;;
 	-> rrel_main_key_sc_element: stat_middle_lateral_side_diagonal_trapezoid_straight_line;;
-	
-	-> rrel_theorem: stat_middle_lateral_side_diagonal_trapezoid_straight_line;;
-	
 	-> rrel_key_sc_element: nrel_middle; nrel_lateral_side; nrel_diagonal; concept_trapezoid; concept_straight_line;;
 	<= nrel_sc_text_translation: 
 		...
@@ -347,11 +299,8 @@ concept_trapezoid <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Утв. (трапеция; середина*; основание*; геометрическая точка; диагональ*; боковая сторона*; прямая)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_theorem;;
 	-> rrel_main_key_sc_element: stat_theorem_about_four_points_of_the_trapezoid;;
-	
-	-> rrel_theorem: stat_theorem_about_four_points_of_the_trapezoid;;
-	
 	-> rrel_key_sc_element: nrel_middle; nrel_base; concept_geometric_point; nrel_diagonal; nrel_lateral_side; concept_trapezoid; concept_straight_line;;
 	<= nrel_sc_text_translation: 
 		...
@@ -367,11 +316,8 @@ concept_trapezoid <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Утв. (трапеция; середина*; отрезок; середина*; диагональ*; параллелелизм*; основание*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_statement_of_unique_setting;;
 	-> rrel_main_key_sc_element: stat_segment_middle_diagonal_trapezoid_parallelism_base;;
-	
-	-> rrel_statement_of_unique_setting: stat_segment_middle_diagonal_trapezoid_parallelism_base;;
-	
 	-> rrel_key_sc_element: concept_segment; nrel_middle; nrel_diagonal; concept_trapezoid; nrel_parallelism; nrel_base;;
 	<= nrel_sc_text_translation: 
 		...
@@ -386,11 +332,8 @@ concept_trapezoid <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Утв. (трапеция; основание*; отрезок; боковая сторона*; параллелелизм*; геометрическая точка; диагональ*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_statement_of_unique_setting;;
 	-> rrel_main_key_sc_element: stat_base_trapezoid_segment_lateral_side_parallelism_geometric_point_diagonal;;
-	
-	-> rrel_statement_of_unique_setting: stat_base_trapezoid_segment_lateral_side_parallelism_geometric_point_diagonal;;
-	
 	-> rrel_key_sc_element: nrel_base; concept_trapezoid; concept_segment; nrel_lateral_side; nrel_parallelism; concept_geometric_point; nrel_diagonal;;
 	<= nrel_sc_text_translation: 
 		...
@@ -407,11 +350,8 @@ concept_trapezoid <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Утв. (трапеция; основание*; отрезок; параллелелизм*; равновеликие*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_statement_of_unique_setting;;
 	-> rrel_main_key_sc_element: stat_base_trapezoid_segment_parallelism_equal_sized;;
-	
-	-> rrel_statement_of_unique_setting: stat_base_trapezoid_segment_parallelism_equal_sized;;
-	
 	-> rrel_key_sc_element: nrel_base; concept_trapezoid; concept_segment; nrel_parallelism; nrel_equal_sized;;
 	<= nrel_sc_text_translation: 
 		...
@@ -426,11 +366,8 @@ concept_trapezoid <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Утв. (трапеция; основание*; диагональ*; треугольник; равновеликие*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_theorem;;
 	-> rrel_main_key_sc_element: stat_trapezoid_base_diagonal_triangle_equal_sized;;
-	
-	-> rrel_theorem: stat_trapezoid_base_diagonal_triangle_equal_sized;;
-	
 	-> rrel_key_sc_element: concept_trapezoid; nrel_base; nrel_diagonal; concept_triangle; nrel_equal_sized;;
 	<= nrel_sc_text_translation: 
 		...
@@ -444,11 +381,8 @@ concept_trapezoid <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Утв. (трапеция; основание*; геометрическая точка; диагональ*; равновеликие*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_statement_of_unique_setting;;
 	-> rrel_main_key_sc_element: stat_trapezoid_base_geometric_point_diagonal_triangle_equal_sized;;
-	
-	-> rrel_statement_of_unique_setting: stat_trapezoid_base_geometric_point_diagonal_triangle_equal_sized;;
-	
 	-> rrel_key_sc_element: concept_trapezoid; nrel_base; concept_geometric_point; nrel_diagonal; concept_triangle; nrel_equal_sized;;
 	<= nrel_sc_text_translation: 
 		...
@@ -462,11 +396,8 @@ concept_trapezoid <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Утв. (трапеция; основание*; диагональ*; треугольник; подобие*; площадь*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_statement_of_unique_setting;;
 	-> rrel_main_key_sc_element: stat_trapezoid_base_geometric_point_diagonal_triangle_similarity_area;;
-	
-	-> rrel_statement_of_unique_setting: stat_trapezoid_base_geometric_point_diagonal_triangle_similarity_area;;
-	
 	-> rrel_key_sc_element: concept_trapezoid; nrel_base; concept_geometric_point; nrel_diagonal; concept_triangle; nrel_similarity; nrel_area;;
 	<= nrel_sc_text_translation: 
 		...
@@ -481,11 +412,8 @@ concept_trapezoid <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Утв. (трапеция; площадь*; основание*; высота*; средняя линия*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_statement_of_unique_setting;;
 	-> rrel_main_key_sc_element: stat_area_trapezoid_base_height_central_line;;
-	
-	-> rrel_statement_of_unique_setting: stat_area_trapezoid_base_height_central_line;;
-	
 	-> rrel_key_sc_element: nrel_area; concept_trapezoid; nrel_base; nrel_height; nrel_central_line;;
 	<= nrel_sc_text_translation: 
 		...
@@ -499,11 +427,8 @@ concept_trapezoid <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Утв. (трапеция; площадь*; диагональ*; угол; между_)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_statement_of_unique_setting;;
 	-> rrel_main_key_sc_element: stat_area_trapezoid_diagonal_angle_between;;
-	
-	-> rrel_statement_of_unique_setting: stat_area_trapezoid_diagonal_angle_between;;
-	
 	-> rrel_key_sc_element: nrel_area; concept_trapezoid; nrel_diagonal; concept_angle; rrel_between;;
 	<= nrel_sc_text_translation: 
 		...
@@ -517,11 +442,8 @@ concept_trapezoid <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Утв. (трапеция; отрезок; параллелелизм*; боковая сторона*; треугольник; высота*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_statement_of_unique_setting;;
 	-> rrel_main_key_sc_element: stat_trapezoid_segment_parallelism_lateral_side_triangle_height;;
-	
-	-> rrel_statement_of_unique_setting: stat_trapezoid_segment_parallelism_lateral_side_triangle_height;;
-	
 	-> rrel_key_sc_element: concept_trapezoid; concept_segment; nrel_parallelism; nrel_lateral_side; concept_triangle; nrel_height;;
 	<= nrel_sc_text_translation: 
 		...
@@ -536,11 +458,8 @@ concept_trapezoid <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Утв. (трапеция; отрезок; параллелелизм*; боковая сторона*; треугольник; высота*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_statement_of_unique_setting;;
 	-> rrel_main_key_sc_element: stat_trapezoid_segment_parallelism_lateral_side_triangle_area;;
-	
-	-> rrel_statement_of_unique_setting: stat_trapezoid_segment_parallelism_lateral_side_triangle_area;;
-	
 	-> rrel_key_sc_element: concept_trapezoid; concept_segment; nrel_parallelism; nrel_lateral_side; concept_triangle; nrel_area;;
 	<= nrel_sc_text_translation: 
 		...
@@ -571,11 +490,8 @@ concept_rectangle <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Утв. (параллелограмм; диагональ*; конгруэнтность*; прямоугольник)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_definitional_statement;;
 	-> rrel_main_key_sc_element: stat_parallelogram_diagonal_congruence_rectangle;;
-	
-	-> rrel_definitional_statement: stat_parallelogram_diagonal_congruence_rectangle;;
-	
 	-> rrel_key_sc_element: concept_parallelogram; nrel_diagonal; nrel_congruence; concept_rectangle;;
 	<= nrel_sc_text_translation: 
 		...
@@ -590,11 +506,8 @@ concept_rectangle <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Утв. (параллелограмм; прямой угол; конгруэнтность*; прямоугольник)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_definitional_statement;;
 	-> rrel_main_key_sc_element: stat_parallelogram_rectangle_right_angle;;
-	
-	-> rrel_definitional_statement: stat_parallelogram_rectangle_right_angle;;
-	
 	-> rrel_key_sc_element: concept_parallelogram; concept_rectangle; concept_right_angle;;
 	<= nrel_sc_text_translation: 
 		...
@@ -609,11 +522,8 @@ concept_rectangle <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Утв. (четырехугольник; прямой угол; конгруэнтность*; прямоугольник)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_definitional_statement;;
 	-> rrel_main_key_sc_element: stat_quadrilateral_rectangle_right_angle;;
-	
-	-> rrel_definitional_statement: stat_quadrilateral_rectangle_right_angle;;
-	
 	-> rrel_key_sc_element: concept_quadrilateral; concept_rectangle; concept_right_angle;;
 	<= nrel_sc_text_translation: 
 		...
@@ -628,11 +538,8 @@ concept_rectangle <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Утв. (прямоугольник; диагональ*; конгруэнтность*; прямоугольник)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_statement_of_unique_setting;;
 	-> rrel_main_key_sc_element: stat_rectangle_congruence_diagonal_adjacent_side;;
-	
-	-> rrel_statement_of_unique_setting: stat_rectangle_congruence_diagonal_adjacent_side;;
-	
 	-> rrel_key_sc_element: concept_rectangle; nrel_congruence; nrel_diagonal; nrel_adjacent; nrel_side;;
 	<= nrel_sc_text_translation: 
 		...
@@ -647,11 +554,8 @@ concept_rectangle <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Утв. (прямоугольник; сторона*; середина*; ось симметрии*; перпендикулярность*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_statement_of_unique_setting;;
 	-> rrel_main_key_sc_element: stat_perpendicular_middle_side_rectangle_axis_of_symmetry;;
-	
-	-> rrel_statement_of_unique_setting: stat_perpendicular_middle_side_rectangle_axis_of_symmetry;;
-	
 	-> rrel_key_sc_element: nrel_perpendicular; nrel_middle; nrel_side; concept_rectangle; nrel_axis_of_symmetry;;
 	<= nrel_sc_text_translation: 
 		...
@@ -666,11 +570,8 @@ concept_rectangle <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Утв. (прямоугольник; окружность; быть вписанным*; радиус*; диагональ*; смежность*; сторона*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_statement_of_unique_setting;;
 	-> rrel_main_key_sc_element: stat_rectangle_circle_be_described_radius_diagonal_adjacent_side;;
-	
-	-> rrel_statement_of_unique_setting: stat_rectangle_circle_be_described_radius_diagonal_adjacent_side;;
-	
 	-> rrel_key_sc_element: concept_rectangle; concept_circle; nrel_be_described; nrel_radius; nrel_diagonal; nrel_adjacent; nrel_side;;
 	<= nrel_sc_text_translation: 
 		...
@@ -686,11 +587,8 @@ concept_rectangle <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Утв. (прямоугольник; сторона*; площадь*; смежность*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_statement_of_unique_setting;;
 	-> rrel_main_key_sc_element: stat_area_rectangle_adjacent_side;;
-	
-	-> rrel_statement_of_unique_setting: stat_area_rectangle_adjacent_side;;
-	
 	-> rrel_key_sc_element: nrel_area; concept_rectangle; nrel_adjacent; nrel_side;;
 	<= nrel_sc_text_translation: 
 		...
@@ -705,11 +603,8 @@ concept_rectangle <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Утв.(прямоугольник; точка; пересечение*; диагональ*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_statement_of_unique_setting;;
 	-> rrel_main_key_sc_element: stat_rectangle_diagonal_intersection_middle;;
-	
-	-> rrel_statement_of_unique_setting: stat_rectangle_diagonal_intersection_middle;;
-	
 	-> rrel_key_sc_element: nrel_rectangle; nrel_middle; nrel_diagonal;;
 	<= nrel_sc_text_translation: 
 		...
@@ -740,11 +635,8 @@ concept_rhomb <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Утв.(параллелограмм; диагональ*; перпендикулярность*; ромб)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_definitional_statement;;
 	-> rrel_main_key_sc_element: stat_parallelogram_diagonal_perpendicularity_rhomb;;
-	
-	-> rrel_definitional_statement: stat_parallelogram_diagonal_perpendicularity_rhomb;;
-	
 	-> rrel_key_sc_element: concept_parallelogram; nrel_diagonal; nrel_perpendicularity; concept_rhomb;;
 	<= nrel_sc_text_translation: 
 		...
@@ -759,11 +651,8 @@ concept_rhomb <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Утв.(параллелограмм; диагональ*; ромб; биссектриса угла*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_definitional_statement;;
 	-> rrel_main_key_sc_element: stat_parallelogram_diagonal_rhomb_bisectrix_of_angle;;
-	
-	-> rrel_definitional_statement: stat_parallelogram_diagonal_rhomb_bisectrix_of_angle;;
-	
 	-> rrel_key_sc_element: concept_parallelogram; nrel_diagonal; concept_rhomb; nrel_bisectrix_of_angle;;
 	<= nrel_sc_text_translation: 
 		...
@@ -778,11 +667,8 @@ concept_rhomb <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Утв.(четырехугольник; сторона*; конгруэнтность*; ромб)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_definitional_statement;;
 	-> rrel_main_key_sc_element: stat_side_quadrilateral_congruence_rhomb;;
-	
-	-> rrel_definitional_statement: stat_side_quadrilateral_congruence_rhomb;;
-	
 	-> rrel_key_sc_element: nrel_side; concept_quadrilateral; nrel_congruence; concept_rhomb;;
 	<= nrel_sc_text_translation: 
 		...
@@ -797,11 +683,8 @@ concept_rhomb <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Утв.(ромб; диагональ*; перпендикулярность*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_theorem;;
 	-> rrel_main_key_sc_element: stat_rhomb_diagonal_perpendicularity;;
-	
-	-> rrel_theorem: stat_rhomb_diagonal_perpendicularity;;
-	
 	-> rrel_key_sc_element: concept_rhomb; nrel_diagonal; nrel_perpendicularity;;
 	<= nrel_sc_text_translation: 
 		...
@@ -816,11 +699,8 @@ concept_rhomb <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Утв.(ромб; диагональ*; перпендикулярность*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_theorem;;
 	-> rrel_main_key_sc_element: stat_rhomb_diagonal_perpendicularity;;
-	
-	-> rrel_theorem: stat_rhomb_diagonal_perpendicularity;;
-	
 	-> rrel_key_sc_element: concept_rhomb; nrel_diagonal; nrel_perpendicularity;;
 	<= nrel_sc_text_translation: 
 		...
@@ -835,11 +715,8 @@ concept_rhomb <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Утв.(ромб; диагональ*; биссектриса угла*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_theorem;;
 	-> rrel_main_key_sc_element: stat_diagonal_rhomb_bisectrix_of_angle;;
-	
-	-> rrel_theorem: stat_diagonal_rhomb_bisectrix_of_angle;;
-	
 	-> rrel_key_sc_element: nrel_diagonal; concept_rhomb; nrel_bisectrix_of_angle;;
 	<= nrel_sc_text_translation: 
 		...
@@ -854,11 +731,8 @@ concept_rhomb <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Утв.(ромб; прямая; диагональ*; ось симметрии*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_theorem;;
 	-> rrel_main_key_sc_element: stat_straight_line_diagonal_rhomb_axis_of_symmetry;;
-	
-	-> rrel_theorem: stat_straight_line_diagonal_rhomb_axis_of_symmetry;;
-	
 	-> rrel_key_sc_element: concept_straight_line; nrel_diagonal; concept_rhomb; nrel_axis_of_symmetry;;
 	<= nrel_sc_text_translation: 
 		...
@@ -873,11 +747,8 @@ concept_rhomb <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Утв.(ромб; высота*; конгруэнтность*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_theorem;;
 	-> rrel_main_key_sc_element: stat_height_rhomb_congruence;;
-	
-	-> rrel_theorem: stat_height_rhomb_congruence;;
-	
 	-> rrel_key_sc_element: nrel_height; concept_rhomb; nrel_congruence;;
 	<= nrel_sc_text_translation: 
 		...
@@ -892,11 +763,8 @@ concept_rhomb <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Утв.(ромб; сторона*; угол; между_; смежность*; окружность; радиус*; вписанность*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_statement_of_unique_setting;;
 	-> rrel_main_key_sc_element: stat_rhomb_side_angle_between_adjacent_circle_radius_be_inscribed;;
-	
-	-> rrel_statement_of_unique_setting: stat_rhomb_side_angle_between_adjacent_circle_radius_be_inscribed;;
-	
 	-> rrel_key_sc_element: concept_rhomb; nrel_side; concept_angle; rrel_between; nrel_adjacent; concept_circle; nrel_radius; nrel_be_inscribed;;
 	<= nrel_sc_text_translation: 
 		...
@@ -911,11 +779,8 @@ concept_rhomb <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Утв.(ромб; площадь*; сторона*; угол; между_)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_statement_of_unique_setting;;
 	-> rrel_main_key_sc_element: stat_area_rhomb_side_angle_between;;
-	
-	-> rrel_statement_of_unique_setting: stat_area_rhomb_side_angle_between;;
-	
 	-> rrel_key_sc_element: nrel_area; concept_rhomb; nrel_side; concept_angle; rrel_between;;
 	<= nrel_sc_text_translation: 
 		...
@@ -930,11 +795,8 @@ concept_rhomb <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Утв.(ромб; площадь*; диагональ*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_statement_of_unique_setting;;
 	-> rrel_main_key_sc_element: stat_rhomb_area_diagonal;;
-	
-	-> rrel_statement_of_unique_setting: stat_rhomb_area_diagonal;;
-	
 	-> rrel_key_sc_element: concept_rhomb; nrel_area; nrel_diagonal;;
 	<= nrel_sc_text_translation: 
 		...
@@ -965,11 +827,8 @@ concept_parallelogram <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Утв.(параллелограмм; четырехугольник; противолежащий*; сторона*; параллелелизм*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_definitional_statement;;
 	-> rrel_main_key_sc_element: stat_quadrilateral_opposite_side_congruence_parallelism_parallelogram;;
-	
-	-> rrel_definitional_statement: stat_quadrilateral_opposite_side_congruence_parallelism_parallelogram;;
-	
 	-> rrel_key_sc_element: concept_quadrilateral; nrel_opposite; nrel_side; nrel_congruence; nrel_parallelism; concept_parallelogram;;
 	<= nrel_sc_text_translation: 
 		...
@@ -984,11 +843,8 @@ concept_parallelogram <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Утв.(параллелограмм; четырехугольник; противолежащий*; сторона*; конгруэнтность*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_definitional_statement;;
 	-> rrel_main_key_sc_element: stat_quadrilateral_opposite_side_congruence_parallelogram;;
-	
-	-> rrel_definitional_statement: stat_quadrilateral_opposite_side_congruence_parallelogram;;
-	
 	-> rrel_key_sc_element: concept_quadrilateral; nrel_opposite; nrel_side; nrel_congruence; concept_parallelogram;;
 	<= nrel_sc_text_translation: 
 		...
@@ -1003,11 +859,8 @@ concept_parallelogram <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Утв.(параллелограмм; четырехугольник; противолежащий*; конгруэнтность*; угол)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_definitional_statement;;
 	-> rrel_main_key_sc_element: stat_quadrilateral_opposite_angle_congruence_parallelogram;;
-	
-	-> rrel_definitional_statement: stat_quadrilateral_opposite_angle_congruence_parallelogram;;
-	
 	-> rrel_key_sc_element: concept_quadrilateral; nrel_opposite; concept_angle; nrel_congruence;  concept_parallelogram;;
 	<= nrel_sc_text_translation: 
 		...
@@ -1022,11 +875,8 @@ concept_parallelogram <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Утв.(параллелограмм; четырехугольник; диагональ*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_definitional_statement;;
 	-> rrel_main_key_sc_element: stat_quadrilateral_diagonal_parallelogram;;
-	
-	-> rrel_definitional_statement: stat_quadrilateral_diagonal_parallelogram;;
-	
 	-> rrel_key_sc_element: concept_quadrilateral; nrel_diagonal; concept_parallelogram;;
 	<= nrel_sc_text_translation: 
 		...
@@ -1041,11 +891,8 @@ concept_parallelogram <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Утв.(параллелограмм; противолежащий*; сторона*; конгруэнтность*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_theorem;;
 	-> rrel_main_key_sc_element: stat_parallelogram_opposite_side_congruence;;
-	
-	-> rrel_theorem: stat_parallelogram_opposite_side_congruence;;
-	
 	-> rrel_key_sc_element: concept_parallelogram; nrel_opposite; nrel_side; nrel_congruence;;
 	<= nrel_sc_text_translation: 
 		...
@@ -1060,11 +907,8 @@ concept_parallelogram <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Утв.(параллелограмм; периметр*; сторона*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_statement_of_unique_setting;;
 	-> rrel_main_key_sc_element: stat_perimeter_parallelogram_side;;
-	
-	-> rrel_statement_of_unique_setting: stat_perimeter_parallelogram_side;;
-	
 	-> rrel_key_sc_element: nrel_perimeter; concept_parallelogram; nrel_side;;
 	<= nrel_sc_text_translation: 
 		...
@@ -1079,11 +923,8 @@ concept_parallelogram <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Утв.(параллелограмм; угол; конгруэнтность*; противолежащий*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_theorem;;
 	-> rrel_main_key_sc_element: stat_opposite_angle_parallelogram_congruence;;
-	
-	-> rrel_theorem: stat_opposite_angle_parallelogram_congruence;;
-	
 	-> rrel_key_sc_element: nrel_opposite; concept_angle; concept_parallelogram; nrel_congruence;;
 	<= nrel_sc_text_translation: 
 		...
@@ -1098,11 +939,8 @@ concept_parallelogram <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Утв.(параллелограмм; угол; смежность*; сторона*; мера угла*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_theorem;;
 	-> rrel_main_key_sc_element: stat_angle_parallelogram_adjacent_side_angle_measure;;
-	
-	-> rrel_theorem: stat_angle_parallelogram_adjacent_side_angle_measure;;
-	
 	-> rrel_key_sc_element: concept_angle; concept_parallelogram; nrel_adjacent; nrel_side; nrel_angle_measure;;
 	<= nrel_sc_text_translation: 
 		...
@@ -1117,11 +955,8 @@ concept_parallelogram <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Утв.(параллелограмм; диагональ*; треугольник; конгруэнтность*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_theorem;;
 	-> rrel_main_key_sc_element: stat_diagonal_parallelogram_triangle_congruence;;
-	
-	-> rrel_theorem: stat_diagonal_parallelogram_triangle_congruence;;
-	
 	-> rrel_key_sc_element: nrel_diagonal; concept_parallelogram; concept_triangle; nrel_congruence;;
 	<= nrel_sc_text_translation: 
 		...
@@ -1136,11 +971,8 @@ concept_parallelogram <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Утв.(параллелограмм; диагональ*; сторона*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_theorem;;
 	-> rrel_main_key_sc_element: stat_diagonal_parallelogram_side;;
-	
-	-> rrel_theorem: stat_diagonal_parallelogram_side;;
-	
 	-> rrel_key_sc_element: nrel_diagonal; concept_parallelogram; nrel_side;;
 	<= nrel_sc_text_translation: 
 		...
@@ -1155,11 +987,8 @@ concept_parallelogram <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Утв.(параллелограмм; диагональ*; геометрическая точка)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_theorem;;
 	-> rrel_main_key_sc_element: stat_diagonal_parallelogram_geometric_point;;
-	
-	-> rrel_theorem: stat_diagonal_parallelogram_geometric_point;;
-	
 	-> rrel_key_sc_element: nrel_diagonal; concept_parallelogram; concept_geometric_point;;
 	<= nrel_sc_text_translation: 
 		...
@@ -1174,11 +1003,8 @@ concept_parallelogram <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Утв.(параллелограмм; диагональ*; треугольник; равновеликие*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_theorem;;
 	-> rrel_main_key_sc_element: stat_diagonal_parallelogram_triangle_equal_sized;;
-	
-	-> rrel_theorem: stat_diagonal_parallelogram_triangle_equal_sized;;
-	
 	-> rrel_key_sc_element: nrel_diagonal; concept_parallelogram; concept_triangle; nrel_equal_sized;;
 	<= nrel_sc_text_translation: 
 		...
@@ -1193,11 +1019,8 @@ concept_parallelogram <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Утв.(параллелограмм; биссектриса угла*; равнобедренный треугольник)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_theorem;;
 	-> rrel_main_key_sc_element: stat_bisectrix_of_angle_parallelogram_isosceles_triangle;;
-	
-	-> rrel_theorem: stat_bisectrix_of_angle_parallelogram_isosceles_triangle;;
-	
 	-> rrel_key_sc_element: nrel_bisectrix_of_angle; concept_parallelogram; concept_isosceles_triangle;;
 	<= nrel_sc_text_translation: 
 		...
@@ -1212,11 +1035,8 @@ concept_parallelogram <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Утв.(параллелограмм; биссектриса угла*; смежность*; сторона*; перпендикулярность*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_theorem;;
 	-> rrel_main_key_sc_element: stat_bisectrix_of_angle_parallelogram_adjacent_side_perpendicularity;;
-	
-	-> rrel_theorem: stat_bisectrix_of_angle_parallelogram_adjacent_side_perpendicularity;;
-	
 	-> rrel_key_sc_element: nrel_bisectrix_of_angle; concept_parallelogram; nrel_adjacent; nrel_side; nrel_perpendicularity;;
 	<= nrel_sc_text_translation: 
 		...
@@ -1231,11 +1051,8 @@ concept_parallelogram <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Утв.(параллелограмм; угол; противолежащий*; биссектриса угла*; параллелелизм*; прямая)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_theorem;;
 	-> rrel_main_key_sc_element: stat_opposite_angle_bisectrix_of_angle_paralleogram_parallelism_straight_line;;
-	
-	-> rrel_theorem: stat_opposite_angle_bisectrix_of_angle_paralleogram_parallelism_straight_line;;
-	
 	-> rrel_key_sc_element: nrel_opposite; concept_angle; nrel_bisectrix_of_angle; concept_paralleogram; nrel_parallelism; concept_straight_line;;
 	<= nrel_sc_text_translation: 
 		...
@@ -1250,11 +1067,8 @@ concept_parallelogram <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Утв.(параллелограмм; высота*; сторона*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_theorem;;
 	-> rrel_main_key_sc_element: stat_parallelogram_height_side;;
-	
-	-> rrel_theorem: stat_parallelogram_height_side;;
-	
 	-> rrel_key_sc_element: concept_parallelogram; nrel_height; nrel_side;;
 	<= nrel_sc_text_translation: 
 		...
@@ -1269,11 +1083,8 @@ concept_parallelogram <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Утв.(параллелограмм; высота*; вершина*; угол; конгруэнтность*; смежность*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_statement_of_unique_setting;;
 	-> rrel_main_key_sc_element: stat_height_parallelogram_vertex_angle_congruence_adjacent;;
-	
-	-> rrel_statement_of_unique_setting: stat_height_parallelogram_vertex_angle_congruence_adjacent;;
-	
 	-> rrel_key_sc_element: nrel_height; concept_parallelogram; nrel_vertex; concept_angle; nrel_congruence; nrel_adjacent;;
 	<= nrel_sc_text_translation: 
 		...
@@ -1288,11 +1099,8 @@ concept_parallelogram <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Утв.(параллелограмм; середина*; отрезок; противолежащий*; сторона*; прямая)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_statement_of_unique_setting;;
 	-> rrel_main_key_sc_element: stat_middle_segment_opposite_side_parallelogram_straight_line;;
-	
-	-> rrel_statement_of_unique_setting: stat_middle_segment_opposite_side_parallelogram_straight_line;;
-	
 	-> rrel_key_sc_element: nrel_middle; concept_segment; nrel_opposite; nrel_side; concept_parallelogram; concept_straight_line;;
 	<= nrel_sc_text_translation: 
 		...
@@ -1307,11 +1115,8 @@ concept_parallelogram <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Утв.(параллелограмм; площадь*; основание*; вершина*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_statement_of_unique_setting;;
 	-> rrel_main_key_sc_element: stat_area_parallelogram_base_vertex;;
-	
-	-> rrel_statement_of_unique_setting: stat_area_parallelogram_base_vertex;;
-	
 	-> rrel_key_sc_element: nrel_area; concept_parallelogram; nrel_base; nrel_vertex;;
 	<= nrel_sc_text_translation: 
 		...
@@ -1326,11 +1131,8 @@ concept_parallelogram <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Утв.(параллелограмм; площадь*; основание*; вершина*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_statement_of_unique_setting;;
 	-> rrel_main_key_sc_element: stat_area_parallelogram_base_vertex;;
-	
-	-> rrel_statement_of_unique_setting: stat_area_parallelogram_base_vertex;;
-	
 	-> rrel_key_sc_element: nrel_area; concept_parallelogram; nrel_base; nrel_vertex;;
 	<= nrel_sc_text_translation: 
 		...
@@ -1345,11 +1147,8 @@ concept_parallelogram <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Утв.(параллелограмм; площадь*; смежность*; сторона*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_statement_of_unique_setting;;
 	-> rrel_main_key_sc_element: stat_area_parallelogram_adjacent_side_between;;
-	
-	-> rrel_statement_of_unique_setting: stat_area_parallelogram_adjacent_side_between;;
-	
 	-> rrel_key_sc_element: nrel_area; concept_parallelogram; nrel_adjacent; nrel_side;;
 	<= nrel_sc_text_translation: 
 		...
@@ -1364,11 +1163,8 @@ concept_parallelogram <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Утв.(параллелограмм; площадь*; диагональ*; угол; между_)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_statement_of_unique_setting;;
 	-> rrel_main_key_sc_element: stat_area_parallelogram_diagonal_angle_between;;
-	
-	-> rrel_statement_of_unique_setting: stat_area_parallelogram_diagonal_angle_between;;
-	
 	-> rrel_key_sc_element: nrel_area; concept_parallelogram; nrel_diagonal; concept_angle; rrel_between;;
 	<= nrel_sc_text_translation: 
 		...
@@ -1399,11 +1195,8 @@ concept_square <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Утв.(геометрическая точка; диагональ*; квадрат; центр*; ось симметрии*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_theorem;;
 	-> rrel_main_key_sc_element: stat_geometric_point_diagonal_square_centre_symmetry;;
-	
-	-> rrel_theorem: stat_geometric_point_diagonal_square_centre_symmetry;;
-	
 	-> rrel_key_sc_element: concept_geometric_point; nrel_diagonal; concept_square; nrel_centre; nrel_axis_of_symmetry;;
 	<= nrel_sc_text_translation: 
 		...
@@ -1418,11 +1211,8 @@ concept_square <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Утв.(квадрат; параллелограмм; диагональ*; конгруэнтность*; перпендикулярность*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_definitional_statement;;
 	-> rrel_main_key_sc_element: stat_parallelogram_diagonal_congruence_perpendicularity_square;;
-	
-	-> rrel_definitional_statement: stat_parallelogram_diagonal_congruence_perpendicularity_square;;
-	
 	-> rrel_key_sc_element: concept_parallelogram; nrel_diagonal; nrel_congruence; nrel_perpendicularity; concept_square;;
 	<= nrel_sc_text_translation: 
 		...
@@ -1437,11 +1227,8 @@ concept_square <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Утв.(квадрат; четырехугольник; сторона*; дигональ*; конгруэнтность)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_definitional_statement;;
 	-> rrel_main_key_sc_element: stat_quadrilateral_side_diagonal_congruence_square;;
-	
-	-> rrel_definitional_statement: stat_quadrilateral_side_diagonal_congruence_square;;
-	
 	-> rrel_key_sc_element: concept_quadrilateral; nrel_side; nrel_diagonal; nrel_congruence; concept_square;;
 	<= nrel_sc_text_translation: 
 		...
@@ -1456,11 +1243,8 @@ concept_square <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Утв.(квадрат; правильный многоугольник)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_definitional_statement;;
 	-> rrel_main_key_sc_element: stat_square_regular_polygon;;
-	
-	-> rrel_definitional_statement: stat_square_regular_polygon;;
-	
 	-> rrel_key_sc_element: concept_square; concept_regular_polygon;;
 	<= nrel_sc_text_translation: 
 		...
@@ -1475,11 +1259,8 @@ concept_square <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Утв.(квадрат; сторона*; конгруэнтность*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_theorem;;
 	-> rrel_main_key_sc_element: stat_side_square_congruence;;
-	
-	-> rrel_theorem: stat_side_square_congruence;;
-	
 	-> rrel_key_sc_element: nrel_side; concept_square; nrel_congruence;;
 	<= nrel_sc_text_translation: 
 		...
@@ -1494,11 +1275,8 @@ concept_square <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Утв.(квадрат; угол; прямой угол)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_theorem;;
 	-> rrel_main_key_sc_element: stat_angle_square_right_angle;;
-	
-	-> rrel_theorem: stat_angle_square_right_angle;;
-	
 	-> rrel_key_sc_element: concept_angle; concept_right_angle; concept_square;;
 	<= nrel_sc_text_translation: 
 		...
@@ -1513,11 +1291,8 @@ concept_square <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Утв.(квадрат; диагональ*; конгруэнтность*; перпендикулярность*; геометрическая точка; биссектриса угла*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_theorem;;
 	-> rrel_main_key_sc_element: stat_diagonal_square_congruence_perpendicularity_geometric_point_bisectrix_of_angle;;
-	
-	-> rrel_theorem: stat_diagonal_square_congruence_perpendicularity_geometric_point_bisectrix_of_angle;;
-	
 	-> rrel_key_sc_element: nrel_diagonal; concept_square; nrel_congruence; nrel_perpendicularity; concept_geometric_point; nrel_bisectrix_of_angle;;
 	<= nrel_sc_text_translation: 
 		...
@@ -1532,11 +1307,8 @@ concept_square <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Утв.(квадрат; диагональ*; сторона*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_statement_of_unique_setting;;
 	-> rrel_main_key_sc_element: stat_diagonal_square_side;;
-	
-	-> rrel_statement_of_unique_setting: stat_diagonal_square_side;;
-	
 	-> rrel_key_sc_element: nrel_diagonal; concept_square; nrel_side;;
 	<= nrel_sc_text_translation: 
 		...
@@ -1551,11 +1323,8 @@ concept_square <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Утв.(квадрат; ось симметрии*; диагональ*; перпендикулярность*; сторона*; середина*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_statement_of_unique_setting;;
 	-> rrel_main_key_sc_element: stat_square_axis_of_symmetry_diagonal_perpendicular_side_middle;;
-	
-	-> rrel_statement_of_unique_setting: stat_square_axis_of_symmetry_diagonal_perpendicular_side_middle;;
-	
 	-> rrel_key_sc_element: concept_square; nrel_axis_of_symmetry; nrel_diagonal; nrel_perpendicular; nrel_side; nrel_middle;;
 	<= nrel_sc_text_translation: 
 		...
@@ -1570,11 +1339,8 @@ concept_square <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Утв.(квадрат; сторона*; вписанность*; окружность; радиус*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_statement_of_unique_setting;;
 	-> rrel_main_key_sc_element: stat_square_side_be_inscribed_circle_radius;;
-	
-	-> rrel_statement_of_unique_setting: stat_square_side_be_inscribed_circle_radius;;
-	
 	-> rrel_key_sc_element: concept_square; nrel_side; nrel_be_inscribed; concept_circle; nrel_radius;;
 	<= nrel_sc_text_translation: 
 		...
@@ -1589,11 +1355,8 @@ concept_square <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Утв.(квадрат; сторона*; вписанность*; окружность; радиус*; диагональ*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_statement_of_unique_setting;;
 	-> rrel_main_key_sc_element: stat_square_side_be_described_circle_radius_diagonal;;
-	
-	-> rrel_statement_of_unique_setting: stat_square_side_be_described_circle_radius_diagonal;;
-	
 	-> rrel_key_sc_element: concept_square; nrel_side; nrel_be_described; concept_circle; nrel_radius; nrel_diagonal;;
 	<= nrel_sc_text_translation: 
 		...
@@ -1608,11 +1371,8 @@ concept_square <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Утв.(квадрат; сторона*; площадь*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_statement_of_unique_setting;;
 	-> rrel_main_key_sc_element: stat_area_square_side;;
-	
-	-> rrel_statement_of_unique_setting: stat_area_square_side;;
-	
 	-> rrel_key_sc_element: nrel_area; concept_square; nrel_side;;
 	<= nrel_sc_text_translation: 
 		...
@@ -1627,11 +1387,8 @@ concept_square <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Утв.(квадрат; диагональ*; площадь*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_statement_of_unique_setting;;
 	-> rrel_main_key_sc_element: stat_area_square_diagonale;;
-	
-	-> rrel_statement_of_unique_setting: stat_area_square_diagonal;;
-	
 	-> rrel_key_sc_element: nrel_area; concept_square; nrel_diagonal;;
 	<= nrel_sc_text_translation: 
 		...
@@ -1662,11 +1419,8 @@ concept_isosceles_trapezoid <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Утв. (равнобедренная трапеция; угол; основание*; конгруэнтность*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_theorem;;
 	-> rrel_main_key_sc_element: stat_isosceles_trapeze_angle_base_congruence;;
-	
-	-> rrel_theorem: stat_isosceles_trapeze_angle_base_congruence;;
-	
 	-> rrel_key_sc_element: concept_isosceles_trapezoid; concept_angle; nrel_base; nrel_congruence;;
 	<= nrel_sc_text_translation: 
 		...
@@ -1680,11 +1434,8 @@ concept_isosceles_trapezoid <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Утв. (равнобедренная трапеция; диагональ*; конгруэнтность*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_theorem;;
 	-> rrel_main_key_sc_element: stat_isosceles_trapeze_diagonal_congruence;;
-	
-	-> rrel_theorem: stat_isosceles_trapeze_diagonal_congruence;;
-	
 	-> rrel_key_sc_element: concept_isosceles_trapezoid; nrel_diagonal; nrel_congruence;;
 	<= nrel_sc_text_translation: 
 		...
@@ -1698,11 +1449,8 @@ concept_isosceles_trapezoid <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Утв. (равнобедренная трапеция; вершина*; высота*; основание*; отрезок)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_statement_of_unique_setting;;
 	-> rrel_main_key_sc_element: stat_isosceles_trapeze_vertex_height_base_segment;;
-	
-	-> rrel_statement_of_unique_setting: stat_isosceles_trapeze_vertex_height_base_segment;;
-	
 	-> rrel_key_sc_element: concept_isosceles_trapezoid; nrel_vertex; nrel_height; nrel_base; concept_segment;;
 	<= nrel_sc_text_translation: 
 		...
@@ -1717,11 +1465,8 @@ concept_isosceles_trapezoid <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Утв. (равнобедренная трапеция; прямая; середина*; основание*; перпендикулярность*; ось симметрии*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_statement_of_unique_setting;;
 	-> rrel_main_key_sc_element: stat_isosceles_trapeze_straight_line_middle_base_perpendicularity_base_axis_of_symmetry;;
-	
-	-> rrel_statement_of_unique_setting: stat_isosceles_trapeze_straight_line_middle_base_perpendicularity_base_axis_of_symmetry;;
-	
 	-> rrel_key_sc_element: concept_isosceles_trapezoid; concept_straight_line; nrel_middle; nrel_base; nrel_perpendicularity; nrel_axis_of_symmetry;;
 	<= nrel_sc_text_translation: 
 		...
@@ -1735,11 +1480,8 @@ concept_isosceles_trapezoid <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Утв. (равнобедренная трапеция; вписанность*; окружность; средняя линия*; серединный перпендикуляр*; основание*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_theorem;;
 	-> rrel_main_key_sc_element: stat_isosceles_trapeze_be_described_circle_centre_median_perpendicular_base;;
-	
-	-> rrel_theorem: stat_isosceles_trapeze_be_described_circle_centre_median_perpendicular_base;;
-	
 	-> rrel_key_sc_element: concept_isosceles_trapezoid; nrel_be_described; concept_circle; nrel_centre; nrel_median_perpendicular; nrel_base;;
 	<= nrel_sc_text_translation: 
 		...
@@ -1753,11 +1495,8 @@ concept_isosceles_trapezoid <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Утв. (равнобедренная трапеция; окружность; вписанность*; боковая сторона*; конгруэнтность*; диаметр*; высота*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- sc_theorem;;
 	-> rrel_main_key_sc_element: stat_isosceles_trapeze_be_inscribed_circle_lateral_side_congruence_center_line_diameter_height;;
-	
-	-> rrel_theorem: stat_isosceles_trapeze_be_inscribed_circle_lateral_side_congruence_center_line_diameter_height;;
-	
 	-> rrel_key_sc_element: concept_isosceles_trapezoid; nrel_be_inscribed; concept_circle; nrel_lateral_side; nrel_congruence; nrel_center_line; nrel_diameter; nrel_height;;
 	<= nrel_sc_text_translation: 
 		...
@@ -1774,7 +1513,7 @@ nrel_lateral_side <- rrel_key_sc_element:
 	=> nrel_main_idtf: [Опр.(боковая сторона*)] (* <- lang_ru;; *);; 
 	-> rrel_main_key_sc_element: d_concept_isosceles_trapezoid;;
 	-> rrel_key_sc_element: nrel_lateral_side; concept_geometric_figure; concept_isosceles_triangle; concept_isosceles_trapezoid; concept_segment; nrel_side; concept_angle; nrel_base;;
-	<- sc_statement;;   
+	<- sc_definition;;   
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -1792,7 +1531,7 @@ concept_rectangular_trapezoid <- rrel_key_sc_element:
 	=> nrel_main_idtf: [Опр.(прямоугольная трапеция)] (* <- lang_ru;; *);; 
 	-> rrel_main_key_sc_element: d_concept_rectangular_trapezoid;;
 	-> rrel_key_sc_element: concept_rectangular_trapezoid; concept_trapezoid; nrel_lateral_side; nrel_perpendicularity; nrel_base;; 
-	<- sc_statement;;   
+	<- sc_definition;;   
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -1840,7 +1579,7 @@ nrel_bound <- rrel_key_sc_element:
 	=> nrel_main_idtf: [Опр.(граница*))] (* <- lang_ru;; *);;
 	-> rrel_main_key_sc_element: d_nrel_bound;;
 	-> rrel_key_sc_element: nrel_bound; concept_linear_figure;  concept_geometric_point; concept_geometric_figure; nrel_boundary_point;;
-	<- sc_explanation;;   
+	<- sc_definition;;   
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -2001,7 +1740,7 @@ nrel_center_line <- rrel_key_sc_element:
 	=> nrel_main_idtf: [Опр.(средняя линия*)] (* <- lang_ru;; *);; 
 	-> rrel_main_key_sc_element: d_nrel_center_line;;
 	-> rrel_key_sc_element: concept_segment; nrel_center_line; nrel_lateral_side; concept_triangle; concept_quadrilateral;;
-	<- sc_statement;;   
+	<- sc_definition;;   
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -2019,7 +1758,7 @@ nrel_base <- rrel_key_sc_element:
 	=> nrel_main_idtf: [Опр.(основание*)] (* <- lang_ru;; *);; 
 	-> rrel_main_key_sc_element: d_nrel_base;;
 	-> rrel_key_sc_element: nrel_base; nrel_side; nrel_perpendicularity; nrel_height; concept_isosceles_triangle; concept_parallelogram; concept_isosceles_trapezoid;;
-	<- sc_statement;;   
+	<- sc_definition;;   
 	<= nrel_sc_text_translation: 
 		...
 		(*
