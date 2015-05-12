@@ -413,8 +413,8 @@ concept_trapezoid <- rrel_key_sc_element:
 	(*
 	=> nrel_main_idtf: [Утв. (трапеция; площадь*; основание*; высота*; средняя линия*)] (* <- lang_ru;; *);;
 	<- sc_statement_of_unique_setting;;
-	-> rrel_main_key_sc_element: stat_area_trapezoid_base_height_central_line;;
-	-> rrel_key_sc_element: nrel_area; concept_trapezoid; nrel_base; nrel_height; nrel_central_line;;
+	-> rrel_main_key_sc_element: stat_area_trapezoid_base_height_center_line;;
+	-> rrel_key_sc_element: nrel_area; concept_trapezoid; nrel_base; nrel_height; nrel_center_line;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -1383,6 +1383,25 @@ concept_square <- rrel_key_sc_element:
 		*);;
 *);
 
+
+<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf:
+		[Утв.(квадрат; сторона*; длина*; площадь*)]
+		(* <- lang_ru;; *);;
+	<- sc_statement;;
+	-> rrel_key_sc_element: concept_square; nrel_area; nrel_side;;
+	-> rrel_main_key_sc_element: stat_square_area_side_1;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Площадь квадрата, у которого длина стороны равна единице, равна единице.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+
 <- rrel_key_sc_element: 
 	... 
 	(*
@@ -1749,8 +1768,40 @@ nrel_center_line <- rrel_key_sc_element:
 			соединяющий середины боковых сторон треугольника, четырехугольника и трапеции.]
 			(* <- lang_ru;; *);;
 		*);;
-	*);;
+	*);
 
+
+<- rrel_key_sc_element:
+     	...
+	(*
+	=> nrel_main_idtf: [Утв.(средняя линия*; четырехугольник; сторона*; конгруэнтность*; параллельность*)] (* <- lang_ru;; *);;
+	<- sc_theorem;;   
+	-> rrel_main_key_sc_element: stat_center_line_length_quadrilateral;;
+	-> rrel_key_sc_element: concept_quadrilateral; nrel_center_line; nrel_side; nrel_parallelism; nrel_congruence;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Длина средней линии четырехугольника меньше полусуммы двух других сторон или равна ей, если эти стороны параллельны, и только в этом случае.]
+			(* <- lang_ru;;	*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+       	...
+	(*
+	=> nrel_main_idtf: [Утв.(средняя линия*; трапеция; вершина*; ромб)] (* <- lang_ru;; *);;
+	<- sc_statement;;   
+	-> rrel_main_key_sc_element: stat_isosceles_trapezoid_middle_vertex_rhomb;;
+	-> rrel_key_sc_element: concept_isosceles_trapezoid; concept_rhomb; nrel_vertex; nrel_middle; nrel_side;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Середины сторон равнобедренной трапеции являются вершинами ромба.]
+			(* <- lang_ru;;	*);;
+		*);;
+	*);;
 
 nrel_base <- rrel_key_sc_element:
 	...
