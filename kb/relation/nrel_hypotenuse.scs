@@ -4,16 +4,24 @@ nrel_hypotenuse => nrel_main_idtf:
 	[гипотенуза*]
 	(* <- lang_ru;; *);
 	[hypotenuse*]
-	(* <- lang_en;; *);;
+	(* <- lang_en;; *);
+	[гипотенуза*]
+	(* <- lang_kz;; *);;
 
 nrel_hypotenuse => nrel_idtf: [быть гипотенузой*]
-	(* <- lang_ru;; *);;
+	(* <- lang_ru;; *);
+	[to be hypotenuse*]
+	(* <- lang_en;; *);;
 
 nrel_hypotenuse => nrel_idtf: [гипотенуза прямоугольного треугольника*]
-	(* <- lang_ru;; *);;
+	(* <- lang_ru;; *);
+	[hypotenuse of rectangular triangle*]
+	(* <- lang_en;; *);;
 
 nrel_hypotenuse => nrel_idtf: [быть гипотенузой прямоугольного треугольника*]
-	(* <- lang_ru;; *);;
+	(* <- lang_ru;; *);
+	[to be hypotenuse of rectangular triangle*]
+	(* <- lang_en;; *);;
 
 nrel_hypotenuse <- sc_relation;;
 

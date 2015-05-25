@@ -4,9 +4,12 @@ nrel_perpendicularity => nrel_main_idtf:
 	[перпендикулярность*]
 	(*<- lang_ru;;	*);
 	[perpendicularity*]
-	(* <- lang_en;; *);;
+	(* <- lang_en;; *);
+	[перпендикулярлық*]
+	(* <- lang_kz;; *);;
 
-nrel_perpendicularity => nrel_idtf: [перпендикулярность геометрических фигур*] (* <- lang_ru;; *);;
+nrel_perpendicularity => nrel_idtf: [перпендикулярность геометрических фигур*] (* <- lang_ru;; *);
+									[perpendicularity of geometric figures*] (* <- lang_en;; *);;
 
 nrel_perpendicularity <- sc_relation;;
 

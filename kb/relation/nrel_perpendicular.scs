@@ -4,11 +4,15 @@ nrel_perpendicular => nrel_main_idtf:
 	[перпендикуляр*]
 	(* <- lang_ru;; *);
 	[perpendicular*]
-	(* <- lang_en;; *);;
+	(* <- lang_en;; *);
+	[перпендикуляр*]
+	(* <- lang_kz;; *);;
 
-nrel_perpendicular => nrel_idtf: [быть перпендикуляром*] (* <- lang_ru;; *);;
+nrel_perpendicular => nrel_idtf: [быть перпендикуляром*] (* <- lang_ru;; *);
+								 [to be a perpendicular] (* <- lang_en;; *);;
 
-nrel_perpendicular => nrel_idtf: [быть перпендикуляром, опущенным из точки к прямой или плоскости*] (* <- lang_ru;; *);;
+nrel_perpendicular => nrel_idtf: [быть перпендикуляром, опущенным из точки к прямой или плоскости*] (* <- lang_ru;; *);
+								 [to be a perpendicular from point to straight line or plane] (* <- lang_en;; *);;
 
 nrel_perpendicular <- sc_relation;;
 
