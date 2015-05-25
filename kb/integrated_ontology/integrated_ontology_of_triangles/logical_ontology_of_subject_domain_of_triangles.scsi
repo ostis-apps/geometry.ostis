@@ -1,7 +1,8 @@
 concept_triangle <- rrel_key_sc_element: 
         ...
 	(*
-	=> nrel_main_idtf: [Опр.(треугольник)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Опр.(треугольник)] (* <- lang_ru;; *);
+					   [Definition(triangle)] (* <- lang_en;; *);;
 	<- sc_definition;; 
 	-> rrel_main_key_sc_element: d_concept_triangle;;
 	<= nrel_sc_text_translation: 
@@ -9,7 +10,9 @@ concept_triangle <- rrel_key_sc_element:
 		(*
 		-> rrel_example: 
 			[Треугольник - фигура, состоящая из трёх точек, не лежащих на одной прямой, трех отрезков, попарно соединяющих эти точки, а также части плоскости, ограниченной этими отрезками.]
-			(* <- lang_ru;; *);;
+			(* <- lang_ru;; *);
+			[Triangle is a figure which consists of three points not lying on a straight line, three segments connecting these points in pairs and a part of the plane bounded by these segments.]
+			(* <- lang_en;; *);;
 		*);;
 	*);
 
@@ -84,7 +87,8 @@ concept_triangle <- rrel_key_sc_element:
 <- rrel_key_sc_element: 
 	...
 	(*
-	=> nrel_main_idtf: [Утв.(треугольник; сторона*; прилежащий*; конгруэнтность*)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Утв.(треугольник; сторона*; прилежащий*; конгруэнтность*)] (* <- lang_ru;; *);
+					   [Statement(triangle; side*; adjacent*; congruence*)] (* <- lang_en;; *);;
 	-> rrel_main_key_sc_element: stat_sign_of_equality_angle_side;;
 	-> rrel_key_sc_element: concept_triangle; nrel_side; concept_angle; nrel_congruence; nrel_adjacent;;
 	<- sc_statement_of_necessity_and_sufficiency;;
@@ -94,14 +98,18 @@ concept_triangle <- rrel_key_sc_element:
 		-> rrel_example: 
 			[(Признак равенства треугольников по стороне и прилежащим к ней углам). Если сторона и прилежащие к ней углы одного треугольника соответственно равны стороне 
 			и прилежащим к ней углам другого треугольника, то такие треугольники равны.]
-			(* <- lang_ru;; *);;
+			(* <- lang_ru;; *);
+			[(Triangle Side-Angle-Angle Equality). If one side and two adjacent angles of one triangle are equal 
+			to a side and two adjacent angles of another triangle, then these triangles are equal. ]
+			(* <- lang_en;; *);;
 		*);;
 	*);
 	
 <- rrel_key_sc_element: 
 	...
 	(*
-	=> nrel_main_idtf: [Утв.(треугольник; сторона*; внутренний угол*; конгруэнтность*)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Утв.(треугольник; сторона*; внутренний угол*; конгруэнтность*)] (* <- lang_ru;; *);
+					   [Statement(triangle; side*; internal angle*; congruence*)] (* <- lang_en;; *);;
 	-> rrel_main_key_sc_element: stat_sign_of_equality_two_side_angle_between;;
 	-> rrel_key_sc_element: concept_triangle; nrel_side; concept_angle; nrel_congruence; rrel_between;;;
 	<- sc_statement_of_necessity_and_sufficiency;;
@@ -111,14 +119,18 @@ concept_triangle <- rrel_key_sc_element:
 		-> rrel_example: 
 			[(Признак равенства треугольников по двум сторонам и углу между ними). Если две стороны и угол между ними одного треугольника соответственно равны 
 			двум сторонам и углу между ними другого треугольника, то такие треугольники равны.]
-			(* <- lang_ru;; *);;
+			(* <- lang_ru;; *);
+			[(Triangle Side-Angle-Side Equality). If, in one triangle, two sides and the angle 
+			between them are equal to two sides and the angle between them of another triangle, then these triangles are equal. ]
+			(* <- lang_en;; *);;
 		*);;
 	*);
 
 <- rrel_key_sc_element: 
 	...
 	(*
-	=> nrel_main_idtf: [Утв.(треугольник; сторона*; конгруэнтность*)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Утв.(треугольник; сторона*; конгруэнтность*)] (* <- lang_ru;; *);
+				       [Statement(triangle; side*; congruence*)] (* <- lang_en;; *);;
 	-> rrel_main_key_sc_element: stat_sign_of_equality_three_side;;
 	-> rrel_key_sc_element: concept_triangle; nrel_side; nrel_congruence;;
 	<- sc_statement_of_necessity_and_sufficiency;;
@@ -128,7 +140,10 @@ concept_triangle <- rrel_key_sc_element:
 		-> rrel_example: 
 			[(Признак равенства треугольников по трем сторонам) Если три стороны одного треугольника соответственно равны трем 
 			сторонам другого треугольника, то такие треугольники равны.]
-			(* <- lang_ru;; *);;
+			(* <- lang_ru;; *);
+			[(Triangle Side-Side-Side Equality) If three sides of one triangle are equal in length to 
+			three sides of another triangle, then these triangles are equal.]
+			(* <- lang_en;; *);;
 		*);;
 	*);
 
@@ -188,7 +203,10 @@ concept_triangle <- rrel_key_sc_element:
 <- rrel_key_sc_element: 
 	...
 	(*
-	=> nrel_main_idtf: [Утв.(треугольник; сторона*)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Теорема косинусов] (* <- lang_ru;; *);
+				       [The Law of cosins] (* <- lang_en;; *);;
+	=> nrel_idtf: [Утв.(треугольник; сторона*)] (* <- lang_ru;; *);
+				  [Statement(triangle; side*)] (* <- lang_en;; *);;
 	-> rrel_main_key_sc_element: stat_theorem_cos;;
 	-> rrel_key_sc_element: nrel_side; concept_triangle; concept_angle;;
 	<- sc_theorem;;
@@ -198,14 +216,40 @@ concept_triangle <- rrel_key_sc_element:
 		-> rrel_example: 
 			[(Теорема косинусов) Квадрат любой стороны треугольника равен сумме квадратов двух других сторон без удвоенного 
 			произведения этих сторон на косинус угла между ними ]
-			(* <- lang_ru;; *);;
+			(* <- lang_ru;; *);
+			[(The Law of Cosines) The square of any side of triangle is equal to the sum of the squares of the other two, without the double
+product of these parts by the cosine of the angle between them.]
+			(* <- lang_en;; *);;
+		*);
+
+<- rrel_key_sc_element: 
+        ...
+	(*
+	=> nrel_main_idtf: [Теорема синусов] (* <- lang_ru;; *);
+					   [The Law of sines] (* <- lang_en;; *);;
+	=> nrel_idtf: [Утв.(треугольник; сторона*; синус*)] (* <- lang_ru;; *);
+				  [Statement(triangle; side*; sin*)] (* <- lang_en;; *);;
+	<- sc_statement_of_unique_setting;;
+	-> rrel_main_key_sc_element: stat_isosceles_triangle_radius_be_inscribed_lateral_side_base_internal_angle;;
+	-> rrel_key_sc_element: concept_isosceles_triangle; nrel_radius; nrel_lateral_side; nrel_internal_angle; nrel_be_described;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Теорема синусов - стороны треугольника пропорциональны синусам противолежащих углов.] 
+			(* <- lang_ru;; *);
+			[The sides of a triangle are to one another in the same ratio as the sines of their opposite angles.] 
+			(* <- lang_en;; *);; 
 		*);;
 	*);;
+	
+	
 	
 concept_triangle <- rrel_key_sc_element: 
 	...
 	(*
-	=> nrel_main_idtf: [Утв.(треугольник; подобие*; внутренний угол*)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Утв.(треугольник; подобие*; внутренний угол*)] (* <- lang_ru;; *);
+					   [Statement(triangle; simularity*; internal angle*)] (* <- lang_en;; *);;;
 	-> rrel_main_key_sc_element: stat_sign_two_angle;;
 	-> rrel_key_sc_element: concept_triangle; nrel_angle; nrel_similarity;;
 	<- sc_statement_of_necessity_and_sufficiency;;
@@ -214,14 +258,17 @@ concept_triangle <- rrel_key_sc_element:
 		(*
 		-> rrel_example: 
 			[(Признак подобия треугольников по двум углам). Если два угла одного треугольника равны двум углам другого треугольника, то такие треугольники подобны.]
-			(* <- lang_ru;; *);;
+			(* <- lang_ru;; *);
+			[(Triangle Angle-Angle Simularity). If two angles of one triangle are equal to two angles of another triangle, then the triangles are similar.]
+			(* <- lang_en;; *);;
 		*);;
 	*);
 	
 <- rrel_key_sc_element: 
 	...
 	(*
-	=> nrel_main_idtf: [Утв.(треугольник; подобие*; сторона*; внутренний угол*)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Утв.(треугольник; подобие*; сторона*; внутренний угол*)] (* <- lang_ru;; *);
+					   [Statement(triangle; simularity*; side*; internal angle*)] (* <- lang_en;; *);;
 	-> rrel_main_key_sc_element: stat_sign_angle_two_side;;
 	-> rrel_key_sc_element: concept_triangle; nrel_side; concept_angle; nrel_congruence; nrel_similarity;;
 	<- sc_statement_of_necessity_and_sufficiency;;
@@ -230,14 +277,18 @@ concept_triangle <- rrel_key_sc_element:
 		(*
 		-> rrel_example: 
 			[(Признак подобия по двум сторонам и углу между ними). Если две стороны одного треугольника пропорциональны двум сторонам другого треугольника и углы, образованные этими сторонами, равны, то такие треугольники подобны.]
-			(* <- lang_ru;; *);;
+			(* <- lang_ru;; *);
+			[(Triangle Side-Angle-Side Simularity). If two sides of one triangle are proportional to two sides of another triangle, 
+			and angle between sides in one triangle are equal to angle between sides in another triangle then the triangles are similar.]
+			(* <- lang_en;; *);;
 		*);;
 	*);
 	
 <- rrel_key_sc_element: 
 	...
 	(*
-	=> nrel_main_idtf: [Утв.(треугольник; подобие*; сторона*)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Утв.(треугольник; подобие*; сторона*)] (* <- lang_ru;; *);
+					   [Statement(triangle; simularity*; side*)] (* <- lang_en;; *);;
 	-> rrel_main_key_sc_element: stat_sign_three_side;;
 	-> rrel_key_sc_element: concept_triangle; nrel_side; nrel_similarity;;
 	<- sc_statement_of_necessity_and_sufficiency;;
@@ -246,6 +297,8 @@ concept_triangle <- rrel_key_sc_element:
 		(*
 		-> rrel_example: 
 			[(Признак подобия по трем сторонам). Если три стороны одного треугольника пропорциональны трем сторонам другого треугольника, то такие треугольники подобны.]
+			(* <- lang_ru;; *);
+			[(Triangle Side-Side-Side Simularity). If three sides of one triangle are proportional in length to three sides of another triangle, then these triangles are similar. ]
 			(* <- lang_ru;; *);;
 		*);;
 	*);	
@@ -302,6 +355,7 @@ concept_triangle <- rrel_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf: [Утв.(треугольник; площадь*; высота*; основание*)] (* <- lang_ru;; *);;
+					   [Statement(triangle; area*; height*; base*)] (* <- lang_en;; *);;
 	-> rrel_main_key_sc_element: stat_area_hight_triangle_side;;
 	-> rrel_key_sc_element: nrel_hight; concept_triangle; nrel_side; nrel_area;;
 	<- sc_theorem;;
@@ -310,14 +364,17 @@ concept_triangle <- rrel_key_sc_element:
 		(*
 		-> rrel_example: 
 			[Площадь треугольника равна половине произведения его стороны на опущенную на нее высоту]
-			(* <- lang_ru;; *);;
+			(* <- lang_ru;; *);
+			[Area of a triangle is equal to the half multiplication of side and its height.]
+			(* <- lang_en;; *);;
 		*);;
 	*);;
 	
 concept_acute_angled_triangle <- rrel_key_sc_element: 
         ...
 	(*
-	=> nrel_main_idtf: [Опр.(остроугольный треугольник)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Опр.(остроугольный треугольник)] (* <- lang_ru;; *);
+					   [Definition(acute triangle)] (* <- lang_en;; *);;
 	<- sc_definition;; 
 	-> rrel_main_key_sc_element: d_concept_acute_angled_triangle;;
 	<= nrel_sc_text_translation: 
@@ -325,14 +382,17 @@ concept_acute_angled_triangle <- rrel_key_sc_element:
 		(*
 		-> rrel_example: 
 			[Остроугольный треугольник – это треугольник, все внутренние углы которого являются острыми углами.]
-			(* <- lang_ru;; *);;
+			(* <- lang_ru;; *);
+			[Acute triangle is a triangle that has all angles less than 90° (90° is a Right Angle).]
+			(* <- lang_en;; *);;
 		*);;
 	*);;
 	
 concept_rectangular_triangle <- rrel_key_sc_element: 
         ...
 	(*
-	=> nrel_main_idtf: [Опр.(прямоугольный треугольник)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Опр.(прямоугольный треугольник)] (* <- lang_ru;; *);
+					   [Definition(right triangle)] (* <- lang_en;; *);;
 	-> rrel_main_key_sc_element: concept_rectangular_triangle;;
 	<- sc_definition;; 
 	<= nrel_sc_text_translation: 
@@ -340,7 +400,9 @@ concept_rectangular_triangle <- rrel_key_sc_element:
 		(*
 		-> rrel_example: 
 			[Прямоугольный треугольник – это треугольник, у которого хотя бы один внутренний угол является прямым углом.]
-			(* <- lang_ru;; *);;
+			(* <- lang_ru;; *);
+			[A right triangle or right-angled triangle is a triangle in which one angle is a right angle (that is, a 90-degree angle).]
+			(* <- lang_en;; *);;
 		*);;
 	*);
 	
@@ -612,8 +674,10 @@ concept_rectangular_triangle <- rrel_key_sc_element:
 <- rrel_key_sc_element:
 	...
 	(*
-	=> nrel_main_idtf: [Теорема Пифагора] (* <- lang_ru;; *);;
-	=> nrel_idtf: [Утв.(прямоугольный треугольник; гипотенуза*; катет*)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Теорема Пифагора] (* <- lang_ru;; *);
+					   [Pythagoras's theorem] (* <- lang_en;; *);;
+	=> nrel_idtf: [Утв.(прямоугольный треугольник; гипотенуза*; катет*)] (* <- lang_ru;; *);
+				  [Statement(right angle; hypotenuse*; cathetus*)] (* <- lang_en;; *);;
 	-> rrel_main_key_sc_element: stat_theorem_pythahoras;;
 	-> rrel_key_sc_element: concept_rectangular_triangle; nrel_hypotenuse; nrel_cathetus;;
 	<- sc_theorem;;
@@ -622,7 +686,9 @@ concept_rectangular_triangle <- rrel_key_sc_element:
 		(*
 		-> rrel_example: 
 			[(Теорема Пифагора) В прямоугольном треугольнике квадрат гипотенузы равен сумме квадратов катетов.]
-			(* <- lang_ru;; *);;
+			(* <- lang_ru;; *);
+			[(Pythagoras's theorem) In right triangle the square of the hypotenuse (the side opposite the right angle) is equal to the sum of the squares of the other two sides.]
+			(* <- lang_en;; *);;
 		*);;
 	*);
 
@@ -773,7 +839,8 @@ concept_rectangular_triangle <- rrel_key_sc_element:
 concept_equilateral_triangle <- rrel_key_sc_element: 
 	...
     (*
-	=> nrel_main_idtf: [Опр.(равносторонний треугольник)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Опр.(равносторонний треугольник)] (* <- lang_ru;; *);
+					   [Definition(equilateral triangle)] (* <- lang_en;; *);;
 	-> rrel_main_key_sc_element: d_concept_equilateral_triangle;;
 	<- sc_definition;; 
 	<= nrel_sc_text_translation: 
@@ -781,7 +848,9 @@ concept_equilateral_triangle <- rrel_key_sc_element:
 		(*
 		-> rrel_example: 
 			[Равносторонний треугольник - треугольник, у которого все стороны равны друг другу.]
-			(* <- lang_ru;; *);;
+			(* <- lang_ru;; *);
+			[Equilateral triangle is a triangle in which all three sides are equal.]
+			(* <- lang_en;; *);;
 		*);;
 	*);
 	
@@ -932,7 +1001,8 @@ concept_equilateral_triangle <- rrel_key_sc_element:
 concept_isosceles_triangle  <- rrel_key_sc_element: 
         ...
 	(*
-	=> nrel_main_idtf: [Опр.(равнобедренный треугольник)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Опр.(равнобедренный треугольник)] (* <- lang_ru;; *);
+					   [Definition(isosceles triangle)] (* <- lang_en;; *);;
 	-> rrel_main_key_sc_element: d_concept_isosceles_triangle;;
 	<- sc_definition;; 
 	<= nrel_sc_text_translation: 
@@ -940,7 +1010,9 @@ concept_isosceles_triangle  <- rrel_key_sc_element:
 		(*
 		-> rrel_example: 
 			[Равнобедренный треугольник - треугольник, в котором две стороны равны между собой.]
-			(* <- lang_ru;; *);;
+			(* <- lang_ru;; *);
+			[Isosceles triangle is a triangle that has two sides of equal length.]
+			(* <- lang_en;; *);;
 		*);;
 	*);
 	
@@ -963,7 +1035,8 @@ concept_isosceles_triangle  <- rrel_key_sc_element:
 <- rrel_key_sc_element: 
         ...
 	(*
-	=> nrel_main_idtf: [Утв.(равнобедренный треугольник; биссектриса*; основание*; высота*; медиана*)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Утв.(равнобедренный треугольник; биссектриса*; основание*; высота*; медиана*)] (* <- lang_ru;; *);
+					   [Statement(isosceles triangle; bisectrix*; base*; height*; median*)] (* <- lang_en;; *);;
 	-> rrel_main_key_sc_element: stat_isosceles_triangle_bisectrix_base_median_hight;;
 	-> rrel_key_sc_element: concept_isosceles_triangle; nrel_base; nrel_bisectrix; nrel_hight; nrel_congruence; nrel_median;;
 	<- sc_theorem;;
@@ -972,7 +1045,9 @@ concept_isosceles_triangle  <- rrel_key_sc_element:
 		(*
 		-> rrel_example: 
 			[В равнобедренном треугольнике биссектриса, проведенная к основанию, является одновременно медианой и высотой.]
-			(* <- lang_ru;; *);;
+			(* <- lang_ru;; *);
+			[In an isosceles triangle, the median, bisectrix, and height of the vertext between the equal sides all coincide.]
+			(* <- lang_en;; *);;
 		*);;
 	*);
 
@@ -1054,28 +1129,13 @@ concept_isosceles_triangle  <- rrel_key_sc_element:
 			[Радиус окружности, вписанной в равнобедренный треугольник, выраается через его основание и угол а при основании по формуле r=c/2*tg(a/2)] 
 			(* <- lang_ru;; *);; 
 		*);;
-	*);
-
-<- rrel_key_sc_element: 
-        ...
-	(*
-	=> nrel_main_idtf: [Утв.(равнобедренный треугольник; радиус*; описанность*; боковая сторона*; основание*; внутренний угол*; синус*)] (* <- lang_ru;; *);;
-	<- sc_statement_of_unique_setting;;
-	-> rrel_main_key_sc_element: stat_isosceles_triangle_radius_be_inscribed_lateral_side_base_internal_angle;;
-	-> rrel_key_sc_element: concept_isosceles_triangle; nrel_radius; nrel_lateral_side; nrel_internal_angle; nrel_be_described;;
-	<= nrel_sc_text_translation: 
-		...
-		(*
-		-> rrel_example: 
-			[Радиус окружности, описанной около равнобедренный треугольник, выраается через его боковую сторону и угол а при основании по формуле R=2*a/sin(a)] 
-			(* <- lang_ru;; *);; 
-		*);;
 	*);;
 	
 concept_obtuse_triangle <- rrel_key_sc_element: 
         ...
 	(*
-	=> nrel_main_idtf: [Опр.(тупоугольный треугольник)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Опр.(тупоугольный треугольник)] (* <- lang_ru;; *);
+					   [Definition(obtuse triangle)] (* <- lang_en;; *);;
 	-> rrel_main_key_sc_element: d_concept_obtuse_triangle;;
 	<- sc_definition;; 
 	<= nrel_sc_text_translation: 
@@ -1083,11 +1143,12 @@ concept_obtuse_triangle <- rrel_key_sc_element:
 		(*
 		-> rrel_example: 
 			[Тупоугольный треугольник – это треугольник, у которого хотя бы один внутренний угол является тупым углом.]
-			(* <- lang_ru;; *);;
+			(* <- lang_ru;; *);
+			[Obtuse triangle is a triangle that has an internal angle greater than 90°.]
+			(* <- lang_en;; *);;
 		*);;
 	*);;
 	
-
 	
 nrel_area <- rrel_key_sc_element:
 	...
@@ -1365,7 +1426,8 @@ nrel_median <- rrel_key_sc_element:
 <- rrel_key_sc_element:	
 	...
 	(*
-	=> nrel_main_idtf: [Утв.(треугольник; медиана*; вершина*; длина*)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Утв.(треугольник; медиана*; вершина*; длина*)] (* <- lang_ru;; *);
+					   [Statement(triangle; median*; vertex*; length*)] (* <- lang_en;; *);;
 	-> rrel_main_key_sc_element: stat_triangle_median_intersection_point_vertex;;
 	-> rrel_key_sc_element: concept_triangle; nrel_median; nrel_vertex; nrel_length;;
 	<- sc_theorem;;
@@ -1374,7 +1436,9 @@ nrel_median <- rrel_key_sc_element:
 		(*
 		-> rrel_example: 
 			[Длины медиан треугольника делятся точкой пересечения в отношении 2:1, считая от вершины.]
-			(* <- lang_ru;; *);;
+			(* <- lang_ru;; *);
+			[The intersection point of medians divides each of them in the ratio 2:1 from the vertex.]
+			(* <- lang_en;; *);;
 		*);;
 	*);
 	
