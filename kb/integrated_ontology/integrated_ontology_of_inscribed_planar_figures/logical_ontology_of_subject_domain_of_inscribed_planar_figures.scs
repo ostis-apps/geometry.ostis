@@ -1,0 +1,65 @@
+logical_ontology_of_subject_domain_of_inscribed_planar_figures
+<- logical_ontology;
+=> nrel_main_idtf:
+	[Логическая онтология Предметной области вписанных планарных фигур]
+	(* <- lang_ru;; *);
+	[Logical ontology of subject domain of inscribed planar figures]
+	(* <- lang_en;; *);;
+	
+logical_hierarchy_of_concepts_of_subject_domain_of_inscribed_planar_figures
+=> nrel_main_idtf:
+	[Логическая иерархия понятий Предметной области вписанных планарных фигур]
+	(* <- lang_ru;; *);
+	[Logical hierarchy of concepts of subject domain of inscribed planar figures]
+	(* <- lang_en;; *);;
+	
+logical_hierarchy_of_statements_of_subject_domain_of_inscribed_planar_figures
+=> nrel_main_idtf:
+	[Логическая иерархия высказываний Предметной области вписанных планарных фигур]
+	(* <- lang_ru;; *);
+	[Logical hierarchy of statements of subject domain of inscribed_planar_figures]
+	(* <- lang_en;; *);;
+	
+logical_ontology_of_subject_domain_of_inscribed_planar_figures => nrel_metaknowledge:
+	logical_hierarchy_of_concepts_of_subject_domain_of_inscribed_planar_figures;;
+	
+logical_ontology_of_subject_domain_of_inscribed_planar_figures => nrel_metaknowledge:
+	logical_hierarchy_of_statements_of_subject_domain_of_inscribed_planar_figures;;
+
+logical_hierarchy_of_concepts_of_subject_domain_of_inscribed_planar_figures = [*^"file://logical_hierarchy_of_concepts_of_subject_domain_of_inscribed_planar_figures.scsi"*];;
+
+logical_hierarchy_of_statements_of_subject_domain_of_inscribed_planar_figures = [*^"file://logical_hierarchy_of_statements_of_subject_domain_of_inscribed_planar_figures.scsi"*];;
+
+logical_ontology_of_subject_domain_of_inscribed_planar_figures = [*^"file://logical_ontology_of_subject_domain_of_inscribed_planar_figures.scsi"*];;
+
+rrel_key_sc_element -> (logical_hierarchy_of_statements_of_subject_domain_of_inscribed_planar_figures -> stat_triangle_circle_description_centre_bisectrix_intersection);;
+
+rrel_key_sc_element -> (logical_hierarchy_of_concepts_of_subject_domain_of_inscribed_planar_figures -> concept_geometric_figure)
+(*
+	=> nrel_key_sc_element_base_order: (logical_hierarchy_of_concepts_of_subject_domain_of_inscribed_planar_figures -> concept_polygon)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_base_order: (logical_hierarchy_of_concepts_of_subject_domain_of_inscribed_planar_figures -> concept_circle)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_base_order: (logical_hierarchy_of_concepts_of_subject_domain_of_inscribed_planar_figures -> concept_angle)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_base_order: (logical_hierarchy_of_concepts_of_subject_domain_of_inscribed_planar_figures -> nrel_be_inscribed)
+	(* <- rrel_key_sc_element;; *);;
+*);;*);;*);;*);;
+	
+rrel_key_sc_element -> (logical_ontology_of_subject_domain_of_inscribed_planar_figures -> concept_geometric_figure)
+(*
+	=> nrel_key_sc_element_base_order: (logical_ontology_of_subject_domain_of_inscribed_planar_figures -> concept_polygon)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_base_order: (logical_ontology_of_subject_domain_of_inscribed_planar_figures -> concept_circle)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_base_order: (logical_ontology_of_subject_domain_of_inscribed_planar_figures -> concept_angle)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_base_order: (logical_ontology_of_subject_domain_of_inscribed_planar_figures -> nrel_be_inscribed)
+	(* <- rrel_key_sc_element;; *);;
+*);;*);;*);;*);;

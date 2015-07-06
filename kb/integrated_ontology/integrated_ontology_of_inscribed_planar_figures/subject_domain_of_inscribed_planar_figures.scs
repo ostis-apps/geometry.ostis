@@ -1,0 +1,49 @@
+tasks_and_solutions_ontology_subject_domain_of_inscribed_planar_figures <- sc_node_struct;
+	=> nrel_main_idtf:
+	[Онтология задач и решений задач Предметной области вписанных планарных фигур]
+	(* <- lang_ru;; *);
+	[Ontology of tasks and solutions of subject domain of inscribed planar figures]
+	(* <- lang_en;; *);;
+	
+tasks_and_solutions_ontology_subject_domain_of_inscribed_planar_figures = [*^"file://tasks_and_solutions_ontology_subject_domain_of_inscribed_planar_figures.scsi"*];;
+
+classes_of_tasks_and_ways_of_solutions_subject_domain_of_inscribed_planar_figures <- sc_node_struct;
+	=> nrel_main_idtf:
+	[Онтология классов задач и способов решения задач Предметной области вписанных планарных фигур]
+	(* <- lang_ru;; *);
+	[Ontology of classes of tasks and ways of their solution of subject domain of inscribed planar figures]
+	(* <- lang_en;; *);;
+	
+classes_of_tasks_and_ways_of_solutions_subject_domain_of_inscribed_planar_figures = [*^"file://classes_of_tasks_and_ways_of_solutions_subject_domain_of_inscribed_planar_figures.scsi"*];;
+
+subject_domain_of_inscribed_planar_figures <- sc_node_struct;;
+subject_domain_of_inscribed_planar_figures
+=> nrel_main_idtf:
+	[Предметная область вписанных планарных фигур]
+	(* <- lang_ru;; *);
+	[Subject domain of inscribed planar figures]
+	(* <- lang_en;; *);
+	
+<- subject_domain;
+
+=> nrel_ontology:
+	classes_of_tasks_and_ways_of_solutions_subject_domain_of_inscribed_planar_figures;
+	logical_hierarchy_of_concepts_of_subject_domain_of_inscribed_planar_figures;
+	logical_hierarchy_of_statements_of_subject_domain_of_inscribed_planar_figures;
+	logical_ontology_of_subject_domain_of_inscribed_planar_figures;
+	set_theoretic_ontology_of_subject_domain_of_inscribed_planar_figures;
+	tasks_and_solutions_ontology_subject_domain_of_inscribed_planar_figures;
+	terminological_ontology_of_subject_domain_of_inscribed_planar_figures;
+
+<- rrel_key_sc_element: 
+        ...
+	(*
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Предметная область вписанных планарных фигур - предметная область, объектами исследования которой являются вписанные планарные фигуры различных типов.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;

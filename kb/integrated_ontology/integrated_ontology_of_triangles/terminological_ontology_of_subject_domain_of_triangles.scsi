@@ -1,0 +1,517 @@
+concept_triangle 
+=> nrel_main_idtf:
+	[треугольник]
+	(* <- lang_ru;;	*);
+	[triangle]
+	(* <- lang_en;;	*);
+	[үшбұрыш]
+	(* <- lang_kz;;	*);
+=> nrel_idtf: 
+	[Класс треугольников] 
+	(* <- lang_ru;; *);
+	[Category of triangles] 
+	(* <- lang_en;; *);
+	[плоский треугольник] 
+	(* <- lang_ru;; *);
+	[plane triangle] 
+	(* <- lang_en;; *);
+	[Понятие треугольника] 
+	(* <- lang_ru;; *);
+	[Concept of triangle 
+	(* <- lang_en;; *);
+	[Множество всевозможных треугольников] 
+	(* <- lang_ru;; *);
+	[Set of different triangles] 
+	(* <- lang_en;; *);
+	[Множество знаков всевозможных треугольников]
+	(* <- lang_ru;; *);
+	[Set of signs of different triangles]
+	(* <- lang_en;; *);
+	[многоугольник с тремя сторонами] 
+	(* <- lang_ru;; *);
+	[polygon with three sides] 
+	(* <- lang_en;; *);;
+	
+concept_acute_angled_triangle 
+=> nrel_main_idtf:
+	[остроугольный треугольник]
+	(* <- lang_ru;; *);
+	[acute angled triangle]
+	(* <- lang_en;;	*);
+	[сүйір бұрышты үшбұрыш]
+	(* <- lang_kz;;	*);
+=> nrel_idtf: 
+	[Класс остроугольных треугольников] 
+	(* <- lang_ru;; *);
+	[Category of acute triangles] 
+	(* <- lang_en;; *);
+	[Множество всевозможных остроугольных треугольников] 
+	(* <- lang_ru;; *);
+	[Set of different acute triangles] 
+	(* <- lang_en;; *);
+	[Множество знаков всевозможных остроугольных треугольников] 
+	(* <- lang_ru;; *);
+	[Set of signs of different acute triangles] 
+	(* <- lang_en;; *);;
+	
+concept_obtuse_triangle 
+=> nrel_main_idtf:
+	[тупоугольный треугольник]
+	(* <- lang_ru;;	*);
+	[доғал бұрышты үшбұрыш]
+	(* <- lang_kz;;	*);
+=> nrel_idtf: 
+	[Класс тупоугольных треугольников] 
+	(* <- lang_ru;; *);
+	[Category of obtuse triangles] 
+	(* <- lang_en;; *);
+	[Понятие тупоугольного треугольника] 
+	(* <- lang_ru;; *);
+	[Concept of obtuse triangle] 
+	(* <- lang_en;; *);
+	[Множество всевозможных тупоугольных треугольников] 
+	(* <- lang_ru;; *);
+	[Set of different obtuse triangles] 
+	(* <- lang_en;; *);
+	[Множество знаков всевозможных тупоугольных треугольников] 
+	(* <- lang_ru;; *);
+	[Set of signs of different obtuse triangles] 
+	(* <- lang_en;; *);;
+	
+concept_rectangular_triangle 
+=> nrel_main_idtf:
+	[прямоугольный треугольник]
+	(* <- lang_ru;; *);
+	[rectangular triangle]
+	(* <- lang_en;; *);
+	[тік бұрышты үшбұрыш]
+	(* <- lang_kz;; *);
+=> nrel_idtf: 
+	[Класс прямоугольных треугольников] 
+	(* <- lang_ru;; *);
+	[Category of right triangles] 
+	(* <- lang_en;; *);
+	[Понятие прямоугольного треугольника] 
+	(* <- lang_ru;; *);
+	[Concept of right triangle] 
+	(* <- lang_en;; *);
+	[Множество всевозможных прямоугольных треугольников] 
+	(* <- lang_ru;; *);
+	[Set of different right triangles] 
+	(* <- lang_en;; *);
+	[Множество знаков всевозможных прямоугольных треугольников] 
+	(* <- lang_ru;; *);
+	[Set of signs of different right triangles] 
+	(* <- lang_en;; *);;
+	
+concept_isosceles_triangle 
+=> nrel_main_idtf:
+	[равнобедренный треугольник]
+	(* <- lang_ru;;	*);
+	[isosceles triangle]
+	(* <- lang_en;;	*);
+	[теңбүйірлі үшбұрыш]
+	(* <- lang_kz;;	*);
+=> nrel_idtf: 
+	[Класс равнобедренных треугольников] 
+	(* <- lang_ru;; *);
+	[Category of isosceles triangles] 
+	(* <- lang_en;; *);
+	[Понятие равнобедренного треугольника] 
+	(* <- lang_ru;; *);
+	[Concept of isosceles triangle] 
+	(* <- lang_en;; *);
+	[Множество всевозможных равнобедренных треугольников] 
+	(* <- lang_ru;; *);
+	[Set of different isosceles triangles] 
+	(* <- lang_en;; *);
+	[Множество знаков всевозможных равнобедренных треугольников] 
+	(* <- lang_ru;; *);
+	[Set of signs of different isosceles triangles] 
+	(* <- lang_en;; *);;
+	
+concept_equilateral_triangle 
+=> nrel_main_idtf:
+	[равносторонний треугольник]
+	(* <- lang_ru;; *);
+	[equilateral triangle]
+	(* <- lang_en;;	*);
+	[тең қабырғалы үшбұрыш]
+	(* <- lang_kz;; *);
+=> nrel_idtf: 
+	[Правильный треугольник] 
+	(* <- lang_ru;; *);
+	[Regular triangle] 
+	(* <- lang_en;; *);
+	[Класс равносторонних треугольников] 
+	(* <- lang_ru;; *);
+	[Category of equilateral triangles] 
+	(* <- lang_en;; *);
+	[Класс правильных треугольников] 
+	(* <- lang_ru;; *);
+	[Category of regular triangles] 
+	(* <- lang_en;; *);
+	[Понятие равностороннего треугольника] 
+	(* <- lang_ru;; *);
+	[Concept of equilateral triangle] 
+	(* <- lang_en;; *);
+	[Понятие правильных треугольника] 
+	(* <- lang_ru;; *);
+	[Concept of equilateral triangles] 
+	(* <- lang_en;; *);
+	[Множество всевозможных равносторонних треугольников] 
+	(* <- lang_ru;; *);
+	[Set of different equilateral triangles] 
+	(* <- lang_en;; *);
+	[Множество всевозможных правильных треугольников]
+	(* <- lang_ru;; *);
+	[Set of different regular triangles] 
+	(* <- lang_en;; *);
+	[Множество знаков всевозможных равносторонних треугольников] 
+	(* <- lang_ru;; *);
+	[Set of signs of different equilateral triangles] 
+	(* <- lang_en;; *);
+	[Множество знаков всевозможных правильных треугольников] 
+	(* <- lang_ru;; *);
+	[Set of signs of different regular triangles] 
+	(* <- lang_en;; *);
+	[Треугольник с тремя равными сторонами] 
+	(* <- lang_ru;; *);
+	[Triangle with three equal sides] 
+	(* <- lang_en;; *);
+	[Равносторонний многоугольник с тремя сторонами] 
+	(* <- lang_ru;; *);
+	[Equilateral polygon with three sides] 
+	(* <- lang_en;; *);
+	[Правильный многоугольник с тремя сторонами] 
+	(* <- lang_ru;; *);
+	[Regular polygon with three sides] 
+	(* <- lang_en;; *);;
+	
+nrel_area 
+=> nrel_main_idtf:
+	[площадь*] 
+	(* <- lang_ru;; *);
+	[area*]
+	(* <- lang_en;;	*);
+	[аудан*]
+	(* <- lang_kz;; *);
+=> nrel_idtf:
+	[быть площадью*]
+	(* <- lang_ru;; *);
+	[to be an area*]
+	(* <- lang_en;; *);
+	[быть площадью фигуры*] 
+	(* <- lang_ru;; *);
+	[to be an area of the figure*]
+	(* <- lang_en;; *);
+	[быть площадью геометрической фигуры*] 
+	(* <- lang_ru;; *);
+	[to be an area of geometric figure]
+	(* <- lang_en;; *);;
+	
+nrel_base 
+=> nrel_main_idtf:
+	[основание*]
+	(* <- lang_ru;; *);
+	[base*]
+	(* <- lang_en;; *);
+	[табан*]
+	(* <- lang_kz;; *);
+=> nrel_idtf:
+	[быть основанием*]
+	(* <- lang_ru;; *);
+	[to be a base*]
+	(* <- lang_en;; *);;
+	
+nrel_vertex 
+=> nrel_main_idtf:
+	[вершина*]
+	(* <- lang_ru;; *);
+	[vertex*]
+	(* <- lang_en;; *);
+	[сүйір ұш*]
+	(* <- lang_kz;; *);
+=> nrel_idtf: 
+	[быть вершиной*]
+	(* <- lang_ru;; *);
+	[to be a vertex*]
+	(* <- lang_en;; *);
+	[вершина геометрической фигуры*]
+	(* <- lang_ru;; *);
+	[vertex of geometric figure*]
+	(* <- lang_en;; *);
+	[быть вершиной геометрической фигуры*]
+	(* <- lang_ru;; *);
+	[to be a vertex of geometric figure*]
+	(* <- lang_en;; *);;
+	
+nrel_side 
+=> nrel_main_idtf:
+	[сторона*]
+	(* <- lang_ru;; *);
+	[side*]
+	(* <- lang_en;; *);
+	[қабырға*]
+	(* <- lang_kz;; *);
+=> nrel_idtf: 
+	[быть стороной*] 
+	(* <- lang_ru;; *);
+	[to be a side*] 
+	(* <- lang_en;; *);
+	[быть стороной геометрической фигуры*] 
+	(* <- lang_ru;; *);
+	[to be a side of geometric figure*] 
+	(* <- lang_en;; *);
+	
+nrel_internal_angle 
+=> nrel_main_idtf:
+	[внутренний угол*]
+	(* <- lang_ru;; *);
+	[internal angle*]
+	(* <- lang_en;; *);
+	[ішкі бұрыш*]
+	(* <- lang_kz;; *);
+=> nrel_idtf: 
+	[быть внутренним углом*]
+	(* <- lang_ru;; *);
+	[to be an internal angle*]
+	(* <- lang_en;; *);;
+	
+nrel_be_inscribed 
+=> nrel_main_idtf:
+	[вписанность*]
+	(* <- lang_ru;; *);
+	[be inscribed*]
+	(* <- lang_en;; *);
+	[қоршалған*]
+	(* <- lang_kz;; *);
+=> nrel_idtf:
+	[быть вписанным*]
+	(* <- lang_ru;; *);
+	[to be inscribed*]
+	(* <- lang_en;; *);
+	[быть вписанной геометрической фигурой*]
+	(* <- lang_ru;; *);
+	[to be inscribed geometric figure*]
+	(* <- lang_en;; *);;
+	
+nrel_bisectrix_of_triangle 
+=> nrel_main_idtf:
+	[биссектриса треугольника*]
+	(* <- lang_ru;; *);
+	[bisectrix of triangle*]
+	(* <- lang_en;; *);
+	[үшбұрыш биссектрисасы*]
+	(* <- lang_kz;; *);
+=> nrel_idtf: 
+	[быть биссектрисой треугольника*]
+	(* <- lang_ru;; *);
+	[to be a bisectrix of triangle*]
+	(* <- lang_en;; *);;
+	
+nrel_center_line 
+=> nrel_main_idtf:
+	[средняя линия*]
+	(* <- lang_ru;; *);
+	[center line*]
+	(* <- lang_en;; *);
+	[орта сызық*]
+	(* <- lang_kz;; *);
+=> nrel_idtf: 
+	[быть средней линией*] 
+	(* <- lang_ru;; *);
+	[to be center line*] 
+	(* <- lang_en;; *);;
+	
+nrel_center_of_regular_polygon 
+=> nrel_main_idtf:
+	[центр правильного многоугольника*]
+	(* <- lang_ru;; *);
+	[center of regular polygon*]
+	(*<-lang_en;;*);
+	[тең қабырғалы көпбұрыштың ортасы*]
+	(* <- lang_kz;; *);
+=> nrel_idtf:
+	[быть центром правильного многоугольника*]
+	(* <- lang_ru;; *);
+	[to be center of regular polygon*]
+	(* <- lang_en;; *);;
+	
+nrel_congruence 
+=> nrel_main_idtf:
+	[конгруэнтность*] 
+	(* <- lang_ru;; *);
+	[congruence*] 
+	(* <- lang_en;; *);
+	[конгруэнттілік*]
+	(* <- lang_kz;; *);
+=> nrel_idtf: 
+	[конгруэнтность геометрических фигур*] 
+	(* <- lang_ru;; *);
+	[congruence of geometric figures*] 
+	(* <- lang_en;; *);
+	[равенство геометрических фигур*] 
+	(* <- lang_ru;; *);
+	[equality of geometric figures*] 
+	(* <- lang_en;; *);
+	[быть равными геометрическими фигурами*] 
+	(* <- lang_ru;; *);
+	[to be equal geometric figures*] 
+	(* <- lang_en;; *);
+	[эквивалентность геометрических фигур по форме и размеру*] 
+	(* <- lang_ru;; *);
+	[equivalence of geometric figures by shape and size*] 
+	(* <- lang_en;; *);
+	[быть парой конгруэнтных геометрических фигур*] 
+	(* <- lang_ru;; *);
+	[to be a pair of congruent geometric figure*] 
+	(* <- lang_en;; *);;
+	
+nrel_height 
+=> nrel_main_idtf:
+	[высота*]
+	(* <- lang_ru;; *);
+	[height*]
+	(* <- lang_en;; *);
+	[биіктік*]
+	(* <- lang_kz;; *);
+=> nrel_idtf: 
+	[быть высотой*]
+	(* <- lang_ru;; *);
+	[to be a height*]
+	(* <- lang_en;; *);;
+	
+nrel_median 
+=> nrel_main_idtf:
+	[медиана*]
+	(* <- lang_ru;; *);
+	[median*]
+	(* <- lang_en;; *);
+	[орташа*]
+	(* <- lang_kz;; *);
+=> nrel_idtf: 
+	[быть медианой*] 
+	(* <- lang_ru;; *);
+	[to be a median*] 
+	(* <- lang_en;; *);
+	[медиана треугольника*] 
+	(* <- lang_ru;; *);
+	[median of triangle*] 
+	(* <- lang_en;; *);
+	[быть медианой треугольника*] 
+	(* <- lang_ru;; *);
+	[to be a median of triangle*] 
+	(* <- lang_en;; *);;
+	
+nrel_middle_perpendicular 
+=> nrel_main_idtf:
+	[серединный перпендикуляр*]
+	(* <- lang_ru;; *);
+	[middle perpendicular*]
+	(* <- lang_en;; *);
+	[ортадағы перпендикуляр*]
+	(* <- lang_kz;; *);
+=> nrel_idtf: 
+	[медиатриса*] 
+	(* <- lang_ru;; *);
+	[mediatrisa*] 
+	(* <- lang_en;; *);;
+	
+nrel_external_angle 
+=> nrel_main_idtf:
+	[внешний угол*]
+	(* <- lang_ru;; *);
+	[external angle*]
+	(* <- lang_en;; *);
+	[сыртқы бұрыш*]
+	(* <- lang_kz;; *);
+=> nrel_idtf: 
+	[быть внешним углом многоугольника*]
+	(* <- lang_ru;; *);
+	[to be an external angle of polygon*]
+	(* <- lang_en;; *);;
+	
+nrel_lateral_side 
+=> nrel_main_idtf:
+	[боковая сторона*]
+	(* <- lang_ru;; *);
+	[lateral side*]
+	(* <- lang_en;; *);
+	[жанындағы жақ*]
+	(* <- lang_kz;; *);
+=> nrel_idtf: 
+	[быть боковой стороной*]
+	(* <- lang_ru;; *);
+	[to be a lateral side*]
+	(* <- lang_en;; *);
+	[боковая сторона многоугольника*]
+	(* <- lang_ru;; *);
+	[lateral side of polygon*]
+	(* <- lang_en;; *);
+	[быть боковой стороной многоугольника*]
+	(* <- lang_ru;; *);
+	[to be a lateral side of polygon*]
+	(* <- lang_en;; *);;
+	
+nrel_opposite 
+=> nrel_main_idtf:
+	[противолежащий*]
+	(* <- lang_ru;; *);
+	[opposite*]
+	(* <- lang_en;; *);
+	[қарсы жатқан*]
+	(* <- lang_kz;; *);
+=> nrel_idtf: 
+	[быть противолежащим*] 
+	(* <- lang_ru;; *);
+	[to be opposite*] 
+	(* <- lang_en;; *);;
+	
+nrel_perimeter 
+=> nrel_main_idtf:
+	[периметр*]
+	(* <- lang_ru;; *);
+	[perimeter*]
+	(* <- lang_en;; *);
+	[сыртқы шекара*]
+	(* <- lang_kz;; *);
+=> nrel_idtf: 
+	[быть периметром*] 
+	(* <- lang_ru;; *);
+	[to be a perimeter*] 
+	(* <- lang_en;; *);
+	[периметр геометрической фигуры*] 
+	(* <- lang_ru;; *);
+	[perimeter of geometric figure*] 
+	(* <- lang_en;; *);
+	[быть периметром геометрической фигуры*] 
+	(* <- lang_ru;; *);
+	[to be a perimeter of geometric figure*] 
+	(* <- lang_en;; *);;
+	
+nrel_similarity 
+=> nrel_main_idtf:
+	[подобие*]
+	(* <- lang_ru;; *);
+	[similarity*]
+	(* <- lang_en;; *);
+	[ұқсас*]
+	(* <- lang_kz;; *);
+=> nrel_idtf: 
+	[быть подобными фигурами*] 
+	(* <- lang_ru;; *);
+	[to be similar figures*] 
+	(* <- lang_en;; *);
+	[быть подобными геометрическими фигурами*] 
+	(* <- lang_ru;; *);
+	[to be similar geometric figures*] 
+	(* <- lang_en;; *);
+	[преобразование подобия*] 
+	(* <- lang_ru;; *);
+	[conversion of similarity*] 
+	(* <- lang_en;; *);
+	[геометрическое преобразование подобия*] 
+	(* <- lang_ru;; *);
+	[geometric conversion of similarity*] 
+	(* <- lang_en;; *);;

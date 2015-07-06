@@ -1,0 +1,61 @@
+logical_ontology_of_subject_domain_of_geometric_figure_congruence
+<- logical_ontology;
+=> nrel_main_idtf:
+	[Логическая онтология Предметной области конгруэнтности геометрических фигур]
+	(* <- lang_ru;; *);
+	[Logical ontology of subject domain of geometric figure congruence]
+	(* <- lang_en;; *);;
+	
+logical_hierarchy_of_concepts_of_subject_domain_of_geometric_figure_congruence
+=> nrel_main_idtf:
+	[Логическая иерархия понятий Предметной области конгруэнтности геометрических фигур]
+	(* <- lang_ru;; *);
+	[Logical hierarchy of concepts of subject domain of geometric figure congruence]
+	(* <- lang_en;; *);;
+	
+logical_hierarchy_of_statements_of_subject_domain_of_geometric_figure_congruence
+=> nrel_main_idtf:
+	[Логическая иерархия высказываний Предметной области конгруэнтности геометрических фигур]
+	(* <- lang_ru;; *);
+	[Logical hierarchy of statements of subject domain of geometric figure congruence]
+	(* <- lang_en;; *);;
+	
+logical_ontology_of_subject_domain_of_geometric_figure_congruence => nrel_metaknowledge:
+	logical_hierarchy_of_concepts_of_subject_domain_of_geometric_figure_congruence;;
+	
+logical_ontology_of_subject_domain_of_geometric_figure_congruence => nrel_metaknowledge:
+	logical_hierarchy_of_statements_of_subject_domain_of_geometric_figure_congruence;;
+
+logical_hierarchy_of_concepts_of_subject_domain_of_geometric_figure_congruence = [*^"file://logical_hierarchy_of_concepts_of_subject_domain_of_geometric_figure_congruence.scsi"*];;
+
+logical_hierarchy_of_statements_of_subject_domain_of_geometric_figure_congruence = [*^"file://logical_hierarchy_of_statements_of_subject_domain_of_geometric_figure_congruence.scsi"*];;
+
+logical_ontology_of_subject_domain_of_geometric_figure_congruence = [*^"file://logical_ontology_of_subject_domain_of_geometric_figure_congruence.scsi"*];;
+
+rrel_key_sc_element -> (logical_hierarchy_of_statements_of_subject_domain_of_geometric_figure_congruence -> stat_rectangle_congruence_diagonal)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_base_order: (logical_hierarchy_of_statements_of_subject_domain_of_geometric_figure_congruence -> stat_congruence_vertical_angles)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_base_order: (logical_hierarchy_of_statements_of_subject_domain_of_geometric_figure_congruence -> stat_isosceles_triangle_congruence_angle)
+(* <- rrel_key_sc_element;; *);;
+*);;*);;
+
+rrel_key_sc_element -> (logical_hierarchy_of_concepts_of_subject_domain_of_geometric_figure_congruence -> concept_geometric_figure)
+(*
+	=> nrel_key_sc_element_base_order: (logical_hierarchy_of_concepts_of_subject_domain_of_geometric_figure_congruence -> nrel_congruence_of_pair_of_points)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_base_order: (logical_hierarchy_of_concepts_of_subject_domain_of_geometric_figure_congruence -> nrel_congruence)
+	(* <- rrel_key_sc_element;; *);;
+*);;*);;
+	
+rrel_key_sc_element -> (logical_ontology_of_subject_domain_of_geometric_figure_congruence -> concept_geometric_figure)
+(*
+	=> nrel_key_sc_element_base_order: (logical_ontology_of_subject_domain_of_geometric_figure_congruence -> nrel_congruence_of_pair_of_points)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_base_order: (logical_ontology_of_concepts_of_subject_domain_of_geometric_figure_congruence -> nrel_congruence)
+	(* <- rrel_key_sc_element;; *);;
+*);;*);;

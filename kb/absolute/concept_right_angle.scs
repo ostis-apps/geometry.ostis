@@ -4,15 +4,21 @@ concept_right_angle => nrel_main_idtf:
 	[прямой угол]
 	(* <- lang_ru;;	*);
 	[right angle]
-	(* <- lang_en;;	*);;
+	(* <- lang_en;;	*);
+	[тік бұрыш]
+	(* <- lang_kz;;	*);;
 
-concept_right_angle => nrel_idtf: [Класс прямых углов] (* <- lang_ru;; *);;
+concept_right_angle => nrel_idtf: [Класс прямых углов] (* <- lang_ru;; *);
+								  [Category of right angles] (* <- lang_en;; *);;
 
-concept_right_angle => nrel_idtf: [Понятие прямого угла] (* <- lang_ru;; *);;
+concept_right_angle => nrel_idtf: [Понятие прямого угла] (* <- lang_ru;; *);
+								  [Concept of right angle] (* <- lang_en;; *);;
 
-concept_right_angle => nrel_idtf: [Множество всевозможных прямых углов] (* <- lang_ru;; *);;
+concept_right_angle => nrel_idtf: [Множество всевозможных прямых углов] (* <- lang_ru;; *);
+								  [Set of different right angles] (* <- lang_en;; *);;
 
-concept_right_angle => nrel_idtf: [Множество знаков прямых углов] (* <- lang_ru;; *);;
+concept_right_angle => nrel_idtf: [Множество знаков прямых углов] (* <- lang_ru;; *);
+								  [Set of signs of right angles] (* <- lang_en;; *);;
 
 concept_regular_polygon <= nrel_strict_inclusion: concept_angle;;
 

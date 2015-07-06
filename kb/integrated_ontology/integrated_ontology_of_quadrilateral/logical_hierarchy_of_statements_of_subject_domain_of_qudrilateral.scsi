@@ -1,0 +1,100 @@
+stat_quadrilateral_diagonal_parallelogram => nrel_main_proof: 
+	...
+	(*
+	=> nrel_main_idtf: [Док-во. Утв.(четырехугольник, параллелограмм, диагональ*, точка, пересечение*, середина*)] (* <- lang_ru;; *);;
+	<= nrel_using_statements:
+		{
+		stat_congruence_vertical_angles;
+		stat_congruence_triangle_side_angle_between;
+		d_nrel_internal_cross_lying_angles;
+		stat_straight_line_internal_cross_lying_angles;
+		d_concept_parallelogram
+		};;
+	*);;
+	
+	
+sc_node_struct
+<- sc_node_not_relation;;
+		
+stat_quadrilateral_diagonal_parallelogram <- sc_node_struct;
+=> nrel_main_idtf: [Утв.(четырехугольник, параллелограмм, диагональ*, точка, пересечение*, середина*)] (* <- lang_ru;; *);;
+
+stat_congruence_vertical_angles <- sc_node_struct;
+=> nrel_main_idtf: [Форм. Утв.(вертикальные углы*; конгруэнтность*)] (* <- lang_ru;; *);;
+
+stat_congruence_triangle_side_angle_between <- sc_node_struct;
+=> nrel_main_idtf: [Форм. Утв.(треугольник; сторона*; внутренний угол*; конгруэнтность* )] (* <- lang_ru;; *);;
+
+d_nrel_internal_cross_lying_angles <- sc_node_struct;
+=> nrel_main_idtf: [Форм. Опр.(внутренние накрест лежащие углы*)] (* <- lang_ru;; *);;
+
+stat_straight_line_internal_cross_lying_angles <- sc_node_struct;
+=> nrel_main_idtf: [Форм. Утв.(внутренние нарекст лежащие углы*; прямая)] (* <- lang_ru;; *);;
+
+d_concept_parallelogram <- sc_node_struct;
+=> nrel_main_idtf: [Форм. Опр.(параллелограмм)] (* <- lang_ru;; *);;
+
+
+stat_rhomb_diagonal_perpendicular_bisectrix_angle => nrel_main_proof: 
+	...
+	(*
+	=> nrel_main_idtf: [Док-во. Утв.(ромб; диагональ*; биссектриса*; прямой угол)] (* <- lang_ru;; *);;
+	<= nrel_using_statements:
+		{
+		stat_diagonal_paralelogram;
+		d_nrel_median;
+		d_concept_rhomb;
+		d_concept_isosceles_triangle;
+		stat_median_isosceles_triangle_bisectrix_height
+		};;
+	*);;
+	
+	
+sc_node_struct
+<- sc_node_not_relation;;
+		
+stat_rhomb_diagonal_perpendicular_bisectrix_angle <- sc_node_struct;
+=> nrel_main_idtf: [Утв.(ромб; диагональ*; биссектриса*; прямой угол)] (* <- lang_ru;; *);;
+
+stat_diagonal_paralelogram <- sc_node_struct;
+=> nrel_main_idtf: [Форм. Утв.(параллелограмм; диагональ*; середина*)] (* <- lang_ru;; *);;
+
+d_concept_rhomb <- sc_node_struct;
+=> nrel_main_idtf: [Форм. Опр. (ромб)] (* <- lang_ru;; *);;
+
+d_concept_isosceles_triangle <- sc_node_struct;
+=> nrel_main_idtf: [Форм. Опр.(равнобедренный треугольник)] (* <- lang_ru;; *);;
+
+stat_median_ isosceles_triangle_bisectrix_height <- sc_node_struct;
+=> nrel_main_idtf: [Форм. Утв.(равнобедренный треугольник; биссектриса*; основание*; высота*; медиана*)] (* <- lang_ru;; *);;
+
+d_nrel_median <- sc_node_struct;
+=> nrel_main_idtf: [Форм. Опр.(медиана*)] (* <- lang_ru;; *);;
+
+
+
+stat_rectangle_congruence_diagonal => nrel_main_proof: 
+	...
+	(*
+	=> nrel_main_idtf: [Док-во. Утв.(прямоугольник; диагональ*; конгруэнтность*)] (* <- lang_ru;; *);;
+	<= nrel_using_statements:
+		{
+		stat_congruence_rectangular_triangle_cathetus;
+		d_nrel_diagonal
+		};;
+	*);;
+	
+	
+sc_node_struct
+<- sc_node_not_relation;;
+		
+stat_rectangle_congruence_diagonal <- sc_node_struct;
+=> nrel_main_idtf: [Утв.(прямоугольник; диагональ*; конгруэнтность*)] (* <- lang_ru;; *);;
+
+stat_congruence_rectangular_triangle_cathetus <- sc_node_struct;
+=> nrel_main_idtf: [Форм. Утв.(прямоугольный треугольник; катет*; конгруэнтность*)] (* <- lang_ru;; *);;
+
+d_nrel_diagonal <- sc_node_struct;
+=> nrel_main_idtf: [Форм. Опр. (диагональ*)] (* <- lang_ru;; *);;
+
+

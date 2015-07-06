@@ -1,0 +1,24 @@
+proof_stat_triangle_circle_description_centre_bisectrix_intersection => nrel_main_proof: 
+	...
+	(*
+	=> nrel_main_idtf: [Док-во. Утв.(треугольник; окружность; вписанность*; геометрическая точка)] (* <- lang_ru;; *);;
+	<= nrel_using_statements:
+		{
+		stat_circle_tangent_perpendicular_radius;
+		stat_theorem_pythahoras;
+		d_bisectrix_of_triangle
+		};;
+	*);;
+	
+	
+sc_node_struct
+<- sc_node_not_relation;;
+		
+stat_circle_tangent_perpendicular_radius <- sc_node_struct;
+=> nrel_main_idtf: [Форм. Утв.(окружность; касательная*; прямая; радиус*)] (* <- lang_ru;; *);;
+
+stat_theorem_pythahoras <- sc_node_struct;
+=> nrel_main_idtf: [Форм. Утв.(прямоугольный треугольник; гипотенуза*; катет*)] (* <- lang_ru;; *);;
+
+d_bisectrix_of_triangle <- sc_node_struct;
+=> nrel_main_idtf: [Форм. Опр.(биссектриса треугольника*)] (* <- lang_ru;; *);;

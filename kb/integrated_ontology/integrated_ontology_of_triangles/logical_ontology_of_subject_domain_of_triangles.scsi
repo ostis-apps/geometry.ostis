@@ -1,0 +1,1708 @@
+concept_triangle <- rrel_key_sc_element: 
+        ...
+	(*
+	=> nrel_main_idtf: [Опр.(треугольник)] (* <- lang_ru;; *);
+					   [Definition(triangle)] (* <- lang_en;; *);;
+	<- sc_definition;; 
+	-> rrel_main_key_sc_element: d_concept_triangle;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Треугольник - фигура, состоящая из трёх точек, не лежащих на одной прямой, трех отрезков, попарно соединяющих эти точки, а также части плоскости, ограниченной этими отрезками.]
+			(* <- lang_ru;; *);
+			[Triangle is a figure which consists of three points not lying on a straight line, three segments connecting these points in pairs and a part of the plane bounded by these segments.]
+			(* <- lang_en;; *);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(треугольник; внутренний угол треугольника*; острый угол; тупой угол; прямой угол)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	-> rrel_key_sc_element: concept_triangle; concept_acute_angle; concept_right_angle; concept_obtuse_angle;;
+	-> rrel_main_key_sc_element: stat_triangle_angle_acute_right_obtuse;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[В любом треугольнике либо все углы острые, либо два угла острые, а третий тупой или прямой.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);	
+	
+<- rrel_key_sc_element: 
+	... 
+	(*
+	=> nrel_main_idtf: [Утв. (треугольник)] (* <- lang_ru;; *);;
+	-> rrel_main_key_sc_element: stat_polygon_side_triangle;;
+	-> rrel_key_sc_element: concept_polygon; nrel_side; concept_triangle;;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Многоугольник является треугольником в том случае, если у него три стороны.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+	
+<- rrel_key_sc_element: 
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(треугольник; непрямолинейная тройка точек; вершина*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	-> rrel_main_key_sc_element: stat_triangle_non_rectlinear_three_tuple_of_points_vertex;
+	-> rrel_key_sc_element: concept_triangle; concept_non_rectlinear_three_tuple_of_points; nrel_vertex; concept_geometric_point;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Треугольник однозначно задается непрямолинейной тройкой точек, каждая из которых является вершиной этого треугольника.]
+			(* <- lang_ru;; *);;
+		-> rrel_example: 
+			[Для каждой непрямолинейной тройки точек существует единственный треугольник, вершинами которых являются указанные три точки.]
+			(* <- lang_ru;; *);;
+		
+		*);;
+	*);
+	
+<- rrel_key_sc_element: 
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(треугольник; тройка точек; вершина*; непрямолинейная фигура)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	-> rrel_main_key_sc_element: stat_triangle_triple_of_points_vertex_non_rectlinear_geometric_figure;;
+	-> rrel_key_sc_element: concept_triangle; concept_triple_of_points; nrel_vertex; concept_non_rectlinear_figure;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Для каждого треугольника тройка точек, являющихся вершинами этого треугольника, принадлежит классу непрямолинейных фигур.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+	
+<- rrel_key_sc_element: 
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(треугольник; сторона*; прилежащий*; конгруэнтность*)] (* <- lang_ru;; *);
+					   [Statement(triangle; side*; adjacent*; congruence*)] (* <- lang_en;; *);;
+	-> rrel_main_key_sc_element: stat_sign_of_equality_angle_side;;
+	-> rrel_key_sc_element: concept_triangle; nrel_side; concept_angle; nrel_congruence; nrel_adjacent;;
+	<- sc_statement_of_necessity_and_sufficiency;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[(Признак равенства треугольников по стороне и прилежащим к ней углам). Если сторона и прилежащие к ней углы одного треугольника соответственно равны стороне 
+			и прилежащим к ней углам другого треугольника, то такие треугольники равны.]
+			(* <- lang_ru;; *);
+			[(Triangle Side-Angle-Angle Equality). If one side and two adjacent angles of one triangle are equal 
+			to a side and two adjacent angles of another triangle, then these triangles are equal. ]
+			(* <- lang_en;; *);;
+		*);;
+	*);
+	
+<- rrel_key_sc_element: 
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(треугольник; сторона*; внутренний угол*; конгруэнтность*)] (* <- lang_ru;; *);
+					   [Statement(triangle; side*; internal angle*; congruence*)] (* <- lang_en;; *);;
+	-> rrel_main_key_sc_element: stat_sign_of_equality_two_side_angle_between;;
+	-> rrel_key_sc_element: concept_triangle; nrel_side; concept_angle; nrel_congruence; rrel_between;;;
+	<- sc_statement_of_necessity_and_sufficiency;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[(Признак равенства треугольников по двум сторонам и углу между ними). Если две стороны и угол между ними одного треугольника соответственно равны 
+			двум сторонам и углу между ними другого треугольника, то такие треугольники равны.]
+			(* <- lang_ru;; *);
+			[(Triangle Side-Angle-Side Equality). If, in one triangle, two sides and the angle 
+			between them are equal to two sides and the angle between them of another triangle, then these triangles are equal. ]
+			(* <- lang_en;; *);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: 
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(треугольник; сторона*; конгруэнтность*)] (* <- lang_ru;; *);
+				       [Statement(triangle; side*; congruence*)] (* <- lang_en;; *);;
+	-> rrel_main_key_sc_element: stat_sign_of_equality_three_side;;
+	-> rrel_key_sc_element: concept_triangle; nrel_side; nrel_congruence;;
+	<- sc_statement_of_necessity_and_sufficiency;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[(Признак равенства треугольников по трем сторонам) Если три стороны одного треугольника соответственно равны трем 
+			сторонам другого треугольника, то такие треугольники равны.]
+			(* <- lang_ru;; *);
+			[(Triangle Side-Side-Side Equality) If three sides of one triangle are equal in length to 
+			three sides of another triangle, then these triangles are equal.]
+			(* <- lang_en;; *);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: 
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(треугольник; сторона*; конгруэнтность*; противолежащий*; внутренний угол*)] (* <- lang_ru;; *);;
+	-> rrel_main_key_sc_element: stat_sign_of_equality_two_side_angle;;
+	-> rrel_key_sc_element: concept_triangle; nrel_side; concept_angle; nrel_congruence;;
+	<- sc_statement_of_necessity_and_sufficiency;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[(Признак равенства треугольников по двум сторонам и углу, противолежащему большей стороне). Если две стороны и угол, 
+			противолежащий большей стороне одного треугольника, соответственно равны двум сторонам и углу, 
+			противолежащему большей стороне другого треугольника, то такие треугольники равны.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+	
+<- rrel_key_sc_element: 
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(треугольник; окружность; вписанность*; геометрическая точка)] (* <- lang_ru;; *);;
+	-> rrel_main_key_sc_element: stat_triangle_internal_angle_geometric_point_circle_center;;
+	-> rrel_key_sc_element: concept_triangle; nrel_bisectrix_of_triangle; concept_circle; nrel_be_inscribed;;
+	<- sc_theorem;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Центр окружности, вписанной в треугольник, является точкой пересечения его биссектрис.]
+			(* <- lang_ru;; *);;
+			-> rrel_example: 
+			[Биссектрисы внутренних углов треугольника пересекаются в одной точке, являющейся центром вписанной в треугольник окружности.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+	
+<- rrel_key_sc_element: 
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(треугольник; окружность; описанность*; геометрическая точка; серединный перпендикуляр*)] (* <- lang_ru;; *);;
+	-> rrel_main_key_sc_element: stat_triangle_circle_inscribed_centre_middle_perpendicular_intersection;;
+	-> rrel_key_sc_element: concept_circle; nrel_be_inscribed; concept_geometric_point; nrel_middle_perpendicular;;
+	<- sc_theorem;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Центр окружности, описанной около треугольника, является точкой пересечения серединных перпендикуляров.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+	
+<- rrel_key_sc_element: 
+	...
+	(*
+	=> nrel_main_idtf: [Теорема косинусов] (* <- lang_ru;; *);
+				       [The Law of cosins] (* <- lang_en;; *);;
+	=> nrel_idtf: [Утв.(треугольник; сторона*)] (* <- lang_ru;; *);
+				  [Statement(triangle; side*)] (* <- lang_en;; *);;
+	-> rrel_main_key_sc_element: stat_theorem_cos;;
+	-> rrel_key_sc_element: nrel_side; concept_triangle; concept_angle;;
+	<- sc_theorem;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[(Теорема косинусов) Квадрат любой стороны треугольника равен сумме квадратов двух других сторон без удвоенного 
+			произведения этих сторон на косинус угла между ними ]
+			(* <- lang_ru;; *);
+			[(The Law of Cosines) The square of any side of triangle is equal to the sum of the squares of the other two, without the double
+product of these parts by the cosine of the angle between them.]
+			(* <- lang_en;; *);;
+		*);
+
+<- rrel_key_sc_element: 
+        ...
+	(*
+	=> nrel_main_idtf: [Теорема синусов] (* <- lang_ru;; *);
+					   [The Law of sines] (* <- lang_en;; *);;
+	=> nrel_idtf: [Утв.(треугольник; сторона*; синус*)] (* <- lang_ru;; *);
+				  [Statement(triangle; side*; sin*)] (* <- lang_en;; *);;
+	<- sc_statement_of_unique_setting;;
+	-> rrel_main_key_sc_element: stat_isosceles_triangle_radius_be_inscribed_lateral_side_base_internal_angle;;
+	-> rrel_key_sc_element: concept_isosceles_triangle; nrel_radius; nrel_lateral_side; nrel_internal_angle; nrel_be_described;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Теорема синусов - стороны треугольника пропорциональны синусам противолежащих углов.] 
+			(* <- lang_ru;; *);
+			[The sides of a triangle are to one another in the same ratio as the sines of their opposite angles.] 
+			(* <- lang_en;; *);; 
+		*);;
+	*);;
+	
+	
+	
+concept_triangle <- rrel_key_sc_element: 
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(треугольник; подобие*; внутренний угол*)] (* <- lang_ru;; *);
+					   [Statement(triangle; simularity*; internal angle*)] (* <- lang_en;; *);;;
+	-> rrel_main_key_sc_element: stat_sign_two_angle;;
+	-> rrel_key_sc_element: concept_triangle; nrel_angle; nrel_similarity;;
+	<- sc_statement_of_necessity_and_sufficiency;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[(Признак подобия треугольников по двум углам). Если два угла одного треугольника равны двум углам другого треугольника, то такие треугольники подобны.]
+			(* <- lang_ru;; *);
+			[(Triangle Angle-Angle Simularity). If two angles of one triangle are equal to two angles of another triangle, then the triangles are similar.]
+			(* <- lang_en;; *);;
+		*);;
+	*);
+	
+<- rrel_key_sc_element: 
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(треугольник; подобие*; сторона*; внутренний угол*)] (* <- lang_ru;; *);
+					   [Statement(triangle; simularity*; side*; internal angle*)] (* <- lang_en;; *);;
+	-> rrel_main_key_sc_element: stat_sign_angle_two_side;;
+	-> rrel_key_sc_element: concept_triangle; nrel_side; concept_angle; nrel_congruence; nrel_similarity;;
+	<- sc_statement_of_necessity_and_sufficiency;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[(Признак подобия по двум сторонам и углу между ними). Если две стороны одного треугольника пропорциональны двум сторонам другого треугольника и углы, образованные этими сторонами, равны, то такие треугольники подобны.]
+			(* <- lang_ru;; *);
+			[(Triangle Side-Angle-Side Simularity). If two sides of one triangle are proportional to two sides of another triangle, 
+			and angle between sides in one triangle are equal to angle between sides in another triangle then the triangles are similar.]
+			(* <- lang_en;; *);;
+		*);;
+	*);
+	
+<- rrel_key_sc_element: 
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(треугольник; подобие*; сторона*)] (* <- lang_ru;; *);
+					   [Statement(triangle; simularity*; side*)] (* <- lang_en;; *);;
+	-> rrel_main_key_sc_element: stat_sign_three_side;;
+	-> rrel_key_sc_element: concept_triangle; nrel_side; nrel_similarity;;
+	<- sc_statement_of_necessity_and_sufficiency;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[(Признак подобия по трем сторонам). Если три стороны одного треугольника пропорциональны трем сторонам другого треугольника, то такие треугольники подобны.]
+			(* <- lang_ru;; *);
+			[(Triangle Side-Side-Side Simularity). If three sides of one triangle are proportional in length to three sides of another triangle, then these triangles are similar. ]
+			(* <- lang_ru;; *);;
+		*);;
+	*);	
+	
+<- rrel_key_sc_element: 
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(треугольник; подобие*; внутренний угол*)] (* <- lang_ru;; *);;
+	-> rrel_main_key_sc_element: stat_sign_two_angle;;
+	-> rrel_key_sc_element: concept_triangle; nrel_angle; nrel_similarity;;
+	<- sc_statement_of_necessity_and_sufficiency;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[(Признак подобия треугольников по двум углам). Если два угла одного треугольника равны двум углам другого треугольника, то такие треугольники подобны.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+	
+<- rrel_key_sc_element: 
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(треугольник; внешний угол*; внутренний угол*)] (* <- lang_ru;; *);;
+	-> rrel_main_key_sc_element: stat_triangle_external_sum_internal_angle;;
+	-> rrel_key_sc_element: nrel_internal_angle; concept_triangle; nrel_external_angle; nrel_adjacent_angles;;;
+	<- sc_statement_of_unique_setting;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Любой внешний угол треугольника равен сумме двух внутренних углов треугольника, не смежных с ним]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+	
+<- rrel_key_sc_element: 
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(треугольник; внутренний угол*; мера угла*)] (* <- lang_ru;; *);;
+	-> rrel_main_key_sc_element: stat_sum_internal_angle_triangle;;
+	-> rrel_key_sc_element: nrel_internal_angle; concept_triangle;;
+	<- sc_statement_of_unique_setting;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Сумма внутренних углов треугольника равна 180°.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+	
+<- rrel_key_sc_element: 
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(треугольник; площадь*; высота*; основание*)] (* <- lang_ru;; *);;
+					   [Statement(triangle; area*; height*; base*)] (* <- lang_en;; *);;
+	-> rrel_main_key_sc_element: stat_area_hight_triangle_side;;
+	-> rrel_key_sc_element: nrel_hight; concept_triangle; nrel_side; nrel_area;;
+	<- sc_theorem;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Площадь треугольника равна половине произведения его стороны на опущенную на нее высоту]
+			(* <- lang_ru;; *);
+			[Area of a triangle is equal to the half multiplication of side and its height.]
+			(* <- lang_en;; *);;
+		*);;
+	*);;
+	
+concept_acute_angled_triangle <- rrel_key_sc_element: 
+        ...
+	(*
+	=> nrel_main_idtf: [Опр.(остроугольный треугольник)] (* <- lang_ru;; *);
+					   [Definition(acute triangle)] (* <- lang_en;; *);;
+	<- sc_definition;; 
+	-> rrel_main_key_sc_element: d_concept_acute_angled_triangle;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Остроугольный треугольник – это треугольник, все внутренние углы которого являются острыми углами.]
+			(* <- lang_ru;; *);
+			[Acute triangle is a triangle that has all angles less than 90° (90° is a Right Angle).]
+			(* <- lang_en;; *);;
+		*);;
+	*);;
+	
+concept_rectangular_triangle <- rrel_key_sc_element: 
+        ...
+	(*
+	=> nrel_main_idtf: [Опр.(прямоугольный треугольник)] (* <- lang_ru;; *);
+					   [Definition(right triangle)] (* <- lang_en;; *);;
+	-> rrel_main_key_sc_element: concept_rectangular_triangle;;
+	<- sc_definition;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Прямоугольный треугольник – это треугольник, у которого хотя бы один внутренний угол является прямым углом.]
+			(* <- lang_ru;; *);
+			[A right triangle or right-angled triangle is a triangle in which one angle is a right angle (that is, a 90-degree angle).]
+			(* <- lang_en;; *);;
+		*);;
+	*);
+	
+<- rrel_key_sc_element: 
+        ...
+	(*
+	=> nrel_main_idtf: [Утв.(треугольник; прямоугольный треугольник; сторона*; конгруэнтность*)] (* <- lang_ru;; *);;
+	<- sc_definitional_statement;;
+	-> rrel_main_key_sc_element: stat_rectangular_triangle_side;;
+	-> rrel_key_sc_element: nrel_side; concept_triangle; concept_rectangular_triangle;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Если квадрат одной из сторон треугольника равен сумме квадратов двух других его сторон, то такой треугольник прямоугольный.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(треугольник; прямоугольный треугольник; сторона*; медиана*; конгруэнтность*)] (* <- lang_ru;; *);;
+	<- sc_statement_of_unique_setting;;
+	-> rrel_main_key_sc_element: stat_rectangular_triangle_median;;
+	-> rrel_key_sc_element: nrel_median; concept_triangle; nrel_side; concept_rectangular_triangle;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Если медиана треугольника равна(конгруэнтна) половине стороны, к которой она проведена, то треугольник прямоугольный.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(прямоугольный треугольник; катет*; конгруэнтность*)] (* <- lang_ru;; *);;
+	-> rrel_main_key_sc_element: stat_sign_of_equality_two_cathetus;;
+	-> rrel_key_sc_element: concept_rectangular_triangle; nrel_cathetus; nrel_congruence;;
+	<- sc_statement_of_necessity_and_sufficiency ;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[(Признак равенства прямоугольного треугольника по двум катетам). Если катеты одного прямоугольного 
+			треугольника соответственно равны катетам другого прямоугольного треугольника, то такие треугольники равны.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(треугольник; прямоугольный треугольник; катет*; острый угол; угол многоугольника*; конгруэнтность*)] (* <- lang_ru;; *);;
+	<- sc_statement_of_necessity_and_sufficiency;;
+	-> rrel_main_key_sc_element: stat_sign_of_equality_cathetus_acute_angle;;
+	-> rrel_key_sc_element: concept_rectangular_triangle; nrel_cathetus; nrel_congruence; concept_acute_angle;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[(Признак равенства прямоугольных треугольников по катету и острому углу). Если катет и острый угол одного прямоугольного треугольника соответственно равен катету и 
+			острому углу другого прямоугольного треугольника, то такие треугольники равны.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(треугольник; прямоугольный треугольник; гипотенуза*; острый угол; угол многоугольника*; конгруэнтность*)] (* <- lang_ru;; *);;
+	<- sc_statement_of_necessity_and_sufficiency;;
+	-> rrel_main_key_sc_element: stat_sign_of_equality_hypotenuse_acute_angle;;
+	-> rrel_key_sc_element: concept_rectangular_triangle; nrel_hypotenuse; nrel_congruence; concept_acute_angle;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[(Признак равенства прямоугольных треугольников по гипотенузе и острому углу) Если гипотенуза и острый угол одного прямоугольного треугольника 
+			соответственно равны гипотенузе и острому углу другого прямоугольного треугольника, то такие треугольники равны.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(треугольник; прямоугольный треугольник; гипотенуза*; катет*; конгруэнтность*)] (* <- lang_ru;; *);;
+	-> rrel_main_key_sc_element: stat_sign_of_equality_hypotenuse_cathetus;;
+	-> rrel_key_sc_element: nrel_hypotenuse; concept_rectangular_triangle; nrel_cathetus; nrel_congruence;;
+	<- sc_statement_of_necessity_and_sufficiency;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[(Признак равенства прямоугольных треугольников по гипотенузе и катету). Если гипотенуза и катет одного прямоугольного 
+			треугольника соответственно равны гипотенузе и катету другого прямоугольного треугольника, то такие треугольники равны.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(треугольник; прямоугольный треугольник; острый угол; угол многоугольника*; подобность*)] (* <- lang_ru;; *);;
+	<- sc_statement_of_necessity_and_sufficiency;;
+	-> rrel_main_key_sc_element: stat_sign_rectangular_triangle_acute_angle;;
+	-> rrel_key_sc_element: concept_rectangular_triangle; concept_acute_angle;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[(Признак подобия прямоугольных треугольников по одному острому углу). Если острый угол прямоугольного треугольника равен 
+			острому углу другого прямоугольного треугольника, то такие треугольники подобны.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(треугольник; прямоугольный треугольник; катет*; пропорциональность*; подобность*)] (* <- lang_ru;; *);;
+	<- sc_statement_of_necessity_and_sufficiency;;
+	-> rrel_main_key_sc_element: stat_sign_two_cathetus;;
+	-> rrel_key_sc_element: concept_rectangular_triangle; nrel_cathetus;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[(Признак подобия прямоугольных треугольников по пропорциональности двух катетов). Если катеты одного прямоугольного треугольника 
+			пропорциональны катетам другого прямоугольного треугольника, то такие треугольники подобны.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(треугольник; прямоугольный треугольник; гипотенуза*; катет*; пропорциональность*; подобность*)] (* <- lang_ru;; *);;
+	<- sc_statement_of_necessity_and_sufficiency;;
+	-> rrel_main_key_sc_element: stat_sign_hypotenuse_cathetus;
+	-> rrel_key_sc_element: concept_rectangular_triangle; nrel_hypotenuse; nrel_cathetus;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[(Признак подобия прямоугольных треугольников по пропорциональности гипотенузы и катета). Если гипотенуза и катет одного прямоугольного треугольника 
+			пропорциональны гипотенузе и катету другого прямоугольного треугольника, то такие треугольники подобны.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(треугольник; прямоугольный треугольник; острый угол; прямой угол)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	-> rrel_main_key_sc_element: stat_rectangular_triangle_angle;;
+	-> rrel_key_sc_element: concept_rectangular_triangle; concept_angle; concept_right_angle; concept_acute_angle;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[У прямоугольного треугольника только один прямой угол, два других его угла острые.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(прямоугольный треугольник; острый угол)] (* <- lang_ru;; *);;
+	-> rrel_main_key_sc_element: stat_sum_acute_angle_rectangular_triangle;;
+	-> rrel_key_sc_element: concept_acute_angle; concept_rectangular_triangle;;
+	<- sc_theorem;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Сумма острых углов прямоугольного треугольника равна 90 угловых градусов.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(треугольник; прямоугольный треугольник; равнобедренный треугольник; острый угол)] (* <- lang_ru;; *);;
+	<- sc_theorem;;
+	-> rrel_main_key_sc_element: stat_isosceles_rectangular_triangle_acute_angles_45;;
+	-> rrel_key_sc_element: concept_acute_angle; concept_rectangular_triangle; concept_isosceles_triangle;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[В равнобедренном прямоугольном треугольнике каждый острый угол равен 45 угловых градусов.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(треугольник; прямоугольный треугольник; катет*; гипотенуза*)] (* <- lang_ru;; *);;
+	<- sc_theorem;;
+	-> rrel_main_key_sc_element: stat_angle_cathetus_hypotenuse;;
+	-> rrel_key_sc_element: concept_angle; nrel_hypotenuse; nrel_cathetus;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Катет, лежащий против угла в 30 угловых градусов, равен половине гипотенузы.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(треугольник; прямоугольный треугольник; биссектриса*, прямой угол; медиана*; высота*)] (* <- lang_ru;; *);;
+	<- sc_theorem;;
+	-> rrel_main_key_sc_element: stat_rectangular_triangle_bisectrix_of_triangle_median_height;;
+	-> rrel_key_sc_element: concept_rectangular_triangle; nrel_bisectrix_of_triangle; nrel_median; nrel_height;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Биссектриса прямого угла в прямоугольном треугольнике лежит между медианой и высотой и делит угол между ними пополам.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(прямоугольный треугольник; гипотенуза*; катет*; косинус*; синус*; тангенс*; котангенс*)] (* <- lang_ru;; *);;
+	<- sc_theorem;;
+	-> rrel_main_key_sc_element: stat_rectangular_triangle_cathetus_hypotenuse_sin_cos_tg_ctg;;
+	-> rrel_key_sc_element: concept_rectangular_triangle; nrel_hypotenuse; nrel_cathetus; concept_angle;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[В прямоугольном треугольнике каждый катет равен гипотенузе, умноженной на синус противолежащего этому катету угла, 
+			или гипотенузе, умноженной на косинус прилежащего этому катету угла или другому катету, умноженному на тангенс угла, 
+			противолежащего определяемому катету, или другому катету, умноженному на котангенс угла, прилежащего к определяемому катету.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(прямоугольный треугольник; гипотенуза*; катет*; косинус*; синус*)] (* <- lang_ru;; *);;
+	<- sc_statement_of_unique_setting;;
+	-> rrel_main_key_sc_element: stat_rectangular_triangle_hypotenuse_cathetus_sin_cos_tg_ctg;;
+	-> rrel_key_sc_element: concept_rectangular_triangle; nrel_hypotenuse; nrel_cathetus; concept_angle;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[В прямоугольном треугольнике гипотенуза равна катету, деленному на синус угла, противолежащего этому катету, или катету, деленному на косинус угла, прилежащему этому катету.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Теорема Пифагора] (* <- lang_ru;; *);
+					   [Pythagoras's theorem] (* <- lang_en;; *);;
+	=> nrel_idtf: [Утв.(прямоугольный треугольник; гипотенуза*; катет*)] (* <- lang_ru;; *);
+				  [Statement(right angle; hypotenuse*; cathetus*)] (* <- lang_en;; *);;
+	-> rrel_main_key_sc_element: stat_theorem_pythahoras;;
+	-> rrel_key_sc_element: concept_rectangular_triangle; nrel_hypotenuse; nrel_cathetus;;
+	<- sc_theorem;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[(Теорема Пифагора) В прямоугольном треугольнике квадрат гипотенузы равен сумме квадратов катетов.]
+			(* <- lang_ru;; *);
+			[(Pythagoras's theorem) In right triangle the square of the hypotenuse (the side opposite the right angle) is equal to the sum of the squares of the other two sides.]
+			(* <- lang_en;; *);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(прямоугольный треугольник; гипотенуза*; катет*; проекция*)] (* <- lang_ru;; *);;
+	<- sc_statement_of_unique_setting;;
+	-> rrel_main_key_sc_element: stat_rectangular_triangle_hypotenuse_cathetus_geometric_mean;;
+	-> rrel_key_sc_element: concept_rectangular_triangle; nrel_hypotenuse; nrel_cathetus;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[В прямоугольном треугольнике каждый катет есть среднее геометрическое между гипотенузой и проекцией катета на гипотенузу]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(прямоугольный треугольник; прямой угол; гипотенуза*; катет*; высота*)] (* <- lang_ru;; *);;
+	<- sc_theorem;;
+	-> rrel_main_key_sc_element: stat_rectangular_triangle_hypotenuse_cathetus_hight_vertex_right_angel;;
+	-> rrel_key_sc_element: concept_rectangular_triangle; nrel_vertex; nrel_hight; concept_right_angle; nrel_hypotenuse; nrel_cathetus;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[В прямоугольном треугольнике отношение одного из катетов к гипотенузе равно отношению высоты, опущенной из вершины прямого угла на гипотенузу, к другому катету.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(прямоугольный треугольник; прямой угол; гипотенуза*; катет*; проекция*; высота*)] (* <- lang_ru;; *);;
+	<- sc_theorem;;
+	-> rrel_main_key_sc_element: stat_rectangular_triangle_hight_vertex_right_angle_hypotenuse_cathetus;;
+	-> rrel_key_sc_element: concept_rectangular_triangle; nrel_vertex; nrel_hight; concept_right_angle; nrel_hypotenuse; nrel_cathetus;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[В прямоугольном треугольнике высота, опущенная из вершины прямого угла на гипотенузу, есть среднее геометрическое (среднее пропорциональное) между проекциями катетов на гипотенузу.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(прямоугольный треугольник; прямой угол; гипотенуза*; катет*; высота*)] (* <- lang_ru;; *);;
+	<- sc_theorem;;
+	-> rrel_main_key_sc_element: stat_rectangular_triangle_hight_vertex_right_angle_cathetus_hypotenuse;;
+	-> rrel_key_sc_element: concept_rectangular_triangle; nrel_vertex; nrel_hight; concept_right_angle; nrel_hypotenuse; nrel_cathetus;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[В прямоугольном треугольнике высота, опущенная из вершины прямого угла на гипотенузу, делит гипотенузу в таком отношении, в каком находятся квадраты прилежащих катетов.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(прямоугольный треугольник; прямой угол; гипотенуза*; медиана*; конгруэнтность*)] (* <- lang_ru;; *);;
+	<- sc_theorem;;
+	-> rrel_main_key_sc_element: stat_median_vertex_right_angle_rectangular_triangle_hypotenuse;;
+	-> rrel_key_sc_element: concept_rectangular_triangle; nrel_vertex; concept_right_angle; nrel_hypotenuse; nrel_median;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Медиана, проведенная из вершины прямого угла прямоугольного треугольника, равна(конгруэнтна) половине гипотенузы.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(прямоугольный треугольник; окружность; радиус*; описанность*; гипотенуза*; конгруэнтность*)] (* <- lang_ru;; *);;
+	<- sc_theorem;;
+	-> rrel_main_key_sc_element: stat_radius_circle_described_rectangular_triangle;;
+	-> rrel_key_sc_element: nrel_be_described; nrel_radius; concept_circle; concept_rectangular_triangle; nrel_hypotenuse;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Радиус окружности, описанной около прямоугольного треугольника, равен половине его гипотенузы.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(прямоугольный треугольник; окружность; радиус*; сторона*; вписанность*; гипотенуза*; катет*)] (* <- lang_ru;; *);;
+	-> rrel_main_key_sc_element: stat_radius_circle_inscribed_rectangular_triangle;;
+	-> rrel_key_sc_element: nrel_radius; concept_circle; concept_rectangular_triangle; nrel_side; nrel_be_inscribed;;
+	<- sc_theorem;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Для каждого прямоугольного треугольника выполняется следующее числовое соотношение: r = (a+b-c)/2, где r - радиус окружности, вписанной в указанный прямоугольный треугольник, a, b - катеты указанного прямоугольного треугольника, c – гипотенуза указанного прямоугольного треугольника.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+	
+<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(прямоугольный треугольник; периметр*; вписанность*; окружность)] (* <- lang_ru;; *);;
+	-> rrel_main_key_sc_element: stat_triangle_area_multiplication_perimeter_radius_circle_be_inscribed;;
+	-> rrel_key_sc_element: concept_circle; nrel_radius; nrel_area; nrel_be_inscribed;;
+	<- sc_theorem;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Для каждого прямоугольного треугольника выполняется следующее числовое соотношение: S = (P*r)/4, где S - площадь треугольника, P - периметр, r - радиус вписанной окружности.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+	
+<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(прямоугольный треугольник; площадь*; катет*)] (* <- lang_ru;; *);;
+	-> rrel_main_key_sc_element: stat_rectangular_triangle_area_multiplication_cathetus;;
+	-> rrel_key_sc_element:	nrel_cathetus; nrel_area;;
+	<- sc_theorem;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Для каждого прямоугольного треугольника выполняется следующее числовое соотношение: S = (a*b)/2, где S - площадь указанного прямоугольного треугольника, a, b - катеты указанного прямоугольного треугольника.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+	
+concept_equilateral_triangle <- rrel_key_sc_element: 
+	...
+    (*
+	=> nrel_main_idtf: [Опр.(равносторонний треугольник)] (* <- lang_ru;; *);
+					   [Definition(equilateral triangle)] (* <- lang_en;; *);;
+	-> rrel_main_key_sc_element: d_concept_equilateral_triangle;;
+	<- sc_definition;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Равносторонний треугольник - треугольник, у которого все стороны равны друг другу.]
+			(* <- lang_ru;; *);
+			[Equilateral triangle is a triangle in which all three sides are equal.]
+			(* <- lang_en;; *);;
+		*);;
+	*);
+	
+<- rrel_key_sc_element: 
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(равносторонний треугольник; внутренний угол*; острый угол)] (* <- lang_ru;; *);;
+	<- sc_theorem;;
+	-> rrel_main_key_sc_element: stat_equilateral_triangle_angle_between_60;;
+	-> rrel_key_sc_element: concept_equilateral_triangle; rrel_between; concept_angle; nrel_congruence;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[В любом равностороннем треугольнике мера каждого из углов равна 60 угловым градусам.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: 
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(равносторонний треугольник; высота*)] (* <- lang_ru;; *);;
+	<- sc_theorem;;
+	-> rrel_main_key_sc_element: stat_equilateral_triangle_bisectrix_median_hight_congruence;;
+	-> rrel_key_sc_element: concept_equilateral_triangle; nrel_bisectrix; nrel_hight; nrel_congruence; nrel_median; rrel_between;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[В равностороннем треугольнике все медианы (а также высоты или биссектрисы) равны между собой.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: 
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(равносторонний треугольник; высота*; медиана*; биссектриса*)] (* <- lang_ru;; *);;
+	<- sc_theorem;;
+	-> rrel_main_key_sc_element: stat_equilateral_triangle_point_median_besictrix_hight_center_circle;;
+	-> rrel_key_sc_element: concept_equilateral_triangle; nrel_bisectrix; nrel_hight; nrel_median; concept_geometric_point; nrel_center; concept_circle; nrel_be_described; nrel_be_inscribed;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Точка пересечения медиан (высот, биссектрис) равностороннего треугольника, называемая его центром, является центром вписанной и описанной окружностей.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: 
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(равносторонний треугольник; радиус*; вписанность*; описанность*; окружность)] (* <- lang_ru;; *);;
+	<- sc_statement_of_unique_setting;;
+	-> rrel_main_key_sc_element: stat_equilateral_triangle_radius_circle_side_hight;;
+	-> rrel_key_sc_element: concept_equilateral_triangle;  nrel_radius; concept_circle; nrel_side; nrel_hight;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Радиус окружности, описанной около равностороннего треугольника, выражается через его сторону a и высоту h по формулам:  R=2*r=a*sqrt(3)/3; R=2*h/3.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: 
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(равносторонний треугольник; радиус*; вписанность*; окружность; сторона*)] (* <- lang_ru;; *);;
+	<- sc_statement_of_unique_setting;;
+	-> rrel_main_key_sc_element: stat_equilateral_triangle_radius_ be_inscribed_circle_side;;
+	-> rrel_key_sc_element: concept_equilateral_triangle; nrel_radius; concept_circle; nrel_side; nrel_be_inscribed;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Радиус окружности, вписанной в равносторонний треугольник, выражается через его сторону по формуле r=a*sqrt(3)/6.] 
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: 
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(равносторонний треугольник; радиус*; описанность*; окружность; сторона*)] (* <- lang_ru;; *);;
+	<- sc_statement_of_unique_setting;;
+	-> rrel_main_key_sc_element: stat_equilateral_triangle_radius_circle_be_described_side;;
+	-> rrel_key_sc_element: concept_equilateral_triangle; nrel_side; nrel_radius; concept_circle;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Для каждого равностороннего треугольника выполняется следующее числовое соотношение: R^2 = (3*a^2)/9, где R - величина радиуса описанной окружности указанного треугольника, a - величина стороны этого треугольника.]
+			(* <- lang_ru;; *);;		
+		*);;
+	*);
+
+<- rrel_key_sc_element: 
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(равносторонний треугольник; радиус*; описанность*; окружность; сторона*)] (* <- lang_ru;; *);;
+	<- sc_statement_of_unique_setting;;
+	-> rrel_main_key_sc_element: stat_equilateral_triangle_radius_be_described_perimeter_be_inscribed_circle;;
+	-> rrel_key_sc_element: concept_equilateral_triangle; concept_circle; nrel_perimeter; nrel_side; nrel_be_described; nrel_be_inscribed; nrel_radius;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Для каждого равностороннего треугольника выполняется следующее числовое соотношение: P^2 = 9*a^2 = 27R^2 = 108r^2
+			где P - величина периметра указанного треугольника, r - величина радиуса вписанной окружности этого треугольника,R - величина радиуса описанной окружности рассматриваемого треугольника,a - величина стороны этого треугольника.] (* <- lang_ru;; *);; 
+		*);;
+	*);
+
+<- rrel_key_sc_element: 
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(равносторонний треугольник; высота*; сторона*)] (* <- lang_ru;; *);;
+	<- sc_statement_of_unique_setting;;
+	-> rrel_main_key_sc_element: stat_equilateral_triangle_height_side;;
+	-> rrel_key_sc_element: concept_equilateral_triangle; nrel_height; nrel_side;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Для каждого равностороннего треугольника выполняется следующее числовое соотношение: h = 3a/2, где h - величина высоты указанного треугольника, a - величина стороны этого треугольника.] 
+			(* <- lang_ru;; *);; 
+		*);;
+	*);
+
+<- rrel_key_sc_element: 
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(равносторонний треугольник; высота*; сторона*; площадь*)] (* <- lang_ru;; *);;
+	<- sc_statement_of_unique_setting;;
+	-> rrel_main_key_sc_element: stat_equilateral_triangle_area_height_side;;
+	-> rrel_key_sc_element: concept_equilateral_triangle; nrel_area; nrel_side; nrel_height;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Для каждого равностороннего треугольника выполняется следующее числовое соотношение: S^2 = (3a^4)/16 = (27R^4)/16 = 27r^4 где S - величина площади указанного треугольника,r - величина радиуса вписанной окружности этого треугольника,R - величина радиуса описанной окружности рассматриваемого треугольника,a - величина стороны описываемого треугольника.]
+			(* <- lang_ru;; *);;		
+		*);;
+	*);;
+	
+concept_isosceles_triangle  <- rrel_key_sc_element: 
+        ...
+	(*
+	=> nrel_main_idtf: [Опр.(равнобедренный треугольник)] (* <- lang_ru;; *);
+					   [Definition(isosceles triangle)] (* <- lang_en;; *);;
+	-> rrel_main_key_sc_element: d_concept_isosceles_triangle;;
+	<- sc_definition;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Равнобедренный треугольник - треугольник, в котором две стороны равны между собой.]
+			(* <- lang_ru;; *);
+			[Isosceles triangle is a triangle that has two sides of equal length.]
+			(* <- lang_en;; *);;
+		*);;
+	*);
+	
+<- rrel_key_sc_element: 
+        ...
+	(*
+	=> nrel_main_idtf: [Утв.(равнобедренный треугольник; внутренний угол*; основание*)] (* <- lang_ru;; *);;
+	-> rrel_main_key_sc_element: stat_isosceles_triangle_angle_base;;
+	-> rrel_key_sc_element: concept_isosceles_triangle; concept_angle; nrel_base; nrel_congruence;;
+	<- sc_theorem;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[В равнобедренном треугольнике углы при основании равны.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: 
+        ...
+	(*
+	=> nrel_main_idtf: [Утв.(равнобедренный треугольник; биссектриса*; основание*; высота*; медиана*)] (* <- lang_ru;; *);
+					   [Statement(isosceles triangle; bisectrix*; base*; height*; median*)] (* <- lang_en;; *);;
+	-> rrel_main_key_sc_element: stat_isosceles_triangle_bisectrix_base_median_hight;;
+	-> rrel_key_sc_element: concept_isosceles_triangle; nrel_base; nrel_bisectrix; nrel_hight; nrel_congruence; nrel_median;;
+	<- sc_theorem;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[В равнобедренном треугольнике биссектриса, проведенная к основанию, является одновременно медианой и высотой.]
+			(* <- lang_ru;; *);
+			[In an isosceles triangle, the median, bisectrix, and height of the vertext between the equal sides all coincide.]
+			(* <- lang_en;; *);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: 
+        ...
+	(*
+	=> nrel_main_idtf: [Утв.(равнобедренный треугольник; медиана*; высота*; биссектриса*; боковая сторона*)] (* <- lang_ru;; *);;
+	<- sc_theorem;;
+	-> rrel_main_key_sc_element: stat_isosceles_triangle_median_besictrix_hight_lateral_side_congruence;;
+	-> rrel_key_sc_element: concept_isosceles_triangle; nrel_lateral_side; nrel_bisectrix; nrel_median; nrel_hight; nrel_congruence;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[В равнобедренном треугольнике медианы(а также высоты или биссектрисы), проведенные к боковым сторонам равны.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: 
+        ...
+	(*
+	=> nrel_main_idtf: [Утв.(равнобедренный треугольник; основание*; боковая сторона*; внутренний угол*; вершина*; синус*)] (* <- lang_ru;; *);;
+	<- sc_statement_of_unique_setting;;
+	-> rrel_main_key_sc_element: stat_isosceles_base_lateral_side_angle;;
+	-> rrel_key_sc_element: concept_isosceles_triangle; nrel_base; nrel_lateral_side; concept_angle; nrel_adjacent;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Основание с равнобедренного треугольника выражается через его боковую сторону а и угол у при вершине по фрмуле с=2*a*sin(y/2)] 
+			(* <- lang_ru;; *);; 
+		*);;
+	*);
+
+<- rrel_key_sc_element: 
+        ...
+	(*
+	=> nrel_main_idtf: [Утв.(равнобедренный треугольник; высота*; боковая сторона*; площадь*)] (* <- lang_ru;; *);;
+	<- sc_statement_of_unique_setting;;
+	-> rrel_main_key_sc_element: stat_isosceles_base_area_lateral_side;;
+	-> rrel_key_sc_element: concept_isosceles_triangle; nrel_base; nrel_area; nrel_lateral_side;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Высоты, опущенные на боковые стороны равнобедренного треугольника, выражаются через его боковую сторону а и площадь S по формуле h=2*S/a.] 
+			(* <- lang_ru;; *);; 
+		*);;
+	*);
+
+<- rrel_key_sc_element: 
+        ...
+	(*
+	=> nrel_main_idtf: [Утв.(равнобедренный треугольник; медиана*; высота*; вершина*; биссектриса*; внутренний угол*; боковая сторона*; основание*)] (* <- lang_ru;; *);;
+	<- sc_statement_of_unique_setting;;
+	-> rrel_main_key_sc_element: stat_isosceles_triangle_median_height_vertex_bisectrix_base_lateral_side;;
+	-> rrel_key_sc_element: concept_isosceles_triangle; nrel_median; nrel_bisectrix_of_angle; nrel_internal_angle; nrel_lateral_side; nrel_base; nrel_vertex;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Медиана и высота, проведенные из вершины равнобедренного треугольника, и биссектриса угла у при вершине выражаются через боковую сторону а и основание стреугольника по формуле m=h=l=0.5*(4*a*a-c*c)^0.5] 
+			(* <- lang_ru;; *);; 
+		*);;
+	*);
+
+<- rrel_key_sc_element: 
+        ...
+	(*
+	=> nrel_main_idtf: [Утв.(равнобедренный треугольник; радиус*; вписанность*; основание*; внутренний угол*; тангенс*)] (* <- lang_ru;; *);;
+	<- sc_statement_of_unique_setting;;
+	-> rrel_main_key_sc_element: stat_isosceles_triangle_radius_be_inscribes_base_internal_angle;;
+	-> rrel_key_sc_element: concept_isosceles_triangle; nrel_radius; nrel_be_inscribed; nrel_internal_angle: nrel_base;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Радиус окружности, вписанной в равнобедренный треугольник, выраается через его основание и угол а при основании по формуле r=c/2*tg(a/2)] 
+			(* <- lang_ru;; *);; 
+		*);;
+	*);;
+	
+concept_obtuse_triangle <- rrel_key_sc_element: 
+        ...
+	(*
+	=> nrel_main_idtf: [Опр.(тупоугольный треугольник)] (* <- lang_ru;; *);
+					   [Definition(obtuse triangle)] (* <- lang_en;; *);;
+	-> rrel_main_key_sc_element: d_concept_obtuse_triangle;;
+	<- sc_definition;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Тупоугольный треугольник – это треугольник, у которого хотя бы один внутренний угол является тупым углом.]
+			(* <- lang_ru;; *);
+			[Obtuse triangle is a triangle that has an internal angle greater than 90°.]
+			(* <- lang_en;; *);;
+		*);;
+	*);;
+	
+	
+nrel_area <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(поверхность; геометрическая фигура ограниченного размера; площадь*; 
+	положительная величина)] (* <- lang_ru;; *);;
+	<- sc_definitional_statement;;
+	-> rrel_main_key_sc_element: stat_area_geometric_figure_positive_number;;
+	-> rrel_main_key_sc_element: nrel_area; concept_geometric_figure;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Площадь ограниченной геометрической фигуры всегда является положительной величиной.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(поверхность; геометрическая фигура ограниченного размера; конгруэнтность*; площадь*)] (* <- lang_ru;; *);;
+	<- sc_theorem;;
+	-> rrel_main_key_sc_element: stat_geometric_figure_congruence_area;;
+	-> rrel_key_sc_element: concept_geometric_figure;  nrel_area; nrel_congruence;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Конгруэнтные фигуры имеют равные площади.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(поверхность; геометрическая фигура ограниченного размера; разбиение множества*; площадь*; сумма*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	-> rrel_main_key_sc_element: stat_area_geometric_figure_non_intersection_parts;;
+	-> rrel_key_sc_element: concept_geometric_figure; nrel_area; nrel_sum;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Если фигура состоит из нескольких не пересекающихся частей, то площадь фигуры равна сумме площадей ее частей.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+	
+nrel_be_inscribed <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(вписанность*; окружность)] (* <- lang_ru;; *);; 
+	<- sc_definitional_statement;;
+	-> rrel_key_sc_element: concept_geometric_figure; concept_circle; nrel_be_inscribed; nrel_vertex;;
+	-> rrel_main_key_sc_element: stat_geometric_figure_be_inscribed_circle_vertex
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Геометрическая фигура, все вершины которой принадлежат окружности, называется вписанной в окружность.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(прямоугольник; диагональ*; окружность; вписанность*; центр*)] (* <- lang_ru;; *);;
+	-> rrel_main_key_sc_element: stat_center_circle_around_square;;
+	-> rrel_key_sc_element: concept_rectangle; nrel_diagonal; concept_circle; nrel_center;;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Центр окружности, описанной около прямоугольника или квадрата, лежит в точке пересечения диагоналей.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+	
+nrel_be_described <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр.(описанность*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	-> rrel_key_sc_element: nrel_side; nrel_be_described; nrel_tangent; concept_polygon; concept_circle;;
+	-> rrel_main_key_sc_element: d_nrel_be_described;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Описанным около окружности называется такой n-угольник, все стороны которого касаются данной окружности.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+nrel_bisectrix_of_triangle <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(треугольник; биссектриса*; внутренний угол*; внешний угол*; смежные углы*; перпендикулярность*)] (* <- lang_ru;; *);; 
+	<- sc_theorem;;
+	-> rrel_main_key_sc_element: stat_triangle_bisectrix_of_triangle_internal_angle_adjacent_perpendicular;;
+	-> rrel_key_sc_element: concept_triangle; nrel_bisectrix_of_triangle; nrel_internal_angle; nrel_adjacent; nrel_perpendicular;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Биссектрисы внутреннего и смежного с ним внешнего угла треугольника взаимно перпендикулярны.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(треугольник; биссектриса*; внутренний угол; площадь*; пропорциональность*; сторона*)] (* <- lang_ru;; *);;
+	<- sc_theorem;;
+	-> rrel_main_key_sc_element: stat_triangle_bisectrix_of_triangle_internal_angle_area_side_adjacent;;
+	-> rrel_key_sc_element: concept_triangle; nrel_bisectrix_of_triangle; nrel_internal_angle; nrel_area; nrel_adjacent; nrel_side;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Биссектриса любого внутреннего угла треугольника делит треугольник на две части, площади которых пропорциональны прилежащим к биссектрисе сторонам треугольника.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(треугольник; биссектриса*; внутренний угол*; геометрическая точка; центр окружности*)] (* <- lang_ru;; *);;
+	<- sc_theorem;;
+	-> rrel_main_key_sc_element: stat_triangle_internal_angle_geometric_point_circle_center;;
+	->rrel_key_sc_element: concept_triangle; nrel_bisectrix_of_triangle; concept_circle; nrel_be_inscribed;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Биссектрисы внутренних углов треугольника пересекаются в одной точке, являющейся центром вписанной в треугольник окружности.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(треугольник; биссектриса*; внешний угол*; прямая; внутренний угол*; геометрическая точка; центр окружности*)] (* <- lang_ru;; *);;
+	<- sc_theorem;;
+	-> rrel_main_key_sc_element: stat_bisectrix_of_internal_angle_staright_line_vertex_center_be_inscribed_circle;;
+	-> rrel_key_sc_element: concept_triangle; nrel_bisectrix_of_triangle; nrel_internal_angle; nrel_external_angle; concept_straight_line; concept_geometric_point; concept_circle;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Три прямые, на которых лежат биссектрисы внешних углов треугольника, выходящие из двух любых его вершин, и биссектриса внутреннего угла треугольника, выходящая из третьей его вершины, пересекаются в одной точке, которая является центром невписанной окружности.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(треугольник; биссектриса*; внешний угол*; серединный перпендикуляр*; внутренний угол*; геометрическая точка; окружность)] (* <- lang_ru;; *);;
+	<- sc_theorem;;
+	-> rrel_main_key_sc_element: stat_bisectrix_of_triangle_straight_line_middle_perpendicular;;
+	-> rrel_key_sc_element: concept_triangle; nrel_bisectrix_of_triangle; nrel_internal_angle; nrel_external_angle; nrel_middle_perpendicular; concept_circle; concept_geometric_point;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Прямые, на которых лежат биссектрисы внутреннего и внешнего углов треугольника, выходящие из одной вершины, пересекаются с серединным к противолежащей стороне перпендикуляром в диаметрально противоположных точках описанной около треугольника окружности.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+nrel_center_line <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(средняя линия*; треугольник; середна*; сторона*; параллельность*)] (* <- lang_ru;; *);; 
+	-> rrel_main_key_sc_element: stat_center_line_parallelism_side;;
+	-> rrel_key_sc_element: nrel_center_line; concept_triangle; nrel_side; nrel_parallelism;;
+	<- sc_theorem;;   
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Средняя линия треугольника, соединяющая середины двух сторон, параллельна третьей стороне и равна её половине.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+     	...
+	(*
+	=> nrel_main_idtf: [Утв.(средняя линия*; треугольник; конгруэнтность*; подобие*)] (* <- lang_ru;; *);;
+	<- sc_theorem;;  
+	-> rrel_main_key_sc_element: stat_center_line_congruence_triangle_similarity;;
+	-> rrel_key_sc_element: nrel_center_line; concept_triangle; nrel_congruence; nrel_similarity;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[При проведении всех трёх средних линий образуются 4 равных треугольника, подобных исходному и меньше его в 2 раза.]
+			(* <- lang_ru;;	*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+     	...
+	(*
+	=> nrel_main_idtf: [Утв.(средняя линия*; треугольник; конгруэнтность*; подобие*; площадь*)] (* <- lang_ru;; *);;
+	<- sc_theorem;;   
+	-> rrel_main_key_sc_element: stat_center_line_triangle_area_similarity;;
+	-> rrel_key_sc_element: nrel_center_line; concept_triangle; nrel_similarity; nrel_area; nrel_congruence;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Средняя линия отсекает треугольник, который подобен данному, а его площадь равна одной четверти площади исходного треугольника.]
+			(* <- lang_ru;;	*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+     	...
+	(*
+	=> nrel_main_idtf: [Утв.(средняя линия*; четырехугольник; угол; диагональ*; конгруэнтность*)] (* <- lang_ru;; *);;
+	<- sc_theorem;;   
+	-> rrel_main_key_sc_element: stat_convex_polygon_center_line_congruence_angle_diagonal;;
+	-> rrel_key_sc_element: concept_convex_polygon; nrel_center_line; nrel_congruence; nrel_diagonal; concept_angle;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Если в выпуклом четырехугольнике средняя линия образует равные углы с диагоналями четырехугольника, то диагонали равны.]
+			(* <- lang_ru;;	*);;
+		*);;
+	*);;
+	
+nrel_center_of_regular_polygon <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(правильный многоугольник; быть вписанным*; окружность; быть описанным*; центр*)] (* <- lang_ru;; *);;
+	<- sc_theorem;;
+	-> rrel_main_key_sc_element: stat_center_regular_polygon_circle_be_inscribed;;
+	-> rrel_key_sc_element: concept_regular_polygon; nrel_center; nrel_be_described; nrel_be_inscribed; concept_circle;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Центр правильного многоугольника совпадает с центрами вписанной и описанной окружностей.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+	
+nrel_median <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(треугольник; медиана*; пересечение множеств*; геометрическая точка)] (* <- lang_ru;; *);;
+	<- sc_theorem;;
+	-> rrel_main_key_sc_element: stat_triangle_median_intersection_geometric_point;;
+	-> rrel_key_sc_element: concept_triangle; nrel_median; nrel_intersection; concept_geometric_point;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Все медианы треугольника пересекаются в одной точке.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:	
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(треугольник; медиана*; вершина*; длина*)] (* <- lang_ru;; *);
+					   [Statement(triangle; median*; vertex*; length*)] (* <- lang_en;; *);;
+	-> rrel_main_key_sc_element: stat_triangle_median_intersection_point_vertex;;
+	-> rrel_key_sc_element: concept_triangle; nrel_median; nrel_vertex; nrel_length;;
+	<- sc_theorem;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Длины медиан треугольника делятся точкой пересечения в отношении 2:1, считая от вершины.]
+			(* <- lang_ru;; *);
+			[The intersection point of medians divides each of them in the ratio 2:1 from the vertex.]
+			(* <- lang_en;; *);;
+		*);;
+	*);
+	
+<- rrel_key_sc_element:
+    	...
+	(*
+	=> nrel_main_idtf: [Утв.(треугольник; медиана*; сторона*; противолежащий*; длина*)] (* <- lang_ru;; *);;
+	<- sc_statement_of_unique_setting;;
+	-> rrel_main_key_sc_element: stat_triangle_median_opposite_side_length;;
+	-> rrel_key_sc_element: concept_triangle; nrel_median; nrel_length; nrel_side; nrel_opposite;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+        -> rrel_example: 
+			[Для любой медианы имеет место следующее числовое соотношение: m^2 = (2b^2+2c^2-a^2)/4, где m - длина указанной медианы, a - длина стороны, к которой проведена указанная медиана, b, с -длины сторон указанного треугольника.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+     	...
+	(*
+	=> nrel_main_idtf: [Утв.(треугольник; медиана*; сторона*; длина)] (* <- lang_ru;; *);;
+	<- sc_statement_of_unique_setting;;
+	-> rrel_main_key_sc_element: stat_triangle_median_length;;
+	-> rrel_key_sc_element: concept_triangle; nrel_median; nrel_side; nrel_length;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+        -> rrel_example: 
+			[Для любого треугольника имеет следующее место соотношение: (m_a)^2 + (m_b)^2 + (m_c)^2 = 3(a^2+b^2+c^2)/4, где m_a,m_b,m_c - длины медиан указанного треугольника, a, b, c - длины сторон указанного треугольника.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+     	...
+	(*
+	=> nrel_main_idtf: [Утв.(треугольник; медиана*; равновеликие*)] (* <- lang_ru;; *);;
+	<- sc_theorem;;
+	-> rrel_main_key_sc_element: stat_median_triangle_equal_sized;;
+	-> rrel_key_sc_element: concept_triangle; nrel_median; nrel_equal_sized;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Каждая медиана делит треугольник на два равновеликих треугольника.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+     	...
+	(*
+	=> nrel_main_idtf: [Утв.(треугольник; отрезок; медиана*; параллельность*)] (* <- lang_ru;; *);;
+	<- sc_theorem;;
+	-> rrel_main_key_sc_element: stat_triangle_segment_side_parallelism_median_middle;;
+	-> rrel_key_sc_element: concept_triangle; nrel_median; concept_segment; nrel_parallelism; nrel_side; nrel_middle;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Если отрезок с концами на двух сторонах треугольника параллелен третьей стороне треугольника, к которой проведена медиана, то этот отрезок делится медианой пополам.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+     	...
+	(*
+	=> nrel_main_idtf: [Утв.(треугольник; медиана*; равновеликие*)] (* <- lang_ru;; *);;
+	<- sc_theorem;;
+	-> rrel_main_key_sc_element: stat_triangle_median_equal_sized_triangles;;
+	-> rrel_key_sc_element: concept_triangle; nrel_median; nrel_equal_sized;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Три медианы треугольника делят его на шесть равновеликих треугольника.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+nrel_middle_perpendicular <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(серединный перпендикуляр*; прямая; геометрическая точка; граничная точка; отрезок)] (* <- lang_ru;; *);;
+	<- sc_theorem;;
+	-> rrel_main_key_sc_element: stat_middle_perpendicular_geometric_point_straight_line_segment;;
+	-> rrel_key_sc_element: concept_geometric_point; nrel_middle_perpendicular; concept_straight_line; concept_segment;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Любая геометрическая точка, лежащая на прямой, являющейся серединным перпендикуляром, равноудалена от граничных точек данного отрезка.]
+			(* <- lang_ru;; *);;		
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(серединный перпендикуляр*; пересекающиеся прямые*; сторона*; описанность*; окружность; многоугольник; геометрическая точка; центр*)] (* <- lang_ru;; *);;
+	<- sc_theorem;;
+	-> rrel_main_key_sc_element: stat_middle_perpendicular_side_be_inscribed_polygon_intersection_geometric_point_centet_circle;;
+	-> rrel_key_sc_element: concept_circle; concept_polygon; nrel_middle_perpendicular; concept_geometric_point; nrel_center; nrel_be_inscribed; nrel_side;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Прямые, являющиеся серединными перпендикулярами к сторонам описываемого окружностью многоугольника, пересекаются в одной геометрической точке — центре описанной окружности.]
+			(* <- lang_ru;; *);;		
+		*);;
+	*);;
+	
+nrel_similarity <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(прямая; луч; отрезок; подобие*)] (* <- lang_ru;; *);;
+	<- sc_theorem;;
+	-> rrel_main_key_sc_element: stat_similarity_straight_line_segment_half_line;;
+	-> rrel_key_sc_element: concept_straight_line; concept_segment; nrel_similarity; concept_ray;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Преобразование подобия переводит прямые в прямые, полупрямые в полупрямые, отрезки в отрезки.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(луч; планарный угол; подобие*)] (* <- lang_ru;; *);;
+	<- sc_theorem;;
+	-> rrel_main_key_sc_element: stat_similarity_angle_ray;;
+	-> rrel_key_sc_element: concept_ray; nrel_similarity; concept_angle;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Преобразование подобия сохраняет углы между полупрямыми.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(многоугольник; сторона*; внутренний угол*; конгруэнтность*; длина*)] (* <- lang_ru;; *);;
+	<- sc_theorem;;
+	-> rrel_main_key_sc_element: stat_similarity_polygon_internal_angle_congruence;;
+	-> rrel_key_sc_element: nrel_similarity; nrel_internal_angle; nrel_congruence; concept_polygon;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[У подобных многоугольников соответствующие внутренние углы конгруэнтны, а соответствующие стороны пропорциональны.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+		
+nrel_bisectrix_of_angle <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр.(биссектриса угла*)] (* <- lang_ru;; *);;
+	-> rrel_main_key_sc_element: d_nrel_bisectrix_of_angle;;
+	-> rrel_key_sc_element: nrel_bisectrix_of_angle; concept_ray; nrel_vertex_of_angle; concept_angle; nrel_side;;;
+	<- sc_definition;;  
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Биссектриса угла - луч, который исходит из вершины угла, проходит между его сторонами и делит угол пополам.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+	
+nrel_center_of_circle <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf:[Опр.(центр окружности*)](* <- lang_ru;; *);; 
+	-> rrel_main_key_sc_element: d_nrel_center_of_circle;;
+	-> rrel_key_sc_element: nrel_center_of_circle; concept_geometric_point; concept_circle; nrel_distance;;
+	<- sc_definition;;   
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Центр окружности - точка, от которой любые точки, принадлежащие окружности, удалены на равные расстояния.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+	
+nrel_median <- rrel_key_sc_element: 
+    ...
+	(*
+	=> nrel_main_idtf: [Опр.(медиана*)] (* <- lang_ru;; *);;
+	-> rrel_main_key_sc_element: d_nrel_median;;
+	-> rrel_key_sc_element: nrel_median; concept_segment; nrel_vertex; concept_triangle; nrel_vertex_of_polygon; nrel_opposite; nrel_side; nrel_middle;;
+	<- sc_definition;;   
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Медиана - отрезок, соединяющий вершину треугольника с серединой противолежащей стороны.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+	
+nrel_middle_perpendicular <- rrel_key_sc_element: 
+	...
+	(*
+	=> nrel_main_idtf: [Опр.(серединный перпендикуляр*)] (* <- lang_ru;; *);;
+	-> rrel_main_key_sc_element: d_nrel_middle_perpendicular;;
+	-> rrel_key_sc_element: nrel_middle_perpendicular; concept_straight_line; nrel_intersection; nrel_middle; concept_segment; nrel_perpendicularity;;
+	<- sc_definition;;   
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Серединный перпендикуляр - прямая, проходящая через середину отрезка перпендикулярно к нему.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+	
+nrel_opposite <- rrel_key_sc_element: 
+     	...
+	(*
+	=> nrel_main_idtf: [Опр.(противолежащий*)] (* <- lang_ru;; *);;
+	-> rrel_main_key_sc_element: d_nrel_opposite;;
+	-> rrel_key_sc_element: nrel_opposite; nrel_internal_angle; concept_polygon; concept_segment; nrel_side;;
+	<- sc_definition;;   
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Противолежащий - отношение, связывающее внутренний угол многоугольника и отрезок, являющийся стороной этого многоугольника.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+	
+nrel_similarity <- rrel_key_sc_element: 
+	...
+	(*
+	=> nrel_main_idtf: [Опр.(подобие*)] (* <- lang_ru;; *);;
+	-> rrel_main_key_sc_element: d_nrel_similarity;;
+	-> rrel_key_sc_element: nrel_similarity; concept_polygon; nrel_side; concept_angle; nrel_congruence;; 
+	<- sc_definition;;   
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Подобные многоугольники -  многоугольники, у которых соответствующие стороны пропорциональны, а соответствующие углы равны.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+	
+
+
+
+
+
+

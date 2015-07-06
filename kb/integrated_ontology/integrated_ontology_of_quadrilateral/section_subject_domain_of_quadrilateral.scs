@@ -1,0 +1,20 @@
+section_subject_domain_of_quadrilateral 
+	<- sc_node_struct;
+=> nrel_main_idtf:
+	[Раздел. Предметная область четырехугольников]
+	(* <- lang_ru;; *);
+	[Section. Subject domain of quadrilaterals]
+	(* <- lang_en;; *);;
+
+section_subject_domain_of_quadrilateral  <= nrel_section_decomposition:
+	{
+	subject_domain_of_quadrilaterals;
+	structural_specification_of_subject_domain_of_quadrilateral ;
+	terminological_ontology_of_subject_domain_of_quadrilateral ;
+	set_theoretic_ontology_of_subject_domain_of_quadrilateral ;
+	logical_ontology_of_subject_domain_of_quadrilateral ;
+	logical_hierarchy_of_concepts_of_subject_domain_of_quadrilateral ;
+	logical_hierarchy_of_statements_of_subject_domain_of_quadrilateral ;
+	tasks_and_solutions_ontology_subject_domain_of_quadrilateral;
+	classes_of_tasks_and_ways_of_solutions_subject_domain_of_quadrilateral
+	};;

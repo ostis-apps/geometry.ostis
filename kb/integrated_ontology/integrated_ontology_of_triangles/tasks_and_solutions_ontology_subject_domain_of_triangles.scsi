@@ -2,7 +2,9 @@ concept_isosceles_triangle <- rrel_key_sc_element:
 	task_of_finding_square_for_isosceles_triangle_use_base_and_length_of_medians
 	(*
 	=> nrel_main_idtf: [Задача. Нахождение площади равнобедренного треугольника через 
-	основание и длины медиан, проведённых к боковым сторонам](* <- lang_ru;; *);;
+	основание и длины медиан, проведённых к боковым сторонам](* <- lang_ru;; *);
+	[Task. Finding the area of an isosceles triangle by
+the base and the length of the medians to the lateral sides.](* <- lang_en;; *);;
 	<- sc_task;;
 	<= nrel_sc_text_translation: 
 		...
@@ -10,13 +12,17 @@ concept_isosceles_triangle <- rrel_key_sc_element:
         	-> rrel_example: 
 			[В равнобедренном треугольнике длины медиан, проведенных к боковым сторонам, равны 30, 
 			длина основания равна 32. Найти площадь треугольника.]
-			(* <- lang_ru;; *);;
+			(* <- lang_ru;; *);
+			[ The lengths of medians to the lateral sides are 30, the length of the base is 32. Find the area of a triangle.]
+			(* <- lang_en;; *);;
 		*);;
 	=> nrel_solution:
 		...
 		(*
 		=> nrel_main_idtf: [Решение. Нахождение площади равнобедренного треугольника через основание 
-		и длины медиан, проведённых к боковым сторонам](* <- lang_ru;; *);;
+		и длины медиан, проведённых к боковым сторонам.](* <- lang_ru;; *);
+		[Solution. Finding the area of an isosceles triangle by
+the base and the length of the medians to the lateral sides.](* <- lang_en;; *);;
 		<= nrel_using_statements:
 			{
 			stat_triangle_area_multiplication_height_base;
@@ -30,13 +36,16 @@ concept_isosceles_triangle <- rrel_key_sc_element:
 task_of_finding_square_for_isosceles_triangle_use_base_and_length_of_medians <- sc_node_struct;;
 	
 stat_triangle_area_multiplication_height_base <- sc_node_struct;
-=> nrel_main_idtf: [Форм. Утв.(треугольник; площадь*; высота*; основание*)] (* <- lang_ru;; *);;
+=> nrel_main_idtf: [Форм. Утв.(треугольник; площадь*; высота*; основание*)] (* <- lang_ru;; *);
+		           [Formalized Statement(triangle; area*; height*; base*)] (* <- lang_en;; *);;
 
 stat_hypotenuse_sum_cathetus <- sc_node_struct;
-=> nrel_main_idtf: [Форм. Теорема Пифагора] (* <- lang_ru;; *);;
+=> nrel_main_idtf: [Форм. Теорема Пифагора] (* <- lang_ru;; *);
+				   [Formalized. Pythagoras Theorem] (* <- lang_en;; *);;
 
 stat_triangle_median_intersection_point_vertex <- sc_node_struct;
-=> nrel_main_idtf: [Форм. Утв.(треугольник; медиана*; вершина*; длина*)] (* <- lang_ru;; *);;
+=> nrel_main_idtf: [Форм. Утв.(треугольник; медиана*; вершина*; длина*)] (* <- lang_ru;; *);
+				   [Formalized Statement(triangle; median*; vertex*; length*)] (* <- lang_en;; *);;
 	
 	
 	

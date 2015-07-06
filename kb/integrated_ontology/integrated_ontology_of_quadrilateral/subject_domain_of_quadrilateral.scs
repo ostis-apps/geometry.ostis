@@ -1,0 +1,49 @@
+tasks_and_solutions_ontology_subject_domain_of_quadrilateral <- sc_node_struct;
+	=> nrel_main_idtf:
+	[Онтология задач и решений задач Предметной области четырехугольников]
+	(* <- lang_ru;; *);
+	[Ontology of tasks and solutions of subject domain of quadrilaterals]
+	(* <- lang_en;; *);;
+	
+tasks_and_solutions_ontology_subject_domain_of_quadrilateral = [*^"file://tasks_and_solutions_ontology_subject_domain_of_quadrilateral.scsi"*];;
+
+classes_of_tasks_and_ways_of_solutions_subject_domain_of_quadrilateral <- sc_node_struct;
+	=> nrel_main_idtf:
+	[Онтология классов задач и способов решения задач Предметной области четырехугольников]
+	(* <- lang_ru;; *);
+	[Ontology of classes of tasks and ways of their solution of subject domain of quadrilaterals]
+	(* <- lang_en;; *);;
+	
+classes_of_tasks_and_ways_of_solutions_subject_domain_of_quadrilateral = [*^"file://classes_of_tasks_and_ways_of_solutions_subject_domain_of_quadrilateral.scsi"*];;
+
+subject_domain_of_quadrilaterals <- sc_node_struct;;
+subject_domain_of_quadrilaterals
+=> nrel_main_idtf:
+	[Предметная область четырехугольников]
+	(* <- lang_ru;; *);
+	[Subject domain of quadrilaterals]
+	(* <- lang_en;; *);
+	
+<- subject_domain;
+
+=> nrel_ontology:
+	classes_of_tasks_and_ways_of_solutions_subject_domain_of_quadrilateral;
+	logical_hierarchy_of_concepts_of_subject_domain_of_quadrilateral;
+	logical_hierarchy_of_statements_of_subject_domain_of_quadrilateral;
+	logical_ontology_of_subject_domain_of_quadrilateral;
+	set_theoretic_ontology_of_subject_domain_of_quadrilateral;
+	tasks_and_solutions_ontology_subject_domain_of_quadrilateral;
+	terminological_ontology_of_subject_domain_of_quadrilateral;
+
+<- rrel_key_sc_element: 
+        ...
+	(*
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Предметная область четырехугольников - предметная область, объектами исследования которой являются четырехугольники различных типов.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;

@@ -1,0 +1,45 @@
+terminological_ontology_of_subject_domain_of_planar_figures
+<- terminological_ontology;
+=> nrel_main_idtf:
+	[Терминологическая онтология Предметной области планарных фигур]
+	(* <- lang_ru;; *);
+	[Terminological ontology of subject domain of planar_figures]
+	(* <- lang_en;; *);;
+
+terminological_ontology_of_subject_domain_of_planar_figures = [*^"file://terminological_ontology_of_subject_domain_of_planar_figures.scsi"*];;
+
+rrel_key_sc_element -> (terminological_ontology_of_subject_domain_of_planar_figures -> concept_planar_figure)
+(*
+	=> nrel_key_sc_element_base_order: (terminological_ontology_of_subject_domain_of_planar_figures -> concept_planar_angle)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_base_order: (terminological_ontology_of_subject_domain_of_planar_figures  -> concept_polygon)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_base_order: (terminological_ontology_of_subject_domain_of_planar_figures  -> concept_planar_line)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_base_order: (terminological_ontology_of_subject_domain_of_planar_figures  -> nrel_boundary_point)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_base_order: (terminological_ontology_of_subject_domain_of_planar_figures  -> nrel_parallelism)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_base_order: (terminological_ontology_of_subject_domain_of_planar_figures  -> nrel_secant)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_base_order: (terminological_ontology_of_subject_domain_of_planar_figures -> nrel_tangent)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_base_order: (terminological_ontology_of_subject_domain_of_planar_figures -> nrel_parallelism)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_base_order: (terminological_ontology_of_subject_domain_of_planar_figures -> nrel_perpendicularity)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_base_order: (terminological_ontology_of_subject_domain_of_planar_figures -> nrel_middle)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_base_order: (terminological_ontology_of_subject_domain_of_planar_figures -> nrel_length)
+	(* <- rrel_key_sc_element;; *);;
+*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;

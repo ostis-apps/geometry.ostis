@@ -1,0 +1,37 @@
+concept_geometric_figure <= nrel_using_constants:
+	{
+	concept_geometric_point
+	};;
+
+concept_polygon <= nrel_using_constants:
+	{
+	concept_polygon; 
+	concept_geometric_figure; 
+	concept_polyline; 
+	nrel_intersection; 
+	concept_plane
+	};;	
+
+concept_circle <= nrel_using_constants:
+	{
+	concept_geometric_figure; 
+	concept_geometric_point; 
+	concept_plane; 
+	nrel_distance; 
+	nrel_centre
+	};;
+	
+concept_angle <= nrel_using_constants:
+	{
+	concept_geometric_figure;
+	concept_ray; 
+	nrel_vertex
+	};;
+
+nrel_be_described <= nrel_using_constants:
+	{
+	nrel_side;  
+	nrel_tangent; 
+	concept_polygon; 
+	concept_circle
+	};;

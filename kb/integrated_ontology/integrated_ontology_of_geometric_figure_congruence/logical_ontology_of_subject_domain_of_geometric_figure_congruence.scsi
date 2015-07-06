@@ -1,0 +1,46 @@
+nrel_congruence <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр.(конгруэнтность*)] (* <- lang_ru;; *);;  
+	-> rrel_main_key_sc_element: d_nrel_congruence;;
+	-> rrel_key_sc_element: nrel_congruence; concept_geometric_point; concept_geometric_figure;;
+	<- sc_definition;;   
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Конгруэнтностью называется множество соответствий между любыми парами точек одной геометрической фигуры и соответствующими парами точек другой геометрической фигуры такое, что расстояние между парами этих точек равны.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+	
+<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(поверхность; геометрическая фигура ограниченного размера; конгруэнтность*; площадь*)] (* <- lang_ru;; *);;
+	<- sc_theorem;;
+	-> rrel_main_key_sc_element: stat_geometric_figure_congruence_area;;
+	-> rrel_key_sc_element: concept_geometric_figure;  nrel_area; nrel_congruence;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Конгруэнтные фигуры имеют равные площади.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+	
+nrel_congruence_of_pair_of_points <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Поясн.(конгруэнтность пар точек*)] (* <- lang_ru;; *);; 
+	-> rrel_key_sc_element: concept_angle; nrel_secant; concept_straight_line;;;
+	<- sc_definition;;   
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Конгруэнтность пары точек {t1, t2} и пары точек {t3, t4} -  равенство расстояния между точками t1 и t2 и расстояния между точками t3 и t4.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;

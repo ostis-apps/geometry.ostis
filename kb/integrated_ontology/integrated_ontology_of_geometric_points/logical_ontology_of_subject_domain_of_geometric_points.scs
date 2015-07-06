@@ -1,0 +1,58 @@
+logical_ontology_of_subject_domain_of_geometric_points
+<- logical_ontology;
+=> nrel_main_idtf:
+	[Логическая онтология Предметной области геометрических точек]
+	(* <- lang_ru;; *);
+	[Logical ontology of subject domain of geometric points]
+	(* <- lang_en;; *);;
+	
+logical_hierarchy_of_concepts_of_subject_domain_of_geometric_points
+=> nrel_main_idtf:
+	[Логическая иерархия понятий Предметной области геометрических точек]
+	(* <- lang_ru;; *);
+	[Logical hierarchy of concepts of subject domain of geometric points]
+	(* <- lang_en;; *);;
+	
+logical_hierarchy_of_statements_of_subject_domain_of_geometric_points
+=> nrel_main_idtf:
+	[Логическая иерархия высказываний Предметной области геометрических точек]
+	(* <- lang_ru;; *);
+	[Logical hierarchy of statements of subject domain of geometric points]
+	(* <- lang_en;; *);;
+	
+logical_ontology_of_subject_domain_of_geometric_points => nrel_metaknowledge:
+	logical_hierarchy_of_concepts_of_subject_domain_of_triangles;;
+	
+logical_ontology_of_subject_domain_of_geometric_points => nrel_metaknowledge:
+	logical_hierarchy_of_statements_of_subject_domain_of_triangles;;
+
+logical_hierarchy_of_concepts_of_subject_domain_of_geometric_points = [*^"file://logical_hierarchy_of_concepts_of_subject_domain_of_geometric_points.scsi"*];;
+
+logical_hierarchy_of_statements_of_subject_domain_of_geometric_points = [*^"file://logical_hierarchy_of_statements_of_subject_domain_of_geometric_points.scsi"*];;
+
+logical_ontology_of_subject_domain_of_geometric_points = [*^"file://logical_ontology_of_subject_domain_of_geometric_points.scsi"*];;
+
+rrel_key_sc_element -> (logical_ontology_of_subject_domain_of_geometric_points -> concept_geometric_point)
+(*
+	=> nrel_key_sc_element_base_order: (logical_ontology_of_subject_domain_of_geometric_points -> concept_pair_of_points)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_base_order: (logical_ontology_of_subject_domain_of_geometric_points -> concept_non_rectlinear_three_tuple_of_points)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_base_order: (logical_ontology_of_subject_domain_of_geometric_points -> concept_triple_of_points)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_base_order: (logical_ontology_of_subject_domain_of_geometric_points -> concept_rectilinear_three_of_points)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_base_order: (logical_ontology_of_subject_domain_of_geometric_points -> nrel_between)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_base_order: (logical_ontology_of_subject_domain_of_geometric_points -> nrel_distance)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_base_order: (logical_ontology_of_subject_domain_of_geometric_points -> nrel_congruence_of_pair_of_points)
+	(* <- rrel_key_sc_element;; *);;
+*);;*);;*);;*);;*);;*);;*);;
+
