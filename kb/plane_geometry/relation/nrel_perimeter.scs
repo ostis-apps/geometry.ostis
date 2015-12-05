@@ -12,11 +12,11 @@ nrel_perimeter => nrel_idtf: [периметр геометрической фи
 
 nrel_perimeter => nrel_idtf: [быть периметром геометрической фигуры*] (* <- lang_ru;; *);;
 
-nrel_median <- sc_relation;;
+nrel_perimeter <- sc_relation;;
 
-nrel_median <- binary_relation;;
+nrel_perimeter <- binary_relation;;
 
-nrel_median <- oriented_relation;;
+nrel_perimeter <- oriented_relation;;
 
 nrel_perimeter => nrel_definitional_domain: 
 	...
