@@ -1,0 +1,22 @@
+ui_menu_agent_of_appointments_expert <- ui_user_command_class_atom; ui_user_command_class_view_kb;;
+
+ui_menu_agent_of_appointments_expert => nrel_main_idtf: 
+	[назначение эксперта]
+	(* <- lang_ru;; *);
+	[to appointments expert] 
+	(* <- lang_en;; *);;
+
+ui_menu_agent_of_appointments_expert => ui_nrel_command_template:
+	[*
+		question_appointments_expert _-> ._question_appointments_expert_instance
+			(*
+			_-> ui_arg_1;;				
+			*);;
+		._question_appointments_expert_instance _<- question;;
+	*];;
+
+ui_menu_agent_of_appointments_expert => ui_nrel_command_lang_template: 
+	[Команда назначить экспертом: $ui_arg_1] 
+	(* <- lang_ru;; *);
+	[Command to appointments expert: $ui_arg_1] 
+	(* <- lang_en;; *);;

@@ -1,0 +1,22 @@
+ui_menu_agent_of_appointments_manager <- ui_user_command_class_atom; ui_user_command_class_view_kb;;
+
+ui_menu_agent_of_appointments_manager => nrel_main_idtf: 
+	[назначение менеджера]
+	(* <- lang_ru;; *);
+	[to appointments manager] 
+	(* <- lang_en;; *);;
+
+ui_menu_agent_of_appointments_manager => ui_nrel_command_template:
+	[*
+		question_appointments_manager _-> ._question_appointments_manager_instance
+			(*
+			_-> ui_arg_1;;				
+			*);;
+		._question_appointments_manager_instance _<- question;;
+	*];;
+
+ui_menu_agent_of_appointments_manager => ui_nrel_command_lang_template: 
+	[Команда назначить менеджера: $ui_arg_1] 
+	(* <- lang_ru;; *);
+	[Command to appointments manager: $ui_arg_1] 
+	(* <- lang_en;; *);;
