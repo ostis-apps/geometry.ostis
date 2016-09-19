@@ -1,0 +1,24 @@
+ui_menu_file_for_search_members_all_requests <- ui_user_command_class_atom; ui_user_command_class_view_kb; ui_one_argument_command_class;;
+
+ui_menu_file_for_search_members_all_requests => nrel_main_idtf: 
+	[Запрос на поиск всех предложений пользователя] 
+	(* <- lang_ru;; *);;
+
+ui_menu_file_for_search_members_all_requests => nrel_main_idtf: 
+	[Request of Search all requests] 
+	(* <- lang_en;; *);;
+
+ui_menu_file_for_search_members_all_requests => ui_nrel_command_template:
+	[*
+		question_of_search_members_all_requests _-> ._question_of_search_members_all_requests_instance
+			(*
+			_-> ui_arg_1;;				
+			*);;
+		._question_of_search_members_all_requests_instance _<- question;;
+	*];;
+
+ui_menu_file_for_search_members_all_requests => ui_nrel_command_lang_template: 
+	[Запрос на поиск всех предложений пользоватеем: $ui_arg_1] 
+	(* <- lang_ru;; *);;
+
+
