@@ -1,0 +1,36 @@
+section_sb_rhombs
+=> nrel_main_idtf:
+	[Раздел. Ромб. Свойства и признаки ромба]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Section. Sb rhombs]
+	(* <- lang_en;; *);
+
+<- atomic_section;
+
+<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://html/sb_rhombs_ru.html"
+			(* <- lang_ru;; *);;
+		*);
+
+
+=> nrel_summary:
+	...
+	(*
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example:
+				[This section discusses properties of rhombs.]
+				(* <- lang_en;; *);;
+			*);;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example:[Раздел описывает свойства и признаки ромба.]
+				(* <- lang_ru;; *);;
+			*);;
+	*);;
