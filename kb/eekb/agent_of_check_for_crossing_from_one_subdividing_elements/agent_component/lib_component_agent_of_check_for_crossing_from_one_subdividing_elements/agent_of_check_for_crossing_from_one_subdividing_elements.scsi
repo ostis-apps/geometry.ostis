@@ -1,0 +1,819 @@
+agent_of_check_for_crossing_from_one_subdividing_elements
+=> nrel_main_idtf:
+	[агентная scp-программа проверки наличия непустого пересечения у элементов одного разбиения] (* <- lang_ru;; *);
+	[agent scp-program of check for crossing from one partition elements] (* <- lang_en;; *);
+	<- agent_scp_program;;
+
+scp_program -> agent_of_check_for_crossing_from_one_subdividing_elements
+	(*
+	-> rrel_params: .agent_of_check_for_crossing_from_one_subdividing_elements_params
+		(*
+		-> rrel_1: rrel_in: _event;;
+		-> rrel_2: rrel_in: _input_arc;;
+		*);;
+
+	-> rrel_operators: .agent_of_check_for_crossing_from_one_subdividing_elements_set
+		(*
+		-> rrel_init:  .agent_of_check_for_crossing_from_one_subdividing_elements1A
+			(*
+		  	<- searchElStr3;;
+		  	-> rrel_1: rrel_assign: rrel_scp_var: _temp;;
+		  	-> rrel_2: rrel_fixed: rrel_scp_var: _input_arc;;
+		  	-> rrel_3: rrel_assign: rrel_scp_var: _quest;;
+
+		 	=> nrel_goto: .agent_of_check_for_crossing_from_one_subdividing_elements1B;;
+			*);;
+		
+		->.agent_of_check_for_crossing_from_one_subdividing_elements1B
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: action_of_check_for_crossing_from_one_subdividing_elements;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _quest;;
+
+			=> nrel_then: .agent_of_check_for_crossing_from_one_subdividing_elements1C;;
+			=> nrel_else: .agent_of_check_for_crossing_from_one_subdividing_elements_return;;
+			*);;
+
+		-> .agent_of_check_for_crossing_from_one_subdividing_elements1C
+			(*
+		  	<- searchElStr3;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+		  	-> rrel_3: rrel_assign: rrel_struct: rrel_scp_var: _param;;
+
+		  	=> nrel_then: .agent_of_check_for_crossing_from_one_subdividing_elements2A;;
+		  	=> nrel_else: .agent_of_check_for_crossing_from_one_subdividing_elements_call_proc_of_adding_validating_message;;
+			*);;
+		
+		-> .agent_of_check_for_crossing_from_one_subdividing_elements2A
+			(*
+			<- genEl;;
+
+			-> rrel_1: rrel_node: rrel_assign: rrel_const: rrel_scp_var: _answer_of_check_for_crossing_from_one_subdividing_elements;;
+
+			=> nrel_goto: .agent_of_check_for_crossing_from_one_subdividing_elements2B;;
+			*);;
+
+		-> .agent_of_check_for_crossing_from_one_subdividing_elements2B
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_check_for_crossing_from_one_subdividing_elements;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+
+			=> nrel_goto: .agent_of_check_for_crossing_from_one_subdividing_elements2C;;
+			*);;
+
+		-> .agent_of_check_for_crossing_from_one_subdividing_elements2C
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_check_for_crossing_from_one_subdividing_elements;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _param;;
+
+			=> nrel_goto: .agent_of_check_for_crossing_from_one_subdividing_elements2D;;
+			*);;
+
+		-> .agent_of_check_for_crossing_from_one_subdividing_elements2D
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_check_for_crossing_from_one_subdividing_elements;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _quest;;
+
+			=> nrel_goto: .agent_of_check_for_crossing_from_one_subdividing_elements2E;;
+			*);;
+	
+		-> .agent_of_check_for_crossing_from_one_subdividing_elements2E
+			(*
+			<- searchSetStr3;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: rrel_not_relation: _some_action;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _quest;;
+
+			-> rrel_set_1: rrel_assign: rrel_scp_var: _some_set;;
+
+			=> nrel_then: .agent_of_check_for_crossing_from_one_subdividing_elements2F;;
+			=> nrel_else: .agent_of_check_for_crossing_from_one_subdividing_elements_return;;
+			*);;
+
+		-> .agent_of_check_for_crossing_from_one_subdividing_elements2F
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _some_set;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: rrel_not_relation: _some_action;;
+
+			=> nrel_then: .agent_of_check_for_crossing_from_one_subdividing_elements2G;;
+			=> nrel_else: .agent_of_check_for_crossing_from_one_subdividing_elements_return;;
+			*);;	
+
+		-> .agent_of_check_for_crossing_from_one_subdividing_elements2G
+			(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_erase: rrel_fixed: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+
+			=> nrel_goto: .agent_of_check_for_crossing_from_one_subdividing_elements2H;;
+			*);;	
+
+		-> .agent_of_check_for_crossing_from_one_subdividing_elements2H
+			(*
+			<- ifCoin;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_not_relation: _some_action;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: rrel_not_relation: question_initiated;;
+
+			=> nrel_then: .agent_of_check_for_crossing_from_one_subdividing_elements2F;;
+			=> nrel_else: .agent_of_check_for_crossing_from_one_subdividing_elements2I;;
+			*);;
+		
+		-> .agent_of_check_for_crossing_from_one_subdividing_elements2I
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_not_relation: _some_action;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _quest;;
+
+			=> nrel_then: .agent_of_check_for_crossing_from_one_subdividing_elements2J;;
+			=> nrel_else: .agent_of_check_for_crossing_from_one_subdividing_elements_return;;
+			*);;
+
+		-> .agent_of_check_for_crossing_from_one_subdividing_elements2J
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_check_for_crossing_from_one_subdividing_elements;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+
+			=> nrel_goto: .agent_of_check_for_crossing_from_one_subdividing_elements2K;;
+			*);;
+				
+		-> .agent_of_check_for_crossing_from_one_subdividing_elements2K
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_check_for_crossing_from_one_subdividing_elements;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: rrel_not_relation: _some_action;;
+
+			=> nrel_goto: .agent_of_check_for_crossing_from_one_subdividing_elements3A;;
+			*);;
+
+		-> .agent_of_check_for_crossing_from_one_subdividing_elements3A
+			(*
+			<- genEl;;
+
+			-> rrel_1: rrel_assign: rrel_node: rrel_scp_var: _set_for_example;;
+
+			=> nrel_goto: .agent_of_check_for_crossing_from_one_subdividing_elements3B;;
+			*);;
+
+		-> .agent_of_check_for_crossing_from_one_subdividing_elements3B
+			(*
+			<- genEl;;
+
+			-> rrel_1: rrel_assign: rrel_node: rrel_scp_var: _set_for_concept;;
+
+			=> nrel_goto: .agent_of_check_for_crossing_from_one_subdividing_elements3C;;
+			*);;	
+
+		-> .agent_of_check_for_crossing_from_one_subdividing_elements3C
+			(*
+			<- genEl;;
+
+			-> rrel_1: rrel_assign: rrel_node: rrel_scp_var: _dop_set3;;
+
+			=> nrel_goto: .agent_of_check_for_crossing_from_one_subdividing_elements3D;;
+			*);;	
+
+		-> .agent_of_check_for_crossing_from_one_subdividing_elements3D
+			(*
+			<- genEl;;
+
+			-> rrel_1: rrel_node: rrel_assign: rrel_const: rrel_scp_var: _for_answer;;
+
+			=> nrel_goto: .agent_of_check_for_crossing_from_one_subdividing_elements4A;;
+			*);;
+
+		-> .agent_of_check_for_crossing_from_one_subdividing_elements4A
+			(*
+			<- searchSetStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_struct: _param;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _some_element;;
+
+			-> rrel_set_3: rrel_assign: rrel_scp_var: _dop_set1;;
+
+			=> nrel_then: .agent_of_check_for_crossing_from_one_subdividing_elements5A;;
+			=> nrel_else: .agent_of_check_for_crossing_from_one_subdividing_elements_return;;
+			*);;
+
+		-> .agent_of_check_for_crossing_from_one_subdividing_elements5A
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _dop_set1;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _some_element;;
+
+			=> nrel_then: .agent_of_check_for_crossing_from_one_subdividing_elements5B;;
+			=> nrel_else: .agent_of_check_for_crossing_from_one_subdividing_elements6A;;
+			*);;	
+
+		-> .agent_of_check_for_crossing_from_one_subdividing_elements5B
+			(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_erase: rrel_fixed: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+
+			=> nrel_goto: .agent_of_check_for_crossing_from_one_subdividing_elements5C;;
+			*);;
+
+		-> .agent_of_check_for_crossing_from_one_subdividing_elements5C
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: rrel_not_relation: _concept;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _some_element;;
+
+			=> nrel_then: .agent_of_check_for_crossing_from_one_subdividing_elements5D;;
+			=> nrel_else: .agent_of_check_for_crossing_from_one_subdividing_elements5A;;
+			*);;	
+
+		-> .agent_of_check_for_crossing_from_one_subdividing_elements5D
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_struct: _param;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: rrel_not_relation: _concept;;
+
+			=> nrel_then: .agent_of_check_for_crossing_from_one_subdividing_elements5E;;
+			=> nrel_else: .agent_of_check_for_crossing_from_one_subdividing_elements5A;;
+			*);;		
+
+		-> .agent_of_check_for_crossing_from_one_subdividing_elements5E
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _set_for_example;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _some_element;;
+
+			=> nrel_goto: .agent_of_check_for_crossing_from_one_subdividing_elements5A;;
+			*);;	
+
+		-> .agent_of_check_for_crossing_from_one_subdividing_elements6A
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _set_for_example;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _some_example;;
+
+			=> nrel_then: .agent_of_check_for_crossing_from_one_subdividing_elements6B;;
+			=> nrel_else: .agent_of_check_for_crossing_from_one_subdividing_elements14A;;
+			*);;
+
+		-> .agent_of_check_for_crossing_from_one_subdividing_elements6B
+			(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_erase: rrel_scp_var: rrel_fixed: rrel_pos_const_perm: _arc1;;
+
+			=> nrel_goto: .agent_of_check_for_crossing_from_one_subdividing_elements7A;;
+			*);;
+
+		-> .agent_of_check_for_crossing_from_one_subdividing_elements7A
+			(*
+			<- searchSetStr3;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: rrel_not_relation: _concept;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _some_example;;
+
+			-> rrel_set_1 : rrel_fixed: rrel_scp_var: _dop_set1;;
+
+			=> nrel_then: .agent_of_check_for_crossing_from_one_subdividing_elements7B;;
+			=> nrel_else: .agent_of_check_for_crossing_from_one_subdividing_elements_return;;
+			*);;	
+
+		-> .agent_of_check_for_crossing_from_one_subdividing_elements7B
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _dop_set1;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _some_concept;;
+
+			=> nrel_then: .agent_of_check_for_crossing_from_one_subdividing_elements7C;;
+			=> nrel_else: .agent_of_check_for_crossing_from_one_subdividing_elements8A;;
+			*);;
+
+		-> .agent_of_check_for_crossing_from_one_subdividing_elements7C
+			(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_erase:  rrel_pos_const_perm: rrel_scp_var: rrel_fixed: _arc1;;
+
+			=> nrel_goto: .agent_of_check_for_crossing_from_one_subdividing_elements7D;;
+			*);;
+
+		-> .agent_of_check_for_crossing_from_one_subdividing_elements7D
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_struct: _param;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: rrel_not_relation: _some_concept;;
+
+			=> nrel_then: .agent_of_check_for_crossing_from_one_subdividing_elements7E;;
+			=> nrel_else: .agent_of_check_for_crossing_from_one_subdividing_elements7B;;
+			*);;
+
+		-> .agent_of_check_for_crossing_from_one_subdividing_elements7E
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _set_for_concept;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _some_concept;;
+
+			=> nrel_goto: .agent_of_check_for_crossing_from_one_subdividing_elements7B;;
+			*);;	
+
+		-> .agent_of_check_for_crossing_from_one_subdividing_elements8A
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _set_for_concept;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _concept;;
+
+			=> nrel_then: .agent_of_check_for_crossing_from_one_subdividing_elements9A;;
+			=> nrel_else: .agent_of_check_for_crossing_from_one_subdividing_elements13A;;
+			*);;
+
+		-> .agent_of_check_for_crossing_from_one_subdividing_elements9A
+			(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_erase: rrel_fixed: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+
+			=> nrel_goto: .agent_of_check_for_crossing_from_one_subdividing_elements10A;;
+			*);;
+
+		-> .agent_of_check_for_crossing_from_one_subdividing_elements10A
+			(*
+			<- searchSetStr3;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: _ligament_node;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _concept;;
+
+			-> rrel_set_1: rrel_assign: rrel_scp_var: _dop_set4;;
+
+			=> nrel_then: .agent_of_check_for_crossing_from_one_subdividing_elements10B;;
+			=> nrel_else: .agent_of_check_for_crossing_from_one_subdividing_elements8A;;
+			*);;	
+
+		-> .agent_of_check_for_crossing_from_one_subdividing_elements10B
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _dop_set4;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _ligament_node;;
+
+			=> nrel_then: .agent_of_check_for_crossing_from_one_subdividing_elements10C;;
+			=> nrel_else: .agent_of_check_for_crossing_from_one_subdividing_elements8A;;
+			*);;
+
+		-> .agent_of_check_for_crossing_from_one_subdividing_elements10C
+			(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_erase: rrel_fixed: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+
+			=> nrel_goto: .agent_of_check_for_crossing_from_one_subdividing_elements10D;;
+			*);;
+
+		-> .agent_of_check_for_crossing_from_one_subdividing_elements10D
+			(*
+			<- searchElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _ligament_node;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _node1;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_subdividing;;
+
+			=> nrel_then: .agent_of_check_for_crossing_from_one_subdividing_elements10E;;
+			=> nrel_else: .agent_of_check_for_crossing_from_one_subdividing_elements10B;;
+			*);;
+
+		-> .agent_of_check_for_crossing_from_one_subdividing_elements10E
+			(*
+			<- searchSetStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _ligament_node;;
+			-> rrel_2: rrel_pos_const_perm: rrel_assign: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _node1;;
+
+			-> rrel_set_3: rrel_assign: rrel_scp_var: _dop_set2;;
+
+			=> nrel_then: .agent_of_check_for_crossing_from_one_subdividing_elements11A;;
+			=> nrel_else: .agent_of_check_for_crossing_from_one_subdividing_elements_return;;
+			*);;	
+
+		-> .agent_of_check_for_crossing_from_one_subdividing_elements11A
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _dop_set2;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _some_concept;;
+
+			=> nrel_then: .agent_of_check_for_crossing_from_one_subdividing_elements11B;;
+			=> nrel_else: .agent_of_check_for_crossing_from_one_subdividing_elements12A;;
+			*);;	
+
+		-> .agent_of_check_for_crossing_from_one_subdividing_elements11B
+			(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_erase: rrel_fixed: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+
+			=> nrel_goto: .agent_of_check_for_crossing_from_one_subdividing_elements11C;;
+			*);;
+
+		-> .agent_of_check_for_crossing_from_one_subdividing_elements11C
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _set_for_concept;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _some_concept;;
+
+			=> nrel_then: .agent_of_check_for_crossing_from_one_subdividing_elements11D;;
+			=> nrel_else: .agent_of_check_for_crossing_from_one_subdividing_elements11A;;
+			*);;
+
+		-> .agent_of_check_for_crossing_from_one_subdividing_elements11D
+			(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_erase: rrel_fixed: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+
+			=> nrel_goto: .agent_of_check_for_crossing_from_one_subdividing_elements11E;;
+			*);;
+
+		-> .agent_of_check_for_crossing_from_one_subdividing_elements11E
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _dop_set3;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _some_concept;;
+
+			=> nrel_goto: .agent_of_check_for_crossing_from_one_subdividing_elements11A;;
+			*);;
+
+		-> .agent_of_check_for_crossing_from_one_subdividing_elements12A
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _dop_set3;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _some_concept;;
+
+			=> nrel_then: .agent_of_check_for_crossing_from_one_subdividing_elements12B;;
+			=> nrel_else: .agent_of_check_for_crossing_from_one_subdividing_elements8A;;
+			*);;
+
+		-> .agent_of_check_for_crossing_from_one_subdividing_elements12B
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _dop_set3;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _concept;;
+
+			=> nrel_goto: .agent_of_check_for_crossing_from_one_subdividing_elements12C;;
+			*);;
+
+		-> .agent_of_check_for_crossing_from_one_subdividing_elements12C
+			(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_erase: rrel_fixed: rrel_scp_var: _dop_set2;;
+
+			=> nrel_goto: .agent_of_check_for_crossing_from_one_subdividing_elements12D;;
+			*);;
+
+		-> .agent_of_check_for_crossing_from_one_subdividing_elements12D
+			(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_erase: rrel_fixed: rrel_scp_var: _dop_set4;;
+
+			=> nrel_goto: .agent_of_check_for_crossing_from_one_subdividing_elements8A;;
+			*);;	
+
+		-> .agent_of_check_for_crossing_from_one_subdividing_elements13A
+			(*
+			<- searchSetStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _dop_set3;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _some_concept;;
+
+			-> rrel_set_3: rrel_fixed: rrel_scp_const: wrong_struct ;;
+
+			=> nrel_then: .agent_of_check_for_crossing_from_one_subdividing_elements13B;;
+			=> nrel_else: .agent_of_check_for_crossing_from_one_subdividing_elements_return;;
+			*);;
+
+		-> .agent_of_check_for_crossing_from_one_subdividing_elements13B
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _dop_set3;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _some_concept;;
+
+			=> nrel_then: .agent_of_check_for_crossing_from_one_subdividing_elements13C;;
+			=> nrel_else: .agent_of_check_for_crossing_from_one_subdividing_elements13F;;
+			*);;	
+
+		-> .agent_of_check_for_crossing_from_one_subdividing_elements13C
+			(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_erase: rrel_fixed: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+
+			=> nrel_goto: .agent_of_check_for_crossing_from_one_subdividing_elements13D;;
+			*);;
+
+		-> .agent_of_check_for_crossing_from_one_subdividing_elements13D
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _some_concept;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _some_example;;
+
+			=> nrel_then: .agent_of_check_for_crossing_from_one_subdividing_elements13E;;
+			=> nrel_else: .agent_of_check_for_crossing_from_one_subdividing_elements_return;;
+			*);;	
+
+		-> .agent_of_check_for_crossing_from_one_subdividing_elements13E
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: wrong_struct;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+
+			=> nrel_goto: .agent_of_check_for_crossing_from_one_subdividing_elements13B;;
+			*);;	
+
+		-> .agent_of_check_for_crossing_from_one_subdividing_elements13F
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: wrong_struct;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _some_example;;
+
+			=> nrel_goto: .agent_of_check_for_crossing_from_one_subdividing_elements6A;;
+			*);;
+
+		-> .agent_of_check_for_crossing_from_one_subdividing_elements14A
+			(*
+			<- searchSetStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: wrong_struct;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _some_element;;
+
+			-> rrel_set_3: rrel_fixed: rrel_scp_var: _for_answer;;
+
+			=> nrel_then: .agent_of_check_for_crossing_from_one_subdividing_elements14B;;
+			=> nrel_else: .agent_of_check_for_crossing_from_one_subdividing_elements_return;;
+			*);;
+	
+		-> .agent_of_check_for_crossing_from_one_subdividing_elements14B
+			(*
+			<- searchSetStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: wrong_struct;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _some_element;;
+
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _for_answer;;
+
+			=> nrel_then: .agent_of_check_for_crossing_from_one_subdividing_elements14C;;
+			=> nrel_else: .agent_of_check_for_crossing_from_one_subdividing_elements_return;;
+			*);;
+
+		-> .agent_of_check_for_crossing_from_one_subdividing_elements14C
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _for_answer;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: wrong_struct;;
+
+			=> nrel_goto: .agent_of_check_for_crossing_from_one_subdividing_elements14C1;;
+			*);;
+
+		-> .agent_of_check_for_crossing_from_one_subdividing_elements14C1
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _for_answer;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: wrong_struct;;
+
+			=> nrel_goto: .agent_of_check_for_crossing_from_one_subdividing_elements14D;;
+			*);;
+
+		-> .agent_of_check_for_crossing_from_one_subdividing_elements14D
+			(*
+			<- searchSetStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _for_answer;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _some_element;;
+
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer_of_check_for_crossing_from_one_subdividing_elements;;
+			-> rrel_set_3: rrel_fixed: rrel_scp_var: _answer_of_check_for_crossing_from_one_subdividing_elements;;
+
+			=> nrel_then: .agent_of_check_for_crossing_from_one_subdividing_elements14E;;
+			=> nrel_else: .agent_of_check_for_crossing_from_one_subdividing_elements_return;;
+			*);;
+
+		-> .agent_of_check_for_crossing_from_one_subdividing_elements14E
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_check_for_crossing_from_one_subdividing_elements;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _for_answer;;	
+
+			=> nrel_goto: .agent_of_check_for_crossing_from_one_subdividing_elements14F;;
+			*);;
+
+		-> .agent_of_check_for_crossing_from_one_subdividing_elements14F
+			(*
+			<- genElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _for_answer;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_result;;	
+
+			=> nrel_goto: .agent_of_check_for_crossing_from_one_subdividing_elements14G;;
+			*);;
+
+		-> .agent_of_check_for_crossing_from_one_subdividing_elements14G
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_check_for_crossing_from_one_subdividing_elements;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc3;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: rrel_common: _arc1;;	
+
+			=> nrel_goto: .agent_of_check_for_crossing_from_one_subdividing_elements14H;;
+			*);;
+
+		-> .agent_of_check_for_crossing_from_one_subdividing_elements14H
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_check_for_crossing_from_one_subdividing_elements;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: rrel_pos_const_perm: _arc2;;	
+
+			=> nrel_goto: .agent_of_check_for_crossing_from_one_subdividing_elements14I;;
+			*);;
+
+		-> .agent_of_check_for_crossing_from_one_subdividing_elements14I
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_check_for_crossing_from_one_subdividing_elements;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: nrel_result;;	
+
+			=> nrel_goto: .agent_of_check_for_crossing_from_one_subdividing_elements15A;;
+			*);;
+
+		-> .agent_of_check_for_crossing_from_one_subdividing_elements15A
+			(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_erase: rrel_fixed: rrel_scp_var: _dop_set1;;
+
+			=> nrel_goto: .agent_of_check_for_crossing_from_one_subdividing_elements15B;;
+			*);;		
+
+		-> .agent_of_check_for_crossing_from_one_subdividing_elements15B
+			(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_erase: rrel_fixed: rrel_scp_var: _set_for_concept;;
+
+			=> nrel_goto: .agent_of_check_for_crossing_from_one_subdividing_elements15C;;
+			*);;		
+
+		-> .agent_of_check_for_crossing_from_one_subdividing_elements15C
+			(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_erase: rrel_fixed: rrel_scp_var: _set_for_example;;
+
+			=> nrel_goto: .agent_of_check_for_crossing_from_one_subdividing_elements15D;;
+			*);;	
+
+		-> .agent_of_check_for_crossing_from_one_subdividing_elements15D
+			(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_erase: rrel_fixed: rrel_scp_var: _dop_set3;;
+
+			=> nrel_goto: .agent_of_check_for_crossing_from_one_subdividing_elements15E;;
+			*);;		
+		
+		-> .agent_of_check_for_crossing_from_one_subdividing_elements15E
+			(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_erase: rrel_fixed: rrel_scp_var: _some_set;;
+
+			=> nrel_goto: .agent_of_check_for_crossing_from_one_subdividing_elements_gen_answer;;
+			*);;		
+
+		-> .agent_of_check_for_crossing_from_one_subdividing_elements_gen_answer
+			(*
+			<- genElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_const: rrel_common: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var:  _answer_of_check_for_crossing_from_one_subdividing_elements;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_const: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_answer;;
+
+			=> nrel_goto: .agent_of_check_for_crossing_from_one_subdividing_elements_return;;
+			*);;
+		
+		-> .agent_of_check_for_crossing_from_one_subdividing_elements_call_proc_of_adding_validating_message
+			(*
+		  	<- call;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_const: proc_of_adding_validating_message;;
+		  	-> rrel_2: rrel_fixed: rrel_scp_const: .agent_of_check_for_crossing_from_one_subdividing_elements_call_proc_of_adding_validating_message_params 
+				(*
+				-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+				-> rrel_2: rrel_fixed: rrel_scp_const: [Wrong parameter! It must be a structure(rrel_struct)];;
+				*);;
+		  	-> rrel_3: rrel_assign: rrel_scp_var: _descr1;;
+
+		  	=> nrel_goto: .agent_of_check_for_crossing_from_one_subdividing_elements_waitreturn_proc_of_adding_validating_message;;
+			*);;
+
+		-> .agent_of_check_for_crossing_from_one_subdividing_elements_waitreturn_proc_of_adding_validating_message
+			(*
+		  	<- waitReturn;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_var: _descr1;;
+
+		  	=> nrel_goto: .agent_of_check_for_crossing_from_one_subdividing_elements_return;;
+			*);;
+
+		-> .agent_of_check_for_crossing_from_one_subdividing_elements_return
+			(*
+			<-return;;
+			*);;
+
+		*);;
+	*);;
+
+				
+		
+
