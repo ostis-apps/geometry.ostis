@@ -1,0 +1,15 @@
+sc_node_not_relation->paremeter;;
+sc_node_not_relation->measurable_parameter;;
+sc_node_not_relation->par_volume;;
+sc_node_not_relation->cube_meter;;
+sc_node_norole_relation -> nrel_vol;;
+sc_node_norole_relation -> measurement_of_fixed_measure;;
+parameter=>nrel_includion: measurable_parameter;;
+measurable_parameter -> par_volume;;
+
+par_volume =>nrel_system_identifier:
+	[par_volume];;
+par_volume =>nrel_main_idtf:
+	[volume](*<-lang_en;; *);;
+par_volume =>nrel_main_idtf:
+	[объём](*<-lang_ru;; *);;
