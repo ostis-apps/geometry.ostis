@@ -1,0 +1,36 @@
+s_circles_properties
+=> nrel_main_idtf:
+	[Раздел. Предметная область кругов и окружностей. Основные понятия ]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Section. Section. Specialization circles and circles. Concepts]
+	(* <- lang_en;; *);
+
+<-atomic_section;
+
+<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://s_circles_properties_ru.html"
+			(* <- lang_ru;; *);;
+		*);
+
+
+=> nrel_summary:
+	...
+	(*
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example:
+				[This section discusses the basic definitions of  circles.]
+				(* <- lang_en;; *);;
+			*);;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example:[В данном разделе рассматриваются основные определения кругов и окружностей.]
+				(* <- lang_ru;; *);;
+			*);;
+	*);;

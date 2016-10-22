@@ -1,0 +1,24 @@
+par_distance <- sc_node_not_relation;;
+
+par_distance <- parameter;;
+
+par_distance=> nrel_main_idtf:
+	[расстояние]
+	(* <-lang_ru;; *);
+	[distance]
+	(* <-lang_en;; *);;
+
+measurable_parameter -> par_distance;;
+
+par_distance -> q_cm; q_m; q_mm; q_dc;;
+
+par_distance <- rrel_key_sc_element: 
+	...
+	(*
+	<- illustration;; 
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: 
+		"file://images/par_distance.png";;
+		*);;
+	*);;
