@@ -1,0 +1,20 @@
+d_nrel_edge_of_dihedral_angle <- definition;;
+
+d_nrel_edge_of_dihedral_angle => nrel_main_idtf: [Опр.(ребро двугранного угла*)] (*<-lang_ru;;*);;
+d_nrel_edge_of_dihedral_angle => nrel_main_idtf: [Def.(edge of dihedral angle*)] (*<-lang_en;;*);;
+
+d_nrel_edge_of_dihedral_angle -> rrel_key_sc_element: nrel_edge_of_dihedral_angle;;
+
+d_nrel_edge_of_dihedral_angle <= nrel_using_constants:
+	{
+	concept_half_plane;
+        concept_angle;
+        concept_straight_line
+	};;
+
+d_nrel_edge_of_dihedral_angle <= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+	[Ребром двугранного угла называется общая граница(прямая линия) l полуплоскостей,образующих этот угол.] (*<-lang_ru;;*);;
+	*);;

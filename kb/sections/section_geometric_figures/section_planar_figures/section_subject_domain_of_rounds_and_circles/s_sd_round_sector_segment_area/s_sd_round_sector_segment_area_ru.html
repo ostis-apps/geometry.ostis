@@ -1,0 +1,80 @@
+<html>
+<head>
+	<style>
+   p {text-indent: 30px; /* Отступ первой строки в пикселах */}
+	table {margin: auto}  
+</style>
+	
+	<title></title>
+</head>
+
+<body lang="ru-RU" dir="ltr" style="background: transparent">
+	<p><h4> Площади круга, сектора и сегмента</h4></p>  
+
+Если R - 
+<sc_element sys_idtf  = "nrel_radius">радиус круга</sc_element>, l - 
+<sc_element sys_idtf  = "nrel_length">длина</sc_element> 
+<sc_element sys_idtf  = "concept_circle_arc">дуги</sc_element> 
+<sc_element sys_idtf  = "concept_round_sector">сектора</sc_element>, n&deg;  - соответствующий данной 
+<sc_element sys_idtf  = "concept_circle_arc">дуге</sc_element> 
+<sc_element sys_idtf  = "concept_round_sector">сектора</sc_element> 
+<sc_element sys_idtf  = "nrel_central_angle">центральный угол</sc_element> в градусах, а &alpha; - этот же 
+<sc_element sys_idtf  = "concept_angle">угол</sc_element> в радианах (&alpha;=(&pi;n&deg;/180&deg;)&times;R), то: 
+<ul>
+<li>
+<b>площадь круга</b> S=&pi;&times;R&sup2;;
+</li>
+<li><b>площадь сектора</b> S=(lR)/2, S=&frac12;&times;R&sup2;&alpha;;</li>
+<li>
+<b>площадь сегмента </b>S выражается через 
+<sc_element sys_idtf  = "nrel_area">площадь</sc_element> 
+<sc_element sys_idtf  = "concept_round_sector">сектора</sc_element> S<sub>сект</sub>,  образованного той же, что и данный 
+<sc_element sys_idtf  = "concept_round_segment">сегмент</sc_element>, 
+<sc_element sys_idtf  = "concept_circle_arc">дугой</sc_element>, и двумя 
+<sc_element sys_idtf  = "nrel_radius">радиусами</sc_element>, проведенными в концы задающей 
+<sc_element sys_idtf  = "concept_round_segment">сегмент</sc_element> 
+<sc_element sys_idtf  = "nrel_chord">хорды</sc_element>, и 
+<sc_element sys_idtf  = "nrel_area">площадь</sc_element> 
+<sc_element sys_idtf  = "concept_triangle">треугольника</sc_element> S<sub>&Delta;</sub>, образованного вышеназванными 
+<sc_element sys_idtf  = "nrel_radius">радиусами</sc_element> и той же 
+<sc_element sys_idtf  = "nrel_chord">хордой</sc_element>: S=S<sub>сект</sub>&plusmn;S<sub>&Delta;</sub>. При этом знак "--" берется, если 
+<sc_element sys_idtf  = "nrel_central_angle">центральный угол</sc_element> &alpha;, образованный вышеназванными 
+<sc_element sys_idtf= "nrel_radius">радиусами</sc_element>, меньше &pi; радиан (n&deg;&lt;180 &deg;), знак "+" - если &pi;&lt;&alpha;&lt;2&pi; (&pi;&lt;&alpha;&lt;2&pi;); см. таблицу:
+</li>
+</ul>
+<table border="1">
+<tr>
+<td>
+&alpha;&lt;&pi; (n&deg;&lt;180&deg;)
+</td>
+
+<td>
+&alpha;=&pi; (n&deg;=180&deg;)
+</td>
+
+<td>
+&alpha;&gt;&pi;(n&deg;&gt;180&deg;)
+</td>
+
+</tr>
+
+<tr>
+<td>
+S=&frac12;R&sup2;(&alpha;-sin(&alpha;))
+</td>
+
+<td>
+S=&frac12;&pi;R&sup2;
+</td>
+
+<td>
+S=&frac12;R&sup2;(2&pi;-&alpha;+sin(&alpha;))
+</td>
+
+</tr>
+
+</table>
+
+</sc_element>
+</body>
+</html>

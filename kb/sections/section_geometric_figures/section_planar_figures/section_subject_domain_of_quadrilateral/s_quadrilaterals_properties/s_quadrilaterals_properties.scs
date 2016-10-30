@@ -1,0 +1,36 @@
+s_quadrilaterals_properties
+=> nrel_main_idtf:
+	[Раздел. Четырёхугольники. Основные определения, свойства ]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Section.Quadrilaterals. Basic definitions, properties]
+	(* <- lang_en;; *);
+
+<- non_atomic_section;
+
+<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://s_quadrilaterals_properties_ru.html"
+			(* <- lang_ru;; *);;
+		*);
+
+
+=> nrel_summary:
+	...
+	(*
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example:
+				[This section discusses the basic definitions and properties of  quadrangles.]
+				(* <- lang_en;; *);;
+			*);;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example:[В данном разделе рассматриваются основные определения и свойства четырехугольников.]
+				(* <- lang_ru;; *);;
+			*);;
+	*);;

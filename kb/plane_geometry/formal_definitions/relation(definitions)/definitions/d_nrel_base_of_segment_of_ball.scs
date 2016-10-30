@@ -1,0 +1,21 @@
+d_nrel_base_of_segment_of_ball <- definition;;
+
+d_nrel_base_of_segment_of_ball => nrel_main_idtf: [Опр.(основание шарового сегмента*)] (*<-lang_ru;;*);;
+d_nrel_base_of_segment_of_ball => nrel_main_idtf: [Def.(base of segment of ball*)] (*<-lang_en;;*);;
+
+d_nrel_base_of_segment_of_ball -> rrel_key_sc_element: nrel_base_of_segment_of_ball;;
+
+d_nrel_base_of_segment_of_ball <= nrel_using_constants:
+	{
+	concept_ball;
+	concept_round;
+	nrel_cross_section;
+	nrel_intersection
+	};;
+
+d_nrel_base_of_segment_of_ball <= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example:
+		[Основанием шарового сегмента называется круг, по которой секущая плоскость пересекает данный шар.] (*<-lang_ru;;*);;
+	*);;

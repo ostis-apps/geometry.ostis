@@ -1,0 +1,84 @@
+<html>
+<head>
+	<style>
+   p {text-indent: 30px; /* Отступ первой строки в пикселах */}
+	table {margin: auto}  
+</style>
+	
+	<title></title>
+</head>
+
+<body lang="ru-RU" dir="ltr" style="background: transparent">
+	<p><h4>Площадь четырехугольника</h4></p>  
+<sc_element sys_idtf  = "nrel_area">Площадь</sc_element> S 
+<sc_element sys_idtf  = "concept_quadrilateral">четырехугольника</sc_element> выражается через его элементы по следующим формулам:
+<ul>
+<li>
+через 
+<sc_element sys_idtf  = "nrel_diagonal">диагонали</sc_element> d<sub>1</sub> и d<sub>2</sub> произвольного 
+<sc_element sys_idtf  = "concept_quadrilateral">четырехугольника</sc_element>(в том числе и невыпуклого) и 
+<sc_element sys_idtf  = "concept_angle">угол</sc_element> между ними &phi;: S=&frac12;d<sub>1</sub>&times;d<sub>2</sub>&times;sin&phi;;
+</li>
+
+<li>
+через 
+<sc_element sys_idtf  = "nrel_side">стороны</sc_element> a, b, c, d 
+<sc_element sys_idtf  = "concept_convex_polygon">выпуклого четырехугольника</sc_element>, его противолежащие углы &alpha; и &gamma; и полупериметр p=&frac12;(a+b+c+d):
+
+<p>S=&radic;((p-a)(p-b)(p-c)(p-d)-abcd&times;cos&sup2;((&alpha;+&gamma;)/2))</p>
+</li>
+
+<li>
+через полупериметр p 
+<sc_element sys_idtf  = "nrel_be_described">описанного</sc_element> четырехугольника, т. е. 
+<sc_element sys_idtf  = "concept_quadrilateral">четырехугольника</sc_element>, в который можно присать 
+<sc_element sys_idtf  = "concept_circle">окружность</sc_element> 
+<sc_element sys_idtf  = "nrel_radius">радиуса</sc_element> r: S=p&times;r;
+</li>
+
+<li>
+через 
+<sc_element sys_idtf  = "nrel_side">стороны</sc_element> a, b, c, d и сумму двух 
+<sc_element sys_idtf  = "nrel_opposite">противолежащих углов</sc_element> &alpha;+&gamma; 
+<sc_element sys_idtf  = "nrel_be_described">описанного</sc_element> 
+<sc_element sys_idtf  = "concept_quadrilateral">четырехугольника</sc_element>: S=&radic;(a&times;b&times;c&times;d)&times;sin((&alpha;+&gamma;)/2)
+</li>
+
+<li>
+через полуперметр p и 
+<sc_element sys_idtf  = "nrel_side">стороны</sc_element> a, b, c, d 
+<sc_element sys_idtf  = "nrel_be_inscribed">вписанного</sc_element> 
+<sc_element sys_idtf  = "concept_quadrilateral">четырехугольника</sc_element>, т. е. 
+<sc_element sys_idtf  = "concept_quadrilateral">четырехугольника</sc_element>, вокруг которого можно 
+<sc_element sys_idtf  = "nrel_be_described">описать</sc_element> 
+<sc_element sys_idtf  = "concept_circle">окружность</sc_element> (формула Птолемея):
+<p>S=&radic;((p-a)(p-b)(p-c)(p-d))</p>
+</li>
+<li>
+через 
+<sc_element sys_idtf  = "nrel_side">сторона</sc_element> a, b, c, d 
+<sc_element sys_idtf  = "concept_quadrilateral">четырехугольника</sc_element>, 
+<sc_element sys_idtf  = "nrel_be_inscribed">вписанного</sc_element> в 
+<sc_element sys_idtf  = "concept_circle">окружность</sc_element> 
+<sc_element sys_idtf  = "nrel_radius">радиуса</sc_element> R: S=(1/4R)&times;(&radic;((ab+cd)(ac+bd)(ad+bc)));
+</li>
+<li>
+через 
+<sc_element sys_idtf  = "nrel_side">стороны</sc_element> a, b, c, d 
+<sc_element sys_idtf  = "concept_quadrilateral">четырехугольника</sc_element>, который можно одновременно и 
+<sc_element sys_idtf  = "nrel_be_inscribed">вписать</sc_element> в 
+<sc_element sys_idtf  = "concept_circle">окружность</sc_element>, и 
+<sc_element sys_idtf  = "nrel_be_described">описать</sc_element> около 
+<sc_element sys_idtf  = "concept_circle">окружности</sc_element>:
+<p>S=&radic;(a&times;b&times;c&times;d)</p>
+</li>
+
+</ul>
+
+<sc_element sys_idtf  = "nrel_area">Площади</sc_element> четырех 
+<sc_element sys_idtf  = "concept_triangle">треугольников</sc_element>, на которые 
+<sc_element sys_idtf  = "concept_quadrilateral">выпуклый четырехугольник</sc_element> делится двумя своими 
+<sc_element sys_idtf  = "nrel_diagonal">диагоналями</sc_element>, связаны равенством S<sub>&Delta;AOB</sub>&times;S<sub>&Delta;COD</sub>=S<sub>&Delta;BOC</sub>&times;S<sub>&Delta;AOD</sub>;
+
+</body>
+</html>

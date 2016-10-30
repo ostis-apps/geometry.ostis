@@ -1,0 +1,36 @@
+section_inscribed_described_quadrilaterals
+=> nrel_main_idtf:
+	[Раздел. Вписанные и описанные четырёхугольники]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Section. Inscribed and described quadrilaterals]
+	(* <- lang_en;; *);
+
+<- atomic_section;
+
+<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://html/inscribed_described_quadrilaterals_ru.html"
+			(* <- lang_ru;; *);;
+		*);
+
+
+=> nrel_summary:
+	...
+	(*
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example:
+				[This section discusses properties of inscribed and described quadrilaterals.]
+				(* <- lang_en;; *);;
+			*);;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example:[Раздел описывает свойства вписанных и описанных четырёхугольников.]
+				(* <- lang_ru;; *);;
+			*);;
+	*);;

@@ -1,0 +1,18 @@
+d_nrel_secant_of_straight_lines
+=> nrel_main_idtf: [Опр.(секущая прямых*)] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Def.(secant of straight lines*)] (*<- lang_en;;*);
+<- definition;
+-> rrel_key_sc_element: nrel_secant_of_straight_lines;
+
+<= nrel_using_constants:
+	{
+	concept_straight_line;
+	nrel_intersection
+	};
+
+<= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[Секущей по отношению к двум данным прямым называется прямая, пересекающая данные прямые.] (* <- lang_ru;; *);;
+	*);;

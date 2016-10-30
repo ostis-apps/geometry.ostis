@@ -1,0 +1,33 @@
+sc_node_norole_relation -> nrel_base_of_segment_of_ball;;
+
+nrel_base_of_segment_of_ball => nrel_main_idtf: [основание шарового сегмента*] (* <- lang_ru;; *);;
+nrel_base_of_segment_of_ball => nrel_idtf: [base of segment of ball*] (* <- lang_en;; *);;
+
+nrel_base_of_segment_of_ball => nrel_idtf: [быть основанием шарового сегмента*] (* <- lang_ru;; *);;
+
+nrel_base_of_segment_of_ball => nrel_first_domain: concept_ball;;
+nrel_base_of_segment_of_ball => nrel_second_domain: concept_round;;
+
+nrel_base_of_segment_of_ball => nrel_definitional_domain: ...
+	(*
+	<= nrel_combination: 
+		{
+		concept_ball;
+		concept_round
+		};;
+	*);;
+
+nrel_base_of_segment_of_ball <- relation;;
+nrel_base_of_segment_of_ball <- binary_relation;;
+nrel_base_of_segment_of_ball <- oriented_relation;;
+nrel_base_of_segment_of_ball <- antisymmetric_relation; antireflexive_relation; antitransitive_relation;;
+
+nrel_base_of_segment_of_ball <- rrel_key_sc_element: ...
+	(*
+	<- sc_illustration;;
+	<= nrel_sc_text_translation: ... 
+		(*
+		-> rrel_example: 
+			"file://images/nrel_base_of_segment_of_ball.png";; 
+		*);;
+	*);;
