@@ -1,0 +1,55 @@
+sc_agent_of_formalization_structure_in_natural_language_form
+=> nrel_main_idtf:
+	[sc-агент формализации заданной структуры в естественно-языковую форму] 
+		(* <- lang_ru;; *);
+
+	[sc-agent of formalization structure in natural language form] 
+		(* <- lang_en;; *);
+
+<- abstract_sc_agent;
+
+=> nrel_primary_initiation_condition: 
+	(sc_event_add_output_arc => question_initiated);
+
+=> nrel_initiation_condition_and_result: 
+	(..sc_agent_of_formalization_structure_in_natural_language_form => ..sc_agent_of_formalization_structure_in_natural_language_form_result);
+
+<= nrel_sc_agent_key_sc_elements: 
+	{
+	question_initiated;
+	question;
+	action_of_formalization_structure_in_natural_language_form
+	};
+
+=> nrel_inclusion: 
+	.platform_independent_realization_of_sc_agent_of_formalization_structure_in_natural_language_form
+	(*
+	<- platform_independent_abstract_sc_agent;;
+	<= nrel_sc_agent_program: 
+		{
+		agent_of_formalization_structure_in_natural_language_form;
+		proc_of_formalization_belonging_to_class_in_natural_language_form;
+		proc_of_formalization_geometric_relations_in_natural_language_form;
+		proc_of_formalization_quantity_in_natural_language_form
+	
+		};;
+	-> sc_agent_of_formalization_structure_in_natural_language_form_scp   
+		(* <- active_sc_agent;; *);;
+	*);;
+
+..sc_agent_of_formalization_structure_in_natural_language_form_condition
+= [*
+	action_of_formalization_structure_in_natural_language_form _-> .._question;;
+	question_initiated _-> .._question;;
+	question _-> .._question;;
+	.._question _-> .._param1;;
+*];;
+
+..sc_agent_of_formalization_structure_in_natural_language_form_result
+= [*
+	action_of_formalization_structure_in_natural_language_form _-> .._question;;
+	question_finished _-> .._question;;
+	question _-> .._question;;
+	.._question _=> nrel_answer:: .._answer;;
+	.._question _-> .._param1;;
+*];;

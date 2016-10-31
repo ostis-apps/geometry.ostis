@@ -1,0 +1,558 @@
+scp_program-> proc_of_formalization_geometric_relations_in_natural_language_form
+(*
+     -> rrel_params: .proc_of_formalization_geometric_relations_in_natural_language_form_params
+      	(*
+		-> rrel_1: rrel_in: _param;;
+		-> rrel_2: rrel_in: _answer_formalization_relations;;
+	 	 *);;
+
+	 -> rrel_operators: .proc_of_formalization_geometric_relations_in_natural_language_form_set
+	 	(*
+	 	-> rrel_init: .proc_of_formalization_geometric_relations_in_natural_language_form1A
+			(*
+			<- searchSetStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _param;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: rrel_norole_relation: _some_relation;;
+
+			-> rrel_set_3: rrel_assign: rrel_scp_var: _set;;
+
+			=> nrel_then: .proc_of_formalization_geometric_relations_in_natural_language_form1B;;
+			=> nrel_else: .proc_of_formalization_geometric_relations_in_natural_language_form_return;;
+			*);;
+
+		-> .proc_of_formalization_geometric_relations_in_natural_language_form1B
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _set;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: rrel_norole_relation: _some_relation;;
+
+			=> nrel_then: .proc_of_formalization_geometric_relations_in_natural_language_form1C;;
+			=> nrel_else: .proc_of_formalization_geometric_relations_in_natural_language_form_return;;
+			*);;
+
+		-> .proc_of_formalization_geometric_relations_in_natural_language_form1C
+			(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_erase: rrel_fixed: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+
+			=> nrel_goto: .proc_of_formalization_geometric_relations_in_natural_language_form1D;;
+			*);;	
+
+		-> .proc_of_formalization_geometric_relations_in_natural_language_form1D
+			(*
+			<- ifCoin;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_norole_relation: _some_relation;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: nrel_similarity;;
+
+			=> nrel_then: .proc_of_formalization_geometric_relations_in_natural_language_form2A;;
+			=> nrel_else: .proc_of_formalization_geometric_relations_in_natural_language_form1E;;
+			*);;
+
+		-> .proc_of_formalization_geometric_relations_in_natural_language_form1E
+			(*
+			<- ifCoin;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_norole_relation: _some_relation;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: nrel_congruence;;
+
+			=> nrel_then: .proc_of_formalization_geometric_relations_in_natural_language_form2A;;
+			=> nrel_else: .proc_of_formalization_geometric_relations_in_natural_language_form1F;;
+			*);;	
+
+		-> .proc_of_formalization_geometric_relations_in_natural_language_form1F
+			(*
+			<- ifCoin;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_norole_relation: _some_relation;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: nrel_equal_sized;;
+
+			=> nrel_then: .proc_of_formalization_geometric_relations_in_natural_language_form2A;;
+			=> nrel_else: .proc_of_formalization_geometric_relations_in_natural_language_form1B;;
+			*);;	
+
+		-> .proc_of_formalization_geometric_relations_in_natural_language_form2A
+			(*
+			<- searchSetStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_norole_relation: _some_relation;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _something;;
+
+			-> rrel_set_3: rrel_assign: rrel_scp_var: _set1;;
+
+			=> nrel_then: .proc_of_formalization_geometric_relations_in_natural_language_form2B;;
+			=> nrel_else: .proc_of_formalization_geometric_relations_in_natural_language_form_return;;
+			*);;	
+
+		-> .proc_of_formalization_geometric_relations_in_natural_language_form2B
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _set1;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _something;;
+
+			=> nrel_then: .proc_of_formalization_geometric_relations_in_natural_language_form2C;;
+			=> nrel_else: .proc_of_formalization_geometric_relations_in_natural_language_form_return;;
+			*);;	
+
+		-> .proc_of_formalization_geometric_relations_in_natural_language_form2C
+			(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_erase: rrel_fixed: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+
+			=> nrel_goto: .proc_of_formalization_geometric_relations_in_natural_language_form2D;;
+			*);;	
+
+		-> .proc_of_formalization_geometric_relations_in_natural_language_form2D
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _param;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _something;;
+
+			=> nrel_then: .proc_of_formalization_geometric_relations_in_natural_language_form2E1;;
+			=> nrel_else: .proc_of_formalization_geometric_relations_in_natural_language_form2B;;
+			*);;
+
+		-> .proc_of_formalization_geometric_relations_in_natural_language_form2E1
+			(*
+			<- printEl;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _something;;
+
+			=> nrel_goto: .proc_of_formalization_geometric_relations_in_natural_language_form2E;;
+			*);;
+
+		-> .proc_of_formalization_geometric_relations_in_natural_language_form2E
+			(*
+			<- searchElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _something;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _some_node;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: rrel_1;;
+
+			=> nrel_then: .proc_of_formalization_geometric_relations_in_natural_language_form2F;;
+			=> nrel_else: .proc_of_formalization_geometric_relations_in_natural_language_form2G;;
+			*);;
+
+		-> .proc_of_formalization_geometric_relations_in_natural_language_form2F
+			(*
+			<- searchElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _something;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _node2;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: rrel_2;;
+
+			=> nrel_then: .proc_of_formalization_geometric_relations_in_natural_language_form4A;;
+			=> nrel_else: .proc_of_formalization_geometric_relations_in_natural_language_form_return;;
+			*);;
+
+		-> .proc_of_formalization_geometric_relations_in_natural_language_form2G
+			(*
+			<- searchSetStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _something;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _node;;
+
+			-> rrel_set_3: rrel_assign: rrel_scp_var: _set2;;
+
+			=> nrel_then: .proc_of_formalization_geometric_relations_in_natural_language_form2H;;
+			=> nrel_else: .proc_of_formalization_geometric_relations_in_natural_language_form3A;;
+			*);;	
+
+		-> .proc_of_formalization_geometric_relations_in_natural_language_form2H
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _set2;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _some_node;;
+
+			=> nrel_then: .proc_of_formalization_geometric_relations_in_natural_language_form2I;;
+			=> nrel_else: .proc_of_formalization_geometric_relations_in_natural_language_form_return;;
+			*);;
+
+		-> .proc_of_formalization_geometric_relations_in_natural_language_form2I
+			(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_erase: rrel_fixed: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+
+			=> nrel_goto: .proc_of_formalization_geometric_relations_in_natural_language_form2J;;
+			*);;
+
+		-> .proc_of_formalization_geometric_relations_in_natural_language_form2J
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _set2;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _node2;;
+
+			=> nrel_then: .proc_of_formalization_geometric_relations_in_natural_language_form4A;;
+			=> nrel_else: .proc_of_formalization_geometric_relations_in_natural_language_form_return;;
+			*);;
+
+		-> .proc_of_formalization_geometric_relations_in_natural_language_form3A
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: _some_node;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _something;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _node2;;
+
+			=> nrel_then: .proc_of_formalization_geometric_relations_in_natural_language_form4A;;
+			=> nrel_else: .proc_of_formalization_geometric_relations_in_natural_language_form_return;;
+			*);;
+
+		-> .proc_of_formalization_geometric_relations_in_natural_language_form4A
+			(*
+			<- searchElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _some_node;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _main_idtf;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_main_idtf;;
+
+			=> nrel_then: .proc_of_formalization_geometric_relations_in_natural_language_form4D;;
+			=> nrel_else: .proc_of_formalization_geometric_relations_in_natural_language_form_return;;
+			*);;	
+
+		-> .proc_of_formalization_geometric_relations_in_natural_language_form4D
+			(*
+			<- contStringConcat;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: _link1;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _main_idtf;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: [ ];;
+
+			=> nrel_goto: .proc_of_formalization_geometric_relations_in_natural_language_form5A;;
+			*);;
+
+		-> .proc_of_formalization_geometric_relations_in_natural_language_form5A
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _param;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: nrel_coefficient_of_similarity;;
+
+			=> nrel_then: .proc_of_formalization_geometric_relations_in_natural_language_form6A;;
+			=> nrel_else: .proc_of_formalization_geometric_relations_in_natural_language_form5B;;
+			*);;
+
+		-> .proc_of_formalization_geometric_relations_in_natural_language_form5B
+			(*
+			<- ifCoin;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_norole_relation: _some_relation;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: nrel_similarity;;
+
+			=> nrel_then: .proc_of_formalization_geometric_relations_in_natural_language_form6B;;
+			=> nrel_else: .proc_of_formalization_geometric_relations_in_natural_language_form5C;;
+			*);;
+
+		-> .proc_of_formalization_geometric_relations_in_natural_language_form5C
+			(*
+			<- ifCoin;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_norole_relation: _some_relation;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: nrel_congruence;;
+
+			=> nrel_then: .proc_of_formalization_geometric_relations_in_natural_language_form6B;;
+			=> nrel_else: .proc_of_formalization_geometric_relations_in_natural_language_form5D;;
+			*);;	
+
+		-> .proc_of_formalization_geometric_relations_in_natural_language_form5D
+			(*
+			<- ifCoin;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_norole_relation: _some_relation;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: nrel_equal_sized;;
+
+			=> nrel_then: .proc_of_formalization_geometric_relations_in_natural_language_form6B;;
+			=> nrel_else: .proc_of_formalization_geometric_relations_in_natural_language_form_return;;
+			*);;
+
+		-> .proc_of_formalization_geometric_relations_in_natural_language_form6A
+			(*
+			<- contStringConcat;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _link1;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _link1;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: [подобен ];;
+
+			=> nrel_goto: .proc_of_formalization_geometric_relations_in_natural_language_form7A;;
+			*);;
+
+		-> .proc_of_formalization_geometric_relations_in_natural_language_form6B
+			(*
+			<- contStringConcat;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _link1;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _link1;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: [и ];;
+
+			=> nrel_goto: .proc_of_formalization_geometric_relations_in_natural_language_form9A;;
+			*);;
+
+		-> .proc_of_formalization_geometric_relations_in_natural_language_form7A
+			(*
+			<- searchElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _node2;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _main_idtf;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_main_idtf;;
+
+			=> nrel_then: .proc_of_formalization_geometric_relations_in_natural_language_form7B;;
+			=> nrel_else: .proc_of_formalization_geometric_relations_in_natural_language_form_return;;
+			*);;	
+
+		-> .proc_of_formalization_geometric_relations_in_natural_language_form7B
+			(*
+			<- stringSplit;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: _link2;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _main_idtf;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: [ ];;
+
+			=> nrel_goto: .proc_of_formalization_geometric_relations_in_natural_language_form7C;;
+			*);;
+
+		-> .proc_of_formalization_geometric_relations_in_natural_language_form7C
+			(*
+			<- searchElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _link2;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _link;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: rrel_1;;
+
+			=> nrel_then: .proc_of_formalization_geometric_relations_in_natural_language_form7D;;
+			=> nrel_else: .proc_of_formalization_geometric_relations_in_natural_language_form_return;;
+			*);;
+
+		-> .proc_of_formalization_geometric_relations_in_natural_language_form7D
+			(*
+			<- contStringConcat;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _link;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _link;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: [у ];;
+
+			=> nrel_goto: .proc_of_formalization_geometric_relations_in_natural_language_form7E;;
+			*);;
+
+		-> .proc_of_formalization_geometric_relations_in_natural_language_form7E
+			(*
+			<- searchElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _link;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _link3;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_substring_base_order;;
+
+			=> nrel_then: .proc_of_formalization_geometric_relations_in_natural_language_form7F;;
+			=> nrel_else: .proc_of_formalization_geometric_relations_in_natural_language_form_return;;
+			*);;
+
+		-> .proc_of_formalization_geometric_relations_in_natural_language_form7F
+			(*
+			<- contStringConcat;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _link;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _link;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _link3;;
+
+			=> nrel_goto: .proc_of_formalization_geometric_relations_in_natural_language_form7G;;
+			*);;
+
+		-> .proc_of_formalization_geometric_relations_in_natural_language_form7G
+			(*
+			<- contStringConcat;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _link1;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _link1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _link;;
+
+			=> nrel_goto: .proc_of_formalization_geometric_relations_in_natural_language_form8A;;
+			*);;	
+
+		-> .proc_of_formalization_geometric_relations_in_natural_language_form8A
+			(*
+			<- contStringConcat;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _link1;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _link1;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: [ с коэффициентом подобия ];;
+
+			=> nrel_goto: .proc_of_formalization_geometric_relations_in_natural_language_form8B;;
+			*);;
+
+		-> .proc_of_formalization_geometric_relations_in_natural_language_form8B
+			(*
+			<- searchElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _something;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _koef;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_coefficient_of_similarity;;
+
+			=> nrel_then: .proc_of_formalization_geometric_relations_in_natural_language_form8C;;
+			=> nrel_else: .proc_of_formalization_geometric_relations_in_natural_language_form_return;;
+			*);;
+
+		-> .proc_of_formalization_geometric_relations_in_natural_language_form8C
+			(*
+			<- searchElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _koef;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _main_idtf;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_main_idtf;;
+
+			=> nrel_then: .proc_of_formalization_geometric_relations_in_natural_language_form8D;;
+			=> nrel_else: .proc_of_formalization_geometric_relations_in_natural_language_form_return;;
+			*);;
+
+		-> .proc_of_formalization_geometric_relations_in_natural_language_form8D
+			(*
+			<- contStringConcat;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _link1;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _link1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _main_idtf;;
+
+			=> nrel_goto: .proc_of_formalization_geometric_relations_in_natural_language_form_gen_answer;;
+			*);;
+
+		-> .proc_of_formalization_geometric_relations_in_natural_language_form9A
+			(*
+			<- searchElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _node2;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _main_idtf;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_main_idtf;;
+
+			=> nrel_then: .proc_of_formalization_geometric_relations_in_natural_language_form9C;;
+			=> nrel_else: .proc_of_formalization_geometric_relations_in_natural_language_form_return;;
+			*);;
+
+		-> .proc_of_formalization_geometric_relations_in_natural_language_form9C
+			(*
+			<- contStringConcat;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _link1;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _link1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _main_idtf;;
+
+			=> nrel_goto: .proc_of_formalization_geometric_relations_in_natural_language_form9D;;
+			*);;
+
+		-> .proc_of_formalization_geometric_relations_in_natural_language_form9D
+			(*
+			<- ifCoin;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_norole_relation: _some_relation;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: nrel_similarity;;
+
+			=> nrel_then: .proc_of_formalization_geometric_relations_in_natural_language_form10A;;
+			=> nrel_else: .proc_of_formalization_geometric_relations_in_natural_language_form9E;;
+			*);;
+
+		-> .proc_of_formalization_geometric_relations_in_natural_language_form9E
+			(*
+			<- ifCoin;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_norole_relation: _some_relation;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: nrel_congruence;;
+
+			=> nrel_then: .proc_of_formalization_geometric_relations_in_natural_language_form10B;;
+			=> nrel_else: .proc_of_formalization_geometric_relations_in_natural_language_form9F;;
+			*);;	
+
+		-> .proc_of_formalization_geometric_relations_in_natural_language_form9F
+			(*
+			<- ifCoin;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_norole_relation: _some_relation;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: nrel_equal_sized;;
+
+			=> nrel_then: .proc_of_formalization_geometric_relations_in_natural_language_form10C;;
+			=> nrel_else: .proc_of_formalization_geometric_relations_in_natural_language_form_return;;
+			*);;	
+
+		-> .proc_of_formalization_geometric_relations_in_natural_language_form10A
+			(*
+			<- contStringConcat;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _link1;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _link1;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: [ подобны.];;
+
+			=> nrel_goto: .proc_of_formalization_geometric_relations_in_natural_language_form_gen_answer;;
+			*);;
+
+		-> .proc_of_formalization_geometric_relations_in_natural_language_form10B
+			(*
+			<- contStringConcat;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _link1;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _link1;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: [ конгруэнтны.];;
+
+			=> nrel_goto: .proc_of_formalization_geometric_relations_in_natural_language_form_gen_answer;;
+			*);;
+
+		-> .proc_of_formalization_geometric_relations_in_natural_language_form10C
+			(*
+			<- contStringConcat;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _link1;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _link1;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: [ являются равновеликими.];;
+
+			=> nrel_goto: .proc_of_formalization_geometric_relations_in_natural_language_form_gen_answer;;
+			*);;	
+
+		-> .proc_of_formalization_geometric_relations_in_natural_language_form_gen_answer
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_formalization_relations;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _link1;;
+
+			=> nrel_goto: .proc_of_formalization_geometric_relations_in_natural_language_form_return;;
+			*);;
+			
+		-> .proc_of_formalization_geometric_relations_in_natural_language_form_return
+			(*
+			<- return;;
+			*);;	
+				
+	 	*);;
+	*);;
