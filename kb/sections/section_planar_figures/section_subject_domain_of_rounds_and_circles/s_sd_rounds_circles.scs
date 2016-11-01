@@ -1,0 +1,45 @@
+s_sd_rounds_circles
+=> nrel_main_idtf:
+	[Раздел. Предметная область кругов и окружностей]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf: [Section. Subject domain og rounds and circles]
+	(* <- lang_en;; *);
+
+<- non_atomic_section;
+
+<= nrel_section_decomposition:
+	{
+		s_main_concepts_circles_rounds
+		(*
+		=> nrel_section_base_order: 
+			s_chords_arcs;;
+		*);
+
+		s_chords_arcs
+		(*
+		=> nrel_section_base_order: 
+			s_tangent_secant;;
+		*);
+
+		s_tangent_secant
+		(*
+		=> nrel_section_base_order: 
+			s_angles_connected_circle;;
+		*);
+		
+		s_angles_connected_circle
+		(*
+		=> nrel_section_base_order: 
+			s_relations_between_circles;;
+		*);
+
+		s_relations_between_circles
+		(*
+		=> nrel_section_base_order: 
+			s_round_sector_segment_area;;
+		*);
+
+		s_round_sector_segment_area
+	};
+
+-> rrel_key_sc_element: subject_domain_of_rounds_and_circles;;

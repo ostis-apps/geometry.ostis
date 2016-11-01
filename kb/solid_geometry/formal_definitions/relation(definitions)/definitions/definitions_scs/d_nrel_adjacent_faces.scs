@@ -1,0 +1,18 @@
+d_nrel_adjacent_faces <- definition;;
+
+d_nrel_adjacent_faces => nrel_main_idtf: [Опр.(смежные грани*)] (* <- lang_ru;; *);;
+d_nrel_adjacent_faces => nrel_main_idtf: [Def.(adjacent faces*)] (* <- lang_en;; *);;
+
+d_nrel_adjacent_faces -> rrel_key_sc_element: nrel_adjacent_faces;;
+
+d_nrel_adjacent_faces <= nrel_using_constants: ...
+	(*
+	-> concept_polyhedron;;
+	-> nrel_edge;;
+	*);;
+
+d_nrel_adjacent_faces <= nrel_sc_text_translation: ...
+	(*
+	-> rrel_example:
+		[Смежными гранями многогранника называются грани, имеющие общее ребро.] (* <- lang_ru;; *);;
+	*);;

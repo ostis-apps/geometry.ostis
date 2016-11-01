@@ -1,0 +1,21 @@
+d_nrel_diagonal_of_polyhedron <- definition;;
+
+d_nrel_diagonal_of_polyhedron => nrel_main_idtf: [Опр.(диагональ многогранника*)] (*<-lang_ru;;*);;
+d_nrel_diagonal_of_polyhedron => nrel_main_idtf: [Def.(diagonal of polyhedron*)] (*<-lang_en;;*);;
+
+d_nrel_diagonal_of_polyhedron -> rrel_key_sc_element: nrel_diagonal_of_polyhedron;;
+
+d_nrel_diagonal_of_polyhedron <= nrel_using_constants:...
+	(*
+	->concept_segment;;
+	->nrel_vertex;;
+	->nrel_face_of_polyhedron;;
+	*);;
+
+d_nrel_diagonal_of_polyhedron  <= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+	[Диагональю многогранника называется отрезок, соединяющий две вершины многогранника, не принадлежащи одной грани.] (*<-lang_ru;;*);;
+	*);;
+

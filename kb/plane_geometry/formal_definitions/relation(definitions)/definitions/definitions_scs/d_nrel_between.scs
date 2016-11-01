@@ -1,19 +1,21 @@
 d_nrel_between
-=> nrel_main_idtf: [Поясн.(между*)] (* <- lang_ru;; *);
-=> nrel_main_idtf: [Expl.(between*)] (*<- lang_en;;*);
+=> nrel_main_idtf: [Поясн.(между*)] 
+	(* <- lang_ru;; *);
+=> nrel_main_idtf: [Expl.(between*)] 
+	(*<- lang_en;;*);
 <- definition;
+
 -> rrel_key_sc_element: nrel_between;
 
 <= nrel_using_constants:
 	{
-	concept_geometric_point; 
-	concept_rectilinear_three_of_points
+	concept_rectilinear_three_of_points;
+	concept_geometric_point
 	};
 
-<= nrel_sc_text_translation: 
-	...
+<= nrel_sc_text_translation: ...
 	(*
 	-> rrel_example: 
-		[Между - атрибут, уточняющий роль точки в прямолинейной тройке точек, лежащей между двумя другим точками в тройке.]
+		[Между - бинарное отношение, связывающее пару точек и точку, лежащую на отрезке, для которого точки являются граничными.]
 		(* <- lang_ru;; *);;
 	*);;
