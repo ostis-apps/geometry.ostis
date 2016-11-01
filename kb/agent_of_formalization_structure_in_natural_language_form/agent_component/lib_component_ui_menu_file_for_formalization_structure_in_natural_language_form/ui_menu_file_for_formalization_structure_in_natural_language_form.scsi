@@ -1,0 +1,16 @@
+ui_menu_file_for_formalization_structure_in_natural_language_form <- ui_user_command_class_atom; ui_user_command_class_view_kb; ui_one_argument_command_class;;
+
+ui_menu_file_for_formalization_structure_in_natural_language_form => nrel_main_idtf: [Команда формализации различного рода структур в естественно-языковой форме] (* <- lang_ru;; *);;
+ui_menu_file_for_formalization_structure_in_natural_language_form => nrel_main_idtf: [Command of formalization structrure in natural language form] (* <- lang_en;; *);;
+	
+ui_menu_file_for_formalization_structure_in_natural_language_form => ui_nrel_command_template:
+	[*
+		action_of_formalization_structure_in_natural_language_form _-> ._action_of_formalization_structure_in_natural_language_form_instance
+			(*
+			_-> ui_arg_1;;	
+			*);;
+		._action_of_formalization_structure_in_natural_language_form_instance _<- question;;
+	*];;
+
+ui_menu_file_for_formalization_structure_in_natural_language_form => ui_nrel_command_lang_template: [Команда формализации структуры $ui_arg_1 в естественно-языковой формы] (* <- lang_ru;; *);;
+ui_menu_file_for_formalization_structure_in_natural_language_form => ui_nrel_command_lang_template: [Command of formalization structure $ui_arg_1 in natural language form] (* <- lang_en;; *);;
