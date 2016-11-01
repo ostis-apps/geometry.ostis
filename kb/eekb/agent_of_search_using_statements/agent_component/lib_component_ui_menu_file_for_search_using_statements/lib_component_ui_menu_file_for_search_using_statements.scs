@@ -1,0 +1,26 @@
+lib_component_ui_menu_file_for_search_using_statements
+=> nrel_main_idtf:
+	[Компонент библиотеки. Команда пользовательского интерфейса для вывода всех утверждений, использующихся для доказательства исходного утверждения]
+	(* <- lang_ru;; *);
+	[Library component. User interface command for display all statements, is used to prove the original statement]
+	(* <- lang_en;; *);
+
+<- library_of_platform_independent_reusable_components;
+<- library_of_atomic_reusable_components;
+<- library_of_reusable_components_of_knowledge_bases;
+
+<- rrel_key_sc_element:
+	... 
+	(*
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://htmls/Ui_Search_Using_Statements.html"
+				(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+
+lib_component_ui_menu_file_for_search_using_statements = [*^"file://ui_menu_file_for_search_using_statements.scsi"*];; 
