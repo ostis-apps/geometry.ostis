@@ -1,0 +1,27 @@
+lib_component_proc_of_checking_parameter
+=> nrel_main_idtf:
+	[Компонент библиотеки. Scp-программа проверки наличия единицы измерения или шкалы у параметра]
+	(* <- lang_ru;; *);
+	[Library component. Scp-program of check unit or scale in the parameter]
+	(* <- lang_en;; *);
+
+<- library_of_platform_independent_reusable_components;
+
+-> rrel_key_sc_element: 
+	proc_of_checking_parameter;
+
+<- rrel_key_sc_element: 
+	...
+	(*
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://htmls/Proc_Of_Checking_Parameter.html" 
+				(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+lib_component_proc_of_checking_parameter = [*^"file://proc_of_checking_parameter.scsi"*];;
+
