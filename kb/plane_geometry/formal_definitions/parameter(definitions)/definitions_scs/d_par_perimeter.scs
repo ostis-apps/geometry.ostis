@@ -1,0 +1,19 @@
+d_par_perimeter <- definition;;
+
+d_par_perimeter => nrel_main_idtf: [Опр.(периметр)] (* <- lang_ru;; *);;
+d_par_perimeter => nrel_main_idtf: [Def.(perimeter)] (* <- lang_en;; *);;
+
+d_par_perimeter -> rrel_key_sc_element: par_perimeter;;
+
+d_par_perimeter <= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[Периметр - сумма длин всех сторон многоугольника.]
+		(* <- lang_ru;; *);;
+	*);;
+
+d_par_perimeter <= nrel_using_constants:
+	{
+	concept_circle
+	};;

@@ -1,0 +1,11 @@
+par_perimeter <- sc_node_not_relation;;
+
+par_perimeter <- parameter;;
+
+par_perimeter => nrel_main_idtf:[периметр](*<- lang_ru;;*);;
+par_perimeter => nrel_main_idtf:[perimeter](*<- lang_en;;*);;
+
+measurable_parameter -> par_perimeter;;
+
+par_perimeter -> meter; centimeter; millimeter; kilometer;;
+
