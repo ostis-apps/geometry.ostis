@@ -1,4 +1,4 @@
-lib_component_agent_of_finding_not_considered_proposals_by_author
+lib_component_agent_of_finding_not_considered_proposals_of_author
 => nrel_main_idtf:
 	[Компонент библиотеки. Sc-агент поиска всех нерассмотренных предложений конкретным разработчиком]
 	(* <- lang_ru;; *);
@@ -10,7 +10,7 @@ lib_component_agent_of_finding_not_considered_proposals_by_author
 <- reusable_scp_agent;
 
 -> rrel_key_sc_element: 
-	.platform_independent_realization_of_sc_agent_of_finding_not_considered_proposals_by_author;
+	.platform_independent_realization_of_sc_agent_of_finding_not_considered_proposals_of_author;
 
 <- rrel_key_sc_element: 
 	...
@@ -20,7 +20,7 @@ lib_component_agent_of_finding_not_considered_proposals_by_author
 		...
 		(*
 		-> rrel_example:
-			"file://htmls/Agent_of_finding_not_considered_proposals_by_author.html"
+			"file://htmls/Agent_of_finding_not_considered_proposals_of_author.html"
 				(* <- lang_ru;; *);; 
 		*);;
 	*);;
