@@ -1,0 +1,24 @@
+definition -> d_par_total_surface_area;;
+
+d_par_total_surface_area <- par_total_surface_area;;
+
+d_par_total_surface_area <= nrel_using_constants: ...
+		(*
+		-> concept_polyhedron;;
+		-> concept_cylinder;;
+		-> concept_cone;;
+		-> concept_ball;;
+		*);;
+
+d_par_total_surface_area => nrel_main_idtf:
+	[Опр. (Площадь полной поверхности)] 
+	(* <- lang_ru;;*);;
+	
+d_par_total_surface_area => nrel_main_idtf:
+	[Def. (total surface area )] 
+	(* <- lang_ru;;*);;
+
+d_par_total_surface_area <= nrel_sc_text_translation: ...
+	(*
+	-> [Площадь полной поверхности - сумма площадей всех граней фигуры.] (* <- lang_ru;;*);;
+	*);;

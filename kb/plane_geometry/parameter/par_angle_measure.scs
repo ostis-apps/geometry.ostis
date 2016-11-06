@@ -1,0 +1,13 @@
+par_angle_measure <- sc_node_not_relation;;
+
+par_angle_measure <- parameter;;
+
+par_angle_measure => nrel_main_idtf:
+	[мера угла]
+	(* <-lang_ru;; *);
+	[angle_measure]
+	(* <-lang_en;; *);;
+
+measurable_parameter -> par_angle_measure;;
+
+par_angle_measure -> q_degree; q_radian;;

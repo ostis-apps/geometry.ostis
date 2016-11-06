@@ -1,0 +1,27 @@
+sc_node_norole_relation -> nrel_ball_base_layer;;	
+
+nrel_ball_base_layer => nrel_main_idtf: 
+	[основание шарового слоя*] 
+	(* <- lang_ru;;*);;
+
+nrel_ball_base_layer => nrel_main_idtf: 
+	[ball base layer*] 
+	(* <- lang_en;;*);;
+
+nrel_ball_base_layer => nrel_first_domain: concept_spherical_layer;;
+nrel_ball_base_layer => nrel_second_domain: concept_round;;
+nrel_ball_base_layer => nrel_definitional_domain: ...
+	(*
+	<= nrel_union: ...
+			(*
+			-> concept_round;;
+			-> concept_spherical_layer;;
+			*);;
+	*);;
+
+nrel_ball_base_layer <- relation;;
+nrel_ball_base_layer <- binary_relation;;
+nrel_ball_base_layer <- oriented_relation;;
+nrel_ball_base_layer <- antisymmetric_relation; antitransitive_relation;
+antireflexive_relation;;
+

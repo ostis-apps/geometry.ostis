@@ -1,0 +1,18 @@
+d_par_lateral_surface_area <- definition;;
+
+d_par_lateral_surface_area => nrel_main_idtf: [Опр.(площадь боковой поверхности)] (* <- lang_ru;; *);;
+d_par_lateral_surface_area => nrel_main_idtf: [Def.(lateral_surface_area)] (* <- lang_en;; *);;
+
+d_par_lateral_surface_area -> rrel_key_sc_element: par_lateral_surface_area;;
+
+d_par_lateral_surface_area <= nrel_using_constants: ...
+	(*
+	-> nrel_lateral_face_of_polyhedron;;
+	-> par_area;;
+	*);;
+
+d_par_lateral_surface_area <= nrel_sc_text_translation: ...
+	(*
+	-> rrel_example:
+		[Площадью боковой поверхности многогранника называется сумма площадей его боковых граней.] (* <- lang_ru;; *);;
+	*);;
