@@ -2,8 +2,8 @@ stat_triangle_area_internal_angle_perimeter_tan <- statement;;
 
 stat_triangle_area_internal_angle_perimeter_tan -> rrel_key_sc_element: concept_triangle; nrel_area; nrel_internal_angle; nrel_perimeter; nrel_tan;;
 
-stat_triangle_area_internal_angle_perimeter_tan => nrel_main_idtf: [Акс.(треугольник;площадь*;внутренний угол*;периметр*;тангенс*)] (*<- lang_ru;;*);;
-stat_triangle_area_internal_angle_perimeter_tan => nrel_main_idtf: [Ax.(triangle;area*;internal angle*;perimeter*;tan*)] (*<- lang_en;;*);;
+stat_triangle_area_internal_angle_perimeter_tan => nrel_main_idtf: [Утв.(треугольник;площадь*;внутренний угол*;периметр*;тангенс*)] (*<- lang_ru;;*);;
+stat_triangle_area_internal_angle_perimeter_tan => nrel_main_idtf: [Stat.(triangle;area*;internal angle*;perimeter*;tan*)] (*<- lang_en;;*);;
 
 stat_triangle_area_internal_angle_perimeter_tan <= nrel_sc_text_translation: 
 		... 
