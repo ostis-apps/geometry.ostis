@@ -29,8 +29,7 @@ scp_program -> proc_of_forming_terminological_ontology
 
 			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer_proc_of_forming_terminological_ontology;;
 
-			=> nrel_then: .proc_of_forming_terminological_ontology_operator2B;;
-			=> nrel_else: .proc_of_forming_terminological_ontology_operator12;;
+			=> nrel_goto: .proc_of_forming_terminological_ontology_operator2B;;
 			*);;
 
 		-> .proc_of_forming_terminological_ontology_operator2B
@@ -72,7 +71,7 @@ scp_program -> proc_of_forming_terminological_ontology
 			<- searchSetStr5;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _parameter;;
-			-> rrel_2: rrel_assign: rrel_scp_var: rrel_commom: _arc1;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc1;;
 			-> rrel_3: rrel_assign: rrel_scp_var: _ontology;;
 			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
 			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_ontology;;
@@ -92,7 +91,7 @@ scp_program -> proc_of_forming_terminological_ontology
 			-> rrel_3: rrel_assign: rrel_scp_var: _ontology;;
 
 			=> nrel_then: .proc_of_forming_terminological_ontology_operator5C;;
-			=> nrel_else: .proc_of_forming_terminological_ontology_operator5I;;
+			=> nrel_else: .proc_of_forming_terminological_ontology_operator5J;;
 			*);;
 
 		-> .proc_of_forming_terminological_ontology_operator5C
@@ -121,7 +120,7 @@ scp_program -> proc_of_forming_terminological_ontology
 			<- searchSetStr5;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _parameter;;
-			-> rrel_2: rrel_assign: rrel_scp_var: rrel_commom: _arc1;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc1;;
 			-> rrel_3: rrel_fixed: rrel_scp_var: _ontology;;
 			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
 			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_ontology;;
@@ -162,10 +161,24 @@ scp_program -> proc_of_forming_terminological_ontology
 
 			-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _set_of_ontologies;;
 
-			=> nrel_goto: .proc_of_forming_terminological_ontology_operator9B;;
+			=> nrel_goto: .proc_of_forming_terminological_ontology_operator5I;;
 			*);;
 
 		-> .proc_of_forming_terminological_ontology_operator5I
+			(*
+			<- searchElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _parameter;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _node;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_assign: rrel_scp_var: rrel_role_relation: _attr1;;
+
+			=> nrel_then: .proc_of_forming_terminological_ontology_operator14;;
+			=> nrel_else: .proc_of_forming_terminological_ontology_operator13A;;
+			*);;
+
+		-> .proc_of_forming_terminological_ontology_operator5J
 			(*
 			<- eraseEl;;
 
@@ -188,7 +201,7 @@ scp_program -> proc_of_forming_terminological_ontology
 			<- genElStr5;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _parameter;;
-			-> rrel_2: rrel_assign: rrel_scp_var: rrel_const: rrel_commom: _arc1;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_const: rrel_common: _arc1;;
 			-> rrel_3: rrel_fixed: rrel_scp_var: _ontology;;
 			-> rrel_4: rrel_assign: rrel_scp_var: rrel_const: rrel_pos_const_perm: _arc2;;
 			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_ontology;;
@@ -201,7 +214,7 @@ scp_program -> proc_of_forming_terminological_ontology
 			<- searchSetStr5;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _parameter;;
-			-> rrel_2: rrel_assign: rrel_scp_var: rrel_commom: _arc1;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc1;;
 			-> rrel_3: rrel_fixed: rrel_scp_var: _ontology;;
 			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
 			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_ontology;;
@@ -236,16 +249,18 @@ scp_program -> proc_of_forming_terminological_ontology
 
 		-> .proc_of_forming_terminological_ontology_operator8B
 			(*
-			<- genElStr3;;
+			<- searchSetStr3;;
 
-			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_proc_of_forming_terminological_ontology;;
-			-> rrel_2: rrel_assign: rrel_scp_var: rrel_const: rrel_pos_const_perm: _arc2;;
-			-> rrel_3: rrel_fixed: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_1: rrel_fixed: rrel_scp_const: terminological_ontology;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _ontology;;
 
-			=> nrel_goto: .proc_of_forming_terminological_ontology_operator9A;; 
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer_proc_of_forming_terminological_ontology;;
+
+			=> nrel_goto: .proc_of_forming_terminological_ontology_operator9;; 
 			*);;
 
-		-> .proc_of_forming_terminological_ontology_operator9A
+		-> .proc_of_forming_terminological_ontology_operator9
 			(*
 			<- searchSetStr5;;
 
@@ -258,21 +273,7 @@ scp_program -> proc_of_forming_terminological_ontology
 			-> rrel_set_3: rrel_assign: rrel_scp_var: _set_of_elements;;
 
 			=> nrel_then: .proc_of_forming_terminological_ontology_operator10A;;
-			=> nrel_else: .proc_of_forming_terminological_ontology_operator15A;;
-			*);;
-
-		-> .proc_of_forming_terminological_ontology_operator9B
-			(*
-			<- searchElStr5;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_var: _parameter;;
-			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
-			-> rrel_3: rrel_assign: rrel_scp_var: _node;;
-			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
-			-> rrel_5: rrel_assign: rrel_scp_var: rrel_role_relation: _attr1;;
-
-			=> nrel_then: .proc_of_forming_terminological_ontology_operator16;;
-			=> nrel_else: .proc_of_forming_terminological_ontology_operator15A;;
+			=> nrel_else: .proc_of_forming_terminological_ontology_operator13A;;
 			*);;	
 
 		-> .proc_of_forming_terminological_ontology_operator10A
@@ -312,13 +313,12 @@ scp_program -> proc_of_forming_terminological_ontology
 			<- call;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_const: proc_of_finding_identifier_extended;;
-			-> rrel_2: rrel_fixed: rrel_scp_const:
-			.proc_of_forming_terminological_ontology_operator10D_params
+			-> rrel_2: rrel_fixed: rrel_scp_const: .proc_of_forming_terminological_ontology_operator10D_params
 				(*
 				-> rrel_1: rrel_fixed: rrel_scp_var: _node;;
 				-> rrel_2: rrel_fixed: rrel_scp_var: _ontology;;
 				*);;
-			-> rrel_3: rrel_assign: rrel_scp_var: _descr;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _descr1;;
 
 			=> nrel_goto: .proc_of_forming_terminological_ontology_operator10E;;
 			*);;
@@ -327,7 +327,7 @@ scp_program -> proc_of_forming_terminological_ontology
 			(*
 			<- waitReturn;;
 
-			-> rrel_1: rrel_fixed: rrel_scp_var: _descr;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _descr1;;
 
 			=> nrel_goto: .proc_of_forming_terminological_ontology_operator10A;;
 			*);;
@@ -351,65 +351,52 @@ scp_program -> proc_of_forming_terminological_ontology
 			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
 			-> rrel_3: rrel_fixed: rrel_scp_const: nrel_idtf;;
 			
-			=> nrel_goto: .proc_of_forming_terminological_ontology_operator14;;
+			=> nrel_goto: .proc_of_forming_terminological_ontology_operator12;;
 			*);;
 
 		-> .proc_of_forming_terminological_ontology_operator12
 			(*
-			<- contAssign;;
+			<- searchSetStr3;;
 
-			-> rrel_1: rrel_assign: rrel_scp_var: rrel_link: _message;;
-			-> rrel_2: rrel_fixed: rrel_scp_const: [Incorrect input argument. It is not subject domain];;
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_struct: _ontology;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _something;;
 
-			=> nrel_goto: .proc_of_forming_terminological_ontology_operator13A;; 
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer_proc_of_forming_terminological_ontology;;
+			-> rrel_set_3: rrel_fixed: rrel_scp_var: _answer_proc_of_forming_terminological_ontology;;
+
+			=> nrel_goto: .proc_of_forming_terminological_ontology_operator15;;
 			*);;
 
 		-> .proc_of_forming_terminological_ontology_operator13A
 			(*
-			<- call;;
+			<- genElStr3;;
 
-			-> rrel_1: rrel_fixed: rrel_scp_const: proc_of_erasing_comment;;
-			-> rrel_2: rrel_fixed: rrel_scp_const:
-			.proc_of_forming_terminological_ontology_operator13A_params
-				(*
-				-> rrel_1: rrel_fixed: rrel_scp_var: _parameter;;
-				*);;
-			-> rrel_3: rrel_assign: rrel_scp_var: _descr;;
+			-> rrel_1: rrel_fixed: rrel_scp_const: empty_set;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_const: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _ontology;;
 
 			=> nrel_goto: .proc_of_forming_terminological_ontology_operator13B;;
 			*);;
 
 		-> .proc_of_forming_terminological_ontology_operator13B
 			(*
-			<- waitReturn;;
+			<- genElStr3;;
 
-			-> rrel_1: rrel_fixed: rrel_scp_var: _descr;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_proc_of_forming_terminological_ontology;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_const: rrel_pos_const_perm: _arc2;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: rrel_pos_const_perm: _arc1;;
 
 			=> nrel_goto: .proc_of_forming_terminological_ontology_operator13C;;
 			*);;
 
 		-> .proc_of_forming_terminological_ontology_operator13C
 			(*
-			<- call;;
+			<- genElStr3;;
 
-			-> rrel_1: rrel_fixed: rrel_scp_const: proc_of_generating_comment;;
-			-> rrel_2: rrel_fixed: rrel_scp_const:
-			.proc_of_forming_terminological_ontology_operator13C_params
-				(*
-				-> rrel_1: rrel_fixed: rrel_scp_var: _parameter;;
-				-> rrel_2: rrel_fixed: rrel_scp_var: _message;;
-				-> rrel_3: rrel_fixed: rrel_scp_var: _answer_proc_of_forming_terminological_ontology;;
-				*);;
-			-> rrel_3: rrel_assign: rrel_scp_var: _descr;;
-
-			=> nrel_goto: .proc_of_forming_terminological_ontology_operator13D;;
-			*);;
-
-		-> .proc_of_forming_terminological_ontology_operator13D
-			(*
-			<- waitReturn;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_var: _descr;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_proc_of_forming_terminological_ontology;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_const: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: empty_set;;
 
 			=> nrel_goto: .proc_of_forming_terminological_ontology_operator_return;;
 			*);;
@@ -425,57 +412,10 @@ scp_program -> proc_of_forming_terminological_ontology
 			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer_proc_of_forming_terminological_ontology;;
 			-> rrel_set_3: rrel_fixed: rrel_scp_var: _answer_proc_of_forming_terminological_ontology;;
 
-			=> nrel_goto: .proc_of_forming_terminological_ontology_operator17;;
-			*);;
-
-		-> .proc_of_forming_terminological_ontology_operator15A
-			(*
-			<- genElStr3;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_const: empty_set;;
-			-> rrel_2: rrel_assign: rrel_scp_var: rrel_const: rrel_pos_const_perm: _arc1;;
-			-> rrel_3: rrel_fixed: rrel_scp_var: _ontology;;
-
-			=> nrel_goto: .proc_of_forming_terminological_ontology_operator15B;;
-			*);;
-
-		-> .proc_of_forming_terminological_ontology_operator15B
-			(*
-			<- genElStr3;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_proc_of_forming_terminological_ontology;;
-			-> rrel_2: rrel_assign: rrel_scp_var: rrel_const: rrel_pos_const_perm: _arc2;;
-			-> rrel_3: rrel_fixed: rrel_scp_var: rrel_pos_const_perm: _arc1;;
-
-			=> nrel_goto: .proc_of_forming_terminological_ontology_operator15C;;
-			*);;
-
-		-> .proc_of_forming_terminological_ontology_operator15C
-			(*
-			<- genElStr3;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_proc_of_forming_terminological_ontology;;
-			-> rrel_2: rrel_assign: rrel_scp_var: rrel_const: rrel_pos_const_perm: _arc1;;
-			-> rrel_3: rrel_fixed: rrel_scp_const: empty_set;;
-
 			=> nrel_goto: .proc_of_forming_terminological_ontology_operator_return;;
 			*);;
 
-		-> .proc_of_forming_terminological_ontology_operator16
-			(*
-			<- searchSetStr3;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_struct: _ontology;;
-			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
-			-> rrel_3: rrel_assign: rrel_scp_var: _something;;
-
-			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer_proc_of_forming_terminological_ontology;;
-			-> rrel_set_3: rrel_fixed: rrel_scp_var: _answer_proc_of_forming_terminological_ontology;;
-
-			=> nrel_goto: .proc_of_forming_terminological_ontology_operator_return;;
-			*);;
-
-		-> .proc_of_forming_terminological_ontology_operator17
+		-> .proc_of_forming_terminological_ontology_operator15
 			(*
 			<- eraseEl;;
 
