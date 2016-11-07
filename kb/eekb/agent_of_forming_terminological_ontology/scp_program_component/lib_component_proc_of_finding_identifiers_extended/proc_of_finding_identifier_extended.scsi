@@ -81,7 +81,7 @@ scp_program -> proc_of_finding_identifier_extended
 			<- genElStr3;;
 
 		 	-> rrel_1: rrel_fixed: rrel_scp_var: _answer_proc_of_finding_identifier_extended;;
-		 	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+		 	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: rrel_const: _arc1;;
 		 	-> rrel_3: rrel_fixed: rrel_scp_var: _idtf;;
 
             => nrel_goto: .proc_of_finding_identifier_extended_operator3A;;
@@ -94,7 +94,7 @@ scp_program -> proc_of_finding_identifier_extended
 		 	-> rrel_1: rrel_fixed: rrel_scp_var: _elem;;
 		 	-> rrel_2: rrel_assign: rrel_const: rrel_common: rrel_scp_var: _arc1;;
 		 	-> rrel_3: rrel_fixed: rrel_scp_var: _idtf;;
-            -> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+            -> rrel_4: rrel_assign: rrel_const: rrel_pos_const_perm: rrel_scp_var: _arc2;;
 		 	-> rrel_5: rrel_fixed: rrel_scp_var: rrel_norole_reltion: _relation;;
 	         
             -> rrel_set_2: rrel_fixed: rrel_scp_var: _answer_proc_of_finding_identifier_extended;;
@@ -152,33 +152,10 @@ scp_program -> proc_of_finding_identifier_extended
 
 		-> .proc_of_finding_identifier_extended_operator4D
 			(*
-			<- searchElStr3;;
-
-		 	-> rrel_1: rrel_fixed: rrel_scp_var: _answer_proc_of_finding_identifier_extended;;
-		 	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
-		 	-> rrel_3: rrel_fixed: rrel_scp_var: _lang;;
-
-		 	=> nrel_then: .proc_of_finding_identifier_extended_operator4F;;
-            => nrel_else: .proc_of_finding_identifier_extended_operator4E;;
-			*);;
-
-		-> .proc_of_finding_identifier_extended_operator4E 
-			(*
-		 	<- genElStr3;;
-
-		 	-> rrel_1: rrel_fixed: rrel_scp_var: _answer_proc_of_finding_identifier_extended;;
-		 	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
-		 	-> rrel_3: rrel_fixed: rrel_scp_var: _lang;;
-               
-		  	=> nrel_goto: .proc_of_finding_identifier_extended_operator4F;;
-		  	*);;
-
-		-> .proc_of_finding_identifier_extended_operator4F 
-			(*
 		 	<- searchSetStr3;;
 
 		 	-> rrel_1: rrel_fixed: rrel_scp_var: _lang;;
-		 	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+		 	-> rrel_2: rrel_assign: rrel_const: rrel_pos_const_perm: rrel_scp_var: _arc1;;
 		 	-> rrel_3: rrel_fixed: rrel_scp_var: _idtf;;
 
             -> rrel_set_2: rrel_fixed: rrel_scp_var: _answer_proc_of_finding_identifier_extended;;
