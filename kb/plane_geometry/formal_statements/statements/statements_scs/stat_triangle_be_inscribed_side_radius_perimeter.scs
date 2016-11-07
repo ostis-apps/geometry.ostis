@@ -2,8 +2,8 @@ stat_triangle_be_inscribed_side_radius_perimeter <- statement;;
 
 stat_triangle_be_inscribed_side_radius_perimeter -> rrel_key_sc_element: concept_triangle; nrel_be_inscribed; nrel_radius; nrel_perimeter;;
 
-stat_triangle_be_inscribed_side_radius_perimeter => nrel_main_idtf: [Акс.(треугольник;быть вписанным*;радиус*;периметр*)] (*<- lang_ru;;*);;
-stat_triangle_be_inscribed_side_radius_perimeter => nrel_main_idtf: [Ax.(triangle;be inscribed*;radius*;perimeter*)] (*<- lang_en;;*);;
+stat_triangle_be_inscribed_side_radius_perimeter => nrel_main_idtf: [Утв.(треугольник;быть вписанным*;радиус*;периметр*)] (*<- lang_ru;;*);;
+stat_triangle_be_inscribed_side_radius_perimeter => nrel_main_idtf: [Stat.(triangle;be inscribed*;radius*;perimeter*)] (*<- lang_en;;*);;
 
 stat_triangle_be_inscribed_side_radius_perimeter <= nrel_sc_text_translation: 
 		... 

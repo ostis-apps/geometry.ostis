@@ -2,8 +2,8 @@ stat_triangle_cos_angle_side_opposite <- statement;;
 
 stat_triangle_cos_angle_side_opposite -> rrel_key_sc_element: concept_triangle; nrel_cos; concept_angle; nrel_side; nrel_opposite;;
 
-stat_triangle_cos_angle_side_opposite => nrel_main_idtf: [Акс.(треугольник;косинус*;угол;сторона*;быть противолежащим*)] (*<- lang_ru;;*);;
-stat_triangle_cos_angle_side_opposite => nrel_main_idtf: [Ax.(triangle;cos*;angle;side*;opposite*)] (*<- lang_en;;*);;
+stat_triangle_cos_angle_side_opposite => nrel_main_idtf: [Утв.(треугольник;косинус*;угол;сторона*;быть противолежащим*)] (*<- lang_ru;;*);;
+stat_triangle_cos_angle_side_opposite => nrel_main_idtf: [Stat.(triangle;cos*;angle;side*;opposite*)] (*<- lang_en;;*);;
 
 stat_triangle_cos_angle_side_opposite <= nrel_sc_text_translation: 
 		... 

@@ -2,8 +2,8 @@ stat_triangle_internal_angle_side_tan <- statement;;
 
 stat_triangle_internal_angle_side_tan -> rrel_key_sc_element: concept_triangle; nrel_internal_angle; nrel_side; nrel_tan;;
 
-stat_triangle_internal_angle_side_tan => nrel_main_idtf: [Акс.(треугольник;внутренний угол*;сторона*;тангенс*)] (*<- lang_ru;;*);;
-stat_triangle_internal_angle_side_tan => nrel_main_idtf: [Ax.(triangle;internal angle*;side*;tan*)] (*<- lang_en;;*);;
+stat_triangle_internal_angle_side_tan => nrel_main_idtf: [Утв.(треугольник;внутренний угол*;сторона*;тангенс*)] (*<- lang_ru;;*);;
+stat_triangle_internal_angle_side_tan => nrel_main_idtf: [Stat.(triangle;internal angle*;side*;tan*)] (*<- lang_en;;*);;
 
 stat_triangle_internal_angle_side_tan <= nrel_sc_text_translation: 
 		... 
