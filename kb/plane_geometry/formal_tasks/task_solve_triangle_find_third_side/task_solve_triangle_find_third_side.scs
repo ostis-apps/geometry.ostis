@@ -1,0 +1,20 @@
+task_solve_triangle_find_third_side => nrel_main_idtf: [Задача 2] (* <-lang_ru;; *);;
+
+task_solve_triangle_find_third_side <= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[У треугольника две стороны равны 5м и 6м, а синус угла между ними равен 0,6. Найдите третью сторону.]
+		(* <- lang_ru;; *);;
+	*);;
+
+task_solve_triangle_find_third_side <- rrel_key_sc_element: 
+	...
+	(*
+	<- illustration;; 
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: "file://task_solve_triangle_find_third_side.png";;
+		*);;
+	*);;
