@@ -1,0 +1,32 @@
+sc_node_not_relation -> test_entity; blabla;blublu;;
+test_entity => nrel_main_idtf: 
+	[тестовая сущность]
+		(*<- lang_ru;;*);
+	[test entity]
+		(*<- lang_en;;*);;	
+
+blabla => nrel_main_idtf: 
+	[blabla]
+		(*<- lang_ru;;*);
+	[blabla]
+		(*<- lang_en;;*);;	
+
+blublu => nrel_main_idtf: 
+	[blublu]
+		(*<- lang_ru;;*);
+	[blublu]
+		(*<- lang_en;;*);;	
+
+//set -> test_entity;;		
+//concept_surface -> test_entity;;	
+concept_triangle -> test_entity;;
+//test_entity -> concept_acute_angled_triangle;;
+//test_entity -> blabla;;
+blabla -> test_entity;;
+blabla <= nrel_inclusion: blublu;;
+
+//concept_triangle => nrel_inclusion: blabla; concept_surface; nrel_inclusion;;
+//blublu -> test_entity;;
+//blublu => nrel_inclusion: blabla;;
+//blabla => nrel_inclusion: concept_acute_angled_triangle;;
+blublu => nrel_inclusion: concept_acute_angled_triangle;;
