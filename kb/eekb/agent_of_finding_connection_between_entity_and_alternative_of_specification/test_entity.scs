@@ -19,11 +19,11 @@ blublu => nrel_main_idtf:
 
 //set -> test_entity;;		
 //concept_surface -> test_entity;;	
-concept_triangle -> test_entity;;
-//test_entity -> concept_acute_angled_triangle;;
+//concept_triangle -> test_entity;;
+test_entity -> concept_acute_angled_triangle;;
 //test_entity -> blabla;;
 blabla -> test_entity;;
-blabla <= nrel_inclusion: blublu;;
+blabla <= nrel_strict_inclusion: blublu;;
 
 //concept_triangle => nrel_inclusion: blabla; concept_surface; nrel_inclusion;;
 //blublu -> test_entity;;
