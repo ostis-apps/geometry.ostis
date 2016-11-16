@@ -1,0 +1,21 @@
+task_find_angle_measure_isosceles_triangle => nrel_main_idtf: [Задача 5] (* <-lang_ru;; *);;
+
+task_find_angle_measure_isosceles_triangle <= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[Найти угол при вершине равнобедренного треугольника, если угол при основании равен 40 градусов.]
+		(* <- lang_ru;; *);;
+	*);;
+
+task_find_angle_measure_isosceles_triangle <- rrel_key_sc_element: 
+	...
+	(*
+	<- illustration;; 
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: "file://task_find_angle_measure_isosceles_triangle_ru.png";;
+		*);;
+	*);;
+	
