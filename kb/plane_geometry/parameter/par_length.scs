@@ -1,0 +1,12 @@
+par_length <- sc_node_not_relation;;
+
+par_length <- parameter;;
+
+par_length => nrel_main_idtf:
+	[длина]
+	(* <-lang_ru;; *);
+	[length]
+	(* <-lang_en;; *);;
+
+measurable_parameter -> par_length;;
+par_length -> meter; centimeter; millimeter; kilometer;decimeter;;

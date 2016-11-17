@@ -1,0 +1,16 @@
+d_par_length <- definition;;
+
+d_par_length => nrel_main_idtf: [Опр.(длина)] (* <- lang_ru;; *);;
+d_par_length => nrel_main_idtf: [Def.(length)] (* <- lang_en;; *);;
+
+d_par_length -> rrel_key_sc_element: par_length;;
+
+d_par_length <= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[Длина - числовая характеристика протяжённости объекта]
+		(* <- lang_ru;; *);;
+	*);;
+
+
