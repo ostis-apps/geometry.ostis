@@ -53,8 +53,6 @@ scp_program -> agent_of_specifying_of_indicated_entity
 		  	=> nrel_then: .agent_of_specifying_of_indicated_entity_add_quest_to_answer;;
 		  	=> nrel_else: .agent_of_specifying_of_indicated_entity_call_proc_of_adding_validating_message_wrong_param;;
 			*);;
-
-		/*start--------------------------------------------------------------------------------------*/
 	
 		-> .agent_of_specifying_of_indicated_entity_add_quest_to_answer
 			(*
@@ -94,10 +92,8 @@ scp_program -> agent_of_specifying_of_indicated_entity
 			-> rrel_1: rrel_assign: rrel_node: rrel_scp_var: rrel_const: _base_connection;;	
 						
 			=> nrel_goto: .agent_of_specifying_of_indicated_entity1D;;
-			*);;								
-	
-		/*end--------------------------------------------------------------------------------------------*/		
-
+			*);;				
+		
 		->.agent_of_specifying_of_indicated_entity1D
 			(*
 			<- searchSetStr3;;
@@ -109,7 +105,18 @@ scp_program -> agent_of_specifying_of_indicated_entity
 			-> rrel_set_1: rrel_assign: rrel_scp_var: rrel_node: _superclasses;;
 
 			=> nrel_then: .agent_of_specifying_of_indicated_entity1E;;
-			=> nrel_else: .agent_of_specifying_of_indicated_entity_return;;
+			=> nrel_else: .agent_of_specifying_of_indicated_entity1_gen_sc_elem_to_entity_arc;;
+			*);;
+
+		-> .agent_of_specifying_of_indicated_entity1_gen_sc_elem_to_entity_arc
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: sc_element;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_const: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _entity;;
+						
+			=> nrel_goto: .agent_of_specifying_of_indicated_entity1D;;
 			*);;
 
 		->.agent_of_specifying_of_indicated_entity1E
@@ -135,7 +142,7 @@ scp_program -> agent_of_specifying_of_indicated_entity
 			-> rrel_3: rrel_fixed: rrel_scp_const: nrel_disjunction;;
 						
 			=> nrel_goto: .agent_of_specifying_of_indicated_entity2Ap;;
-			*);;	
+			*);;
 
 		-> .agent_of_specifying_of_indicated_entity2Ap
 			(*
@@ -144,9 +151,8 @@ scp_program -> agent_of_specifying_of_indicated_entity
 			-> rrel_1: rrel_fixed: rrel_scp_const: [superclasses];;
 		
 			=> nrel_goto: .agent_of_specifying_of_indicated_entity2A;;
-			*);;	
-
-		// cycle 1 for superclasses
+			*);;
+		
 		-> .agent_of_specifying_of_indicated_entity2A
 			(*
 			<- searchElStr3;;
@@ -155,18 +161,9 @@ scp_program -> agent_of_specifying_of_indicated_entity
 			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
 			-> rrel_3: rrel_assign: rrel_scp_var: rrel_not_relation: _superclass;;
 
-			=> nrel_then: .agent_of_specifying_of_indicated_entity2Bp;;
+			=> nrel_then: .agent_of_specifying_of_indicated_entity2B;;
 			=> nrel_else: .agent_of_specifying_of_indicated_entity_check_existence_of_elems_in_structure;;
-			*);;	
-
-		-> .agent_of_specifying_of_indicated_entity2Bp
-			(*
-			<- printNl;;
-			
-			-> rrel_1: rrel_fixed: rrel_scp_const: [superclass];;
-		
-			=> nrel_goto: .agent_of_specifying_of_indicated_entity2B;;
-			*);;				
+			*);;
 
 		-> .agent_of_specifying_of_indicated_entity2B
 			(*
@@ -199,7 +196,7 @@ scp_program -> agent_of_specifying_of_indicated_entity
 			-> rrel_set_2: rrel_fixed: rrel_scp_var: rrel_node: _answer_of_specifying_of_indicated_entity;;
 
 			=> nrel_goto: .agent_of_specifying_of_indicated_entity2C;;			
-			*);;	
+			*);;
 
 		->.agent_of_specifying_of_indicated_entity2C
 			(*
@@ -216,8 +213,7 @@ scp_program -> agent_of_specifying_of_indicated_entity
 			=> nrel_then: .agent_of_specifying_of_indicated_entity3A;;
 			=> nrel_else: .agent_of_specifying_of_indicated_entity5;;
 			*);;
-
-		// cycle 2 for _set_of_connections_for_subdividing
+		
 		-> .agent_of_specifying_of_indicated_entity3A
 			(*
 			<- searchElStr3;;
@@ -227,7 +223,7 @@ scp_program -> agent_of_specifying_of_indicated_entity
 			-> rrel_3: rrel_assign: rrel_scp_var: _connection;;
 
 			=> nrel_then: .agent_of_specifying_of_indicated_entity3B;;
-			=> nrel_else: .agent_of_specifying_of_indicated_entity5;;//return to superclasses circle
+			=> nrel_else: .agent_of_specifying_of_indicated_entity5;;
 			*);;
 
 		-> .agent_of_specifying_of_indicated_entity3B
@@ -237,7 +233,7 @@ scp_program -> agent_of_specifying_of_indicated_entity
 			-> rrel_1: rrel_erase: rrel_fixed: rrel_scp_var: rrel_pos_const_perm: _arc1;;
 
 			=> nrel_goto: .agent_of_specifying_of_indicated_entity3C;;
-			*);;			
+			*);;
 
 		-> .agent_of_specifying_of_indicated_entity3C
 			(*
@@ -249,18 +245,9 @@ scp_program -> agent_of_specifying_of_indicated_entity
 			
 			-> rrel_set_3: rrel_assign: rrel_scp_var: rrel_node: _set_of_elems_of_subdividing;;
 
-			=> nrel_then: .agent_of_specifying_of_indicated_entity3Dp;;
+			=> nrel_then: .agent_of_specifying_of_indicated_entity_gen_temp_stuct_of_subdividing;;
 			=> nrel_else: .agent_of_specifying_of_indicated_entity5;;
-			*);;
-
-		-> .agent_of_specifying_of_indicated_entity3Dp
-			(*
-			<- printNl;;
-			
-			-> rrel_1: rrel_fixed: rrel_scp_const: [set_of_elems_of_subdividing];;
-		
-			=> nrel_goto: .agent_of_specifying_of_indicated_entity_gen_temp_stuct_of_subdividing;;
-			*);;		
+			*);;	
 	
 		-> .agent_of_specifying_of_indicated_entity_gen_temp_stuct_of_subdividing
 			(*
@@ -271,7 +258,6 @@ scp_program -> agent_of_specifying_of_indicated_entity
 			=> nrel_goto: .agent_of_specifying_of_indicated_entity4A;;
 			*);;
 
-		// cycle 3 for _set_of_elems_of_subdividing
 		-> .agent_of_specifying_of_indicated_entity4A
 			(*
 			<- searchElStr3;;
@@ -281,8 +267,8 @@ scp_program -> agent_of_specifying_of_indicated_entity
 			-> rrel_3: rrel_assign: rrel_scp_var: rrel_not_relation: _elem_of_subdividing;;
 
 			=> nrel_then: .agent_of_specifying_of_indicated_entity4B;;
-			=> nrel_else: .agent_of_specifying_of_indicated_entity4_set_elems_of_subdividing_to_structure;;//after that returm to conncections circle
-			*);;		
+			=> nrel_else: .agent_of_specifying_of_indicated_entity4_set_elems_of_subdividing_to_structure;;
+			*);;
 
 		-> .agent_of_specifying_of_indicated_entity4_set_elems_of_subdividing_to_structure
 			(*
@@ -296,7 +282,7 @@ scp_program -> agent_of_specifying_of_indicated_entity
 			-> rrel_set_3: rrel_fixed: rrel_scp_var: _structure_of_specification_indicated_entity;;
 
 			=> nrel_then: .agent_of_specifying_of_indicated_entity4_add_temp_set_of_subdividing_to_structure;;
-			=> nrel_else: .agent_of_specifying_of_indicated_entity3A;;//return to conncections circle
+			=> nrel_else: .agent_of_specifying_of_indicated_entity3A;;
 			*);;
 
 		-> .agent_of_specifying_of_indicated_entity4_add_temp_set_of_subdividing_to_structure
@@ -351,7 +337,7 @@ scp_program -> agent_of_specifying_of_indicated_entity
 			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
 			-> rrel_3: rrel_fixed: rrel_scp_var: rrel_not_relation: _elem_of_subdividing;;
 
-			=> nrel_then: .agent_of_specifying_of_indicated_entity4_erase_temp_stuct_of_subdividing;;//erase temp struct and return to conncections circle
+			=> nrel_then: .agent_of_specifying_of_indicated_entity4_erase_temp_stuct_of_subdividing;;
 			=> nrel_else: .agent_of_specifying_of_indicated_entity4_add_elem_of_subdividing_to_temp_set;;
 			*);;
 
@@ -361,7 +347,7 @@ scp_program -> agent_of_specifying_of_indicated_entity
 
 			-> rrel_1: rrel_erase: rrel_fixed: rrel_scp_var: _temp_set_of_subdividing;;
 
-			=> nrel_goto: .agent_of_specifying_of_indicated_entity3A;;//return to conncections circle
+			=> nrel_goto: .agent_of_specifying_of_indicated_entity3A;;
 			*);;
 
 		-> .agent_of_specifying_of_indicated_entity4_add_elem_of_subdividing_to_temp_set
@@ -397,9 +383,7 @@ scp_program -> agent_of_specifying_of_indicated_entity
 			-> rrel_set_2: rrel_fixed: rrel_scp_var: _structure_of_specification_indicated_entity;;
 			
 			=> nrel_goto: .agent_of_specifying_of_indicated_entity4A;;
-			*);;
-
-		/*inclusion-------------------------------------------------------------------------------*/
+			*);;	
 
 		-> .agent_of_specifying_of_indicated_entity5
 			(*
@@ -409,7 +393,6 @@ scp_program -> agent_of_specifying_of_indicated_entity
 		
 			=> nrel_goto: .agent_of_specifying_of_indicated_entity5_search_elem_containig_of_inclusion_of_superclass;;
 			*);;
-
 
 		-> .agent_of_specifying_of_indicated_entity5_search_elem_containig_of_inclusion_of_superclass
 			(*
@@ -438,19 +421,9 @@ scp_program -> agent_of_specifying_of_indicated_entity
 
 			-> rrel_set_1: rrel_fixed: rrel_scp_var: rrel_node: _set_of_elems_containig_of_inclusion_of_superclass;;
 
-			=> nrel_goto: .agent_of_specifying_of_indicated_entity5Ap;;			
-			*);;	
+			=> nrel_goto: .agent_of_specifying_of_indicated_entity5A;;			
+			*);;
 
-		-> .agent_of_specifying_of_indicated_entity5Ap
-			(*
-			<- printNl;;
-			
-			-> rrel_1: rrel_fixed: rrel_scp_const: [inclusion];;
-		
-			=> nrel_goto: .agent_of_specifying_of_indicated_entity5A;;
-			*);;			
-
-		// cycle 4 for _set_of_elems_containig_of_inclusion_of_superclass
 		-> .agent_of_specifying_of_indicated_entity5A
 			(*
 			<- searchElStr3;;
@@ -460,7 +433,7 @@ scp_program -> agent_of_specifying_of_indicated_entity
 			-> rrel_3: rrel_assign: rrel_scp_var: _some_elem_containig_of_inclusion_of_superclass;;
 
 			=> nrel_then: .agent_of_specifying_of_indicated_entity5B;;
-			=> nrel_else: .agent_of_specifying_of_indicated_entity7;;//!!
+			=> nrel_else: .agent_of_specifying_of_indicated_entity7;;
 			*);;
 
 		-> .agent_of_specifying_of_indicated_entity5B
@@ -479,7 +452,7 @@ scp_program -> agent_of_specifying_of_indicated_entity
 			-> rrel_1: rrel_assign: rrel_node: rrel_const: rrel_scp_var: _set_of_elems_included_in_elem_containig_of_inclusion_of_superclass;;
 
 			=> nrel_goto: .agent_of_specifying_of_indicated_entity5C_inclusion;;
-			*);;	
+			*);;
 
 		-> .agent_of_specifying_of_indicated_entity5C_inclusion
 			(*
@@ -509,9 +482,8 @@ scp_program -> agent_of_specifying_of_indicated_entity
 			-> rrel_set_3: rrel_fixed: rrel_scp_var: rrel_node: _set_of_elems_included_in_elem_containig_of_inclusion_of_superclass;;
 
 			=> nrel_goto: .agent_of_specifying_of_indicated_entity6A;;			
-			*);;		
-
-		// cycle 5 for _set_of_elems_included_in_elem_containig_of_inclusion_of_superclass
+			*);;
+	
 		-> .agent_of_specifying_of_indicated_entity6A
 			(*
 			<- searchElStr3;;
@@ -541,9 +513,9 @@ scp_program -> agent_of_specifying_of_indicated_entity
 			-> rrel_2: rrel_assign: rrel_scp_var: rrel_const: rrel_pos_const_perm: _arc1;;
 			-> rrel_3: rrel_fixed: rrel_scp_var: _elem_included_in_elem_containig_of_inclusion_of_superclass;;
 			
-			=> nrel_then: .agent_of_specifying_of_indicated_entity6A;;//return to circle 5
+			=> nrel_then: .agent_of_specifying_of_indicated_entity6A;;
 			=> nrel_else: .agent_of_specifying_of_indicated_entity6C;;
-			*);;		
+			*);;
 
 		-> .agent_of_specifying_of_indicated_entity6C
 			(*
@@ -554,7 +526,7 @@ scp_program -> agent_of_specifying_of_indicated_entity
 			-> rrel_3: rrel_fixed: rrel_scp_var: _elem_included_in_elem_containig_of_inclusion_of_superclass;;
 						
 			=> nrel_goto: .agent_of_specifying_of_indicated_entity6D;;
-			*);;	
+			*);;
 
 		-> .agent_of_specifying_of_indicated_entity6D
 			(*
@@ -577,7 +549,7 @@ scp_program -> agent_of_specifying_of_indicated_entity
 			
 			-> rrel_set_2: rrel_fixed: rrel_scp_var: rrel_node: _structure_of_specification_indicated_entity;;
 
-			=> nrel_goto: .agent_of_specifying_of_indicated_entity6A;;//return to circle 5
+			=> nrel_goto: .agent_of_specifying_of_indicated_entity6A;;
 			*);;
 
 		-> .agent_of_specifying_of_indicated_entity7
@@ -587,7 +559,7 @@ scp_program -> agent_of_specifying_of_indicated_entity
 			-> rrel_1: rrel_assign: rrel_scp_var: rrel_const: rrel_node: _set_of_elems_included_in_superclass;;			
 						
 			=> nrel_goto: .agent_of_specifying_of_indicated_entity7_search_elems_included_in_superclass;;
-			*);;	
+			*);;
 
 		-> .agent_of_specifying_of_indicated_entity7_search_elems_included_in_superclass
 			(*
@@ -618,8 +590,7 @@ scp_program -> agent_of_specifying_of_indicated_entity
 
 			=> nrel_goto: .agent_of_specifying_of_indicated_entity7A;;			
 			*);;
-
-		// cycle 6 for _set_of_elems_included_in_superclass
+		
 		-> .agent_of_specifying_of_indicated_entity7A
 			(*
 			<- searchElStr3;;
@@ -649,7 +620,7 @@ scp_program -> agent_of_specifying_of_indicated_entity
 			-> rrel_2: rrel_assign: rrel_scp_var: rrel_const: rrel_pos_const_perm: _arc1;;
 			-> rrel_3: rrel_fixed: rrel_scp_var: _elem_included_in_superclass;;
 			
-			=> nrel_then: .agent_of_specifying_of_indicated_entity7A;;//return to circle 6
+			=> nrel_then: .agent_of_specifying_of_indicated_entity7A;;
 			=> nrel_else: .agent_of_specifying_of_indicated_entity7D;;
 			*);;
 
@@ -673,7 +644,7 @@ scp_program -> agent_of_specifying_of_indicated_entity
 			-> rrel_3: rrel_fixed: rrel_scp_var: _elem_included_in_superclass;;
 						
 			=> nrel_goto: .agent_of_specifying_of_indicated_entity7F;;
-			*);;		
+			*);;
 
 		-> .agent_of_specifying_of_indicated_entity7F
 			(*
@@ -685,28 +656,8 @@ scp_program -> agent_of_specifying_of_indicated_entity
 			
 			-> rrel_set_2: rrel_fixed: rrel_scp_var: rrel_node: _structure_of_specification_indicated_entity;;
 
-			=> nrel_goto: .agent_of_specifying_of_indicated_entity7AP;;
-			*);;
-
-		-> .agent_of_specifying_of_indicated_entity7AP
-			(*
-			<- printNl;;
-			
-			-> rrel_1: rrel_fixed: rrel_scp_const: [base connection];;
-		
-			=> nrel_goto: .agent_of_specifying_of_indicated_entity7AP1;;
-			*);;	
-
-		-> .agent_of_specifying_of_indicated_entity7AP1
-			(*
-			<- printEl;;
-			
-			-> rrel_1: rrel_fixed: rrel_scp_var: _base_connection;;
-		
 			=> nrel_goto: .agent_of_specifying_of_indicated_entity7A;;
 			*);;
-
-/*GS*/
 
 		-> .agent_of_specifying_of_indicated_entity8
 			(*
@@ -721,7 +672,7 @@ scp_program -> agent_of_specifying_of_indicated_entity
 			-> rrel_set_1: rrel_assign: rrel_scp_var: rrel_node: _set_of_spetifications;;
 
 			=> nrel_then: .agent_of_specifying_of_indicated_entity8A;;
-			=> nrel_else: .agent_of_specifying_of_indicated_entity2A;;//!!
+			=> nrel_else: .agent_of_specifying_of_indicated_entity2A;;
 			*);;
 
 		-> .agent_of_specifying_of_indicated_entity8A
@@ -772,16 +723,7 @@ scp_program -> agent_of_specifying_of_indicated_entity
 			-> rrel_set_2: rrel_fixed: rrel_scp_var: rrel_node: _answer_of_specifying_of_indicated_entity;;
 			-> rrel_set_4: rrel_fixed: rrel_scp_var: rrel_node: _answer_of_specifying_of_indicated_entity;;
 
-			=> nrel_then: .agent_of_specifying_of_indicated_entity8Ep;;
-			*);;
-
-		-> .agent_of_specifying_of_indicated_entity8Ep
-			(*
-			<- printNl;;
-			
-			-> rrel_1: rrel_fixed: rrel_scp_const: [gs];;
-		
-			=> nrel_goto: .agent_of_specifying_of_indicated_entity8E;;
+			=> nrel_then: .agent_of_specifying_of_indicated_entity8E;;
 			*);;
 
 		-> .agent_of_specifying_of_indicated_entity8E
@@ -828,7 +770,152 @@ scp_program -> agent_of_specifying_of_indicated_entity
 			
 			=> nrel_then: .agent_of_specifying_of_indicated_entity8A;;
 			=> nrel_else: .agent_of_specifying_of_indicated_entity8A;;
-			*);;		
+			*);;
+
+		-> .agent_of_specifying_of_indicated_entity9A
+			(*
+			<- genEl;;
+
+			-> rrel_1: rrel_assign: rrel_node: rrel_scp_var: rrel_const: _quest;;	
+						
+			=> nrel_goto: .agent_of_specifying_of_indicated_entity9B;;
+			*);;
+
+		-> .agent_of_specifying_of_indicated_entity9B
+			(*
+			<- searchElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _spetification;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _connection_for_spetification;; 
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: rrel_main_key_sc_element;;
+
+			=> nrel_then: .agent_of_specifying_of_indicated_entity9C;;
+			=> nrel_else: .agent_of_specifying_of_indicated_entity8A;;
+			*);;
+
+		-> .agent_of_specifying_of_indicated_entity9C
+			(*
+			<- genElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_const: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _connection_for_spetification;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_const: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: rrel_2;;	
+
+			=> nrel_goto: .agent_of_specifying_of_indicated_entity9D;;
+			*);;
+
+		-> .agent_of_specifying_of_indicated_entity9D
+			(*
+			<- genElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_const: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _entity;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_const: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: rrel_1;;	
+
+			=> nrel_goto: .agent_of_specifying_of_indicated_entity9F;;
+			*);;
+
+		-> .agent_of_specifying_of_indicated_entity9F
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: question_of_logic_deduction;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_const: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _quest;;
+			
+			=> nrel_goto: .agent_of_specifying_of_indicated_entity9G;;
+			*);;
+
+		-> .agent_of_specifying_of_indicated_entity9G
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: question_initiated;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_const: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _quest;;
+			
+			=> nrel_goto: .agent_of_specifying_of_indicated_entity9K;;
+			*);;	
+
+		-> .agent_of_specifying_of_indicated_entity9K
+			(*
+    		<- sys_wait;;
+
+    		-> rrel_1: rrel_fixed: rrel_scp_const: sc_event_add_input_arc;;
+            -> rrel_2: rrel_fixed: rrel_scp_var: _quest;;
+
+    		=> nrel_goto: .agent_of_specifying_of_indicated_entity9H1;;
+    		*);;
+
+		-> .agent_of_specifying_of_indicated_entity9H1
+            (*                                       
+    		<- searchElStr3;;
+
+    		-> rrel_1: rrel_fixed: rrel_scp_const: question_finished_unsuccessfully;;
+    		-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+    		-> rrel_3: rrel_fixed: rrel_scp_var: _quest;;
+
+    		=> nrel_then: .agent_of_specifying_of_indicated_entity9J;;
+    		=> nrel_else: .agent_of_specifying_of_indicated_entity9I;;
+    		*);;
+
+    	-> .agent_of_specifying_of_indicated_entity9I 
+			(*
+            <- searchElStr3;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_const: question_finished_successfully;;
+            -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+            -> rrel_3: rrel_fixed: rrel_scp_var: _quest;;
+
+            => nrel_then: .agent_of_specifying_of_indicated_entity9J;;
+    		=> nrel_else: .agent_of_specifying_of_indicated_entity9K;;
+            *);;
+
+        -> .agent_of_specifying_of_indicated_entity9H
+			(*
+			 <- searchElStr5;;
+			
+			-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_const: rrel_common: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _response_struct;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_const: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_result;;	
+		
+			=> nrel_goto: .agent_of_specifying_of_indicated_entity9_add_response_struct_in_answer;;
+			*);;
+
+		-> .agent_of_specifying_of_indicated_entity9_add_response_struct_in_answer
+			(*
+			<- searchSetStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _response_struct;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _some_elem_in_struct;; 			
+
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: rrel_node: _answer_of_specifying_of_indicated_entity;;
+			-> rrel_set_3: rrel_fixed: rrel_scp_var: rrel_node: _answer_of_specifying_of_indicated_entity;;
+
+			=> nrel_then: .agent_of_specifying_of_indicated_entity8A;;
+			*);;	
+
+
+
+    	-> .agent_of_specifying_of_indicated_entity9J
+			(*                                       
+    		<- eraseElStr3;;
+
+    		-> rrel_1: rrel_fixed: rrel_scp_const: question_initiated;;
+    		-> rrel_2: rrel_assign: rrel_erase: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+    		-> rrel_3: rrel_fixed: rrel_scp_var: _quest;;
+
+    		=> nrel_goto: .agent_of_specifying_of_indicated_entity8A;;
+    		*);;
 
 		->.agent_of_specifying_of_indicated_entity_check_existence_of_elems_in_structure
 			(*
@@ -858,9 +945,7 @@ scp_program -> agent_of_specifying_of_indicated_entity
 			-> rrel_1: rrel_erase: rrel_fixed: rrel_scp_var: rrel_node: _structure_of_specification_indicated_entity;;
 
 			=> nrel_goto: .agent_of_specifying_of_indicated_entity_gen_answer;;
-			*);;
-
-		/*gen start*/
+			*);;	
 		
 		-> .agent_of_specifying_of_indicated_entity_gen_spetifcation_struct_to_entity
 			(*
@@ -873,7 +958,7 @@ scp_program -> agent_of_specifying_of_indicated_entity
 			-> rrel_5: rrel_fixed: rrel_scp_const: rrel_key_sc_element;;	
 
 			=> nrel_goto: .agent_of_specifying_of_indicated_entity_add_struct_to_entity_with_attr_key_sc_element;;
-			*);;	
+			*);;
 
 		-> .agent_of_specifying_of_indicated_entity_add_struct_to_entity_with_attr_key_sc_element
 			(*
@@ -994,8 +1079,6 @@ scp_program -> agent_of_specifying_of_indicated_entity
 			=> nrel_goto: .agent_of_specifying_of_indicated_entity_set_all_elems_of_structure_to_answer;;
 			*);;		
 
-		/*gen end*/		
-
 		-> .agent_of_specifying_of_indicated_entity_set_all_elems_of_structure_to_answer
 			(*
 			<- searchSetStr3;;
@@ -1009,18 +1092,6 @@ scp_program -> agent_of_specifying_of_indicated_entity
 
 			=> nrel_goto: .agent_of_specifying_of_indicated_entity_gen_answer;;
 			*);;	
-
-
-
-
-
-
-
-
-
-
-
-
 
 		-> .agent_of_specifying_of_indicated_entity_gen_answer
 			(*
