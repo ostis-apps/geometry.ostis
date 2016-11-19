@@ -1,0 +1,183 @@
+agent_of_finding_of_general_specification_for_indicated_entity
+=> nrel_main_idtf:
+	[агентная scp-программа поиска обобщённых спецификаций для указываемой сущности] (* <- lang_ru;; *);
+	[agent scp-program of finding generalized specifications for indicated entity] (* <- lang_en;; *);
+	<- agent_scp_program;;
+
+scp_program -> agent_of_finding_of_general_specification_for_indicated_entity
+	(*
+	-> rrel_params: .aagent_of_finding_of_general_specification_for_indicated_entity_params
+		(*
+		-> rrel_1: rrel_in: _event;;
+		-> rrel_2: rrel_in: _input_arc;;
+		*);;
+
+	-> rrel_operators: .agent_of_finding_of_general_specification_for_indicated_entity_set
+		(*
+		-> rrel_init:  .agent_of_finding_of_general_specification_for_indicated_entity1A
+			(*
+		  	<- searchElStr3;;
+
+		  	-> rrel_1: rrel_assign: rrel_scp_var: _temp;;
+		  	-> rrel_2: rrel_fixed: rrel_scp_var: _input_arc;;
+		  	-> rrel_3: rrel_assign: rrel_scp_var: _quest;;
+
+		 	=> nrel_goto: .agent_of_finding_of_general_specification_for_indicated_entity1B;;
+			*);;
+
+		-> .agent_of_finding_of_general_specification_for_indicated_entity1B
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: action_of_finding_generalized_specifications_for_indicated_entity;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _quest;;
+
+			=> nrel_then: .agent_of_finding_of_general_specification_for_indicated_entity1C;;
+			=> nrel_else: .agent_of_finding_of_general_specification_for_indicated_entity_gen_unsuccessfully_question;;
+			*);;
+
+		-> .agent_of_finding_of_general_specification_for_indicated_entity1C
+			(*
+		  	<- searchElStr3;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+		  	-> rrel_3: rrel_assign: rrel_scp_var: rrel_node: _entity;;
+
+		  	=> nrel_then: .agent_of_finding_of_general_specification_for_indicated_entity1D;;
+		  	=> nrel_else: .agent_of_finding_of_general_specification_for_indicated_entity_gen_unsuccessfully_question;;
+			*);;
+
+		-> .agent_of_finding_of_general_specification_for_indicated_entity1D
+			(*
+			<- genEl;;
+
+			-> rrel_1: rrel_assign: rrel_node: rrel_scp_var: _set_of_general_specifications;;
+
+			=> nrel_goto: .agent_of_finding_of_general_specification_for_indicated_entity2;;
+			*);;
+
+		-> .agent_of_finding_of_general_specification_for_indicated_entity2
+			(*
+			<- searchSetStr5;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: rrel_node: _some_spetification;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _entity;; 
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: rrel_key_sc_element;;
+
+			-> rrel_set_1: rrel_assign: rrel_scp_var: rrel_node: _set_of_spetifications;;
+
+			=> nrel_then: .agent_of_finding_of_general_specification_for_indicated_entity2A;;
+			=> nrel_else: .agent_of_finding_of_general_specification_for_indicated_entity_gen_successfully_question;;
+			*);;
+
+		-> .agent_of_finding_of_general_specification_for_indicated_entity2A
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _set_of_spetifications;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _spetification;;
+
+			=> nrel_then: .agent_of_finding_of_general_specification_for_indicated_entity2B;;
+			=> nrel_else: .agent_of_finding_of_general_specification_for_indicated_entity_gen_successfully_question;;
+			*);;
+
+		-> .agent_of_finding_of_general_specification_for_indicated_entity2B
+			(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_erase: rrel_fixed: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+
+			=> nrel_goto: .agent_of_finding_of_general_specification_for_indicated_entity2C;;
+			*);;
+
+		-> .agent_of_finding_of_general_specification_for_indicated_entity2C
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: general_specification;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_const: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _spetification;;
+			
+			=> nrel_then: .agent_of_finding_of_general_specification_for_indicated_entity2D;;
+			=> nrel_else: .agent_of_finding_of_general_specification_for_indicated_entity2A;;
+			*);;
+
+		-> .agent_of_finding_of_general_specification_for_indicated_entity2D
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _set_of_general_specifications;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_const: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _spetification;;
+						
+			=> nrel_goto: .agent_of_finding_of_general_specification_for_indicated_entity2A;;
+			*);;	
+		
+		-> .agent_of_finding_of_general_specification_for_indicated_entity_gen_result
+			(*
+			<- genElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_const: rrel_common: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var:  _set_of_general_specifications;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_const: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_result;;
+
+			=> nrel_goto: .agent_of_finding_of_general_specification_for_indicated_entity_return;;
+			*);;
+
+		-> .agent_of_finding_of_general_specification_for_indicated_entity_gen_successfully_question
+			(*
+		  	<- genElStr3;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_const: question_finished_successfully;;
+		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+		  	-> rrel_3: rrel_fixed: rrel_scp_var: _quest;;
+
+		  	=> nrel_goto: .agent_of_finding_of_general_specification_for_indicated_entity_gen_result;;
+			*);;
+			
+		-> .agent_of_finding_of_general_specification_for_indicated_entity_gen_unsuccessfully_question
+			(*
+		  	<- genElStr3;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_const: question_finished_unsuccessfully;;
+		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+		  	-> rrel_3: rrel_fixed: rrel_scp_var: _quest;;
+
+		  	=> nrel_goto: .agent_of_finding_of_general_specification_for_indicated_entity_erase_set_of_general_specifications;;
+			*);;
+
+		-> .agent_of_finding_of_general_specification_for_indicated_entity_erase_set_of_general_specifications
+			(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_erase: rrel_fixed: rrel_scp_var: rrel_node: _set_of_general_specifications;;
+
+			=> nrel_goto: .agent_of_finding_of_general_specification_for_indicated_entity_return;;
+			*);;
+
+		-> .agent_of_finding_of_general_specification_for_indicated_entity_return
+			(*
+			<- printNl;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: [123];;
+
+			=> nrel_goto: .agent_of_finding_of_general_specification_for_indicated_entity_return1;;
+			*);;		
+
+		-> .agent_of_finding_of_general_specification_for_indicated_entity_return1
+			(*
+			<-return;;
+			*);;
+		*);;
+	*);;
+
+				
+		
+
