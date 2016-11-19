@@ -1,13 +1,8 @@
-d_nrel_codirectional_rays 
-=> nrel_main_idtf: [Опр.(сонаправленные лучи*)] (* <- lang_ru;; *);
-=> nrel_main_idtf: [Def.(codirectional rays*)] (* <-lang_en;; *);
-<- definition;
+e_nrel_codirectional_rays 
+=> nrel_main_idtf: [Поясн.(сонаправленные лучи*)] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Expl.(codirectional rays*)] (* <-lang_en;; *);
+<- explanation;
 -> rrel_key_sc_element: nrel_codirectional_rays;
-
-<= nrel_using_constants:
-	{
-	concept_ray
-	};
 
 <= nrel_sc_text_translation: 
 	...
