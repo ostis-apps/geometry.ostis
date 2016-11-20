@@ -1,0 +1,28 @@
+sc_node_norole_relation -> nrel_particular_theorem;;
+
+nrel_particular_theorem -> nrel_main_idtf:
+	[частная теорема*] (* <- lang_ru;; *);
+	[particular theorem*] (* <- lang_en;; *);;
+
+binary_relation -> nrel_particular_theorem;;
+
+oriented_relation -> nrel_particular_theorem;;
+
+antireflexive_relation -> nrel_particular_theorem;;
+antisymmetric_relation -> nrel_particular_theorem;;
+transitive_relation -> nrel_particular_theorem;;
+
+nrel_particular_theorem => nrel_first_domain: statement;;
+nrel_particular_theorem => nrel_second_domain: statement;;
+nrel_particular_theorem => nrel_definitional_domain: statement;;
+
+nrel_particular_theorem <- rrel_key_sc_element: ...
+	(*
+	<- definition;;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: 
+			[Частная теорема* – бинарное ориентированное отношение, связывающее знаки утверждений, в которых условие и заключение второго утверждения являются частными случаями по отношению к первому утверждению.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
