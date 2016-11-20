@@ -43,7 +43,7 @@ scp_program -> agent_of_checking_key_sc_element_of_semantic_neighborhoods
 
 		  	-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
 		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
-		  	-> rrel_3: rrel_assign: rrel_scp_var: _structure;;
+		  	-> rrel_3: rrel_assign: rrel_scp_var: rrel_struct: _structure;;
 
 		  	=> nrel_then: .agent_of_checking_key_sc_element_of_semantic_neighborhoods_operator0A;;
 		  	=> nrel_else: .agent_of_checking_key_sc_element_of_semantic_neighborhoods_call_proc_of_adding_validating_message;;
@@ -79,7 +79,7 @@ scp_program -> agent_of_checking_key_sc_element_of_semantic_neighborhoods
 		  	-> rrel_set_3: rrel_assign: rrel_scp_var: _set_of_elements_of_structure;;
 
 		  	=> nrel_then: .agent_of_checking_key_sc_element_of_semantic_neighborhoods_operator1E1;;
-		  	=> nrel_else: .agent_of_checking_key_sc_element_of_semantic_neighborhoods_operator_return;;
+		  	=> nrel_else: .agent_of_checking_key_sc_element_of_semantic_neighborhoods_call_proc_of_adding_validating_message1;;
 			*);;
 
 		-> .agent_of_checking_key_sc_element_of_semantic_neighborhoods_operator1E1
@@ -371,11 +371,6 @@ scp_program -> agent_of_checking_key_sc_element_of_semantic_neighborhoods
 		  	=> nrel_goto: .agent_of_checking_key_sc_element_of_semantic_neighborhoods_operator_return;;	
 		  	*);;
 
-		-> .agent_of_checking_key_sc_element_of_semantic_neighborhoods_operator_return 
-			(*
-		  	<- return;;
-			*);;
-
 		-> .agent_of_checking_key_sc_element_of_semantic_neighborhoods_call_proc_of_adding_validating_message 
 			(*
 		  	<- call;;
@@ -384,7 +379,7 @@ scp_program -> agent_of_checking_key_sc_element_of_semantic_neighborhoods
 		  	-> rrel_2: rrel_fixed: rrel_scp_const: .agent_of_checking_key_sc_element_of_semantic_neighborhoods_call_proc_of_adding_validating_message_params 
 				(*
 				-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
-				-> rrel_2: rrel_fixed: rrel_scp_const: [Wrong first parameter! We have not a semantic neighborhoods];;
+				-> rrel_2: rrel_fixed: rrel_scp_const: [Wrong first parameter! We have not a struct];;
 				*);;
 		  	-> rrel_3: rrel_assign: rrel_scp_var: _descr1;;
 
@@ -398,6 +393,35 @@ scp_program -> agent_of_checking_key_sc_element_of_semantic_neighborhoods
 		  	-> rrel_1: rrel_fixed: rrel_scp_var: _descr1;;
 
 		  	=> nrel_goto: .agent_of_checking_key_sc_element_of_semantic_neighborhoods_return;;
+			*);;
+
+		-> .agent_of_checking_key_sc_element_of_semantic_neighborhoods_call_proc_of_adding_validating_message1
+			(*
+		  	<- call;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_const: proc_of_adding_validating_message;;
+		  	-> rrel_2: rrel_fixed: rrel_scp_const: .agent_of_checking_key_sc_element_of_semantic_neighborhoods_call_proc_of_adding_validating_message1_params 
+				(*
+				-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+				-> rrel_2: rrel_fixed: rrel_scp_const: [We havent element in struct];;
+				*);;
+		  	-> rrel_3: rrel_assign: rrel_scp_var: _descr11;;
+
+		  	=> nrel_goto: .agent_of_checking_key_sc_element_of_semantic_neighborhoods_call_proc_of_adding_validating_message_waitreturn_proc_of_adding_validating_message1;;
+			*);;
+
+		-> .agent_of_checking_key_sc_element_of_semantic_neighborhoods_call_proc_of_adding_validating_message_waitreturn_proc_of_adding_validating_message1
+			(*
+		  	<- waitReturn;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_var: _descr11;;
+
+		  	=> nrel_goto: .agent_of_checking_key_sc_element_of_semantic_neighborhoods_return;;
+			*);;
+
+		-> .agent_of_checking_key_sc_element_of_semantic_neighborhoods_operator_return 
+			(*
+		  	<- return;;
 			*);;
 		*);;
 	*);;
