@@ -1,0 +1,46 @@
+statement -> stat_converse_Fales_theorem;;
+statement -> stat_Fales_theorem;;
+statement -> stat_reverse_converse_Fales_theorem;;
+statement -> stat_reverse_Fales_theorem;;
+
+stat_converse_Fales_theorem => nrel_main_idtf: [Обр.утв.(угол; прямая; параллельность*; подобие*)] (* <- lang_ru;; *);;
+stat_converse_Fales_theorem => nrel_idtf: [Теорема, обратная теореме Фалеса.] (* <- lang_ru;; *);;
+stat_Fales_theorem => nrel_main_idtf: [Утв.(угол; прямая; параллельность*; подобие*)] (* <- lang_ru;; *);;
+stat_Fales_theorem => nrel_idtf: [Теорема Фалеса] (* <- lang_ru;; *);;
+stat_reverse_converse_Fales_theorem => nrel_main_idtf: [Прот.утв.(угол; прямая; параллельность*; подобие*)] (* <- lang_ru;; *);;
+stat_reverse_Fales_theorem => nrel_main_idtf: [Прот.обр.утв.(угол; прямая; параллельность*; подобие*)] (* <- lang_ru;; *);;
+
+stat_converse_Fales_theorem <= nrel_sc_text_translation: ... 
+		(* 
+		-> rrel_example: 
+			[Если стороны угла АВС, пересекаемые рядом прямых АА1, ВВ1, СС1, ..., рассекаются ими на пропорциональные части, то эти прямые параллельны между собой.] 
+			(* <- lang_ru;; *);;
+		*);;
+
+stat_Fales_theorem <= nrel_sc_text_translation: ... 
+		(* 
+		-> rrel_example: 
+			[Если стороны угла АВС, пересекаются рядом параллельных прямых АА1, ВВ1, СС1, ..., то стороны рассекаются ими на пропорциональные части.] 
+			(* <- lang_ru;; *);;
+		*);;
+
+stat_reverse_converse_Fales_theorem <= nrel_sc_text_translation: ... 
+		(* 
+		-> rrel_example: 
+			[Если стороны угла АВС, пересекаемые рядом прямых АА1, ВВ1, СС1, ..., не рассекаются ими на пропорциональные части, то эти прямые не параллельны между собой.] 
+			(* <- lang_ru;; *);;
+		*);;
+
+stat_reverse_Fales_theorem <= nrel_sc_text_translation: ... 
+		(* 
+		-> rrel_example: 
+			[Если стороны угла АВС, пересекаемые рядом параллельных прямых АА1, ВВ1, СС1, ..., не параллельны между собой, то стороны не рассекаются ими на пропорциональные части.] 
+			(* <- lang_ru;; *);;
+		*);;
+
+stat_converse_Fales_theorem <=> nrel_converse_theorem: stat_Fales_theorem;;
+stat_reverse_converse_Fales_theorem <=> nrel_converse_theorem: stat_reverse_Fales_theorem;;
+stat_converse_Fales_theorem <=> nrel_reverse_theorem: stat_reverse_converse_Fales_theorem;;
+stat_Fales_theorem <=> nrel_reverse_theorem: stat_reverse_Fales_theorem;;
+stat_converse_Fales_theorem <=> nrel_reverse_converse_theorem: stat_reverse_converse_Fales_theorem;;
+stat_Fales_theorem <=> nrel_reverse_converse_theorem: stat_reverse_Fales_theorem;;

@@ -10,7 +10,7 @@ s_sd_polygons
 
 <= nrel_section_decomposition:
 	{
-		s_sd_polygons_main_concepts
+		s_polygons_general_concepts
 		(*
 		=> nrel_section_base_order: 
 			s_sd_convex_polygons;;
@@ -18,13 +18,7 @@ s_sd_polygons
 
 		s_sd_convex_polygons
 		(*
-		=> nrel_section_base_order: 
-			s_sd_convex_polygons_properties;;
-		*);
-
-		s_sd_convex_polygons_properties
-		(*
-		=> nrel_section_base_order: 
+		=> nrel_section_base_order:
 			s_sd_non_convex_polygons;;
 		*);
 		
@@ -35,12 +29,6 @@ s_sd_polygons
 		*);
 
 		s_sd_regular_polygons
-		(*
-		=> nrel_section_base_order: 
-			s_sd_regular_polygons_properties;;
-		*);
-
-		s_sd_regular_polygons_properties
 	};
 
 -> rrel_key_sc_element: subject_domain_of_polygons;;

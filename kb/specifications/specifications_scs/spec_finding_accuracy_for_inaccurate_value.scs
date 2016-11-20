@@ -1,0 +1,7 @@
+inaccurate_value <- rrel_key_sc_element: spec_finding_accuracy_for_inaccurate_value;;
+
+spec_finding_accuracy_for_inaccurate_value -> rrel_key_sc_element: nrel_accuracy;;
+
+necessary_general_specification -> spec_finding_accuracy_for_inaccurate_value;;
+
+spec_finding_accuracy_for_inaccurate_value => nrel_main_idtf: [Необходимая обобщённая спецификация для поиска точности неточной величины] (* <- lang_ru;; *);;

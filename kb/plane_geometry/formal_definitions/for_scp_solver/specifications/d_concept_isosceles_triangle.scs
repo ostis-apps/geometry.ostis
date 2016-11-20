@@ -1,0 +1,21 @@
+d_concept_isosceles_triangle <- definition;;
+
+d_concept_isosceles_triangle => nrel_main_idtf: [Опр.(равнобедренный треугольник)] (* <- lang_ru;; *);;
+d_concept_isosceles_triangle => nrel_main_idtf: [Def.(isosceles triangle)] (* <- lang_en;; *);;
+
+d_concept_isosceles_triangle -> rrel_key_sc_element: concept_isosceles_triangle;;
+ 
+d_concept_isosceles_triangle <= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[Равнобедренный треугольник - треугольник, в котором две стороны равны между собой.]
+		(* <- lang_ru;; *);;
+	*);;
+
+d_concept_isosceles_triangle <= nrel_using_constants:
+	{
+	concept_triangle; 
+	nrel_side; 
+	nrel_congruence
+	};;

@@ -1,0 +1,26 @@
+lib_component_agent_of_finding_rejected_proposals_by_user
+=> nrel_main_idtf:
+	[Компонент библиотеки. Sc-агент поиска всех отклоненных предложений конкретным пользователем]
+	(* <- lang_ru;; *);
+	[Library component. Sc-agent of finding all proposals, which rejected by concrete user]
+	(* <- lang_en;; *);
+
+<- platform_independent_reusable_component_OSTIS; 
+<- atomic_reusable_component_OSTIS; 
+<- reusable_scp_agent;
+
+-> rrel_key_sc_element: 
+	.platform_independent_realization_of_sc_agent_of_finding_rejected_proposals_by_user;
+
+<- rrel_key_sc_element: 
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://htmls/Agent_of_finding_rejected_proposals_by_user.html"
+				(* <- lang_ru;; *);; 
+		*);;
+	*);;
