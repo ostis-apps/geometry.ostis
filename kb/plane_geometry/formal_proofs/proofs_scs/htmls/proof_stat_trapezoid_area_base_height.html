@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Площадь трапеции равна произведению полусуммы ее оснований на высоту</title>
+	<meta charset=utf-8>
+</head>
+<body>
+	<p>
+		<ol>
+			<li>
+				Пусть <i>ABCD</i> - данная 
+				<sc_element sys_idtf="concept_trapezoid">трапеция</sc_element>. 
+			</li>
+			<li>
+				<sc_element sys_idtf="nrel_diagonal">Диагональ</sc_element> 
+				<sc_element sys_idtf="concept_trapezoid">трапеции</sc_element> <i>АС</i> разбивает ее на два 
+				<sc_element sys_idtf="concept_triangle">треугольника</sc_element>: <i>АВС</i> и <i>CDA</i>.Следовательно, 					<sc_element sys_idtf="nrel_area">площадь</sc_element> 
+				<sc_element sys_idtf="concept_trapezoid">трапеции</sc_element> равна 
+				<sc_element sys_idtf="concept_trapezoid">сумме</sc_element> 
+				<sc_element sys_idtf="nrel_area">площадей</sc_element> этих 
+				<sc_element sys_idtf="concept_triangle">треугольников</sc_element>. 
+			</li>
+			<li>
+				<sc_element sys_idtf="nrel_area">Площадь</sc_element> 
+				<sc_element sys_idtf="concept_triangle">треугольника</sc_element> <i>АВС</i> равна <i>&#189; FD &#183; CE</i>, 					<sc_element sys_idtf="nrel_area">площадь</sc_element> 
+				<sc_element sys_idtf="concept_triangle">треугольника</sc_element> <i>ACD</i> равна 
+				<i>&#189; DC &#183; AF</i>.
+			</li>
+			<li>
+				<sc_element sys_idtf="nrel_height">Высоты</sc_element> <i>СЕ</i> и <i>AF</i> этих 
+				<sc_element sys_idtf="concept_triangle">треугольников</sc_element> равны 
+				<sc_element sys_idtf="nrel_distance">расстоянию</sc_element> 
+				<sc_element sys_idtf="nrel_between">между</sc_element> 
+				<sc_element sys_idtf="nrel_parallelism">параллельными</sc_element> 
+				<sc_element sys_idtf="concept_straight_line">прямыми</sc_element> <i>АВ</i> и <i>CD</i>. Это 
+				<sc_element sys_idtf="nrel_distance">расстояние</sc_element> называется 
+				<sc_element sys_idtf="nrel_height">высотой</sc_element> 
+				<sc_element sys_idtf="concept_trapezoid">трапеции</sc_element>.
+			</li>
+			<li>
+				Следовательно, 
+				<sc_element sys_idtf="nrel_area">площадь</sc_element> 
+				<sc_element sys_idtf="concept_trapezoid">трапеции</sc_element> равна 
+				<sc_element sys_idtf="nrel_multiplication_of_numbers">произведению</sc_element> полусуммы ее 
+				<sc_element sys_idtf="nrel_base">оснований</sc_element> на 
+				<sc_element sys_idtf="nrel_height">высоту</sc_element>:
+			<br>
+                        	<img src="data:image/									png;base64,iVBORw0KGgoAAAANSUhEUgAAAEEAAAAeCAYAAABzL3NnAAAEIElEQVR4nO2XWyhsbRjHn8VIibjBoBQhRHu4kEMiOXxXXBBFSrkQQkJRhBtyLNshh9TnbDaSMm0ROSSFZCOK3AgzSrkgueHZz7vKNGvPmv3t+faa2WuXf03zttZ6T7/3ef7v+yrgQ6D40wOQg/4qCOfn53h/fw/R0dGclO3+VRCcnZ2VQUFBOqnblRUEjUaDHh4eEB4eLrrSWq1WV1RUBN3d3ZL2axUId3d37gsLCzpXV1dQKpUQFRUlOkmFQgG2trYm2xkdHQUXFxeYmJjAnJwcyVLCKhCSkpJ0R0dH3MjICK6srJj8jgGwsbEx+X52dhaurq74yQcHB+Pp6akkICwOoaSkBENCQqCgoAD29vYgPz8f+vr69O+Xl5dxZ2cHHBwc2AqDk5MTtLa24vPzM6SmpgpSw83NjUFgkfUpIiJCsjFaHMLq6irLYe69XFdXpzJ8n5ycrJ/k5uYmsnQJCAjgnzU0NOi/u7i4wPb2dtjf34eurq7D6upqKCwslGSMohBoxfiViIuL++1wo0gAR0dH9PPzg8rKSqB0OKTHou2yPtlPTP7+/lxVVRXu7u7i8PAwNDU1/fLYbm5uql9fX8O8vb2zxN4bQSD3RRaSVEGZmJiI1DGkpKT8bxi0WoK629vbJr9lfsBxprtqa2vjysvL/xkYGFgyZwyLi4vN8/PzrPjfEChs0dfXFwIDA/mRNDY2/hYAc2WYGqbk6elpFgAmOzs7yMzMhKUl8aoCCNfX12Do3vX19VYDYEnR9gylpaXsH9PS0ozmJIDQ0tLChYaGIhV5g9LpdEYVmpub8eTkhKf7LkTkc3lmZkaW0A4ODlh0f/by8iqjaEPakQTjNPKE4+Nj/oOYmBhUqVRIbi6oUFNTY9ZEKyoqkO3/P8t1c/X29sZvqZSugkYTEhIwIyOD+ZrgOUtxBoAZfn9/v1F7eghqtRqzsrL0lckU+dPdj+rt7UVyW6OT3cvLC29cP37f0dFhtehYW1vj6Cd4xnzO3t4eNjY2gG2xtbW1LM3VhjuFHkJPTw9MTk5idnY2x465tIIwPj5uNIHi4mJZhrwpTU1NwfT09BdWfnh44Hegx8fHTDDYKfQQ6LT2hfL8K9HCra0tUQCW1NzcHNLRGmJjY1kUStb34OAgvK/62NiY6vb29jAsLEzcEwzC41+pBvCrYiGbnp7OD8zHxwfX19cxPj5eEhB0ZNe34+7u/g1EDmqyuEpTFLBVwtzcXC4vL4+/Q1hTsoBAK8/Rjy+TLwHdNmFoaMhq/csCwrvIh1Cr1UJkZKRV/Ug2EMgU8ezsDOiuwtF1WW3qsmMJyQLC5eUllpWVAZ1T2LkC2Z4OJi47lpAsIGg0GubczBvg6ekJOjs7P1uzf1lAoMuNwAPo9GrV/mUB4U/rAwJ8QOD1AYH0HV4ukB+v/M8cAAAAAElFTkSuQmCC" name="Изображение1">
+			</li>
+				 
+		</ol>
+	</p>
+</body>
+</html>
