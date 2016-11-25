@@ -5,19 +5,17 @@ d_nrel_center_line
 -> rrel_key_sc_element: nrel_center_line;  
 
 <= nrel_using_constants:
-	{
-	concept_segment; 
-	nrel_lateral_side; 
-	concept_triangle; 
-	concept_trapezoid; 
-	concept_quadrilateral
+	{	
+		nrel_midline_triangle; 
+		nrel_midline_trapezoid; 
+		nrel_midline_quadrilateral
 	};
 
 <= nrel_sc_text_translation: 
 	...
 	(*
 	-> rrel_example: 
-		[Средняя линия - отрезок, соединяющий середины боковых сторон треугольника, четырехугольника и трапеции.]
+		[Средняя линия - это теоретико-множественное объединение понятий средняя линия треугольника, средняя линия четырехугольника и средняя линия трапеции.]
 		(* <- lang_ru;; *);;
 	*);;
 	

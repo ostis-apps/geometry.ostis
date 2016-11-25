@@ -1,0 +1,14 @@
+stat_polyline_length_segment_boundary_point <= nrel_main_proof: proof_stat_polyline_length_segment_boundary_point;;
+
+proof_stat_polyline_length_segment_boundary_point => nrel_main_idtf:
+	 [Док. Утв. (ломаная, длина*, отрезок, граничная точка*)] (* <- lang_ru;; *);
+	 [Pr. Stat. (polyline, length*, segment, boundary point*)] (* <- lang_en;; *);;
+
+proof_stat_polyline_length_segment_boundary_point <- rrel_key_sc_element: ...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation: ... 
+		(* 	
+		-> rrel_example: "file://htmls/proof_stat_polyline_length_segment_boundary_point.html";; 
+		*);;
+	*);;	

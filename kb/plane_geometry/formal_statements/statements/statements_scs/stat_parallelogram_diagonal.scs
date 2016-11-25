@@ -1,0 +1,40 @@
+statement -> stat_parallelogram_diagonal;;
+statement -> stat_converse_parallelogram_diagonal;;
+statement -> stat_reverse_parallelogram_diagonal;;
+statement -> stat_reverse_converse_parallelogram_diagonal;;
+
+stat_parallelogram_diagonal => nrel_main_idtf: [Утв.(параллелограмм; диагональ*; пересечение*)] (* <- lang_ru;; *);;
+stat_converse_parallelogram_diagonal => nrel_main_idtf: [Обр.утв.(параллелограмм; диагональ*; пересечение*)] (* <- lang_ru;; *);;
+stat_reverse_parallelogram_diagonal => nrel_main_idtf: [Прот.утв.(параллелограмм; диагональ*; пересечение*)] (* <- lang_ru;; *);;
+stat_reverse_converse_parallelogram_diagonal => nrel_main_idtf: [Прот.обр.утв.(параллелограмм; диагональ*; пересечение*)] (* <- lang_ru;; *);;
+
+stat_parallelogram_diagonal <= nrel_sc_text_translation: ...
+	(*
+	-> rrel_example:
+		[В параллелограмме диагонали, пересекаясь, взаимно делятся пополам.] (* <- lang_ru;; *);;
+	*);;
+
+stat_converse_parallelogram_diagonal <= nrel_sc_text_translation: ...
+	(*
+	-> rrel_example:
+		[Если диагонали четырёхугольника , пересекаясь, делятся пополам, то четырёхугольник - параллелограмм.] (* <- lang_ru;; *);;
+	*);;
+
+stat_reverse_parallelogram_diagonal <= nrel_sc_text_translation: ...
+	(*
+	-> rrel_example:
+		[Если четырехугольник не является параллелограммом, то диагонали в нем не делятся пополам.] (* <- lang_ru;; *);;
+	*);;
+
+stat_reverse_converse_parallelogram_diagonal <= nrel_sc_text_translation: ...
+	(*
+	-> rrel_example:
+		[Если в четырехугольнике диагонали не делятся взаимно пополам, то четырехугольник не является параллелограммом.] (* <- lang_ru;; *);;
+	*);;
+
+stat_parallelogram_diagonal <=> nrel_converse_theorem: stat_converse_parallelogram_diagonal;;
+stat_reverse_parallelogram_diagonal <=> nrel_converse_theorem: stat_reverse_converse_parallelogram_diagonal;;
+stat_parallelogram_diagonal <=> nrel_reverse_theorem: stat_reverse_parallelogram_diagonal;;
+stat_converse_parallelogram_diagonal <=> nrel_reverse_theorem: stat_reverse_converse_parallelogram_diagonal;;
+stat_parallelogram_diagonal <=> nrel_reverse_converse_theorem: stat_reverse_converse_parallelogram_diagonal;;
+stat_converse_parallelogram_diagonal <=> nrel_reverse_converse_theorem: stat_reverse_parallelogram_diagonal;;

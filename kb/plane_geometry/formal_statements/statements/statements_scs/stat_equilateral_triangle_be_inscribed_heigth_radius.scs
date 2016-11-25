@@ -1,0 +1,23 @@
+stat_equilateral_triangle_be_inscribed_heigth_radius <- statement;;
+
+stat_equilateral_triangle_be_inscribed_heigth_radius
+	-> rrel_key_sc_element:
+	concept_equilateral_triangle;
+	nrel_be_inscribed;
+	nrel_heigth;
+	nrel_radius;;
+
+stat_equilateral_triangle_be_inscribed_heigth_radius
+	=> nrel_main_idtf:
+	[Утв.(равносторонний треугольник;быть вписанным*;высота*;радиус*)] (*<- lang_ru;;*);;
+
+stat_equilateral_triangle_be_inscribed_heigth_radius 
+	=> nrel_main_idtf: [Stat.(equilateral triangle;be inscribed*;heigth*;radius*)] (*<- lang_en;;*);;
+
+stat_equilateral_triangle_be_inscribed_heigth_radius <= nrel_sc_text_translation: 
+	... 
+	(* 
+	-> rrel_example: 
+		[Радиус окружности, вписанной в равносторонний треугольник, выражается через его высоту по формуле r=h/3.] 
+		(* <- lang_ru;; *);; 
+	*);;

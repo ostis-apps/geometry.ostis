@@ -1,0 +1,7 @@
+sc_element <- rrel_key_sc_element: spec_finding_illustration;;
+
+spec_finding_illustration -> rrel_key_sc_element: illustration;;
+
+general_specification -> spec_finding_illustration;;
+
+spec_finding_illustration => nrel_main_idtf: [Обобщённая спецификация для поиска иллюстраций] (* <- lang_ru;; *);;

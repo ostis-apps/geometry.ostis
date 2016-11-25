@@ -1,0 +1,21 @@
+task_find_perimeter_triangle_formed_on_midsegments => nrel_main_idtf: [Задача 3] (* <-lang_ru;; *);;
+
+task_find_perimeter_triangle_formed_on_midsegments <= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[Периметр треугольника равен 12 см., середины сторон соединены отрезками. Найдите периметр полученного треугольника.]
+		(* <- lang_ru;; *);;
+	*);;
+
+task_find_perimeter_triangle_formed_on_midsegments <- rrel_key_sc_element: 
+	...
+	(*
+	<- illustration;; 
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: "file://task_find_perimeter_triangle_formed_on_midsegments.png";;
+		*);;
+	*);;
+	

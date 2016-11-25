@@ -1,0 +1,14 @@
+stat_Cosinus_theorem <= nrel_main_proof: proof_stat_Cosinus_theorem;;
+
+proof_stat_Cosinus_theorem => nrel_main_idtf:
+	 [Док. Утв. (Теорема косинусов)] (* <- lang_ru;; *);
+	 [Pr. Stat. (Cosinus theorem)] (* <- lang_en;; *);;
+
+proof_stat_Cosinus_theorem <- rrel_key_sc_element: ...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation: ... 
+		(* 	
+		-> rrel_example: "file://htmls/proof_stat_Cosinus_theorem.html";; 
+		*);;
+	*);;	

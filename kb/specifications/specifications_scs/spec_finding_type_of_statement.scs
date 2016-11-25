@@ -1,0 +1,7 @@
+statement <- rrel_key_sc_element: spec_finding_type_of_statement;;
+
+spec_finding_type_of_statement -> rrel_key_sc_element: statement_of_defining_type; statement_about_unique_assignment; general_statement; rrel_axiom; rrel_theorem;;
+
+general_specification -> spec_finding_type_of_statement;;
+
+spec_finding_type_of_statement => nrel_main_idtf: [Обобщённая спецификация для поиска типа утверждения] (* <- lang_ru;; *);;

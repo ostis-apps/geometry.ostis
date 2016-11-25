@@ -1,0 +1,7 @@
+statement <- rrel_key_sc_element: spec_finding_connection_between_statements;;
+
+spec_finding_connection_between_statements -> rrel_key_sc_element: nrel_converse_theorem; nrel_reverse_theorem; nrel_converse_reverse_theorem; nrel_consequent_theorem; nrel_particular_theorem;;
+
+general_specification -> spec_finding_connection_between_statements;;
+
+spec_finding_connection_between_statements => nrel_main_idtf: [Обобщённая спецификация для поиска связей между утверждениями] (* <- lang_ru;; *);;

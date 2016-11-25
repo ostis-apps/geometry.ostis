@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GWF version="2.0">
+    <staticSector>
+        <node type="node/var/general_node" idtf="_figure" shapeColor="0" id="23186592" parent="23388016" left="0" top="0" right="58.4844" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="675" y="300" haveBus="false" idtf_pos="1">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/relation" idtf="nrel_boundary_point" shapeColor="0" id="23441440" parent="23388016" left="0" top="0" right="158.703" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="750" y="330" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/group" idtf="concept_geometric_point" shapeColor="0" id="23347072" parent="23388016" left="0" top="0" right="192.156" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="750" y="375" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/var/general_node" idtf="_point" shapeColor="0" id="21834336" parent="23388016" left="0" top="0" right="53.625" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="675" y="375" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/var/general_node" idtf="_point" shapeColor="0" id="22530592" parent="23388016" left="0" top="0" right="53.625" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="675" y="225" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <arc type="arc/var/pos" idtf="" shapeColor="0" id="22536528" parent="23388016" id_b="23347072" id_e="21834336" b_x="750" b_y="375" e_x="675" e_y="375" dotBBalance="0" dotEBalance="0">
+            <points/>
+        </arc>
+        <pair type="pair/var/orient" idtf="" shapeColor="0" id="22540832" parent="23388016" id_b="23186592" id_e="21834336" b_x="675" b_y="300" e_x="675" e_y="375" dotBBalance="0" dotEBalance="0">
+            <points/>
+        </pair>
+        <arc type="arc/var/pos" idtf="" shapeColor="0" id="22537536" parent="23388016" id_b="23441440" id_e="22540832" b_x="750" b_y="330" e_x="-55.8337" e_y="139.5" dotBBalance="0" dotEBalance="0.366071">
+            <points/>
+        </arc>
+        <arc type="arc/var/pos" idtf="" shapeColor="0" id="20896176" parent="23388016" id_b="23186592" id_e="22530592" b_x="675" b_y="300" e_x="675" e_y="225" dotBBalance="0" dotEBalance="0">
+            <points/>
+        </arc>
+        <contour type="" idtf="" shapeColor="0" id="23388016" parent="0">
+            <points>
+                <point x="615" y="210"/>
+                <point x="960" y="210"/>
+                <point x="960" y="405"/>
+                <point x="615" y="405"/>
+            </points>
+        </contour>
+        <node type="node/var/general_node" idtf="_figure" shapeColor="0" id="20669488" parent="21143568" left="0" top="0" right="58.4844" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="-75" y="240" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/group" idtf="concept_geometric_figure_with_all_boundary_points&#10;" shapeColor="0" id="22559008" parent="21143568" left="0" top="0" right="388.109" bottom="42" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="-75" y="135" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <arc type="arc/var/pos" idtf="" shapeColor="0" id="23531360" parent="21143568" id_b="22559008" id_e="20669488" b_x="-75" b_y="135" e_x="-75" e_y="240" dotBBalance="0" dotEBalance="0">
+            <points/>
+        </arc>
+        <contour type="" idtf="" shapeColor="0" id="21143568" parent="0">
+            <points>
+                <point x="-105" y="120"/>
+                <point x="-105" y="255"/>
+                <point x="300" y="255"/>
+                <point x="300" y="120"/>
+            </points>
+        </contour>
+        <node type="node/const/general_node" idtf="d_concept_geometric_figure_with_all_boundary_points&#10;" shapeColor="193" id="22893184" parent="0" left="0" top="0" right="403.906" bottom="42" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="405" y="120" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/group" idtf="atomic_logical_formula" shapeColor="0" id="23272208" parent="0" left="0" top="0" right="175.594" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="60" y="375" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/attribute" idtf="rrel_main_key_sc_element" shapeColor="0" id="21481456" parent="0" left="0" top="0" right="197.859" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="480" y="165" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/asymmetry" idtf="" shapeColor="0" id="23632832" parent="0" x="405" y="195" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/relation" idtf="nrel_equivalence" shapeColor="0" id="22551408" parent="0" left="0" top="0" right="131.5" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="405" y="240" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <arc type="arc/const/pos" idtf="" shapeColor="0" id="21834672" parent="0" id_b="23272208" id_e="23388016" b_x="60" b_y="375" e_x="780" e_y="325.333" dotBBalance="0" dotEBalance="0">
+            <points/>
+        </arc>
+        <arc type="arc/const/pos" idtf="" shapeColor="0" id="18953184" parent="0" id_b="23632832" id_e="23388016" b_x="405" b_y="195" e_x="780" e_y="325.333" dotBBalance="0" dotEBalance="0">
+            <points/>
+        </arc>
+        <arc type="arc/const/pos" idtf="" shapeColor="0" id="23271968" parent="0" id_b="23272208" id_e="21143568" b_x="60" b_y="375" e_x="94" e_y="183.333" dotBBalance="0" dotEBalance="0">
+            <points/>
+        </arc>
+        <arc type="arc/const/pos" idtf="" shapeColor="0" id="22997024" parent="0" id_b="23632832" id_e="21143568" b_x="405" b_y="195" e_x="94" e_y="183.333" dotBBalance="0" dotEBalance="0">
+            <points/>
+        </arc>
+        <arc type="arc/const/pos" idtf="" shapeColor="0" id="22792976" parent="0" id_b="21481456" id_e="21899312" b_x="480" b_y="165" e_x="0" e_y="0" dotBBalance="0" dotEBalance="0.633929">
+            <points/>
+        </arc>
+        <arc type="arc/const/pos" idtf="" shapeColor="0" id="21899312" parent="0" id_b="22893184" id_e="23632832" b_x="405" b_y="120" e_x="405" e_y="195" dotBBalance="0" dotEBalance="0">
+            <points/>
+        </arc>
+        <arc type="arc/const/pos" idtf="" shapeColor="0" id="22787136" parent="0" id_b="22551408" id_e="23632832" b_x="405" b_y="240" e_x="405" e_y="195" dotBBalance="0" dotEBalance="0">
+            <points/>
+        </arc>
+    </staticSector>
+</GWF>
