@@ -1,0 +1,23 @@
+stat_straight_line_parallelism_intersection <- statement;;
+
+stat_straight_line_parallelism_intersection
+-> rrel_key_sc_element:
+	concept_straight_line;
+	nrel_parallelism;
+	nrel_intersection;;
+
+stat_straight_line_parallelism_intersection
+=> nrel_main_idtf:
+	[Утв.(прямая;параллельность*;пересечение*)] (*<- lang_ru;;*);;
+
+stat_straight_line_parallelism_intersection
+=> nrel_main_idtf:
+	[Stat.(straight line;parallelism*;intersection*)] (*<- lang_en;;*);;
+
+stat_straight_line_parallelism_intersection <= nrel_sc_text_translation: 
+	... 
+	(* 
+	-> rrel_example: 
+		[Если прямая пересекает одну из двух параллельных прямых, то она пересекает другую прямую.] 
+		(* <- lang_ru;; *);; 
+	*);;

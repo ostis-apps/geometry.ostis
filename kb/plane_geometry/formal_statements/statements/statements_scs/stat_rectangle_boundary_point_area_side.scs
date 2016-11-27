@@ -1,0 +1,23 @@
+stat_rectangle_boundary_point_area_side <- statement;;
+
+stat_rectangle_boundary_point_area_side
+-> rrel_key_sc_element:
+	concept_rectangle;
+	nrel_boundary_point;
+	nrel_area;
+	nrel_side;;
+
+stat_rectangle_boundary_point_area_side
+=> nrel_main_idtf:
+	[Утв.(прямоугольник;площадь*;сторона*)] (* <-lang_ru;; *);;
+
+stat_rectangle_boundary_point_area_side
+=> nrel_main_idtf:
+	[Stat.(rectangle;area*;side*)] (* <-lang_en;; *);;
+
+stat_rectangle_boundary_point_area_side <= nrel_sc_text_translation: 
+	...
+	(*
+		-> rrel_example: 
+		[Площадь прямоугольника равна произведению его смежных сторон.] (* <- lang_ru;; *);;
+	*);;

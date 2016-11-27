@@ -1,0 +1,13 @@
+﻿stat_triangle_bisectrix_angle_side_sin <- statement;;
+
+stat_triangle_bisectrix_angle_side_sin-> rrel_key_sc_element: concept_triangle; nrel_bisectri; concept_segment; nrel_side;;
+
+stat_triangle_bisectrix_angle_side_sin => nrel_main_idtf: [Утв.(треугольник; биссектриса*; отрезок; сторона*; синус*)] (* <-lang_ru;; *);;
+stat_triangle_bisectrix_angle_side_sin => nrel_main_idtf: [Stat.(triangle; bisectrix*; segment; side*; sin*)] (* <-lang_en;; *);;
+
+stat_triangle_bisectrix_angle_side_sin <= nrel_sc_text_translation: 
+	...
+	(*
+		-> rrel_example: 
+		[Биссектриса внешнего угла треугольника выражается формулой l_a = (2*b*c*sin(alpha/2))/|b-c|.] (* <- lang_ru;; *);;
+	*);;
