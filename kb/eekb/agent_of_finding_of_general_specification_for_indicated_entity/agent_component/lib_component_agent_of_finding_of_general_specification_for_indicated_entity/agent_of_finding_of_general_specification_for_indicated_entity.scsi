@@ -6,7 +6,7 @@ agent_of_finding_of_general_specification_for_indicated_entity
 
 scp_program -> agent_of_finding_of_general_specification_for_indicated_entity
 	(*
-	-> rrel_params: .aagent_of_finding_of_general_specification_for_indicated_entity_params
+	-> rrel_params: .agent_of_finding_of_general_specification_for_indicated_entity_params
 		(*
 		-> rrel_1: rrel_in: _event;;
 		-> rrel_2: rrel_in: _input_arc;;
@@ -14,7 +14,7 @@ scp_program -> agent_of_finding_of_general_specification_for_indicated_entity
 
 	-> rrel_operators: .agent_of_finding_of_general_specification_for_indicated_entity_set
 		(*
-		-> rrel_init:  .agent_of_finding_of_general_specification_for_indicated_entity1A
+		-> rrel_init: .agent_of_finding_of_general_specification_for_indicated_entity1A
 			(*
 		  	<- searchElStr3;;
 
@@ -34,7 +34,7 @@ scp_program -> agent_of_finding_of_general_specification_for_indicated_entity
 			-> rrel_3: rrel_fixed: rrel_scp_var: _quest;;
 
 			=> nrel_then: .agent_of_finding_of_general_specification_for_indicated_entity1C;;
-			=> nrel_else: .agent_of_finding_of_general_specification_for_indicated_entity_gen_unsuccessfully_question;;
+			=> nrel_else: .agent_of_finding_of_general_specification_for_indicated_entity_return;;
 			*);;
 
 		-> .agent_of_finding_of_general_specification_for_indicated_entity1C
@@ -46,7 +46,7 @@ scp_program -> agent_of_finding_of_general_specification_for_indicated_entity
 		  	-> rrel_3: rrel_assign: rrel_scp_var: rrel_node: _entity;;
 
 		  	=> nrel_then: .agent_of_finding_of_general_specification_for_indicated_entity1D;;
-		  	=> nrel_else: .agent_of_finding_of_general_specification_for_indicated_entity_gen_unsuccessfully_question;;
+		  	=> nrel_else: .agent_of_finding_of_general_specification_for_indicated_entity_return;;
 			*);;
 
 		-> .agent_of_finding_of_general_specification_for_indicated_entity1D
@@ -71,7 +71,7 @@ scp_program -> agent_of_finding_of_general_specification_for_indicated_entity
 			-> rrel_set_1: rrel_assign: rrel_scp_var: rrel_node: _set_of_spetifications;;
 
 			=> nrel_then: .agent_of_finding_of_general_specification_for_indicated_entity2A;;
-			=> nrel_else: .agent_of_finding_of_general_specification_for_indicated_entity_gen_successfully_question;;
+			=> nrel_else: .agent_of_finding_of_general_specification_for_indicated_entity2_check_elems_in_set;;
 			*);;
 
 		-> .agent_of_finding_of_general_specification_for_indicated_entity2A
@@ -79,18 +79,30 @@ scp_program -> agent_of_finding_of_general_specification_for_indicated_entity
 			<- searchElStr3;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _set_of_spetifications;;
-			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
 			-> rrel_3: rrel_assign: rrel_scp_var: _spetification;;
 
 			=> nrel_then: .agent_of_finding_of_general_specification_for_indicated_entity2B;;
-			=> nrel_else: .agent_of_finding_of_general_specification_for_indicated_entity_gen_successfully_question;;
+			=> nrel_else: .agent_of_finding_of_general_specification_for_indicated_entity2_check_elems_in_set;;
+			*);;
+
+		-> .agent_of_finding_of_general_specification_for_indicated_entity2_check_elems_in_set
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _set_of_general_specifications;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_const: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _some_spetification;;
+			
+			=> nrel_then: .agent_of_finding_of_general_specification_for_indicated_entity_gen_successfully_question;;
+			=> nrel_else: .agent_of_finding_of_general_specification_for_indicated_entity_erase_set_of_general_specifications;;
 			*);;
 
 		-> .agent_of_finding_of_general_specification_for_indicated_entity2B
 			(*
 			<- eraseEl;;
 
-			-> rrel_1: rrel_erase: rrel_fixed: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_1: rrel_erase: rrel_fixed: rrel_scp_var: rrel_pos_const_perm: _arc2;;
 
 			=> nrel_goto: .agent_of_finding_of_general_specification_for_indicated_entity2C;;
 			*);;
@@ -116,7 +128,7 @@ scp_program -> agent_of_finding_of_general_specification_for_indicated_entity
 			-> rrel_3: rrel_fixed: rrel_scp_var: _spetification;;
 						
 			=> nrel_goto: .agent_of_finding_of_general_specification_for_indicated_entity2A;;
-			*);;	
+			*);;
 		
 		-> .agent_of_finding_of_general_specification_for_indicated_entity_gen_result
 			(*
@@ -150,7 +162,7 @@ scp_program -> agent_of_finding_of_general_specification_for_indicated_entity
 		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
 		  	-> rrel_3: rrel_fixed: rrel_scp_var: _quest;;
 
-		  	=> nrel_goto: .agent_of_finding_of_general_specification_for_indicated_entity_erase_set_of_general_specifications;;
+		  	=> nrel_goto: .agent_of_finding_of_general_specification_for_indicated_entity_return;;
 			*);;
 
 		-> .agent_of_finding_of_general_specification_for_indicated_entity_erase_set_of_general_specifications
@@ -159,19 +171,10 @@ scp_program -> agent_of_finding_of_general_specification_for_indicated_entity
 
 			-> rrel_1: rrel_erase: rrel_fixed: rrel_scp_var: rrel_node: _set_of_general_specifications;;
 
-			=> nrel_goto: .agent_of_finding_of_general_specification_for_indicated_entity_return;;
+			=> nrel_goto: .agent_of_finding_of_general_specification_for_indicated_entity_gen_unsuccessfully_question;;
 			*);;
-
+		
 		-> .agent_of_finding_of_general_specification_for_indicated_entity_return
-			(*
-			<- printNl;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_const: [123];;
-
-			=> nrel_goto: .agent_of_finding_of_general_specification_for_indicated_entity_return1;;
-			*);;		
-
-		-> .agent_of_finding_of_general_specification_for_indicated_entity_return1
 			(*
 			<-return;;
 			*);;

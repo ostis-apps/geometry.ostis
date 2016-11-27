@@ -42,7 +42,7 @@ sc_agent_of_finding_of_general_specification_for_indicated_entity
 
 ..sc_agent_of_finding_of_general_specification_for_indicated_entity_result
 = [*
-	action_of_request_assistance_of_entity_specification _-> .._question;;
+	action_of_finding_generalized_specifications_for_indicated_entity _-> .._question;;
 	question_finished _-> .._question;;
 	question _-> .._question;;
 	.._question _=> nrel_answer:: .._answer;;
