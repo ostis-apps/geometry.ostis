@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Теорема Фалеса.</title>
+	<meta charset="utf-8">
+	<style>
+	ol {
+		list-style: none;
+		counter-reset: li;
+	}
+	li:before {
+		counter-increment: li; 
+		content: counters(li,".") ". ";
+	}
+	</style>
+</head>
+<body>
+	<p>
+		<ol>
+			<li>
+				Пусть <sc_element sys_idtf="nrel_side">стороны</sc_element> <i>&#8736;А</i> <sc_element sys_idtf = "nrel_intersection">пересекаются</sc_element> <sc_element sys_idtf="nrel_parallelism">параллельными</sc_element> <sc_element sys_idtf="concept_straight_line">прямыми</sc_element> в <sc_element sys_idtf="concept_geometric_point">точках</sc_element> <i>В</i>, <i>С</i> и <i>B<sub>1</sub></i>, <i>C<sub>1</sub></i> соответственно.
+			</li>
+			<li>
+				Теоремой утверждается, что <i>AC<sub>1</sub>/AC = AB<sub>1</sub>/AB</i>.
+			</li>
+			<li>	
+				Докажем сначала <sc_element sys_idtf="nrel_congruence">равенство</sc_element> в случае, когда существует такой <sc_element sys_idtf="concept_segment">отрезок</sc_element> <sc_element sys_idtf="nrel_length">длины</sc_element> &delta;, который укладывается целое число раз и на <sc_element sys_idtf="concept_segment">отрезке</sc_element> <i>АС</i>, и на <sc_element sys_idtf="concept_segment">отрезке</sc_element> <i>АC<sub>1</sub></i>. 
+			</li>
+			<ol>
+			<li>	
+				Пусть <i>АС = n&#183;&delta;</i>, <i>АC<sub>1</sub> = m&#183;&delta;</i> и <i>n > m</i>.  
+			</li>	
+			<li>
+				Разобьем <sc_element sys_idtf="concept_segment">отрезок</sc_element> <i>АС</i> на <i>n</i> равных частей <sc_element sys_idtf="nrel_length">длины</sc_element> &delta;.
+			</li>
+			<li>	
+				При этом <sc_element sys_idtf="concept_geometric_point">точка</sc_element> <i>C<sub>1</sub></i> будет одной из <sc_element sys_idtf="concept_geometric_point">точек</sc_element> деления. 
+			</li>	
+			<li>
+				Проведем через <sc_element sys_idtf="concept_geometric_point">точки</sc_element> деления <sc_element sys_idtf="concept_straight_line">прямые</sc_element>, <sc_element sys_idtf="nrel_parallelism">параллельные</sc_element> <sc_element sys_idtf="concept_straight_line">прямой</sc_element> <i>ВС</i>.
+			</li>
+			<li>	
+				По <sc_element sys_idtf="stat_Fales_theorem">теореме Фалеса</sc_element> эти <sc_element sys_idtf="concept_straight_line">прямые</sc_element> разбивают <sc_element sys_idtf="concept_segment">отрезок</sc_element> <i>АВ</i> на равные <sc_element sys_idtf="concept_segment">отрезки</sc_element> некоторой <sc_element sys_idtf="nrel_length">длины</sc_element> <i>&delta;<sub>1</sub></i>.
+			</li>
+			<li>	
+				Имеем: <i>АВ = n&#183;&delta;<sub>1</sub></i>, <i>AB<sub>1</sub> = m&#183;&delta;<sub>1</sub></i>.
+			</li>
+			</ol>
+			<li>	
+				Мы видим, что <i>AC<sub>1</sub>/AC = m/n</i> и <i>AB<sub>1</sub>/AB = m/n</i>. Значит, <i>AC<sub>1</sub>/AC = AB<sub>1</sub>/AB</i>.
+			</li>
+		</ol>
+	</p>
+</body>
+</html>
