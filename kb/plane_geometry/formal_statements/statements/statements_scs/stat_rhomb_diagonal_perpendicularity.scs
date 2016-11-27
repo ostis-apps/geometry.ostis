@@ -1,22 +1,41 @@
-statement -> stat_rhomb_diagonal_perpendicularity;;
-statement -> stat_reverse_converse_diagonal_perpendicularity;;
+statement -> stat_rhomb_diagonal_perpendicularity_bisectrix_of_polygon;;
+statement -> stat_converse_rhomb_diagonal_perpendicularity_bisectrix_of_polygon;;
+statement -> stat_reverse_rhomb_diagonal_perpendicularity_bisectrix_of_polygon;;
+statement -> stat_reverse_converse_rhomb_diagonal_perpendicularity_bisectrix_of_polygon;;
 
-stat_rhomb_diagonal_perpendicularity -> rrel_key_sc_element: concept_rhomb; nrel_diagonal; nrel_perpendicularity;;
-stat_reverse_converse_diagonal_perpendicularity -> rrel_key_sc_element: concept_rhomb; nrel_diagonal; nrel_perpendicularity;;
 
-stat_rhomb_diagonal_perpendicularity => nrel_main_idtf: [Утв.(ромб; диагональ*; перпендикулярность*)] (* <- lang_ru;; *);;
-stat_reverse_converse_diagonal_perpendicularity => nrel_main_idtf: [Прот.обр.утв.(ромб; диагональ*; перпендикулярность*)] (* <- lang_ru;; *);;
+stat_rhomb_diagonal_perpendicularity_bisectrix_of_polygon => nrel_main_idtf: [Утв.(ромб; диагональ*; перпендикулярность*)] (* <- lang_ru;; *);;
+stat_converse_rhomb_diagonal_perpendicularity_bisectrix_of_polygon => nrel_main_idtf: [Обр.Утв.(ромб; диагональ*; перпендикулярность*)] (* <- lang_ru;; *);;
+stat_reverse_rhomb_diagonal_perpendicularity_bisectrix_of_polygon => nrel_main_idtf: [Прот.Утв.(ромб; диагональ*; перпендикулярность*)] (* <- lang_ru;; *);;
+stat_reverse_converse_rhomb_diagonal_perpendicularity_bisectrix_of_polygon => nrel_main_idtf: [Прот.обр.утв.(ромб; диагональ*; перпендикулярность*)] (* <- lang_ru;; *);;
 
-stat_rhomb_diagonal_perpendicularity <= nrel_sc_text_translation: ...
+stat_rhomb_diagonal_perpendicularity_bisectrix_of_polygon <= nrel_sc_text_translation: ...
 	(*
 	-> rrel_example:
-		[Диагонали ромба взаимно перпендикулярны.] (* <- lang_ru;; *);;
+		[Диагонали ромба взаимно перпендикулярны и являются биссектрисами его углов.] (* <- lang_ru;; *);;
 	*);;
 
-stat_reverse_converse_diagonal_perpendicularity <= nrel_sc_text_translation: ...
+stat_converse_rhomb_diagonal_perpendicularity_bisectrix_of_polygon <= nrel_sc_text_translation: ...
 	(*
 	-> rrel_example:
-		[Четырёхугольник, диагонали которого не перпендикулярны, не является ромбом.] (* <- lang_ru;; *);;
+		[Если диагонали четырёхугольника взаимно перпендикулярны и являются биссектрисами его углов, то четырёхугольник - ромб.] (* <- lang_ru;; *);;
 	*);;
 
-stat_rhomb_diagonal_perpendicularity <=> nrel_reverse_converse_theorem: stat_reverse_converse_diagonal_perpendicularity;;
+stat_reverse_rhomb_diagonal_perpendicularity_bisectrix_of_polygon <= nrel_sc_text_translation: ...
+	(*
+	-> rrel_example:
+		[Если четырёхугольник не является ромбом, его диагонили не взаимно перпендикулярны и не являются биссектрисами его углов.] (* <- lang_ru;; *);;
+	*);;
+
+stat_reverse_converse_rhomb_diagonal_perpendicularity_bisectrix_of_polygon <= nrel_sc_text_translation: ...
+	(*
+	-> rrel_example:
+		[Если диагонали четырёхугольника не взаимно перпендикулярны и являются биссектрисами его углов, то четырёхугольник - не ромб.] (* <- lang_ru;; *);;
+	*);;
+
+stat_rhomb_diagonal_perpendicularity_bisectrix_of_polygon <=> nrel_converse_theorem: stat_converse_rhomb_diagonal_perpendicularity_bisectrix_of_polygon;;
+stat_reverse_rhomb_diagonal_perpendicularity_bisectrix_of_polygon <=> nrel_converse_theorem: stat_reverse_converse_rhomb_diagonal_perpendicularity_bisectrix_of_polygon;;
+stat_rhomb_diagonal_perpendicularity_bisectrix_of_polygon <=> nrel_reverse_theorem: stat_reverse_rhomb_diagonal_perpendicularity_bisectrix_of_polygon;;
+stat_converse_rhomb_diagonal_perpendicularity_bisectrix_of_polygon <=> nrel_reverse_theorem: stat_reverse_converse_rhomb_diagonal_perpendicularity_bisectrix_of_polygon;;
+stat_rhomb_diagonal_perpendicularity_bisectrix_of_polygon <=> nrel_reverse_converse_theorem: stat_reverse_converse_rhomb_diagonal_perpendicularity_bisectrix_of_polygon;;
+stat_converse_rhomb_diagonal_perpendicularity_bisectrix_of_polygon <=> nrel_reverse_converse_theorem: stat_reverse_rhomb_diagonal_perpendicularity_bisectrix_of_polygon;;

@@ -1,0 +1,13 @@
+statement -> stat_adjacent_angle_sum;;
+
+stat_adjacent_angle_sum => nrel_main_idtf: [Утв.(смежный*; угол; сумма*)] (* <- lang_ru;; *);;
+stat_adjacent_angle_sum => nrel_main_idtf: [Stat.(adjacent*; angle; sum*)] (*<- lang_en;;*);;
+
+stat_adjacent_angle_sum <= nrel_sc_text_translation: ...
+	(*
+	-> rrel_example:
+		[Сумма смежных углов равна 180°] 
+		(* <- lang_ru;; *);;
+	*);;
+
+stat_adjacent_angle_sum => nrel_consequent: stat_triangle_side_be_more_sum; stat_angle_adjacent_angle_congruence; stat_straight_angle_angle_measure_be_more;;

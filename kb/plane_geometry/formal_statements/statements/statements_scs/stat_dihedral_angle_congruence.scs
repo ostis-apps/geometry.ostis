@@ -1,0 +1,11 @@
+statement -> stat_dihedral_angle_congruence;;
+
+stat_dihedral_angle_congruence => nrel_main_idtf: [Утв.(двугранный угол; конгруэнтность*)] (* <- lang_ru;; *);;
+stat_dihedral_angle_congruence => nrel_main_idtf: [Stat.(dihedral angle; congruence*)] (*<- lang_en;;*);;
+
+stat_dihedral_angle_congruence <= nrel_sc_text_translation: ...
+	(*
+	-> rrel_example:
+		[Если двугранные углы равны, то равны так же и их линейные углы.] 
+		(* <- lang_ru;; *);;
+	*);;
