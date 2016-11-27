@@ -1,0 +1,23 @@
+stat_regular_hexagon_internal_angle_value_degree <- statement;;
+
+stat_regular_hexagon_internal_angle_value_degree
+	-> rrel_key_sc_element:
+	concept_regular_hexagon;
+	nrel_internal_angle;
+	rrel_degree;;
+
+stat_regular_hexagon_internal_angle_value_degree
+	=> nrel_main_idtf:
+	[Утв.(правильный шестиугольник;внутренний угол*;угловой градус')] (*<- lang_ru;;*);;
+
+stat_regular_hexagon_internal_angle_value_degree
+	=> nrel_main_idtf:
+	[Stat.(regular hexagon;internal angle*;degree')] (*<- lang_en;;*);;
+
+stat_regular_hexagon_internal_angle_value_degree <= nrel_sc_text_translation: 
+	... 
+	(* 
+	-> rrel_example: 
+		[Каждый угол правильного шестиугольника равен 120 градусов.] 
+		(* <- lang_ru;; *);; 
+	*);;
