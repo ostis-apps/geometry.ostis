@@ -1,0 +1,22 @@
+stat_equilateral_triangle_internal_angle_measure <- statement;;
+
+stat_equilateral_triangle_internal_angle_measure
+-> rrel_key_sc_element:
+	concept_equilateral_triangle;
+	nrel_internal_angle;
+	nrel_angle_measure;;
+
+stat_equilateral_triangle_internal_angle_measure
+=> nrel_main_idtf:
+	[Утв.(равносторонний треугольник;внутренний угол*;мера угла*)] (* <-lang_ru;; *);;
+
+stat_equilateral_triangle_internal_angle_measure
+=> nrel_main_idtf:
+	[Stat.(equilateral triangle;internal angle*;angle measure*)] (* <-lang_en;; *);;
+
+stat_equilateral_triangle_internal_angle_measure <= nrel_sc_text_translation: 
+	...
+	(*
+		-> rrel_example: 
+		[У равностороннего треугольника все углы равны между собой и составляют 60°.] (* <- lang_ru;; *);;
+	*);;
