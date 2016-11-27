@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Неравенство треугольника.</title>
+	<meta charset="utf-8">
+	<style>
+	ol {
+		list-style: none;
+		counter-reset: li;
+	}
+	li:before {
+		counter-increment: li; 
+		content: counters(li,".") ". ";
+	}
+	</style>
+</head>
+<body>
+	<p>
+		<ol>
+			<li>
+				Пусть <i>А</i>, <i>В</i>, <i>С</i> - три данные <sc_element sys_idtf="concept_geometric_point">точки</sc_element>.
+			</li>
+				<ul>
+					<li>
+						Если две <sc_element sys_idtf="concept_geometric_point">точки</sc_element> из трех или все три <sc_element sys_idtf="concept_geometric_point">точки</sc_element> <sc_element sys_idtf="nrel_consilience">совпадают</sc_element>, то утверждение теоремы очевидно.
+					</li>
+					<li>	
+						Если все <sc_element sys_idtf="concept_geometric_point">точки</sc_element> различны и лежат на одной <sc_element sys_idtf="concept_straight_line">прямой</sc_element>, то одна из них лежит между двумя другими, например <i>В</i>.
+					</li>
+						<ol>
+							<li>	
+								В этом случае <i>AB + BC = AC</i>.
+							</li>	
+							<li>
+								Отсюда видно, что каждое из трех расстояний не больше суммы двух других.
+							</li>
+							<li>	
+								Допустим, что точки не лежат на одной <sc_element sys_idtf="concept_straight_line">прямой</sc_element>. 
+							</li>	
+							<li>
+								Докажем, что <i>AB < AC + BC</i>.
+						<ol>
+								<li>	
+									Опустим <sc_element sys_idtf="nrel_perpendicular">перпендикуляр</sc_element> <i>CD</i> на <sc_element sys_idtf="concept_straight_line">прямую</sc_element> <i>AB</i>.
+								</li>
+								<li>
+									По доказанному <i>AB &#8804; AD + BD</i>. 
+								</li>
+								<li>	
+									И так как <i>AD < AC</i> и <i>BD < BC</i>, то <i>АВ < AC + BC</i>.
+								</li>
+							</li>
+						</ol>
+					</li>
+		</ol>
+		</ul>
+	</p>
+</body>
+</html>
