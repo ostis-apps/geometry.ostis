@@ -1,30 +1,27 @@
-s_tangent_secant
+s_sd_tangent_and_secant_properties
 => nrel_main_idtf:
 	[Раздел. Касательные и секущие]
 	(* <- lang_ru;; *);
 => nrel_main_idtf:
-	[Section. Tangents and secants]
+	[Section. Tangent and secant]
 	(* <- lang_en;; *);
 
 <= nrel_sc_text_translation:
 		...
 		(*
 		-> rrel_example:
-			"file://html/s_tangent_secant_ru.html"
+			"file://s_sd_tangent_and_secant_properties_ru.html"
 			(* <- lang_ru;; *);;
 		*);
 
-<- atomic_section;
-
-
+<-atomic_section;
 => nrel_summary:
 	...
 	(*
 		<= nrel_sc_text_translation:
 			...
 			(*
-			-> rrel_example:
-				[В данном разделе рассматриваются касательые и секущие.]
+			-> rrel_example:[В данном разделе рассматриваются касательые и секущие.]
 				(* <- lang_ru;; *);;
 			*);;
 	*);;
