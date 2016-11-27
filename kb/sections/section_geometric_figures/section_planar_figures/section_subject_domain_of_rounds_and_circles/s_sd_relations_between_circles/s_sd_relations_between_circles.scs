@@ -1,4 +1,4 @@
-s_relations_between_circles
+s_sd_relations_between_circles
 => nrel_main_idtf:
 	[Раздел. Отношения между двумя окружностями]
 	(* <- lang_ru;; *);
@@ -10,22 +10,19 @@ s_relations_between_circles
 		...
 		(*
 		-> rrel_example:
-			"file://html/s_relations_between_circles_ru.html"
+			"file://s_sd_relations_between_circles_ru.html"
 			(* <- lang_ru;; *);;
 		*);
 
 
-<- atomic_section;
-
-
+<-atomic_section;
 => nrel_summary:
 	...
 	(*
 		<= nrel_sc_text_translation:
 			...
 			(*
-			-> rrel_example:
-				[В данном разделе рассматриваются отношения между двумя окружностями.]
+			-> rrel_example:[В данном разделе рассматриваются отношения между двумя окружностями.]
 				(* <- lang_ru;; *);;
 			*);;
 	*);;
