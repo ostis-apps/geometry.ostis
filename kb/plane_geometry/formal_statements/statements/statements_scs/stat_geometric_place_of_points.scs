@@ -1,9 +1,9 @@
-statement -> d_geometric_place_of_points;;
+statement -> stat_geometric_place_of_points;;
 
-d_geometric_place_of_points => nrel_main_idtf: [Утв.(геометрическое место точек)] (* <- lang_ru;; *);;
-d_geometric_place_of_points => nrel_main_idtf: [Stat.(geometric place of points)] (*<- lang_en;;*);;
+stat_geometric_place_of_points => nrel_main_idtf: [Утв.(геометрическое место точек)] (* <- lang_ru;; *);;
+stat_geometric_place_of_points => nrel_main_idtf: [Stat.(geometric place of points)] (*<- lang_en;;*);;
 
-d_geometric_place_of_points <= nrel_sc_text_translation: ...
+stat_geometric_place_of_points <= nrel_sc_text_translation: ...
 	(*
 	-> rrel_example:
 		[Геометрическое место точек, равноудалённых от двух данных точек, есть прямая, перпендикулярная к отрезку, соединяющему эти точки, и проходящая через его середину.] 
