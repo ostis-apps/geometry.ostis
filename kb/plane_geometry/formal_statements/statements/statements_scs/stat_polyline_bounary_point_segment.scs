@@ -1,6 +1,7 @@
-﻿stat_polyline_bounary_point_segment <- statement;;
+stat_polyline_bounary_point_segment <- statement;;
 
-stat_polyline_bounary_point_segment -> rrel_key_sc_element:
+stat_polyline_bounary_point_segment
+-> rrel_key_sc_element:
 	concept_polyline;
 	concept_segment;
 	nrel_bounary_point;;
