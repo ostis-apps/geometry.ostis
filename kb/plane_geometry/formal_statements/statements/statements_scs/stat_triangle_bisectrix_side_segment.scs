@@ -1,9 +1,19 @@
 ﻿stat_triangle_bisectrix_side_segment <- statement;;
 
-stat_triangle_bisectrix_side_segment-> rrel_key_sc_element: concept_triangle; nrel_bisectrix; concept_segment; nrel_side;;
+stat_triangle_bisectrix_side_segment
+-> rrel_key_sc_element:
+	concept_triangle;
+	nrel_bisectrix;
+	concept_segment;
+	nrel_side_of_polygon;;
 
-stat_triangle_bisectrix_side_segment => nrel_main_idtf: [Утв.(треугольник; биссектриса*; отрезок; сторона*)] (* <-lang_ru;; *);;
-stat_triangle_bisectrix_side_segment => nrel_main_idtf: [Stat.(triangle; bisectrix*; segment; side*)] (* <-lang_en;; *);;
+stat_triangle_bisectrix_side_segment
+=> nrel_main_idtf:
+	[Утв.(треугольник;биссектриса*;отрезок;сторона многоугольника*)] (* <-lang_ru;; *);;
+
+stat_triangle_bisectrix_side_segment
+=> nrel_main_idtf:
+	[Stat.(triangle;bisectrix*;segment;side of polygon*)] (* <-lang_en;; *);;
 
 stat_triangle_bisectrix_side_segment <= nrel_sc_text_translation: 
 	...

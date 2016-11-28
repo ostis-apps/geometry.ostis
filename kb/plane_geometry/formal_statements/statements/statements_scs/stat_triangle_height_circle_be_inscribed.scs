@@ -1,9 +1,19 @@
 ﻿stat_triangle_height_circle_be_inscribed <- statement;;
 
-stat_triangle_height_circle_be_inscribed-> rrel_key_sc_element: concept_triangle; nrel_height; concept_circle; nrel_be_inscribed;;
+stat_triangle_height_circle_be_inscribed
+-> rrel_key_sc_element:
+	concept_triangle;
+	nrel_height;
+	concept_circle;
+	nrel_be_inscribed;;
 
-stat_triangle_height_circle_be_inscribed => nrel_main_idtf: [Утв.(треугольник; высота*; окружность; быть вписанным*)] (* <-lang_ru;; *);;
-stat_triangle_height_circle_be_inscribed => nrel_main_idtf: [Stat.(triangle; height*; circle; be inscribed*)] (* <-lang_en;; *);;
+stat_triangle_height_circle_be_inscribed
+=> nrel_main_idtf:
+	[Утв.(треугольник;окружность;высота*;быть вписанным*)] (* <-lang_ru;; *);;
+
+stat_triangle_height_circle_be_inscribed
+=> nrel_main_idtf:
+	[Stat.(triangle;circle;height*;be inscribed*)] (* <-lang_en;; *);;
 
 stat_triangle_height_circle_be_inscribed <= nrel_sc_text_translation: 
 	...
