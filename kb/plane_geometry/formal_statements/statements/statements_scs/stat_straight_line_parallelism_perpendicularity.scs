@@ -1,0 +1,23 @@
+stat_straight_line_parallelism_perpendicularity <- statement;;
+
+stat_straight_line_parallelism_perpendicularity
+-> rrel_key_sc_element:
+	concept_straight_line;
+	nrel_parallelism;
+	nrel_perpendicularity;;
+
+stat_straight_line_parallelism_perpendicularity
+=> nrel_main_idtf:
+	[Утв.(прямая;параллельность*;перпендикулярность*)] (*<- lang_ru;;*);;
+
+stat_straight_line_parallelism_perpendicularity
+=> nrel_main_idtf:
+	[Stat.(straight line;parallelism*;perpendicularity*)] (*<- lang_en;;*);;
+
+stat_straight_line_parallelism_perpendicularity <= nrel_sc_text_translation: 
+	... 
+	(* 
+	-> rrel_example: 
+		[Если две различные прямые перпендикулярны третьей прямой, то они параллельны.] 
+		(* <- lang_ru;; *);; 
+	*);;

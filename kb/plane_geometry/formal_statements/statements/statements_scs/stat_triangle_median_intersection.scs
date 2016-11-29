@@ -1,0 +1,23 @@
+stat_triangle_median_intersection <- statement;;
+
+stat_triangle_median_intersection
+-> rrel_key_sc_element:
+	concept_triangle;
+	nrel_median;
+	nrel_intersection;;
+
+stat_triangle_median_intersection
+=> nrel_main_idtf:
+	[Утв.(треугольник;медиана*;пересечение*)] (*<- lang_ru;;*);;
+	
+stat_triangle_median_intersection
+=> nrel_main_idtf:
+	[Stat.(triangle;median*;intersection*)] (*<- lang_en;;*);;
+
+stat_triangle_median_intersection <= nrel_sc_text_translation: 
+	... 
+	(* 
+	-> rrel_example: 
+		[Медианы треугольника пересекаются в одной точке.] 
+		(* <- lang_ru;; *);; 
+	*);;

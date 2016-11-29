@@ -1,0 +1,7 @@
+sc_arc_membership <- rrel_key_sc_element: spec_finding_sc_arc_membership;;
+
+spec_finding_sc_arc_membership -> rrel_key_sc_element: role_relation;;
+
+general_specification -> spec_finding_sc_arc_membership;;
+
+spec_finding_sc_arc_membership => nrel_main_idtf: [Обобщённая спецификация для поиска ролевого отношения] (* <- lang_ru;; *);;

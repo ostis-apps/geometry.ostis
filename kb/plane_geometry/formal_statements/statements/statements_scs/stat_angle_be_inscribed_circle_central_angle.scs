@@ -1,0 +1,14 @@
+statement -> stat_angle_be_inscribed_circle_central_angle;;
+
+stat_angle_be_inscribed_circle_central_angle => nrel_main_idtf: [Утв.(угол; быть вписанным*; центральный угол*)] (* <- lang_ru;; *);;
+stat_angle_be_inscribed_circle_central_angle => nrel_main_idtf: [Stat.(angle; be inscribed*; central angle*)] (*<- lang_en;;*);;
+
+stat_angle_be_inscribed_circle_central_angle <= nrel_sc_text_translation: ...
+	(*
+	-> rrel_example:
+		[Угол, вписанный в окружность, равен половине соответствующего центрального угла.] 
+		(* <- lang_ru;; *);;
+	*);;
+
+stat_angle_be_inscribed_circle_central_angle => nrel_particular_theorem: stat_inscribed_angle_circle_vertex_right_angle;;
+stat_angle_be_inscribed_circle_central_angle => nrel_consequent: stat_inscribed_angle_circle_vertex_right_angle;;

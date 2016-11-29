@@ -1,0 +1,7 @@
+interval_value <- rrel_key_sc_element: spec_finding_interval;;
+
+spec_finding_interval -> rrel_key_sc_element: exact_value; nrel_measure;;
+
+necessary_general_specification -> spec_finding_interval;;
+
+spec_finding_interval => nrel_main_idtf: [Необходимая обобщённая спецификация для поиска интервала у интервальной величины] (* <- lang_ru;; *);;

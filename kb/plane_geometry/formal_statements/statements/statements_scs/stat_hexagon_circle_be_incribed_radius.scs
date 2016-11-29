@@ -1,0 +1,24 @@
+stat_hexagon_circle_be_incribed_radius <- statement;;
+
+stat_hexagon_circle_be_incribed_radius
+-> rrel_key_sc_element:
+	concept_hexagon;
+	concept_circle;
+	nrel_be_incribed;
+	nrel_radius;;
+
+stat_hexagon_circle_be_incribed_radius
+=> nrel_main_idtf:
+	[Утв.(шестиугольник;окружность;быть вписанным*;радиус*)] (*<- lang_ru;;*);;
+
+stat_hexagon_circle_be_incribed_radius
+=> nrel_main_idtf:
+	[Stat.(hexagon;circle;be incribed*;radius)] (*<- lang_en;;*);;
+
+stat_hexagon_circle_be_incribed_radius <= nrel_sc_text_translation: 
+	...
+	(* 
+	-> rrel_example:
+		[Связь между радиусами вписанной и описанной окружностей правильного шестиугольника R=(2*sqrt(3)/3)*r, где R - радиус описанной окружности, r - радиус вписанной окружности.] 
+		(* <- lang_ru;; *);; 
+	*);;
