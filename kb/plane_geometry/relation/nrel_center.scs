@@ -9,12 +9,6 @@ nrel_center => nrel_main_idtf:
 nrel_center => nrel_idtf: [быть центром*] (* <- lang_ru;; *);;
 nrel_center => nrel_idtf: [быть центром геометрической фигуры*] (* <- lang_ru;; *);;
 
-nrel_center <= nrel_combination: 
-	{
-	nrel_center_of_regular_polygon; 
-	nrel_center_of_circle;
-	nrel_center_of_round
-	};;
 
 nrel_center <= nrel_definitional_domain: 
 	...
