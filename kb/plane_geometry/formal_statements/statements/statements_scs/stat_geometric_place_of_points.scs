@@ -1,5 +1,7 @@
 statement -> stat_geometric_place_of_points;;
 
+stat_geometric_place_of_points -> rrel_key_sc_element: concept_geometric_point; concept_straight_line; nrel_distance;;
+
 stat_geometric_place_of_points => nrel_main_idtf: [Утв.(геометрическое место точек)] (* <- lang_ru;; *);;
 stat_geometric_place_of_points => nrel_main_idtf: [Stat.(geometric place of points)] (*<- lang_en;;*);;
 

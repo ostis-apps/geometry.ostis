@@ -1,5 +1,7 @@
 statement -> stat_vertical_angle_congruence;;
 
+stat_vertical_angle_congruence -> rrel_key_sc_element: concept_angle; nrel_vertical_angle; nrel_congruence;;
+
 stat_vertical_angle_congruence => nrel_main_idtf: [Утв.(вертикальные углы*; конгруэнтность*)] (* <- lang_ru;; *);;
 stat_vertical_angle_congruence => nrel_main_idtf: [Stat.(vertical angle*; congruence*)] (*<- lang_en;;*);;
 
