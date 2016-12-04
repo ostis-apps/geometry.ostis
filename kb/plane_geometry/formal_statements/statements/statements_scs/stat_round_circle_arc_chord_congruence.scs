@@ -32,9 +32,9 @@ stat_reverse_converse_round_circle_arc_chord_congruence <= nrel_sc_text_translat
 		[Если две стягивающие хорды одной окружности не  равны, то не равны и эти дуги.] (* <- lang_ru;; *);;
 	*);;
 
-stat_round_circle_arc_chord_congruence <=> nrel_converse_therem: stat_converse_round_circle_arc_chord_congruence;;
-stat_reverse_round_circle_arc_chord_congruence <=> nrel_converse_therem: stat_reverse_converse_round_circle_arc_chord_congruence;;
-stat_round_circle_arc_chord_congruence <=> nrel_reverse_therem: stat_reverse_round_circle_arc_chord_congruence;;
-stat_converse_round_circle_arc_chord_congruence <=> nrel_reverse_therem: stat_reverse_converse_round_circle_arc_chord_congruence;;
+stat_round_circle_arc_chord_congruence <=> nrel_converse_theorem: stat_converse_round_circle_arc_chord_congruence;;
+stat_reverse_round_circle_arc_chord_congruence <=> nrel_converse_theorem: stat_reverse_converse_round_circle_arc_chord_congruence;;
+stat_round_circle_arc_chord_congruence <=> nrel_reverse_theorem: stat_reverse_round_circle_arc_chord_congruence;;
+stat_converse_round_circle_arc_chord_congruence <=> nrel_reverse_theorem: stat_reverse_converse_round_circle_arc_chord_congruence;;
 stat_round_circle_arc_chord_congruence <=> nrel_reverse_converse_theorem: stat_reverse_converse_round_circle_arc_chord_congruence;;
 stat_converse_round_circle_arc_chord_congruence <=> nrel_reverse_converse_theorem: stat_reverse_round_circle_arc_chord_congruence;;
