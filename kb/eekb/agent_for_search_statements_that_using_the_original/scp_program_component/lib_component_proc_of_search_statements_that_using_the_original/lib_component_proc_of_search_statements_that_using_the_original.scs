@@ -1,0 +1,27 @@
+lib_component_proc_of_search_statements_that_using_the_original
+=> nrel_main_idtf:
+	[Компонент библиотеки. Scp-программа вывода всех утверждений, для доказательства которых используется исходное утверждение]
+	(* <- lang_ru;; *);
+	[Library component. Scp-program of display all statements, is used to prove that the original statement]
+	(* <- lang_en;; *);
+
+<- library_of_platform_independent_reusable_components;
+
+-> rrel_key_sc_element: 
+	proc_of_search_statements_that_using_the_original;
+
+<- rrel_key_sc_element: 
+	...
+	(*
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://htmls/Proc_Of_Search_Statements_That_Using_The_Original.html" 
+				(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+lib_component_proc_of_search_statements_that_using_the_original = [*^"file://proc_of_search_statements_that_using_the_original.scsi"*];;
+
