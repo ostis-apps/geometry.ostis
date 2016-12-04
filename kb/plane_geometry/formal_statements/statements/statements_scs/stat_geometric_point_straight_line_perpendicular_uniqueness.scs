@@ -1,0 +1,13 @@
+statement -> stat_geometric_point_straight_line_perpendicular_uniqueness;;
+
+stat_geometric_point_straight_line_perpendicular_uniqueness -> rrel_key_sc_element: concept_geometric_point; concept_straight_line; nrel_perpendicular;;
+
+stat_geometric_point_straight_line_perpendicular_uniqueness => nrel_main_idtf: [Утв.(перпендикуляр*; геометрическая точка; прямая)] (* <- lang_ru;; *);;
+stat_geometric_point_straight_line_perpendicular_uniqueness => nrel_main_idtf: [Stat.(perpendicular*; geometric point; straight line)] (* <- lang_en;; *);;
+
+stat_geometric_point_straight_line_perpendicular_uniqueness <= nrel_sc_text_translation: ...
+	(*
+	-> rrel_example:
+		[Из любой точки, не лежащей на данной прямой, можно опустить на эту прямую перпендикуляр, и только один.] 
+		(* <- lang_ru;; *);;
+	*);;
