@@ -1,0 +1,13 @@
+statement -> axiom_congruence_existence_triangle_straight_line;;
+
+axiom_congruence_existence_triangle_straight_line -> rrel_key_sc_element: concept_triangle; concept_straight_line; nrel_congruence;;
+
+axiom_congruence_existence_triangle_straight_line => nrel_main_idtf: [Акс.(треугольник; прямая; конгруэнтность*)] (* <- lang_ru;; *);;
+axiom_congruence_existence_triangle_straight_line => nrel_main_idtf: [Ax.(triangle; straight line; congruence*)] (* <- lang_en;; *);;
+
+axiom_congruence_existence_triangle_straight_line <= nrel_sc_text_translation: ...
+	(*
+	-> rrel_example:
+		[Каков бы ни был треугольник, существует равный ему треугольник в заданном расположении относительно данной прямой.] 
+		(* <- lang_ru;; *);;
+	*);;
