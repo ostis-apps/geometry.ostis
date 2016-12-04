@@ -1,7 +1,9 @@
 statement -> stat_convex_polygon_regular_polygon_similarity;;
 
-stat_convex_polygon_regular_polygon_similarity => nrel_main_idtf: [Утв.(выпуклый четырёхугольник; правильный четырёхугольник; подобие*)] (* <- lang_ru;; *);;
-stat_convex_polygon_regular_polygon_similarity => nrel_main_idtf: [Stat.(convex polygon; regular polygon; similarity*)] (*<- lang_en;;*);;
+stat_convex_polygon_regular_polygon_similarity -> rrel_key_sc_element: concept_convex_polygon; nrel_side; concept_regular_polygon; nrel_similarity;;
+
+stat_convex_polygon_regular_polygon_similarity => nrel_main_idtf: [Утв.(выпуклый многоугольник; правильный многоугольник; подобие*)] (* <- lang_ru;; *);;
+stat_convex_polygon_regular_polygon_similarity => nrel_main_idtf: [Stat.(convex polygon; regular polygon; similarity*)] (* <- lang_en;; *);;
 
 stat_convex_polygon_regular_polygon_similarity <= nrel_sc_text_translation: ...
 	(*
