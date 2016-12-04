@@ -10,11 +10,6 @@ nrel_secant => nrel_idtf: [быть секущей*] (* <- lang_ru;; *);;
 
 nrel_secant => nrel_idtf: [быть секущей геометрической фигуры*] (* <- lang_ru;; *);;
 
-nrel_secant <= nrel_combination:
-	{
-		nrel_secant_of_straight_lines;
-		nrel_secant_of_circle
-	};;
 
 nrel_secant => nrel_definitional_domain: 
 	...

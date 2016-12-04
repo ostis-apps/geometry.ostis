@@ -1,0 +1,13 @@
+statement -> axiom_ray_boundary_point_segment;;
+
+axiom_ray_boundary_point_segment -> rrel_key_sc_element: concept_ray; concept_segment; concept_geometric_point; nrel_length;;
+
+axiom_ray_boundary_point_segment => nrel_main_idtf: [Акс.(луч; отрезок; длина*)] (* <- lang_ru;; *);;
+axiom_ray_boundary_point_segment => nrel_main_idtf: [Ax.(ray; segment; length*)] (* <- lang_en;; *);;
+
+axiom_ray_boundary_point_segment <= nrel_sc_text_translation: ...
+	(*
+	-> rrel_example:
+		[На любом луче от её начальной точки можно отложить отрезок заданной длины и только один.] 
+		(* <- lang_ru;; *);;
+	*);;

@@ -1,0 +1,13 @@
+statement -> stat_isosceles_triangle_congruence_angle_base;;
+
+stat_isosceles_triangle_congruence_angle_base -> rrel_key_sc_element: concept_isosceles_triangle; concept_angle; nrel_congruence; nrel_base;;
+
+stat_isosceles_triangle_congruence_angle_base => nrel_main_idtf: [Утв.(равнобедренный треугольник; угол; конгруэнтность*)] (* <-lang_ru;; *);;
+stat_isosceles_triangle_congruence_angle_base => nrel_main_idtf: [Stat.(isosceles triangle; angle*; congruence*)] (* <-lang_en;; *);;
+
+stat_isosceles_triangle_congruence_angle_base <= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+		[В равнобедренном треугольнике углы при основании равны.] (* <- lang_ru;; *);;
+		*);;

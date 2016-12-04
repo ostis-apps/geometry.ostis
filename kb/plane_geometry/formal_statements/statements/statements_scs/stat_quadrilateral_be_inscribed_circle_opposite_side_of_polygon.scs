@@ -1,0 +1,27 @@
+statement -> stat_quadrilateral_be_inscribed_circle_opposite_side_of_polygon;;
+statement -> stat_converse_quadrilateral_be_inscribed_circle_opposite_side_of_polygon_of_polygon;;
+
+stat_quadrilateral_be_inscribed_circle_opposite_side_of_polygon -> rrel_key_sc_element: concept_quadrilateral; nrel_be_inscribed; concept_circle; nrel_opposite; nrel_side;;
+stat_converse_quadrilateral_be_inscribed_circle_opposite_side_of_polygon -> rrel_key_sc_element: concept_quadrilateral; nrel_be_inscribed; concept_circle; nrel_opposite; nrel_side;;
+
+
+stat_quadrilateral_be_inscribed_circle_opposite_side_of_polygon => nrel_main_idtf: [Утв.(четырёхугольник; быть вписанным*; окружность; сумма*; противолежащий*; сторона многоугольника*)] (* <- lang_ru;; *);;
+stat_quadrilateral_be_inscribed_circle_opposite_side_of_polygon => nrel_main_idtf: [Stat.(quadrilateral; be inscribed*; circle; sum*; opposite*; side of polygon*)] (* <- lang_en;; *);;
+stat_converse_quadrilateral_be_inscribed_circle_opposite_side_of_polygon => nrel_main_idtf: [Прот.утв.(четырёхугольник; быть вписанным*; окружность; сумма*; противолежащий*; сторона многоугольника*)] (* <- lang_ru;; *);;
+stat_converse_quadrilateral_be_inscribed_circle_opposite_side_of_polygon => nrel_main_idtf: [Conv.stat.(quadrilateral; be inscribed*; circle; sum*; opposite*; side of polygon*)] (* <- lang_en;; *);;
+
+stat_quadrilateral_be_inscribed_circle_opposite_side_of_polygon <= nrel_sc_text_translation: ...
+	(*
+	-> rrel_example:
+		[В описанном четырёхугольнике суммы противолежащих сторон равны.] 
+		(* <- lang_ru;; *);;
+	*);;
+
+stat_converse_quadrilateral_be_inscribed_circle_opposite_side_of_polygon <= nrel_sc_text_translation: ...
+	(*
+	-> rrel_example:
+		[Если в выпуклом четырёхугольнике суммы противолежащих сторон равны, то в него можно вписать окружность.] 
+		(* <- lang_ru;; *);;
+	*);;
+
+stat_quadrilateral_be_inscribed_circle_opposite_side_of_polygon => nrel_converse_theorem: stat_converse_quadrilateral_be_inscribed_circle_opposite_side_of_polygon;;

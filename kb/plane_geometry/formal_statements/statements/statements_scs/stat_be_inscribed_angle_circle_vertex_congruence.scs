@@ -1,0 +1,13 @@
+statement -> stat_be_inscribed_angle_circle_vertex_congruence;;
+
+stat_be_inscribed_angle_circle_vertex_congruence -> rrel_key_sc_element: concept_circle; concept_angle; nrel_be_inscribed; nrel_congruence; nrel_vertex;;
+
+stat_be_inscribed_angle_circle_vertex_congruence => nrel_main_idtf: [Утв.(быть вписанным*; угол; окружность; вершина*; конгруэнтность*)] (* <- lang_ru;; *);;
+stat_be_inscribed_angle_circle_vertex_congruence => nrel_main_idtf: [Stat.(be inscribed*; angle; circle; vertex*; congruence*)] (*<- lang_en;;*);;
+
+stat_be_inscribed_angle_circle_vertex_congruence <= nrel_sc_text_translation: ...
+	(*
+	-> rrel_example:
+		[Вписанные углы, стороны которых проходят через точки A и B окружности, а вершины лежат по одну сторону от прямой AB, равны.] 
+		(* <- lang_ru;; *);;
+	*);;

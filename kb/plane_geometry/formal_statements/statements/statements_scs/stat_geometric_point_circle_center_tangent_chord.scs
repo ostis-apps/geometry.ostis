@@ -1,0 +1,13 @@
+statement -> stat_geometric_point_circle_center_tangent_chord;;
+
+stat_geometric_point_circle_center_tangent_chord -> rrel_key_sc_element: concept_geometric_point; concept_circle; nrel_center; nrel_tangent; nrel_chord;;
+
+stat_geometric_point_circle_center_tangent_chord => nrel_main_idtf: [Утв.(геометрическая точка; окружность; центр*; касательная*; хорда*)] (* <- lang_ru;; *);;
+stat_geometric_point_circle_center_tangent_chord => nrel_main_idtf: [Stat.(geometric point; circle; center*; tangent*; chord*)] (*<- lang_en;;*);;
+
+stat_geometric_point_circle_center_tangent_chord <= nrel_sc_text_translation: ...
+	(*
+	-> rrel_example:
+		[Угол между касательной и хордой, проведенной в точку касания, измеряется половиной дуги, стягивающей эту хорду.] 
+		(* <- lang_ru;; *);;
+	*);;

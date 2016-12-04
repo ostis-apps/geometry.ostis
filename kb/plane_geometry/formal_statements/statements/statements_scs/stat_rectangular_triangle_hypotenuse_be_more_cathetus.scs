@@ -1,0 +1,13 @@
+statement -> stat_rectangular_triangle_hypotenuse_be_more_cathetus;;
+
+stat_rectangular_triangle_hypotenuse_be_more_cathetus -> rrel_key_sc_element: concept_rectangular_triangle; nrel_hypotenuse; nrel_cathetus;;
+
+stat_rectangular_triangle_hypotenuse_be_more_cathetus => nrel_main_idtf: [Утв.(прямоугольный треугольник; гипотенуза*; быть больше*; катет*)] (* <- lang_ru;; *);;
+stat_rectangular_triangle_hypotenuse_be_more_cathetus => nrel_main_idtf: [Stat.(rectangular triangle; hypotenuse*; be more*; cathetus*)] (* <- lang_en;; *);;
+
+stat_rectangular_triangle_hypotenuse_be_more_cathetus <= nrel_sc_text_translation: ...
+	(*
+	-> rrel_example:
+		[В прямоугольном треугольнике любой из катетов меньше гипотенузы.] 
+		(* <- lang_ru;; *);;
+	*);;
