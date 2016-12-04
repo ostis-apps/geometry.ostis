@@ -1,9 +1,9 @@
 statement -> stat_rectangular_triangle_congruence_angle_similarity;;
 
-stat_rectangular_triangle_congruence_angle_similarity -> rrel_key_sc_element: concept_rectangular_triangle; nrel_congruence; concept_angle;;
+stat_rectangular_triangle_congruence_angle_similarity -> rrel_key_sc_element: concept_rectangular_triangle; nrel_congruence; concept_angle; nrel_similarity;;
 
-stat_rectangular_triangle_congruence_angle_similarity => nrel_main_idtf: [Утв.(прямоугольный треугольник; конгруэнтность*; угол)] (* <- lang_ru;; *);;
-stat_rectangular_triangle_congruence_angle_similarity => nrel_main_idtf: [Stat.(rectangular triangle; congruence*; angle)] (* <- lang_en;; *);;
+stat_rectangular_triangle_congruence_angle_similarity => nrel_main_idtf: [Утв.(прямоугольный треугольник; конгруэнтность*; угол; подобие*)] (* <- lang_ru;; *);;
+stat_rectangular_triangle_congruence_angle_similarity => nrel_main_idtf: [Stat.(rectangular triangle; congruence*; angle; similarity*)] (* <- lang_en;; *);;
 
 stat_rectangular_triangle_congruence_angle_similarity <= nrel_sc_text_translation: ...
 	(*
