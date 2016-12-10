@@ -1,0 +1,617 @@
+scp_program -> proc_of_calculation_number_of_all_types_of_outbound_connections
+	(*
+  		-> rrel_params: .proc_of_calculation_number_of_all_types_of_outbound_connections_params 
+			(*
+			-> rrel_1: rrel_in: _ontology;;
+			-> rrel_2: rrel_in: _vertexes;;
+			-> rrel_3: rrel_in: _result;;
+    			*);;
+
+		-> rrel_operators: .proc_of_calculation_number_of_all_types_of_outbound_connections_operator_set
+    			(*
+
+    		//заношу все вершины онтологии во множество _all_vertexes_of_ontology	
+		-> rrel_init: .proc_of_calculation_number_of_all_types_of_outbound_connections_operator_1				
+			(*
+			<- searchSetStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _vertexes;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _vertex;;
+
+			-> rrel_set_3: rrel_assign: rrel_scp_var: _all_vertexes_of_ontology;;
+
+			=> nrel_goto: .proc_of_calculation_number_of_all_types_of_outbound_connections_operator_2_1;;
+			*);;
+
+		//ищу вершину	
+		-> .proc_of_calculation_number_of_all_types_of_outbound_connections_operator_2_1
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _all_vertexes_of_ontology;;
+			-> rrel_2: rrel_assign: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _vertex1;;
+
+			=> nrel_then: .proc_of_calculation_number_of_all_types_of_outbound_connections_operator_proverit_5;;  //2-2
+			=> nrel_else: .proc_of_calculation_number_of_all_types_of_outbound_connections_operator_return;;
+			*);;
+/////////////
+		-> .proc_of_calculation_number_of_all_types_of_outbound_connections_operator_proverit_5
+			(*
+			<- printEl;;
+			
+			-> rrel_1: rrel_fixed: rrel_scp_var: _vertex1;;
+			
+			=> nrel_goto: .proc_of_calculation_number_of_all_types_of_outbound_connections_operator_2_2;;
+        		*);; 
+
+
+		
+		//удаляю вершину из множества
+		-> .proc_of_calculation_number_of_all_types_of_outbound_connections_operator_2_2
+			(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _arc1;; 
+
+			=> nrel_goto: .proc_of_calculation_number_of_all_types_of_outbound_connections_operator_2_3;;
+			*);;
+		
+		//создаю мн-во исходящих дуг
+		-> .proc_of_calculation_number_of_all_types_of_outbound_connections_operator_2_3
+			(*
+			<- genEl;;
+
+			-> rrel_1: rrel_assign: rrel_node: rrel_scp_var: _set_of_connections;; 
+
+			=> nrel_goto: .proc_of_calculation_number_of_all_types_of_outbound_connections_operator_2_4;;
+			*);;
+		
+		//заполняю мн-во исходящих дуг 2.4-2.5
+		-> .proc_of_calculation_number_of_all_types_of_outbound_connections_operator_2_4
+			(*
+			<- searchSetStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _vertex1;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _elem;;
+			
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _set_of_connections;;
+
+        		=> nrel_goto: .proc_of_calculation_number_of_all_types_of_outbound_connections_operator_2_5;;
+        		*);;
+		
+		-> .proc_of_calculation_number_of_all_types_of_outbound_connections_operator_2_5
+			(*
+			<- searchSetStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _vertex1;;
+			-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _elem;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+			-> rrel_5: rrel_assign: rrel_scp_var: _relation;;
+
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _set_of_connections;;
+
+        		=> nrel_goto: .proc_of_calculation_number_of_all_types_of_outbound_connections_operator_2_6;;
+        		*);;
+		
+		//создаю мн-во для входящих бинарных дуг
+		-> .proc_of_calculation_number_of_all_types_of_outbound_connections_operator_2_6
+			(*
+			<- genEl;;
+
+			-> rrel_1: rrel_assign: rrel_node: rrel_scp_var: _set_of_quasibinary_arcs;; 
+
+			=> nrel_goto: .proc_of_calculation_number_of_all_types_of_outbound_connections_operator_2_7;;
+			*);;
+
+		//заполняю мн-во входящих бинарных дуг
+		-> .proc_of_calculation_number_of_all_types_of_outbound_connections_operator_2_7
+			(*
+			<- searchSetStr5;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: _elem;;
+			-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _vertex1;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+			-> rrel_5: rrel_assign: rrel_scp_var: _relation;;
+
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _set_of_quasibinary_arcs;;
+
+        		=> nrel_goto: .proc_of_calculation_number_of_all_types_of_outbound_connections_operator_proverit;; //3
+        		*);;
+//////////////////////////
+		-> .proc_of_calculation_number_of_all_types_of_outbound_connections_operator_proverit
+			(*
+			<- printEl;;
+			
+			-> rrel_1: rrel_fixed: rrel_scp_var: _set_of_quasibinary_arcs;;
+			
+			=> nrel_goto: .proc_of_calculation_number_of_all_types_of_outbound_connections_operator_3;;
+        		*);; 
+
+		//ищу дугу во мн-ве входящих бинарных дуг
+		-> .proc_of_calculation_number_of_all_types_of_outbound_connections_operator_3
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _set_of_quasibinary_arcs;;
+			-> rrel_2: rrel_assign: rrel_scp_var: _arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _quasy_arc;;
+
+			=> nrel_then: .proc_of_calculation_number_of_all_types_of_outbound_connections_operator_3_1;;
+			=> nrel_else: .proc_of_calculation_number_of_all_types_of_outbound_connections_operator_3_5;;
+			*);;
+
+		//удаляю дугу из мн-ва
+		-> .proc_of_calculation_number_of_all_types_of_outbound_connections_operator_3_1
+			(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _arc;; 
+
+			=> nrel_goto: .proc_of_calculation_number_of_all_types_of_outbound_connections_operator_proverit_1;; //3-2
+			*);;
+/////////////////////////
+		-> .proc_of_calculation_number_of_all_types_of_outbound_connections_operator_proverit_1
+			(*
+			<- printEl;;
+			
+			-> rrel_1: rrel_fixed: rrel_scp_var: _set_of_quasibinary_arcs;;
+			
+			=> nrel_goto: .proc_of_calculation_number_of_all_types_of_outbound_connections_operator_3_2;;
+        		*);; 
+
+		//ищу отношение для найденной дуги
+		-> .proc_of_calculation_number_of_all_types_of_outbound_connections_operator_3_2
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: _relation;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _quasy_arc;;
+
+			=> nrel_goto: .proc_of_calculation_number_of_all_types_of_outbound_connections_operator_3_3;; //3-3
+			*);;
+/////////////////////////////
+
+		
+		//проверяю, является ли отношение квазибинарным
+		-> .proc_of_calculation_number_of_all_types_of_outbound_connections_operator_3_3
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: quasybinary_relation;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _relation;;
+
+			=> nrel_then: .proc_of_calculation_number_of_all_types_of_outbound_connections_operator_3_4;;
+			=> nrel_else: .proc_of_calculation_number_of_all_types_of_outbound_connections_operator_3;;
+			*);;
+		
+		//добавляю во мн-во _set_of_сonnections дугу
+		-> .proc_of_calculation_number_of_all_types_of_outbound_connections_operator_3_4
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _set_of_connections;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _quasy_arc;;
+
+			=> nrel_goto: .proc_of_calculation_number_of_all_types_of_outbound_connections_operator_3;; 
+			*);;	
+			
+		//удаляю мн-во входящих бинарных дуг
+		-> .proc_of_calculation_number_of_all_types_of_outbound_connections_operator_3_5
+			(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _set_of_quasibinary_arcs;; 
+
+			=> nrel_goto: .proc_of_calculation_number_of_all_types_of_outbound_connections_operator_3_6;;
+			*);;
+			
+		//создаю мн-во различных типов исходящих связей вершины (без учета дуг принадлености)
+		-> .proc_of_calculation_number_of_all_types_of_outbound_connections_operator_3_6
+			(*
+			<- genEl;;
+
+			-> rrel_1: rrel_assign: rrel_node: rrel_scp_var: _set_of_types;; 
+
+			=> nrel_goto: .proc_of_calculation_number_of_all_types_of_outbound_connections_operator_3_7;;
+			*);;
+
+		//создаю cсылку-регистр дуг принадлжености и инициирую ее нулем
+		-> .proc_of_calculation_number_of_all_types_of_outbound_connections_operator_3_7
+			(*
+			<- contAssign;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: _is_exist_accessories_arc;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: [0];;
+		
+			=> nrel_goto: .proc_of_calculation_number_of_all_types_of_outbound_connections_operator_proverit_2;; //4
+			*);;
+
+/////
+		-> .proc_of_calculation_number_of_all_types_of_outbound_connections_operator_proverit_2
+			(*
+			<- printEl;;
+			
+			-> rrel_1: rrel_fixed: rrel_scp_var: _set_of_connections;;
+			
+			=> nrel_goto: .proc_of_calculation_number_of_all_types_of_outbound_connections_operator_4;;
+        		*);; 
+		
+
+		//ищу дугу во мн-ве _set_of_connections
+		-> .proc_of_calculation_number_of_all_types_of_outbound_connections_operator_4
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _set_of_connections;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _connection;;
+
+			=> nrel_then: .proc_of_calculation_number_of_all_types_of_outbound_connections_operator_4_1;;
+			=> nrel_else: .proc_of_calculation_number_of_all_types_of_outbound_connections_operator_6;;
+			*);;
+		
+		//удаляю найденную дугу из мн-ва
+		-> .proc_of_calculation_number_of_all_types_of_outbound_connections_operator_4_1
+			(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _arc;; 
+
+			=> nrel_goto: .proc_of_calculation_number_of_all_types_of_outbound_connections_operator_proverit_3;;		//4-2
+			*);;
+///////////////
+		-> .proc_of_calculation_number_of_all_types_of_outbound_connections_operator_proverit_3
+			(*
+			<- printEl;;
+			
+			-> rrel_1: rrel_fixed: rrel_scp_var: _set_of_connections;;
+			
+			=> nrel_goto: .proc_of_calculation_number_of_all_types_of_outbound_connections_operator_4_2;;
+        		*);; 
+
+	
+		//ищу отношение неролевое для найденной дуги	
+		-> .proc_of_calculation_number_of_all_types_of_outbound_connections_operator_4_2
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: rrel_norole_relation: _relation;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _connection;;
+
+			=> nrel_then: .proc_of_calculation_number_of_all_types_of_outbound_connections_operator_4_6;;
+			=> nrel_else: .proc_of_calculation_number_of_all_types_of_outbound_connections_operator_4_2_1;;
+			*);;
+
+		//ищу ролевое для найденной дуги	
+		-> .proc_of_calculation_number_of_all_types_of_outbound_connections_operator_4_2_1
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: rrel_role_relation: _relation;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _connection;;
+
+			=> nrel_then: .proc_of_calculation_number_of_all_types_of_outbound_connections_operator_4_7;;/////////
+			=> nrel_else: .proc_of_calculation_number_of_all_types_of_outbound_connections_operator_4_3;;
+			*);;
+
+		
+		//ищу элемент, соединенный данной дугой с вершиной
+		-> .proc_of_calculation_number_of_all_types_of_outbound_connections_operator_4_3
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: _elem1;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _connection;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _elem2;;
+
+			=> nrel_goto: .proc_of_calculation_number_of_all_types_of_outbound_connections_operator_4_4;;
+			*);;
+
+		//проверяю принадлежность найденного элемента к онтологии
+		-> .proc_of_calculation_number_of_all_types_of_outbound_connections_operator_4_4
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _ontology;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _elem2;;
+
+			=> nrel_then: .proc_of_calculation_number_of_all_types_of_outbound_connections_operator_4_5;;
+			=> nrel_else: .proc_of_calculation_number_of_all_types_of_outbound_connections_operator_4;;
+			*);;	
+
+		//помечаю существование дуги принадлежности
+		-> .proc_of_calculation_number_of_all_types_of_outbound_connections_operator_4_5
+			(*
+			<- contAssign;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _is_exist_accessories_arc;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: [1];;
+		
+			=> nrel_goto: .proc_of_calculation_number_of_all_types_of_outbound_connections_operator_4;;
+			*);;
+
+		//проверяю, является ли оно квазибинарным
+		-> .proc_of_calculation_number_of_all_types_of_outbound_connections_operator_4_6
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: quasybinary_relation;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _relation;;
+
+			=> nrel_then: .proc_of_calculation_number_of_all_types_of_outbound_connections_operator_4_10;;
+			=> nrel_else: .proc_of_calculation_number_of_all_types_of_outbound_connections_operator_4_7;;
+			*);;
+
+		//проверяю, есть ли оно во мн-ве различных типов исходящих связей
+		-> .proc_of_calculation_number_of_all_types_of_outbound_connections_operator_4_7
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _set_of_types;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _relation;;
+
+			=> nrel_then: .proc_of_calculation_number_of_all_types_of_outbound_connections_operator_4;;
+			=> nrel_else: .proc_of_calculation_number_of_all_types_of_outbound_connections_operator_4_8;;
+			*);;	
+		
+		//ищу элемент, соединенный данным отношением
+		-> .proc_of_calculation_number_of_all_types_of_outbound_connections_operator_4_8
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: _elem1;;
+			-> rrel_2: rrel_fixed: rrel_scp_var:  _connection;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _elem2;;
+
+			=> nrel_then: .proc_of_calculation_number_of_all_types_of_outbound_connections_operator_4_8_1;;
+			=> nrel_else: .proc_of_calculation_number_of_all_types_of_outbound_connections_operator_4;;
+			*);;
+
+		//проверяю, принадлежит ли данный элемент онтологии
+		-> .proc_of_calculation_number_of_all_types_of_outbound_connections_operator_4_8_1
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _ontology;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _elem2;;
+
+			=> nrel_then: .proc_of_calculation_number_of_all_types_of_outbound_connections_operator_4_9;;
+			=> nrel_else: .proc_of_calculation_number_of_all_types_of_outbound_connections_operator_4;;
+			*);;		
+		
+		//добавляю отношение во мн-во различных типов
+		-> .proc_of_calculation_number_of_all_types_of_outbound_connections_operator_4_9
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _set_of_types;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm:  _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _relation;;
+
+			=> nrel_goto: .proc_of_calculation_number_of_all_types_of_outbound_connections_operator_4;;
+			*);;
+
+		//ищу узел-связку
+		-> .proc_of_calculation_number_of_all_types_of_outbound_connections_operator_4_10
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: _elem1;;
+			-> rrel_2: rrel_fixed: rrel_scp_var:  _connection;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _elem2;;
+
+			=> nrel_goto: .proc_of_calculation_number_of_all_types_of_outbound_connections_operator_4_11;;
+			*);;		
+
+		//добавляю элементы узла-связки во мн-во	
+		-> .proc_of_calculation_number_of_all_types_of_outbound_connections_operator_4_11
+			(*
+			<- searchSetStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _elem2;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm:  _arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _node;;
+
+			-> rrel_set_3: rrel_assign: rrel_scp_var: _set_of_nodes;;
+
+			=> nrel_goto: .proc_of_calculation_number_of_all_types_of_outbound_connections_operator_5;;
+			*);;	
+
+		//ищу элемент узла-связки
+		-> .proc_of_calculation_number_of_all_types_of_outbound_connections_operator_5
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _set_of_nodes;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm:  _arc3;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _node;;
+
+			=> nrel_then: .proc_of_calculation_number_of_all_types_of_outbound_connections_operator_5_1;;
+			=> nrel_else: .proc_of_calculation_number_of_all_types_of_outbound_connections_operator_5_5;;
+			*);;
+
+		//удаляю найденный элемент из мн-ва
+		-> .proc_of_calculation_number_of_all_types_of_outbound_connections_operator_5_1
+			(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _arc3;; 
+
+			=> nrel_goto: .proc_of_calculation_number_of_all_types_of_outbound_connections_operator_5_2;;
+			*);;
+		
+		//проверяю принадлежность элемента к онтологии
+		-> .proc_of_calculation_number_of_all_types_of_outbound_connections_operator_5_2
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _ontology;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _node;;
+
+			=> nrel_then: .proc_of_calculation_number_of_all_types_of_outbound_connections_operator_5_3;;
+			=> nrel_else: .proc_of_calculation_number_of_all_types_of_outbound_connections_operator_5;;
+			*);;	
+
+		//проверяю наличие отношения во мн-ве различных типов
+		-> .proc_of_calculation_number_of_all_types_of_outbound_connections_operator_5_3
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _set_of_types;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm:  _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _relation;;
+
+			=> nrel_then: .proc_of_calculation_number_of_all_types_of_outbound_connections_operator_5_5;;
+			=> nrel_else: .proc_of_calculation_number_of_all_types_of_outbound_connections_operator_5_4;;
+			*);;
+
+		//добавляю отношение во мн-во различных типов
+		-> .proc_of_calculation_number_of_all_types_of_outbound_connections_operator_5_4	
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _set_of_types;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm:  _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _relation;;
+
+			=> nrel_goto: .proc_of_calculation_number_of_all_types_of_outbound_connections_operator_5_5;;
+			*);;
+		
+		//удаляю мн-во элементов узла-связки
+		-> .proc_of_calculation_number_of_all_types_of_outbound_connections_operator_5_5
+			(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _set_of_nodes;; 
+
+			=> nrel_goto: .proc_of_calculation_number_of_all_types_of_outbound_connections_operator_4;;
+			*);;
+
+		//генерирую ссылку кол-ва типов исходящих связей для вершины
+		-> .proc_of_calculation_number_of_all_types_of_outbound_connections_operator_6
+			(*
+			<- genEl;;
+
+			-> rrel_1: rrel_assign: rrel_node: rrel_scp_var: rrel_link: _vertex_number;; 
+
+			=> nrel_goto: .proc_of_calculation_number_of_all_types_of_outbound_connections_operator_proverim;;  //6-1
+			*);;
+////////////////////////////	
+		-> .proc_of_calculation_number_of_all_types_of_outbound_connections_operator_proverim
+			(*
+			<- printEl;;
+			
+			-> rrel_1: rrel_fixed: rrel_scp_var: _set_of_types;;
+			
+			=> nrel_goto: .proc_of_calculation_number_of_all_types_of_outbound_connections_operator_6_1;;
+        		*);; 
+////////
+		
+		
+		//считаю это кол-во (без учета дуг принадлежности)
+		-> .proc_of_calculation_number_of_all_types_of_outbound_connections_operator_6_1
+			(*
+				<- call;;
+
+		  		-> rrel_1: rrel_fixed: rrel_scp_const: proc_of_cardinality_calculation;;
+		  		-> rrel_2: rrel_fixed:		rrel_scp_const: .proc_of_calculation_number_of_all_types_of_outbound_connections_operator_6_1_params 
+					(*
+					-> rrel_1: rrel_fixed: rrel_scp_var: _set_of_types;;
+					-> rrel_2: rrel_fixed: rrel_scp_var: _vertex_number;;
+					*);;
+		  		-> rrel_3: rrel_assign: rrel_scp_var: _descr1;;
+
+		  		=> nrel_goto: .proc_of_calculation_number_of_all_types_of_outbound_connections_operator_6_2;;
+			*);;	
+
+		-> .proc_of_calculation_number_of_all_types_of_outbound_connections_operator_6_2
+			(*
+				<- waitReturn;;
+
+		  		-> rrel_1: rrel_fixed: rrel_scp_var: _descr1;;
+
+		  		=> nrel_goto: .proc_of_calculation_number_of_all_types_of_outbound_connections_operator_6_3;;
+			*);;
+	
+		//учитываю наличие дуги принадлжености
+		-> .proc_of_calculation_number_of_all_types_of_outbound_connections_operator_6_3
+			(*
+			<- contAdd;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _vertex_number;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _vertex_number;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _is_exist_accessories_arc;;
+		
+			=> nrel_goto: .proc_of_calculation_number_of_all_types_of_outbound_connections_operator_prov;;
+			*);;
+//////////////
+		-> .proc_of_calculation_number_of_all_types_of_outbound_connections_operator_prov
+			(*
+			<- printNl;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _vertex_number;;
+		
+			=> nrel_goto: .proc_of_calculation_number_of_all_types_of_outbound_connections_operator_6_4;;
+			*);;	
+		
+		//заношу значение в результат
+		-> .proc_of_calculation_number_of_all_types_of_outbound_connections_operator_6_4
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _result;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm:  _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _vertex_number;;
+
+			=> nrel_goto: .proc_of_calculation_number_of_all_types_of_outbound_connections_operator_6_5;;
+			*);;
+
+		//удаляю мн-во _set_of_connections
+		-> .proc_of_calculation_number_of_all_types_of_outbound_connections_operator_6_5
+			(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _set_of_connections;; 
+
+			=> nrel_goto: .proc_of_calculation_number_of_all_types_of_outbound_connections_operator_6_6;;
+			*);;
+
+		//удаляю мн-во _set_of_types
+		-> .proc_of_calculation_number_of_all_types_of_outbound_connections_operator_6_6
+			(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _set_of_types;; 
+
+			=> nrel_goto: .proc_of_calculation_number_of_all_types_of_outbound_connections_operator_2_1;;
+			*);;
+
+		//завершаю процедуру
+		-> .proc_of_calculation_number_of_all_types_of_outbound_connections_operator_return
+			(*
+			<- return;;
+			*);;
+		*);;
+	*);;
+
+
+			
+
+
+
+
