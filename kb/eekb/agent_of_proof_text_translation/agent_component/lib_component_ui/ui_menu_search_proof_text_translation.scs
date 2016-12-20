@@ -1,0 +1,23 @@
+ui_menu_search_proof_text_translation <- ui_user_command_class_atom; ui_user_command_class_view_kb;;
+
+ui_menu_search_proof_text_translation => nrel_main_idtf: [Найти текст доказательства на естественном языке] (* <- lang_ru;; *);;
+
+ui_menu_search_proof_text_translation => nrel_main_idtf: [Finding the text of the proof of the statement in a natural language] (* <- lang_en;; *);;
+
+ui_menu_search_proof_text_translation => ui_nrel_command_template:
+[*
+	question_of_proof_text_translation _-> ._question_of_proof_text_translation_instance
+	(*
+		_-> ui_arg_1;;
+	*);;
+
+	._question_of_proof_text_translation_instance _<- question;;
+*];;
+
+ui_menu_search_proof_text_translation =>ui_nrel_command_lang_template: [Найти текст доказательства на естественном языке: $ui_arg_1] 
+(*
+	<- lang_ru;; 
+*);;
+
+ui_menu_search_proof_text_translation =>ui_nrel_command_lang_template: [Finding the text of the proof of the statement in a natural language: $ui_arg_1]
+(* <- lang_en;; *);;
