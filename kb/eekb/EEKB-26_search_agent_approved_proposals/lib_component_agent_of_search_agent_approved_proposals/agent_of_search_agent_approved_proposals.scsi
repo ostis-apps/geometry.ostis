@@ -1,0 +1,279 @@
+agent_of_search_agent_approved_proposals
+=> nrel_main_idtf:
+	[агентная scp-программа поиска всех утвержденных предложений] (* <- lang_ru;; *);
+	[agent scp-program of search approved proposals] (* <- lang_en;; *);
+	<- agent_scp_program;;
+
+scp_program -> agent_of_search_agent_approved_proposals
+	(*
+	-> rrel_params: .agent_of_search_agent_approved_proposals_params
+		(*
+		-> rrel_1: rrel_in: _event;;
+		-> rrel_2: rrel_in: _input_arc;;
+		*);;
+
+	-> rrel_operators: .agent_of_search_agent_approved_proposals_set
+		(*
+		-> rrel_init:  .agent_of_search_agent_approved_proposals1A
+			(*
+		  	<- searchElStr3;;
+
+		  	-> rrel_1: rrel_assign: rrel_scp_var: _temp_of_question;;
+		  	-> rrel_2: rrel_fixed: rrel_scp_var: _input_arc;;
+		  	-> rrel_3: rrel_assign: rrel_scp_var: _quest;;
+
+		 	=> nrel_goto: .agent_of_search_agent_approved_proposals1B;;
+			*);;
+		
+		->.agent_of_search_agent_approved_proposals1B
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: action_of_search_search_agent_approved_proposals;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _quest;;
+
+			=> nrel_then: .agent_of_search_agent_approved_proposals1C;;
+			=> nrel_else: .agent_of_search_agent_approved_proposals_return;;
+			*);;
+
+		-> .agent_of_search_agent_approved_proposals1C
+			(*
+		  	<- searchElStr3;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+		  	-> rrel_3: rrel_assign: rrel_scp_var: _param;;
+
+		  	=> nrel_then: .agent_of_search_agent_approved_chech_on_user;;
+		  	=> nrel_else: .agent_of_search_agent_approved_proposals_return;;
+			*);;
+
+
+		-> .agent_of_search_agent_approved_chech_on_user
+			(*
+		  	<- searchElStr3;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_const: ui_user;;
+		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+		  	-> rrel_3: rrel_fixed: rrel_scp_var: _param;;
+
+		  	=> nrel_then: .agent_of_search_agent_approved_proposals1D;;
+		  	=> nrel_else: .agent_of_search_agent_approved_proposals_call_proc_of_adding_validating_message_wrong_second_param;;
+			*);;
+
+		-> .agent_of_search_agent_approved_proposals1D
+			(*
+			<- genEl;;
+		  	
+			-> rrel_1: rrel_assign: rrel_const: rrel_scp_var: rrel_node: _set_of_object_approved;;
+			
+			=> nrel_goto: .agent_of_search_agent_approved_proposals1E;;
+			*);;
+
+		-> .agent_of_search_agent_approved_proposals1E
+			(*
+			<- genEl;;
+		  	
+			-> rrel_1: rrel_assign: rrel_const: rrel_scp_var: rrel_node: _answer_for_search_agent_approved_proposals;;
+			
+			=> nrel_goto: .agent_of_search_agent_approved_proposals1F;;
+			*);;  
+
+
+		-> .agent_of_search_agent_approved_proposals1F
+			(*
+			<- searchSetStr5;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: _action_node;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc2;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _param;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_approved;;
+
+			-> rrel_set_1: rrel_fixed: rrel_scp_var: _set_of_object_approved;;
+
+			=> nrel_then: .agent_of_search_agent_approved_proposals1G;;
+			=> nrel_else: .agent_of_search_agent_approved_proposals_return;;
+			*);;
+
+		-> .agent_of_search_agent_approved_proposals1G
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _set_of_object_approved;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc_remove;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _action_node;;
+
+			=> nrel_then: .agent_of_search_agent_approved_proposals2G;;
+			=> nrel_else: .agent_of_search_agent_approved_proposals11A;;
+			*);;
+
+		-> .agent_of_search_agent_approved_proposals2G
+			(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _arc_remove;;
+
+			=> nrel_goto: .agent_of_search_agent_approved_proposals3G;;
+			*);;
+
+		-> .agent_of_search_agent_approved_proposals3G
+			(*
+			<- searchSetStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _action_node;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: rrel_const: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _param;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: rrel_const: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_approved;;
+
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer_for_search_agent_approved_proposals;;
+			-> rrel_set_3: rrel_fixed: rrel_scp_var: _answer_for_search_agent_approved_proposals;;
+			-> rrel_set_4: rrel_fixed: rrel_scp_var: _answer_for_search_agent_approved_proposals;;
+
+			=> nrel_then: .agent_of_search_agent_approved_proposals4G;;
+			=> nrel_else: .agent_of_search_agent_approved_proposals1G;;
+			*);;
+
+		-> .agent_of_search_agent_approved_proposals4G
+			(*	
+			<- genElStr3;;
+
+	    	-> rrel_1: rrel_fixed: rrel_scp_var: _answer_for_search_agent_approved_proposals;;
+   	    	-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc3;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: nrel_approved;;
+
+			=>nrel_goto: .agent_of_search_agent_approved_proposals5G;;
+			*);;
+
+			-> .agent_of_search_agent_approved_proposals5G
+			(*	
+			<- genElStr3;;
+
+	    	-> rrel_1: rrel_fixed: rrel_scp_var: _answer_for_search_agent_approved_proposals;;
+   	    	-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc3;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _action_node;;
+
+			=>nrel_goto: .agent_of_search_agent_approved_proposals6G;;
+			*);;
+
+
+		-> .agent_of_search_agent_approved_proposals6G
+			(*
+			<- searchSetStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _action_node;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: rrel_const: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _structure;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: rrel_const: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_proposal;;
+
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer_for_search_agent_approved_proposals;;
+			-> rrel_set_3: rrel_fixed: rrel_scp_var: _answer_for_search_agent_approved_proposals;;
+			-> rrel_set_4: rrel_fixed: rrel_scp_var: _answer_for_search_agent_approved_proposals;;
+
+			=> nrel_goto: .agent_of_search_agent_approved_proposals7G;;
+			*);;
+
+		-> .agent_of_search_agent_approved_proposals7G
+			(*	
+			<- genElStr3;;
+
+	    	-> rrel_1: rrel_fixed: rrel_scp_var: _answer_for_search_agent_approved_proposals;;
+   	    	-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc3;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: nrel_proposal;;
+
+			=>nrel_goto: .agent_of_search_agent_approved_proposals8G;;
+			*);;
+
+		-> .agent_of_search_agent_approved_proposals8G
+			(*	
+			<- searchSetStr3;;
+
+	    	-> rrel_1: rrel_fixed: rrel_scp_var: _structure;;
+   	    	-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc3;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _elem_of_struct;;
+
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer_for_search_agent_approved_proposals;;
+			-> rrel_set_3: rrel_fixed: rrel_scp_var: _answer_for_search_agent_approved_proposals;;
+
+			=>nrel_goto: .agent_of_search_agent_approved_proposals9G;;
+			*);;
+
+
+
+		-> .agent_of_search_agent_approved_proposals9G
+			(*
+			<- searchSetStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _structure;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: rrel_const: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _author;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: rrel_const: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_authors;;
+
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer_for_search_agent_approved_proposals;;
+			-> rrel_set_3: rrel_fixed: rrel_scp_var: _answer_for_search_agent_approved_proposals;;
+			-> rrel_set_4: rrel_fixed: rrel_scp_var: _answer_for_search_agent_approved_proposals;;
+
+			=> nrel_goto: .agent_of_search_agent_approved_proposals10G;;
+			*);;
+
+		-> .agent_of_search_agent_approved_proposals10G
+			(*	
+			<- genElStr3;;
+
+	    	-> rrel_1: rrel_fixed: rrel_scp_var: _answer_for_search_agent_approved_proposals;;
+   	    	-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc3;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: nrel_authors;;
+
+			=>nrel_goto: .agent_of_search_agent_approved_proposals1G;;
+			*);;
+		
+		-> .agent_of_search_agent_approved_proposals11A
+			(*
+			<- genElStr5;;
+			
+			-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+			-> rrel_2: rrel_assign: rrel_const: rrel_common: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _answer_for_search_agent_approved_proposals;;
+			-> rrel_4: rrel_assign: rrel_const: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_answer;;
+
+			=> nrel_goto: .agent_of_search_agent_approved_proposals_return;;	
+			*);;	
+
+
+		-> .agent_of_search_agent_approved_proposals_call_proc_of_adding_validating_message_wrong_second_param
+			(*
+		  	<- call;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_const: proc_of_adding_validating_message;;
+		  	-> rrel_2: rrel_fixed: rrel_scp_const: .agent_of_search_agent_approved_proposals_call_proc_of_adding_validating_message_wrong_second_param_params 
+				(*
+				-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+				-> rrel_2: rrel_fixed: rrel_scp_const: [Wrong first parameter! It must be user sign(element of ui_user)];;
+				*);;
+		  	-> rrel_3: rrel_assign: rrel_scp_var: _descr1;;
+
+		  	=> nrel_goto: .agent_of_search_agent_approved_proposals_waitreturn_proc_of_adding_validating_message_wrong_second_param;;
+			*);;
+
+		-> .agent_of_search_agent_approved_proposals_waitreturn_proc_of_adding_validating_message_wrong_second_param
+			(*
+		  	<- waitReturn;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_var: _descr1;;
+
+		  	=> nrel_goto: .agent_of_search_agent_approved_proposals_return;;
+			*);;	
+
+
+		-> .agent_of_search_agent_approved_proposals_return
+			(*
+			<- return;;
+			*);;
+
+		*);;
+	*);;
