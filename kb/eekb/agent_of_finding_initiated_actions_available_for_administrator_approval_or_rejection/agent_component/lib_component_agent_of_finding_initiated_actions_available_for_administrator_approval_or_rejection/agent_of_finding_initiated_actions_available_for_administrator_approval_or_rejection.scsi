@@ -1,0 +1,633 @@
+agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection
+-> nrel_main_idtf:
+	[агентная scp-программа поиска инициированных действий, доступных администратору для отклонения или утверждения] (* <- lang_ru;; *);
+	[agent scp-program of finding initiated actions available for administrator approval or rejection] (* <- lang_en;; *);
+	<- agent_scp_program;;
+
+scp_program -> agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection
+	(*
+	-> rrel_params: .agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection_params
+		(*
+		-> rrel_1: rrel_in: _event;;
+		-> rrel_2: rrel_in: _input_arc;;
+		*);;
+
+	-> rrel_operators: .agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection_set 
+		(*
+		-> rrel_init: .agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection_operator1A
+				(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: _temp;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _input_arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _quest;;
+
+			=> nrel_then: .agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection_operator1B;;
+			=> nrel_else: .agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection_return;;
+			*);;
+
+		-> .agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection_operator1B
+        		(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: action_of_finding_initiated_actions_available_for_administrator_approval_or_rejection;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _quest;;
+
+			=> nrel_then: .agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection_operator1C;;
+			=> nrel_else: .agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection_call_proc_of_adding_validating_message;;
+			*);;
+
+		-> .agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection_operator1C
+        		(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _admin;;
+
+			=> nrel_then: .agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection_operator1D;;
+			=> nrel_else: .agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection_return;;
+			*);;
+			
+		-> .agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection_operator1D
+        		(*
+		 	<- genEl;;
+
+		 	-> rrel_1: rrel_assign: rrel_const: rrel_node: rrel_scp_var: _answer_of_finding_initiated_actions;;
+
+		 	=> nrel_goto: .agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection_operator1Q;;
+		 	*);;
+
+		-> .agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection_operator1Q
+        		(*
+		 	<- genElStr3;;
+
+		 	-> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_finding_initiated_actions;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: rrel_const: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _admin;;
+
+		 	=> nrel_goto: .agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection_operator2A;;
+		 	*);;
+
+		-> .agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection_operator2A
+        		(*
+			<- searchSetStr5;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: _project;;
+			-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _admin;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_administrator;;
+
+			-> rrel_set_1: rrel_fixed: rrel_scp_var: _answer_of_finding_initiated_actions;;
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer_of_finding_initiated_actions;;
+			-> rrel_set_4: rrel_fixed: rrel_scp_var: _answer_of_finding_initiated_actions;;
+
+			=> nrel_then: .agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection_operator1P;;
+			=> nrel_else: .agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection_return;;
+			*);;
+
+		-> .agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection_operator1P
+        		(*
+		 	<- genElStr3;;
+
+		 	-> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_finding_initiated_actions;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: rrel_const: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: nrel_administrator;;
+
+		 	=> nrel_goto: .agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection_operator2B;;
+		 	*);;
+
+		-> .agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection_operator2B
+        		(*
+			<- searchSetStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _project;;
+			-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _section;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_purpose;;
+
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer_of_finding_initiated_actions;;
+			-> rrel_set_3: rrel_fixed: rrel_scp_var: _answer_of_finding_initiated_actions;;
+			-> rrel_set_4: rrel_fixed: rrel_scp_var: _answer_of_finding_initiated_actions;;
+
+			=> nrel_then: .agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection_operator1S;;
+			=> nrel_else: .agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection_return;;
+			*);;
+
+		-> .agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection_operator1S
+        		(*
+		 	<- genElStr3;;
+
+		 	-> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_finding_initiated_actions;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: rrel_const: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: nrel_purpose;;
+
+		 	=> nrel_goto: .agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection_operator2C;;
+		 	*);;
+
+		-> .agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection_operator2C
+        		(*
+			<- searchSetStr5;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: _proposal;;
+			-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: rrel_const: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _section;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: rrel_const: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_object;;
+
+			-> rrel_set_1: rrel_fixed: rrel_scp_var: _answer_of_finding_initiated_actions;;
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer_of_finding_initiated_actions;;
+			-> rrel_set_4: rrel_fixed: rrel_scp_var: _answer_of_finding_initiated_actions;;
+
+			=> nrel_then: .agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection_operator1T;;
+			=> nrel_else: .agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection_operator5A;;
+			*);;
+
+		-> .agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection_operator1T
+        		(*
+		 	<- genElStr3;;
+
+		 	-> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_finding_initiated_actions;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: rrel_const: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: nrel_object;;
+
+		 	=> nrel_goto: .agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection_operator1F;;
+		 	*);;
+
+		-> .agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection_operator1F
+        		(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_finding_initiated_actions;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: rrel_const: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: nrel_authors;;
+
+			=> nrel_goto: .agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection_operator1G;;
+			*);;
+
+		-> .agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection_operator1G
+        		(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_finding_initiated_actions;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: rrel_const: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: nrel_proposal;;
+
+			=> nrel_goto: .agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection_operator1T1;;
+			*);;
+
+		-> .agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection_operator1T1
+        		(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_finding_initiated_actions;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: rrel_const: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: nrel_section_decomposition;;
+
+			=> nrel_goto: .agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection_operator2C1;;
+			*);;
+
+		-> .agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection_operator2C1
+        		(*
+			<- searchSetStr5;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: _proposal;;
+			-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: rrel_const: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _section;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: rrel_const: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_object;;
+
+			-> rrel_set_1: rrel_assign: rrel_scp_var: _set_of_proposal;;
+
+			=> nrel_goto: .agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection_operator2D1;;
+			*);;
+
+		-> .agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection_operator2D1
+        		(*
+			<- searchSetStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _set_of_proposal;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: rrel_const: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _proposal;;
+
+			=> nrel_then: .agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection_operator0A1;;
+			=> nrel_else: .agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection_operator5A;;   
+			*);; 
+
+		-> .agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection_operator0A1
+				(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_pos_const_perm: rrel_erase: _arc1;;
+
+			=> nrel_goto: .agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection_operator2D;;
+			*);;
+
+		-> .agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection_operator2D
+        		(*
+			<- searchSetStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _proposal;;
+			-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: rrel_const: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _developer;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: rrel_const: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_authors;;
+
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer_of_finding_initiated_actions;;
+			-> rrel_set_3: rrel_fixed: rrel_scp_var: _answer_of_finding_initiated_actions;;
+			-> rrel_set_4: rrel_fixed: rrel_scp_var: _answer_of_finding_initiated_actions;;
+
+			=> nrel_then: .agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection_operator2F;;
+			=> nrel_else: .agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection_operator2D1;;
+			*);;
+
+		-> .agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection_operator2F
+        		(*
+			<- searchSetStr5;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: _action;;
+			-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: rrel_const: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _proposal;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: rrel_const: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_proposal;;
+
+			-> rrel_set_1: rrel_assign: rrel_scp_var: _set_of_action;;
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer_of_finding_initiated_actions;;
+			-> rrel_set_4: rrel_fixed: rrel_scp_var: _answer_of_finding_initiated_actions;;
+
+			=> nrel_then: .agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection_operator3A;;
+			=> nrel_else: .agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection_operator2D1;;
+			*);;
+
+		-> .agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection_operator3A
+        		(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _set_of_action;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: rrel_const: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _action;;
+
+			=> nrel_then: .agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection_operator0A;;
+			=> nrel_else: .agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection_operator2D1;;
+			*);;
+
+		-> .agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection_operator0A
+				(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_pos_const_perm: rrel_erase: _arc1;;
+
+			=> nrel_goto: .agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection_operator1H;;
+			*);;
+
+		-> .agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection_operator1H
+        		(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_finding_initiated_actions;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: rrel_const: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _action;;
+
+			=> nrel_goto: .agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection_operator3B;;
+			*);;
+
+		-> .agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection_operator3B
+        		(*
+			<- searchSetStr3;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: rrel_not_relation: _some_action;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: rrel_const: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _action;;
+
+			-> rrel_set_1: rrel_fixed: rrel_scp_var: _answer_of_finding_initiated_actions;;
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer_of_finding_initiated_actions;;
+
+			=> nrel_then: .agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection_operator3A;;
+			=> nrel_else: .agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection_operator3A;;
+			*);;
+
+		-> .agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection_operator5A
+        		(*
+			<- searchSetStr5;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: _node;;
+			-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: rrel_const: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _section;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: rrel_const: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_section_decomposition;;
+
+			-> rrel_set_1: rrel_fixed: rrel_scp_var: _answer_of_finding_initiated_actions;;
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer_of_finding_initiated_actions;;
+			-> rrel_set_4: rrel_fixed: rrel_scp_var: _answer_of_finding_initiated_actions;;
+
+			=> nrel_then: .agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection_operator5B;;
+			=> nrel_else: .agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection_return;;
+			*);;
+
+		-> .agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection_operator5B
+        		(*
+			<- searchSetStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _node;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: rrel_const: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _section;;
+
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer_of_finding_initiated_actions;;
+			-> rrel_set_3: rrel_assign: rrel_scp_var: _set_of_section;;
+
+			=> nrel_then: .agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection_operator6A;;
+			=> nrel_else: .agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection_return;;
+			*);;
+
+		-> .agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection_operator6A
+        		(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _set_of_section;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: rrel_const: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _section;;
+
+			=> nrel_then: .agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection_operator0B;;
+			=> nrel_else: .agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection_operator8A;;
+			*);;
+
+		-> .agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection_operator0B
+				(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_pos_const_perm: rrel_erase: _arc1;;
+
+			=> nrel_goto: .agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection_operator1T2;;
+			*);;
+
+		-> .agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection_operator1T2
+        		(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_finding_initiated_actions;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: rrel_const: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _section;;
+
+			=> nrel_goto: .agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection_operator6B;;
+			*);;
+
+		-> .agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection_operator6B
+        		(*
+			<- searchSetStr5;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: _proposal;;
+			-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: rrel_const: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _section;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: rrel_const: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_object;;
+
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer_of_finding_initiated_actions;;
+			-> rrel_set_4: rrel_fixed: rrel_scp_var: _answer_of_finding_initiated_actions;;
+
+			=> nrel_then: .agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection_operator6B1;;
+			=> nrel_else: .agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection_operator6A;;
+			*);;
+
+		-> .agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection_operator6B1
+        		(*
+			<- searchSetStr5;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: _proposal;;
+			-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: rrel_const: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _section;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: rrel_const: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_object;;
+
+			-> rrel_set_1: rrel_assign: rrel_scp_var: _set_of_proposal;;
+
+			=> nrel_then: .agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection_operator6B2;;
+			=> nrel_else: .agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection_operator6A;;
+			*);;
+
+
+		-> .agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection_operator6B2
+        		(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _set_of_proposal;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: rrel_const: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _proposal;;
+
+			=> nrel_then: .agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection_operator0B2;;
+			=> nrel_else: .agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection_operator6A;;
+			*);;
+
+		-> .agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection_operator0B2
+			(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_pos_const_perm: rrel_erase: _arc1;;
+
+			=> nrel_goto: .agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection_operator6C;;
+			*);;
+
+
+		-> .agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection_operator6C
+        		(*
+			<- searchSetStr5;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: _action;;
+			-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: rrel_const: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _proposal;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: rrel_const: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_proposal;;
+
+			-> rrel_set_1: rrel_assign: rrel_scp_var: _set_of_action;;
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer_of_finding_initiated_actions;;
+			-> rrel_set_4: rrel_fixed: rrel_scp_var: _answer_of_finding_initiated_actions;;
+
+			=> nrel_then: .agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection_operator7A;;
+			=> nrel_else: .agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection_operator6B2;;
+			*);;
+
+		-> .agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection_operator7A
+        		(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _set_of_action;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: rrel_const: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _action;;
+
+			=> nrel_then: .agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection_operator0D;;
+			=> nrel_else: .agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection_operator6B2;;
+			*);;
+
+		-> .agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection_operator0D
+				(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_pos_const_perm: rrel_erase: _arc1;;
+
+			=> nrel_goto: .agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection_operator7B;;
+			*);;
+
+
+		-> .agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection_operator7B
+        		(*
+			<- searchSetStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _action;;
+			-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: rrel_const: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _admin;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_approved;;
+
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer_of_finding_initiated_actions;;
+			-> rrel_set_3: rrel_fixed: rrel_scp_var: _answer_of_finding_initiated_actions;;
+			-> rrel_set_4: rrel_fixed: rrel_scp_var: _answer_of_finding_initiated_actions;;
+
+			=> nrel_then: .agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection_operator1M;;
+			=> nrel_else: .agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection_operator7C;;
+			*);;
+
+			-> .agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection_operator1M
+				(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_finding_initiated_actions;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: rrel_const: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _action;;
+
+			=> nrel_goto: .agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection_operator1M3;;
+			*);;
+
+		-> .agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection_operator1M3
+				(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_finding_initiated_actions;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: rrel_const: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _proposal;;
+
+			=> nrel_goto: .agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection_operator1N;;
+			*);;
+
+		-> .agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection_operator1N
+				(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_finding_initiated_actions;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: rrel_const: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: nrel_approved;;
+
+			=> nrel_goto: .agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection_operator7C;;
+			*);;
+
+		-> .agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection_operator7C
+        		(*
+			<- searchSetStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _action;;
+			-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: rrel_const: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _admin;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_rejected;;
+
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer_of_finding_initiated_actions;;
+			-> rrel_set_3: rrel_fixed: rrel_scp_var: _answer_of_finding_initiated_actions;;
+			-> rrel_set_4: rrel_fixed: rrel_scp_var: _answer_of_finding_initiated_actions;;
+
+			=> nrel_then: .agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection_operator1M1;;
+			=> nrel_else: .agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection_operator7D;;
+			*);;
+
+		-> .agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection_operator1M1
+				(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_finding_initiated_actions;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: rrel_const: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _action;;
+
+			=> nrel_goto: .agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection_operator1M2;;
+			*);;
+
+		-> .agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection_operator1M2
+				(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_finding_initiated_actions;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: rrel_const: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _proposal;;
+
+			=> nrel_goto: .agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection_operator1K;;
+			*);;
+
+		-> .agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection_operator1K
+				(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_finding_initiated_actions;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: rrel_const: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: nrel_rejected;;
+
+			=> nrel_goto: .agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection_operator7D;;
+			*);;
+
+
+		-> .agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection_operator7D
+        		(*
+			<- searchSetStr3;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: rrel_not_relation: _some_action;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: rrel_const: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _action;;
+
+			-> rrel_set_1: rrel_fixed: rrel_scp_var: _answer_of_finding_initiated_actions;;
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer_of_finding_initiated_actions;;
+
+			=> nrel_goto: .agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection_operator7A;;
+			*);;
+
+		-> .agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection_operator8A
+				(*
+			<- genElStr5;;
+
+		 	-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+			-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: rrel_const: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _answer_of_finding_initiated_actions;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: rrel_const: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_answer;;
+		  	
+		  	=> nrel_goto: .agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection_return;;	
+		  	*);;
+
+		-> .agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection_call_proc_of_adding_validating_message 
+			(*
+		  	<- call;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_const: proc_of_adding_validating_message;;
+		  	-> rrel_2: rrel_fixed: rrel_scp_const: .agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection_call_proc_of_adding_validating_message_params 
+				(*
+				-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+				-> rrel_2: rrel_fixed: rrel_scp_const: [Wrong first parameter!];;
+				*);;
+		  	-> rrel_3: rrel_assign: rrel_scp_var: _descr1;;
+
+		  	=> nrel_goto: .agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection_call_proc_of_adding_validating_message_waitreturn_proc_of_adding_validating_message;;
+			*);;
+
+		-> .agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection_call_proc_of_adding_validating_message_waitreturn_proc_of_adding_validating_message
+			(*
+		  	<- waitReturn;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_var: _descr1;;
+
+		  	=> nrel_goto: .agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection_return;;
+			*);;
+
+		-> .agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection_return
+				(*
+		 	<- return;;
+			*);;
+
+		*);;
+	*);;

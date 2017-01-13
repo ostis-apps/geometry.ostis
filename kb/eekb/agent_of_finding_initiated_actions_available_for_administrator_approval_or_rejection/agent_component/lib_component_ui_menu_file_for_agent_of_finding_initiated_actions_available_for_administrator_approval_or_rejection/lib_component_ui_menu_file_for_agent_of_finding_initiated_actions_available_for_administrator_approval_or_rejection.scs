@@ -1,0 +1,25 @@
+lib_component_ui_menu_file_for_agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection
+=> nrel_main_idtf:
+	[Компонент библиотеки. Команда пользовательского интерфейса поиска инициированных действий, доступных администратору для отклонения или утверждения]
+	(* <- lang_ru;; *);
+	[Library component. User interface command of finding initiated action available to the administrator for approval or rejection]
+	(* <- lang_en;; *);
+
+<- library_of_platform_independent_reusable_components;
+<- library_of_atomic_reusable_components;
+<- library_of_reusable_components_of_knowledge_bases;
+
+<- rrel_key_sc_element:
+	... 
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://htmls/Ui_agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection.html"
+				(* <- lang_ru;; *);;
+		*);;
+	*);;
+	
+lib_component_ui_menu_file_for_agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection = [*^"file://ui_menu_file_for_agent_of_finding_initiated_actions_available_for_administrator_approval_or_rejection.scsi"*];;
