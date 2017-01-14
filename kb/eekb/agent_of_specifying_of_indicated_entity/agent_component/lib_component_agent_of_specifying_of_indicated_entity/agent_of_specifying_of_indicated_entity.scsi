@@ -838,39 +838,39 @@ scp_program -> agent_of_specifying_of_indicated_entity
 
 		-> .agent_of_specifying_of_indicated_entity9K
 			(*
-    		<- sys_wait;;
+    			<- sys_wait;;
 
-    		-> rrel_1: rrel_fixed: rrel_scp_const: sc_event_add_input_arc;;
-            -> rrel_2: rrel_fixed: rrel_scp_var: _quest_for_necessary_general_specification;;
+    			-> rrel_1: rrel_fixed: rrel_scp_const: sc_event_add_input_arc;;
+            		-> rrel_2: rrel_fixed: rrel_scp_var: _quest_for_necessary_general_specification;;
 
-    		=> nrel_goto: .agent_of_specifying_of_indicated_entity9H1;;
-    		*);;
+    			=> nrel_goto: .agent_of_specifying_of_indicated_entity9H1;;
+    			*);;
 
 		-> .agent_of_specifying_of_indicated_entity9H1
-            (*                                       
-    		<- searchElStr3;;
+            		(*                                       
+    			<- searchElStr3;;
 
-    		-> rrel_1: rrel_fixed: rrel_scp_const: question_finished_unsuccessfully;;
-    		-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
-    		-> rrel_3: rrel_fixed: rrel_scp_var: _quest_for_necessary_general_specification;;
+    			-> rrel_1: rrel_fixed: rrel_scp_const: question_finished_unsuccessfully;;
+    			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+    			-> rrel_3: rrel_fixed: rrel_scp_var: _quest_for_necessary_general_specification;;
 
-    		=> nrel_then: .agent_of_specifying_of_indicated_entity9J;;
-    		=> nrel_else: .agent_of_specifying_of_indicated_entity9I;;
-    		*);;
+    			=> nrel_then: .agent_of_specifying_of_indicated_entity9J;;
+    			=> nrel_else: .agent_of_specifying_of_indicated_entity9I;;
+    			*);;
 
-    	-> .agent_of_specifying_of_indicated_entity9I 
+    		-> .agent_of_specifying_of_indicated_entity9I 
 			(*
-            <- searchElStr3;;
+            		<- searchElStr3;;
 
-            -> rrel_1: rrel_fixed: rrel_scp_const: question_finished_successfully;;
-            -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
-            -> rrel_3: rrel_fixed: rrel_scp_var: _quest_for_necessary_general_specification;;
+            		-> rrel_1: rrel_fixed: rrel_scp_const: question_finished_successfully;;
+            		-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+            		-> rrel_3: rrel_fixed: rrel_scp_var: _quest_for_necessary_general_specification;;
 
-            => nrel_then: .agent_of_specifying_of_indicated_entity9J;;
-    		=> nrel_else: .agent_of_specifying_of_indicated_entity9K;;
-            *);;
+            		=> nrel_then: .agent_of_specifying_of_indicated_entity9J;;
+    			=> nrel_else: .agent_of_specifying_of_indicated_entity9K;;
+            		*);;
 
-        -> .agent_of_specifying_of_indicated_entity9H
+        	-> .agent_of_specifying_of_indicated_entity9H
 			(*
 			 <- searchElStr5;;
 			
@@ -897,16 +897,16 @@ scp_program -> agent_of_specifying_of_indicated_entity
 			=> nrel_then: .agent_of_specifying_of_indicated_entity8A;;
 			*);;
 
-    	-> .agent_of_specifying_of_indicated_entity9J
+    		-> .agent_of_specifying_of_indicated_entity9J
 			(*                                       
-    		<- eraseElStr3;;
+    			<- eraseElStr3;;
 
-    		-> rrel_1: rrel_fixed: rrel_scp_const: question_initiated;;
-    		-> rrel_2: rrel_assign: rrel_erase: rrel_pos_const_perm: rrel_scp_var: _arc1;;
-    		-> rrel_3: rrel_fixed: rrel_scp_var: _quest_for_necessary_general_specification;;
+    			-> rrel_1: rrel_fixed: rrel_scp_const: question_initiated;;
+    			-> rrel_2: rrel_assign: rrel_erase: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+    			-> rrel_3: rrel_fixed: rrel_scp_var: _quest_for_necessary_general_specification;;
 
-    		=> nrel_goto: .agent_of_specifying_of_indicated_entity8A;;
-    		*);;
+    			=> nrel_goto: .agent_of_specifying_of_indicated_entity8A;;
+    			*);;
 
 		->.agent_of_specifying_of_indicated_entity_check_existence_of_elems_in_structure
 			(*
