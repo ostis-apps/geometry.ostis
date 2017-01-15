@@ -1,0 +1,42 @@
+s_triangles_metric_relations
+=> nrel_main_idtf:
+	[Раздел. Метрические соотношения в треугольнике]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Section. Metric relations in a triangle]
+	(* <- lang_en;; *);
+
+<- atomic_section;
+
+<= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+		"file://htmls/s_triangles_metric_relations_en.html"
+		(* <- lang_en;; *);;
+	*);
+<= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+		"file://htmls/s_triangles_metric_relations_ru.html"
+		(* <- lang_ru;; *);;
+	*);
+
+=> nrel_summary:
+	...
+	(*
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[This section discusses metric relation between different linear elements of the triangle.]
+			(* <- lang_en;; *);;
+		*);;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:[В данном разделе рассматриваются метрические соотношения между различными линейными элементами треугольника.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;

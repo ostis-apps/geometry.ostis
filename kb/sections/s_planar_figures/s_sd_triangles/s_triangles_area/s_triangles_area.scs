@@ -1,0 +1,42 @@
+s_triangles_area
+=> nrel_main_idtf:
+	[Раздел. Площадь треугольника]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Section. Area of triangle]
+	(* <- lang_en;; *);
+
+<- atomic_section;
+
+<= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+		"file://htmls/s_triangles_area_en.html"
+		(* <- lang_en;; *);;
+	*);
+<= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+		"file://htmls/s_triangles_area_ru.html"
+		(* <- lang_ru;; *);;
+	*);
+
+=> nrel_summary:
+	...
+	(*
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[This section includes the basic formula of calculating the area of ​​a triangle.]
+			(* <- lang_en;; *);;
+		*);;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:[В данный раздел включены основные формулы нахождения площади треугольника.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
