@@ -15,7 +15,7 @@ sc_agent_of_changing_system_identifier
 	{
 	question_initiated;
 	question;
-	question_change_system_identifier
+	action_of_changing_system_identifier
 	};
 
 => nrel_inclusion: 
@@ -32,7 +32,7 @@ sc_agent_of_changing_system_identifier
 
 ..sc_agent_of_changing_system_identifier_condition
 = [*
-	question_change_system_identifier _-> .._question;;
+	action_of_changing_system_identifier _-> .._question;;
 	question_initiated _-> .._question;;
 	question _-> .._question;;
 	.._question _-> rrel_1:: .._param1;;
@@ -41,7 +41,7 @@ sc_agent_of_changing_system_identifier
 
 ..sc_agent_of_forming_a_logical_ontology_given_domain_result
 = [*
-	question_change_system_identifier _-> .._question;;
+	action_of_changing_system_identifier _-> .._question;;
 	question_finished _-> .._question;;
 	question _-> .._question;;
 	.._question _=> nrel_answer:: .._answer;;
