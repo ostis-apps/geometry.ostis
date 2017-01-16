@@ -1,0 +1,13 @@
+statement -> stat_regular_polygon_congruence_be_inscribed_be_described_circle_radius;;
+
+stat_regular_polygon_congruence_be_inscribed_be_described_circle_radius -> rrel_key_sc_element: concept_regular_polygon; nrel_congruence; nrel_be_inscribed; nrel_be_described; concept_circle; nrel_radius;;
+
+stat_regular_polygon_congruence_be_inscribed_be_described_circle_radius => nrel_main_idtf: [Утв.(правильный четырёхугольник; конгруэнтность*; быть вписанным*; окружность)] (* <- lang_ru;; *);;
+stat_regular_polygon_congruence_be_inscribed_be_described_circle_radius => nrel_main_idtf: [Stat.(regular polygon; congruence*; be inscribed*; circle)] (*<- lang_en;;*);;
+
+stat_regular_polygon_congruence_be_inscribed_be_described_circle_radius <= nrel_sc_text_translation: ...
+	(*
+	-> rrel_example:
+		[У правильных n-угольников отношения периметров, радиусов вписанных и радиусов описанных окружностей равны.] 
+		(* <- lang_ru;; *);;
+	*);;

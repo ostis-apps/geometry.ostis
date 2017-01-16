@@ -1,0 +1,36 @@
+ex1_s_triangles_similarity
+<- exercises_s_triangles_similarity;
+
+-> rrel_key_sc_element: concept_triangle; nrel_similarity; nrel_area;nrel_coefficient_of_similarity;
+
+<- rrel_key_sc_element: task_triangle_area_similarity;
+
+=> nrel_main_idtf:
+	[Упражнение 1. Раздел. Подобие треугольников]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Exercise 1. Section. Similarity of triangles]
+	(* <- lang_en;; *);
+
+<= nrel_sc_text_translation:
+	...
+	(* 
+	-> rrel_example: "file://htmls/ex1_s_triangles_similarity_ru.html" (* <-lang_ru;; *);;
+	*);
+<= nrel_sc_text_translation:
+	...
+	(* 
+	-> rrel_example: "file://htmls/ex1_s_triangles_similarity_en.html" (* <-lang_en;; *);;
+	*);
+
+<- rrel_key_sc_element: 
+	...
+	(*
+	<- illustration;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+		"file://images/ex1_s_triangles_similarity.png";;
+		*);; 
+	*);;

@@ -10,12 +10,6 @@ nrel_side => nrel_idtf: [быть стороной*] (* <- lang_ru;; *);;
 
 nrel_side => nrel_idtf: [быть стороной геометрической фигуры*] (* <- lang_ru;; *);;
 
-nrel_side <= nrel_combination:
-	{
-		nrel_side_of_angle;
-		nrel_side_of_polygon
-	};;
-
 nrel_side => nrel_definitional_domain: 
 	...
 	(*

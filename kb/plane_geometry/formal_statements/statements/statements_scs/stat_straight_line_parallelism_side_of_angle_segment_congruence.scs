@@ -1,0 +1,13 @@
+statement -> stat_straight_line_parallelism_side_of_angle_segment_congruence;;
+
+stat_straight_line_parallelism_side_of_angle_segment_congruence -> rrel_key_sc_element: concept_straight_line; nrel_parallelism; nrel_side_of_angle; concept_segment; nrel_congruence;;
+
+stat_straight_line_parallelism_side_of_angle_segment_congruence => nrel_main_idtf: [Утв.(прямая; параллельность*; сторона угла*; отрезок; конгруэнтность*)] (* <- lang_ru;; *);;
+stat_straight_line_parallelism_side_of_angle_segment_congruence => nrel_main_idtf: [Stat.(straight line; parallelism*; side of angle*; segment; congruence*)] (*<- lang_en;;*);;
+
+stat_straight_line_parallelism_side_of_angle_segment_congruence <= nrel_sc_text_translation: ...
+	(*
+	-> rrel_example:
+		[Если параллельные прямые, пересекающие стороны угла, отсекают на одной его стороне равные отрезки, то они отсекают равные отрезки и на другой его стороне.] 
+		(* <- lang_ru;; *);;
+	*);;

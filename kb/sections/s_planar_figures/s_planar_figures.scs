@@ -1,0 +1,50 @@
+s_planar_figures
+=> nrel_main_idtf:
+	[Раздел. Планарные фигуры]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Section. Planar figures]
+	(* <- lang_en;; *);
+
+<- non_atomic_section;
+
+<= nrel_section_decomposition:
+	{
+		s_sd_planar_geometric_figures
+		(*
+		=> nrel_section_base_order: 
+			s_sd_planar_angles;;
+		*);
+
+		s_sd_planar_angles
+		(*
+		=> nrel_section_base_order: 
+			s_sd_triangles;;
+		*);
+		
+		s_sd_triangles
+		(*
+		=> nrel_section_base_order: 
+			s_sd_quadrilaterals;;
+		*);
+		
+		s_sd_quadrilaterals
+		(*
+		=> nrel_section_base_order: 
+			s_sd_polygons;;
+		*);
+
+		s_sd_polygons
+		(*
+		=> nrel_section_base_order: 
+			s_sd_rounds_circles;;
+		*);
+		
+		s_sd_rounds_circles
+		(*
+		=> nrel_section_base_order: 
+			s_sd_inscribed_planar_figures;;
+		*);
+
+		s_sd_inscribed_planar_figures
+	};;

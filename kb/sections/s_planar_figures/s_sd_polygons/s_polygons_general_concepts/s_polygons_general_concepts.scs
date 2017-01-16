@@ -1,0 +1,36 @@
+s_polygons_general_concepts
+=> nrel_main_idtf:
+	[Раздел. Многоугольники. Общие понятия]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Section. Polygons. General concepts]
+	(* <- lang_en;; *);
+
+<- atomic_section;
+
+<= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+		"file://html/s_polygons_general_concepts_ru.html"
+		(* <- lang_ru;; *);;
+	*);
+
+=> nrel_summary:
+	...
+	(*
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[This section discusses general concepts that are neccessary to determine concept polygon in the next section.]
+			(* <- lang_en;; *);;
+		*);;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[В данном разделе рассматриваются общие понятия, которые будут использоваться в следующем разделе для определения понятия многоугольник.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;

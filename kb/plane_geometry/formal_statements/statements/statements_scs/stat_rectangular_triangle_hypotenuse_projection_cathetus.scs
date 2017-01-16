@@ -1,0 +1,13 @@
+statement -> stat_rectangular_triangle_hypotenuse_projection_cathetus;;
+
+stat_rectangular_triangle_hypotenuse_projection_cathetus -> rrel_key_sc_element: concept_rectangle_triangle; nrel_cathetus; nrel_hypotenuse; nrel_projection;;
+
+stat_rectangular_triangle_hypotenuse_projection_cathetus => nrel_main_idtf: [Утв.(прямоугольный треугольник; катет*; гипотенуза*; проекция*)] (* <- lang_ru;; *);;
+stat_rectangular_triangle_hypotenuse_projection_cathetus => nrel_main_idtf: [Stat.(rectangular triangle; cathetus*; hypotenuse*; projection*)] (* <- lang_en;; *);;
+
+stat_rectangular_triangle_hypotenuse_projection_cathetus <= nrel_sc_text_translation: ...
+	(*
+	-> rrel_example:
+		[Катет прямоугольного треугольника есть среднее пропорциональное между гипотенузой и проекцией этого катета на гипотенузу.] 
+		(* <- lang_ru;; *);;
+	*);;

@@ -1,0 +1,21 @@
+ex5_s_triangles_area
+<- exercises_s_triangles_area;
+
+-> rrel_key_sc_element: concept_isosceles_triangle; nrel_area;
+=> nrel_next: ex6_s_triangles_area;
+=> nrel_main_idtf:
+	[Упражнение 5. Раздел. Площадь треугольника]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Exercise 5. Section. Area of triangle]
+	(* <- lang_en;; *);
+<= nrel_sc_text_translation:
+	...
+	(* 
+	-> rrel_example: "file://htmls/ex5_s_triangles_area_ru.html" (* <-lang_ru;; *);;
+	*);
+<= nrel_sc_text_translation:
+	...
+	(* 
+	-> rrel_example: "file://htmls/ex5_s_triangles_area_en.html" (* <-lang_en;; *);;
+	*);;

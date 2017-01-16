@@ -1,7 +1,9 @@
 statement -> stat_geometric_point_secant_of_circle_intersection;;
 
-stat_geometric_point_secant_of_circle_intersection => nrel_main_idtf: [Утв.(геометрическая точка; секущая окружности*; пересечение*)] (* <- lang_ru;; *);;
-stat_geometric_point_secant_of_circle_intersection => nrel_main_idtf: [Stat.(geometric point; secant of circle*; intersection*)] (*<- lang_en;;*);;
+stat_geometric_point_secant_of_circle_intersection -> rrel_key_sc_element: concept_geometric_point; nrel_secant_of_circle; nrel_tangent;;
+
+stat_geometric_point_secant_of_circle_intersection => nrel_main_idtf: [Утв.(геометрическая точка; секущая окружности*; касательная*)] (* <- lang_ru;; *);;
+stat_geometric_point_secant_of_circle_intersection => nrel_main_idtf: [Stat.(geometric point; secant of circle*; tangent*)] (*<- lang_en;;*);;
 
 stat_geometric_point_secant_of_circle_intersection <= nrel_sc_text_translation: ...
 	(*

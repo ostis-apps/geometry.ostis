@@ -1,0 +1,42 @@
+s_triangles_congruence
+=> nrel_main_idtf:
+	[Раздел. Равенство треугольников]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Section. Congruence of triangles]
+	(* <- lang_en;; *);
+
+<- atomic_section;
+
+<= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+		"file://htmls/s_triangles_congruence_en.html"
+		(* <- lang_en;; *);;
+	*);
+<= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+		"file://htmls/s_triangles_congruence_ru.html"
+		(* <- lang_ru;; *);;
+	*);
+
+=> nrel_summary:
+	...
+	(*
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[This section discusses the signs of congruence for a random triangle.]
+			(* <- lang_en;; *);;
+		*);;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:[В данном разделе рассматриваются признаки равенства для произвольного треугольника.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;

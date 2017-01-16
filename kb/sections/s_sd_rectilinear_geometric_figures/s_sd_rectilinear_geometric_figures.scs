@@ -1,0 +1,38 @@
+s_sd_rectilinear_geometric_figures
+=> nrel_main_idtf:
+	[Раздел. Предметная область прямолинейных геометрических фигур]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Section. Subject domain of rectilinear geometric figures]
+	(* <- lang_en;; *);
+
+-> rrel_key_sc_element: subject_domain_of_rectilinear_geometric_figures;
+
+<- non_atomic_section;
+
+<= nrel_section_decomposition:
+	{
+		s_sd_straight_lines
+		(*
+		=> nrel_section_base_order: 
+			s_sd_rays;;
+		*);
+		s_sd_rays
+		(*
+		=> nrel_section_base_order: 
+			s_sd_segments;;
+		*);
+		s_sd_segments
+		(*
+		=> nrel_section_base_order: 
+			s_sd_intervals;;
+		*);
+
+		s_sd_intervals
+		(*
+		=> nrel_section_base_order: 
+			s_sd_relations_defined_on_rectilinear_geometric_figures;;
+		*);
+		
+		s_sd_relations_defined_on_rectilinear_geometric_figures
+	};;

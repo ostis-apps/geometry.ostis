@@ -34,11 +34,6 @@ nrel_bisectrix => nrel_first_domain:
 nrel_bisectrix => nrel_second_domain: 
 	concept_ray;;
 
-nrel_bisectrix <= nrel_combination: 
-		{	 
-		nrel_bisectrix_of_angle;
-		nrel_bisectrix_of_triangle
-		};;
 
 nrel_bisectrix <- relation;;
 nrel_bisectrix <- binary_relation;;
