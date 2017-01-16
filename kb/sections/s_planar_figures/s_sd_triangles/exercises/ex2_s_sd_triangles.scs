@@ -1,0 +1,24 @@
+ex2_s_sd_triangles
+<- exercises_s_sd_triangles;
+
+-> rrel_key_sc_element: concept_triangle; concept_straight_line; nrel_parallelism;
+
+=> nrel_next: ex3_s_sd_triangles;
+
+=> nrel_main_idtf:
+	[Упражнение 2. Раздел. Предметная область треугольников]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Exercise 2. Section. Subject domain of triangles]
+	(* <- lang_en;; *);
+
+<= nrel_sc_text_translation:
+	...
+	(* 
+	-> rrel_example: "file://htmls/ex2_s_sd_triangles_ru.html" (* <-lang_ru;; *);;
+	*);
+<= nrel_sc_text_translation:
+	...
+	(* 
+	-> rrel_example: "file://htmls/ex2_s_sd_triangles_en.html" (* <-lang_en;; *);;
+	*);;

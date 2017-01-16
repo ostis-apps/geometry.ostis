@@ -1,0 +1,35 @@
+s_sd_trapezoids_arbitrary_trapezoid
+=> nrel_main_idtf:
+	[Раздел. Свойства трапеции]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Section. Properties of trapezoid]
+	(* <- lang_en;; *);
+
+<- atomic_section;
+
+<= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+		"file://html/s_sd_trapezoids_arbitrary_trapezoid_ru.html"
+		(* <- lang_ru;; *);;
+	*);
+
+=> nrel_summary:
+	...
+	(*
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[This section discusses the main properties of trapezoid.]
+			(* <- lang_en;; *);;
+		*);;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:[В данном разделе рассматриваются основные свойства трапеции.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;

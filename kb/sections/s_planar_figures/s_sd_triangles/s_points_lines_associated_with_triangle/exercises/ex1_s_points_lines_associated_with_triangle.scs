@@ -1,0 +1,24 @@
+ex1_s_points_lines_associated_with_triangle
+<- exercises_s_points_lines_associated_with_triangle;
+
+-> rrel_key_sc_element: concept_triangle; nrel_median;
+
+=> nrel_next: ex2_s_points_lines_associated_with_triangle;
+
+=> nrel_main_idtf:
+	[Упражнение 1. Раздел. Точки и линии в треугольнике]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Exercise 1. Section. Points and lines associated with a triangle]
+	(* <- lang_en;; *);
+
+<= nrel_sc_text_translation:
+	...
+	(* 
+	-> rrel_example: "file://htmls/ex1_s_points_lines_associated_with_triangle_ru.html" (* <-lang_ru;; *);;
+	*);
+<= nrel_sc_text_translation:
+	...
+	(* 
+	-> rrel_example: "file://htmls/ex1_s_points_lines_associated_with_triangle_en.html" (* <-lang_en;; *);;
+	*);;

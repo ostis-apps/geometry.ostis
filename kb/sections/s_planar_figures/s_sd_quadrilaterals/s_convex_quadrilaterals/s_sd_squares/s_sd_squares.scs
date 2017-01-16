@@ -1,0 +1,28 @@
+s_sd_squares
+=> nrel_main_idtf:
+	[Раздел. Квадрат. Свойства и признаки квадрата]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Section. Square. Properties and sings of square]
+	(* <- lang_en;; *);
+
+<= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+		"file://html/s_sd_squares_ru.html"
+		(* <- lang_ru;; *);;
+	*);
+
+<- atomic_section;
+
+=> nrel_summary:
+	...
+	(*
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:[В данном разделе рассматриваются свойства и признаки квадрата.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;

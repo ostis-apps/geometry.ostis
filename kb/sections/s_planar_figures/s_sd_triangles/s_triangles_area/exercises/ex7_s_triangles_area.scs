@@ -1,0 +1,31 @@
+ex7_s_triangles_area
+<- exercises_s_triangles_area;
+
+-> rrel_key_sc_element: concept_rectangular_triangle; nrel_area;
+
+<- rrel_key_sc_element: Question1;
+
+=> nrel_main_idtf:
+	[Упражнение 7. Раздел. Площадь треугольника]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Exercise 7. Section. Area of triangle]
+	(* <- lang_en;; *);
+
+<= nrel_sc_text_translation:
+	...
+	(* 
+	-> rrel_example: "file://htmls/ex7_s_triangles_area_ru.html" (* <-lang_ru;; *);;
+	*);
+
+<- rrel_key_sc_element: 
+	...
+	(*
+	<- illustration;; 
+	<= nrel_sc_text_translation: 
+	...
+		(*
+		-> rrel_example: 
+		"file://images/ex7_s_triangles_area.png";;
+		*);; 
+	*);;

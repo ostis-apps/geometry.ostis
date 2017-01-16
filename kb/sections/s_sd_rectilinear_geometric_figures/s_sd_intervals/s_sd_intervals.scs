@@ -1,0 +1,41 @@
+s_sd_intervals
+=> nrel_main_idtf:
+	[Раздел. Предметная область интервалов]
+	(* <- lang_ru;; *);
+	[Section. Subject domain of intervals]
+	(* <- lang_en;; *);
+
+<- atomic_section;
+
+<= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+		"file://htmls/s_sd_intervals_en.html"
+		(* <- lang_en;; *);;
+	*);
+<= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+		"file://htmls/s_sd_intervals_ru.html"
+		(* <- lang_ru;; *);;
+	*);
+
+=> nrel_summary:
+	...
+	(*
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[This section covers the basic provisions relating to the concept of "interval".]
+			(* <- lang_en;; *);;
+		*);;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:[В данном разделе рассматриваются основные положения, связанные с понятием «интервал».]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;

@@ -1,0 +1,36 @@
+s_angle_measurement
+=> nrel_main_idtf:
+	[Раздел. Измерение углов]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Section. Angle measurement]
+	(* <- lang_en;; *);
+
+<- atomic_section;
+
+<= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+		"file://html/s_angle_measurement_ru.html"
+		(* <- lang_ru;; *);;
+	*);
+
+
+=> nrel_summary:
+	...
+	(*
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[This section discusses an angle measurement.]
+			(* <- lang_en;; *);;
+		*);;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:[В данном разделе рассматриваются измерения углов.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
