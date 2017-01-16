@@ -121,11 +121,11 @@ scp_program -> proc_of_calculation_all_depths
 			
 			-> rrel_1: rrel_fixed: rrel_scp_const:  proc_of_calculation_all_depths;;
 			-> rrel_2: rrel_fixed: rrel_scp_const: .proc_of_calculation_all_depths_operator10_params
-					(*
-					-> rrel_1: rrel_fixed: rrel_scp_var: _curr_elem;;
-					-> rrel_2: rrel_fixed: rrel_scp_var: _current_depth;; 
-					-> rrel_3: rrel_fixed: rrel_scp_var: _all_depth;;
-					*);;
+				(*
+				-> rrel_1: rrel_fixed: rrel_scp_var: _curr_elem;;
+				-> rrel_2: rrel_fixed: rrel_scp_var: _current_depth;; 
+				-> rrel_3: rrel_fixed: rrel_scp_var: _all_depth;;
+				*);;
 			-> rrel_3: rrel_assign: rrel_scp_var:  _descr;;
 
 			=> nrel_goto: .proc_of_calculation_all_depths_operator11;;

@@ -4,7 +4,6 @@ agent_of_calculation_average_depth_of_subject_domain
 	[agent scp-program of calculation average depth of subject domain] (* <- lang_en;; *);
 	<- agent_scp_program;;
 
-
 scp_program -> agent_of_calculation_average_depth_of_subject_domain
 	(*
 	-> rrel_params: .agent_of_calculation_average_depth_of_subject_domain_params 
@@ -63,7 +62,7 @@ scp_program -> agent_of_calculation_average_depth_of_subject_domain
 			*);;
 
 		-> .agent_of_calculation_average_depth_of_subject_domain_operator2A
-    		(*
+    			(*
 			<- searchElStr5;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var:  _subject_domain;;
@@ -72,11 +71,11 @@ scp_program -> agent_of_calculation_average_depth_of_subject_domain
 			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
 			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_private_subject_domain;;
 
-        	=> nrel_then: .agent_of_calculation_average_depth_of_subject_domain_operator2B;;
-        	=> nrel_else: .agent_of_calculation_average_depth_of_subject_domain_operator2C;;
-        	*);;
+        		=> nrel_then: .agent_of_calculation_average_depth_of_subject_domain_operator2B;;
+        		=> nrel_else: .agent_of_calculation_average_depth_of_subject_domain_operator2C;;
+        		*);;
 
-        -> .agent_of_calculation_average_depth_of_subject_domain_operator2C
+        	-> .agent_of_calculation_average_depth_of_subject_domain_operator2C
 			(*
 			<- contAssign;;
 
@@ -195,5 +194,3 @@ scp_program -> agent_of_calculation_average_depth_of_subject_domain
 			*);;
 		*);;
 	*);;
-
-
