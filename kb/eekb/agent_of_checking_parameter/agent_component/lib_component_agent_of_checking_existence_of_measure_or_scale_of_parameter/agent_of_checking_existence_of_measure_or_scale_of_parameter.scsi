@@ -337,6 +337,41 @@ scp_program -> agent_of_checking_existence_of_measure_or_scale_of_parameter
 			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer_of_checking_parameter;;
 			-> rrel_set_3: rrel_fixed: rrel_scp_var: _answer_of_checking_parameter;;
 
+			=> nrel_goto: .agent_of_checking_existence_of_measure_or_scale_of_parameter_operator14A;;
+			*);;
+
+		-> .agent_of_checking_existence_of_measure_or_scale_of_parameter_operator14A
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: wrong_parameters;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _answer_of_proc_of_checking_parameter;;
+
+			=> nrel_goto: .agent_of_checking_existence_of_measure_or_scale_of_parameter_operator14B;;
+			*);;
+
+		-> .agent_of_checking_existence_of_measure_or_scale_of_parameter_operator14B
+			(*
+			<- searchSetStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: wrong_parameters;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _answer_of_proc_of_checking_parameter;;
+
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer_of_checking_parameter;;
+
+			=> nrel_goto: .agent_of_checking_existence_of_measure_or_scale_of_parameter_operator14C;;
+			*);;
+
+		-> .agent_of_checking_existence_of_measure_or_scale_of_parameter_operator14C
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_checking_parameter;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: wrong_parameters;;
+
 			=> nrel_goto: .agent_of_checking_existence_of_measure_or_scale_of_parameter_operator_gen_answer;;
 			*);;
 
