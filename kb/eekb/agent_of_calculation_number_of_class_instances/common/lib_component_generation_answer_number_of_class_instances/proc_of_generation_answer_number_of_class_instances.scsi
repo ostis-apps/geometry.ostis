@@ -1,15 +1,15 @@
-scp_program -> proc_of_generation_of_temporary_entities_number_answer
+scp_program -> proc_of_generation_answer_number_of_class_instances
 	(*
-  	-> rrel_params: .proc_of_generation_of_temporary_entities_number_answer_params 
+  	-> rrel_params: .proc_of_generation_answer_number_of_class_instances_params 
 		(*
 		-> rrel_1: rrel_in: _param;;
 		-> rrel_2: rrel_in: _result_value;;
 		-> rrel_3: rrel_in: _answer;;
     	*);;
 
-	-> rrel_operators: .proc_of_generation_of_temporary_entities_number_answer_operator_set
+	-> rrel_operators: .proc_of_generation_answer_number_of_class_instances_operator_set
     		(*
-    		-> rrel_init: .proc_of_generation_of_temporary_entities_number_answer_operator1A
+    		-> rrel_init: .proc_of_generation_answer_number_of_class_instances_operator1A
 			(*
 		  	<- genElStr3;;
 
@@ -17,10 +17,10 @@ scp_program -> proc_of_generation_of_temporary_entities_number_answer
 		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: rrel_const: _arc1;;
 		  	-> rrel_3: rrel_fixed: rrel_scp_const: power_of_set;;
 
-		  	=> nrel_goto: .proc_of_generation_of_temporary_entities_number_answer_operator1B;;
+		  	=> nrel_goto: .proc_of_generation_answer_number_of_class_instances_operator1B;;
 			*);;
 
-			-> .proc_of_generation_of_temporary_entities_number_answer_operator1B
+			-> .proc_of_generation_answer_number_of_class_instances_operator1B
 			(*
 		  	<- genElStr3;;
 
@@ -28,10 +28,10 @@ scp_program -> proc_of_generation_of_temporary_entities_number_answer
 		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: rrel_const: _arc1;;
 		  	-> rrel_3: rrel_fixed: rrel_scp_const: number;;
 
-		  	=> nrel_goto: .proc_of_generation_of_temporary_entities_number_answer_operator1C;;
+		  	=> nrel_goto: .proc_of_generation_answer_number_of_class_instances_operator1C;;
 			*);;
 
-			-> .proc_of_generation_of_temporary_entities_number_answer_operator1C
+			-> .proc_of_generation_answer_number_of_class_instances_operator1C
 			(*
 		  	<- genElStr3;;
 
@@ -39,10 +39,10 @@ scp_program -> proc_of_generation_of_temporary_entities_number_answer
 		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: rrel_const: _arc1;;
 		  	-> rrel_3: rrel_fixed: rrel_scp_const: nrel_measurement;;
 
-		  	=> nrel_goto: .proc_of_generation_of_temporary_entities_number_answer_operator1D;;
+		  	=> nrel_goto: .proc_of_generation_answer_number_of_class_instances_operator1D;;
 			*);;
 
-			-> .proc_of_generation_of_temporary_entities_number_answer_operator1D
+			-> .proc_of_generation_answer_number_of_class_instances_operator1D
 			(*
 		  	<- genElStr3;;
 
@@ -50,10 +50,10 @@ scp_program -> proc_of_generation_of_temporary_entities_number_answer
 		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: rrel_const: _arc1;;
 		  	-> rrel_3: rrel_fixed: rrel_scp_const: nrel_identification;;
 
-		  	=> nrel_goto: .proc_of_generation_of_temporary_entities_number_answer_operator1E;;
+		  	=> nrel_goto: .proc_of_generation_answer_number_of_class_instances_operator1E;;
 			*);;
 
-			-> .proc_of_generation_of_temporary_entities_number_answer_operator1E
+			-> .proc_of_generation_answer_number_of_class_instances_operator1E
 			(*
 		  	<- genElStr3;;
 
@@ -61,10 +61,10 @@ scp_program -> proc_of_generation_of_temporary_entities_number_answer
 		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: rrel_const: _arc1;;
 		  	-> rrel_3: rrel_fixed: rrel_scp_const: rrel_decimal;;
 
-		  	=> nrel_goto: .proc_of_generation_of_temporary_entities_number_answer_operator1F;;
+		  	=> nrel_goto: .proc_of_generation_answer_number_of_class_instances_operator1F;;
 			*);;
 
-			-> .proc_of_generation_of_temporary_entities_number_answer_operator1F
+			-> .proc_of_generation_answer_number_of_class_instances_operator1F
 			(*
 		  	<- genElStr3;;
 
@@ -72,10 +72,10 @@ scp_program -> proc_of_generation_of_temporary_entities_number_answer
 		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: rrel_const: _arc1;;
 			-> rrel_3: rrel_fixed: rrel_scp_var: _param;;
 
-		  	=> nrel_goto: .proc_of_generation_of_temporary_entities_number_answer_operator2A;;
+		  	=> nrel_goto: .proc_of_generation_answer_number_of_class_instances_operator2A;;
 			*);;
 
-    		-> .proc_of_generation_of_temporary_entities_number_answer_operator2A
+    		-> .proc_of_generation_answer_number_of_class_instances_operator2A
 			(*
 			<- searchSetStr3;;
 
@@ -85,11 +85,11 @@ scp_program -> proc_of_generation_of_temporary_entities_number_answer
 
 			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer;;
 
-			=> nrel_then: .proc_of_generation_of_temporary_entities_number_answer_operator2B;;
-			=> nrel_else: .proc_of_generation_of_temporary_entities_number_answer_operator3A;;
+			=> nrel_then: .proc_of_generation_answer_number_of_class_instances_operator2B;;
+			=> nrel_else: .proc_of_generation_answer_number_of_class_instances_operator3A;;
 			*);;
 
-		-> .proc_of_generation_of_temporary_entities_number_answer_operator2B
+		-> .proc_of_generation_answer_number_of_class_instances_operator2B
 			(*
 			<- searchSetStr5;;
 
@@ -102,11 +102,11 @@ scp_program -> proc_of_generation_of_temporary_entities_number_answer
 			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer;;
 			-> rrel_set_4: rrel_fixed: rrel_scp_var: _answer;;
 
-			=> nrel_then: .proc_of_generation_of_temporary_entities_number_answer_operator2C;;
-			=> nrel_else: .proc_of_generation_of_temporary_entities_number_answer_operator3B;;
+			=> nrel_then: .proc_of_generation_answer_number_of_class_instances_operator2C;;
+			=> nrel_else: .proc_of_generation_answer_number_of_class_instances_operator3B;;
 			*);;
 
-    	-> .proc_of_generation_of_temporary_entities_number_answer_operator2C
+    	-> .proc_of_generation_answer_number_of_class_instances_operator2C
 			(*
 		  	<- genElStr3;;
 
@@ -114,10 +114,10 @@ scp_program -> proc_of_generation_of_temporary_entities_number_answer
 		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: rrel_const: arc1;;
 		  	-> rrel_3: rrel_fixed: rrel_scp_var: _el1;;
 
-		  	=> nrel_goto: .proc_of_generation_of_temporary_entities_number_answer_operator2D;;
+		  	=> nrel_goto: .proc_of_generation_answer_number_of_class_instances_operator2D;;
 			*);;
 
-		-> .proc_of_generation_of_temporary_entities_number_answer_operator2D
+		-> .proc_of_generation_answer_number_of_class_instances_operator2D
 			(*
 			<- searchSetStr5;;
 
@@ -130,11 +130,11 @@ scp_program -> proc_of_generation_of_temporary_entities_number_answer
 			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer;;
 			-> rrel_set_4: rrel_fixed: rrel_scp_var: _answer;;
 
-			=> nrel_then: .proc_of_generation_of_temporary_entities_number_answer_operator2E;;
-			=> nrel_else: .proc_of_generation_of_temporary_entities_number_answer_operator3G;;
+			=> nrel_then: .proc_of_generation_answer_number_of_class_instances_operator2E;;
+			=> nrel_else: .proc_of_generation_answer_number_of_class_instances_operator3G;;
 			*);;
 
-    	-> .proc_of_generation_of_temporary_entities_number_answer_operator2E
+    	-> .proc_of_generation_answer_number_of_class_instances_operator2E
 			(*
 		  	<- genElStr3;;
 
@@ -142,10 +142,10 @@ scp_program -> proc_of_generation_of_temporary_entities_number_answer
 		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: rrel_const: arc1;;
 		  	-> rrel_3: rrel_fixed: rrel_scp_var: _el2;;
 
-		  	=> nrel_goto: .proc_of_generation_of_temporary_entities_number_answer_operator2F;;
+		  	=> nrel_goto: .proc_of_generation_answer_number_of_class_instances_operator2F;;
 			*);;
 
-		-> .proc_of_generation_of_temporary_entities_number_answer_operator2F
+		-> .proc_of_generation_answer_number_of_class_instances_operator2F
 			(*
 			<- searchSetStr5;;
 
@@ -158,11 +158,11 @@ scp_program -> proc_of_generation_of_temporary_entities_number_answer
 			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer;;
 			-> rrel_set_4: rrel_fixed: rrel_scp_var: _answer;;
 
-			=> nrel_then: .proc_of_generation_of_temporary_entities_number_answer_operator2G;;
-			=> nrel_else: .proc_of_generation_of_temporary_entities_number_answer_operator3I;; 
+			=> nrel_then: .proc_of_generation_answer_number_of_class_instances_operator2G;;
+			=> nrel_else: .proc_of_generation_answer_number_of_class_instances_operator3I;; 
 			*);;
 
-    	-> .proc_of_generation_of_temporary_entities_number_answer_operator2G
+    	-> .proc_of_generation_answer_number_of_class_instances_operator2G
 			(*
 		  	<- genElStr3;;
 
@@ -170,10 +170,10 @@ scp_program -> proc_of_generation_of_temporary_entities_number_answer
 		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: rrel_const: arc1;;
 		  	-> rrel_3: rrel_fixed: rrel_scp_var: _number;;
 
-		  	=> nrel_goto: .proc_of_generation_of_temporary_entities_number_answer_operator2H;;
+		  	=> nrel_goto: .proc_of_generation_answer_number_of_class_instances_operator2H;;
 			*);;
 
-    	-> .proc_of_generation_of_temporary_entities_number_answer_operator2H
+    	-> .proc_of_generation_answer_number_of_class_instances_operator2H
     		(*
 		  	<- searchSetStr3;;
 
@@ -183,20 +183,20 @@ scp_program -> proc_of_generation_of_temporary_entities_number_answer
 
 			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer;;
 
-		  	=> nrel_goto: .proc_of_generation_of_temporary_entities_number_answer_operator2I;;
+		  	=> nrel_goto: .proc_of_generation_answer_number_of_class_instances_operator2I;;
 			*);;
 
-		-> .proc_of_generation_of_temporary_entities_number_answer_operator2I
+		-> .proc_of_generation_answer_number_of_class_instances_operator2I
 			(*
 			<- contAssign;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _number;;
 			-> rrel_2: rrel_fixed: rrel_scp_var: _result_value;;
 			
-			=> nrel_goto: .proc_of_generation_of_temporary_entities_number_answer_operator_return;;
+			=> nrel_goto: .proc_of_generation_answer_number_of_class_instances_operator_return;;
 			*);; 
 
-		-> .proc_of_generation_of_temporary_entities_number_answer_operator3A
+		-> .proc_of_generation_answer_number_of_class_instances_operator3A
 			(*
 		  	<- genElStr5;;
 
@@ -206,10 +206,10 @@ scp_program -> proc_of_generation_of_temporary_entities_number_answer
 		  	-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
 		  	-> rrel_5: rrel_fixed: rrel_scp_var: _answer;;
 
-		  	=> nrel_goto: .proc_of_generation_of_temporary_entities_number_answer_operator3B;;
+		  	=> nrel_goto: .proc_of_generation_answer_number_of_class_instances_operator3B;;
 			*);;
 
-		-> .proc_of_generation_of_temporary_entities_number_answer_operator3B
+		-> .proc_of_generation_answer_number_of_class_instances_operator3B
 			(*
 		  	<- genElStr5;;
 
@@ -219,10 +219,10 @@ scp_program -> proc_of_generation_of_temporary_entities_number_answer
 		  	-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: rrel_const: _arc2;;
 		  	-> rrel_5: rrel_fixed: rrel_scp_const: nrel_measurement;;
 
-		  	=> nrel_goto: .proc_of_generation_of_temporary_entities_number_answer_operator3C;;
+		  	=> nrel_goto: .proc_of_generation_answer_number_of_class_instances_operator3C;;
 			*);;
 
-		-> .proc_of_generation_of_temporary_entities_number_answer_operator3C
+		-> .proc_of_generation_answer_number_of_class_instances_operator3C
 			(*
 			<- searchSetStr5;;
 
@@ -235,10 +235,10 @@ scp_program -> proc_of_generation_of_temporary_entities_number_answer
 			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer;;
 			-> rrel_set_4: rrel_fixed: rrel_scp_var: _answer;;
 
-			=> nrel_goto: .proc_of_generation_of_temporary_entities_number_answer_operator3D;;
+			=> nrel_goto: .proc_of_generation_answer_number_of_class_instances_operator3D;;
 			*);;
 
-		-> .proc_of_generation_of_temporary_entities_number_answer_operator3D
+		-> .proc_of_generation_answer_number_of_class_instances_operator3D
 			(*
 		  	<- genElStr5;;
 
@@ -248,10 +248,10 @@ scp_program -> proc_of_generation_of_temporary_entities_number_answer
 		  	-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
 		  	-> rrel_5: rrel_fixed: rrel_scp_var: _answer;;
 
-		  	=> nrel_goto: .proc_of_generation_of_temporary_entities_number_answer_operator3E;;
+		  	=> nrel_goto: .proc_of_generation_answer_number_of_class_instances_operator3E;;
 			*);;
 
-		-> .proc_of_generation_of_temporary_entities_number_answer_operator3E
+		-> .proc_of_generation_answer_number_of_class_instances_operator3E
 			(*
 			<- genElStr5;;
 
@@ -261,10 +261,10 @@ scp_program -> proc_of_generation_of_temporary_entities_number_answer
 			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: rrel_const: _arc2;;
 			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_identification;;
 
-			=> nrel_goto: .proc_of_generation_of_temporary_entities_number_answer_operator3F;;
+			=> nrel_goto: .proc_of_generation_answer_number_of_class_instances_operator3F;;
 			*);;
 
-		-> .proc_of_generation_of_temporary_entities_number_answer_operator3F
+		-> .proc_of_generation_answer_number_of_class_instances_operator3F
 			(*
 			<- searchSetStr5;;
 
@@ -277,10 +277,10 @@ scp_program -> proc_of_generation_of_temporary_entities_number_answer
 			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer;;
 			-> rrel_set_4: rrel_fixed: rrel_scp_var: _answer;;
 
-			=> nrel_goto: .proc_of_generation_of_temporary_entities_number_answer_operator3G;;
+			=> nrel_goto: .proc_of_generation_answer_number_of_class_instances_operator3G;;
 			*);;
 
-    	-> .proc_of_generation_of_temporary_entities_number_answer_operator3G
+    	-> .proc_of_generation_answer_number_of_class_instances_operator3G
 			(*
 		  	<- genElStr3;;
 
@@ -288,10 +288,10 @@ scp_program -> proc_of_generation_of_temporary_entities_number_answer
 		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: arc1;;
 		  	-> rrel_3: rrel_fixed: rrel_scp_var: _el2;;
 
-		  	=> nrel_goto: .proc_of_generation_of_temporary_entities_number_answer_operator3H;;
+		  	=> nrel_goto: .proc_of_generation_answer_number_of_class_instances_operator3H;;
 			*);;
 
-    	-> .proc_of_generation_of_temporary_entities_number_answer_operator3H
+    	-> .proc_of_generation_answer_number_of_class_instances_operator3H
 			(*
 		  	<- genElStr3;;
 
@@ -299,20 +299,20 @@ scp_program -> proc_of_generation_of_temporary_entities_number_answer
 		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var:  arc1;;
 		  	-> rrel_3: rrel_fixed: rrel_scp_var: _el1;;
 
-		  	=> nrel_goto: .proc_of_generation_of_temporary_entities_number_answer_operator3I;;
+		  	=> nrel_goto: .proc_of_generation_answer_number_of_class_instances_operator3I;;
 			*);;
 
-		-> .proc_of_generation_of_temporary_entities_number_answer_operator3I
+		-> .proc_of_generation_answer_number_of_class_instances_operator3I
 			(*
 			<- contAssign;;
 
 			-> rrel_1: rrel_assign: rrel_scp_var: _number;;
 			-> rrel_2: rrel_fixed: rrel_scp_var: _result_value;;
 			
-			=> nrel_goto: .proc_of_generation_of_temporary_entities_number_answer_operator3J;;
+			=> nrel_goto: .proc_of_generation_answer_number_of_class_instances_operator3J;;
 			*);; 
 
-		-> .proc_of_generation_of_temporary_entities_number_answer_operator3J
+		-> .proc_of_generation_answer_number_of_class_instances_operator3J
 			(*
 			<- genElStr5;;
 
@@ -322,10 +322,10 @@ scp_program -> proc_of_generation_of_temporary_entities_number_answer
 			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
 			-> rrel_5: rrel_fixed: rrel_scp_const: rrel_decimal;;
 
-			=> nrel_goto: .proc_of_generation_of_temporary_entities_number_answer_operator3K;;
+			=> nrel_goto: .proc_of_generation_answer_number_of_class_instances_operator3K;;
 			*);;
 
-		-> .proc_of_generation_of_temporary_entities_number_answer_operator3K
+		-> .proc_of_generation_answer_number_of_class_instances_operator3K
 			(*
 			<- searchSetStr5;;
 
@@ -338,10 +338,10 @@ scp_program -> proc_of_generation_of_temporary_entities_number_answer
 			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer;;
 			-> rrel_set_4: rrel_fixed: rrel_scp_var: _answer;;
 
-			=> nrel_goto: .proc_of_generation_of_temporary_entities_number_answer_operator3L;;
+			=> nrel_goto: .proc_of_generation_answer_number_of_class_instances_operator3L;;
 			*);;
 
-    	-> .proc_of_generation_of_temporary_entities_number_answer_operator3L
+    	-> .proc_of_generation_answer_number_of_class_instances_operator3L
 			(*
 		  	<- genElStr3;;
 
@@ -349,14 +349,10 @@ scp_program -> proc_of_generation_of_temporary_entities_number_answer
 		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: rrel_const: arc1;;
 		  	-> rrel_3: rrel_fixed: rrel_scp_var: _number;;
 
-		  	=> nrel_goto: .proc_of_generation_of_temporary_entities_number_answer_operator_return;;
+		  	=> nrel_goto: .proc_of_generation_answer_number_of_class_instances_operator_return;;
 			*);;
 
-
-
-
-
-		-> .proc_of_generation_of_temporary_entities_number_answer_operator_return 
+		-> .proc_of_generation_answer_number_of_class_instances_operator_return 
 			(*
 			<- return;;
 			*);;
