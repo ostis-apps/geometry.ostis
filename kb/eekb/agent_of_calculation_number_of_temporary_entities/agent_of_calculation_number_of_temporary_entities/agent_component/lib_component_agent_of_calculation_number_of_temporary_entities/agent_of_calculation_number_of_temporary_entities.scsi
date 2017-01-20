@@ -45,305 +45,73 @@ scp_program -> agent_of_calculation_number_of_temporary_entities
 			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
 			-> rrel_3: rrel_assign: rrel_scp_var: _temp_entity;;
 
-			=> nrel_then: .agent_of_calculation_number_of_temporary_entities_operator1D;;
+			=> nrel_then: .agent_of_calculation_number_of_temporary_entities_operator1Da;;
 			=> nrel_else: .agent_of_calculation_number_of_temporary_entities_operator_return;; 
+			*);;
+
+		-> .agent_of_calculation_number_of_temporary_entities_operator1Da
+			(*
+		  	<- genEl;;
+
+		  	-> rrel_1: rrel_assign: rrel_node: rrel_scp_var: _number_of_entities;;
+
+		  	=> nrel_goto: .agent_of_calculation_number_of_temporary_entities_operator1D;;
 			*);;
 
 		-> .agent_of_calculation_number_of_temporary_entities_operator1D
 	    	(*
 			<- contAssign;;
 
-			-> rrel_1: rrel_assign: rrel_scp_var: _number_of_entity;;
+			-> rrel_1: rrel_assign: rrel_scp_var: _number_of_entities;;
 			-> rrel_2: rrel_fixed: rrel_scp_const: [0];;
 			
 			=> nrel_goto: .agent_of_calculation_number_of_temporary_entities_operator1E;;
 			*);;
 
-
-
-
 		-> .agent_of_calculation_number_of_temporary_entities_operator1E
 			(*
-			<- genEl;;
+		  	<- genEl;;
 
-			-> rrel_1: rrel_assign: rrel_node: rrel_scp_var: _entities;;
+		  	-> rrel_1: rrel_assign: rrel_node: rrel_scp_var: _counted_entities;;
 
-			=> nrel_goto: .agent_of_calculation_number_of_temporary_entities_operator1F;;
+		  	=> nrel_goto: .agent_of_calculation_number_of_temporary_entities_operator2A;;
 			*);;
 
-		-> .agent_of_calculation_number_of_temporary_entities_operator1F
-			(*
-			<- genElStr3;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_var: _entities;;
-			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
-			-> rrel_3: rrel_fixed: rrel_scp_var: _temp_entity;;
-		
-			=> nrel_goto: .agent_of_calculation_number_of_temporary_entities_operator1G;;
-			*);;
-			
-		-> .agent_of_calculation_number_of_temporary_entities_operator1G
-	    	(*
-			<- genEl;;
-
-			-> rrel_1: rrel_assign: rrel_node: rrel_const: rrel_scp_var: _empty_set;;
-			
-			=> nrel_goto: .agent_of_calculation_number_of_temporary_entities_operator2A;;
-			*);;
-
-//////////////////
-		-> .agent_of_calculation_number_of_temporary_entities_operator2A
-			(*
-			<- searchSetStr5;;
-
-			-> rrel_1: rrel_assign: rrel_scp_var: _subdiv;;
-			-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
-			-> rrel_3: rrel_fixed: rrel_scp_var: _temp_entity;;
-			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
-			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_subdividing;;
-
-			-> rrel_set_1: rrel_fixed: rrel_scp_var: _entities;;
-
-			=> nrel_then: .agent_of_calculation_number_of_temporary_entities_operator2B;;
-			=> nrel_else: .agent_of_calculation_number_of_temporary_entities_operator3A;; 
-			*);;
-
-		-> .agent_of_calculation_number_of_temporary_entities_operator2B
-			(*
-			<- searchElStr3;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_var: _entities;;
-			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
-			-> rrel_3: rrel_assign: rrel_scp_var: _ent;;
-
-			=> nrel_then: .agent_of_calculation_number_of_temporary_entities_operator2C;;
-			=> nrel_else: .agent_of_calculation_number_of_temporary_entities_operator4A;;///
-			*);; 
-
-		-> .agent_of_calculation_number_of_temporary_entities_operator2C
-			(*
-			<- eraseEl;;
-
-			-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _arc1;;
-			
-			=> nrel_goto: .agent_of_calculation_number_of_temporary_entities_operator2D;;
-			*);; 
-
-		-> .agent_of_calculation_number_of_temporary_entities_operator2D
-	    	(*
-			<- contAdd;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_var: _number_of_entity;;
-			-> rrel_2: rrel_fixed: rrel_scp_var: _number_of_entity;;
-			-> rrel_3: rrel_fixed: rrel_scp_const: [-1];;
-			
-			=> nrel_goto: .agent_of_calculation_number_of_temporary_entities_operator3A;;
-			*);;
-
-
-/////////////////////
-
-	    -> .agent_of_calculation_number_of_temporary_entities_operator3A
+	    -> .agent_of_calculation_number_of_temporary_entities_operator2A
 			(*
 			<- call;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_const: proc_recursive_count_percent_of_temporary_entity;;
-			-> rrel_2: rrel_fixed: rrel_scp_const: .agent_of_calculation_number_of_temporary_entities_operator1M_params
+			-> rrel_2: rrel_fixed: rrel_scp_const: .agent_of_calculation_number_of_temporary_entities_operator2A_params
 				(*
-				-> rrel_1: rrel_fixed: rrel_scp_var: _ent;;
-				-> rrel_2: rrel_fixed: rrel_scp_var: _number_of_entity;;
-				-> rrel_3: rrel_fixed: rrel_scp_var: _empty_set;;
+				-> rrel_1: rrel_fixed: rrel_scp_var: _temp_entity;;
+				-> rrel_2: rrel_fixed: rrel_scp_var: _number_of_entities;;
+				-> rrel_3: rrel_fixed: rrel_scp_var: _counted_entities;;
 				*);;
 			-> rrel_3: rrel_assign: rrel_scp_var: _descr1;;
 
-			=> nrel_goto: .agent_of_calculation_number_of_temporary_entities_operator3B;;
+			=> nrel_goto: .agent_of_calculation_number_of_temporary_entities_operator2B;;
 			*);;	
 		
-		-> .agent_of_calculation_number_of_temporary_entities_operator3B
+		-> .agent_of_calculation_number_of_temporary_entities_operator2B
     		(*
     		<- waitReturn;;
 
     		-> rrel_1: rrel_fixed: rrel_scp_var: _descr1;;
 
-			=> nrel_goto: .agent_of_calculation_number_of_temporary_entities_operator2B;;
+			=> nrel_goto: .agent_of_calculation_number_of_temporary_entities_operator3A;;
 			*);;
-///////////////////////////////////////////////
 
+		-> .agent_of_calculation_number_of_temporary_entities_operator3A
+			(*
+		  	<- genEl;;
 
+		  	-> rrel_1: rrel_assign: rrel_node: rrel_scp_var: _answer_of_calculated_number_of_temporary_entities;;
 
+		  	=> nrel_goto: .agent_of_calculation_number_of_temporary_entities_operator4A;;
+			*);;
 
 		-> .agent_of_calculation_number_of_temporary_entities_operator4A
-			(*
-			<- searchSetStr3;;
-
-			-> rrel_1: rrel_assign: rrel_scp_var: _par;;
-			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
-			-> rrel_3: rrel_fixed: rrel_scp_var: _temp_entity;;
-
-			-> rrel_set_1: rrel_assign: rrel_scp_var: _temp_set;;
-
-			=> nrel_then: .agent_of_calculation_number_of_temporary_entities_operator4B;;
-			=> nrel_else: .agent_of_calculation_number_of_temporary_entities_operator5A;; //СОЗДАНИЕ КОНСТРУКЦИИ
-			*);;
-		
-		-> .agent_of_calculation_number_of_temporary_entities_operator4B
-			(*
-			<- searchElStr3;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_var: _temp_set;;
-			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
-			-> rrel_3: rrel_assign: rrel_scp_var: _elem;;
-
-			=> nrel_then: .agent_of_calculation_number_of_temporary_entities_operator4C;;
-			=> nrel_else: .agent_of_calculation_number_of_temporary_entities_operator5A;; //СОЗДАНИЕ КОНСТРУКЦИИ
-			*);;
-
-		-> .agent_of_calculation_number_of_temporary_entities_operator4C
-			(*
-			<- eraseEl;;
-
-			-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _arc1;;
-			
-			=> nrel_goto: .agent_of_calculation_number_of_temporary_entities_operator4D;;
-			*);; 
-
-		-> .agent_of_calculation_number_of_temporary_entities_operator4D
-			(*
-			<- searchElStr3;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_const: power_of_set;;
-			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
-			-> rrel_3: rrel_fixed: rrel_scp_var: _elem;;
-
-			=> nrel_then: .agent_of_calculation_number_of_temporary_entities_operator4E;;
-			=> nrel_else: .agent_of_calculation_number_of_temporary_entities_operator4B;;
-			*);;
-
-
-
-
-
-		-> .agent_of_calculation_number_of_temporary_entities_operator4E
-			(*
-			<- searchElStr5;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_var: _elem;;
-			-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
-			-> rrel_3: rrel_assign: rrel_scp_var: _el1;;
-			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
-			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_measurement;;
-
-			=> nrel_then: .agent_of_calculation_number_of_temporary_entities_operator4F;;
-			=> nrel_else: .agent_of_calculation_number_of_temporary_entities_operator5A;;
-			*);;
-
-		-> .agent_of_calculation_number_of_temporary_entities_operator4F
-			(*
-			<- searchElStr5;;
-
-			-> rrel_1: rrel_assign: rrel_scp_var: _el2;;
-			-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
-			-> rrel_3: rrel_fixed: rrel_scp_var: _el1;;
-			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
-			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_identification;;
-
-			=> nrel_then: .agent_of_calculation_number_of_temporary_entities_operator4G;;
-			=> nrel_else: .agent_of_calculation_number_of_temporary_entities_operator5A;; 
-			*);;
-
-		-> .agent_of_calculation_number_of_temporary_entities_operator4G
-			(*
-			<- searchElStr5;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_var: _el2;;
-			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
-			-> rrel_3: rrel_assign: rrel_scp_var: _number;;
-			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
-			-> rrel_5: rrel_fixed: rrel_scp_const: rrel_decimal;;
-
-			=> nrel_then: .agent_of_calculation_number_of_temporary_entities_operator4H;;
-			=> nrel_else: .agent_of_calculation_number_of_temporary_entities_operator5A;; 
-			*);;
-
-		-> .agent_of_calculation_number_of_temporary_entities_operator4H
-			(*
-			<- contAssign;;
-
-			-> rrel_1: rrel_fixed:  rrel_scp_var: _number;;
-			-> rrel_2: rrel_fixed: rrel_scp_var: _number_of_entity;;
-			
-			=> nrel_goto: .agent_of_calculation_number_of_temporary_entities_operator4I;;
-			*);; 
-
-		-> .agent_of_calculation_number_of_temporary_entities_operator4I
-			(*
-			<- searchSetStr3;;
-
-			-> rrel_1: rrel_assign: rrel_scp_var: _par;;
-			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
-			-> rrel_3: rrel_fixed: rrel_scp_var: _temp_entity;;
-
-			-> rrel_set_1: rrel_assign: rrel_scp_var: _temp_set;;
-
-			=> nrel_then: .agent_of_calculation_number_of_temporary_entities_operator4J;;
-			=> nrel_else: .agent_of_calculation_number_of_temporary_entities_operator5A;; //СОЗДАНИЕ КОНСТРУКЦИИ
-			*);;
-
-		-> .agent_of_calculation_number_of_temporary_entities_operator4J
-			(*
-			<- searchElStr3;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_var: _temp_set;;
-			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
-			-> rrel_3: rrel_assign: rrel_scp_var: _elem;;
-
-			=> nrel_then: .agent_of_calculation_number_of_temporary_entities_operator4K;;
-			=> nrel_else: .agent_of_calculation_number_of_temporary_entities_operator5A;; //СОЗДАНИЕ КОНСТРУКЦИИ
-			*);;
-
-		-> .agent_of_calculation_number_of_temporary_entities_operator4K
-			(*
-			<- eraseEl;;
-
-			-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _arc1;;
-			
-			=> nrel_goto: .agent_of_calculation_number_of_temporary_entities_operator4L;;
-			*);; 
-
-		-> .agent_of_calculation_number_of_temporary_entities_operator4L
-			(*
-			<- searchElStr3;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_var: _elem;;
-			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
-			-> rrel_3: rrel_fixed: rrel_scp_const: nrel_measurement;;
-
-			=> nrel_then: .agent_of_calculation_number_of_temporary_entities_operator4M;;
-			=> nrel_else: .agent_of_calculation_number_of_temporary_entities_operator4J;;
-			*);;
-
-		-> .agent_of_calculation_number_of_temporary_entities_operator4M
-			(*
-			<- varAssign;;
-
-			-> rrel_1: rrel_assign:  rrel_scp_var: _answer;;
-			-> rrel_2: rrel_fixed: rrel_scp_var: _elem;;
-			
-			=> nrel_goto: .agent_of_calculation_number_of_temporary_entities_operator6A;;
-			*);; 
-
-
-
-		-> .agent_of_calculation_number_of_temporary_entities_operator5A
-	    	(*
-			<- genEl;;
-
-			-> rrel_1: rrel_assign: rrel_node: rrel_const: rrel_scp_var: _answer;;
-			
-			=> nrel_goto: .agent_of_calculation_number_of_temporary_entities_operator5B;;
-			*);;
-
-		-> .agent_of_calculation_number_of_temporary_entities_operator5B
 			(*
 		  	<- call;;
 
@@ -351,45 +119,39 @@ scp_program -> agent_of_calculation_number_of_temporary_entities
 		  	-> rrel_2: rrel_fixed: rrel_scp_const: .agent_of_calculation_number_of_temporary_entities_operator1P_params 
 				(*
 				-> rrel_1: rrel_fixed: rrel_scp_var: _temp_entity;;
-				-> rrel_2: rrel_fixed: rrel_scp_var: _number_of_entity;;
-				-> rrel_3: rrel_fixed: rrel_scp_var: _answer;;
+				-> rrel_2: rrel_fixed: rrel_scp_var: _number_of_entities;;
+				-> rrel_3: rrel_fixed: rrel_scp_var: _answer_of_calculated_number_of_temporary_entities;;
 				*);;
-		  	-> rrel_3: rrel_assign: rrel_scp_var: _descr2;;
+		  	-> rrel_3: rrel_assign: rrel_scp_var: _descr1;;
 
-		  	=> nrel_goto: .agent_of_calculation_number_of_temporary_entities_operator5C;;
+		  	=> nrel_goto: .agent_of_calculation_number_of_temporary_entities_operator4B;;
 			*);;
 
-		-> .agent_of_calculation_number_of_temporary_entities_operator5C
+		-> .agent_of_calculation_number_of_temporary_entities_operator4B
 			(*
 		  	<- waitReturn;;
 
-		  	-> rrel_1: rrel_fixed: rrel_scp_var: _descr2;;
+		  	-> rrel_1: rrel_fixed: rrel_scp_var: _descr1;;
 
-		  	=> nrel_goto: .agent_of_calculation_number_of_temporary_entities_operator6A;;
+		  	=> nrel_goto: .agent_of_calculation_number_of_temporary_entities_operator5A;;
 			*);;
 
-
-
-
-
-		-> .agent_of_calculation_number_of_temporary_entities_operator6A
+		-> .agent_of_calculation_number_of_temporary_entities_operator5A
 			(*
-			<- eraseEl;;
+		  	<- eraseEl;;
 
-			-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _temp_set;;
-			
-			=> nrel_goto: .agent_of_calculation_number_of_temporary_entities_operator6B;;
-			*);; 
+		  	-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _counted_entities;;
 
+		  	=> nrel_goto: .agent_of_calculation_number_of_temporary_entities_operator5B;;
+			*);;
 
-
-		-> .agent_of_calculation_number_of_temporary_entities_operator6B
+		-> .agent_of_calculation_number_of_temporary_entities_operator5B
 			(*
 			<- genElStr5;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
 			-> rrel_2: rrel_assign: rrel_scp_var: rrel_const: rrel_common: _arc1;;
-			-> rrel_3: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _answer_of_calculated_number_of_temporary_entities;;
 			-> rrel_4: rrel_assign: rrel_scp_var: rrel_const: rrel_pos_const_perm: _arc2;;
 			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_answer;;
 

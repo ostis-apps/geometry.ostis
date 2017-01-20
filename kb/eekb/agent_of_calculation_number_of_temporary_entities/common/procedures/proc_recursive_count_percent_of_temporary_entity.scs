@@ -2,43 +2,296 @@ scp_program -> proc_recursive_count_percent_of_temporary_entity
 	(*
   	-> rrel_params: .proc_recursive_count_percent_of_temporary_entity_params 
 		(*
-		-> rrel_1: rrel_in: _set;;
-		-> rrel_2: rrel_in: _number_of_entity;;
-		-> rrel_3: rrel_in: _set_of_elems;;
+		-> rrel_1: rrel_in: _temp_entity;;
+		-> rrel_2: rrel_in: _number_of_entities;;
+		-> rrel_3: rrel_in: _counted_entities;;
     	*);;
 
 	-> rrel_operators: .proc_recursive_count_percent_of_temporary_entity_operator_set
     		(*	
-    		-> rrel_init: .proc_recursive_count_percent_of_temporary_entity_operator_increase_number 
+    		-> rrel_init: .proc_recursive_count_percent_of_temporary_entity_operator1A
 			(*
-	        <- contAdd;;
+			<- genEl;;
 
-	        -> rrel_1: rrel_fixed: rrel_scp_var: _number_of_entity;;
-	        -> rrel_2: rrel_fixed: rrel_scp_var: _number_of_entity;;
-			-> rrel_3: rrel_fixed: rrel_scp_const: [1];;
-	         		
-	        => nrel_goto: .proc_recursive_count_percent_of_temporary_entity_operator_finding_subset;;
+			-> rrel_1: rrel_assign: rrel_node: rrel_scp_var: _binary_relations;;
+
+			=> nrel_goto: .proc_recursive_count_percent_of_temporary_entity_operator1B;;
 			*);;
 
+    	->.proc_recursive_count_percent_of_temporary_entity_operator1B
+			(*
+			<- searchSetStr5;;
 
+			-> rrel_1: rrel_fixed: rrel_scp_var: _temp_entity;;
+			-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _elem1;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+			-> rrel_5: rrel_assign: rrel_scp_var: _relations;;
 
-    		-> .proc_recursive_count_percent_of_temporary_entity_operator_finding_subset 
+			-> rrel_set_5: rrel_assign: rrel_scp_var: _entities;;
+
+			=> nrel_then: .proc_recursive_count_percent_of_temporary_entity_operator1C;;
+			=> nrel_else: .proc_recursive_count_percent_of_temporary_entity_operator2A;;
+			*);;
+
+		-> .proc_recursive_count_percent_of_temporary_entity_operator1C
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _entities;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _elem1;;
+
+			=> nrel_then: .proc_recursive_count_percent_of_temporary_entity_operator1D;;
+			=> nrel_else: .proc_recursive_count_percent_of_temporary_entity_operator1G;;
+			*);;
+
+		-> .proc_recursive_count_percent_of_temporary_entity_operator1D
+			(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _arc1;;
+
+			=> nrel_goto: .proc_recursive_count_percent_of_temporary_entity_operator1E;;
+			*);;
+
+    	-> .proc_recursive_count_percent_of_temporary_entity_operator1E
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: taxonomy_relation;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _elem1;;
+
+			=> nrel_then: .proc_recursive_count_percent_of_temporary_entity_operator1F;;
+			=> nrel_else: .proc_recursive_count_percent_of_temporary_entity_operator1C;;
+			*);;
+
+		-> .proc_recursive_count_percent_of_temporary_entity_operator1F
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _binary_relations;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _elem1;;
+		
+			=> nrel_goto: .proc_recursive_count_percent_of_temporary_entity_operator1C;;
+			*);;
+
+		-> .proc_recursive_count_percent_of_temporary_entity_operator1G
+			(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _entities;;
+
+			=> nrel_goto: .proc_recursive_count_percent_of_temporary_entity_operator2A;;
+			*);;
+
+		-> .proc_recursive_count_percent_of_temporary_entity_operator2A
+			(*
+			<- genEl;;
+
+			-> rrel_1: rrel_assign: rrel_node: rrel_scp_var: _quasybinary_relations;;
+
+			=> nrel_goto: .proc_recursive_count_percent_of_temporary_entity_operator2B;;
+			*);;
+
+		-> .proc_recursive_count_percent_of_temporary_entity_operator2B
+			(*
+			<- searchSetStr5;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: _elem1;;
+			-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _temp_entity;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+			-> rrel_5: rrel_assign: rrel_scp_var: _relations;;
+
+			-> rrel_set_5: rrel_assign: rrel_scp_var: _entities;;
+
+			=> nrel_then: .proc_recursive_count_percent_of_temporary_entity_operator2C;;
+			=> nrel_else: .proc_recursive_count_percent_of_temporary_entity_operator3A;;
+			*);;
+
+		-> .proc_recursive_count_percent_of_temporary_entity_operator2C
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _entities;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _elem1;;
+
+			=> nrel_then: .proc_recursive_count_percent_of_temporary_entity_operator2D;;
+			=> nrel_else: .proc_recursive_count_percent_of_temporary_entity_operator2H;;
+			*);;
+
+		-> .proc_recursive_count_percent_of_temporary_entity_operator2D
+			(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _arc1;;
+
+			=> nrel_goto: .proc_recursive_count_percent_of_temporary_entity_operator2E;;
+			*);;
+
+    	-> .proc_recursive_count_percent_of_temporary_entity_operator2E
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: taxonomy_relation;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _elem1;;
+
+			=> nrel_then: .proc_recursive_count_percent_of_temporary_entity_operator2F;;
+			=> nrel_else: .proc_recursive_count_percent_of_temporary_entity_operator2C;;
+			*);;
+
+    	-> .proc_recursive_count_percent_of_temporary_entity_operator2F
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: quasybinary_relation;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _elem1;;
+
+			=> nrel_then: .proc_recursive_count_percent_of_temporary_entity_operator2G;;
+			=> nrel_else: .proc_recursive_count_percent_of_temporary_entity_operator2C;;
+			*);;
+
+		-> .proc_recursive_count_percent_of_temporary_entity_operator2G
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _quasybinary_relations;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _elem1;;
+		
+			=> nrel_goto: .proc_recursive_count_percent_of_temporary_entity_operator2C;;
+			*);;
+
+		-> .proc_recursive_count_percent_of_temporary_entity_operator2H
+			(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _entities;;
+
+			=> nrel_goto: .proc_recursive_count_percent_of_temporary_entity_operator3A;;
+			*);;
+
+		-> .proc_recursive_count_percent_of_temporary_entity_operator3A
+			(*
+			<- genEl;;
+
+			-> rrel_1: rrel_assign: rrel_node: rrel_scp_var: _classes;;
+
+			=> nrel_goto: .proc_recursive_count_percent_of_temporary_entity_operator3B;;
+			*);;
+
+		-> .proc_recursive_count_percent_of_temporary_entity_operator3B
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _binary_relations;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _elem1;;
+
+			=> nrel_then: .proc_recursive_count_percent_of_temporary_entity_operator3C;;
+			=> nrel_else: .proc_recursive_count_percent_of_temporary_entity_operator4A;;
+			*);;
+
+		-> .proc_recursive_count_percent_of_temporary_entity_operator3C
+			(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _arc1;;
+
+			=> nrel_goto: .proc_recursive_count_percent_of_temporary_entity_operator3D;;
+			*);;
+
+		-> .proc_recursive_count_percent_of_temporary_entity_operator3D
+			(*
+			<- searchSetStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _temp_entity;;
+			-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _elem2;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_var: _elem1;;
+
+			-> rrel_set_3: rrel_fixed: rrel_scp_var: _classes;;
+
+			=> nrel_goto: .proc_recursive_count_percent_of_temporary_entity_operator3B;; 
+			*);;
+
+		-> .proc_recursive_count_percent_of_temporary_entity_operator4A
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _quasybinary_relations;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _elem1;;
+
+			=> nrel_then: .proc_recursive_count_percent_of_temporary_entity_operator4B;;
+			=> nrel_else: .proc_recursive_count_percent_of_temporary_entity_operator5A;;
+			*);;
+
+		-> .proc_recursive_count_percent_of_temporary_entity_operator4B
+			(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _arc1;;
+
+			=> nrel_goto: .proc_recursive_count_percent_of_temporary_entity_operator4C;;
+			*);;
+
+		-> .proc_recursive_count_percent_of_temporary_entity_operator4C
+			(*
+			<- searchElStr5;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: _elem2;;
+			-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _temp_entity;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_var: _elem1;;
+
+			=> nrel_goto: .proc_recursive_count_percent_of_temporary_entity_operator4D;; 
+			*);;
+
+		-> .proc_recursive_count_percent_of_temporary_entity_operator4D
 			(*
 			<- searchSetStr3;;
 
-			-> rrel_1: rrel_fixed: rrel_scp_var: _set;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _elem2;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _elem3;;
+
+			-> rrel_set_3: rrel_fixed: rrel_scp_var: _classes;;
+
+			=> nrel_goto: .proc_recursive_count_percent_of_temporary_entity_operator4A;;
+			*);;
+
+		-> .proc_recursive_count_percent_of_temporary_entity_operator5A
+			(*
+			<- genEl;;
+
+			-> rrel_1: rrel_assign: rrel_node: rrel_scp_var: _all_elements;; 
+
+			=> nrel_goto: .proc_recursive_count_percent_of_temporary_entity_operator5B;;
+			*);;		
+
+		-> .proc_recursive_count_percent_of_temporary_entity_operator5B
+			(*
+			<- searchSetStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _temp_entity;;
 			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
 			-> rrel_3: rrel_assign: rrel_scp_var: _element;;
 
-			-> rrel_set_3: rrel_assign: rrel_scp_var: _all_elements;;
+			-> rrel_set_3: rrel_fixed: rrel_scp_var: _all_elements;;
 
-			=> nrel_then: .proc_recursive_count_percent_of_temporary_entity_operator_take_entity_from_subset;;
-			=> nrel_else: .proc_of_cardinality_calculation_operator_return;;
+			=> nrel_goto: .proc_recursive_count_percent_of_temporary_entity_operator5C;;
 			*);;
 
-
-
-		-> .proc_recursive_count_percent_of_temporary_entity_operator_take_entity_from_subset
+		-> .proc_recursive_count_percent_of_temporary_entity_operator5C
 			(*
 			<- searchElStr3;;
 
@@ -46,84 +299,118 @@ scp_program -> proc_recursive_count_percent_of_temporary_entity
 			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
 			-> rrel_3: rrel_assign: rrel_scp_var: _element;;
 
-			=> nrel_then: .proc_recursive_count_percent_of_temporary_entity_operator_checking_in_visited;;
-			=> nrel_else: .proc_recursive_count_percent_of_temporary_entity_operator_clean_garbage;;
+			=> nrel_then: .proc_recursive_count_percent_of_temporary_entity_operator5D;;
+			=> nrel_else: .proc_recursive_count_percent_of_temporary_entity_operator5H;;
 			*);;
 
-		-> .proc_recursive_count_percent_of_temporary_entity_operator_checking_in_visited
-			(*
-			<- searchElStr3;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_var: _set_of_elems;;
-			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _ar;;
-			-> rrel_3: rrel_fixed: rrel_scp_var: _element;;
-
-			=> nrel_then: .proc_of_cardinality_calculation_operator_return;;
-			=> nrel_else: .proc_recursive_count_percent_of_temporary_entity_operator_adding_to_visited;;
-			*);;
-
-		-> .proc_recursive_count_percent_of_temporary_entity_operator_adding_to_visited
-			(*
-			<- genElStr3;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_var: _set_of_elems;;
-			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _ar;;
-			-> rrel_3: rrel_fixed: rrel_scp_var: _element;;
-
-			=> nrel_goto: .proc_recursive_count_percent_of_temporary_entity_operator_loop_arc_erase;;
-			*);;
-
-
-
-
-		-> .proc_recursive_count_percent_of_temporary_entity_operator_loop_arc_erase
+		-> .proc_recursive_count_percent_of_temporary_entity_operator5D
 			(*
 			<- eraseEl;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _arc1;;
 
-			=> nrel_goto: .proc_recursive_count_percent_of_temporary_entity_operator_recursive_call;;
+			=> nrel_goto: .proc_recursive_count_percent_of_temporary_entity_operator5E;;
 			*);;
 
-
-
-		-> .proc_recursive_count_percent_of_temporary_entity_operator_recursive_call
+		-> .proc_recursive_count_percent_of_temporary_entity_operator5E
 			(*
-			<- call;;
+			<- searchElStr3;;
 
-			-> rrel_1: rrel_fixed: rrel_scp_const: proc_recursive_count_percent_of_temporary_entity;;
-			-> rrel_2: rrel_fixed: rrel_scp_const: .proc_recursive_count_percent_of_temporary_entity_operator_recursive_call_params
-				(*
-				-> rrel_1: rrel_fixed: rrel_scp_var: _element;;
-				-> rrel_2: rrel_fixed: rrel_scp_var: _number_of_entity;;
-				-> rrel_3: rrel_fixed: rrel_scp_var: _set_of_elems;;
-				*);;
-			-> rrel_3: rrel_assign: rrel_scp_var: _descr;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _counted_entities;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _element;;
 
-			=> nrel_goto: .proc_recursive_count_percent_of_temporary_entity_operator_wait_return;;
-			*);;	
+			=> nrel_then: .proc_recursive_count_percent_of_temporary_entity_operator5C;;
+			=> nrel_else: .proc_recursive_count_percent_of_temporary_entity_operator5F;;
+			*);;
 
-		-> .proc_recursive_count_percent_of_temporary_entity_operator_wait_return
+		-> .proc_recursive_count_percent_of_temporary_entity_operator5F
 			(*
-			<- waitReturn;;
+			<- genElStr3;;
 
-			-> rrel_1: rrel_fixed: rrel_scp_var: _descr;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _counted_entities;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _element;;
+		
+			=> nrel_goto: .proc_recursive_count_percent_of_temporary_entity_operator5G;;
+			*);;
 
-			=> nrel_goto: .proc_recursive_count_percent_of_temporary_entity_operator_take_entity_from_subset;;
-			*);;	
+		-> .proc_recursive_count_percent_of_temporary_entity_operator5G
+			(*
+	        <- contAdd;;
 
+        	-> rrel_1: rrel_fixed: rrel_scp_var: _number_of_entities;;
+	        -> rrel_2: rrel_fixed: rrel_scp_var: _number_of_entities;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: [1];;
+	         		
+	        => nrel_goto: .proc_recursive_count_percent_of_temporary_entity_operator5C;;
+			*);;
 
-
-		-> .proc_recursive_count_percent_of_temporary_entity_operator_clean_garbage
+		-> .proc_recursive_count_percent_of_temporary_entity_operator5H
 			(*
 			<- eraseEl;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _all_elements;;
 
-			=> nrel_goto: .proc_of_cardinality_calculation_operator_return;;
+			=> nrel_goto: .proc_recursive_count_percent_of_temporary_entity_operator6A;;
 			*);;	
 
-		-> .proc_of_cardinality_calculation_operator_return 
+		-> .proc_recursive_count_percent_of_temporary_entity_operator6A
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _classes;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _element;;
+
+			=> nrel_then: .proc_recursive_count_percent_of_temporary_entity_operator6B;;
+			=> nrel_else: .proc_recursive_count_percent_of_temporary_entity_operator7A;;
+			*);;
+
+		-> .proc_recursive_count_percent_of_temporary_entity_operator6B
+			(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _arc1;;
+
+			=> nrel_goto: .proc_recursive_count_percent_of_temporary_entity_operator6C;;
+			*);;
+
+		-> .proc_recursive_count_percent_of_temporary_entity_operator6C
+			(*
+			<- call;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: proc_recursive_count_percent_of_temporary_entity;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: .proc_recursive_count_percent_of_temporary_entity_operator6C_params
+				(*
+				-> rrel_1: rrel_fixed: rrel_scp_var: _element;;
+				-> rrel_2: rrel_fixed: rrel_scp_var: _number_of_entities;;
+				-> rrel_3: rrel_fixed: rrel_scp_var: _counted_entities;;
+				*);;
+			-> rrel_3: rrel_assign: rrel_scp_var: _descr;;
+
+			=> nrel_goto: .proc_recursive_count_percent_of_temporary_entity_operator6D;;
+			*);;	
+
+		-> .proc_recursive_count_percent_of_temporary_entity_operator6D
+			(*
+			<- waitReturn;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _descr;;
+
+			=> nrel_goto: .proc_recursive_count_percent_of_temporary_entity_operator6A;;
+			*);;	
+
+		-> .proc_recursive_count_percent_of_temporary_entity_operator7A
+			(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _classes;;
+
+			=> nrel_goto: .proc_recursive_count_percent_of_temporary_entity_operator_return;;
+			*);;
+
+		-> .proc_recursive_count_percent_of_temporary_entity_operator_return
 			(*
 			<- return;;
 			*);;

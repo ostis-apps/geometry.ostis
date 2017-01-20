@@ -1,8 +1,8 @@
 lib_component_agent_of_calculation_number_of_temporary_entities
 => nrel_main_idtf:
-	[Компонент библиотеки. Sc-агент подсчета процента временных сущностей]
+	[Компонент библиотеки. sc-агент подсчета процента временных сущностей]
 	(* <- lang_ru;; *);
-	[Library component. Sc-agent of calculation number of temporary entities]
+	[Library component. sc-agent of calculation number of temporary entities]
 	(* <- lang_en;; *);
 
 <- library_of_platform_independent_reusable_components; 
@@ -27,3 +27,10 @@ lib_component_agent_of_calculation_number_of_temporary_entities
 		*);;
 	*);;
 
+action_to_calculate_median_of_ontology_depths
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[действие. вычислить количество временных сущностей]
+ 	(* <- lang_ru;; *);
+ 	[action. calculate number of temporary entities]
+ 	(* <- lang_en;; *);; 
