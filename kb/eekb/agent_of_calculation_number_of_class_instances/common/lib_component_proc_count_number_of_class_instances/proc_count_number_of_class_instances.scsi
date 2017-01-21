@@ -5,7 +5,7 @@ scp_program -> proc_count_number_of_class_instances
 		-> rrel_1: rrel_in: _some_entity;;
 		-> rrel_2: rrel_in: _number_of_entities;;
 		-> rrel_3: rrel_in: _counted_entities;;
-    	*);;
+    		*);;
 
 	-> rrel_operators: .proc_count_number_of_class_instances_operator_set
     		(*	
@@ -24,7 +24,7 @@ scp_program -> proc_count_number_of_class_instances
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _some_entity;;
 			-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
-			-> rrel_3: rrel_assign: rrel_scp_var: _relation;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _class;;
 			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
 			-> rrel_5: rrel_assign: rrel_scp_var: _relation;;
 
@@ -100,7 +100,7 @@ scp_program -> proc_count_number_of_class_instances
 			(*
 			<- searchSetStr5;;
 
-			-> rrel_1: rrel_assign: rrel_scp_var: _relation;;
+			-> rrel_1: rrel_assign: rrel_scp_var: _element;;
 			-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
 			-> rrel_3: rrel_fixed: rrel_scp_var: _some_entity;;
 			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
@@ -213,7 +213,7 @@ scp_program -> proc_count_number_of_class_instances
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _some_entity;;
 			-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
-			-> rrel_3: rrel_assign: rrel_scp_var: _elem2;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _class;;
 			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
 			-> rrel_5: rrel_fixed: rrel_scp_var: _relation;;
 
@@ -247,7 +247,7 @@ scp_program -> proc_count_number_of_class_instances
 			(*
 			<- searchElStr5;;
 
-			-> rrel_1: rrel_assign: rrel_scp_var: _elem2;;
+			-> rrel_1: rrel_assign: rrel_scp_var: _ligament;;
 			-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
 			-> rrel_3: rrel_fixed: rrel_scp_var: _some_entity;;
 			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
@@ -260,9 +260,9 @@ scp_program -> proc_count_number_of_class_instances
 			(*
 			<- searchSetStr3;;
 
-			-> rrel_1: rrel_fixed: rrel_scp_var: _elem2;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _ligament;;
 			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
-			-> rrel_3: rrel_assign: rrel_scp_var: _elem3;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _class;;
 
 			-> rrel_set_3: rrel_fixed: rrel_scp_var: _classes;;
 
@@ -337,10 +337,10 @@ scp_program -> proc_count_number_of_class_instances
 
 		-> .proc_count_number_of_class_instances_operator5G
 			(*
-	        	<- contAdd;;
+	       		 <- contAdd;;
 
         		-> rrel_1: rrel_fixed: rrel_scp_var: _number_of_entities;;
-	        	-> rrel_2: rrel_fixed: rrel_scp_var: _number_of_entities;;
+	       		-> rrel_2: rrel_fixed: rrel_scp_var: _number_of_entities;;
 			-> rrel_3: rrel_fixed: rrel_scp_const: [1];;
 	         		
 	        	=> nrel_goto: .proc_count_number_of_class_instances_operator5C;;
