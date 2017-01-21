@@ -18,7 +18,7 @@ scp_program -> proc_count_number_of_class_instances
 			=> nrel_goto: .proc_count_number_of_class_instances_operator1B;;
 			*);;
 
-    	->.proc_count_number_of_class_instances_operator1B
+    		->.proc_count_number_of_class_instances_operator1B
 			(*
 			<- searchSetStr5;;
 
@@ -55,7 +55,7 @@ scp_program -> proc_count_number_of_class_instances
 			=> nrel_goto: .proc_count_number_of_class_instances_operator1E;;
 			*);;
 
-    	-> .proc_count_number_of_class_instances_operator1E
+    		-> .proc_count_number_of_class_instances_operator1E
 			(*
 			<- searchElStr3;;
 
@@ -133,7 +133,7 @@ scp_program -> proc_count_number_of_class_instances
 			=> nrel_goto: .proc_count_number_of_class_instances_operator2E;;
 			*);;
 
-    	-> .proc_count_number_of_class_instances_operator2E
+    		-> .proc_count_number_of_class_instances_operator2E
 			(*
 			<- searchElStr3;;
 
@@ -145,7 +145,7 @@ scp_program -> proc_count_number_of_class_instances
 			=> nrel_else: .proc_count_number_of_class_instances_operator2C;;
 			*);;
 
-    	-> .proc_count_number_of_class_instances_operator2F
+    		-> .proc_count_number_of_class_instances_operator2F
 			(*
 			<- searchElStr3;;
 
@@ -337,13 +337,13 @@ scp_program -> proc_count_number_of_class_instances
 
 		-> .proc_count_number_of_class_instances_operator5G
 			(*
-	        <- contAdd;;
+	        	<- contAdd;;
 
-        	-> rrel_1: rrel_fixed: rrel_scp_var: _number_of_entities;;
-	        -> rrel_2: rrel_fixed: rrel_scp_var: _number_of_entities;;
+        		-> rrel_1: rrel_fixed: rrel_scp_var: _number_of_entities;;
+	        	-> rrel_2: rrel_fixed: rrel_scp_var: _number_of_entities;;
 			-> rrel_3: rrel_fixed: rrel_scp_const: [1];;
 	         		
-	        => nrel_goto: .proc_count_number_of_class_instances_operator5C;;
+	        	=> nrel_goto: .proc_count_number_of_class_instances_operator5C;;
 			*);;
 
 		-> .proc_count_number_of_class_instances_operator5H
