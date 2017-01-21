@@ -1,8 +1,8 @@
 lib_component_agent_of_expert_rejection_of_verified_proposal
 => nrel_main_idtf:
-	[Компонент библиотеки. Sc-агент отклонения верифицируемого предложения экспертом]
+	[Компонент библиотеки. sc-агент отклонения верифицируемого предложения экспертом]
 	(* <- lang_ru;; *);
-	[Library component. Sc-agent of expert rejection of verified proposal]
+	[Library component. sc-agent of expert rejection of verified proposal]
 	(* <- lang_en;; *);
 
 <- library_of_platform_independent_reusable_components; 
@@ -22,13 +22,13 @@ lib_component_agent_of_expert_rejection_of_verified_proposal
 		...
 		(*
 		-> rrel_example:
-			"file://htmls/agent_of_expert_rejection_of_verified_proposal.html"
+			"file://htmls/Agent_expert_rejection_of_proposal_for_verified_proposals.html"
 				(* <- lang_ru;; *);; 
 		*);;
 	*);;
 
 
-action_expert_agent_of_expert_rejection_of_verified_proposal
+action_of_expert_rejection_of_verified_proposal
 <- sc_node_not_relation;
 
  => nrel_main_idtf:

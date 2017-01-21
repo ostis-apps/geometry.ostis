@@ -15,7 +15,7 @@ sc_agent_of_expert_rejection_of_verified_proposal
 	{
 	question_initiated;
 	question;
-	action_expert_agent_of_expert_rejection_of_verified_proposal
+	action_of_expert_rejection_of_verified_proposal
 	};
 
 => nrel_inclusion: 
@@ -33,7 +33,7 @@ sc_agent_of_expert_rejection_of_verified_proposal
 
 ..sc_agent_of_expert_rejection_of_verified_proposal_condition
 = [*
-	action_expert_agent_of_expert_rejection_of_verified_proposal _-> .._question;;
+	action_of_expert_rejection_of_verified_proposal _-> .._question;;
 	question_initiated _-> .._question;;
 	question _-> .._question;;
 	.._question _-> .._parameter;;
@@ -41,7 +41,7 @@ sc_agent_of_expert_rejection_of_verified_proposal
 
 ..sc_agent_of_expert_rejection_of_verified_proposal_result
 = [*
-	action_expert_agent_of_expert_rejection_of_verified_proposal _-> .._question;;
+	action_of_expert_rejection_of_verified_proposal _-> .._question;;
 	question_finished _-> .._question;;
 	question _-> .._question;;
 	.._question _=> nrel_answer:: .._answer;;

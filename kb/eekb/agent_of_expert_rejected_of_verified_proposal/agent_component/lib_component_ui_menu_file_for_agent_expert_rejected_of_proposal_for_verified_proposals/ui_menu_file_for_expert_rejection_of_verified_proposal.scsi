@@ -8,11 +8,11 @@ ui_menu_file_for_expert_rejection_of_verified_proposal => nrel_main_idtf:
 
 ui_menu_file_for_expert_rejection_of_verified_proposal => ui_nrel_command_template:
 	[*
-		action_expert_agent_of_expert_rejection_of_verified_proposal_-> ._action_expert_agent_of_expert_rejection_of_verified_proposal_instance
+		action_of_expert_rejection_of_verified_proposal_-> ._action_of_expert_rejection_of_verified_proposal_instance
 			(*
 			_-> ui_arg_1;;				
 			*);;
-		._action_expert_agent_of_expert_rejection_of_verified_proposal_instance _<- question;;
+		._action_of_expert_rejection_of_verified_proposal_instance _<- question;;
 	*];;
 
 ui_menu_file_for_expert_rejection_of_verified_proposal => ui_nrel_command_lang_template: 
