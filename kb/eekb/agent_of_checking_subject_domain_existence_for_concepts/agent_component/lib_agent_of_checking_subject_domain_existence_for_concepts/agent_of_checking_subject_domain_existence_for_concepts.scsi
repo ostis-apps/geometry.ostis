@@ -50,38 +50,15 @@ scp_program -> agent_of_checking_subject_domain_existence_for_concepts
 			*);;
 
 		-> .agent_of_checking_subject_domain_existence_for_concepts_operator1D
-			(*
-		  	<- searchSetStr3;;
-
-		  	-> rrel_1: rrel_fixed: rrel_scp_var: _structure;;
-		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
-		  	-> rrel_3: rrel_assign: rrel_scp_var: rrel_norole_relation: _element;;
-
-		  	-> rrel_set_3: rrel_assign: rrel_scp_var: _set_of_elements;;
-
-		  	=> nrel_then: .agent_of_checking_subject_domain_existence_for_concepts_operator1E1;;
-		  	=> nrel_else: .agent_of_checking_subject_domain_existence_for_concepts_operator1H1;;
-			*);;
-
-		-> .agent_of_checking_subject_domain_existence_for_concepts_operator1E1
         		(*
 		 	<- genEl;;
 
 		 	-> rrel_1: rrel_assign: rrel_const: rrel_node: rrel_scp_var: _answer_of_finding_concepts_without_subject_domain;;
 
-		 	=> nrel_goto: .agent_of_checking_subject_domain_existence_for_concepts_operator1E2;;
+		 	=> nrel_goto: .agent_of_checking_subject_domain_existence_for_concepts_operator1E;;
 		 	*);;
 
-		-> .agent_of_checking_subject_domain_existence_for_concepts_operator1E2
-        		(*
-		 	<- genEl;;
-
-		 	-> rrel_1: rrel_assign: rrel_const: rrel_node: rrel_scp_var: _temp_answer;;
-
-		 	=> nrel_goto: .agent_of_checking_subject_domain_existence_for_concepts_operator1E3;;
-		 	*);;
-
-		-> .agent_of_checking_subject_domain_existence_for_concepts_operator1E3
+		-> .agent_of_checking_subject_domain_existence_for_concepts_operator1E
         		(*
 		 	<- genEl;;
 
@@ -92,37 +69,29 @@ scp_program -> agent_of_checking_subject_domain_existence_for_concepts
 
 		-> .agent_of_checking_subject_domain_existence_for_concepts_operator1F1
 			(*
-			<- call;;
-			-> rrel_1: rrel_fixed: rrel_scp_const: proc_of_checking_set_of_semantic_neighbourhood;;
-		  	-> rrel_2: rrel_fixed: rrel_scp_const: .agent_of_checking_subject_domain_existence_for_concepts_operator1F1_params 
-				(*
-				-> rrel_1: rrel_fixed: rrel_scp_var: _set_of_elements;;
-				-> rrel_2: rrel_fixed: rrel_scp_var: _temp_answer;;
-				*);;
-		  	-> rrel_3: rrel_assign: rrel_scp_var: _descr1;;
+		  	<- searchSetStr3;;
 
-		  	=> nrel_goto: .agent_of_checking_subject_domain_existence_for_concepts_operator1F2;;
+		  	-> rrel_1: rrel_fixed: rrel_scp_var: _structure;;
+		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+		  	-> rrel_3: rrel_assign: rrel_scp_var: rrel_norole_relation: _element;;
 
+		  	-> rrel_set_3: rrel_assign: rrel_scp_var: _set_of_elements;;
+
+		  	=> nrel_then: .agent_of_checking_subject_domain_existence_for_concepts_operator1E2;;
+		  	=> nrel_else: .agent_of_checking_subject_domain_existence_for_concepts_operator1H1;;
 			*);;
 
-		-> .agent_of_checking_subject_domain_existence_for_concepts_operator1F2
-			(*
-			<- waitReturn;;
-		  	-> rrel_1: rrel_fixed: rrel_scp_var: _descr1;;
-
-		  	=> nrel_goto: .agent_of_checking_subject_domain_existence_for_concepts_operator1G1;;
-			*);;
 
 		-> .agent_of_checking_subject_domain_existence_for_concepts_operator1G1
 			(*
 		  	<- searchElStr3;;
 
-		  	-> rrel_1: rrel_fixed: rrel_scp_var: _temp_answer;;
+		  	-> rrel_1: rrel_fixed: rrel_scp_var: _set_of_elements;;
 		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
-		  	-> rrel_3: rrel_assign: rrel_scp_var: rrel_norole_relation: _element;;
+		  	-> rrel_3: rrel_assign: rrel_scp_var: rrel_node: _element;;
 		  	
 		  	=> nrel_then: .agent_of_checking_subject_domain_existence_for_concepts_operator1G2;;
-		  	=> nrel_else: .agent_of_checking_subject_domain_existence_for_concepts_operator1H0;;
+		  	=> nrel_else: .agent_of_checking_subject_domain_existence_for_concepts_operator1H1;;
 			*);;
 
 		-> .agent_of_checking_subject_domain_existence_for_concepts_operator1G2
@@ -136,55 +105,27 @@ scp_program -> agent_of_checking_subject_domain_existence_for_concepts
 
 		-> .agent_of_checking_subject_domain_existence_for_concepts_operator1G3
 			(*
-			<- genElStr3;;
+			<- searchElStr5;;
 
-			-> rrel_1: rrel_fixed: rrel_scp_var: _struct_of_answer;;
-			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: rrel_const: _arc1;;
-			-> rrel_3: rrel_fixed: rrel_scp_var: rrel_node: _element;;
+		  	-> rrel_1: rrel_assign: rrel_scp_var: _subject_domain;;
+		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+		  	-> rrel_3: rrel_fixed: rrel_scp_var: rrel_node: _element;;
+		  	-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+		  	-> rrel_5: rrel_fixed: rrel_scp_const: rrel_explored_relation;;
 
-			=> nrel_goto: .agent_of_checking_subject_domain_existence_for_concepts_operator1G4;;
+			=> nrel_then: .agent_of_checking_subject_domain_existence_for_concepts_operator1G1;;
+			=> nrel_else: .agent_of_checking_subject_domain_existence_for_concepts_operator1G4;;
 			*);;
 
 		-> .agent_of_checking_subject_domain_existence_for_concepts_operator1G4
-			(*
-			<- searchSetStr3;;
+        		(*
+		 	<- genElStr3;;
 
-		  	-> rrel_1: rrel_fixed: rrel_scp_var: _struct_of_answer;;
-		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
-		  	-> rrel_3: rrel_fixed: rrel_scp_var: rrel_node: _element;;
+		 	-> rrel_1: rrel_fixed: rrel_scp_var: _struct_of_answer;;
+		 	-> rrel_2: rrel_assign: rrel_scp_var: rrel_const: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: _element;;
 
-		  	-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer_of_finding_concepts_without_subject_domain;;
-
-			=> nrel_goto: .agent_of_checking_subject_domain_existence_for_concepts_operator1G5;;
-			*);;
-
-		-> .agent_of_checking_subject_domain_existence_for_concepts_operator1G5
-			(*
-			<- genElStr3;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_finding_concepts_without_subject_domain;;
-			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: rrel_const: _arc2;;
-			-> rrel_3: rrel_fixed: rrel_scp_var: rrel_node: _element;;
-
-			=> nrel_goto: .agent_of_checking_subject_domain_existence_for_concepts_operator1G1;;
-			*);;
-
-		-> .agent_of_checking_subject_domain_existence_for_concepts_operator1H0
-			(*
-		  	<- eraseEl;;
-
-		  	-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _temp_answer;;
-
-		  	=> nrel_goto: .agent_of_checking_subject_domain_existence_for_concepts_operator1H01;;
-			*);;
-
-		-> .agent_of_checking_subject_domain_existence_for_concepts_operator1H01
-        	(*
-		 	<- genEl;;
-
-		 	-> rrel_1: rrel_assign: rrel_const: rrel_node: rrel_scp_var: _temp_answer;;
-
-		 	=> nrel_goto: .agent_of_checking_subject_domain_existence_for_concepts_operator1H1;;
+		 	=> nrel_goto: .agent_of_checking_subject_domain_existence_for_concepts_operator1G1;;
 		 	*);;
 
 		-> .agent_of_checking_subject_domain_existence_for_concepts_operator1H1
@@ -198,103 +139,41 @@ scp_program -> agent_of_checking_subject_domain_existence_for_concepts
 		  	-> rrel_set_3: rrel_assign: rrel_scp_var: _set_of_elements;;
 
 		  	=> nrel_then: .agent_of_checking_subject_domain_existence_for_concepts_operator1H2;;
-		  	=> nrel_else: .agent_of_checking_subject_domain_existence_for_concepts_operator1J1;;
+		  	=> nrel_else: .agent_of_checking_subject_domain_existence_for_concepts_operator1J1;; 
 			*);;
 
 		-> .agent_of_checking_subject_domain_existence_for_concepts_operator1H2
-			(*
-			<- call;;
-			-> rrel_1: rrel_fixed: rrel_scp_const: proc_of_checking_set_of_semantic_neighbourhood;;
-		  	-> rrel_2: rrel_fixed: rrel_scp_const: .agent_of_checking_subject_domain_existence_for_concepts_operator1H2_params 
-				(*
-				-> rrel_1: rrel_fixed: rrel_scp_var: _set_of_elements;;
-				-> rrel_2: rrel_fixed: rrel_scp_var: _temp_answer;;
-				*);;
-		  	-> rrel_3: rrel_assign: rrel_scp_var: _descr2;;
-
-		  	=> nrel_goto: .agent_of_checking_subject_domain_existence_for_concepts_operator1H3;;
-			*);;
-
-		-> .agent_of_checking_subject_domain_existence_for_concepts_operator1H3
-			(*
-			<- waitReturn;;
-		  	-> rrel_1: rrel_fixed: rrel_scp_var: _descr2;;
-
-		  	=> nrel_goto: .agent_of_checking_subject_domain_existence_for_concepts_operator1I1;;
-			*);;
-
-		-> .agent_of_checking_subject_domain_existence_for_concepts_operator1I1
-			(*
-		  	<- searchElStr3;;
-
-		  	-> rrel_1: rrel_fixed: rrel_scp_var: _temp_answer;;
-		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
-		  	-> rrel_3: rrel_assign: rrel_scp_var: rrel_role_relation: _element;;
-		  	
-		  	=> nrel_then: .agent_of_checking_subject_domain_existence_for_concepts_operator1I2;;
-		  	=> nrel_else: .agent_of_checking_subject_domain_existence_for_concepts_operator1J0;;
-			*);;
-
-		-> .agent_of_checking_subject_domain_existence_for_concepts_operator1I2
 			(*
 			<- eraseEl;;
 	
 			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_pos_const_perm: rrel_erase: _arc1;;
 
-			=> nrel_goto: .agent_of_checking_subject_domain_existence_for_concepts_operator1I3;;
+			=> nrel_goto: .agent_of_checking_subject_domain_existence_for_concepts_operator1H3;;
 			*);;
 
-		-> .agent_of_checking_subject_domain_existence_for_concepts_operator1I3
+		-> .agent_of_checking_subject_domain_existence_for_concepts_operator1H3
 			(*
-			<- genElStr3;;
+			<- searchElStr5;;
 
-			-> rrel_1: rrel_fixed: rrel_scp_var: _struct_of_answer;;
-			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: rrel_const: _arc1;;
-			-> rrel_3: rrel_fixed: rrel_scp_var: rrel_node: _element;;
-
-			=> nrel_goto: .agent_of_checking_subject_domain_existence_for_concepts_operator1I4;;
-			*);;
-
-		-> .agent_of_checking_subject_domain_existence_for_concepts_operator1I4
-			(*
-			<- searchSetStr3;;
-
-		  	-> rrel_1: rrel_fixed: rrel_scp_var: _struct_of_answer;;
+		  	-> rrel_1: rrel_assign: rrel_scp_var: _subject_domain;;
 		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
 		  	-> rrel_3: rrel_fixed: rrel_scp_var: rrel_node: _element;;
+		  	-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+		  	-> rrel_5: rrel_fixed: rrel_scp_const: rrel_explored_relation;;
 
-		  	-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer_of_finding_concepts_without_subject_domain;;
-
-			=> nrel_goto: .agent_of_checking_subject_domain_existence_for_concepts_operator1I5;;
+			=> nrel_then: .agent_of_checking_subject_domain_existence_for_concepts_operator1H1;;
+			=> nrel_else: .agent_of_checking_subject_domain_existence_for_concepts_operator1H4;;
 			*);;
 
-		-> .agent_of_checking_subject_domain_existence_for_concepts_operator1I5
-			(*
-			<- genElStr3;;
+		-> .agent_of_checking_subject_domain_existence_for_concepts_operator1H4
+        		(*
+		 	<- genElStr3;;
 
-			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_finding_concepts_without_subject_domain;;
-			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: rrel_const: _arc2;;
-			-> rrel_3: rrel_fixed: rrel_scp_var: rrel_node: _element;;
+		 	-> rrel_1: rrel_fixed: rrel_scp_var: _struct_of_answer;;
+		 	-> rrel_2: rrel_assign: rrel_scp_var: rrel_const: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: _element;;
 
-			=> nrel_goto: .agent_of_checking_subject_domain_existence_for_concepts_operator1I1;;
-			*);;
-
-		-> .agent_of_checking_subject_domain_existence_for_concepts_operator1J0
-			(*
-		  	<- eraseEl;;
-
-		  	-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _temp_answer;;
-
-		  	=> nrel_goto: .agent_of_checking_subject_domain_existence_for_concepts_operator1J01;;
-			*);;
-
-		-> .agent_of_checking_subject_domain_existence_for_concepts_operator1J01
-        	(*
-		 	<- genEl;;
-
-		 	-> rrel_1: rrel_assign: rrel_const: rrel_node: rrel_scp_var: _temp_answer;;
-
-		 	=> nrel_goto: .agent_of_checking_subject_domain_existence_for_concepts_operator1J1;;
+		 	=> nrel_goto: .agent_of_checking_subject_domain_existence_for_concepts_operator1H1;;
 		 	*);;
 
 		-> .agent_of_checking_subject_domain_existence_for_concepts_operator1J1
@@ -313,123 +192,51 @@ scp_program -> agent_of_checking_subject_domain_existence_for_concepts
 
 		-> .agent_of_checking_subject_domain_existence_for_concepts_operator1J2
 			(*
-			<- call;;
-			-> rrel_1: rrel_fixed: rrel_scp_const: proc_of_checking_set_of_semantic_neighbourhood;;
-		  	-> rrel_2: rrel_fixed: rrel_scp_const: .agent_of_checking_subject_domain_existence_for_concepts_operator1J2_params 
-				(*
-				-> rrel_1: rrel_fixed: rrel_scp_var: _set_of_elements;;
-				-> rrel_2: rrel_fixed: rrel_scp_var: _temp_answer;;
-				*);;
-		  	-> rrel_3: rrel_assign: rrel_scp_var: _descr3;;
-
-		  	=> nrel_goto: .agent_of_checking_subject_domain_existence_for_concepts_operator1J3;;
-			*);;
-
-		-> .agent_of_checking_subject_domain_existence_for_concepts_operator1J3
-			(*
-			<- waitReturn;;
-		  	-> rrel_1: rrel_fixed: rrel_scp_var: _descr3;;
-
-		  	=> nrel_goto: .agent_of_checking_subject_domain_existence_for_concepts_operator1K1;;
-			*);;
-
-		-> .agent_of_checking_subject_domain_existence_for_concepts_operator1K1
-			(*
-		  	<- searchElStr3;;
-
-		  	-> rrel_1: rrel_fixed: rrel_scp_var: _temp_answer;;
-		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
-		  	-> rrel_3: rrel_assign: rrel_scp_var: rrel_not_relation: _element;;
-		  	
-		  	=> nrel_then: .agent_of_checking_subject_domain_existence_for_concepts_operator1K2;;
-		  	=> nrel_else: .agent_of_checking_subject_domain_existence_for_concepts_operator2B;;
-			*);;
-
-		-> .agent_of_checking_subject_domain_existence_for_concepts_operator1K2
-			(*
 			<- eraseEl;;
 	
 			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_pos_const_perm: rrel_erase: _arc1;;
 
-			=> nrel_goto: .agent_of_checking_subject_domain_existence_for_concepts_operator1K3;;
+			=> nrel_goto: .agent_of_checking_subject_domain_existence_for_concepts_operator1J3;;
 			*);;
 
-		-> .agent_of_checking_subject_domain_existence_for_concepts_operator1K3
+		-> .agent_of_checking_subject_domain_existence_for_concepts_operator1J3
 			(*
-			<- genElStr3;;
+			<- searchElStr5;;
 
-			-> rrel_1: rrel_fixed: rrel_scp_var: _struct_of_answer;;
-			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: rrel_const: _arc1;;
-			-> rrel_3: rrel_fixed: rrel_scp_var: rrel_node: _element;;
-
-			=> nrel_goto: .agent_of_checking_subject_domain_existence_for_concepts_operator1K4;;
-			*);;
-
-		-> .agent_of_checking_subject_domain_existence_for_concepts_operator1K4
-			(*
-			<- searchSetStr3;;
-
-		  	-> rrel_1: rrel_fixed: rrel_scp_var: _struct_of_answer;;
+		  	-> rrel_1: rrel_assign: rrel_scp_var: _subject_domain;;
 		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
 		  	-> rrel_3: rrel_fixed: rrel_scp_var: rrel_node: _element;;
+		  	-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+		  	-> rrel_5: rrel_fixed: rrel_scp_const: rrel_not_maximum_studied_object_class;;
 
-		  	-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer_of_finding_concepts_without_subject_domain;;
-
-			=> nrel_goto: .agent_of_checking_subject_domain_existence_for_concepts_operator1K5;;
+			=> nrel_then: .agent_of_checking_subject_domain_existence_for_concepts_operator1J1;;
+			=> nrel_else: .agent_of_checking_subject_domain_existence_for_concepts_operator1H4;;
 			*);;
 
-		-> .agent_of_checking_subject_domain_existence_for_concepts_operator1K5
+		-> .agent_of_checking_subject_domain_existence_for_concepts_operator1J4
 			(*
-			<- genElStr3;;
+			<- searchElStr5;;
 
-			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_finding_concepts_without_subject_domain;;
-			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: rrel_const: _arc2;;
-			-> rrel_3: rrel_fixed: rrel_scp_var: rrel_node: _element;;
-
-			=> nrel_goto: .agent_of_checking_subject_domain_existence_for_concepts_operator1K1;;
-			*);;
-
-		-> .agent_of_checking_subject_domain_existence_for_concepts_operator2B
-			(*
-			<- genElStr3;;
-
-		 	-> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_finding_concepts_without_subject_domain;;
-			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: rrel_const: _arc1;;
-			-> rrel_3: rrel_fixed: rrel_scp_var: _struct_of_answer;;
-			
-		  	=> nrel_goto: .agent_of_checking_subject_domain_existence_for_concepts_operator2B1;;	
-		  	*);;
-
-		-> .agent_of_checking_subject_domain_existence_for_concepts_operator2B1
-			(*
-			<- searchSetStr3;;
-
-		  	-> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_finding_concepts_without_subject_domain;;
+		  	-> rrel_1: rrel_assign: rrel_scp_var: _subject_domain;;
 		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
-		  	-> rrel_3: rrel_fixed: rrel_scp_var: _struct_of_answer;;
+		  	-> rrel_3: rrel_fixed: rrel_scp_var: rrel_node: _element;;
+		  	-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+		  	-> rrel_5: rrel_fixed: rrel_scp_const: rrel_maximum_studied_object_class;;
 
-		  	-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer_of_finding_concepts_without_subject_domain;;
-			
-		  	=> nrel_goto: .agent_of_checking_subject_domain_existence_for_concepts_operator3A;;	
-		  	*);;
+			=> nrel_then: .agent_of_checking_subject_domain_existence_for_concepts_operator1H1;;
+			=> nrel_else: .agent_of_checking_subject_domain_existence_for_concepts_operator1H5;;
+			*);;
 
-		-> .agent_of_checking_subject_domain_existence_for_concepts_operator3A
-			(*
-			<- eraseEl;;
+		-> .agent_of_checking_subject_domain_existence_for_concepts_operator1J5
+        		(*
+		 	<- genElStr3;;
 
-			-> rrel_1: rrel_erase: rrel_fixed: rrel_scp_var: _set_of_elements;;
-			
-		  	=> nrel_goto: .agent_of_checking_subject_domain_existence_for_concepts_operator3B;;	
-		  	*);;
+		 	-> rrel_1: rrel_fixed: rrel_scp_var: _struct_of_answer;;
+		 	-> rrel_2: rrel_assign: rrel_scp_var: rrel_const: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: _element;;
 
-		-> .agent_of_checking_subject_domain_existence_for_concepts_operator3B
-			(*
-			<- eraseEl;;
-
-			-> rrel_1: rrel_erase: rrel_fixed: rrel_scp_var: _temp_answer;;
-			
-		  	=> nrel_goto: .agent_of_checking_subject_domain_existence_for_concepts_operator2B2;;	
-		  	*);;
+		 	=> nrel_goto: .agent_of_checking_subject_domain_existence_for_concepts_operator1J1;;
+		 	*);;
 
 		-> .agent_of_checking_subject_domain_existence_for_concepts_operator2B2
 			(*
