@@ -1,20 +1,20 @@
-agent_of_removal_sc_element
+agent_of_removing_sc_element
 => nrel_main_idtf:
 	[агентная scp-программа удаления sc-элемента] (* <- lang_ru;; *);
-	[agent scp-program of removal sc-element] (* <- lang_en;; *);
+	[agent scp-program of removing sc-element] (* <- lang_en;; *);
 	<- agent_scp_program;;
 
-scp_program -> agent_of_removal_sc_element 
+scp_program -> agent_of_removing_sc_element 
 	(*
-	-> rrel_params: .agent_of_removal_sc_element_params 
+	-> rrel_params: .agent_of_removing_sc_element_params 
 		(*
 		-> rrel_1: rrel_in: _event;;
 		-> rrel_2: rrel_in: _input_arc;;
 		*);;
 
-	-> rrel_operators: .agent_of_removal_sc_element_operator_set 
+	-> rrel_operators: .agent_of_removing_sc_element_operator_set 
 		(*
-		-> rrel_init: .agent_of_removal_sc_element_operator1A
+		-> rrel_init: .agent_of_removing_sc_element_operator1A
 			(*
 			<- searchElStr3;;
 
@@ -22,10 +22,10 @@ scp_program -> agent_of_removal_sc_element
 			-> rrel_2: rrel_fixed: rrel_scp_var: _input_arc;;
 			-> rrel_3: rrel_assign: rrel_scp_var: _quest;;
 
-			=> nrel_goto: .agent_of_removal_sc_element_operator1B;;
+			=> nrel_goto: .agent_of_removing_sc_element_operator1B;;
 			*);;
 
-		-> .agent_of_removal_sc_element_operator1B
+		-> .agent_of_removing_sc_element_operator1B
 			(*
 			<- searchElStr3;;
 
@@ -33,11 +33,11 @@ scp_program -> agent_of_removal_sc_element
 			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
 			-> rrel_3: rrel_fixed: rrel_scp_var: _quest;;
 
-			=> nrel_then: .agent_of_removal_sc_element_operator1C;;
-			=> nrel_else: .agent_of_removal_sc_element_operator_return;;
+			=> nrel_then: .agent_of_removing_sc_element_operator1C;;
+			=> nrel_else: .agent_of_removing_sc_element_operator_return;;
 			*);;
 		
-		-> .agent_of_removal_sc_element_operator1C
+		-> .agent_of_removing_sc_element_operator1C
 			(*
 			<- searchElStr3;;
 
@@ -45,20 +45,20 @@ scp_program -> agent_of_removal_sc_element
 			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
 			-> rrel_3: rrel_assign: rrel_scp_var: _param;;
 
-			=> nrel_then: .agent_of_removal_sc_element_operator2A;;
-			=> nrel_else: .agent_of_removal_sc_element_operator_return;;
+			=> nrel_then: .agent_of_removing_sc_element_operator2A;;
+			=> nrel_else: .agent_of_removing_sc_element_operator_return;;
 			*);;
 
-		-> .agent_of_removal_sc_element_operator2A
+		-> .agent_of_removing_sc_element_operator2A
 			(*
 			<- genEl;;
 
 			-> rrel_1: rrel_assign: rrel_const: rrel_node: rrel_scp_var: _removable_elem_set;;
 
-			=> nrel_goto: .agent_of_removal_sc_element_operator3A;;
+			=> nrel_goto: .agent_of_removing_sc_element_operator2B;;
 			*);;
 
-		->.agent_of_removal_sc_element_operator3A
+		->.agent_of_removing_sc_element_operator2B
 			(*
 			<- searchSetStr5;;
 
@@ -70,10 +70,10 @@ scp_program -> agent_of_removal_sc_element
 
 			-> rrel_set_3: rrel_fixed: rrel_scp_var: _removable_elem_set;;
 
-			=> nrel_goto: .agent_of_removal_sc_element_operator3B;;
+			=> nrel_goto: .agent_of_removing_sc_element_operator2C;;
 			*);;
 
-		->.agent_of_removal_sc_element_operator3B
+		->.agent_of_removing_sc_element_operator2C
 			(*
 			<- searchSetStr5;;
 
@@ -85,10 +85,10 @@ scp_program -> agent_of_removal_sc_element
 
 			-> rrel_set_3: rrel_fixed: rrel_scp_var: _removable_elem_set;;
 
-			=> nrel_goto: .agent_of_removal_sc_element_operator3C;;
+			=> nrel_goto: .agent_of_removing_sc_element_operator2D;;
 			*);;
 
-		->.agent_of_removal_sc_element_operator3C
+		->.agent_of_removing_sc_element_operator2D
 			(*
 			<- searchSetStr5;;
 
@@ -100,49 +100,39 @@ scp_program -> agent_of_removal_sc_element
 
 			-> rrel_set_3: rrel_fixed: rrel_scp_var: _removable_elem_set;;
 
-			=> nrel_goto: .agent_of_removal_sc_element_operator4A;;
+			=> nrel_goto: .agent_of_removing_sc_element_operator3A;;
 			*);;
 
-		-> .agent_of_removal_sc_element_operator4A
+		-> .agent_of_removing_sc_element_operator3A
 			(*
-			<- searchElStr3;;
+			<- eraseSetStr3;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _removable_elem_set;;
 			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
-			-> rrel_3: rrel_assign: rrel_scp_var: _elem;;
+			-> rrel_3: rrel_assign: rrel_scp_var: rrel_erase: _elem;;
 
-			=> nrel_then: .agent_of_removal_sc_element_operator4B;;
-			=> nrel_else: .agent_of_removal_sc_element_operator5A;;
+			=> nrel_goto: .agent_of_removing_sc_element_operator3B;;
 			*);;
 
-		-> .agent_of_removal_sc_element_operator4B
-			(*
-			<- eraseEl;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _elem;;
-
-			=> nrel_goto: .agent_of_removal_sc_element_operator4A;;
-			*);;
-
-		-> .agent_of_removal_sc_element_operator5A
+		-> .agent_of_removing_sc_element_operator3B
 			(*
 			<- eraseEl;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _param;;
 
-			=> nrel_goto: .agent_of_removal_sc_element_operator6A;;
+			=> nrel_goto: .agent_of_removing_sc_element_operator3C;;
 			*);;
 
-		-> .agent_of_removal_sc_element_operator6A
+		-> .agent_of_removing_sc_element_operator3C
 			(*
 			<- eraseEl;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _removable_elem_set;;
 
-			=> nrel_goto: .agent_of_removal_sc_element_operator_return;;
+			=> nrel_goto: .agent_of_removing_sc_element_operator_return1;;
 			*);;
-
-		-> .agent_of_removal_sc_element_operator_return 
+			
+		-> .agent_of_removing_sc_element_operator_return 
 			(*
 			<- return;;
 			*);;
