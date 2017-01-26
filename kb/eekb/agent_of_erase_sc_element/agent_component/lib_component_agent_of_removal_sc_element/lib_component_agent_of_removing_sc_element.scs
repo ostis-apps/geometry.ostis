@@ -1,8 +1,8 @@
-lib_component_agent_of_removal_sc_element
+lib_component_agent_of_removing_sc_element
 => nrel_main_idtf:
-	[Компонент библиотеки. Sc-агент удаления sc-элемента]
+	[Компонент библиотеки. sc-агент удаления sc-элемента]
 	(* <- lang_ru;; *);
-	[Library component. Sc-agent of removal sc-element]
+	[Library component. sc-agent of removing sc-element]
 	(* <- lang_en;; *);
 
 <- library_of_platform_independent_reusable_components; 
@@ -12,17 +12,17 @@ lib_component_agent_of_removal_sc_element
 	lib_component_ui_menu_file_for_remove_sc_element;
 
 -> rrel_key_sc_element: 
-	.platform_independent_realization_of_sc_agent_of_removal_sc_element;
+	.platform_independent_realization_of_sc_agent_of_removing_sc_element;
 
 <- rrel_key_sc_element: 
 	...
 	(*
-	<- sc_explanation;;
+	<- explanation;;
 	<= nrel_sc_text_translation:
 		...
 		(*
 		-> rrel_example:
-			"file://htmls/Agent_Of_Remove_Sc_Element.html"
+			"file://htmls/Agent_of_remove_sc_element.html"
 				(* <- lang_ru;; *);; 
 		*);;
 	*);;
