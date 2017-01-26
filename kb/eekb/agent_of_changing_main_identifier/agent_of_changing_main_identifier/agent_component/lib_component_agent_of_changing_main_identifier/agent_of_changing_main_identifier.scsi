@@ -1,18 +1,16 @@
 agent_of_changing_main_identifier
 =>nrel_main_idtf:
-[агентная scp-программа замены основного идентификатора на указанный файл] (* <- lang_ru;; *);
-[agent scp-program of changing main identifier on specified file] (* <- lang_en;; *);
-<- agent_scp_program;;
+	[агентная scp-программа замены основного идентификатора на указанный файл] (* <- lang_ru;; *);
+	[agent scp-program of changing main identifier on specified file] (* <- lang_en;; *);
+	<- agent_scp_program;;
 
 scp_program -> agent_of_changing_main_identifier
-(*
-
-		->rrel_params: .agent_of_changing_main_identifier_params
 	(*
+	-> rrel_params: .agent_of_changing_main_identifier_params
+		(*
 		-> rrel_1: rrel_in: _event;;
 		-> rrel_2: rrel_in: _input_arc;;
-
-	*);;
+		*);;
 
 	-> rrel_operators: .agent_of_changing_main_identifier_operator_set 
 		(*
@@ -93,25 +91,27 @@ scp_program -> agent_of_changing_main_identifier
 		-> .agent_of_changing_main_identifier_operatorB2
 			(*
 		 	<- searchElStr3;;
+
 		 	-> rrel_1: rrel_fixed: rrel_scp_var: _tempset;;
 		 	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
 		 	-> rrel_3: rrel_assign: rrel_scp_var: _lang2;;
 
 		 	=> nrel_then: .agent_of_changing_main_identifier_operatorB3;;
-            => nrel_else: .agent_of_changing_main_identifier_operator_return;;
+            		=> nrel_else: .agent_of_changing_main_identifier_operator_return;;
 		 	*);; 
 
 		-> .agent_of_changing_main_identifier_operatorB3
 			(*
 			<- eraseEl;;
+
 		 	-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _arc;;
 
-            => nrel_goto: .agent_of_changing_main_identifier_operatorB4;;
+            		=> nrel_goto: .agent_of_changing_main_identifier_operatorB4;;
 		 	*);;
   
 		-> .agent_of_changing_main_identifier_operatorB4
-			 (*
-			 <- searchElStr3;;
+			(*
+			<- searchElStr3;;
 
 		 	-> rrel_1: rrel_fixed: rrel_scp_const: languages;;
 		 	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc_lang1;;
@@ -140,33 +140,35 @@ scp_program -> agent_of_changing_main_identifier
 		-> .agent_of_changing_main_identifier_operatorC2
 			(*
 			<- eraseEl;;
+
 		 	-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _node_change;;
 
-            => nrel_goto: .agent_of_changing_main_identifier_operatorC3;;
+            		=> nrel_goto: .agent_of_changing_main_identifier_operatorC3;;
 		 	*);;
 
 		-> .agent_of_changing_main_identifier_operatorC3
 			(*
 		 	<- searchElStr3;;
+
 		 	-> rrel_1: rrel_fixed: rrel_scp_var: _set;;
 		 	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
 		 	-> rrel_3: rrel_assign: rrel_scp_var: _node;;
 
 		 	=> nrel_then: .agent_of_changing_main_identifier_operatorC4;;
-            => nrel_else: .agent_of_changing_main_identifier_operatorD2;;
+            		=> nrel_else: .agent_of_changing_main_identifier_operatorD2;;
 		 	*);; 
 
 		-> .agent_of_changing_main_identifier_operatorC4
 			(*
 			<- eraseEl;;
+
 		 	-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _arc1;;
 
-            => nrel_goto: .agent_of_changing_main_identifier_operatorC5;;
+            		=> nrel_goto: .agent_of_changing_main_identifier_operatorC5;;
 		 	*);;
 
-
 		-> .agent_of_changing_main_identifier_operatorC5
-			 (*
+			(*
 			<- searchElStr3;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _lang2;;
@@ -177,17 +179,17 @@ scp_program -> agent_of_changing_main_identifier
 			=>nrel_else: .agent_of_changing_main_identifier_operatorD1;;
 			*);;
 
-
 		-> .agent_of_changing_main_identifier_operatorC6
 			(*
 			<- eraseEl;;
+
 		 	-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _node;;
 
-            => nrel_goto: .agent_of_changing_main_identifier_operatorD1;;
+            		=> nrel_goto: .agent_of_changing_main_identifier_operatorD1;;
 		 	*);;
 
 		-> .agent_of_changing_main_identifier_operatorD1
-			 (*
+			(*
 			<- genElStr5;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _param1;;
@@ -202,6 +204,7 @@ scp_program -> agent_of_changing_main_identifier
 		->.agent_of_changing_main_identifier_operatorD2
 			(*
 		 	<- genElStr3;;
+
 		 	-> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_change_main;;
 		 	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
 		 	-> rrel_3: rrel_fixed: rrel_scp_var: _lang;;
@@ -212,6 +215,7 @@ scp_program -> agent_of_changing_main_identifier
 		 ->.agent_of_changing_main_identifier_operatorD3
 			(*
 		 	<- genElStr3;;
+
 		 	-> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_change_main;;
 		 	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
 		 	-> rrel_3: rrel_fixed: rrel_scp_var: _arc_lang;;
@@ -287,9 +291,9 @@ scp_program -> agent_of_changing_main_identifier
 			=> nrel_goto: .agent_of_changing_main_identifier_operator_return;;
 			*);; 
 
-	-> .agent_of_changing_main_identifier_operator_return
+		-> .agent_of_changing_main_identifier_operator_return
 		 	(*
 		  	<- return;;
 			*);;
+		*);;
 	*);;
-*);;
