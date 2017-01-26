@@ -1,0 +1,16 @@
+ui_menu_file_for_checking_parameter <- ui_user_command_class_atom; ui_user_command_class_view_kb; ui_one_argument_command_class;;
+
+ui_menu_file_for_checking_parameter => nrel_main_idtf: [Команда проверки наличия единицы измерения или шкалы у параметра] (* <- lang_ru;; *);;
+ui_menu_file_for_checking_parameter => nrel_main_idtf: [Command of check unit or scale in the parameter] (* <- lang_en;; *);;
+	
+ui_menu_file_for_checking_parameter => ui_nrel_command_template:
+	[*
+		question_of_checking_parameter _-> ._question_of_checking_parameter_instance
+			(*
+			_-> ui_arg_1;;	
+			*);;
+		._question_of_checking_parameter_instance _<- question;;
+	*];;
+
+ui_menu_file_for_checking_parameter => ui_nrel_command_lang_template: [Команда проверки наличия единицы измерения или шкалы у параметра] (* <- lang_ru;; *);;
+ui_menu_file_for_checking_parameter => ui_nrel_command_lang_template: [Command of check unit or scale in the parameter] (* <- lang_en;; *);;
