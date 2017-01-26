@@ -1,0 +1,102 @@
+scp_program -> proc_of_verification_of_domains_of_tuple (*
+	-> rrel_params: ..proc_check_node_domain_params (*
+		-> rrel_1: rrel_in: _domain;;
+		-> rrel_2: rrel_in: _node;;
+		-> rrel_3: rrel_in: _cntv;;
+		-> rrel_4: rrel_in: _answer;;
+		*);;
+
+	-> rrel_operators: ..proc_check_node_domain_operator1s (*
+		-> rrel_init: ..proc_operator1A1 (*
+			<- searchSetStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _domain;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _temp;;
+
+			-> rrel_set_3: rrel_assign: rrel_scp_var: _set;;
+
+			=> nrel_then: ..proc_operator1A2;;
+			=> nrel_else: ..proc_return;;
+			*);;
+
+		-> ..proc_operator1A2 (*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _set;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _elem;; 
+
+			=> nrel_then: ..proc_operator1A3;;
+			=> nrel_else: ..proc_operator1B1;;
+			*);;
+
+		-> ..proc_operator1A3 (*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _arc;;
+
+			=> nrel_goto: ..proc_operator1A4;;
+			*);;
+
+		-> ..proc_operator1A4 (*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _elem;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _node;;
+
+			=> nrel_then: ..proc_return;;
+			=> nrel_else: ..proc_operator1A2;;
+			*);;
+
+		-> ..proc_operator1B1 (*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _cntv;;
+
+			=> nrel_goto: ..proc_operator1B2;;
+			*);;
+
+		-> ..proc_operator1B2 (*
+			<- searchSetStr5;;
+			 
+			-> rrel_1: rrel_fixed: rrel_scp_var: _cntv;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _node;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_assign: rrel_scp_var: rrel_role_relation: _temp2;;			
+
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_set_4: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_set_5: rrel_fixed: rrel_scp_var: _answer;;
+
+			=> nrel_then: ..proc_operator1B3;;
+			=> nrel_else: ..proc_error;;
+			*);;
+
+		-> ..proc_operator1B3 (*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _node;;
+
+			=> nrel_goto: ..proc_return;;
+			*);;
+
+		-> ..proc_return (*
+			<- return;;
+			*);;
+
+		-> ..proc_error (*
+			<- printNl;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: [Error];;
+
+			=> nrel_goto: ..proc_return;;
+			*);;
+		*);;
+	*);;
