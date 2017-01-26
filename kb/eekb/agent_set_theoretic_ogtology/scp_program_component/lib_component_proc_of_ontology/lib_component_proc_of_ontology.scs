@@ -1,0 +1,13 @@
+lib_component_proc_of_ontology
+=> nrel_main_idtf:
+	[Компонент библиотеки. Scp-программа для теоретико-множественной онтологии]
+	(* <- lang_ru;; *);
+	[Library component. Scp-program for set-theoretic ogtology]
+	(* <- lang_en;; *);
+
+<- library_of_platform_independent_reusable_components;
+
+-> rrel_key_sc_element: 
+	proc_of_ontology;;
+
+lib_component_proc_of_ontology = [*^"file://proc_of_ontology.scsi"*];;
