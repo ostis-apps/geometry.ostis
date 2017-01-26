@@ -43,7 +43,7 @@ scp_program -> agent_of_checking_subject_domain_existence_for_concepts
 
 		  	-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
 		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
-		  	-> rrel_3: rrel_assign: rrel_scp_var: _structure;;
+		  	-> rrel_3: rrel_assign: rrel_scp_var: rrel_struct: _structure;;
 
 		  	=> nrel_then: .agent_of_checking_subject_domain_existence_for_concepts_operator1D;;
 		  	=> nrel_else: .agent_of_checking_subject_domain_existence_for_concepts_call_proc_of_adding_validating_message;;
@@ -71,7 +71,7 @@ scp_program -> agent_of_checking_subject_domain_existence_for_concepts
 			(*
 		  	<- searchSetStr3;;
 
-		  	-> rrel_1: rrel_fixed: rrel_scp_var: _structure;;
+		  	-> rrel_1: rrel_fixed: rrel_scp_var: rrel_struct: _structure;;
 		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
 		  	-> rrel_3: rrel_assign: rrel_scp_var: rrel_norole_relation: _element;;
 
@@ -132,7 +132,7 @@ scp_program -> agent_of_checking_subject_domain_existence_for_concepts
 			(*
 		  	<- searchSetStr3;;
 
-		  	-> rrel_1: rrel_fixed: rrel_scp_var: _structure;;
+		  	-> rrel_1: rrel_fixed: rrel_scp_var: rrel_struct: _structure;;
 		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
 		  	-> rrel_3: rrel_assign: rrel_scp_var: rrel_role_relation: _element;;
 
@@ -180,7 +180,7 @@ scp_program -> agent_of_checking_subject_domain_existence_for_concepts
 			(*
 		  	<- searchSetStr3;;
 
-		  	-> rrel_1: rrel_fixed: rrel_scp_var: _structure;;
+		  	-> rrel_1: rrel_fixed: rrel_scp_var: rrel_struct: _structure;;
 		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
 		  	-> rrel_3: rrel_assign: rrel_scp_var: rrel_not_relation: _element;;
 
@@ -295,7 +295,7 @@ scp_program -> agent_of_checking_subject_domain_existence_for_concepts
 
 		  	-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
 		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: rrel_const: _arc1;;
-		  	-> rrel_3: rrel_fixed: rrel_scp_var: _structure;;
+		  	-> rrel_3: rrel_fixed: rrel_scp_var: rrel_struct: _structure;;
 
 			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer_of_finding_concepts_without_subject_domain;;
 
@@ -308,7 +308,7 @@ scp_program -> agent_of_checking_subject_domain_existence_for_concepts
 
 		  	-> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_finding_concepts_without_subject_domain;;
 		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: rrel_const: _arc1;;
-		  	-> rrel_3: rrel_fixed: rrel_scp_var: _structure;;
+		  	-> rrel_3: rrel_fixed: rrel_scp_var: rrel_struct: _structure;;
 
 		  	=> nrel_goto: .agent_of_checking_subject_domain_existence_for_concepts_operator2B8;;
 			*);;
