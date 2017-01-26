@@ -6,15 +6,15 @@ scp_program -> proc_of_generating_set_of_domains (*
 		*);;
 
 	-> rrel_operators: ..proc_search_domain_operators (*
-		-> rrel_init: ..proc_operator (*
+		-> rrel_init: .proc_of_generating_set_of_domains_operator (*
 			<- ifType;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_not_relation: _tempNode;;
 
-			=> nrel_then: ..proc_operatorB1;;
-			=> nrel_else: ..proc_operatorA1;;
+			=> nrel_then: .proc_of_generating_set_of_domains_operatorB1;;
+			=> nrel_else: .proc_of_generating_set_of_domains_operatorA1;;
 			*);;
-		-> ..proc_operatorA1 (*
+		-> .proc_of_generating_set_of_domains_operatorA1 (*
 			<- searchElStr5;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _tempNode;;
@@ -23,11 +23,11 @@ scp_program -> proc_of_generating_set_of_domains (*
 			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
 			-> rrel_5: rrel_fixed: rrel_scp_var: _ndomain;;
 
-			=> nrel_then: ..proc_operatorA2;;
-			=> nrel_else: ..proc_error;;
+			=> nrel_then: .proc_of_generating_set_of_domains_operatorA2;;
+			=> nrel_else: .proc_of_generating_set_of_domains_return;;
 			*);;
 
-		-> ..proc_operatorA2 (*
+		-> .proc_of_generating_set_of_domains_operatorA2 (*
 			<- searchElStr5;;
 
 			-> rrel_1: rrel_assign: rrel_scp_var: _dom;;
@@ -36,21 +36,21 @@ scp_program -> proc_of_generating_set_of_domains (*
 			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
 			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_combination;;
 
-			=> nrel_then: ..proc_operatorA4;;
-			=> nrel_else: ..proc_operatorA3;;
+			=> nrel_then: .proc_of_generating_set_of_domains_operatorA4;;
+			=> nrel_else: .proc_of_generating_set_of_domains_operatorA3;;
 			*);;
 
-		-> ..proc_operatorA3 (*
+		-> .proc_of_generating_set_of_domains_operatorA3 (*
 			<- genElStr3;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _domains;;
 			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
 			-> rrel_3: rrel_fixed: rrel_scp_var: _temp;;
 
-			=> nrel_goto: ..proc_operatorA5;;
+			=> nrel_goto: .proc_of_generating_set_of_domains_operatorA5;;
 			*);;
 
-		-> ..proc_operatorA5 (*
+		-> .proc_of_generating_set_of_domains_operatorA5 (*
 			<- call;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_const: proc_of_generating_set_of_domains;;
@@ -61,18 +61,18 @@ scp_program -> proc_of_generating_set_of_domains (*
 				*);;
 			-> rrel_3: rrel_assign: rrel_scp_var: _descr;;
 
-			=> nrel_goto: ..proc_operatorA6;;
+			=> nrel_goto: .proc_of_generating_set_of_domains_operatorA6;;
 			*);;
 
-		-> ..proc_operatorA6 (*
+		-> .proc_of_generating_set_of_domains_operatorA6 (*
 			<- waitReturn;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _descr;;
 
-			=> nrel_goto: ..proc_return;;
+			=> nrel_goto: .proc_of_generating_set_of_domains_return;;
 			*);;
 
-		-> ..proc_operatorA4 (*
+		-> .proc_of_generating_set_of_domains_operatorA4 (*
 			<- searchSetStr3;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _dom;;
@@ -81,11 +81,11 @@ scp_program -> proc_of_generating_set_of_domains (*
 
 			-> rrel_set_3: rrel_fixed: rrel_scp_var: _domains;;
 
-			=> nrel_then: ..proc_operatorA7;;
-			=> nrel_else: ..proc_return;;
+			=> nrel_then: .proc_of_generating_set_of_domains_operatorA7;;
+			=> nrel_else: .proc_of_generating_set_of_domains_return;;
 			*);;
 
-		-> ..proc_operatorA7 (*
+		-> .proc_of_generating_set_of_domains_operatorA7 (*
 			<- searchSetStr3;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _dom;;
@@ -94,29 +94,29 @@ scp_program -> proc_of_generating_set_of_domains (*
 
 			-> rrel_set_3: rrel_assign: rrel_scp_var: _set2;;
 
-			=> nrel_goto: ..proc_operatorA8;;
+			=> nrel_goto: .proc_of_generating_set_of_domains_operatorA8;;
 			*);;
 
-		-> ..proc_operatorA8 (*
+		-> .proc_of_generating_set_of_domains_operatorA8 (*
 			<- searchElStr3;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _set2;;
 			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
 			-> rrel_3: rrel_assign: rrel_scp_var: _elem;;
 
-			=> nrel_then: ..proc_operatorA9;;
-			=> nrel_else: ..proc_return;;
+			=> nrel_then: .proc_of_generating_set_of_domains_operatorA9;;
+			=> nrel_else: .proc_of_generating_set_of_domains_return;;
 			*);;
 
-		-> ..proc_operatorA9 (*
+		-> .proc_of_generating_set_of_domains_operatorA9 (*
 			<- eraseEl;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _arc;;
 
-			=> nrel_goto: ..proc_operatorA10;;
+			=> nrel_goto: .proc_of_generating_set_of_domains_operatorA10;;
 			*);;
 
-		-> ..proc_operatorA10 (*
+		-> .proc_of_generating_set_of_domains_operatorA10 (*
 			<- call;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_const: proc_of_generating_set_of_domains;;
@@ -127,26 +127,26 @@ scp_program -> proc_of_generating_set_of_domains (*
 				*);;
 			-> rrel_3: rrel_assign: rrel_scp_var: _descr;;
 
-			=> nrel_goto: ..proc_operatorA11;;
+			=> nrel_goto: .proc_of_generating_set_of_domains_operatorA11;;
 			*);;
 
-		-> ..proc_operatorA11 (*
+		-> .proc_of_generating_set_of_domains_operatorA11 (*
 			<- waitReturn;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _descr;;
 
-			=> nrel_goto: ..proc_operatorA8;;
+			=> nrel_goto: .proc_of_generating_set_of_domains_operatorA8;;
 			*);;
 
-		-> ..proc_operatorB1 (*
+		-> .proc_of_generating_set_of_domains_operatorB1 (*
 			<- genEl;;
 
 			-> rrel_1: rrel_assign: rrel_scp_var: rrel_node: _set;;
 
-			=> nrel_goto: ..proc_operatorB2;;
+			=> nrel_goto: .proc_of_generating_set_of_domains_operatorB2;;
 			*);;
 
-		-> ..proc_operatorB2 (*
+		-> .proc_of_generating_set_of_domains_operatorB2 (*
 			<- searchSetStr5;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _tempNode;;
@@ -157,10 +157,10 @@ scp_program -> proc_of_generating_set_of_domains (*
 
 			-> rrel_set_3: rrel_fixed: rrel_scp_var: _set;;
 
-			=> nrel_goto: ..proc_operatorB3;;
+			=> nrel_goto: .proc_of_generating_set_of_domains_operatorB3;;
 			*);;
 
-		-> ..proc_operatorB3 (*
+		-> .proc_of_generating_set_of_domains_operatorB3 (*
 			<- searchElStr5;;
 
 			-> rrel_1: rrel_assign: rrel_scp_var: _temp;;
@@ -169,11 +169,11 @@ scp_program -> proc_of_generating_set_of_domains (*
 			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
 			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_subdividing;;
 
-			=> nrel_then: ..proc_operatorB4;;
-			=> nrel_else: ..proc_operatorB5;;
+			=> nrel_then: .proc_of_generating_set_of_domains_operatorB4;;
+			=> nrel_else: .proc_of_generating_set_of_domains_operatorB5;;
 			*);;
 
-		-> ..proc_operatorB4 (*
+		-> .proc_of_generating_set_of_domains_operatorB4 (*
 			<- searchSetStr3;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _temp;;
@@ -182,10 +182,10 @@ scp_program -> proc_of_generating_set_of_domains (*
 
 			-> rrel_set_3: rrel_fixed: rrel_scp_var: _set;;
 
-			=> nrel_goto: ..proc_operatorB5;;
+			=> nrel_goto: .proc_of_generating_set_of_domains_operatorB5;;
 			*);;
 
-		-> ..proc_operatorB5 (*
+		-> .proc_of_generating_set_of_domains_operatorB5 (*
 			<- searchSetStr3;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _set;;
@@ -194,29 +194,29 @@ scp_program -> proc_of_generating_set_of_domains (*
 
 			-> rrel_set_3: rrel_fixed: rrel_scp_var: _domains;;
 
-			=> nrel_goto: ..proc_operatorB6;;
+			=> nrel_goto: .proc_of_generating_set_of_domains_operatorB6;;
 			*);;
 
-		-> ..proc_operatorB6 (*
+		-> .proc_of_generating_set_of_domains_operatorB6 (*
 			<- searchElStr3;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _set;;
 			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
 			-> rrel_3: rrel_assign: rrel_scp_var: _elem;;
 
-			=> nrel_then: ..proc_operatorB7;;
-			=> nrel_else: ..proc_return;;
+			=> nrel_then: .proc_of_generating_set_of_domains_operatorB7;;
+			=> nrel_else: .proc_of_generating_set_of_domains_return;;
 			*);;
 
-		-> ..proc_operatorB7 (*
+		-> .proc_of_generating_set_of_domains_operatorB7 (*
 			<- eraseEl;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _arc;;
 
-			=> nrel_goto: ..proc_operatorB8;;
+			=> nrel_goto: .proc_of_generating_set_of_domains_operatorB8;;
 			*);;
 
-		-> ..proc_operatorB8 (*
+		-> .proc_of_generating_set_of_domains_operatorB8 (*
 			<- call;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_const: proc_of_generating_set_of_domains;;
@@ -227,27 +227,19 @@ scp_program -> proc_of_generating_set_of_domains (*
 				*);;
 			-> rrel_3: rrel_assign: rrel_scp_var: _descr;;
 
-			=> nrel_goto: ..proc_operatorB9;;
+			=> nrel_goto: .proc_of_generating_set_of_domains_operatorB9;;
 			*);;
 
-		-> ..proc_operatorB9 (*
+		-> .proc_of_generating_set_of_domains_operatorB9 (*
 			<- waitReturn;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _descr;;
 
-			=> nrel_goto: ..proc_operatorB6;;
+			=> nrel_goto: .proc_of_generating_set_of_domains_operatorB6;;
 			*);;
 
-		-> ..proc_return (*
+		-> .proc_of_generating_set_of_domains_return (*
 			<- return;;
-			*);;
-
-		-> ..proc_error (*
-			<- printNl;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_const: [Error];;
-
-			=> nrel_goto: ..proc_return;;
 			*);;
 		*);;
 	*);;
