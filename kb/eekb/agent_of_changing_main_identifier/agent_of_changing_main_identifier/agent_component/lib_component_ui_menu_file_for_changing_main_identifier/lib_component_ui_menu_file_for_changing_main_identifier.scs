@@ -1,8 +1,8 @@
-lib_component_ui_menu_agent_of_changing_main_identifier
+lib_component_ui_menu_file_for_changing_main_identifier
 => nrel_main_idtf:
 	[Компонент библиотеки. Команда пользовательского интерфейса для замены основного идентификатора]
 	(* <- lang_ru;; *);
-	[Library component. User interface command for change main identifier]
+	[Library component. User interface command for changing main identifier]
 	(* <- lang_en;; *);
 
 <- library_of_platform_independent_reusable_components;
@@ -17,9 +17,9 @@ lib_component_ui_menu_agent_of_changing_main_identifier
 		...
 		(*
 		-> rrel_example:
-			"file://htmls/Ui_Change_main.html"
+			"file://htmls/UI_changing_system_identifier.html"
 				(* <- lang_ru;; *);;
 		*);;
 	*);;
 
-lib_component_ui_menu_agent_of_changing_main_identifier = [*^"file://ui_menu_agent_of_changing_main_identifier.scsi"*];; 
+lib_component_ui_menu_file_for_changing_main_identifier = [*^"file://ui_menu_file_for_changing_main_identifier.scsi"*];; 

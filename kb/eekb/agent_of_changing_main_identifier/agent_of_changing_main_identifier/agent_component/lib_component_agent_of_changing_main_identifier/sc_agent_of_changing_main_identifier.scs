@@ -1,7 +1,7 @@
 sc_agent_of_changing_main_identifier
 => nrel_main_idtf:
 	[sc-агент замены основного идентификатора] (* <- lang_ru;; *);
-	[sc-agent of change main edentifier] (* <- lang_en;; *);
+	[sc-agent of change main identifier] (* <- lang_en;; *);
 	
 <- abstract_sc_agent;
 
@@ -9,13 +9,13 @@ sc_agent_of_changing_main_identifier
 	(sc_event_add_output_arc => question_initiated);
 	
 => nrel_initiation_condition_and_result: 
-	(..sc_agent_agent_of_changing_main_identifier_condition => ..sc_agent_agent_of_changing_main_identifier_result);
+	(..sc_agent_of_changing_main_identifier_condition => ..sc_agent_of_changing_main_identifier_result);
 	
 <= nrel_sc_agent_key_sc_elements: 
 	{
 	question_initiated;
 	question;
-	question_change_main
+	action_to_change_main_identifier
 	};
 
 
@@ -28,7 +28,8 @@ sc_agent_of_changing_main_identifier
 		agent_of_changing_main_identifier
 		};;
 		
-	-> sc_agent_of_changing_main_identifier_scp (* <- active_sc_agent;; *);;
+	-> sc_agent_of_changing_main_identifier_scp
+		(* <- active_sc_agent;; *);;
 	*);;
 
 ..sc_agent_of_changing_main_identifier_condition
@@ -40,7 +41,7 @@ sc_agent_of_changing_main_identifier
 	.._question _-> rrel_2:: .._param2;;
 *];;
 
-..sc_agent_of_forming_a_logical_ontology_given_domain_result
+..sc_agent_of_changing_main_identifier_result
 = [*
 	question_change_main _-> .._question;;
 	question_finished _-> .._question;;
