@@ -1,8 +1,8 @@
 lib_component_agent_of_changing_main_identifier
 => nrel_main_idtf:
-	[Компонент библиотеки. sc-агент замены основного идентификатора на указанный файл]
+	[Компонент библиотеки. sc-агент замены основного идентификатора sc-элемента на указанный файл]
 	(* <- lang_ru;; *);
-	[Library component. sc-agent of changing main identifier on specified file]
+	[Library component. sc-agent of changing main identifier sc-element on specified file]
 	(* <- lang_en;; *);
 
 <- library_of_platform_independent_reusable_components; 
@@ -30,9 +30,9 @@ lib_component_agent_of_changing_main_identifier
 action_to_change_main_identifier
 <- sc_node_not_relation;
 => nrel_main_idtf:
-	[действие. заменить основной идентификатор на указанный файл]
+	[действие. заменить основной идентификатор sc-элемента на указанный файл]
  	(* <- lang_ru;; *);
- 	[action. change main identifier]
+ 	[action. change main identifier sc-element on specified file]
  	(* <- lang_en;; *);; 
 
 

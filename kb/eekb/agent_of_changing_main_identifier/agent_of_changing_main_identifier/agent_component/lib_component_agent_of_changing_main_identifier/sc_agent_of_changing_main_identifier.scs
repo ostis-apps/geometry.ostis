@@ -1,7 +1,7 @@
 sc_agent_of_changing_main_identifier
 => nrel_main_idtf:
-	[sc-агент замены основного идентификатора] (* <- lang_ru;; *);
-	[sc-agent of change main identifier] (* <- lang_en;; *);
+	[sc-агент замены основного идентификатора sc-элемента на указанный файл] (* <- lang_ru;; *);
+	[sc-agent of change main identifier sc-element on specified file] (* <- lang_en;; *);
 	
 <- abstract_sc_agent;
 
@@ -34,7 +34,7 @@ sc_agent_of_changing_main_identifier
 
 ..sc_agent_of_changing_main_identifier_condition
 = [*
-	question_change_main _-> .._question;;
+	action_to_change_main_identifier _-> .._question;;
 	question_initiated _-> .._question;;
 	question _-> .._question;;
 	.._question _-> rrel_1:: .._param1;;
@@ -43,7 +43,7 @@ sc_agent_of_changing_main_identifier
 
 ..sc_agent_of_changing_main_identifier_result
 = [*
-	question_change_main _-> .._question;;
+	action_to_change_main_identifier _-> .._question;;
 	question_finished _-> .._question;;
 	question _-> .._question;;
 	.._question _=> nrel_answer:: .._answer;;
