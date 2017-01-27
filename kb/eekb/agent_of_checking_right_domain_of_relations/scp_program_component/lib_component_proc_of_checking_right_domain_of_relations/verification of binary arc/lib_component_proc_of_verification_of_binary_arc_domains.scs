@@ -1,0 +1,26 @@
+lib_component_proc_of_verification_of_binary_arc_domains
+=> nrel_main_idtf:
+	[Компонент библиотеки. scp-программа проверки соотнесения элементов бинарного отношения с их доменами]
+	(* <- lang_ru;; *);
+	[Library component. scp-program of checking the mapping elements of binary relations with their domains]
+	(* <- lang_en;; *);
+
+<- library_of_platform_independent_reusable_components;
+
+-> rrel_key_sc_element:
+	proc_of_verification_of_binary_arc_domains;
+
+<- rrel_key_sc_element: 
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://htmls/Proc_of_verification_of_binary_arc_domains.html" 
+				(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+lib_component_proc_of_verification_of_binary_arc_domains = [*^"file://proc_of_verification_of_binary_arc_domains.scsi"*];;
