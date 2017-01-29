@@ -1,0 +1,28 @@
+lib_component_agent_of_output_of_all_statements_associated_with_a_given_entity
+=> nrel_main_idtf:
+	[Компонент библиотеки. sc-агент вывода всех утверждений, ассоциированных с заданной сущностью]
+	(* <- lang_ru;; *);
+	[Library component. sc-agent of output of all statements, associated with a given entity]
+	(* <- lang_en;; *);
+
+<- platform_independent_reusable_component_OSTIS; 
+<- atomic_reusable_component_OSTIS; 
+<- reusable_scp_agent;
+
+-> rrel_key_sc_element: 
+	.platform_independent_realization_of_sc_agent_of_output_of_all_statements_associated_with_a_given_entity;
+
+	<- rrel_key_sc_element: 
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://htmls/Agent_Output_All_Statements_Associated_With_Entity.html"
+				(* <- lang_ru;; *);; 
+		*);;
+	*);;
+
+
