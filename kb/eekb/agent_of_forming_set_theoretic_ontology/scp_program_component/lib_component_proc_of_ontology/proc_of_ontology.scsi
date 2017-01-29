@@ -1,0 +1,397 @@
+scp_program -> proc_of_ontology
+	(*	
+	-> rrel_params: .proc_of_ontology_params
+		(*
+		
+		-> rrel_1: rrel_in: _node3;;
+        -> rrel_2: rrel_in: _set_of_ontology;;
+		
+		*);;
+
+-> rrel_operators: .proc_of_ontology_operator_set (*
+	-> rrel_init:.proc_of_ontology_operator1A 
+		(*
+		<- genEl;;
+
+		-> rrel_1: rrel_assign: rrel_const: rrel_node: rrel_scp_var: _set_of_temp;;
+
+		=> nrel_goto: .proc_of_ontology_operator2A;;
+		 
+		*);;		
+	->.proc_of_ontology_operator2A
+		(*
+		<- searchSetStr5;;
+
+		-> rrel_1: rrel_assign: rrel_scp_var: _node4;;
+    	-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc1;;
+		-> rrel_3: rrel_fixed: rrel_scp_var: _node3;;
+		-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+		-> rrel_5: rrel_fixed: rrel_scp_const: nrel_using_constants;;
+
+		-> rrel_set_1: rrel_fixed: rrel_scp_var: _set_of_temp;;
+
+		=> nrel_then: .proc_of_ontology_operator3A;;
+		=> nrel_else: .proc_of_ontology_operator1C;; 
+		*);;
+
+	->.proc_of_ontology_operator3A 
+		(*
+		<- searchElStr3;;
+
+		-> rrel_1: rrel_fixed: rrel_scp_var: _set_of_temp;;
+    	-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc_remove2;;
+		-> rrel_3: rrel_assign: rrel_scp_var: _node4;;
+
+		=> nrel_then: .proc_of_ontology_operator4A;;
+		=> nrel_else: .proc_of_ontology_operator1C;; 
+		*);;
+
+	->.proc_of_ontology_operator4A 
+		(*
+		<-eraseEl;;
+
+		-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _arc_remove2;;
+
+		=>nrel_goto: .proc_of_ontology_operator5A;;
+		*);;
+
+	->.proc_of_ontology_operator5A 
+		(*
+		<- searchSetStr3;;
+
+		-> rrel_1: rrel_fixed: rrel_scp_var: _node4;;
+    	-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+		-> rrel_3: rrel_assign: rrel_scp_var: _node5;;
+
+		-> rrel_set_2: rrel_fixed: rrel_scp_var: _set_of_ontology;;
+		-> rrel_set_3: rrel_fixed: rrel_scp_var: _set_of_ontology;;
+
+		=> nrel_then: .proc_of_ontology_operator6A;;
+		=> nrel_else: .proc_of_ontology_operator3A;; 
+		*);;
+
+	->.proc_of_ontology_operator6A 
+		(*
+		<- searchSetStr5;;
+
+		-> rrel_1: rrel_fixed: rrel_scp_var: _node4;;
+    	-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc1;;
+		-> rrel_3: rrel_fixed: rrel_scp_var: _node3;;
+		-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+		-> rrel_5: rrel_fixed: rrel_scp_const: nrel_using_constants;;
+
+		-> rrel_set_2: rrel_fixed: rrel_scp_var: _set_of_ontology;;
+		-> rrel_set_4: rrel_fixed: rrel_scp_var: _set_of_ontology;;
+
+		=> nrel_goto: .proc_of_ontology_operator7A;; 
+		*);;
+
+	-> .proc_of_ontology_operator7A 
+		(*
+		<- searchElStr3;;
+
+	    -> rrel_1: rrel_fixed: rrel_scp_var: _set_of_ontology;;
+		-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+		-> rrel_3: rrel_fixed: rrel_scp_const: nrel_using_constants;;
+
+		=> nrel_then:.proc_of_ontology_operator8A;;
+		=> nrel_else:.proc_of_ontology_operator9A;;
+		*);;
+
+	->.proc_of_ontology_operator8A 
+		(*
+		<- genElStr3;;
+
+		-> rrel_1: rrel_fixed: rrel_scp_var: _set_of_ontology;;
+    	-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+		-> rrel_3: rrel_fixed: rrel_scp_const: nrel_using_constants;;
+
+		=> nrel_goto: .proc_of_ontology_operator9A;;
+		*);;
+
+	->.proc_of_ontology_operator9A 
+		(*
+		<- genElStr3;;
+
+		-> rrel_1: rrel_fixed: rrel_scp_var: _set_of_ontology;;
+    	-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+		-> rrel_3: rrel_fixed: rrel_scp_var: _node4;;
+
+		=> nrel_goto: .proc_of_ontology_operator3A;;
+		*);;
+
+	->.proc_of_ontology_operator1C 
+		(*
+		<- searchSetStr5;;
+
+		-> rrel_1: rrel_assign: rrel_scp_var: _node4;;
+    	-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc1;;
+		-> rrel_3: rrel_fixed: rrel_scp_var: _node3;;
+		-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+		-> rrel_5: rrel_fixed: rrel_scp_const: nrel_subdividing;;
+
+		-> rrel_set_1: rrel_fixed: rrel_scp_var: _set_of_temp;;
+
+		=> nrel_then: .proc_of_ontology_operator2C;;
+		=> nrel_else: .proc_of_ontology_operator1B;; 
+		*);;
+
+	->.proc_of_ontology_operator2C 
+		(*
+		<- searchElStr3;;
+
+		-> rrel_1: rrel_fixed: rrel_scp_var: _set_of_temp;;
+    	-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc_remove4;;
+		-> rrel_3: rrel_assign: rrel_scp_var: _node4;;
+
+		=> nrel_then: .proc_of_ontology_operator3C;;
+		=> nrel_else: .proc_of_ontology_operator1B;; 
+		*);;
+
+	->.proc_of_ontology_operator3C
+		(*
+		<-eraseEl;;
+
+		-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _arc_remove4;;
+
+		=>nrel_goto: .proc_of_ontology_operator4C;;
+		*);;
+
+	->.proc_of_ontology_operator4C 
+		(*
+		<- searchSetStr3;;
+
+		-> rrel_1: rrel_fixed: rrel_scp_var: _node4;;
+    	-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+		-> rrel_3: rrel_assign: rrel_scp_var: _node5;;
+
+		-> rrel_set_2: rrel_fixed: rrel_scp_var: _set_of_ontology;;
+		-> rrel_set_3: rrel_fixed: rrel_scp_var: _set_of_ontology;;
+
+		=> nrel_then: .proc_of_ontology_operator5C;;
+		=> nrel_else: .proc_of_ontology_operator2C;; 
+		*);;
+
+	->.proc_of_ontology_operator5C 	
+		(*
+		<- searchSetStr5;;
+
+		-> rrel_1: rrel_fixed: rrel_scp_var: _node4;;
+    	-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc1;;
+		-> rrel_3: rrel_fixed: rrel_scp_var: _node3;;
+		-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+		-> rrel_5: rrel_fixed: rrel_scp_const: nrel_subdividing;;
+
+		-> rrel_set_2: rrel_fixed: rrel_scp_var: _set_of_ontology;;
+		-> rrel_set_4: rrel_fixed: rrel_scp_var: _set_of_ontology;;
+
+		=> nrel_goto: .proc_of_ontology_operator6C;; 
+		*);;
+
+	-> .proc_of_ontology_operator6C 
+		(*
+		<- searchElStr3;;
+
+	    -> rrel_1: rrel_fixed: rrel_scp_var: _set_of_ontology;;
+		-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+		-> rrel_3: rrel_fixed: rrel_scp_const: nrel_subdividing;;
+
+		=> nrel_then:.proc_of_ontology_operator7C;;
+		=> nrel_else:.proc_of_ontology_operator8C;;
+		*);;
+
+	->.proc_of_ontology_operator7C 
+		(*
+		<- genElStr3;;
+
+		-> rrel_1: rrel_fixed: rrel_scp_var: _set_of_ontology;;
+    	-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+		-> rrel_3: rrel_fixed: rrel_scp_const: nrel_subdividing;;
+
+		=> nrel_goto: .proc_of_ontology_operator8C;;
+		*);;
+
+	->.proc_of_ontology_operator8C 
+		(*
+		<- genElStr3;;
+
+		-> rrel_1: rrel_fixed: rrel_scp_var: _set_of_ontology;;
+    	-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+		-> rrel_3: rrel_fixed: rrel_scp_var: _node4;;
+
+		=> nrel_goto: .proc_of_ontology_operator2C;;
+		*);;
+
+	->.proc_of_ontology_operator1B 
+		(*
+		<- searchSetStr3;;
+
+		-> rrel_1: rrel_assign: rrel_scp_var: _node8;;
+    	-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+		-> rrel_3: rrel_fixed: rrel_scp_var: _node3;;
+
+		-> rrel_set_1: rrel_fixed: rrel_scp_var: _set_of_temp;;
+
+		=> nrel_then: .proc_of_ontology_operator2B;;
+		=> nrel_else: .proc_of_ontology_operator_return;; 
+		*);;
+
+	->.proc_of_ontology_operator2B 
+		(*
+		<- searchElStr3;;
+
+		-> rrel_1: rrel_fixed: rrel_scp_var: _set_of_temp;;
+    	-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc_remove3;;
+		-> rrel_3: rrel_assign: rrel_scp_var: _node8;;
+
+		=> nrel_then: .proc_of_ontology_operator3B;;
+		=> nrel_else: .proc_of_ontology_operator_return;; 
+		*);;
+
+	->.proc_of_ontology_operator3B
+		(*
+		<-eraseEl;;
+
+		-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _arc_remove3;;
+
+		=>nrel_goto: .proc_of_ontology_operator4B;;
+		*);;
+
+	->.proc_of_ontology_operator4B 
+		(*
+		<- searchSetStr5;;
+
+		-> rrel_1: rrel_fixed: rrel_scp_var: _node8;;
+    	-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc1;;
+		-> rrel_3: rrel_assign: rrel_scp_var: _node12;;
+		-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+		-> rrel_5: rrel_fixed: rrel_scp_const: nrel_using_constants;;
+
+		-> rrel_set_2: rrel_fixed: rrel_scp_var: _set_of_ontology;;
+		-> rrel_set_3: rrel_fixed: rrel_scp_var: _set_of_ontology;;
+		-> rrel_set_4: rrel_fixed: rrel_scp_var: _set_of_ontology;;
+
+		=> nrel_then: .proc_of_ontology_operator5B;;
+		=> nrel_else: .proc_of_ontology_operator9B;;  
+		*);;
+
+	-> .proc_of_ontology_operator5B
+		(*
+		<- searchElStr3;;
+
+	    -> rrel_1: rrel_fixed: rrel_scp_var: _set_of_ontology;;
+		-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+		-> rrel_3: rrel_fixed: rrel_scp_const: nrel_using_constants;;
+
+		=> nrel_then:.proc_of_ontology_operator6B;;
+		=> nrel_else:.proc_of_ontology_operator7B;;
+		*);;
+
+	->.proc_of_ontology_operator6B 
+		(*
+		<- genElStr3;;
+
+		-> rrel_1: rrel_fixed: rrel_scp_var: _set_of_ontology;;
+    	-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+		-> rrel_3: rrel_fixed: rrel_scp_const: nrel_using_constants;;
+
+		=> nrel_goto: .proc_of_ontology_operator7B;;
+		*);;
+
+	->.proc_of_ontology_operator7B
+		(*
+		<- genElStr3;;
+
+		-> rrel_1: rrel_fixed: rrel_scp_var: _set_of_ontology;;
+    	-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+		-> rrel_3: rrel_fixed: rrel_scp_var: _node8;;
+
+		=> nrel_goto: .proc_of_ontology_operator8B;;
+		*);;
+
+	->.proc_of_ontology_operator8B 
+		(*
+		<- searchSetStr3;;
+
+		-> rrel_1: rrel_fixed: rrel_scp_var: _node8;;
+    	-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+		-> rrel_3: rrel_assign: rrel_scp_var: _node9;;
+
+		-> rrel_set_2: rrel_fixed: rrel_scp_var: _set_of_ontology;;
+		-> rrel_set_3: rrel_fixed: rrel_scp_var: _set_of_ontology;;
+
+		=> nrel_goto: .proc_of_ontology_operator2B;;
+		*);;
+
+	->.proc_of_ontology_operator9B 
+		(*
+		<- searchSetStr5;;
+
+		-> rrel_1: rrel_fixed: rrel_scp_var: _node8;;
+    	-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc1;;
+		-> rrel_3: rrel_assign: rrel_scp_var: _node12;;
+		-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+		-> rrel_5: rrel_fixed: rrel_scp_const: nrel_subdividing;;
+
+		-> rrel_set_2: rrel_fixed: rrel_scp_var: _set_of_ontology;;
+		-> rrel_set_3: rrel_fixed: rrel_scp_var: _set_of_ontology;;
+		-> rrel_set_4: rrel_fixed: rrel_scp_var: _set_of_ontology;;
+
+		=> nrel_then: .proc_of_ontology_operator10B;;
+		=> nrel_else: .proc_of_ontology_operator2B;; 
+		*);;
+
+	->.proc_of_ontology_operator10B 
+		(*
+		<- searchElStr3;;
+
+	    -> rrel_1: rrel_fixed: rrel_scp_var: _set_of_ontology;;
+		-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+		-> rrel_3: rrel_fixed: rrel_scp_const: nrel_subdividing;;
+
+		=> nrel_then:.proc_of_ontology_operator11B;;
+		=> nrel_else:.proc_of_ontology_operator12B;;
+		*);;
+
+	->.proc_of_ontology_operator11B 
+		(*
+		<- genElStr3;;
+
+		-> rrel_1: rrel_fixed: rrel_scp_var: _set_of_ontology;;
+    	-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+		-> rrel_3: rrel_fixed: rrel_scp_const: nrel_subdividing;;
+
+		=> nrel_goto: .proc_of_ontology_operator12B;;
+		*);;
+
+	->.proc_of_ontology_operator12B 
+		(*
+		<- genElStr3;;
+
+		-> rrel_1: rrel_fixed: rrel_scp_var: _set_of_ontology;;
+    	-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+		-> rrel_3: rrel_fixed: rrel_scp_var: _node8;;
+
+		=> nrel_goto: .proc_of_ontology_operator13B;;
+		*);;
+
+	->.proc_of_ontology_operator13B 
+		(*
+		<- searchSetStr3;;
+
+		-> rrel_1: rrel_fixed: rrel_scp_var: _node8;;
+    	-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+		-> rrel_3: rrel_assign: rrel_scp_var: _node9;;
+
+		-> rrel_set_2: rrel_fixed: rrel_scp_var: _set_of_ontology;;
+		-> rrel_set_3: rrel_fixed: rrel_scp_var: _set_of_ontology;;
+
+		=> nrel_goto: .proc_of_ontology_operator2B;;
+		*);;
+
+
+	-> .proc_of_ontology_operator_return(*
+    	<- return;;
+        	*);;
+		*);;
+	*);; 
