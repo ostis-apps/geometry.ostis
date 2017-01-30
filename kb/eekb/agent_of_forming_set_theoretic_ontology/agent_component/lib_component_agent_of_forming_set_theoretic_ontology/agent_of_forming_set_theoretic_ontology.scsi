@@ -1,4 +1,3 @@
-
 agent_of_forming_set_theoretic_ontology
 => nrel_main_idtf:
 	[агентная scp-программа формирования теоретико-множественной онтологии] (* <- lang_ru;; *);
@@ -58,7 +57,7 @@ scp_program -> agent_of_forming_set_theoretic_ontology
 			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
 			-> rrel_3: rrel_fixed: rrel_scp_var: _node_of_subject_domain;;
 
-			=> nrel_then: ..agent_operator_gen1;;
+			=> nrel_then: ..agent_operator_answer1;;
 			=> nrel_else: ..agent_operator_gen_answer_of_ontology;;			//TODO
 			*);;
 
@@ -66,35 +65,30 @@ scp_program -> agent_of_forming_set_theoretic_ontology
 			(*
 			<- genEl;;
 
-			-> rrel_1: rrel_assign: rrel_scp_var: rrel_node: _answer_of_agent;;
+			-> rrel_1: rrel_assign: rrel_scp_var: rrel_node: rrel_const: _answer_of_agent;;
 
 			=> nrel_goto: ..agent_operator_answer2;;
 			*);;
 
-		-> ..agent_operator_answer2
+			-> ..agent_operator_answer2
 			(*
 			<- sys_search;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_const:
 					[*
 					subject_domain _-> _subj_dom;;
-					_subj_dom _=> nrel_ontology: _ont;;
-					set_theoretical_ontology _-> _ont;;
+					_subj_dom _-> _elems_sd;;
+					_subj_dom _=> nrel_ontology:: _ont;;
+					theoretic_set_ontology _-> _ont;;
+					_ont _-> _elems_ont;;
 					*];;
-			-> rrel_2: rrel_fixed: rrel_scp_const: ...
-				(*
-				-> ...
-					(*
-					-> rrel_1: rrel_scp_const: _ont;;
-					-> rrel_2: rrel_assign: rrel_scp_var: rrel_set: _node_of_ontology;;
-					*);;
-				*);;
+			-> rrel_2: rrel_fixed: rrel_scp_const: ...;;
 			-> rrel_3: rrel_fixed: rrel_scp_const: ...
 				(*
 				-> ...
 					(*
 					-> rrel_1: rrel_fixed: rrel_scp_const: _subj_dom;;
-					-> rrel_2: rrel_fixed: rrel_scp_var: rrel_set: _node_of_subject_domain;;
+					-> rrel_2: rrel_fixed: rrel_scp_var: _node_of_subject_domain;;
 					*);;
 				*);;
 			-> rrel_4: rrel_assign: rrel_scp_var: _answer_of_agent;;
@@ -107,9 +101,9 @@ scp_program -> agent_of_forming_set_theoretic_ontology
 			(*
 			<- genElStr3;;
 
-			-> rrel_1: rrel_fixed: rrel_node: rrel_scp_var: _answer_of_agent;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_agent;;
 			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
-			-> rrel_3: rrel_fixed: rrel_scp_var: _node_of_subject_domain;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: subject_domain;;
 
 			=> nrel_goto: ..agent_operator_answer4;;
 			*);;
@@ -118,22 +112,20 @@ scp_program -> agent_of_forming_set_theoretic_ontology
 			(*
 			<- genElStr3;;
 
-			-> rrel_1: rrel_fixed: rrel_node: rrel_scp_var: _answer_of_agent;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_agent;;
 			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
-			-> rrel_3: rrel_fixed: rrel_scp_var: _node_of_ontology;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: nrel_ontology;;
 
 			=> nrel_goto: ..agent_operator_answer5;;
 			*);;
 
 		-> ..agent_operator_answer5
 			(*
-			<- searchSetStr3;;
+			<- genElStr3;;
 
-			-> rrel_1: rrel_fixed: rrel_scp_const: _node_of_ontology;;
-			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
-			-> rrel_3: rrel_assign: rrel_scp_var: _nodes;;
-
-			-> rrel_set_3: rrel_fixed: rrel_scp_var: _answer_of_agent;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_agent;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: theoretic_set_ontology;;
 
 			=> nrel_goto: ..agent_operator_answer6;;
 			*);;
@@ -151,6 +143,15 @@ scp_program -> agent_of_forming_set_theoretic_ontology
 			=> nrel_goto: ..agent_operator_end1;;
 			*);;
 
+		-> ..agent_operator_form1
+			(*
+			<- printNl;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: [The end];;
+
+			=> nrel_goto: ..agent_operator_return;;
+			*);;
+
 		-> ..agent_operator_end1
 			(*
 			<- genElStr3;;
@@ -165,6 +166,15 @@ scp_program -> agent_of_forming_set_theoretic_ontology
 		-> ..agent_operator_return
 			(*
 			<- return;;
+			*);;
+
+		-> ..agent_operator_print1
+			(*
+			<- printEl;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _node_of_ontology;;
+
+			=> nrel_goto: ..agent_operator_answer6;;
 			*);;
 		*);;
 	*);;
