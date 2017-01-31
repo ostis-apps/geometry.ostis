@@ -1,0 +1,127 @@
+agent_of_searching_wrong_elements
+=> nrel_main_idtf:
+	[агентная scp-программа поиска sc-элементов, имеющих системный идентификатор, но не имеющих ни одного основного.] (* <- lang_ru;; *);
+	[agent scp-program of searching sc-elemnts without main identifier.] (* <- lang_en;; *);
+	<- agent_scp_program;;
+
+scp_program -> agent_of_searching_wrong_elements 
+	(*
+	-> rrel_params: .agent_of_searching_wrong_elements_params 
+		(*
+		-> rrel_1: rrel_in: _event;;
+		-> rrel_2: rrel_in: _input_arc;;
+		*);;
+
+	-> rrel_operators: .agent_of_searching_wrong_elements_operator_set 
+		(*
+		-> rrel_init: .agent_of_searching_wrong_elements_operator1A 
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: _temp;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _input_arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _quest;;
+
+			=> nrel_goto: .agent_of_searching_wrong_elements_operator1B;;
+			*);;
+
+		-> .agent_of_searching_wrong_elements_operator1B 
+			(*
+		  	<- searchElStr3;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_const: question_of_searching_wrong_elements;;
+		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+		  	-> rrel_3: rrel_fixed: rrel_scp_var: _quest;;
+
+		  	=> nrel_then: .agent_of_searching_wrong_elements_operator1C;;
+		  	=> nrel_else: .agent_of_searching_wrong_elements_operator_return;;
+			*);;
+		
+		-> .agent_of_searching_wrong_elements_operator1C
+			(*
+		  	<- searchElStr3;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+		  	-> rrel_3: rrel_assign: rrel_scp_var: _param;;
+
+		  	=> nrel_then: .agent_of_searching_wrong_elements_operator1D;;
+		  	=> nrel_else: .agent_of_searching_wrong_elements_operator_return;;
+			*);;
+
+		-> .agent_of_searching_wrong_elements_operator1D
+			(*
+		  	<- genEl;;
+
+		  	-> rrel_1: rrel_assign: rrel_const: rrel_scp_var: rrel_node: _answer678;;
+
+		  	=> nrel_goto: .agent_of_searching_wrong_elements_operator1E;;
+			*);;
+
+		-> .agent_of_searching_wrong_elements_operator1E
+			(*
+		  	<- call;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_const: proc_of_searching_wrong_elements;;
+		  	-> rrel_2: rrel_fixed: rrel_scp_const: .agent_of_searching_wrong_elements_operator1E_params 
+		  		(*
+				-> rrel_1: rrel_fixed: rrel_scp_var: _answer678;;
+				*);;
+		  	-> rrel_3: rrel_assign: rrel_scp_var: _descr1;;
+
+		  	=> nrel_goto: .agent_of_searching_wrong_elements_operator1F;;
+			*);;
+
+		-> .agent_of_searching_wrong_elements_operator1F
+			(*
+		  	<- waitReturn;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_var: _descr1;;
+
+		  	=> nrel_goto: .agent_of_searching_wrong_elements_operator1G;;
+			*);;     
+
+		-> .agent_of_searching_wrong_elements_operator1G
+			(*
+		  	<- genElStr5;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+		  	-> rrel_2: rrel_assign: rrel_common: rrel_const: rrel_scp_var: _arc1;;
+		  	-> rrel_3: rrel_fixed: rrel_scp_var: _answer678;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_const: rrel_scp_var: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_answer;;
+
+		  	=> nrel_goto: .agent_of_searching_wrong_elements_operator_return;;
+			*);;                                            
+					
+		-> .agent_of_searching_wrong_elements_operator_return 
+			(*
+		  	<- return;;
+			*);;
+		*);;
+	*);;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,16 @@
+ui_menu_file_for_searching_wrong_elements <- ui_user_command_class_atom; ui_user_command_class_view_kb; ui_one_argument_command_class;;
+
+ui_menu_file_for_searching_wrong_elements => nrel_main_idtf: [Команда поиска sc-элементов без главного идентификатора] (* <- lang_ru;; *);;
+ui_menu_file_for_searching_wrong_elements => nrel_main_idtf: [Command of searching sc-elemnts without main identifier] (* <- lang_en;; *);;
+	
+ui_menu_file_for_searching_wrong_elements => ui_nrel_command_template:
+	[*
+		question_of_searching_wrong_elements _-> ._question_of_searching_wrong_elements_instance
+			(*
+				_-> wrong_struct;;	
+			*);;
+		._question_of_searching_wrong_elements_instance _<- question;;
+	*];;
+
+ui_menu_file_for_searching_wrong_elements => ui_nrel_command_lang_template: [Sc-элементы без главного идентификатора] (* <- lang_ru;; *);;
+ui_menu_file_for_searching_wrong_elements => ui_nrel_command_lang_template: [Sc-elemnts without main identifier] (* <- lang_en;; *);;
