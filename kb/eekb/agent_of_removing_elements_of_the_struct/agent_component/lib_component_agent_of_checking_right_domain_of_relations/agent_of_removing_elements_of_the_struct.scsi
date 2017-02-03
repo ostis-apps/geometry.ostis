@@ -1,6 +1,6 @@
 agent_of_removing_elements_of_the_struct
 => nrel_main_idtf:
-	[агентная scp-программа удаления элементов из структуры] (* <- lang_ru;; *);
+	[агентная scp-программа удаления элементов структуры] (* <- lang_ru;; *);
 	[agent scp-program of removing elements of the struct] (* <- lang_en;; *);
 	<- agent_scp_program;;
 
@@ -10,7 +10,7 @@ scp_program -> agent_of_removing_elements_of_the_struct (*
 		-> rrel_2: rrel_in: _input_arc;;
 		*);;
 	-> rrel_operators: .agent_of_removing_elements_of_the_struct_operators (*
-		-> rrel_init: .agent_of_removing_elements_of_the_struct_operator1A
+		-> rrel_init: .agent_of_removing_elements_of_the_struct_operatorS1
 			(*
 			<- searchElStr3;;
 
@@ -18,10 +18,10 @@ scp_program -> agent_of_removing_elements_of_the_struct (*
 			-> rrel_2: rrel_fixed: rrel_scp_var: _input_arc;;
 			-> rrel_3: rrel_assign: rrel_scp_var: _quest;;
 
-			=> nrel_goto: .agent_of_removing_elements_of_the_struct_operator1B;;
+			=> nrel_goto: .agent_of_removing_elements_of_the_struct_operatorS2;;
 			*);;
 				 
-		-> .agent_of_removing_elements_of_the_struct_operator1B
+		-> .agent_of_removing_elements_of_the_struct_operatorS2
 			(*
 			<- searchElStr3;;
 
@@ -29,11 +29,11 @@ scp_program -> agent_of_removing_elements_of_the_struct (*
 			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
 			-> rrel_3: rrel_fixed: rrel_scp_var: _quest;;
 
-			=> nrel_then: .agent_of_removing_elements_of_the_struct_operator2A;;
+			=> nrel_then: .agent_of_removing_elements_of_the_struct_operatorS3;;
 			=> nrel_else: .agent_of_removing_elements_of_the_struct_return;;
 			*);;
 
-		-> .agent_of_removing_elements_of_the_struct_operator2A
+		-> .agent_of_removing_elements_of_the_struct_operatorS3
 			(*
 			<- searchElStr3;;
 
@@ -41,143 +41,135 @@ scp_program -> agent_of_removing_elements_of_the_struct (*
 			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
 			-> rrel_3: rrel_assign: rrel_scp_var: _struct;;
 
-			=> nrel_goto: .agent_of_removing_elements_of_the_struct_operatorA2;;
+			=> nrel_goto: .agent_of_removing_elements_of_the_struct_operatorA1;;
 			*);;
 
-		-> .agent_of_removing_elements_of_the_struct_operatorA2 (*
+		-> .agent_of_removing_elements_of_the_struct_operatorA1 (*
 			<- searchElStr3;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _struct;;
 			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
 			-> rrel_3: rrel_assign: rrel_scp_var: rrel_node: _node;;
 
-			=> nrel_then: .agent_of_removing_elements_of_the_struct_operatorA03;;
+			=> nrel_then: .agent_of_removing_elements_of_the_struct_operatorA2;;
 			=> nrel_else: .agent_of_removing_elements_of_the_struct_operatorZ1;;
 			*);;
 
-		-> .agent_of_removing_elements_of_the_struct_operatorA03 (*
-			<- printEl;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_var: _node;;
-
-			=> nrel_goto: .agent_of_removing_elements_of_the_struct_operatorA3;;
-			*);;
-
-		-> .agent_of_removing_elements_of_the_struct_operatorA3 (*
+		-> .agent_of_removing_elements_of_the_struct_operatorA2 (*
 			<- eraseEl;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _arc;;
 
-			=> nrel_goto: .agent_of_removing_elements_of_the_struct_operatorC1;;
+			=> nrel_goto: .agent_of_removing_elements_of_the_struct_operatorB1;;
+			*);;
+
+		-> .agent_of_removing_elements_of_the_struct_operatorB1 (*
+			<- searchElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _node;;
+			-> rrel_2: rrel_assign: rrel_scp_var: _arc;; 
+			-> rrel_3: rrel_assign: rrel_scp_var: _adjacentTemp;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_var: _struct;;
+
+			=> nrel_then: .agent_of_removing_elements_of_the_struct_operatorB2;;
+			=> nrel_else: .agent_of_removing_elements_of_the_struct_operatorC1;; 
+			*);;		
+
+		-> .agent_of_removing_elements_of_the_struct_operatorB2 (*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _arc;;
+
+			=> nrel_goto: .agent_of_removing_elements_of_the_struct_operatorB1;;
 			*);;
 
 		-> .agent_of_removing_elements_of_the_struct_operatorC1 (*
 			<- searchElStr5;;
 
-			-> rrel_1: rrel_fixed: rrel_scp_var: _node;;
+			-> rrel_1: rrel_assign: rrel_scp_var: _adjacentTemp;;
 			-> rrel_2: rrel_assign: rrel_scp_var: _arc;; 
-			-> rrel_3: rrel_assign: rrel_scp_var: _temp;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _node;;
 			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
 			-> rrel_5: rrel_fixed: rrel_scp_var: _struct;;
 
 			=> nrel_then: .agent_of_removing_elements_of_the_struct_operatorC2;;
-			=> nrel_else: .agent_of_removing_elements_of_the_struct_operatorD1;; 
-			*);;		
+			=> nrel_else: .agent_of_removing_elements_of_the_struct_operatorD1;;
+			*);;
 
 		-> .agent_of_removing_elements_of_the_struct_operatorC2 (*
 			<- eraseEl;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _arc;;
 
-			=> nrel_goto: .agent_of_removing_elements_of_the_struct_operatorC1;;
+			=> nrel_goto: .agent_of_removing_elements_of_the_struct_operatorC1;;			
 			*);;
 
 		-> .agent_of_removing_elements_of_the_struct_operatorD1 (*
-			<- searchElStr5;;
-
-			-> rrel_1: rrel_assign: rrel_scp_var: _temp;;
-			-> rrel_2: rrel_assign: rrel_scp_var: _arc;; 
-			-> rrel_3: rrel_fixed: rrel_scp_var: _node;;
-			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
-			-> rrel_5: rrel_fixed: rrel_scp_var: _struct;;
-
-			=> nrel_then: .agent_of_removing_elements_of_the_struct_operatorD2;;
-			=> nrel_else: .agent_of_removing_elements_of_the_struct_operatorB1;;
-			*);;
-
-		-> .agent_of_removing_elements_of_the_struct_operatorD2 (*
-			<- eraseEl;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _arc;;
-
-			=> nrel_goto: .agent_of_removing_elements_of_the_struct_operatorD1;;			
-			*);;
-
-		-> .agent_of_removing_elements_of_the_struct_operatorB1 (*
 			<- searchSetStr3;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _node;;
 			-> rrel_2: rrel_assign: rrel_scp_var: _arc;; 
-			-> rrel_3: rrel_assign: rrel_scp_var: _temp;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _adjacentTemp;;
 
-			-> rrel_set_3: rrel_assign: rrel_scp_var: _adjNodes;;
+			-> rrel_set_3: rrel_assign: rrel_scp_var: _adjacentNodes;;
 
-			=> nrel_then: .agent_of_removing_elements_of_the_struct_operatorB2;;
+			=> nrel_then: .agent_of_removing_elements_of_the_struct_operatorD2;;
 			=> nrel_else: .agent_of_removing_elements_of_the_struct_operatorE1;; 
  			*);;
 
-		-> .agent_of_removing_elements_of_the_struct_operatorB2 (*
+		-> .agent_of_removing_elements_of_the_struct_operatorD2 (*
 			<- searchElStr3;;
 
-			-> rrel_1: rrel_fixed: rrel_scp_var: _adjNodes;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _adjacentNodes;;
 			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
-			-> rrel_3: rrel_assign: rrel_scp_var: _temp;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _adjacentTemp;;
 
-			=> nrel_then: .agent_of_removing_elements_of_the_struct_operatorB3;;
+			=> nrel_then: .agent_of_removing_elements_of_the_struct_operatorD3;;
 			=> nrel_else: .agent_of_removing_elements_of_the_struct_operatorE1;;
 			*);;
 
-		-> .agent_of_removing_elements_of_the_struct_operatorB3 (*
+		-> .agent_of_removing_elements_of_the_struct_operatorD3 (*
 			<- eraseEl;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _arc;;
 
-			=> nrel_goto: .agent_of_removing_elements_of_the_struct_operatorB4;;
+			=> nrel_goto: .agent_of_removing_elements_of_the_struct_operatorD4;;
 			*);;
 
-		-> .agent_of_removing_elements_of_the_struct_operatorB4 (*
+		-> .agent_of_removing_elements_of_the_struct_operatorD4 (*
 			<- searchElStr3;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_const: substantive_part_of_the_knowledge_base;;
 			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
-			-> rrel_3: rrel_fixed: rrel_scp_var: _temp;;			
+			-> rrel_3: rrel_fixed: rrel_scp_var: _adjacentTemp;;			
 
-			=> nrel_then: .agent_of_removing_elements_of_the_struct_operatorA2;; 
-			=> nrel_else: .agent_of_removing_elements_of_the_struct_operatorB2;;
+			=> nrel_then: .agent_of_removing_elements_of_the_struct_operatorA1;; 
+			=> nrel_else: .agent_of_removing_elements_of_the_struct_operatorD2;;
 			*);;
 
 		-> .agent_of_removing_elements_of_the_struct_operatorE1 (*
 			<- searchSetStr3;;
 
-			-> rrel_1: rrel_assign: rrel_scp_var: _temp;;
+			-> rrel_1: rrel_assign: rrel_scp_var: _adjacentTemp;;
 			-> rrel_2: rrel_assign: rrel_scp_var: _arc;;
 			-> rrel_3: rrel_fixed: rrel_scp_var: _node;;
 
-			-> rrel_set_1: rrel_assign: rrel_scp_var: _adjNodes;;
+			-> rrel_set_1: rrel_assign: rrel_scp_var: _adjacentNodes;;
 
 			=> nrel_then: .agent_of_removing_elements_of_the_struct_operatorE2;;
-			=> nrel_else: .agent_of_removing_elements_of_the_struct_operatorB05;;
+			=> nrel_else: .agent_of_removing_elements_of_the_struct_operatorF1;;
  			*);;
 
 		-> .agent_of_removing_elements_of_the_struct_operatorE2 (*
 			<- searchElStr3;;
 
-			-> rrel_1: rrel_fixed: rrel_scp_var: _adjNodes;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _adjacentNodes;;
 			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
-			-> rrel_3: rrel_assign: rrel_scp_var: _temp;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _adjacentTemp;;
 
 			=> nrel_then: .agent_of_removing_elements_of_the_struct_operatorE3;;
-			=> nrel_else: .agent_of_removing_elements_of_the_struct_operatorB05;;
+			=> nrel_else: .agent_of_removing_elements_of_the_struct_operatorF1;;
 			*);;
 
 		-> .agent_of_removing_elements_of_the_struct_operatorE3 (*
@@ -193,26 +185,18 @@ scp_program -> agent_of_removing_elements_of_the_struct (*
 
 			-> rrel_1: rrel_fixed: rrel_scp_const: substantive_part_of_the_knowledge_base;;
 			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
-			-> rrel_3: rrel_fixed: rrel_scp_var: _temp;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _adjacentTemp;;
 
-			=> nrel_then: .agent_of_removing_elements_of_the_struct_operatorA2;;
+			=> nrel_then: .agent_of_removing_elements_of_the_struct_operatorA1;;
 			=> nrel_else: .agent_of_removing_elements_of_the_struct_operatorE2;;
 			*);;
 
-		-> .agent_of_removing_elements_of_the_struct_operatorB05 (*
-			<- printNl;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_const: [Delete];;
-
-			=> nrel_goto: .agent_of_removing_elements_of_the_struct_operatorB5;;
-			*);;
-
-		-> .agent_of_removing_elements_of_the_struct_operatorB5 (*
+		-> .agent_of_removing_elements_of_the_struct_operatorF1 (*
 			<- eraseEl;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _node;;
 
-			=> nrel_goto: .agent_of_removing_elements_of_the_struct_operatorA2;;
+			=> nrel_goto: .agent_of_removing_elements_of_the_struct_operatorA1;;
 			*);;
 
 		-> .agent_of_removing_elements_of_the_struct_operatorZ1 (*
