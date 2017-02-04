@@ -1,0 +1,26 @@
+lib_component_proc_add_element_in_set_theoretic_ontology
+=> nrel_main_idtf:
+	[Компонент библиотеки. scp-программы добавления элемента предметной области в теоретико-множественную онтологию]
+		(* <- lang_ru;; *);
+	[Library component. scp-program of extending set-theoretic ontology by element of subject domain]
+		(* <- lang_en;; *);
+
+<- library_of_platform_independent_reusable_components;
+
+-> rrel_key_sc_element: 
+	proc_add_element_in_set_theoretic_ontology;
+
+<- rrel_key_sc_element: 
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://htmls/proc_add_element_in_set_theoretic_ontology.html" 
+				(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+lib_component_proc_add_element_in_set_theoretic_ontology = [*^"file://proc_add_element_in_set_theoretic_ontology.scsi"*];;

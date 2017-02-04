@@ -34,7 +34,7 @@ scp_program -> agent_of_forming_set_theoretic_ontology
 			-> rrel_3: rrel_fixed: rrel_scp_var: _quest;;
 
 			=> nrel_then: ..agent_operator_init3;;
-			=> nrel_else: ..agent_operator_return;;
+			=> nrel_else: ..agent_operator_exception1;;
 			*);;
 
 		-> ..agent_operator_init3
@@ -46,7 +46,7 @@ scp_program -> agent_of_forming_set_theoretic_ontology
 			-> rrel_3: rrel_assign: rrel_scp_var: _node_of_subject_domain;;
 
 			=> nrel_then: ..agent_operator_init4;;
-			=> nrel_else: ..agent_operator_return;;
+			=> nrel_else: ..agent_operator_exception1;;
 			*);;
 
 		-> ..agent_operator_init4
@@ -58,29 +58,29 @@ scp_program -> agent_of_forming_set_theoretic_ontology
 			-> rrel_3: rrel_fixed: rrel_scp_var: _node_of_subject_domain;;
 
 			=> nrel_then: ..agent_operator_answer1;;
-			=> nrel_else: ..agent_operator_gen_answer_of_ontology;;			//TODO
+			=> nrel_else: ..agent_operator_exception2;;
 			*);;
 
-		-> ..agent_operator_answer1
+		-> ..agent_operator_answer0
 			(*
 			<- genEl;;
 
 			-> rrel_1: rrel_assign: rrel_scp_var: rrel_node: rrel_const: _answer_of_agent;;
 
-			=> nrel_goto: ..agent_operator_answer2;;
+			=> nrel_goto: ..agent_operator_answer1;;
 			*);;
 
-		-> ..agent_operator_answer2
+		-> ..agent_operator_answer1
 			(*
 			<- sys_search;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_const:
 					[*
 					subject_domain _-> _subj_dom;;
-					_subj_dom _-> _elems_sd;;
+					_subj_dom _-> _sd_elems;;
 					_subj_dom _=> nrel_ontology:: _ont;;
 					theoretic_set_ontology _-> _ont;;
-					_ont _-> _elems_ont;;
+					_ont _-> _ont_elems;;
 					*];;
 			-> rrel_2: rrel_fixed: rrel_scp_const: ...;;
 			-> rrel_3: rrel_fixed: rrel_scp_const: ...
@@ -93,8 +93,19 @@ scp_program -> agent_of_forming_set_theoretic_ontology
 				*);;
 			-> rrel_4: rrel_assign: rrel_scp_var: _answer_of_agent;;
 
-			=> nrel_then: ..agent_operator_answer3;;
+			=> nrel_then: ..agent_operator_answer2;;
 			=> nrel_else: ..agent_operator_form1;;
+			*);;
+
+		-> ..agent_operator_answer2
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_agent;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: subject_domain;;
+
+			=> nrel_goto: ..agent_operator_answer3;;
 			*);;
 
 		-> ..agent_operator_answer3
@@ -103,7 +114,7 @@ scp_program -> agent_of_forming_set_theoretic_ontology
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_agent;;
 			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
-			-> rrel_3: rrel_fixed: rrel_scp_const: subject_domain;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: nrel_ontology;;
 
 			=> nrel_goto: ..agent_operator_answer4;;
 			*);;
@@ -114,23 +125,12 @@ scp_program -> agent_of_forming_set_theoretic_ontology
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_agent;;
 			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
-			-> rrel_3: rrel_fixed: rrel_scp_const: nrel_ontology;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: theoretic_set_ontology;;
 
 			=> nrel_goto: ..agent_operator_answer5;;
 			*);;
 
 		-> ..agent_operator_answer5
-			(*
-			<- genElStr3;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_agent;;
-			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
-			-> rrel_3: rrel_fixed: rrel_scp_const: theoretic_set_ontology;;
-
-			=> nrel_goto: ..agent_operator_answer6;;
-			*);;
-
-		-> ..agent_operator_answer6
 			(*
 			<- sys_search;;
 
@@ -156,19 +156,20 @@ scp_program -> agent_of_forming_set_theoretic_ontology
 					*);;
 				*);;
 
-			=> nrel_goto: ..agent_operator_answer7;;
+			=> nrel_then: ..agent_operator_answer6;;
+			=> nrel_else: ..agent_operator_exception1;;
 			*);;
 
-		-> ..agent_operator_answer7
+		-> ..agent_operator_answer6
 			(*
 			<- genEl;;
 
 			-> rrel_1: rrel_assign: rrel_scp_var: rrel_node: rrel_const: _set_elem_sd;;
 
-			=> nrel_goto: ..agent_operator_answer8;;
+			=> nrel_goto: ..agent_operator_answer7;;
 			*);;
 
-		-> ..agent_operator_answer8
+		-> ..agent_operator_answer7
 			(*
 			<- searchSetStr3;;
 
@@ -178,10 +179,10 @@ scp_program -> agent_of_forming_set_theoretic_ontology
 
 			-> rrel_set_3: rrel_assign: rrel_scp_var: _set_elem_sd;;
 
-			=> nrel_goto: ..agent_operator_answer9;;
+			=> nrel_goto: ..agent_operator_answer8;;
 			*);;
 
-		-> ..agent_operator_answer9
+		-> ..agent_operator_answer8
 			(*
 			<- searchElStr3;;
 
@@ -189,20 +190,20 @@ scp_program -> agent_of_forming_set_theoretic_ontology
 			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
 			-> rrel_3: rrel_assign: rrel_scp_var: _elem_sd;;
 
-			=> nrel_then: ..agent_operator_answer10;;
-			=> nrel_else: ..agent_operator_answer13;;
+			=> nrel_then: ..agent_operator_answer9;;
+			=> nrel_else: ..agent_operator_answer12;;
 			*);;
 
-		-> ..agent_operator_answer10
+		-> ..agent_operator_answer9
 			(*
 			<- eraseEl;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _arc;;
 
-			=> nrel_goto: ..agent_operator_answer11;;
+			=> nrel_goto: ..agent_operator_answer10;;
 			*);;
 
-		-> ..agent_operator_answer11
+		-> ..agent_operator_answer10
 			(*
 			<- genElStr5;;
 
@@ -212,10 +213,10 @@ scp_program -> agent_of_forming_set_theoretic_ontology
 			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
 			-> rrel_5: rrel_fixed: rrel_scp_const: rrel_key_sc_element;;
 
-			=> nrel_goto: ..agent_operator_answer12;;
+			=> nrel_goto: ..agent_operator_answer11;;
 			*);;
 
-		-> ..agent_operator_answer12
+		-> ..agent_operator_answer11
 			(*
 			<- searchSetStr5;;
 
@@ -228,14 +229,25 @@ scp_program -> agent_of_forming_set_theoretic_ontology
 			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer_of_agent;;
 			-> rrel_set_4: rrel_fixed: rrel_scp_var: _answer_of_agent;;
 
-			=> nrel_goto: ..agent_operator_answer9;;
+			=> nrel_goto: ..agent_operator_answer8;;
 			*);;
 
-		-> ..agent_operator_answer13
+		-> ..agent_operator_answer12
 			(*
 			<- eraseEl;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _set_elem_sd;;
+
+			=> nrel_goto: ..agent_operator_answer13;;
+			*);;
+
+		-> ..agent_operator_answer13
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_agent;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: _node_of_ontology;;
 
 			=> nrel_goto: ..agent_operator_answer14;;
 			*);;
@@ -246,23 +258,12 @@ scp_program -> agent_of_forming_set_theoretic_ontology
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_agent;;
 			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
-			-> rrel_3: rrel_fixed: rrel_scp_const: _node_of_ontology;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: rrel_key_sc_element;;
 
 			=> nrel_goto: ..agent_operator_answer15;;
 			*);;
 
 		-> ..agent_operator_answer15
-			(*
-			<- genElStr3;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_agent;;
-			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
-			-> rrel_3: rrel_fixed: rrel_scp_const: rrel_key_sc_element;;
-
-			=> nrel_goto: ..agent_operator_answer16;;
-			*);;
-
-		-> ..agent_operator_answer16
 			(*
 			<- genElStr5;;
 
@@ -277,11 +278,103 @@ scp_program -> agent_of_forming_set_theoretic_ontology
 
 		-> ..agent_operator_form1
 			(*
-			<- printNl;;
+			<- genElStr5;;
 
-			-> rrel_1: rrel_fixed: rrel_scp_const: [The end];;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _node_of_subject_domain;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: rrel_const: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: rrel_struct: rrel_const: _set_theor_ontology;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_ontology;;
 
-			=> nrel_goto: ..agent_operator_answer8;;
+			=> nrel_goto: ..agent_operator_form2;;
+			*);;
+
+		-> ..agent_operator_form2
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: theoretic_set_ontology;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _set_theor_ontology;;
+
+			=> nrel_goto: ..agent_operator_form4;;
+			*);;
+
+		-> ..agent_operator_form4
+			(*
+			<- genEl;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: rrel_node: rrel_const: _set_elem_sd;;
+
+			=> nrel_goto: ..agent_operator_form_cicle1_0;;
+			*);;
+
+		-> ..agent_operator_form5
+			(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _set_elem_sd;;
+
+			=> nrel_goto: ..agent_operator_answer1;;
+			*);;
+
+		-> ..agent_operator_form_cicle1_0
+			(*
+			<- searchSetStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _node_of_subject_domain;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _elem_sd;;
+
+			-> rrel_set_3: rrel_assign: rrel_scp_var: _set_elem_sd;;
+
+			=> nrel_then: ..agent_operator_form_cicle1_1;;
+			=> nrel_else: ..agent_operator_exception3;;
+			*);;
+
+		-> ..agent_operator_form_cicle1_1
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _set_elem_sd;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _elem_sd;;
+
+			=> nrel_then: ..agent_operator_form_cicle1_2;;
+			=> nrel_else: ..agent_operator_form5;;
+			*);;
+
+		-> ..agent_operator_form_cicle1_2
+			(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _arc1;;
+
+			=> nrel_goto: ..agent_operator_form_cicle1_3;;
+			*);;
+
+		-> ..agent_operator_form_cicle1_3
+			(*
+			<- call;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: proc_add_element_in_set_theoretic_ontology;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: ..proc_params1
+				(*
+				-> rrel_1: rrel_fixed: rrel_scp_var: _elem_sd;;
+				-> rrel_2: rrel_fixed: rrel_scp_var: _set_theor_ontology;;
+				*);;
+			-> rrel_3: rrel_assign: rrel_scp_var: _descr1;;
+
+			=> nrel_goto: ..agent_operator_form_cicle1_4;;
+			*);;
+
+		-> ..agent_operator_form_cicle1_4
+			(*
+			<- waitReturn;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _descr1;;
+
+			=> nrel_goto: ..agent_operator_form_cicle1_1;;
 			*);;
 
 		-> ..agent_operator_end1
@@ -295,27 +388,63 @@ scp_program -> agent_of_forming_set_theoretic_ontology
 			=> nrel_goto: ..agent_operator_return;; 
 			*);;
 
-		-> ..agent_operator_end2
+		-> ..agent_operator_exception1
 			(*
-			<- eraseEl;;
+			<- call;;
 
-			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _answer_of_agent;;
+			-> rrel_1: rrel_fixed: rrel_scp_const: proc_of_adding_validating_message;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: ..except_params1
+				(*
+				-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+				-> rrel_2: rrel_fixed: rrel_scp_const: [Unexpected exception! Agent execution aborted.];;
+				*);;
+			-> rrel_3: rrel_assign: rrel_scp_var: _descr;;
 
-			=> nrel_goto: ..agent_operator_return;; 
+			=> nrel_goto: .agent_operator_exception_wait;;
+			*);;
+
+		-> ..agent_operator_exception2
+			(*
+			<- call;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: proc_of_adding_validating_message;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: ..except_params2
+				(*
+				-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+				-> rrel_2: rrel_fixed: rrel_scp_const: [Wrong parameter is given! It must be a subject domain. Agent execution aborted.];;
+				*);;
+			-> rrel_3: rrel_assign: rrel_scp_var: _descr;;
+
+			=> nrel_goto: .agent_operator_exception_wait;;
+			*);;
+
+		-> ..agent_operator_exception3
+			(*
+			<- call;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: proc_of_adding_validating_message;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: ..except_params2
+				(*
+				-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+				-> rrel_2: rrel_fixed: rrel_scp_const: [Subject domain has no elements to form an set-theoretic ontology.];;
+				*);;
+			-> rrel_3: rrel_assign: rrel_scp_var: _descr;;
+
+			=> nrel_goto: .agent_operator_exception_wait;;
+			*);;
+
+		-> ..agent_operator_exception_wait
+			(*
+			<- waitReturn;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: _descr;;
+
+			=> nrel_goto: .agent_operator_return;;
 			*);;
 
 		-> ..agent_operator_return
 			(*
 			<- return;;
-			*);;
-
-		-> ..agent_operator_print1
-			(*
-			<- printEl;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_agent;;
-
-			=> nrel_goto: ..agent_operator_answer15;;
 			*);;
 		*);;
 	*);;
