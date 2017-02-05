@@ -1,0 +1,225 @@
+scp_program -> proc_of_identification_two_elements
+	(*	
+	-> rrel_params: .proc_of_identification_two_elements_params 
+		(*
+		-> rrel_1: rrel_in: _node1;;
+        -> rrel_2: rrel_in: _node2;;
+		
+		*);;
+
+	-> rrel_operators: .proc_of_identification_two_elements_operator_set 
+		(*
+		-> rrel_init: .proc_of_identification_two_elements_operator1A 
+		    	(*
+					<- searchSetStr3;;
+
+		    		-> rrel_1: rrel_fixed: rrel_scp_var: _node2;;
+		    		-> rrel_2: rrel_assign: rrel_scp_var: _arc_remove;;
+		    		-> rrel_3: rrel_assign: rrel_scp_var: _node3;;
+
+		    		->rrel_set_2: rrel_assign: rrel_scp_var: _set_of_arcs;;
+
+		    	=> nrel_then: .proc_of_identification_two_elements_operator2A;;
+		    	=> nrel_else: .proc_of_identification_two_elements_operator1B;;
+		    	*);;
+
+		    	->.proc_of_identification_two_elements_operator2A 
+		    	(*
+					<- searchElStr3;;
+
+		    		-> rrel_1: rrel_fixed: rrel_scp_var: _set_of_arcs;;
+		    		-> rrel_2: rrel_assign: rrel_scp_var: _arc1;;
+		    		-> rrel_3: rrel_assign: rrel_scp_var: _arc_remove;;
+
+
+		    	=> nrel_then: .proc_of_identification_two_elements_operator3A;;
+		    	=> nrel_else: .proc_of_identification_two_elements_operator1B;;
+		    	*);;
+
+		    	->.proc_of_identification_two_elements_operator3A
+		    	(*
+		    		<-ifType;;
+
+		    		-> rrel_1: rrel_pos_const_perm: rrel_scp_var: _arc_remove;;
+
+		    	=> nrel_then:.proc_of_identification_two_elements_operator4A;;
+		    	=> nrel_else:.proc_of_identification_two_elements_operator5A;;
+		    	*);;
+
+		    	->.proc_of_identification_two_elements_operator4A
+		   	    (*
+					<- genElStr3;;
+
+		    		-> rrel_1: rrel_fixed: rrel_scp_var: _node1;;
+		    		-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc_end;;
+		    		-> rrel_3: rrel_fixed: rrel_scp_var: _node3;;
+
+		    	=>nrel_goto: .proc_of_identification_two_elements_operator6A;;
+		    	*);;
+
+		    	->.proc_of_identification_two_elements_operator5A
+		    	(*
+					<- genElStr3;;
+
+		    		-> rrel_1: rrel_fixed: rrel_scp_var: _node1;;
+		    		-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc_end;;
+		    		-> rrel_3: rrel_fixed: rrel_scp_var: _node3;;
+
+		    	=>nrel_goto: .proc_of_identification_two_elements_operator6A;;
+		    	*);;
+
+		    	->.proc_of_identification_two_elements_operator6A
+		    	(*
+		    		<-eraseEl;;
+
+		    		-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _arc1;;
+
+		    		=>nrel_goto: .proc_of_identification_two_elements_operator2A;;
+		    	*);;
+
+		    	->.proc_of_identification_two_elements_operator1B
+		    	(*
+					<- searchSetStr3;;
+
+		    		-> rrel_1: rrel_assign: rrel_scp_var: _node3;;
+		    		-> rrel_2: rrel_assign: rrel_scp_var: _some_arc;;
+		    		-> rrel_3: rrel_fixed: rrel_scp_var: _node2;;
+
+		    		->rrel_set_2: rrel_assign: rrel_scp_var: _set_of_arcs;;
+
+		    	=> nrel_then: .proc_of_identification_two_elements_operator2B;;
+		    	=> nrel_else: .proc_of_identification_two_elements_operator_return;;
+		    	*);;
+
+
+		    	->.proc_of_identification_two_elements_operator2B 
+		    	(*
+					<- searchElStr3;;
+
+					-> rrel_1: rrel_fixed: rrel_scp_var: _set_of_arcs;;
+					-> rrel_2: rrel_assign: rrel_scp_var: _arc1;;
+					-> rrel_3: rrel_assign: rrel_scp_var: _some_arc;;
+
+
+
+		    	=> nrel_then: .proc_of_identification_two_elements_operator3B;;
+		    	=> nrel_else: .proc_of_identification_two_elements_operator_call_1;;
+		    	*);;
+
+		    	->.proc_of_identification_two_elements_operator3B
+		    	(*
+		    		<-ifType;;
+
+		    		-> rrel_1: rrel_fixed: rrel_scp_var: rrel_pos_const_perm: _some_arc;;
+
+		    	=> nrel_then:.proc_of_identification_two_elements_operator4B;;
+		    	=> nrel_else:.proc_of_identification_two_elements_operator5B;;
+		    	*);;
+
+		    	->.proc_of_identification_two_elements_operator4B
+		   	    (*
+					<- genElStr3;;
+
+		    		-> rrel_1: rrel_fixed: rrel_scp_var: _node3;;
+		    		-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _some_arc_end;;
+		    		-> rrel_3: rrel_fixed: rrel_scp_var: _node1;;
+
+		    	=>nrel_goto: .proc_of_identification_two_elements_operator6B;;
+		    	*);;
+
+		    	->.proc_of_identification_two_elements_operator5B
+		    	(*
+					<- genElStr3;;
+
+		    		-> rrel_1: rrel_fixed: rrel_scp_var: _node3;;
+		    		-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _some_arc_end;;
+		    		-> rrel_3: rrel_fixed: rrel_scp_var: _node1;;
+
+		    	=>nrel_goto: .proc_of_identification_two_elements_operator6B;;
+		    	*);;
+
+		->.proc_of_identification_two_elements_operator6B
+		    	(*
+					<- searchElStr3;;
+
+		    		-> rrel_1: rrel_fixed: rrel_scp_var: _node3;;
+		    		-> rrel_2: rrel_assign: rrel_scp_var: _gen_arc;;
+		    		-> rrel_3: rrel_fixed: rrel_scp_var: _node1;;
+
+		    	=>nrel_then: .proc_of_identification_two_elements_operator7B;;
+			=>nrel_else: .proc_of_identification_two_elements_operator2B;;
+		    	*);;
+
+		    	->.proc_of_identification_two_elements_operator7B
+		    	(*
+		    		<-eraseEl;;
+
+		    		-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _arc1;;
+
+		    	=>nrel_goto: .proc_of_identification_two_elements_operator_call;;
+		    	*);;
+
+
+		    	-> .proc_of_identification_two_elements_operator_call 
+		    	(*
+					<- call;; 
+						
+					-> rrel_1: rrel_fixed: rrel_scp_const: proc_of_identification_two_elements;;
+					->rrel_2: rrel_fixed:rrel_scp_const: .proc_of_identification_two_elements_operator_call_params 
+					
+					(*
+							-> rrel_1: rrel_fixed: rrel_scp_var: _gen_arc;;
+							-> rrel_2: rrel_fixed: rrel_scp_var: _some_arc;;
+					*);;
+
+						-> rrel_3: rrel_assign: rrel_scp_var: _descr;;
+					
+				=>nrel_goto: .proc_of_identification_two_elements_operator_call_2;;
+				*);;
+
+				-> .proc_of_identification_two_elements_operator_call_2 
+				(*
+					<- waitReturn;;
+						
+					-> rrel_1: rrel_fixed: rrel_scp_var: _descr;;
+
+				=>nrel_goto: .proc_of_identification_two_elements_operator2B;;
+				*);;
+
+
+				->.proc_of_identification_two_elements_operator_call_1
+				(*
+					<- call;; 
+						
+					-> rrel_1: rrel_fixed: rrel_scp_const: proc_of_identification_two_elements;;
+					->rrel_2: rrel_fixed:rrel_scp_const: .proc_of_identification_two_elements_operator_call_params 
+					
+					(*
+							-> rrel_1: rrel_fixed: rrel_scp_var: _some_arc_end;;
+							-> rrel_2: rrel_fixed: rrel_scp_var: _some_arc;;
+					*);;
+
+						-> rrel_3: rrel_assign: rrel_scp_var: _descr11;;
+					
+				=>nrel_goto: .proc_of_identification_two_elements_operator_call_3;;
+				*);;
+
+				-> .proc_of_identification_two_elements_operator_call_3
+				(*
+					<- waitReturn;;
+						
+					-> rrel_1: rrel_fixed: rrel_scp_var: _descr11;;
+
+				=>nrel_goto: .proc_of_identification_two_elements_operator_return;;
+				*);;
+
+		-> .proc_of_identification_two_elements_operator_return
+        		(*
+        			<- return;;
+        		*);;
+		*);;
+	*);; 
+
+	
+
+	
