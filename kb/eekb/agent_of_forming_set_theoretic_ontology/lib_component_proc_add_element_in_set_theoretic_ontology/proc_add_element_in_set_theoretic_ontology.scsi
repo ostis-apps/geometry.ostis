@@ -44,26 +44,6 @@ scp_program -> proc_add_element_in_set_theoretic_ontology
 			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
 			-> rrel_3: rrel_fixed: rrel_scp_const: rrel_example;;
 
-			=> nrel_goto: ..proc_operator_notrel4;;
-			*);;
-
-		-> ..proc_operator_notrel4
-			(*
-			<- varAssign;;
-
-			-> rrel_1: rrel_assign: rrel_scp_var: _pattern1;;
-			-> rrel_2: rrel_fixed: rrel_scp_const: _pattern_proc_add_elem_in_ontology_not_rel_1;;
-
-			=> nrel_goto: ..proc_operator_notrel5;;
-			*);;
-
-		-> ..proc_operator_notrel5
-			(*
-			<- varAssign;;
-
-			-> rrel_1: rrel_assign: rrel_scp_var: _pattern2;;
-			-> rrel_2: rrel_fixed: rrel_scp_const: _pattern_proc_add_elem_in_ontology_not_rel_2;;
-
 			=> nrel_goto: ..proc_operator_tax1;;
 			*);;
 
@@ -79,25 +59,77 @@ scp_program -> proc_add_element_in_set_theoretic_ontology
 
 		-> ..proc_operator_rel2
 			(*
-			<- varAssign;;
+			<- searchSetStr5;;
 
-			-> rrel_1: rrel_assign: rrel_scp_var: _pattern1;;
-			-> rrel_2: rrel_fixed: rrel_scp_const: _pattern_proc_add_elem_in_ontology_rel_1;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _ontology_element;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _def_domain;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_definitional_domain;;
 
-			=> nrel_goto: ..proc_operator_rel3;;
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _ontology;;
+			-> rrel_set_3: rrel_fixed: rrel_scp_var: _ontology;;
+			-> rrel_set_4: rrel_fixed: rrel_scp_var: _ontology;;
+
+			=> nrel_then: ..proc_operator_rel3;;
+			=> nrel_else: ..proc_operator_tax1;;
 			*);;
 
 		-> ..proc_operator_rel3
 			(*
-			<- varAssign;;
+			<- genElStr3;;
 
-			-> rrel_1: rrel_assign: rrel_scp_var: _pattern2;;
-			-> rrel_2: rrel_fixed: rrel_scp_const: _pattern_proc_add_elem_in_ontology_rel_2;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _ontology;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: nrel_definitional_domain;;
 
 			=> nrel_goto: ..proc_operator_rel4;;
 			*);;
 
 		-> ..proc_operator_rel4
+			(*
+			<- searchSetStr5;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: _tuple;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _def_domain;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_union;;
+
+			-> rrel_set_1: rrel_fixed: rrel_scp_var: _ontology;;
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _ontology;;
+			-> rrel_set_4: rrel_fixed: rrel_scp_var: _ontology;;
+
+			=> nrel_then: ..proc_operator_rel5;;
+			=> nrel_else: ..proc_operator_tax1;;
+			*);;
+
+		-> ..proc_operator_rel5
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _ontology;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: nrel_union;;
+
+			=> nrel_goto: ..proc_operator_rel6;;
+			*);;
+
+		-> ..proc_operator_rel6
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _tuple;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _elem;;
+
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _ontology;;
+			-> rrel_set_3: rrel_fixed: rrel_scp_var: _ontology;;
+
+			=> nrel_goto: ..proc_operator_rel7;;
+			*);;
+
+		-> ..proc_operator_rel7
 			(*
 			<- sys_search;;
 
@@ -111,42 +143,13 @@ scp_program -> proc_add_element_in_set_theoretic_ontology
 					-> rrel_1: rrel_fixed: rrel_scp_const: _rel;;
 					-> rrel_2: rrel_fixed: rrel_scp_var: _ontology_element;;
 					*);;
+				-> ...
+					(*
+					-> rrel_1: rrel_fixed: rrel_scp_const: _tup;;
+					-> rrel_2: rrel_fixed: rrel_scp_var: _tuple;;
+					*);;
 				*);;
 			-> rrel_4: rrel_fixed: rrel_scp_var: _ontology;;
-
-			=> nrel_then: ..proc_operator_rel5;;
-			=> nrel_else: ..proc_operator_tax1;;
-			*);;
-
-		-> ..proc_operator_rel5
-			(*
-			<- genElStr3;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_var: _ontology;;
-			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
-			-> rrel_3: rrel_fixed: rrel_scp_const: nrel_definitional_domain;;
-
-			=> nrel_goto: ..proc_operator_rel6;;
-			*);;
-
-		-> ..proc_operator_rel6
-			(*
-			<- genElStr3;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_var: _ontology;;
-			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
-			-> rrel_3: rrel_fixed: rrel_scp_const: nrel_union;;
-
-			=> nrel_goto: ..proc_operator_tax2;;
-			*);;
-
-		-> ..proc_operator_rel5
-			(*
-			<- genElStr3;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_var: _ontology;;
-			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
-			-> rrel_3: rrel_fixed: rrel_scp_const: nrel_union;;
 
 			=> nrel_goto: ..proc_operator_tax2;;
 			*);;
@@ -246,52 +249,96 @@ scp_program -> proc_add_element_in_set_theoretic_ontology
 
 		-> ..proc_operator_tax_cicle1_4
 			(*
-			<- sys_search;;
+			<- searchSetStr5;;
 
- 			// pattern specified in file patterns.gwf in the same folder as this procedure.
-			-> rrel_1: rrel_fixed: rrel_scp_const: _pattern1;;
-			-> rrel_2: rrel_fixed: rrel_scp_const: ...;;
-			-> rrel_3: rrel_fixed: rrel_scp_const: ...
-				(*
-				-> ...
-					(*
-					-> rrel_1: rrel_fixed: rrel_scp_const: _rel;;
-					-> rrel_2: rrel_fixed: rrel_scp_var: _tax_rel;;
-					*);;
-				-> ...
-					(*
-					-> rrel_1: rrel_fixed: rrel_scp_const: _elem;;
-					-> rrel_2: rrel_fixed: rrel_scp_var: _ontology_element;;
-					*);;
-				*);;
-			-> rrel_4: rrel_fixed: rrel_scp_var: _ontology;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _ontology_element;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _elem;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_var: _tax_rel;;
 
-			=> nrel_goto: ..proc_operator_tax_cicle1_1;;
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _ontology;;
+			-> rrel_set_3: rrel_fixed: rrel_scp_var: _ontology;;
+			-> rrel_set_4: rrel_fixed: rrel_scp_var: _ontology;;
+
+			=> nrel_goto: ..proc_operator_tax_cicle1_7;;
 			*);;
 
 		-> ..proc_operator_tax_cicle1_5
 			(*
-			<- sys_search;;
+			<- searchSetStr5;;
 
- 			// pattern specified in file patterns.gwf in the same folder as this procedure.
-			-> rrel_1: rrel_fixed: rrel_scp_const: _pattern2;;
-			-> rrel_2: rrel_fixed: rrel_scp_const: ...;;
-			-> rrel_3: rrel_fixed: rrel_scp_const: ...
-				(*
-				-> ...
-					(*
-					-> rrel_1: rrel_fixed: rrel_scp_const: _rel;;
-					-> rrel_2: rrel_fixed: rrel_scp_var: _tax_rel;;
-					*);;
-				-> ...
-					(*
-					-> rrel_1: rrel_fixed: rrel_scp_const: _elem;;
-					-> rrel_2: rrel_fixed: rrel_scp_var: _ontology_element;;
-					*);;
-				*);;
-			-> rrel_4: rrel_fixed: rrel_scp_var: _ontology;;
+			-> rrel_1: rrel_assign: rrel_scp_var: _elem;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _ontology_element;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_var: _tax_rel;;
+
+			-> rrel_set_1: rrel_fixed: rrel_scp_var: _ontology;;
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _set_rel_elems;;
+			-> rrel_set_4: rrel_fixed: rrel_scp_var: _ontology;;
+
+			=> nrel_then: ..proc_operator_tax_cicle1_6;;
+			=> nrel_else: ..proc_operator_tax_cicle1_1;;
+			*);;
+
+		-> ..proc_operator_tax_cicle1_6
+			(*
+			<- searchSetStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _set_rel_elems;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _elem;;
+			
+			-> rrel_set_3: rrel_fixed: rrel_scp_var: _ontology;;
+			
+			=> nrel_goto: ..proc_operator_tax_cicle2_1;;
+			*);;
+
+		-> ..proc_operator_tax_cicle1_7
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _ontology;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _tax_rel;;
 
 			=> nrel_goto: ..proc_operator_tax_cicle1_1;;
+			*);;
+
+		-> ..proc_operator_tax_cicle2_1
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _set_rel_elems;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: rrel_node: rrel_const: _rel_elems;;
+
+			=> nrel_then: ..proc_operator_tax_cicle2_2;;
+			=> nrel_else: ..proc_operator_tax_cicle1_7;;
+			*);;
+
+		-> ..proc_operator_tax_cicle2_2
+			(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _arc;;
+
+			=> nrel_goto: ..proc_operator_tax_cicle2_3;;
+			*);;
+
+		-> ..proc_operator_tax_cicle2_3
+			(*
+			<- searchSetStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _rel_elems;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _elem;;
+
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _ontology;;
+			-> rrel_set_3: rrel_fixed: rrel_scp_var: _ontology;;
+
+			=> nrel_goto: ..proc_operator_tax_cicle2_1;;
 			*);;
 
 		-> ..proc_operator_return
