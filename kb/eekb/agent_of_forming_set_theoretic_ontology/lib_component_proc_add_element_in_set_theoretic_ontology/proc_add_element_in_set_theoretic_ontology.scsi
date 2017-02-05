@@ -8,18 +8,7 @@ scp_program -> proc_add_element_in_set_theoretic_ontology
 
 	-> rrel_operators: ..proc_operator_set
 		(*
-		-> rrel_init: ..proc_operator_init1
-			(*
-			<- genElStr3;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_var: _ontology;;
-			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
-			-> rrel_3: rrel_fixed: rrel_scp_var: _ontology_element;;
-
-			=> nrel_goto: ..proc_operator_notrel1;;
-			*);;
-
-		-> ..proc_operator_notrel1
+		-> rrel_init: ..proc_operator_notrel1
 			(*
 			<- ifType;;
 
@@ -44,7 +33,7 @@ scp_program -> proc_add_element_in_set_theoretic_ontology
 			-> rrel_set_4: rrel_fixed: rrel_scp_var: _ontology;;
 
 			=> nrel_then: ..proc_operator_notrel3;;
-			=> nrel_else: ..proc_operator_tax1;;
+			=> nrel_else: ..proc_operator_tax2;;
 			*);;
 
 		-> ..proc_operator_notrel3
@@ -66,7 +55,7 @@ scp_program -> proc_add_element_in_set_theoretic_ontology
 
 			=> nrel_then: ..proc_operator_rel2;;
 			=> nrel_else: ..proc_operator_return;;
-			*);;	
+			*);;
 
 		-> ..proc_operator_rel2
 			(*
@@ -108,14 +97,27 @@ scp_program -> proc_add_element_in_set_theoretic_ontology
 			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
 			-> rrel_3: rrel_fixed: rrel_scp_const: nrel_union;;
 
-			=> nrel_goto: ..proc_operator_tax1;;
+			=> nrel_goto: ..proc_operator_tax2;;
+			*);;
+
+		-> ..proc_operator_rel5
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _ontology;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: nrel_union;;
+
+			=> nrel_goto: ..proc_operator_tax2;;
 			*);;
 
 		-> ..proc_operator_tax1
 			(*
-			<- genEl;;
+			<- genElStr3;;
 
-			-> rrel_1: rrel_assign: rrel_scp_var: rrel_node: rrel_const: _set_tax_rel;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _ontology;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _ontology_element;;
 
 			=> nrel_goto: ..proc_operator_tax2;;
 			*);;
@@ -124,21 +126,30 @@ scp_program -> proc_add_element_in_set_theoretic_ontology
 			(*
 			<- genEl;;
 
+			-> rrel_1: rrel_assign: rrel_scp_var: rrel_node: rrel_const: _set_tax_rel;;
+
+			=> nrel_goto: ..proc_operator_tax3;;
+			*);;
+
+		-> ..proc_operator_tax3
+			(*
+			<- genEl;;
+
 			-> rrel_1: rrel_assign: rrel_scp_var: rrel_node: rrel_const: _set_rel_elems;;
 
 			=> nrel_goto: ..proc_operator_tax_cicle1_0;;
 			*);;
 
-		-> ..proc_operator_tax3
+		-> ..proc_operator_tax4
 			(*
 			<- eraseEl;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _set_tax_rel;;
 
-			=> nrel_goto: ..proc_operator_tax4;;
+			=> nrel_goto: ..proc_operator_tax5;;
 			*);;
 
-		-> ..proc_operator_tax4
+		-> ..proc_operator_tax5
 			(*
 			<- eraseEl;;
 

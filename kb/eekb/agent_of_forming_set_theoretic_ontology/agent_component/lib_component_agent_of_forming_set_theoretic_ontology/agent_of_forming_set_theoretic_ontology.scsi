@@ -61,15 +61,6 @@ scp_program -> agent_of_forming_set_theoretic_ontology
 			=> nrel_else: ..agent_operator_exception2;;
 			*);;
 
-		-> ..agent_operator_answer0
-			(*
-			<- genEl;;
-
-			-> rrel_1: rrel_assign: rrel_scp_var: rrel_node: rrel_const: _answer_of_agent;;
-
-			=> nrel_goto: ..agent_operator_answer1;;
-			*);;
-
 		-> ..agent_operator_answer1
 			(*
 			<- sys_search;;
@@ -307,15 +298,6 @@ scp_program -> agent_of_forming_set_theoretic_ontology
 			-> rrel_1: rrel_assign: rrel_scp_var: rrel_node: rrel_const: _set_elem_sd;;
 
 			=> nrel_goto: ..agent_operator_form_cicle1_0;;
-			*);;
-
-		-> ..agent_operator_form5
-			(*
-			<- eraseEl;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _set_elem_sd;;
-
-			=> nrel_goto: ..agent_operator_answer1;;
 			*);;
 
 		-> ..agent_operator_form_cicle1_0
