@@ -134,6 +134,31 @@ scp_program -> proc_add_element_in_set_theoretic_ontology
 			<- sys_search;;
 
  			// pattern specified in file patterns.gwf in the same folder as this procedure.
+			-> rrel_1: rrel_fixed: rrel_scp_const: _pattern_proc_add_element_in_set_theoretical_ontology_2;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: ...;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: ...
+				(*
+				-> ...
+					(*
+					-> rrel_1: rrel_fixed: rrel_scp_const: _rel;;
+					-> rrel_2: rrel_fixed: rrel_scp_var: _ontology_element;;
+					*);;
+				-> ...
+					(*
+					-> rrel_1: rrel_fixed: rrel_scp_const: _tup;;
+					-> rrel_2: rrel_fixed: rrel_scp_var: _tuple;;
+					*);;
+				*);;
+			-> rrel_4: rrel_fixed: rrel_scp_var: _ontology;;
+
+			=> nrel_goto: ..proc_operator_rel8;;
+			*);;
+
+		-> ..proc_operator_rel8
+			(*
+			<- sys_search;;
+
+ 			// pattern specified in file patterns.gwf in the same folder as this procedure.
 			-> rrel_1: rrel_fixed: rrel_scp_const: _pattern_proc_add_element_in_set_theoretical_ontology_1;;
 			-> rrel_2: rrel_fixed: rrel_scp_const: ...;;
 			-> rrel_3: rrel_fixed: rrel_scp_const: ...
