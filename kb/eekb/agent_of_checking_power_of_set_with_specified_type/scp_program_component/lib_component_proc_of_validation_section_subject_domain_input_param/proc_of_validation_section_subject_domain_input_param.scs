@@ -1,0 +1,130 @@
+scp_program -> proc_of_validation_section_subject_domain_input_param
+	(*
+	-> rrel_params: .proc_of_validation_section_subject_domain_input_param_params (*
+		-> rrel_1: rrel_in: _quest;;
+		-> rrel_2: rrel_in: _input_param;;		
+		*);;
+
+       -> rrel_operators: .proc_of_validation_section_subject_domain_input_param_operator_set (*
+
+		-> rrel_init: .proc_of_validation_section_subject_domain_input_param_operator1
+      		(*
+			<- genEl;;
+		 
+	        -> rrel_1: rrel_assign: rrel_node: rrel_scp_var: _elems_for_check;;
+
+		 	=> nrel_goto: .proc_of_validation_section_subject_domain_input_param_operator2;;
+		 	*);;
+
+		-> .proc_of_validation_section_subject_domain_input_param_operator2
+			(*
+		    <- genElStr3;;
+
+		    -> rrel_1: rrel_fixed: rrel_scp_var: _elems_for_check;;
+		    -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+		    -> rrel_3: rrel_fixed: rrel_scp_const: section;; 
+
+		    => nrel_goto: .proc_of_validation_section_subject_domain_input_param_operator3;;		   
+			*);;
+
+		-> .proc_of_validation_section_subject_domain_input_param_operator3
+			(*
+		    <- genElStr3;;
+
+		    -> rrel_1: rrel_fixed: rrel_scp_var: _elems_for_check;;
+		    -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+		    -> rrel_3: rrel_fixed: rrel_scp_const: subject_domain;; 
+
+		    => nrel_goto: .proc_of_validation_section_subject_domain_input_param_operator4;;		   
+			*);;
+
+	 	-> .proc_of_validation_section_subject_domain_input_param_operator4
+			(*
+		    <- searchElStr5;;
+
+		    -> rrel_1: rrel_assign: rrel_scp_var: _connection;;
+		    -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc5;;
+		    -> rrel_3: rrel_fixed: rrel_scp_const: section;; 
+		    -> rrel_4: rrel_assign: rrel_common: rrel_scp_var: _arc5;;
+		    -> rrel_5: rrel_fixed: rrel_scp_const: nrel_subdividing;; 
+
+		    => nrel_then: .proc_of_validation_section_subject_domain_input_param_operator5;;
+		    => nrel_else: .proc_of_validation_section_subject_domain_input_param_operator6;;
+			*);;
+
+		-> .proc_of_validation_section_subject_domain_input_param_operator5
+			(*
+		    <- searchSetStr3;;
+
+		    -> rrel_1: rrel_fixed: rrel_scp_var: _connection;;
+		    -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+		    -> rrel_3: rrel_assign: rrel_scp_var: _elem;;
+
+		    -> rrel_set_3: rrel_fixed: rrel_scp_var: _elems_for_check;;
+
+		    => nrel_goto: .proc_of_validation_section_subject_domain_input_param_operator6;;
+			*);;
+
+		-> .proc_of_validation_section_subject_domain_input_param_operator6
+			(*
+		    <- searchElStr3;;
+
+		    -> rrel_1: rrel_fixed: rrel_scp_var: _elems_for_check;;
+		    -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+		    -> rrel_3: rrel_assign: rrel_scp_var: _elem;; 
+
+		    => nrel_then: .proc_of_validation_section_subject_domain_input_param_operator6erase;;
+		    => nrel_else: .proc_of_validation_section_subject_domain_input_param_operator_add_message;;
+			*);;
+
+		  -> .proc_of_validation_section_subject_domain_input_param_operator6erase 
+        	(*
+		    <- eraseEl;;
+
+		    -> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _arc1;;
+
+		    => nrel_goto: .proc_of_validation_section_subject_domain_input_param_operator7;;
+		    *);;
+
+      	-> .proc_of_validation_section_subject_domain_input_param_operator7
+			(*
+		    <- searchElStr3;;
+
+		    -> rrel_1: rrel_fixed: rrel_scp_var: _elem;;
+		    -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc5;;
+		    -> rrel_3: rrel_fixed: rrel_scp_var: _input_param;; 
+
+		    => nrel_then: .proc_of_validation_section_subject_domain_input_param_operator_return;;///
+		    => nrel_else: .proc_of_validation_section_subject_domain_input_param_operator6;;
+			*);;
+		 
+       -> .proc_of_validation_section_subject_domain_input_param_operator_add_message
+			(*
+		  	<- call;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_const: proc_of_adding_validating_message;;
+		  	-> rrel_2: rrel_fixed: rrel_scp_const: .proc_of_validation_section_subject_domain_input_param_operator_add_message_params 
+				(*
+				-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+				-> rrel_2: rrel_fixed: rrel_scp_const: [Wrong parameter! It must be section or subject domain];;
+				*);;
+		  	-> rrel_3: rrel_assign: rrel_scp_var: _descr1;;
+
+		  	=> nrel_goto: .proc_of_validation_section_subject_domain_input_param_operator_add_message_desc;;
+			*);;
+
+		-> .proc_of_validation_section_subject_domain_input_param_operator_add_message_desc
+			(*
+		  	<- waitReturn;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_var: _descr1;;
+
+		  	=> nrel_goto: .proc_of_validation_section_subject_domain_input_param_operator_return;;
+			*);;
+
+		-> .proc_of_validation_section_subject_domain_input_param_operator_return 
+			(*
+			<- return;;
+		*);;
+	*);;
+*);;
