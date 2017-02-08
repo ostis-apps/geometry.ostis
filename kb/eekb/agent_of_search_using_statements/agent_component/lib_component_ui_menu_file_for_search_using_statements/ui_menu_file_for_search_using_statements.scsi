@@ -1,0 +1,16 @@
+ui_menu_file_for_search_using_statements <- ui_user_command_class_atom; ui_user_command_class_view_kb; ui_one_argument_command_class;;
+
+ui_menu_file_for_search_using_statements => nrel_main_idtf: [Команда вывода всех утверждений, использующихся для доказательства исходного утверждения] (* <- lang_ru;; *);;
+ui_menu_file_for_search_using_statements => nrel_main_idtf: [Command of display all statements, is used to prove the original statement] (* <- lang_en;; *);;
+	
+ui_menu_file_for_search_using_statements => ui_nrel_command_template:
+	[*
+		question_of_search_using_statements _-> ._question_of_search_using_statements_instance
+			(*
+			_-> ui_arg_1;;	
+			*);;
+		._question_of_search_using_statements_instance _<- question;;
+	*];;
+
+ui_menu_file_for_search_using_statements => ui_nrel_command_lang_template: [Команда вывода утверждений, использующихся для доказательства] (* <- lang_ru;; *);;
+ui_menu_file_for_search_using_statements => ui_nrel_command_lang_template: [Command to display all statements, is used to prove the original statement] (* <- lang_en;; *);;
