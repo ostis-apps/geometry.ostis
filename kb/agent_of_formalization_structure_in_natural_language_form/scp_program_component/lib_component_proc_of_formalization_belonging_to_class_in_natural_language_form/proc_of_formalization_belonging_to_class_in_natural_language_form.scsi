@@ -1,0 +1,260 @@
+scp_program-> proc_of_formalization_belonging_to_class_in_natural_language_form
+(*
+     -> rrel_params: .proc_of_formalization_belonging_to_class_in_natural_language_form_params
+      	(*
+		-> rrel_1: rrel_in: _param;;
+		-> rrel_2: rrel_in: _answer_formalization_quantity;;
+	 	 *);;
+
+	 -> rrel_operators: .proc_of_formalization_belonging_to_class_in_natural_language_form_set
+	 	(*
+	 	-> rrel_init: .proc_of_formalization_belonging_to_class_in_natural_language_form1A
+			(*
+			<- searchSetStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _param;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: rrel_not_relation: _some_concept;;
+
+			-> rrel_set_3: rrel_assign: rrel_scp_var: _for_concept;;
+
+			=> nrel_then: .proc_of_formalization_belonging_to_class_in_natural_language_form1B;;
+			=> nrel_else: .proc_of_formalization_belonging_to_class_in_natural_language_form_return;;
+			*);;
+
+		-> .proc_of_formalization_belonging_to_class_in_natural_language_form1B
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _for_concept;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: rrel_not_relation: _some_concept;;
+
+			=> nrel_then: .proc_of_formalization_belonging_to_class_in_natural_language_form1C;;
+			=> nrel_else: .proc_of_formalization_belonging_to_class_in_natural_language_form_return;;
+			*);;
+
+		-> .proc_of_formalization_belonging_to_class_in_natural_language_form1C
+			(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_erase: rrel_fixed: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+
+			=> nrel_goto: .proc_of_formalization_belonging_to_class_in_natural_language_form1D;;
+			*);;
+
+		-> .proc_of_formalization_belonging_to_class_in_natural_language_form1D
+			(*
+			<- ifCoin;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: lang_ru;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: rrel_not_relation: _some_concept;;
+
+			=> nrel_then: .proc_of_formalization_belonging_to_class_in_natural_language_form1B;;
+			=> nrel_else: .proc_of_formalization_belonging_to_class_in_natural_language_form2A1;;
+			*);;
+
+		-> .proc_of_formalization_belonging_to_class_in_natural_language_form2A1
+			(*
+			<- printEl;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_not_relation: _some_concept;;
+
+			=> nrel_goto: .proc_of_formalization_belonging_to_class_in_natural_language_form2A;;
+			*);;
+
+		-> .proc_of_formalization_belonging_to_class_in_natural_language_form2A
+			(*
+			<- searchSetStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_not_relation: _some_concept;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _some_example;;
+
+			-> rrel_set_3: rrel_assign: rrel_scp_var: _set1;;
+
+			=> nrel_then: .proc_of_formalization_belonging_to_class_in_natural_language_form2B;;
+			=> nrel_else: .proc_of_formalization_belonging_to_class_in_natural_language_form_return;;
+			*);;
+
+		-> .proc_of_formalization_belonging_to_class_in_natural_language_form2B
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _set1;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _some_example;;
+
+			=> nrel_then: .proc_of_formalization_belonging_to_class_in_natural_language_form2C;;
+			=> nrel_else: .proc_of_formalization_belonging_to_class_in_natural_language_form_return;;
+			*);;
+
+		-> .proc_of_formalization_belonging_to_class_in_natural_language_form2C
+			(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_erase: rrel_fixed: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+
+			=> nrel_goto: .proc_of_formalization_belonging_to_class_in_natural_language_form2D;;
+			*);;	
+
+		-> .proc_of_formalization_belonging_to_class_in_natural_language_form2D
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _param;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _some_example;;
+
+			=> nrel_then: .proc_of_formalization_belonging_to_class_in_natural_language_form2E1;;
+			=> nrel_else: .proc_of_formalization_belonging_to_class_in_natural_language_form2B;;
+			*);;
+
+		-> .proc_of_formalization_belonging_to_class_in_natural_language_form2E1
+			(*
+			<- printEl;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _some_example;;
+
+			=> nrel_goto: .proc_of_formalization_belonging_to_class_in_natural_language_form2E;;
+			*);;
+
+		-> .proc_of_formalization_belonging_to_class_in_natural_language_form2E
+			(*
+			<- searchSetStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _some_example;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _main_idtf;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_main_idtf;;
+
+			-> rrel_set_3: rrel_assign: rrel_scp_var: _set3;;
+
+			=> nrel_then: .proc_of_formalization_belonging_to_class_in_natural_language_form2F;;
+			=> nrel_else: .proc_of_formalization_belonging_to_class_in_natural_language_form_return;;
+			*);;	
+
+		-> .proc_of_formalization_belonging_to_class_in_natural_language_form2F
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _set3;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _main_idtf;;
+
+			=> nrel_then: .proc_of_formalization_belonging_to_class_in_natural_language_form2G;;
+			=> nrel_else: .proc_of_formalization_belonging_to_class_in_natural_language_form_return;;
+			*);;
+
+		-> .proc_of_formalization_belonging_to_class_in_natural_language_form2G
+			(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_erase: rrel_fixed: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+
+			=> nrel_goto: .proc_of_formalization_belonging_to_class_in_natural_language_form2H;;
+			*);;	
+	
+
+		-> .proc_of_formalization_belonging_to_class_in_natural_language_form2H
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: lang_ru;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _main_idtf;;
+
+			=> nrel_then: .proc_of_formalization_belonging_to_class_in_natural_language_form2I;;
+			=> nrel_else: .proc_of_formalization_belonging_to_class_in_natural_language_form2F;;
+			*);;
+
+		-> .proc_of_formalization_belonging_to_class_in_natural_language_form2I
+			(*
+			<- contStringConcat;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: _link1;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _main_idtf;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: [ - ];;
+
+			=> nrel_goto: .proc_of_formalization_belonging_to_class_in_natural_language_form3A;;
+			*);;
+
+		-> .proc_of_formalization_belonging_to_class_in_natural_language_form3A
+			(*
+			<- searchSetStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _some_concept;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _main_idtf;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_main_idtf;;
+
+			-> rrel_set_3: rrel_assign: rrel_scp_var: _set2;;
+
+			=> nrel_then: .proc_of_formalization_belonging_to_class_in_natural_language_form3C;;
+			=> nrel_else: .proc_of_formalization_belonging_to_class_in_natural_language_form_return;;
+			*);;	
+
+		-> .proc_of_formalization_belonging_to_class_in_natural_language_form3C
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _set2;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _main_idtf;;
+
+			=> nrel_then: .proc_of_formalization_belonging_to_class_in_natural_language_form3D;;
+			=> nrel_else: .proc_of_formalization_belonging_to_class_in_natural_language_form_return;;
+			*);;
+
+		-> .proc_of_formalization_belonging_to_class_in_natural_language_form3D
+			(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_erase: rrel_fixed: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+
+			=> nrel_goto: .proc_of_formalization_belonging_to_class_in_natural_language_form3E;;
+			*);;	
+
+		-> .proc_of_formalization_belonging_to_class_in_natural_language_form3E
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: lang_ru;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _main_idtf;;
+
+			=> nrel_then: .proc_of_formalization_belonging_to_class_in_natural_language_form3F;;
+			=> nrel_else: .proc_of_formalization_belonging_to_class_in_natural_language_form3C;;
+			*);;
+
+		-> .proc_of_formalization_belonging_to_class_in_natural_language_form3F
+			(*
+			<- contStringConcat;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _link1;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _link1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _main_idtf;;
+
+			=> nrel_goto: .proc_of_formalization_belonging_to_class_in_natural_language_form4A;;
+			*);;		
+
+		-> .proc_of_formalization_belonging_to_class_in_natural_language_form4A
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_formalization_quantity;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _link1;;
+
+			=> nrel_goto: .proc_of_formalization_belonging_to_class_in_natural_language_form_return;;
+			*);;
+
+		-> .proc_of_formalization_belonging_to_class_in_natural_language_form_return
+			(*
+			<- return;;
+			*);;	
+				
+	 	*);;
+	*);;

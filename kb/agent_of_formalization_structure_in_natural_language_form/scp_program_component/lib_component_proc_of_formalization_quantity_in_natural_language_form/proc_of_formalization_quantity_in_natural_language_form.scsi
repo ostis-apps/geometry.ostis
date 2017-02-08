@@ -1,0 +1,1157 @@
+scp_program-> proc_of_formalization_quantity_in_natural_language_form
+(*
+     -> rrel_params: .proc_of_formalization_quantity_in_natural_language_form_params
+      	(*
+		-> rrel_1: rrel_in: _param;;
+		-> rrel_2: rrel_in: _answer_formalization_quantity;;
+	 	 *);;
+
+	 -> rrel_operators: .proc_of_formalization_quantity_in_natural_language_form_set
+	 	(*
+	 	-> rrel_init: .proc_of_formalization_quantity_in_natural_language_form1A
+			(*
+			<- searchSetStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _param;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: rrel_norole_relation: _some_relation;;
+
+			-> rrel_set_3: rrel_assign: rrel_scp_var: _set;;
+
+			=> nrel_then: .proc_of_formalization_quantity_in_natural_language_form1B;;
+			=> nrel_else: .proc_of_formalization_quantity_in_natural_language_form_return;;
+			*);;
+
+		-> .proc_of_formalization_quantity_in_natural_language_form1B
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _set;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: rrel_norole_relation: _some_relation;;
+
+			=> nrel_then: .proc_of_formalization_quantity_in_natural_language_form1C;;
+			=> nrel_else: .proc_of_formalization_quantity_in_natural_language_form_return;;
+			*);;	
+
+		-> .proc_of_formalization_quantity_in_natural_language_form1C
+			(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_erase: rrel_fixed: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+
+			=> nrel_goto: .proc_of_formalization_quantity_in_natural_language_form1D;;
+			*);;
+
+		-> .proc_of_formalization_quantity_in_natural_language_form1D
+			(*
+			<- ifCoin;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: nrel_main_idtf;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: rrel_norole_relation: _some_relation;;
+
+			=> nrel_then: .proc_of_formalization_quantity_in_natural_language_form1B;;
+			=> nrel_else: .proc_of_formalization_quantity_in_natural_language_form1E;;
+			*);;	
+
+		-> .proc_of_formalization_quantity_in_natural_language_form1E
+			(*
+			<- ifCoin;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: nrel_value;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: rrel_norole_relation: _some_relation;;
+
+			=> nrel_then: .proc_of_formalization_quantity_in_natural_language_form1B;;
+			=> nrel_else: .proc_of_formalization_quantity_in_natural_language_form2A;;
+			*);;
+
+		-> .proc_of_formalization_quantity_in_natural_language_form2A
+			(*
+			<- searchSetStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_norole_relation: _some_relation;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _link2;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_main_idtf;;
+
+			-> rrel_set_3: rrel_assign: rrel_scp_var: _set5;;
+
+			=> nrel_then: .proc_of_formalization_quantity_in_natural_language_form2B;;
+			=> nrel_else: .proc_of_formalization_quantity_in_natural_language_form_return;;
+			*);;
+
+		-> .proc_of_formalization_quantity_in_natural_language_form2B
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _set5;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _link2;;
+
+			=> nrel_then: .proc_of_formalization_quantity_in_natural_language_form2C;;
+			=> nrel_else: .proc_of_formalization_quantity_in_natural_language_form_return;;
+			*);;	
+
+		-> .proc_of_formalization_quantity_in_natural_language_form2C
+			(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_erase: rrel_fixed: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+
+			=> nrel_goto: .proc_of_formalization_quantity_in_natural_language_form2D;;
+			*);;	
+	
+		-> .proc_of_formalization_quantity_in_natural_language_form2D
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: lang_ru;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _link2;;
+
+			=> nrel_then: .proc_of_formalization_quantity_in_natural_language_form2E;;
+			=> nrel_else: .proc_of_formalization_quantity_in_natural_language_form2B;;
+			*);;	
+
+		-> .proc_of_formalization_quantity_in_natural_language_form2E
+			(*
+			<- ifCoin;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: nrel_angle_measure;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: rrel_norole_relation: _some_relation;;
+
+			=> nrel_then: .proc_of_formalization_quantity_in_natural_language_form3A;;
+			=> nrel_else: .proc_of_formalization_quantity_in_natural_language_form3D;;
+			*);;
+
+		-> .proc_of_formalization_quantity_in_natural_language_form3A
+			(*
+			<- stringSplit;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _link;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _link2;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: [ ];;
+
+			=> nrel_goto: .proc_of_formalization_quantity_in_natural_language_form3C;;
+			*);;
+
+		-> .proc_of_formalization_quantity_in_natural_language_form3C
+			(*
+			<- searchElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _link;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _link2;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: rrel_1;;
+
+			=> nrel_then: .proc_of_formalization_quantity_in_natural_language_form3D;;
+			=> nrel_else: .proc_of_formalization_quantity_in_natural_language_form_return;;
+			*);;
+
+		-> .proc_of_formalization_quantity_in_natural_language_form3D
+			(*
+			<- stringLen;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: _link1;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _link2;;
+
+			=> nrel_goto: .proc_of_formalization_quantity_in_natural_language_form3E;;
+			*);;
+
+		-> .proc_of_formalization_quantity_in_natural_language_form3E
+			(*
+			<- contSub;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _link1;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _link1;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: [2];;
+
+			=> nrel_goto: .proc_of_formalization_quantity_in_natural_language_form3F;;
+			*);;
+
+		-> .proc_of_formalization_quantity_in_natural_language_form3F
+			(*
+			<- stringSlice;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: _link;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _link2;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: [0];;
+			-> rrel_4: rrel_fixed: rrel_scp_const: [0];;
+
+			=> nrel_goto: .proc_of_formalization_quantity_in_natural_language_form3G1;;
+			*);;	
+
+		-> .proc_of_formalization_quantity_in_natural_language_form3G1
+			(*
+			<- printNl;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _link;;
+
+			=> nrel_goto: .proc_of_formalization_quantity_in_natural_language_form3G;;
+			*);;
+
+		-> .proc_of_formalization_quantity_in_natural_language_form3G
+			(*
+			<- stringSlice;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: _link3;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _link2;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: [1];;
+			-> rrel_4: rrel_fixed: rrel_scp_var: _link1;;
+
+			=> nrel_goto: .proc_of_formalization_quantity_in_natural_language_form3H;;
+			*);;		
+
+
+		-> .proc_of_formalization_quantity_in_natural_language_form3H
+			(*
+			<- stringToUpperCase;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _link;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _link;;
+
+			=> nrel_goto: .proc_of_formalization_quantity_in_natural_language_form3I;;
+			*);;
+
+		-> .proc_of_formalization_quantity_in_natural_language_form3I
+			(*
+			<- contStringConcat;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _link1;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _link;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _link3;;
+
+			=> nrel_goto: .proc_of_formalization_quantity_in_natural_language_form3J;;
+			*);;
+
+		-> .proc_of_formalization_quantity_in_natural_language_form3J
+			(*
+			<- contStringConcat;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _link1;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _link1;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: [ ];;
+
+			=> nrel_goto: .proc_of_formalization_quantity_in_natural_language_form4A;;
+			*);;	
+
+		-> .proc_of_formalization_quantity_in_natural_language_form4A
+			(*
+			<- searchSetStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _param;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: rrel_not_relation: _some_concept;;
+
+			-> rrel_set_3: rrel_assign: rrel_scp_var: _set1;;
+
+			=> nrel_then: .proc_of_formalization_quantity_in_natural_language_form4B;;
+			=> nrel_else: .proc_of_formalization_quantity_in_natural_language_form_return;;
+			*);;	
+
+		-> .proc_of_formalization_quantity_in_natural_language_form4B
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _set1;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: rrel_not_relation: _some_concept;;
+
+			=> nrel_then: .proc_of_formalization_quantity_in_natural_language_form4C;;
+			=> nrel_else: .proc_of_formalization_quantity_in_natural_language_form_return;;
+			*);;	
+
+		-> .proc_of_formalization_quantity_in_natural_language_form4C
+			(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_erase: rrel_fixed: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+
+			=> nrel_goto: .proc_of_formalization_quantity_in_natural_language_form4D;;
+			*);;	
+
+		-> .proc_of_formalization_quantity_in_natural_language_form4D
+			(*
+			<- ifCoin;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: number;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: rrel_not_relation: _some_concept;;
+
+			=> nrel_then: .proc_of_formalization_quantity_in_natural_language_form4B;;
+			=> nrel_else: .proc_of_formalization_quantity_in_natural_language_form4E;;
+			*);;
+
+		-> .proc_of_formalization_quantity_in_natural_language_form4E
+			(*
+			<- ifCoin;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: lang_ru;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: rrel_not_relation: _some_concept;;
+
+			=> nrel_then: .proc_of_formalization_quantity_in_natural_language_form4B;;
+			=> nrel_else: .proc_of_formalization_quantity_in_natural_language_form4F;;
+			*);;
+
+		-> .proc_of_formalization_quantity_in_natural_language_form4F
+			(*
+			<- ifCoin;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: lang_en;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: rrel_not_relation: _some_concept;;
+
+			=> nrel_then: .proc_of_formalization_quantity_in_natural_language_form4B;;
+			=> nrel_else: .proc_of_formalization_quantity_in_natural_language_form5A;;
+			*);;
+
+		-> .proc_of_formalization_quantity_in_natural_language_form5A
+			(*
+			<- searchSetStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_not_relation: _some_concept;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _some_example;;
+
+			-> rrel_set_3: rrel_assign: rrel_scp_var: _set2;;
+
+			=> nrel_then: .proc_of_formalization_quantity_in_natural_language_form5B;;
+			=> nrel_else: .proc_of_formalization_quantity_in_natural_language_form_return;;
+			*);;
+
+		-> .proc_of_formalization_quantity_in_natural_language_form5B
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _set2;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _some_example;;
+
+			=> nrel_then: .proc_of_formalization_quantity_in_natural_language_form5C;;
+			=> nrel_else: .proc_of_formalization_quantity_in_natural_language_form_return;;
+			*);;	
+
+		-> .proc_of_formalization_quantity_in_natural_language_form5C
+			(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_erase: rrel_fixed: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+
+			=> nrel_goto: .proc_of_formalization_quantity_in_natural_language_form5D;;
+			*);;	
+	
+		-> .proc_of_formalization_quantity_in_natural_language_form5D
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _param;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _some_example;;
+
+			=> nrel_then: .proc_of_formalization_quantity_in_natural_language_form6A;;
+			=> nrel_else: .proc_of_formalization_quantity_in_natural_language_form5B;;
+			*);;	
+
+		-> .proc_of_formalization_quantity_in_natural_language_form6A
+			(*
+			<- searchElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _some_example;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _main_idtf;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc3;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_main_idtf;;
+
+			=> nrel_then: .proc_of_formalization_quantity_in_natural_language_form6B;;
+			=> nrel_else: .proc_of_formalization_quantity_in_natural_language_form_return;;
+			*);;
+
+		-> .proc_of_formalization_quantity_in_natural_language_form6B
+			(*
+			<- stringSplit;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: _link2;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _main_idtf;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: [ ];;
+
+			=> nrel_goto: .proc_of_formalization_quantity_in_natural_language_form6C;;
+			*);;
+
+		-> .proc_of_formalization_quantity_in_natural_language_form6C
+			(*
+			<- searchElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _link2;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _first;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: rrel_1;;
+
+			=> nrel_then: .proc_of_formalization_quantity_in_natural_language_form6D;;
+			=> nrel_else: .proc_of_formalization_quantity_in_natural_language_form_return;;
+			*);;
+
+		-> .proc_of_formalization_quantity_in_natural_language_form6D
+			(*
+			<- ifCoin;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: concept_segment;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: rrel_not_relation: _some_concept;;
+
+			=> nrel_then: .proc_of_formalization_quantity_in_natural_language_form7A;;
+			=> nrel_else: .proc_of_formalization_quantity_in_natural_language_form6E;;
+			*);;
+
+		-> .proc_of_formalization_quantity_in_natural_language_form6E
+			(*
+			<- ifCoin;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: concept_prism;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: rrel_not_relation: _some_concept;;
+
+			=> nrel_then: .proc_of_formalization_quantity_in_natural_language_form8A;;
+			=> nrel_else: .proc_of_formalization_quantity_in_natural_language_form6F;;
+			*);;
+
+		-> .proc_of_formalization_quantity_in_natural_language_form6F
+			(*
+			<- ifCoin;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: concept_pair_of_points;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: rrel_not_relation: _some_concept;;
+
+			=> nrel_then: .proc_of_formalization_quantity_in_natural_language_form9A;;
+			=> nrel_else: .proc_of_formalization_quantity_in_natural_language_form6G;;
+			*);;
+
+		-> .proc_of_formalization_quantity_in_natural_language_form9A
+			(*
+			<- contStringConcat;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _link1;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _link1;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: [между ];;
+
+			=> nrel_goto: .proc_of_formalization_quantity_in_natural_language_form9B;;
+			*);;
+
+		-> .proc_of_formalization_quantity_in_natural_language_form9B
+			(*
+			<- stringSlice;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _first;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _first;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: [0];;
+			-> rrel_4: rrel_fixed: rrel_scp_const: [4];;
+
+			=> nrel_goto: .proc_of_formalization_quantity_in_natural_language_form9C;;
+			*);;
+
+		-> .proc_of_formalization_quantity_in_natural_language_form9C
+			(*
+			<- contStringConcat;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _first;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _first;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: [ой ];;
+
+			=> nrel_goto: .proc_of_formalization_quantity_in_natural_language_form9D;;
+			*);;
+
+		-> .proc_of_formalization_quantity_in_natural_language_form7A
+			(*
+			<- stringSlice;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _first;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _first;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: [0];;
+			-> rrel_4: rrel_fixed: rrel_scp_const: [4];;
+
+			=> nrel_goto: .proc_of_formalization_quantity_in_natural_language_form7B;;
+			*);;
+
+		-> .proc_of_formalization_quantity_in_natural_language_form7B
+			(*
+			<- printNl;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _first;;
+
+			=> nrel_goto: .proc_of_formalization_quantity_in_natural_language_form7C;;
+			*);;
+
+		-> .proc_of_formalization_quantity_in_natural_language_form7C
+			(*
+			<- contStringConcat;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _first;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _first;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: [ка ];;
+
+			=> nrel_goto: .proc_of_formalization_quantity_in_natural_language_form10A;;
+			*);;
+
+		-> .proc_of_formalization_quantity_in_natural_language_form8A
+			(*
+			<- stringSlice;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _first;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _first;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: [0];;
+			-> rrel_4: rrel_fixed: rrel_scp_const: [4];;
+
+			=> nrel_goto: .proc_of_formalization_quantity_in_natural_language_form8B;;
+			*);;
+
+		-> .proc_of_formalization_quantity_in_natural_language_form8B
+			(*
+			<- contStringConcat;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _first;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _first;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: [ы ];;
+
+			=> nrel_goto: .proc_of_formalization_quantity_in_natural_language_form10A;;
+			*);;
+
+		-> .proc_of_formalization_quantity_in_natural_language_form6G
+			(*
+			<- contStringConcat;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _first;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _first;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: [а ];;
+
+			=> nrel_goto: .proc_of_formalization_quantity_in_natural_language_form10A;;
+			*);;	
+
+		-> .proc_of_formalization_quantity_in_natural_language_form10A
+			(*
+			<- searchElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _first;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _next;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_substring_base_order;;
+
+			=> nrel_then: .proc_of_formalization_quantity_in_natural_language_form10B;;
+			=> nrel_else: .proc_of_formalization_quantity_in_natural_language_form_return;;
+			*);;
+
+		-> .proc_of_formalization_quantity_in_natural_language_form10B
+			(*
+			<- contStringConcat;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _first;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _first;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _next;;
+
+			=> nrel_goto: .proc_of_formalization_quantity_in_natural_language_form10C;;
+			*);;	
+
+		-> .proc_of_formalization_quantity_in_natural_language_form10C
+			(*
+			<- contStringConcat;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _link1;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _link1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _first;;
+
+			=> nrel_goto: .proc_of_formalization_quantity_in_natural_language_form11A;;
+			*);;		
+
+		-> .proc_of_formalization_quantity_in_natural_language_form11A
+			(*
+			<- ifCoin;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_norole_relation: _some_relation;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: nrel_length;;
+
+			=> nrel_then: .proc_of_formalization_quantity_in_natural_language_form12A;;
+			=> nrel_else: .proc_of_formalization_quantity_in_natural_language_form11B;;
+			*);;	
+
+		-> .proc_of_formalization_quantity_in_natural_language_form11B
+			(*
+			<- ifCoin;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_norole_relation: _some_relation;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: nrel_area;;
+
+			=> nrel_then: .proc_of_formalization_quantity_in_natural_language_form12A;;
+			=> nrel_else: .proc_of_formalization_quantity_in_natural_language_form11C;;
+			*);;	
+
+		-> .proc_of_formalization_quantity_in_natural_language_form11C
+			(*
+			<- ifCoin;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_norole_relation: _some_relation;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: nrel_angle_measure;;
+
+			=> nrel_then: .proc_of_formalization_quantity_in_natural_language_form12A;;
+			=> nrel_else: .proc_of_formalization_quantity_in_natural_language_form11D;;
+			*);;	
+
+		-> .proc_of_formalization_quantity_in_natural_language_form11D
+			(*
+			<- ifCoin;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_norole_relation: _some_relation;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: nrel_perimeter;;
+
+			=> nrel_then: .proc_of_formalization_quantity_in_natural_language_form12B;;
+			=> nrel_else: .proc_of_formalization_quantity_in_natural_language_form11E;;
+			*);;	
+
+		-> .proc_of_formalization_quantity_in_natural_language_form11E
+			(*
+			<- ifCoin;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_norole_relation: _some_relation;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: nrel_volume;;
+
+			=> nrel_then: .proc_of_formalization_quantity_in_natural_language_form12B;;
+			=> nrel_else: .proc_of_formalization_quantity_in_natural_language_form11F;;
+			*);;
+
+		-> .proc_of_formalization_quantity_in_natural_language_form11F
+			(*
+			<- ifCoin;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_norole_relation: _some_relation;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: nrel_distance;;
+
+			=> nrel_then: .proc_of_formalization_quantity_in_natural_language_form12C;;
+			=> nrel_else: .proc_of_formalization_quantity_in_natural_language_form_return;;
+			*);;
+
+		-> .proc_of_formalization_quantity_in_natural_language_form12A
+			(* 
+			<- contStringConcat;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _link1;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _link1;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: [ равна ];;
+
+			=> nrel_goto: .proc_of_formalization_quantity_in_natural_language_form13A;;
+			*);;
+
+		-> .proc_of_formalization_quantity_in_natural_language_form12B
+			(* 
+			<- contStringConcat;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _link1;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _link1;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: [ равен ];;
+
+			=> nrel_goto: .proc_of_formalization_quantity_in_natural_language_form13A;;
+			*);;
+
+		-> .proc_of_formalization_quantity_in_natural_language_form12C
+			(* 
+			<- contStringConcat;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _link1;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _link1;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: [ равно ];;
+
+			=> nrel_goto: .proc_of_formalization_quantity_in_natural_language_form13A;;
+			*);;	
+
+		-> .proc_of_formalization_quantity_in_natural_language_form13A
+			(*
+			<- searchSetStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _some_example;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc2;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _node;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_5: rrel_fixed: rrel_scp_var: rrel_norole_relation: _some_relation;;
+
+			-> rrel_set_3: rrel_assign: rrel_scp_var: _set6;;
+
+			=> nrel_then: .proc_of_formalization_quantity_in_natural_language_form13B;;
+			=> nrel_else: .proc_of_formalization_quantity_in_natural_language_form_return;;
+			*);;	
+
+		-> .proc_of_formalization_quantity_in_natural_language_form13B
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _set6;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _node;;
+
+			=> nrel_then: .proc_of_formalization_quantity_in_natural_language_form13C;;
+			=> nrel_else: .proc_of_formalization_quantity_in_natural_language_form_return;;
+			*);;
+
+		-> .proc_of_formalization_quantity_in_natural_language_form13C
+			(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_erase: rrel_fixed: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+
+			=> nrel_goto: .proc_of_formalization_quantity_in_natural_language_form13D;;
+			*);;
+
+		-> .proc_of_formalization_quantity_in_natural_language_form13D
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _param;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _node;;
+
+			=> nrel_then: .proc_of_formalization_quantity_in_natural_language_form13E;;
+			=> nrel_else: .proc_of_formalization_quantity_in_natural_language_form13B;;
+			*);;	
+
+		-> .proc_of_formalization_quantity_in_natural_language_form13E
+			(*
+			<- searchElStr5;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: _node1;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc2;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _node;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_value;;
+
+			=> nrel_then: .proc_of_formalization_quantity_in_natural_language_form13F;;
+			=> nrel_else: .proc_of_formalization_quantity_in_natural_language_form_return;;
+			*);;
+
+		-> .proc_of_formalization_quantity_in_natural_language_form13F
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _param;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _node1;;
+
+			=> nrel_then: .proc_of_formalization_quantity_in_natural_language_form13G;;
+			=> nrel_else: .proc_of_formalization_quantity_in_natural_language_form_return;;
+			*);;	
+
+		-> .proc_of_formalization_quantity_in_natural_language_form13G
+			(*
+			<- searchElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _node1;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _number;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_5: rrel_assign: rrel_scp_var: rrel_role_relation: _atribyt;;
+
+			=> nrel_then: .proc_of_formalization_quantity_in_natural_language_form13H;;
+			=> nrel_else: .proc_of_formalization_quantity_in_natural_language_form_return;;
+			*);;	
+
+		-> .proc_of_formalization_quantity_in_natural_language_form13H
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: number;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _number;;
+
+			=> nrel_then: .proc_of_formalization_quantity_in_natural_language_form14A;;
+			=> nrel_else: .proc_of_formalization_quantity_in_natural_language_form_return;; 
+			*);;		
+
+		-> .proc_of_formalization_quantity_in_natural_language_form14A
+			(*
+			<- searchSetStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _number;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _main_idtf;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc3;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_main_idtf;;
+
+			-> rrel_set_3: rrel_assign: rrel_scp_var: _set3;;
+
+			=> nrel_then: .proc_of_formalization_quantity_in_natural_language_form14B;;
+			=> nrel_else: .proc_of_formalization_quantity_in_natural_language_form_return;;
+			*);;
+
+		-> .proc_of_formalization_quantity_in_natural_language_form14B
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _set3;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _main_idtf;;
+
+			=> nrel_then: .proc_of_formalization_quantity_in_natural_language_form14C;;
+			=> nrel_else: .proc_of_formalization_quantity_in_natural_language_form_return;;
+			*);;	
+
+		-> .proc_of_formalization_quantity_in_natural_language_form14C
+			(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_erase: rrel_fixed: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+
+			=> nrel_goto: .proc_of_formalization_quantity_in_natural_language_form14D;;
+			*);;
+
+		-> .proc_of_formalization_quantity_in_natural_language_form14D
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: lang_ru;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _main_idtf;;
+
+			=> nrel_then: .proc_of_formalization_quantity_in_natural_language_form14E;;
+			=> nrel_else: .proc_of_formalization_quantity_in_natural_language_form14B;;
+			*);;
+
+		-> .proc_of_formalization_quantity_in_natural_language_form14E
+			(*
+			<- contStringConcat;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _link1;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _link1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _main_idtf;;
+
+			=> nrel_goto: .proc_of_formalization_quantity_in_natural_language_form14F;;
+			*);;	
+
+		-> .proc_of_formalization_quantity_in_natural_language_form14F
+			(*
+			<- contStringConcat;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _link1;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _link1;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: [ ];;
+
+			=> nrel_goto: .proc_of_formalization_quantity_in_natural_language_form15A;;
+			*);;
+
+		-> .proc_of_formalization_quantity_in_natural_language_form15A
+			(*
+			<- searchSetStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_role_relation: _atribyt;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _main_idtf;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc3;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_main_idtf;;
+
+			-> rrel_set_3: rrel_assign: rrel_scp_var: _set4;;
+
+			=> nrel_then: .proc_of_formalization_quantity_in_natural_language_form15B;;
+			=> nrel_else: .proc_of_formalization_quantity_in_natural_language_form_return;;
+			*);;
+
+		-> .proc_of_formalization_quantity_in_natural_language_form15B
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _set4;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _main_idtf;;
+
+			=> nrel_then: .proc_of_formalization_quantity_in_natural_language_form15C;;
+			=> nrel_else: .proc_of_formalization_quantity_in_natural_language_form_return;;
+			*);;	
+
+		-> .proc_of_formalization_quantity_in_natural_language_form15C
+			(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_erase: rrel_fixed: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+
+			=> nrel_goto: .proc_of_formalization_quantity_in_natural_language_form15D;;
+			*);;
+
+		-> .proc_of_formalization_quantity_in_natural_language_form15D
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: lang_ru;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _main_idtf;;
+
+			=> nrel_then: .proc_of_formalization_quantity_in_natural_language_form15E;;
+			=> nrel_else: .proc_of_formalization_quantity_in_natural_language_form15B;;
+			*);;
+
+		-> .proc_of_formalization_quantity_in_natural_language_form15E
+			(*
+			<- ifCoin;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: nrel_volume;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _some_relation;;
+
+			=> nrel_then: .proc_of_formalization_quantity_in_natural_language_form16A;;
+			=> nrel_else: .proc_of_formalization_quantity_in_natural_language_form15F;;
+			*);;
+
+		-> .proc_of_formalization_quantity_in_natural_language_form15F
+			(*
+			<- ifCoin;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: nrel_area;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _some_relation;;
+
+			=> nrel_then: .proc_of_formalization_quantity_in_natural_language_form16A;;
+			=> nrel_else: .proc_of_formalization_quantity_in_natural_language_form15G;;
+			*);;
+				
+		-> .proc_of_formalization_quantity_in_natural_language_form15G
+			(*
+			<- stringLen;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: _link;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _main_idtf;;
+
+			=> nrel_goto: .proc_of_formalization_quantity_in_natural_language_form15H;;
+			*);;
+
+		-> .proc_of_formalization_quantity_in_natural_language_form15H
+			(*
+			<- contSub;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _link;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _link;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: [2];;
+
+			=> nrel_goto: .proc_of_formalization_quantity_in_natural_language_form15I;;
+			*);;
+
+		-> .proc_of_formalization_quantity_in_natural_language_form15I
+			(*
+			<- stringSlice;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _main_idtf;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _main_idtf;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: [0];;
+			-> rrel_4: rrel_fixed: rrel_scp_var: _link;;
+
+			=> nrel_goto: .proc_of_formalization_quantity_in_natural_language_form15J;;
+			*);;
+
+		-> .proc_of_formalization_quantity_in_natural_language_form15J
+			(*
+			<- contStringConcat;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _link1;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _link1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _main_idtf;;
+
+			=> nrel_goto: .proc_of_formalization_quantity_in_natural_language_form15K;;
+			*);;
+
+		-> .proc_of_formalization_quantity_in_natural_language_form15K
+			(*
+			<- contStringConcat;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _link1;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _link1;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: [ов.];;
+
+			=> nrel_goto: .proc_of_formalization_quantity_in_natural_language_form17A;;
+			*);;
+
+		-> .proc_of_formalization_quantity_in_natural_language_form16A
+			(*
+			<- stringSplit;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _link2;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _main_idtf;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: [ ];;
+
+			=> nrel_goto: .proc_of_formalization_quantity_in_natural_language_form16B;;
+			*);;
+
+		-> .proc_of_formalization_quantity_in_natural_language_form16B
+			(*
+			<- searchElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _link2;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _link;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: rrel_1;;
+
+			=> nrel_then: .proc_of_formalization_quantity_in_natural_language_form16C;;
+			=> nrel_else: .proc_of_formalization_quantity_in_natural_language_form_return;;
+			*);;
+
+		-> .proc_of_formalization_quantity_in_natural_language_form16C
+			(*
+			<- stringSlice;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _link;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _link;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: [0];;
+			-> rrel_4: rrel_fixed: rrel_scp_const: [8];;
+
+			=> nrel_goto: .proc_of_formalization_quantity_in_natural_language_form16D;;
+			*);;
+
+		-> .proc_of_formalization_quantity_in_natural_language_form16D
+			(*
+			<- contStringConcat;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _link1;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _link1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _link;;
+
+			=> nrel_goto: .proc_of_formalization_quantity_in_natural_language_form16E;;
+			*);;
+
+		-> .proc_of_formalization_quantity_in_natural_language_form16E
+			(*
+			<- contStringConcat;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _link1;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _link1;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: [ ];;
+
+			=> nrel_goto: .proc_of_formalization_quantity_in_natural_language_form16F;;
+			*);;
+
+		-> .proc_of_formalization_quantity_in_natural_language_form16F
+			(*
+			<- searchElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _link;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _link2;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_substring_base_order;;
+
+			=> nrel_then: .proc_of_formalization_quantity_in_natural_language_form16G;;
+			=> nrel_else: .proc_of_formalization_quantity_in_natural_language_form_return;;
+			*);;	
+
+		-> .proc_of_formalization_quantity_in_natural_language_form16G
+			(*
+			<- stringLen;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: _link;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _link2;;
+
+			=> nrel_goto: .proc_of_formalization_quantity_in_natural_language_form16H;;
+			*);;
+
+		-> .proc_of_formalization_quantity_in_natural_language_form16H
+			(*
+			<- contSub;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _link;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _link;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: [2];;
+
+			=> nrel_goto: .proc_of_formalization_quantity_in_natural_language_form16I;;
+			*);;
+
+		-> .proc_of_formalization_quantity_in_natural_language_form16I
+			(*
+			<- stringSlice;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _link2;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _link2;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: [0];;
+			-> rrel_4: rrel_fixed: rrel_scp_var: _link;;
+
+			=> nrel_goto: .proc_of_formalization_quantity_in_natural_language_form16J;;
+			*);;
+
+		-> .proc_of_formalization_quantity_in_natural_language_form16J
+			(*
+			<- contStringConcat;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _link1;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _link1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _link2;;
+
+			=> nrel_goto: .proc_of_formalization_quantity_in_natural_language_form15K;;
+			*);;
+
+		-> .proc_of_formalization_quantity_in_natural_language_form17A
+			(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_erase: rrel_fixed: rrel_scp_var: _set;;
+
+			=> nrel_goto: .proc_of_formalization_quantity_in_natural_language_form17B;;
+			*);;
+
+		-> .proc_of_formalization_quantity_in_natural_language_form17B
+			(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_erase: rrel_fixed: rrel_scp_var: _set1;;
+
+			=> nrel_goto: .proc_of_formalization_quantity_in_natural_language_form17C;;
+			*);;
+
+		-> .proc_of_formalization_quantity_in_natural_language_form17C
+			(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_erase: rrel_fixed: rrel_scp_var: _set2;;
+
+			=> nrel_goto: .proc_of_formalization_quantity_in_natural_language_form17D;;
+			*);;
+
+		-> .proc_of_formalization_quantity_in_natural_language_form17D
+			(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_erase: rrel_fixed: rrel_scp_var: _set3;;
+
+			=> nrel_goto: .proc_of_formalization_quantity_in_natural_language_form17E;;
+			*);;
+
+		-> .proc_of_formalization_quantity_in_natural_language_form17E
+			(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_erase: rrel_fixed: rrel_scp_var: _set4;;
+
+			=> nrel_goto: .proc_of_formalization_quantity_in_natural_language_form17F;;
+			*);;	
+
+		-> .proc_of_formalization_quantity_in_natural_language_form17F
+			(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_erase: rrel_fixed: rrel_scp_var: _set5;;
+
+			=> nrel_goto: .proc_of_formalization_quantity_in_natural_language_form17G;;
+			*);;	
+
+		-> .proc_of_formalization_quantity_in_natural_language_form17G
+			(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_erase: rrel_fixed: rrel_scp_var: _set6;;
+
+			=> nrel_goto: .proc_of_formalization_quantity_in_natural_language_form18A;;
+			*);;	
+
+		-> .proc_of_formalization_quantity_in_natural_language_form18A
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_formalization_quantity;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _link1;;
+
+			=> nrel_goto: .proc_of_formalization_quantity_in_natural_language_form_return;;
+			*);;
+			
+		-> .proc_of_formalization_quantity_in_natural_language_form_return
+			(*
+			<- return;;
+			*);;	
+				
+	 	*);;
+	*);;
