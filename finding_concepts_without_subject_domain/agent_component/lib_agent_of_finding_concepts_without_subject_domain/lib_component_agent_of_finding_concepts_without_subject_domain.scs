@@ -1,0 +1,30 @@
+lib_component_agent_of_finding_concepts_without_subject_domain
+=> nrel_main_idtf:
+	[Компонент библиотеки. Sc-агент поиска понятия, которые не соотнесены с предметной областью]
+	(* <- lang_ru;; *);
+	[Library component. Sc-agent of finding concepts that are not related to the subject domain]
+	(* <- lang_en;; *);
+
+<- library_of_platform_independent_reusable_components; 
+<- library_of_atomic_reusable_components; 
+
+=> nrel_attendant_component: 
+	lib_component_ui_menu_file_for_finding_concepts_without_subject_domain;
+
+-> rrel_key_sc_element: 
+	.platform_independent_realization_of_sc_agent_of_finding_concepts_without_subject_domain;
+
+<- rrel_key_sc_element: 
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://htmls/Agent_Of_Finding_Concepts_Without_Subject_Domain.html"
+				(* <- lang_ru;; *);; 
+		*);;
+	*);;
+
+
