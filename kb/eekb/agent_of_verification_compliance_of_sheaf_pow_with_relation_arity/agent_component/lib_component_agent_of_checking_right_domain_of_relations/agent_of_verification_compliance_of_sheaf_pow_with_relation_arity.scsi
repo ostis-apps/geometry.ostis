@@ -1,7 +1,7 @@
 agent_of_verification_compliance_of_sheaf_pow_with_relation_arity
 => nrel_main_idtf:
 	[агентная scp-программа проверки на соответствие мощности связок арности отношения] (* <- lang_ru;; *);
-	[agent scp-program of compliance testing of power cords arity relations] (* <- lang_en;; *);
+	[agent scp-program of checking sheafs on relation arity mapping] (* <- lang_en;; *);
 	<- agent_scp_program;;
 
 scp_program -> agent_of_verification_compliance_of_sheaf_pow_with_relation_arity 
@@ -43,9 +43,10 @@ scp_program -> agent_of_verification_compliance_of_sheaf_pow_with_relation_arity
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
 			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
-			-> rrel_3: rrel_assign: rrel_scp_var: _struct;;
+			-> rrel_3: rrel_assign: rrel_scp_var: rrel_struct: _struct;;
 
-			=> nrel_goto: .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorA4;;
+			=> nrel_then: .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorA4;;
+			=> nrel_else: .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_return;;
 			*);;
 
 		-> .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorA4
@@ -135,18 +136,10 @@ scp_program -> agent_of_verification_compliance_of_sheaf_pow_with_relation_arity
 					
 			-> rrel_1: rrel_fixed: rrel_scp_var: _set;;
 			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
-			-> rrel_3: rrel_assign: rrel_scp_var: rrel_node: _connective;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _connective;;
 					
-			=> nrel_then: .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorB06;;
+			=> nrel_then: .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorB6;;
 			=> nrel_else: .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorB2;;
-			*);;
-
-		-> .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorB06 (*
-			<- printEl;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_var: _connective;;
-
-			=> nrel_goto: .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorB6;;
 			*);;
 
 		-> .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorB6
@@ -155,7 +148,17 @@ scp_program -> agent_of_verification_compliance_of_sheaf_pow_with_relation_arity
 			
 			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _arc;;
 			
-			=> nrel_goto: .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorC1;;
+			=> nrel_goto: .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorB6_2;;
+			*);;
+
+		-> .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorB6_2 
+			(*
+			<- ifType;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_node: _connective;;
+
+			=> nrel_then: .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorC1;;
+			=> nrel_else: .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorD1;;
 			*);;
 
 		-> .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorC1
@@ -165,27 +168,7 @@ scp_program -> agent_of_verification_compliance_of_sheaf_pow_with_relation_arity
 			-> rrel_1: rrel_assign: rrel_scp_var: _count;;
 			-> rrel_2: rrel_fixed: rrel_scp_const: [0];;
 
-			=> nrel_goto: .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorC3;; //C2
-			*);;
-		
-		-> .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorC2
-			(*
-			<- searchElStr3;;
-			
-			-> rrel_1: rrel_fixed: rrel_scp_var: _someRelation;;
-			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
-			-> rrel_3: rrel_assign: rrel_scp_var: rrel_node: _connective;;
-			
-			=> nrel_then: .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorC03;;
-			=> nrel_else: .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorD1;;
-			*);;
-
-		-> .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorC03 (*
-			<- printEl;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_var: _connective;;
-
-			=> nrel_goto: .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorC3;;
+			=> nrel_goto: .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorC3;; 
 			*);;
 		
 		-> .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorC3
@@ -244,17 +227,8 @@ scp_program -> agent_of_verification_compliance_of_sheaf_pow_with_relation_arity
 			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
 			-> rrel_3: rrel_fixed: rrel_scp_var: _someRelation;;
 			
-			=> nrel_then: .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorE01;;
+			=> nrel_then: .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorE1;;
 			=> nrel_else: .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorD2;;
-			*);;
-
-		-> .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorE01
-			(*
-			<- printNl;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_const: [Unary];;
-
-			=> nrel_goto: .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorE1;;
 			*);;
 		
 		
@@ -266,17 +240,8 @@ scp_program -> agent_of_verification_compliance_of_sheaf_pow_with_relation_arity
 			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
 			-> rrel_3: rrel_fixed: rrel_scp_var: _someRelation;;
 			
-			=> nrel_then: .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorF01;;
+			=> nrel_then: .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorF1;;
 			=> nrel_else: .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorD3;;
-			*);;
-		
-		-> .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorF01
-			(*
-			<- printNl;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_const: [Binary];;
-
-			=> nrel_goto: .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorF1;;
 			*);;
 
 		-> .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorD3
@@ -287,17 +252,8 @@ scp_program -> agent_of_verification_compliance_of_sheaf_pow_with_relation_arity
 			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
 			-> rrel_3: rrel_fixed: rrel_scp_var: _someRelation;;
 			
-			=> nrel_then: .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorG01;;
+			=> nrel_then: .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorG1;;
 			=> nrel_else: .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorD4;;
-			*);;
-
-		-> .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorG01
-			(*
-			<- printNl;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_const: [Ternary];;
-
-			=> nrel_goto: .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorG1;;
 			*);;
 		
 		-> .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorD4
@@ -308,18 +264,9 @@ scp_program -> agent_of_verification_compliance_of_sheaf_pow_with_relation_arity
 			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
 			-> rrel_3: rrel_fixed: rrel_scp_var: _someRelation;;
 			
-			=> nrel_then: .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorH01;;
+			=> nrel_then: .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorH1;;
 			=> nrel_else: .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorB5;;
 			*);;
-
-		-> .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorH01
-			(*
-			<- printNl;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_const: [Quasy];;
-
-			=> nrel_goto: .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorH1;;
-			*);;		
 
 		-> .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorE1
 			(*
@@ -363,9 +310,9 @@ scp_program -> agent_of_verification_compliance_of_sheaf_pow_with_relation_arity
 			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_node: _connective;;
 			
 			=> nrel_then: .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorF2;;
-			=> nrel_else: .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorB5;;
+			=> nrel_else: .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorF7;;
 			*);;
-		
+
 		-> .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorF2
 			(*
 			<- ifEq;;
@@ -427,6 +374,38 @@ scp_program -> agent_of_verification_compliance_of_sheaf_pow_with_relation_arity
 			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arcInRelation;;
 			-> rrel_5: rrel_fixed: rrel_scp_const: rrel_2;;
 			
+			=> nrel_then: .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorB5;;
+			=> nrel_else: .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorJ1;;
+			*);;
+
+		-> .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorF7
+			(*
+			<- searchElStr3;;
+			
+			-> rrel_1: rrel_fixed: rrel_scp_const: oriented_relation;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _someRelation;;
+			
+			=> nrel_then: .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorF8;;
+			=> nrel_else: .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorF9;;
+			*);;
+
+		-> .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorF8
+			(*
+			<- ifType;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_common: _connective;;
+
+			=> nrel_then: .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorB5;;
+			=> nrel_else: .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorJ1;;
+			*);;
+
+		-> .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorF9
+			(*
+			<- ifType;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_edge: _connective;;
+
 			=> nrel_then: .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorB5;;
 			=> nrel_else: .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorJ1;;
 			*);;
@@ -518,16 +497,26 @@ scp_program -> agent_of_verification_compliance_of_sheaf_pow_with_relation_arity
 
 		-> .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorH1
 			(*
+			<- ifType;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_node: _connective;;
+
+			=> nrel_then: .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorH2;;
+			=> nrel_else: .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorH7;;
+			*);;
+
+		-> .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorH2
+			(*
 			<- ifGr;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _count;;
 			-> rrel_2: rrel_fixed: rrel_scp_const: [1];;
 
-			=> nrel_then: .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorH2;;
+			=> nrel_then: .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorH3;;
 			=> nrel_else: .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorJ1;;
 			*);;
 		
-		-> .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorH2
+		-> .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorH3
 			(*
 			<- searchSetStr5;;
 			
@@ -539,11 +528,11 @@ scp_program -> agent_of_verification_compliance_of_sheaf_pow_with_relation_arity
 
 			-> rrel_set_3: rrel_assign: rrel_scp_var: _setNodesInQuasiBinaryRelation;;
 			
-			=> nrel_then: .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorH3;;
+			=> nrel_then: .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorH4;;
 			=> nrel_else: .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorJ1;;
 			*);;
 		
-		-> .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorH3
+		-> .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorH4
 			(*
 			<- searchElStr3;;
 			
@@ -551,20 +540,20 @@ scp_program -> agent_of_verification_compliance_of_sheaf_pow_with_relation_arity
 			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
 			-> rrel_3: rrel_assign: rrel_scp_var: _someElement;;
 			
-			=> nrel_then: .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorH4;;
+			=> nrel_then: .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorH5;;
 			=> nrel_else: .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorJ1;;
 			*);;
 		
-		-> .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorH4
+		-> .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorH5
 			(*
 			<- eraseEl;;
 			
 			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _arc;;
 			
-			=> nrel_goto: .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorH5;;
+			=> nrel_goto: .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorH6;;
 			*);;
 		
-		-> .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorH5
+		-> .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorH6
 			(*
 			<- searchElStr3;;
 			
@@ -575,6 +564,150 @@ scp_program -> agent_of_verification_compliance_of_sheaf_pow_with_relation_arity
 			=> nrel_then: .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorJ1;;
 			=> nrel_else: .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorB5;;
 			*);;	
+
+		-> .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorH7 
+			(*
+			<- searchElStr3;;
+			
+			-> rrel_1: rrel_assign: rrel_scp_var: _firstDomain;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: rrel_common: _commonArc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _secondDomain;;
+			
+			=> nrel_goto: .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorH8;;
+			*);;
+
+		-> .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorH8
+			(*
+			<- searchSetStr3;;
+			
+			-> rrel_1: rrel_fixed: rrel_scp_var: _firstDomain;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _allElementFromFirstDomain;;
+			
+			-> rrel_set_3: rrel_assign: rrel_scp_var: _setQuasiBinaryElements;;
+			
+			=> nrel_then: .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorH9;;
+			=> nrel_else: .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorJ1;;
+			*);;
+
+		-> .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorH9
+			(*
+			<- contAssign;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: _countForQuasi;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: [0];;
+
+			=> nrel_goto: .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorH10;;
+			*);;
+
+		-> .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorH10
+			(*
+			<- searchElStr3;;
+			
+			-> rrel_1: rrel_fixed: rrel_scp_var: _setQuasiBinaryElements;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _elementFromFirstDomain;;
+			
+			=> nrel_then: .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorH11;;
+			=> nrel_else: .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorH13;;
+			*);;
+
+		-> .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorH11
+			(*
+			<- eraseEl;;
+			
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _arc;;
+			
+			=> nrel_goto: .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorH12;;
+			*);;
+
+		-> .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorH12
+			(*
+			<- contAdd;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _countForQuasi;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: [1];;
+
+			=> nrel_goto: .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorH10;;
+			*);;
+
+		-> .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorH13
+			(*
+			<- ifGr;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _countForQuasi;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: [1];;
+
+			=> nrel_then: .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorH14;;
+			=> nrel_else: .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorJ1;;
+			*);;
+
+		-> .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorH14
+			(*
+			<- searchSetStr5;;
+			
+			-> rrel_1: rrel_fixed: rrel_scp_var: _firstDomain;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _commonArc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _binaryElement;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arcInRelation;;
+			-> rrel_5: rrel_fixed: rrel_scp_var: _struct;;
+
+			-> rrel_set_3: rrel_assign: rrel_scp_var: _setAllBinaryElement;;
+			
+			=> nrel_goto: .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorH15;;
+			*);;
+
+		-> .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorH15
+			(*
+			<- contAssign;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _countForQuasi;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: [0];;
+
+			=> nrel_goto: .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorH16;;
+			*);;
+
+		-> .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorH16
+			(*
+			<- searchElStr3;;
+			
+			-> rrel_1: rrel_fixed: rrel_scp_var: _setAllBinaryElement;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _someElementInSecondDomain;;
+			
+			=> nrel_then: .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorH17;;
+			=> nrel_else: .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorH19;;
+			*);;
+
+		-> .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorH17
+			(*
+			<- eraseEl;;
+			
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _arc;;
+			
+			=> nrel_goto: .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorH18;;
+			*);;
+
+		-> .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorH18
+			(*
+			<- contAdd;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _countForQuasi;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: [1];;
+
+			=> nrel_goto: .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorH16;;
+			*);;
+
+		-> .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorH19
+			(*
+			<- ifEq;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _countForQuasi;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: [1];;
+
+			=> nrel_then: .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorB5;;
+			=> nrel_else: .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorJ1;;
+			*);;
 		
 		-> .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorJ1
 			(*
@@ -654,7 +787,7 @@ scp_program -> agent_of_verification_compliance_of_sheaf_pow_with_relation_arity
 			-> rrel_set_1: rrel_fixed: rrel_scp_var: _answer;;
 			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer;;
 			
-			=> nrel_goto: .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorJ5;;
+			=> nrel_goto: .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorJ14;;
 			*);;		
 
 		-> .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorJ8
@@ -731,33 +864,25 @@ scp_program -> agent_of_verification_compliance_of_sheaf_pow_with_relation_arity
 			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
 			-> rrel_3: rrel_fixed: rrel_scp_var: _someRelation;;
 
-			=> nrel_goto: .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorJ14;;
+			=> nrel_goto: .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorB5;;
 			*);;
 
 		-> .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorJ14
 			(*
-			<- searchSetStr3;;
+			<- searchSetStr5;;
 			
-			-> rrel_1: rrel_assign: rrel_scp_var: _allElements;;
-			-> rrel_2: rrel_assign: rrel_scp_var: _arc;;
-			-> rrel_3: rrel_fixed: rrel_scp_var: _connective;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _connective;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _elementFromFirstDomain;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arcInRelation;;
+			-> rrel_5: rrel_fixed: rrel_scp_var: _struct;;
+
+			-> rrel_set_3: rrel_fixed: rrel_scp_var: _answer;;
 			
-			-> rrel_set_1: rrel_fixed: rrel_scp_var: _answer;;
-			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer;;
-			
-			=> nrel_goto: .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorB5;;
+			=> nrel_goto: .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorJ5;;
 			*);;
 
 		-> .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorK1
-			(*
-			<- printEl;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
-
-			=> nrel_goto: .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorK2;;
-			*);;
-
-		-> .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorK2
 			(*
 			<- call;;
 
@@ -771,19 +896,19 @@ scp_program -> agent_of_verification_compliance_of_sheaf_pow_with_relation_arity
 				*);;
 			-> rrel_3: rrel_assign: rrel_scp_var: _descr3;;
 
-			=> nrel_goto: .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorK3;;
+			=> nrel_goto: .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorK2;;
 			*);;
 
-		-> .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorK3
+		-> .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorK2
 			(*
 			<- waitReturn;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _descr3;;
 
-			=> nrel_goto: .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorK4;;
+			=> nrel_goto: .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorK3;;
 			*);;
 
-		-> .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorK4
+		-> .agent_of_verification_compliance_of_sheaf_pow_with_relation_arity_operatorK3
 			(*
 			<- genElStr3;;
 
