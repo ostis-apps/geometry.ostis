@@ -294,19 +294,36 @@ scp_program -> proc_of_forming_terminological_ontology
 
 			-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: rrel_pos_const_perm:_arc1;;
 
-			=> nrel_goto: .proc_of_forming_terminological_ontology_operator10C;; 
+			=> nrel_goto: .proc_of_forming_terminological_ontology_operator10C_1;; 
 			*);;
 
-		-> .proc_of_forming_terminological_ontology_operator10C
+		-> .proc_of_forming_terminological_ontology_operator10C_1  ///
 			(*
-			<- genElStr3;;
+			<- genElStr5;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _ontology;;
 			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
 			-> rrel_3: rrel_fixed: rrel_scp_var: _node;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: rrel_key_sc_element;;
 			
-			=> nrel_goto: .proc_of_forming_terminological_ontology_operator10D;;
+			=> nrel_goto: .proc_of_forming_terminological_ontology_operator10C_2;;
 			*);;
+
+		-> .proc_of_forming_terminological_ontology_operator10C_2
+			(*
+			<- searchSetStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _ontology;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _node;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: rrel_key_sc_element;;
+
+			-> rrel_set_4: rrel_fixed: rrel_scp_var: _answer_proc_of_forming_terminological_ontology;;
+
+			=> nrel_goto: .proc_of_forming_terminological_ontology_operator10D;;
+			*);;	
 
 		-> .proc_of_forming_terminological_ontology_operator10D
 			(*
@@ -511,8 +528,19 @@ scp_program -> proc_of_forming_terminological_ontology
 
 			=> nrel_goto: .proc_of_forming_terminological_ontology_operator_return;;
 			*);;
-
+		
 		-> .proc_of_forming_terminological_ontology_operator16
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_proc_of_forming_terminological_ontology;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: rrel_const: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: rrel_key_sc_element;;
+			
+			=> nrel_goto: .proc_of_forming_terminological_ontology_operator17;;
+			*);;
+
+		-> .proc_of_forming_terminological_ontology_operator17
 			(*
 			<- eraseEl;;
 
