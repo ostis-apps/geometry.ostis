@@ -1,8 +1,8 @@
 lib_component_ui_menu_file_for_change_arc_direction
 => nrel_main_idtf:
-	[Компонент библиотеки. Команда пользовательского интерфейса для изменения направления дуги]
+	[Компонент библиотеки. Команда пользовательского интерфейса изменения направления дуги]
 	(* <- lang_ru;; *);
-	[Library component. User interface command for change arc direction]
+	[Library component. User interface command of change arc direction]
 	(* <- lang_en;; *);
 
 <- library_of_platform_independent_reusable_components;
@@ -17,10 +17,9 @@ lib_component_ui_menu_file_for_change_arc_direction
 		...
 		(*
 		-> rrel_example:
-			"file://htmls/Ui_Change_Arc_Direction.html"
+			"file://htmls/UI_change_arc_direction.html"
 				(* <- lang_ru;; *);;
 		*);;
 	*);;
-
-
-lib_component_ui_menu_file_for_change_arc_direction = [*^"file://ui_menu_file_for_change_arc_direction.scsi"*];; 
+	
+lib_component_ui_menu_file_for_change_arc_direction = [*^"file://ui_menu_file_for_change_arc_direction.scsi"*];;
