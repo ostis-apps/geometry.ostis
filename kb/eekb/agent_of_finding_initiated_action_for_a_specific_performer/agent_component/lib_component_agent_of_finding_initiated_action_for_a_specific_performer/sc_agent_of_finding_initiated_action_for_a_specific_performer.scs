@@ -19,7 +19,7 @@ sc_agent_of_finding_initiated_action_for_a_specific_performer
 	};
 
 => nrel_inclusion: 
-	.platform_independent_realization_of_sc_agent_of_search_initiated_actions_executor
+	.platform_independent_realization_of_sc_agent_of_search_initiated_action_for_a_specific_performer
 	(*
 	<- platform_independent_abstract_sc_agent;;
 	<= nrel_sc_agent_program: 
@@ -27,11 +27,11 @@ sc_agent_of_finding_initiated_action_for_a_specific_performer
 		agent_of_finding_initiated_action_for_a_specific_performer	
 		};;
 
-	-> sc_agent_of_search_initiated_actions_executor_scp    
+	-> sc_agent_of_search_initiated_action_for_a_specific_performer_scp    
 		(* <- active_sc_agent;; *);;  
 	*);;
 
-..sc_agent_of_search_initiated_actions_executor_condition
+..sc_agent_of_search_initiated_action_for_a_specific_performer_condition
 = [*
 	action_of_finding_initiated_action_for_a_specific_performer _-> .._question;;
 	question_initiated _-> .._question;;
@@ -39,7 +39,7 @@ sc_agent_of_finding_initiated_action_for_a_specific_performer
 	.._question _-> .._parameter;;
 *];;
 
-..sc_agent_of_search_initiated_actions_executor_result
+..sc_agent_of_search_initiated_action_for_a_specific_performer_result
 = [*
 	action_of_finding_initiated_action_for_a_specific_performer _-> .._question;;
 	question_finished _-> .._question;;

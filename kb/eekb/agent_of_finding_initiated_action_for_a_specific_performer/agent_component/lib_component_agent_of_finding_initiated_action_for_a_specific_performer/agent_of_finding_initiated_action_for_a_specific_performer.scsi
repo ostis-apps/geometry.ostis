@@ -50,6 +50,18 @@ scp_program -> agent_of_finding_initiated_action_for_a_specific_performer
 			*);;
 
 		-> .agent_of_finding_initiated_action_for_a_specific_performer_operator1D
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: ui_user;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _user;;
+
+			=> nrel_then: .agent_of_finding_initiated_action_for_a_specific_performer_operator1E;;
+			=> nrel_else: .agent_of_finding_initiated_action_for_a_specific_performer_call_proc_of_adding_validating_message;;   
+			*);;
+
+		-> .agent_of_finding_initiated_action_for_a_specific_performer_operator1E
         		(*
 		 	<- genEl;;
 
@@ -183,7 +195,7 @@ scp_program -> agent_of_finding_initiated_action_for_a_specific_performer
 		  	-> rrel_2: rrel_fixed: rrel_scp_const: .agent_of_finding_initiated_action_for_a_specific_performer_call_proc_of_adding_validating_message_params 
 				(*
 				-> rrel_1: rrel_fixed: rrel_scp_var: _question;;
-				-> rrel_2: rrel_fixed: rrel_scp_const: [Wrong first parameter! We have not a struct];;
+				-> rrel_2: rrel_fixed: rrel_scp_const: [Wrong first parameter! It must be a user];;
 				*);;
 		  	-> rrel_3: rrel_assign: rrel_scp_var: _descr1;;
 
