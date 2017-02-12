@@ -175,7 +175,7 @@ scp_program -> agent_of_checking_existence_of_measure_or_scale_of_parameter
 			-> rrel_3: rrel_assign: rrel_scp_var: _characteristic_of_parameter;;
 
 			=> nrel_then: .agent_of_checking_existence_of_measure_or_scale_of_parameter_operator5C;;
-			=> nrel_else: .agent_of_checking_existence_of_measure_or_scale_of_parameter_operator7I;;
+			=> nrel_else: .agent_of_checking_existence_of_measure_or_scale_of_parameter_operator7G;;
 			*);;
 
 		-> .agent_of_checking_existence_of_measure_or_scale_of_parameter_operator5C
@@ -271,7 +271,7 @@ scp_program -> agent_of_checking_existence_of_measure_or_scale_of_parameter
 			-> rrel_5: rrel_fixed: rrel_scp_const: rrel_norole_relation: nrel_measure;;
 
 			=> nrel_then: .agent_of_checking_existence_of_measure_or_scale_of_parameter_operator6G;;
-			=> nrel_else: .agent_of_checking_existence_of_measure_or_scale_of_parameter_operator7A_7;;
+			=> nrel_else: .agent_of_checking_existence_of_measure_or_scale_of_parameter_operator7A_9;;
 			*);;
 
 		-> .agent_of_checking_existence_of_measure_or_scale_of_parameter_operator6G
@@ -283,7 +283,7 @@ scp_program -> agent_of_checking_existence_of_measure_or_scale_of_parameter
 			-> rrel_3: rrel_fixed: rrel_scp_var: _some_measure;;
 
 			=> nrel_then: .agent_of_checking_existence_of_measure_or_scale_of_parameter_operator6A;;
-			=> nrel_else: .agent_of_checking_existence_of_measure_or_scale_of_parameter_operator7A_1_1;;
+			=> nrel_else: .agent_of_checking_existence_of_measure_or_scale_of_parameter_operator7A_1;;
 			*);;
 
 		-> .agent_of_checking_existence_of_measure_or_scale_of_parameter_operator6H
@@ -297,7 +297,7 @@ scp_program -> agent_of_checking_existence_of_measure_or_scale_of_parameter
 			-> rrel_5: rrel_fixed: rrel_scp_const: rrel_norole_relation: nrel_zero_mark;;
 
 			=> nrel_then: .agent_of_checking_existence_of_measure_or_scale_of_parameter_operator6K;;
-			=> nrel_else: .agent_of_checking_existence_of_measure_or_scale_of_parameter_operator7A_7;;
+			=> nrel_else: .agent_of_checking_existence_of_measure_or_scale_of_parameter_operator7A_9;;
 			*);;
 
 		-> .agent_of_checking_existence_of_measure_or_scale_of_parameter_operator6K
@@ -309,41 +309,18 @@ scp_program -> agent_of_checking_existence_of_measure_or_scale_of_parameter
 			-> rrel_3: rrel_fixed: rrel_scp_var: _some_measure;;
 
 			=> nrel_then: .agent_of_checking_existence_of_measure_or_scale_of_parameter_operator6A;;
-			=> nrel_else: .agent_of_checking_existence_of_measure_or_scale_of_parameter_operator7A_2_1;;
+			=> nrel_else: .agent_of_checking_existence_of_measure_or_scale_of_parameter_operator7A_3;;
 			*);;
 		
-		-> .agent_of_checking_existence_of_measure_or_scale_of_parameter_operator7A_1_1
-			(*
-			<- searchElStr3;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_proc_of_checking_parameter;;
-			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
-			-> rrel_3: rrel_fixed: rrel_scp_const: nrel_measure;;
-
-			=> nrel_then: .agent_of_checking_existence_of_measure_or_scale_of_parameter_operator7A_4;;
-			=> nrel_else: .agent_of_checking_existence_of_measure_or_scale_of_parameter_operator7A_1;;
-			*);;
-
 		-> .agent_of_checking_existence_of_measure_or_scale_of_parameter_operator7A_1
 			(*
-			<- genElStr3;;
+			<- searchElStr3;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_proc_of_checking_parameter;;
 			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
 			-> rrel_3: rrel_fixed: rrel_scp_const: nrel_measure;;
 
-			=> nrel_goto: .agent_of_checking_existence_of_measure_or_scale_of_parameter_operator7A_4;;
-			*);;
-
-		-> .agent_of_checking_existence_of_measure_or_scale_of_parameter_operator7A_2_1
-			(*
-			<- searchElStr3;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_proc_of_checking_parameter;;
-			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
-			-> rrel_3: rrel_fixed: rrel_scp_const: nrel_zero_mark;;
-
-			=> nrel_then: .agent_of_checking_existence_of_measure_or_scale_of_parameter_operator7A_3;;
+			=> nrel_then: .agent_of_checking_existence_of_measure_or_scale_of_parameter_operator7A_6;;
 			=> nrel_else: .agent_of_checking_existence_of_measure_or_scale_of_parameter_operator7A_2;;
 			*);;
 
@@ -353,12 +330,35 @@ scp_program -> agent_of_checking_existence_of_measure_or_scale_of_parameter
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_proc_of_checking_parameter;;
 			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
-			-> rrel_3: rrel_fixed: rrel_scp_const: nrel_zero_mark;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: nrel_measure;;
 
-			=> nrel_goto: .agent_of_checking_existence_of_measure_or_scale_of_parameter_operator7A_3;;
+			=> nrel_goto: .agent_of_checking_existence_of_measure_or_scale_of_parameter_operator7A_6;;
 			*);;
 
 		-> .agent_of_checking_existence_of_measure_or_scale_of_parameter_operator7A_3
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_proc_of_checking_parameter;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: nrel_zero_mark;;
+
+			=> nrel_then: .agent_of_checking_existence_of_measure_or_scale_of_parameter_operator7A_5;;
+			=> nrel_else: .agent_of_checking_existence_of_measure_or_scale_of_parameter_operator7A_4;;
+			*);;
+
+		-> .agent_of_checking_existence_of_measure_or_scale_of_parameter_operator7A_4
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_proc_of_checking_parameter;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: nrel_zero_mark;;
+
+			=> nrel_goto: .agent_of_checking_existence_of_measure_or_scale_of_parameter_operator7A_5;;
+			*);;
+
+		-> .agent_of_checking_existence_of_measure_or_scale_of_parameter_operator7A_5
 			(*
 			<- searchSetStr5;;
 
@@ -371,10 +371,10 @@ scp_program -> agent_of_checking_existence_of_measure_or_scale_of_parameter
 			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer_of_proc_of_checking_parameter;;
 			-> rrel_set_4: rrel_fixed: rrel_scp_var: _answer_of_proc_of_checking_parameter;;
 
-			=> nrel_goto: .agent_of_checking_existence_of_measure_or_scale_of_parameter_operator7A_5;;
+			=> nrel_goto: .agent_of_checking_existence_of_measure_or_scale_of_parameter_operator7A_7;;
 			*);;
 
-		-> .agent_of_checking_existence_of_measure_or_scale_of_parameter_operator7A_4
+		-> .agent_of_checking_existence_of_measure_or_scale_of_parameter_operator7A_6
 			(*
 			<- searchSetStr5;;
 
@@ -387,29 +387,6 @@ scp_program -> agent_of_checking_existence_of_measure_or_scale_of_parameter
 			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer_of_proc_of_checking_parameter;;
 			-> rrel_set_4: rrel_fixed: rrel_scp_var: _answer_of_proc_of_checking_parameter;;
 
-			=> nrel_goto: .agent_of_checking_existence_of_measure_or_scale_of_parameter_operator7A_5;;
-			*);;
-
-		-> .agent_of_checking_existence_of_measure_or_scale_of_parameter_operator7A_5
-			(*
-			<- searchElStr3;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_proc_of_checking_parameter;;
-			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
-			-> rrel_3: rrel_fixed: rrel_scp_var: _some_measure;;
-
-			=> nrel_then: .agent_of_checking_existence_of_measure_or_scale_of_parameter_operator7A_7;;
-			=> nrel_else: .agent_of_checking_existence_of_measure_or_scale_of_parameter_operator7A_6;;
-			*);;
-
-		-> .agent_of_checking_existence_of_measure_or_scale_of_parameter_operator7A_6
-			(*
-			<- genElStr3;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_proc_of_checking_parameter;;
-			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
-			-> rrel_3: rrel_fixed: rrel_scp_var: _some_measure;;
-
 			=> nrel_goto: .agent_of_checking_existence_of_measure_or_scale_of_parameter_operator7A_7;;
 			*);;
 
@@ -417,61 +394,84 @@ scp_program -> agent_of_checking_existence_of_measure_or_scale_of_parameter
 			(*
 			<- searchElStr3;;
 
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_proc_of_checking_parameter;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _some_measure;;
+
+			=> nrel_then: .agent_of_checking_existence_of_measure_or_scale_of_parameter_operator7A_9;;
+			=> nrel_else: .agent_of_checking_existence_of_measure_or_scale_of_parameter_operator7A_8;;
+			*);;
+
+		-> .agent_of_checking_existence_of_measure_or_scale_of_parameter_operator7A_8
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_proc_of_checking_parameter;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _some_measure;;
+
+			=> nrel_goto: .agent_of_checking_existence_of_measure_or_scale_of_parameter_operator7A_9;;
+			*);;
+
+		-> .agent_of_checking_existence_of_measure_or_scale_of_parameter_operator7A_9
+			(*
+			<- searchElStr3;;
+
 			-> rrel_1: rrel_fixed: rrel_scp_const: measurement_of_fixed_measure;;
 			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
 			-> rrel_3: rrel_fixed: rrel_scp_var: _some_relation;;
 
-			=> nrel_then: .agent_of_checking_existence_of_measure_or_scale_of_parameter_operator7A_7_1;;
-			=> nrel_else: .agent_of_checking_existence_of_measure_or_scale_of_parameter_operator7A_7_3;;
-			*);;
-
-		-> .agent_of_checking_existence_of_measure_or_scale_of_parameter_operator7A_7_1
-			(*
-			<- searchElStr3;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_proc_of_checking_parameter;;
-			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
-			-> rrel_3: rrel_fixed: rrel_scp_const: measurement_of_fixed_measure;;
-
 			=> nrel_then: .agent_of_checking_existence_of_measure_or_scale_of_parameter_operator7A_10;;
-			=> nrel_else: .agent_of_checking_existence_of_measure_or_scale_of_parameter_operator7A_7_2;;
+			=> nrel_else: .agent_of_checking_existence_of_measure_or_scale_of_parameter_operator7A_12;;
 			*);;
 
-		-> .agent_of_checking_existence_of_measure_or_scale_of_parameter_operator7A_7_2
-			(*
-			<- genElStr3;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_proc_of_checking_parameter;;
-			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
-			-> rrel_3: rrel_fixed: rrel_scp_const: measurement_of_fixed_measure;;
-
-			=> nrel_goto: .agent_of_checking_existence_of_measure_or_scale_of_parameter_operator7A_10;;
-			*);;
-
-		-> .agent_of_checking_existence_of_measure_or_scale_of_parameter_operator7A_7_3
+		-> .agent_of_checking_existence_of_measure_or_scale_of_parameter_operator7A_10
 			(*
 			<- searchElStr3;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_proc_of_checking_parameter;;
 			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
-			-> rrel_3: rrel_fixed: rrel_scp_const: scale;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: measurement_of_fixed_measure;;
 
 			=> nrel_then: .agent_of_checking_existence_of_measure_or_scale_of_parameter_operator7A_14;;
-			=> nrel_else: .agent_of_checking_existence_of_measure_or_scale_of_parameter_operator7A_7_4;;
+			=> nrel_else: .agent_of_checking_existence_of_measure_or_scale_of_parameter_operator7A_11;;
 			*);;
 
-		-> .agent_of_checking_existence_of_measure_or_scale_of_parameter_operator7A_7_4
+		-> .agent_of_checking_existence_of_measure_or_scale_of_parameter_operator7A_11
 			(*
 			<- genElStr3;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_proc_of_checking_parameter;;
 			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
-			-> rrel_3: rrel_fixed: rrel_scp_const: scale;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: measurement_of_fixed_measure;;
 
 			=> nrel_goto: .agent_of_checking_existence_of_measure_or_scale_of_parameter_operator7A_14;;
 			*);;
 
-		-> .agent_of_checking_existence_of_measure_or_scale_of_parameter_operator7A_10
+		-> .agent_of_checking_existence_of_measure_or_scale_of_parameter_operator7A_12
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_proc_of_checking_parameter;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: scale;;
+
+			=> nrel_then: .agent_of_checking_existence_of_measure_or_scale_of_parameter_operator7A_15;;
+			=> nrel_else: .agent_of_checking_existence_of_measure_or_scale_of_parameter_operator7A_13;;
+			*);;
+
+		-> .agent_of_checking_existence_of_measure_or_scale_of_parameter_operator7A_13
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_proc_of_checking_parameter;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: scale;;
+
+			=> nrel_goto: .agent_of_checking_existence_of_measure_or_scale_of_parameter_operator7A_15;;
+			*);;
+
+		-> .agent_of_checking_existence_of_measure_or_scale_of_parameter_operator7A_14
 			(*
 			<- searchSetStr3;;
 
@@ -481,10 +481,10 @@ scp_program -> agent_of_checking_existence_of_measure_or_scale_of_parameter
 
 			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer_of_proc_of_checking_parameter;;
 
-			=> nrel_goto: .agent_of_checking_existence_of_measure_or_scale_of_parameter_operator7A_15;;
+			=> nrel_goto: .agent_of_checking_existence_of_measure_or_scale_of_parameter_operator7A_16;;
 			*);;
 
-		-> .agent_of_checking_existence_of_measure_or_scale_of_parameter_operator7A_14
+		-> .agent_of_checking_existence_of_measure_or_scale_of_parameter_operator7A_15
 			(*
 			<- searchSetStr3;;
 
@@ -494,10 +494,10 @@ scp_program -> agent_of_checking_existence_of_measure_or_scale_of_parameter
 
 			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer_of_proc_of_checking_parameter;;
 
-			=> nrel_goto: .agent_of_checking_existence_of_measure_or_scale_of_parameter_operator7A_15;;
+			=> nrel_goto: .agent_of_checking_existence_of_measure_or_scale_of_parameter_operator7A_16;;
 			*);;
 
-		-> .agent_of_checking_existence_of_measure_or_scale_of_parameter_operator7A_15
+		-> .agent_of_checking_existence_of_measure_or_scale_of_parameter_operator7A_16
 			(*
 			<- genElStr3;;
 
@@ -505,10 +505,10 @@ scp_program -> agent_of_checking_existence_of_measure_or_scale_of_parameter
 			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
 			-> rrel_3: rrel_fixed: rrel_scp_var: _some_relation;;
 
-			=> nrel_goto: .agent_of_checking_existence_of_measure_or_scale_of_parameter_operator7C;;
+			=> nrel_goto: .agent_of_checking_existence_of_measure_or_scale_of_parameter_operator7B;;
 			*);;
 
-		-> .agent_of_checking_existence_of_measure_or_scale_of_parameter_operator7C
+		-> .agent_of_checking_existence_of_measure_or_scale_of_parameter_operator7B
 			(*
 			<- searchSetStr5;;
 
@@ -522,6 +522,20 @@ scp_program -> agent_of_checking_existence_of_measure_or_scale_of_parameter
 			-> rrel_set_3: rrel_fixed: rrel_scp_var: _answer_of_proc_of_checking_parameter;;
 			-> rrel_set_4: rrel_fixed: rrel_scp_var: _answer_of_proc_of_checking_parameter;;
 
+			=> nrel_goto: .agent_of_checking_existence_of_measure_or_scale_of_parameter_operator7C;;
+			*);;
+
+		-> .agent_of_checking_existence_of_measure_or_scale_of_parameter_operator7C
+			(*
+			<- searchSetStr3;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: rrel_not_relation: _number_or_value;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _some_value;;
+
+			-> rrel_set_1: rrel_fixed: rrel_scp_var: _answer_of_proc_of_checking_parameter;;
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer_of_proc_of_checking_parameter;;
+
 			=> nrel_goto: .agent_of_checking_existence_of_measure_or_scale_of_parameter_operator7D;;
 			*);;
 
@@ -531,7 +545,7 @@ scp_program -> agent_of_checking_existence_of_measure_or_scale_of_parameter
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_proc_of_checking_parameter;;
 			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
-			-> rrel_3: rrel_fixed: rrel_scp_var: _some_value;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _value_of_parameter;;
 
 			=> nrel_goto: .agent_of_checking_existence_of_measure_or_scale_of_parameter_operator7E;;
 			*);;
@@ -540,11 +554,10 @@ scp_program -> agent_of_checking_existence_of_measure_or_scale_of_parameter
 			(*
 			<- searchSetStr3;;
 
-			-> rrel_1: rrel_assign: rrel_scp_var: rrel_not_relation: _number_or_value;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _characteristic_of_parameter;;
 			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
-			-> rrel_3: rrel_fixed: rrel_scp_var: _some_value;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _value_of_parameter;;
 
-			-> rrel_set_1: rrel_fixed: rrel_scp_var: _answer_of_proc_of_checking_parameter;;
 			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer_of_proc_of_checking_parameter;;
 
 			=> nrel_goto: .agent_of_checking_existence_of_measure_or_scale_of_parameter_operator7F;;
@@ -556,36 +569,12 @@ scp_program -> agent_of_checking_existence_of_measure_or_scale_of_parameter
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_proc_of_checking_parameter;;
 			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
-			-> rrel_3: rrel_fixed: rrel_scp_var: _value_of_parameter;;
-
-			=> nrel_goto: .agent_of_checking_existence_of_measure_or_scale_of_parameter_operator7G;;
-			*);;
-
-		-> .agent_of_checking_existence_of_measure_or_scale_of_parameter_operator7G
-			(*
-			<- searchSetStr3;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_var: _characteristic_of_parameter;;
-			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
-			-> rrel_3: rrel_fixed: rrel_scp_var: _value_of_parameter;;
-
-			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer_of_proc_of_checking_parameter;;
-
-			=> nrel_goto: .agent_of_checking_existence_of_measure_or_scale_of_parameter_operator7H;;
-			*);;
-
-		-> .agent_of_checking_existence_of_measure_or_scale_of_parameter_operator7H
-			(*
-			<- genElStr3;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_proc_of_checking_parameter;;
-			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
 			-> rrel_3: rrel_fixed: rrel_scp_var: _characteristic_of_parameter;;
 
 			=> nrel_goto: .agent_of_checking_existence_of_measure_or_scale_of_parameter_operator6A;;
 			*);;
 
-		-> .agent_of_checking_existence_of_measure_or_scale_of_parameter_operator7I
+		-> .agent_of_checking_existence_of_measure_or_scale_of_parameter_operator7G
 			(*
 			<- eraseEl;;
 
@@ -641,9 +630,6 @@ scp_program -> agent_of_checking_existence_of_measure_or_scale_of_parameter
 
 			=> nrel_goto: .agent_of_checking_existence_of_measure_or_scale_of_parameter_operator_return;; 
 			*);;
-
-
-/**************************************************************************Wrong Parametrs************************************************************/
 
 		-> .agent_of_checking_existence_of_measure_or_scale_of_parameter_operator_call_proc_of_adding_validating_message 
 			(*
