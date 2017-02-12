@@ -1,7 +1,7 @@
 sc_agent_of_checking_existence_of_measure_or_scale_of_parameter
 => nrel_main_idtf:
-	[агентная scp-программа проверки наличия единицы измерения или шкалы у параметра] (* <- lang_ru;; *);
-	[agent scp-program of checking existence of measure or scale of parameter] (* <- lang_en;; *);
+	[sc-агент проверки наличия единицы измерения или шкалы у параметра] (* <- lang_ru;; *);
+	[sc-agent of checking existence of measure or scale of parameter] (* <- lang_en;; *);
 	
 <- abstract_sc_agent;
 
@@ -15,7 +15,7 @@ sc_agent_of_checking_existence_of_measure_or_scale_of_parameter
 	{
 	question_initiated;
 	question;
-	action_of_checking_parameter
+	action_to_check_existence_of_measure_or_scale_of_parameter
 	};
 	
 => nrel_inclusion: 
@@ -24,8 +24,7 @@ sc_agent_of_checking_existence_of_measure_or_scale_of_parameter
 	<- platform_independent_abstract_sc_agent;;
 	<= nrel_sc_agent_program: 
 		{
-		agent_of_checking_existence_of_measure_or_scale_of_parameter;
-        proc_of_checking_existence_of_measure_or_scale_of_parameter
+		agent_of_checking_existence_of_measure_or_scale_of_parameter
 		};;
 		
 	-> sc_agent_of_checking_existence_of_measure_or_scale_of_parameter_scp 
@@ -34,7 +33,7 @@ sc_agent_of_checking_existence_of_measure_or_scale_of_parameter
 
 ..sc_agent_of_checking_existence_of_measure_or_scale_of_parameter_condition
 = [*
-	action_of_checking_parameter _-> .._question;;
+	action_to_check_existence_of_measure_or_scale_of_parameter _-> .._question;;
 	question_initiated _-> .._question;;
 	question _-> .._question;;
 	.._question _-> .._parameter1;;
@@ -42,7 +41,7 @@ sc_agent_of_checking_existence_of_measure_or_scale_of_parameter
 
 ..sc_agent_of_checking_existence_of_measure_or_scale_of_parameter_result
 = [*
-	action_of_checking_parameter _-> .._question;;
+	action_to_check_existence_of_measure_or_scale_of_parameter _-> .._question;;
 	question_finished _-> .._question;;
 	question _-> .._question;;
 	.._question _=> nrel_answer:: .._answer;;

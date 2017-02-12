@@ -1,6 +1,6 @@
 lib_component_ui_menu_file_for_checking_existence_of_measure_or_scale_of_parameter
 => nrel_main_idtf:
-	[Компонент библиотеки. Команда пользовательского интерфейса для проверки наличия единицы измерения или шкалы у параметра]
+	[Компонент библиотеки. Команда пользовательского интерфейса проверки наличия единицы измерения или шкалы у параметра]
 	(* <- lang_ru;; *);
 	[Library component. User interface command for checking existence of measure or scale of parameter]
 	(* <- lang_en;; *);
@@ -12,15 +12,14 @@ lib_component_ui_menu_file_for_checking_existence_of_measure_or_scale_of_paramet
 <- rrel_key_sc_element:
 	... 
 	(*
-	<- sc_explanation;;
+	<- explanation;;
 	<= nrel_sc_text_translation:
 		...
 		(*
 		-> rrel_example:
-			"file://htmls/Ui_Checking_Parameter.html"
+			"file://htmls/UI_checking_existence_of_measure_or_scale_of_parameter.html"
 				(* <- lang_ru;; *);;
 		*);;
 	*);;
-
 
 lib_component_ui_menu_file_for_checking_existence_of_measure_or_scale_of_parameter = [*^"file://ui_menu_file_for_checking_existence_of_measure_or_scale_of_parameter.scsi"*];; 
