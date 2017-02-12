@@ -1,8 +1,8 @@
 lib_component_agent_of_finding_initiated_action_for_a_specific_performer
 => nrel_main_idtf:
-	[Компонент библиотеки. Sc-агент поиска инициированных действий по исполнителю]
+	[Компонент библиотеки. Sc-агент поиска действий, закреплённых за конкретным исполнителем]
 	(* <- lang_ru;; *);
-	[Library component. Sc-agent of finding initiated action for a specific performer]
+	[Library component. Sc-agent of finding actions assigned for a specific performer]
 	(* <- lang_en;; *);
 
 <- library_of_platform_independent_reusable_components; 
@@ -29,10 +29,9 @@ lib_component_agent_of_finding_initiated_action_for_a_specific_performer
 
 action_of_finding_initiated_action_for_a_specific_performer
 <- sc_node_not_relation;
-
- => nrel_main_idtf:
-	[действие. поиск инициированных действий по исполнителю]
+=> nrel_main_idtf:
+	[действие. найти действия, закреплённые за конкретным исполнителем]
 		(*<- lang_ru;;*);
- => nrel_main_idtf:
-	[action. find initiated action for a specific performer]
+=> nrel_main_idtf:
+	[action. find actions assigned for a specific performer]
 		(* <- lang_en;; *);;
