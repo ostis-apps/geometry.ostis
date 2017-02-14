@@ -1,0 +1,26 @@
+lib_component_proc_of_addition_binary_arc_construction_in_answer
+=> nrel_main_idtf:
+	[Компонент библиотеки. scp-программа добавления конструкции с бинарной дугой в ответ]
+	(* <- lang_ru;; *);
+	[Library component. scp-program of addition binary arc construction in answer]
+	(* <- lang_en;; *);
+
+<- library_of_platform_independent_reusable_components;
+
+-> rrel_key_sc_element: 
+	proc_of_addition_binary_arc_construction_in_answer;
+
+<- rrel_key_sc_element: 
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://htmls/Proc_of_addition_binary_arc_construction_in_answer.html" 
+				(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+lib_component_proc_of_addition_binary_arc_construction_in_answer = [*^"file://proc_of_addition_binary_arc_construction_in_answer.scsi"*];;

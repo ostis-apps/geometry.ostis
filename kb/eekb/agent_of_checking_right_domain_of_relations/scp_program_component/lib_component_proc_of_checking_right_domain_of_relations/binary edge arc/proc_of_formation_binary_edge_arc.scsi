@@ -1,0 +1,80 @@
+scp_program -> proc_of_formation_binary_edge_arc (*
+	-> rrel_params: ..proc_edge_params (*
+		-> rrel_1: rrel_in: _cntv;;
+		-> rrel_2: rrel_in: _answer;;
+		-> rrel_3: rrel_in: _struct;;
+		*);;
+	-> rrel_operators: ..proc_edge_operators (*
+
+		->  rrel_init: .proc_of_formation_binary_edge_arc_operatorA1 (*
+			<- searchElStr3;; 
+
+			-> rrel_1: rrel_assign: rrel_scp_var: rrel_norole_relation: _role;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _cntv;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _tempArc;;
+			-> rrel_5: rrel_fixed: rrel_scp_var: _struct;;
+
+			=> nrel_then: .proc_of_formation_binary_edge_arc_operatorA11;; 
+			=> nrel_else: .proc_of_formation_binary_edge_arc_return;;
+			*);;
+
+		-> .proc_of_formation_binary_edge_arc_operatorA11 (*
+			<- genEl;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: rrel_node: _domains;;
+
+			=> nrel_goto: .proc_of_formation_binary_edge_arc_operatorA2;;
+			*);;
+
+		-> .proc_of_formation_binary_edge_arc_operatorA2 (* 
+			<- call;; 
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: proc_of_generating_set_of_domains;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: ... (*
+				-> rrel_1: rrel_fixed: rrel_scp_var: _role;;
+				-> rrel_2: rrel_fixed: rrel_scp_var: _domains;;
+				-> rrel_3: rrel_fixed: rrel_scp_const: nrel_definitional_domain;;
+				*);;
+			-> rrel_3: rrel_assign: rrel_scp_var: _descr;;
+
+			=> nrel_goto: .proc_of_formation_binary_edge_arc_operatorA3;;
+			*);;
+
+		-> .proc_of_formation_binary_edge_arc_operatorA3 (*
+			<- waitReturn;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _descr;;
+
+			=> nrel_goto: .proc_of_formation_binary_edge_arc_operatorA4;;
+			*);;
+
+		-> .proc_of_formation_binary_edge_arc_operatorA4 (* 
+			<- call;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: proc_of_verification_of_binary_arc_domains;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: ... (*
+				-> rrel_1: rrel_fixed: rrel_scp_var: _domains;;
+				-> rrel_2: rrel_fixed: rrel_scp_var: _domains;;
+				-> rrel_3: rrel_fixed: rrel_scp_var: _cntv;;
+				-> rrel_4: rrel_fixed: rrel_scp_var: _answer;;
+				-> rrel_5: rrel_fixed: rrel_scp_var: _struct;;
+				*);;
+			-> rrel_3: rrel_assign: rrel_scp_var: _descr;;
+
+			=> nrel_goto: .proc_of_formation_binary_edge_arc_operatorA5;;
+			*);;
+
+		-> .proc_of_formation_binary_edge_arc_operatorA5 (*
+			<- waitReturn;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _descr;;
+
+			=> nrel_goto: .proc_of_formation_binary_edge_arc_return;;
+			*);;
+
+		-> .proc_of_formation_binary_edge_arc_return (*
+			<- return;;
+			*);;
+		*);;		
+	*);;

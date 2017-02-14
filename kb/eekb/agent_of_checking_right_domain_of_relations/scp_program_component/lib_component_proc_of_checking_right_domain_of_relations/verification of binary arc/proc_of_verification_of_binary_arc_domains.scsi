@@ -1,0 +1,207 @@
+scp_program -> proc_of_verification_of_binary_arc_domains (* 
+	-> rrel_params: ..proc_check_domains_params (*
+		-> rrel_1: rrel_in: _firstElementFromConnective_domains;;
+		-> rrel_2: rrel_in: _secondElementFromConnective_domains;;
+		-> rrel_3: rrel_in: _connective;;
+		-> rrel_4: rrel_in: _answer;;
+		-> rrel_5: rrel_in: _struct;;
+		*);;
+	-> rrel_operators: ..proc_check_domains_operators (*
+		-> rrel_init: .proc_of_verification_of_binary_arc_domains_operatorA1 (*
+			<- searchElStr3;; 
+
+			-> rrel_1: rrel_assign: rrel_scp_var: _firstElementFromConnective;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _connective;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _secondElementFromConnective;;
+
+			=> nrel_then: .proc_of_verification_of_binary_arc_domains_operatorB1;;
+			=> nrel_else: .proc_of_verification_of_binary_arc_domains_return;;
+			*);;
+
+		-> .proc_of_verification_of_binary_arc_domains_operatorB1 (*
+			<- searchSetStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _firstElementFromConnective_domains;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _tempOutputElement;;
+
+			-> rrel_set_3: rrel_assign: rrel_scp_var: _domains;;
+
+			=> nrel_then: .proc_of_verification_of_binary_arc_domains_operatorB2;;
+			=> nrel_else: .proc_of_verification_of_binary_arc_domains_return;;
+			*);;
+
+		-> .proc_of_verification_of_binary_arc_domains_operatorB2 (*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _domains;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _tempOutputElement;;
+
+			=> nrel_then: .proc_of_verification_of_binary_arc_domains_operatorB3;;
+			=> nrel_else: .proc_of_verification_of_binary_arc_domains_operatorZ1;;
+			*);;
+
+		-> .proc_of_verification_of_binary_arc_domains_operatorB3 (*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _arc;;
+
+			=> nrel_goto: .proc_of_verification_of_binary_arc_domains_operatorB4;;
+			*);;
+
+		-> .proc_of_verification_of_binary_arc_domains_operatorB4 (* 
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _tempOutputElement;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _firstElementFromConnective;;
+
+			=> nrel_then: .proc_of_verification_of_binary_arc_domains_operatorC1;;
+			=> nrel_else: .proc_of_verification_of_binary_arc_domains_operatorB2;;
+			*);;
+
+		-> .proc_of_verification_of_binary_arc_domains_operatorC1 (*
+			<- searchSetStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _secondElementFromConnective_domains;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _tempOutputElement;;
+
+			-> rrel_set_3: rrel_assign: rrel_scp_var: _domains;;
+
+			=> nrel_then: .proc_of_verification_of_binary_arc_domains_operatorC2;;
+			=> nrel_else: .proc_of_verification_of_binary_arc_domains_return;;
+			*);;
+
+		-> .proc_of_verification_of_binary_arc_domains_operatorC2 (*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _domains;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _tempOutputElement;;
+
+			=> nrel_then: .proc_of_verification_of_binary_arc_domains_operatorC3;;
+			=> nrel_else: .proc_of_verification_of_binary_arc_domains_operatorZ1;;
+			*);;
+
+		-> .proc_of_verification_of_binary_arc_domains_operatorC3 (*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _arc;;
+
+			=> nrel_goto: .proc_of_verification_of_binary_arc_domains_operatorC4;;
+			*);;
+
+		-> .proc_of_verification_of_binary_arc_domains_operatorC4 (* 
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _tempOutputElement;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _secondElementFromConnective;;
+
+			=> nrel_then: .proc_of_verification_of_binary_arc_domains_return;;
+			=> nrel_else: .proc_of_verification_of_binary_arc_domains_operatorC2;;
+			*);;
+
+		-> .proc_of_verification_of_binary_arc_domains_operatorZ1 (*
+			<- searchElStr5;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: rrel_norole_relation: _role;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _posArc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _connective;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _tempOutputElementArc;;
+			-> rrel_5: rrel_fixed: rrel_scp_var: _struct;;
+
+			=> nrel_then: .proc_of_verification_of_binary_arc_domains_operatorZ2;;
+			=> nrel_else: .proc_of_verification_of_binary_arc_domains_return;;
+			*);;
+
+		-> .proc_of_verification_of_binary_arc_domains_operatorZ2 (*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _firstElementFromConnective;;
+
+			=> nrel_goto: .proc_of_verification_of_binary_arc_domains_operatorZ3;;
+			*);;
+
+		-> .proc_of_verification_of_binary_arc_domains_operatorZ3 (*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _connective;;
+
+			=> nrel_goto: .proc_of_verification_of_binary_arc_domains_operatorZ4;;
+			*);;
+
+		-> .proc_of_verification_of_binary_arc_domains_operatorZ4 (*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _secondElementFromConnective;;
+
+			=> nrel_goto: .proc_of_verification_of_binary_arc_domains_operatorZ5;;
+			*);;
+
+		-> .proc_of_verification_of_binary_arc_domains_operatorZ5 (*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _role;;
+
+			=> nrel_goto: .proc_of_verification_of_binary_arc_domains_operatorZ6;;
+			*);;
+
+		-> .proc_of_verification_of_binary_arc_domains_operatorZ6 (*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _posArc;;
+
+			=> nrel_goto: .proc_of_verification_of_binary_arc_domains_operatorZ7;;
+			*);;
+
+		-> .proc_of_verification_of_binary_arc_domains_operatorZ7 (*
+			<- searchSetStr5;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: rrel_not_relation: _class;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _posArc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _firstElementFromConnective;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _tempOutputElementArc;;
+			-> rrel_5: rrel_fixed: rrel_scp_var: _struct;;
+
+
+			-> rrel_set_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer;;
+
+			=> nrel_then: .proc_of_verification_of_binary_arc_domains_operatorZ8;;
+			=> nrel_else: .proc_of_verification_of_binary_arc_domains_return;;
+			*);;
+
+		-> .proc_of_verification_of_binary_arc_domains_operatorZ8 (*
+			<- searchSetStr5;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: rrel_not_relation: _class;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _posArc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _secondElementFromConnective;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _tempOutputElementArc;;
+			-> rrel_5: rrel_fixed: rrel_scp_var: _struct;;
+
+			-> rrel_set_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer;;
+
+			=> nrel_then: .proc_of_verification_of_binary_arc_domains_return;;
+			=> nrel_else: .proc_of_verification_of_binary_arc_domains_return;;
+			*);;
+
+		-> .proc_of_verification_of_binary_arc_domains_return (*
+			<- return;;
+			*);;
+		*);;
+	*);;

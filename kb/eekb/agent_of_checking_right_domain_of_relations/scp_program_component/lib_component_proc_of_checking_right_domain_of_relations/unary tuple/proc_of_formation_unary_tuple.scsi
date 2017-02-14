@@ -1,0 +1,167 @@
+scp_program -> proc_of_formation_unary_tuple (*
+	-> rrel_params: ..proc_of_formation_unary_tuple_params (*
+		-> rrel_1: rrel_in: _connective;;
+		-> rrel_2: rrel_in: _answer;;
+		-> rrel_3: rrel_in: _struct;;
+		*);;
+
+	-> rrel_operators: ..proc_of_formation_unary_tuple_operators (*
+		-> rrel_init: .proc_of_formation_unary_tuple_operatorA1 (*
+			<- searchElStr5;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: rrel_norole_relation: _role;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _connective;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _tempInputElementArc;;
+			-> rrel_5: rrel_fixed: rrel_scp_var: _struct;;
+
+			=> nrel_then: .proc_of_formation_unary_tuple_operatorA2;;
+			=> nrel_else: .proc_of_formation_unary_tuple_return;;
+			*);;
+
+		-> .proc_of_formation_unary_tuple_operatorA2 (*
+			<- genEl;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: rrel_nodeFromConnective: _domains;;
+
+			=> nrel_goto: .proc_of_formation_unary_tuple_operatorA3;;
+			*);;
+
+		-> .proc_of_formation_unary_tuple_operatorA3 (*
+			<- call;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: proc_of_generating_set_of_domains;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: ... (*
+				-> rrel_1: rrel_fixed: rrel_scp_var: _role;;
+				-> rrel_2: rrel_fixed: rrel_scp_var: _domains;;
+				-> rrel_3: rrel_fixed: rrel_scp_const: nrel_first_domain;;
+				*);;
+			-> rrel_3: rrel_assign: rrel_scp_var: _descr;;
+
+			=> nrel_goto: .proc_of_formation_unary_tuple_operatorA3wait;;
+			*);;
+
+		-> .proc_of_formation_unary_tuple_operatorA3wait (*
+			<- waitReturn;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _descr;;
+
+			=> nrel_goto: .proc_of_formation_unary_tuple_operator;;
+			*);;
+
+		-> .proc_of_formation_unary_tuple_operator (*
+			<- printEl;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _domains;;
+
+			=> nrel_goto: .proc_of_formation_unary_tuple_operatorA4;;
+			*);;
+
+		-> .proc_of_formation_unary_tuple_operatorA4 (*
+			<- searchElStr3;;
+			
+			-> rrel_1: rrel_fixed: rrel_scp_var: _connective;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _nodeFromConnective;;
+
+			=> nrel_then: .proc_of_formation_unary_tuple_operatorA5;;
+			=> nrel_else: .proc_of_formation_unary_tuple_return;;
+			*);;
+
+		-> .proc_of_formation_unary_tuple_operatorA5 (*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _domains;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _elementFromDomain;;
+
+			=> nrel_then: .proc_of_formation_unary_tuple_operatorA6;;
+			=> nrel_else: .proc_of_formation_unary_tuple_operatorZ1;;
+			*);;
+
+		-> .proc_of_formation_unary_tuple_operatorA6 (*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _arc;;
+
+			=> nrel_goto: .proc_of_formation_unary_tuple_operatorA7;;
+			*);;
+
+		-> .proc_of_formation_unary_tuple_operatorA7 (*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _elementFromDomain;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _nodeFromConnective;;
+
+			=> nrel_then: .proc_of_formation_unary_tuple_return;;
+			=> nrel_else: .proc_of_formation_unary_tuple_operatorA5;;
+			*);;
+
+		-> .proc_of_formation_unary_tuple_operatorZ1 (*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _connective;;
+
+			=> nrel_goto: .proc_of_formation_unary_tuple_operatorZ2;;
+			*);;
+
+		-> .proc_of_formation_unary_tuple_operatorZ2 (*
+			<- searchSetStr5;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: rrel_norole_relation: _role;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _connective;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _tempInputElementArc;;
+			-> rrel_5: rrel_fixed: rrel_scp_var: _struct;;
+
+			-> rrel_set_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer;;
+
+			=> nrel_goto: .proc_of_formation_unary_tuple_operatorZ3;;
+			*);;
+
+		-> .proc_of_formation_unary_tuple_operatorZ3 (*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _nodeFromConnective;;
+
+			=> nrel_goto: .proc_of_formation_unary_tuple_operatorZ4;;
+			*);;
+
+		-> .proc_of_formation_unary_tuple_operatorZ4 (*
+			<- searchSetStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _connective;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _nodeFromConnective;;
+
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer;;
+
+			=> nrel_goto: .proc_of_formation_unary_tuple_operatorZ5;;
+			*);;
+
+		-> .proc_of_formation_unary_tuple_operatorZ5 (*
+			<- searchSetStr5;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: rrel_not_relation: _tempInputElement;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _nodeFromConnective;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_var: _struct;;
+
+			-> rrel_set_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer;;
+
+			=> nrel_goto: .proc_of_formation_unary_tuple_return;;
+			*);;
+
+		-> .proc_of_formation_unary_tuple_return (*
+			<- return;;
+			*);;
+		*);;
+	*);;
