@@ -1,12 +1,16 @@
-scp_program -> proc_of_formation_of_combinations_for_ternary_relation (* 
-	-> rrel_params: ..proc_ternary_params (*
+scp_program -> proc_of_formation_of_combinations_for_ternary_relation 
+	(* 
+	-> rrel_params: .proc_of_formation_of_combinations_for_ternary_relation_params 
+		(*
 		-> rrel_1: rrel_in: _connective;;
 		-> rrel_2: rrel_in: _answer;;
 		-> rrel_3: rrel_in: _role;;
 		-> rrel_4: rrel_in: _struct;;
 		*);;
-	-> rrel_operators: ..proc_ternary_operators (* 
-		-> rrel_init: .proc_of_formation_of_combinations_for_ternary_relation_operatorA1 (*
+	-> rrel_operators: .proc_of_formation_of_combinations_for_ternary_relation_operators 
+		(* 
+		-> rrel_init: .proc_of_formation_of_combinations_for_ternary_relation_operatorA1 
+			(*
 			<- genEl;;
 
 			-> rrel_1: rrel_assign: rrel_scp_var: rrel_node: _first_domain;;
@@ -14,7 +18,8 @@ scp_program -> proc_of_formation_of_combinations_for_ternary_relation (*
 			=> nrel_goto: .proc_of_formation_of_combinations_for_ternary_relation_operatorA2;;
 			*);;
 
-		-> .proc_of_formation_of_combinations_for_ternary_relation_operatorA2 (*
+		-> .proc_of_formation_of_combinations_for_ternary_relation_operatorA2 
+			(*
 			<- call;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_const: proc_of_generating_set_of_domains;;
@@ -28,7 +33,8 @@ scp_program -> proc_of_formation_of_combinations_for_ternary_relation (*
 			=> nrel_goto: .proc_of_formation_of_combinations_for_ternary_relation_operatorA3;;
 			*);;
 
-		-> .proc_of_formation_of_combinations_for_ternary_relation_operatorA3 (*
+		-> .proc_of_formation_of_combinations_for_ternary_relation_operatorA3 
+			(*
 			<- waitReturn;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _descr;;
@@ -36,7 +42,8 @@ scp_program -> proc_of_formation_of_combinations_for_ternary_relation (*
 			=> nrel_goto: .proc_of_formation_of_combinations_for_ternary_relation_operatorB1;;
 			*);;
 
-		-> .proc_of_formation_of_combinations_for_ternary_relation_operatorB1 (*
+		-> .proc_of_formation_of_combinations_for_ternary_relation_operatorB1 
+			(*
 			<- genEl;;
 
 			-> rrel_1: rrel_assign: rrel_scp_var: rrel_node: _second_domain;;
@@ -44,7 +51,8 @@ scp_program -> proc_of_formation_of_combinations_for_ternary_relation (*
 			=> nrel_goto: .proc_of_formation_of_combinations_for_ternary_relation_operatorB2;;
 			*);;
 
-		-> .proc_of_formation_of_combinations_for_ternary_relation_operatorB2 (*
+		-> .proc_of_formation_of_combinations_for_ternary_relation_operatorB2 
+			(*
 			<- call;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_const: proc_of_generating_set_of_domains;;
@@ -58,7 +66,8 @@ scp_program -> proc_of_formation_of_combinations_for_ternary_relation (*
 			=> nrel_goto: .proc_of_formation_of_combinations_for_ternary_relation_operatorB3;;
 			*);;
 
-		-> .proc_of_formation_of_combinations_for_ternary_relation_operatorB3 (*
+		-> .proc_of_formation_of_combinations_for_ternary_relation_operatorB3 
+			(*
 			<- waitReturn;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _descr;;
@@ -66,7 +75,8 @@ scp_program -> proc_of_formation_of_combinations_for_ternary_relation (*
 			=> nrel_goto: .proc_of_formation_of_combinations_for_ternary_relation_operatorC1;;
 			*);;
 
-		-> .proc_of_formation_of_combinations_for_ternary_relation_operatorC1 (*
+		-> .proc_of_formation_of_combinations_for_ternary_relation_operatorC1 
+			(*
 			<- genEl;;
 
 			-> rrel_1: rrel_assign: rrel_scp_var: rrel_node: _third_domain;;
@@ -74,7 +84,8 @@ scp_program -> proc_of_formation_of_combinations_for_ternary_relation (*
 			=> nrel_goto: .proc_of_formation_of_combinations_for_ternary_relation_operatorC2;;
 			*);;
 
-		-> .proc_of_formation_of_combinations_for_ternary_relation_operatorC2 (*
+		-> .proc_of_formation_of_combinations_for_ternary_relation_operatorC2 
+			(*
 			<- call;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_const: proc_of_generating_set_of_domains;;
@@ -88,7 +99,8 @@ scp_program -> proc_of_formation_of_combinations_for_ternary_relation (*
 			=> nrel_goto: .proc_of_formation_of_combinations_for_ternary_relation_operatorC3;;
 			*);;
 
-		-> .proc_of_formation_of_combinations_for_ternary_relation_operatorC3 (*
+		-> .proc_of_formation_of_combinations_for_ternary_relation_operatorC3 
+			(*
 			<- waitReturn;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _descr;;
@@ -96,7 +108,8 @@ scp_program -> proc_of_formation_of_combinations_for_ternary_relation (*
 			=> nrel_goto: .proc_of_formation_of_combinations_for_ternary_relation_operatorD1;;
 			*);;
 
-		-> .proc_of_formation_of_combinations_for_ternary_relation_operatorD1 (*
+		-> .proc_of_formation_of_combinations_for_ternary_relation_operatorD1 
+			(*
 			<- searchSetStr5;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _connective;;
@@ -108,10 +121,11 @@ scp_program -> proc_of_formation_of_combinations_for_ternary_relation (*
 			-> rrel_set_3: rrel_assign: rrel_scp_var: _set;;
 
 			=> nrel_then: .proc_of_formation_of_combinations_for_ternary_relation_operatorD2;;
-			=> nrel_else: .proc_of_formation_of_combinations_for_ternary_relation_operatorZ1;;
+			=> nrel_else: .proc_of_formation_of_combinations_for_ternary_relation_operatorG1;;
 			*);;
 
-		-> .proc_of_formation_of_combinations_for_ternary_relation_operatorD2 (*
+		-> .proc_of_formation_of_combinations_for_ternary_relation_operatorD2 
+			(*
 			<- searchElStr3;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _set;;
@@ -119,10 +133,11 @@ scp_program -> proc_of_formation_of_combinations_for_ternary_relation (*
 			-> rrel_3: rrel_assign: rrel_scp_var: _first;;
 
 			=> nrel_then: .proc_of_formation_of_combinations_for_ternary_relation_operatorD20;;
-			=> nrel_else: .proc_of_formation_of_combinations_for_ternary_relation_operatorZ1;;
+			=> nrel_else: .proc_of_formation_of_combinations_for_ternary_relation_operatorG1;;
 			*);;
 
-		-> .proc_of_formation_of_combinations_for_ternary_relation_operatorD20 (*
+		-> .proc_of_formation_of_combinations_for_ternary_relation_operatorD20 
+			(*
 			<- eraseEl;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _arc;;
@@ -130,7 +145,8 @@ scp_program -> proc_of_formation_of_combinations_for_ternary_relation (*
 			=> nrel_goto: .proc_of_formation_of_combinations_for_ternary_relation_operatorD3;;
 			*);;
 
-		-> .proc_of_formation_of_combinations_for_ternary_relation_operatorD3 (*
+		-> .proc_of_formation_of_combinations_for_ternary_relation_operatorD3 
+			(*
 			<- searchElStr3;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _set;;
@@ -138,10 +154,11 @@ scp_program -> proc_of_formation_of_combinations_for_ternary_relation (*
 			-> rrel_3: rrel_assign: rrel_scp_var: _second;;
 
 			=> nrel_then: .proc_of_formation_of_combinations_for_ternary_relation_operatorD30;;
-			=> nrel_else: .proc_of_formation_of_combinations_for_ternary_relation_operatorZ1;;
+			=> nrel_else: .proc_of_formation_of_combinations_for_ternary_relation_operatorG1;;
 			*);;
 
-		-> .proc_of_formation_of_combinations_for_ternary_relation_operatorD30 (*
+		-> .proc_of_formation_of_combinations_for_ternary_relation_operatorD30 
+			(*
 			<- eraseEl;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _arc;;
@@ -149,7 +166,8 @@ scp_program -> proc_of_formation_of_combinations_for_ternary_relation (*
 			=> nrel_goto: .proc_of_formation_of_combinations_for_ternary_relation_operatorD4;;
 			*);;
 
-		-> .proc_of_formation_of_combinations_for_ternary_relation_operatorD4 (*
+		-> .proc_of_formation_of_combinations_for_ternary_relation_operatorD4 
+			(*
 			<- searchElStr3;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _set;;
@@ -157,10 +175,11 @@ scp_program -> proc_of_formation_of_combinations_for_ternary_relation (*
 			-> rrel_3: rrel_assign: rrel_scp_var: _third;;
 
 			=> nrel_then: .proc_of_formation_of_combinations_for_ternary_relation_operatorD40;;
-			=> nrel_else: .proc_of_formation_of_combinations_for_ternary_relation_operatorZ1;;
+			=> nrel_else: .proc_of_formation_of_combinations_for_ternary_relation_operatorG1;;
 			*);;
 
-		-> .proc_of_formation_of_combinations_for_ternary_relation_operatorD40 (*
+		-> .proc_of_formation_of_combinations_for_ternary_relation_operatorD40 
+			(*
 			<- eraseEl;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _arc;;
@@ -168,7 +187,8 @@ scp_program -> proc_of_formation_of_combinations_for_ternary_relation (*
 			=> nrel_goto: .proc_of_formation_of_combinations_for_ternary_relation_operatorD5;;
 			*);;
 
-		-> .proc_of_formation_of_combinations_for_ternary_relation_operatorD5 (*
+		-> .proc_of_formation_of_combinations_for_ternary_relation_operatorD5 
+			(*
 			<- genElStr3;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
@@ -178,7 +198,8 @@ scp_program -> proc_of_formation_of_combinations_for_ternary_relation (*
 			=> nrel_goto: .proc_of_formation_of_combinations_for_ternary_relation_operatorEA1;;
 			*);;
 
-		-> .proc_of_formation_of_combinations_for_ternary_relation_operatorEA1 (*
+		-> .proc_of_formation_of_combinations_for_ternary_relation_operatorEA1 
+			(*
 			<- call;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_const: proc_of_verification_of_ternary_tuple;;
@@ -197,7 +218,8 @@ scp_program -> proc_of_formation_of_combinations_for_ternary_relation (*
 			=> nrel_goto: .proc_of_formation_of_combinations_for_ternary_relation_operatorEA2;;			
 			*);;
 
-		-> .proc_of_formation_of_combinations_for_ternary_relation_operatorEA2 (*
+		-> .proc_of_formation_of_combinations_for_ternary_relation_operatorEA2 
+			(*
 			<- waitReturn;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _descr;;
@@ -205,7 +227,8 @@ scp_program -> proc_of_formation_of_combinations_for_ternary_relation (*
 			=> nrel_goto: .proc_of_formation_of_combinations_for_ternary_relation_operatorEA3;;
 			*);;
 
-		-> .proc_of_formation_of_combinations_for_ternary_relation_operatorEA3 (*
+		-> .proc_of_formation_of_combinations_for_ternary_relation_operatorEA3 
+			(*
 			<- searchElStr3;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
@@ -216,7 +239,8 @@ scp_program -> proc_of_formation_of_combinations_for_ternary_relation (*
 			=> nrel_else: .proc_of_formation_of_combinations_for_ternary_relation_return;;
 			*);;
 
-		-> .proc_of_formation_of_combinations_for_ternary_relation_operatorEB1 (*
+		-> .proc_of_formation_of_combinations_for_ternary_relation_operatorEB1 
+			(*
 			<- call;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_const: proc_of_verification_of_ternary_tuple;;
@@ -235,7 +259,8 @@ scp_program -> proc_of_formation_of_combinations_for_ternary_relation (*
 			=> nrel_goto: .proc_of_formation_of_combinations_for_ternary_relation_operatorEB2;;			
 			*);;
 
-		-> .proc_of_formation_of_combinations_for_ternary_relation_operatorEB2 (*
+		-> .proc_of_formation_of_combinations_for_ternary_relation_operatorEB2 
+			(*
 			<- waitReturn;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _descr;;
@@ -243,7 +268,8 @@ scp_program -> proc_of_formation_of_combinations_for_ternary_relation (*
 			=> nrel_goto: .proc_of_formation_of_combinations_for_ternary_relation_operatorEB3;;
 			*);;
 
-		-> .proc_of_formation_of_combinations_for_ternary_relation_operatorEB3 (*
+		-> .proc_of_formation_of_combinations_for_ternary_relation_operatorEB3 
+			(*
 			<- searchElStr3;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
@@ -254,7 +280,8 @@ scp_program -> proc_of_formation_of_combinations_for_ternary_relation (*
 			=> nrel_else: .proc_of_formation_of_combinations_for_ternary_relation_return;;
 			*);;
 
-		-> .proc_of_formation_of_combinations_for_ternary_relation_operatorEC1 (*
+		-> .proc_of_formation_of_combinations_for_ternary_relation_operatorEC1 
+			(*
 			<- call;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_const: proc_of_verification_of_ternary_tuple;;
@@ -273,7 +300,8 @@ scp_program -> proc_of_formation_of_combinations_for_ternary_relation (*
 			=> nrel_goto: .proc_of_formation_of_combinations_for_ternary_relation_operatorEC2;;
 			*);;
 
-		-> .proc_of_formation_of_combinations_for_ternary_relation_operatorEC2 (*
+		-> .proc_of_formation_of_combinations_for_ternary_relation_operatorEC2 
+			(*
 			<- waitReturn;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _descr;;
@@ -281,7 +309,8 @@ scp_program -> proc_of_formation_of_combinations_for_ternary_relation (*
 			=> nrel_goto: .proc_of_formation_of_combinations_for_ternary_relation_operatorEC3;;
 			*);;
 
-		-> .proc_of_formation_of_combinations_for_ternary_relation_operatorEC3 (*
+		-> .proc_of_formation_of_combinations_for_ternary_relation_operatorEC3 
+			(*
 			<- searchElStr3;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
@@ -292,7 +321,8 @@ scp_program -> proc_of_formation_of_combinations_for_ternary_relation (*
 			=> nrel_else: .proc_of_formation_of_combinations_for_ternary_relation_return;;
 			*);;
 
-		-> .proc_of_formation_of_combinations_for_ternary_relation_operatorED1 (*
+		-> .proc_of_formation_of_combinations_for_ternary_relation_operatorED1 
+			(*
 			<- call;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_const: proc_of_verification_of_ternary_tuple;;
@@ -311,7 +341,8 @@ scp_program -> proc_of_formation_of_combinations_for_ternary_relation (*
 			=> nrel_goto: .proc_of_formation_of_combinations_for_ternary_relation_operatorED2;;
 			*);;
 
-		-> .proc_of_formation_of_combinations_for_ternary_relation_operatorED2 (*
+		-> .proc_of_formation_of_combinations_for_ternary_relation_operatorED2 
+			(*
 			<- waitReturn;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _descr;;
@@ -319,7 +350,8 @@ scp_program -> proc_of_formation_of_combinations_for_ternary_relation (*
 			=> nrel_goto: .proc_of_formation_of_combinations_for_ternary_relation_operatorED3;;
 			*);;
 
-		-> .proc_of_formation_of_combinations_for_ternary_relation_operatorED3 (*
+		-> .proc_of_formation_of_combinations_for_ternary_relation_operatorED3 
+			(*
 			<- searchElStr3;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
@@ -330,7 +362,8 @@ scp_program -> proc_of_formation_of_combinations_for_ternary_relation (*
 			=> nrel_else: .proc_of_formation_of_combinations_for_ternary_relation_return;;
 			*);;
 
-		-> .proc_of_formation_of_combinations_for_ternary_relation_operatorEE1 (*
+		-> .proc_of_formation_of_combinations_for_ternary_relation_operatorEE1 
+			(*
 			<- call;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_const: proc_of_verification_of_ternary_tuple;;
@@ -349,7 +382,8 @@ scp_program -> proc_of_formation_of_combinations_for_ternary_relation (*
 			=> nrel_goto: .proc_of_formation_of_combinations_for_ternary_relation_operatorEE2;;
 			*);;
 
-		-> .proc_of_formation_of_combinations_for_ternary_relation_operatorEE2 (*
+		-> .proc_of_formation_of_combinations_for_ternary_relation_operatorEE2 
+			(*
 			<- waitReturn;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _descr;;
@@ -357,7 +391,8 @@ scp_program -> proc_of_formation_of_combinations_for_ternary_relation (*
 			=> nrel_goto: .proc_of_formation_of_combinations_for_ternary_relation_operatorEE3;;
 			*);;
 
-		-> .proc_of_formation_of_combinations_for_ternary_relation_operatorEE3 (*
+		-> .proc_of_formation_of_combinations_for_ternary_relation_operatorEE3 
+			(*
 			<- searchElStr3;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
@@ -368,7 +403,8 @@ scp_program -> proc_of_formation_of_combinations_for_ternary_relation (*
 			=> nrel_else: .proc_of_formation_of_combinations_for_ternary_relation_return;;
 			*);;
 
-		-> .proc_of_formation_of_combinations_for_ternary_relation_operatorEF1 (*
+		-> .proc_of_formation_of_combinations_for_ternary_relation_operatorEF1 
+			(*
 			<- call;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_const: proc_of_verification_of_ternary_tuple;;
@@ -387,7 +423,8 @@ scp_program -> proc_of_formation_of_combinations_for_ternary_relation (*
 			=> nrel_goto: .proc_of_formation_of_combinations_for_ternary_relation_operatorEF2;;
 			*);;
 
-		-> .proc_of_formation_of_combinations_for_ternary_relation_operatorEF2 (*
+		-> .proc_of_formation_of_combinations_for_ternary_relation_operatorEF2 
+			(*
 			<- waitReturn;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _descr;;
@@ -395,7 +432,8 @@ scp_program -> proc_of_formation_of_combinations_for_ternary_relation (*
 			=> nrel_goto: .proc_of_formation_of_combinations_for_ternary_relation_operatorEF3;;
 			*);;
 
-		-> .proc_of_formation_of_combinations_for_ternary_relation_operatorEF3 (*
+		-> .proc_of_formation_of_combinations_for_ternary_relation_operatorEF3 
+			(*
 			<- searchElStr3;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
@@ -406,7 +444,8 @@ scp_program -> proc_of_formation_of_combinations_for_ternary_relation (*
 			=> nrel_else: .proc_of_formation_of_combinations_for_ternary_relation_return;;
 			*);;
 
-		-> .proc_of_formation_of_combinations_for_ternary_relation_operatorF1 (*
+		-> .proc_of_formation_of_combinations_for_ternary_relation_operatorF1 
+			(*
 			<- searchSetStr5;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _connective;;
@@ -424,7 +463,8 @@ scp_program -> proc_of_formation_of_combinations_for_ternary_relation (*
 			=> nrel_else: .proc_of_formation_of_combinations_for_ternary_relation_return;;
 			*);;
 
-		-> .proc_of_formation_of_combinations_for_ternary_relation_operatorF2 (*
+		-> .proc_of_formation_of_combinations_for_ternary_relation_operatorF2 
+			(*
 			<- searchSetStr5;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _connective;;
@@ -439,7 +479,8 @@ scp_program -> proc_of_formation_of_combinations_for_ternary_relation (*
 			=> nrel_else: .proc_of_formation_of_combinations_for_ternary_relation_return;;
 			*);;
 
-		-> .proc_of_formation_of_combinations_for_ternary_relation_operatorF3 (*
+		-> .proc_of_formation_of_combinations_for_ternary_relation_operatorF3 
+			(*
 			<- searchElStr3;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _tempSet;;
@@ -450,7 +491,8 @@ scp_program -> proc_of_formation_of_combinations_for_ternary_relation (*
 			=> nrel_else: .proc_of_formation_of_combinations_for_ternary_relation_operatorF6;;
 			*);;
 
-		-> .proc_of_formation_of_combinations_for_ternary_relation_operatorF4 (*
+		-> .proc_of_formation_of_combinations_for_ternary_relation_operatorF4 
+			(*
 			<- eraseEl;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _arc;;
@@ -458,7 +500,8 @@ scp_program -> proc_of_formation_of_combinations_for_ternary_relation (*
 			=> nrel_goto: .proc_of_formation_of_combinations_for_ternary_relation_operatorF5;;
 			*);;
 
-		-> .proc_of_formation_of_combinations_for_ternary_relation_operatorF5 (*
+		-> .proc_of_formation_of_combinations_for_ternary_relation_operatorF5 
+			(*
 			<- searchSetStr5;;
 
 			-> rrel_1: rrel_assign: rrel_scp_var: rrel_not_relation: _node;;
@@ -473,7 +516,8 @@ scp_program -> proc_of_formation_of_combinations_for_ternary_relation (*
 			=> nrel_goto: .proc_of_formation_of_combinations_for_ternary_relation_operatorF3;;
 			*);;
 
-		-> .proc_of_formation_of_combinations_for_ternary_relation_operatorF6 (*
+		-> .proc_of_formation_of_combinations_for_ternary_relation_operatorF6 
+			(*
 			<- searchSetStr3;;
 
 			-> rrel_1: rrel_assign: rrel_scp_var: rrel_norole_relation: _role2;;
@@ -486,7 +530,8 @@ scp_program -> proc_of_formation_of_combinations_for_ternary_relation (*
 			=> nrel_goto: .proc_of_formation_of_combinations_for_ternary_relation_return;;
 			*);;
 
-		-> .proc_of_formation_of_combinations_for_ternary_relation_operatorZ1 (*
+		-> .proc_of_formation_of_combinations_for_ternary_relation_operatorG1 
+			(*
 			<- genElStr3;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
@@ -496,7 +541,8 @@ scp_program -> proc_of_formation_of_combinations_for_ternary_relation (*
 			=> nrel_goto: .proc_of_formation_of_combinations_for_ternary_relation_operatorF1;;
 			*);;		
 
-		-> .proc_of_formation_of_combinations_for_ternary_relation_return (*
+		-> .proc_of_formation_of_combinations_for_ternary_relation_return 
+			(*
 			<- return;;
 			*);;
 	

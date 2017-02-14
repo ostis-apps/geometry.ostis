@@ -1,5 +1,7 @@
-scp_program -> proc_of_verification_of_ternary_tuple (* 
-	-> rrel_params: ..proc_ternary_check_params (*
+scp_program -> proc_of_verification_of_ternary_tuple 
+	(* 
+	-> rrel_params: .proc_of_verification_of_ternary_tuple_params 
+		(*
 		-> rrel_1: rrel_in: _first;;
 		-> rrel_2: rrel_in: _first_domain;;
 		-> rrel_3: rrel_in: _second;;
@@ -10,8 +12,10 @@ scp_program -> proc_of_verification_of_ternary_tuple (*
 		-> rrel_8: rrel_in: _answer;;
 		*);;
 
-	-> rrel_operators: ..proc_ternary_check_operators (*
-		-> rrel_init: .proc_of_verification_of_ternary_tuple_operatorA1 (*
+	-> rrel_operators: .proc_of_verification_of_ternary_tuple_operators 
+		(*
+		-> rrel_init: .proc_of_verification_of_ternary_tuple_operatorA1 
+			(*
 			<- searchSetStr3;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _first_domain;;
@@ -24,7 +28,8 @@ scp_program -> proc_of_verification_of_ternary_tuple (*
 			=> nrel_else: .proc_of_verification_of_ternary_tuple_return;;
 			*);;
 
-		-> .proc_of_verification_of_ternary_tuple_operatorA2 (*
+		-> .proc_of_verification_of_ternary_tuple_operatorA2 
+			(*
 			<- searchElStr3;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _set;;
@@ -35,7 +40,8 @@ scp_program -> proc_of_verification_of_ternary_tuple (*
 			=> nrel_else: .proc_of_verification_of_ternary_tuple_return;;
 			*);;
 
-		-> .proc_of_verification_of_ternary_tuple_operatorA3 (*
+		-> .proc_of_verification_of_ternary_tuple_operatorA3 
+			(*
 			<- eraseEl;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _arc;;
@@ -43,7 +49,8 @@ scp_program -> proc_of_verification_of_ternary_tuple (*
 			=> nrel_goto: .proc_of_verification_of_ternary_tuple_operatorA4;;
 			*);;
 
-		-> .proc_of_verification_of_ternary_tuple_operatorA4 (*
+		-> .proc_of_verification_of_ternary_tuple_operatorA4 
+			(*
 			<- searchElStr3;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _node;;
@@ -54,7 +61,8 @@ scp_program -> proc_of_verification_of_ternary_tuple (*
 			=> nrel_else: .proc_of_verification_of_ternary_tuple_operatorA2;;
 			*);;
 
-		-> .proc_of_verification_of_ternary_tuple_operatorB1 (*
+		-> .proc_of_verification_of_ternary_tuple_operatorB1 
+			(*
 			<- searchSetStr3;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _second_domain;;
@@ -67,7 +75,8 @@ scp_program -> proc_of_verification_of_ternary_tuple (*
 			=> nrel_else: .proc_of_verification_of_ternary_tuple_return;;
 			*);;
 
-		-> .proc_of_verification_of_ternary_tuple_operatorB2 (*
+		-> .proc_of_verification_of_ternary_tuple_operatorB2 
+			(*
 			<- searchElStr3;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _set;;
@@ -78,7 +87,8 @@ scp_program -> proc_of_verification_of_ternary_tuple (*
 			=> nrel_else: .proc_of_verification_of_ternary_tuple_return;;
 			*);;
 
-		-> .proc_of_verification_of_ternary_tuple_operatorB3 (*
+		-> .proc_of_verification_of_ternary_tuple_operatorB3 
+			(*
 			<- eraseEl;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _arc;;
@@ -86,7 +96,8 @@ scp_program -> proc_of_verification_of_ternary_tuple (*
 			=> nrel_goto: .proc_of_verification_of_ternary_tuple_operatorB4;;
 			*);;
 
-		-> .proc_of_verification_of_ternary_tuple_operatorB4 (*
+		-> .proc_of_verification_of_ternary_tuple_operatorB4 
+			(*
 			<- searchElStr3;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _node;;
@@ -97,7 +108,8 @@ scp_program -> proc_of_verification_of_ternary_tuple (*
 			=> nrel_else: .proc_of_verification_of_ternary_tuple_operatorB2;;
 			*);;
 
-		-> .proc_of_verification_of_ternary_tuple_operatorC1 (*
+		-> .proc_of_verification_of_ternary_tuple_operatorC1 
+			(*
 			<- searchSetStr3;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _third_domain;;
@@ -110,7 +122,8 @@ scp_program -> proc_of_verification_of_ternary_tuple (*
 			=> nrel_else: .proc_of_verification_of_ternary_tuple_return;;
 			*);;
 
-		-> .proc_of_verification_of_ternary_tuple_operatorC2 (*
+		-> .proc_of_verification_of_ternary_tuple_operatorC2 
+			(*
 			<- searchElStr3;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _set;;
@@ -121,7 +134,8 @@ scp_program -> proc_of_verification_of_ternary_tuple (*
 			=> nrel_else: .proc_of_verification_of_ternary_tuple_return;;
 			*);;
 
-		-> .proc_of_verification_of_ternary_tuple_operatorC3 (*
+		-> .proc_of_verification_of_ternary_tuple_operatorC3 
+			(*
 			<- eraseEl;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _arc;;
@@ -129,7 +143,8 @@ scp_program -> proc_of_verification_of_ternary_tuple (*
 			=> nrel_goto: .proc_of_verification_of_ternary_tuple_operatorC4;;
 			*);;
 
-		-> .proc_of_verification_of_ternary_tuple_operatorC4 (*
+		-> .proc_of_verification_of_ternary_tuple_operatorC4 
+			(*
 			<- searchElStr3;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _node;;
@@ -140,7 +155,8 @@ scp_program -> proc_of_verification_of_ternary_tuple (*
 			=> nrel_else: .proc_of_verification_of_ternary_tuple_operatorC2;;
 			*);;
 
-		-> .proc_of_verification_of_ternary_tuple_operatorD1 (*
+		-> .proc_of_verification_of_ternary_tuple_operatorD1 
+			(*
 			<- searchElStr3;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
@@ -151,7 +167,8 @@ scp_program -> proc_of_verification_of_ternary_tuple (*
 			=> nrel_else: .proc_of_verification_of_ternary_tuple_return;;
 			*);;
 
-		-> .proc_of_verification_of_ternary_tuple_operatorD2 (*
+		-> .proc_of_verification_of_ternary_tuple_operatorD2 
+			(*
 			<- eraseEl;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _arc;;
@@ -159,7 +176,8 @@ scp_program -> proc_of_verification_of_ternary_tuple (*
 			=> nrel_goto: .proc_of_verification_of_ternary_tuple_return;;
 			*);;
 
-		-> .proc_of_verification_of_ternary_tuple_return (*
+		-> .proc_of_verification_of_ternary_tuple_return 
+			(*
 			<- return;;
 			*);;
 		*);;

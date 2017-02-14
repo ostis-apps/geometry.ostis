@@ -1,12 +1,16 @@
-scp_program -> proc_of_formation_unary_tuple (*
-	-> rrel_params: ..proc_of_formation_unary_tuple_params (*
+scp_program -> proc_of_formation_unary_tuple 
+	(*
+	-> rrel_params: .proc_of_formation_unary_tuple_params 
+		(*
 		-> rrel_1: rrel_in: _connective;;
 		-> rrel_2: rrel_in: _answer;;
 		-> rrel_3: rrel_in: _struct;;
 		*);;
 
-	-> rrel_operators: ..proc_of_formation_unary_tuple_operators (*
-		-> rrel_init: .proc_of_formation_unary_tuple_operatorA1 (*
+	-> rrel_operators: .proc_of_formation_unary_tuple_operators 
+		(*
+		-> rrel_init: .proc_of_formation_unary_tuple_operatorA1 
+			(*
 			<- searchElStr5;;
 
 			-> rrel_1: rrel_assign: rrel_scp_var: rrel_norole_relation: _role;;
@@ -19,7 +23,8 @@ scp_program -> proc_of_formation_unary_tuple (*
 			=> nrel_else: .proc_of_formation_unary_tuple_return;;
 			*);;
 
-		-> .proc_of_formation_unary_tuple_operatorA2 (*
+		-> .proc_of_formation_unary_tuple_operatorA2 
+			(*
 			<- genEl;;
 
 			-> rrel_1: rrel_assign: rrel_scp_var: rrel_nodeFromConnective: _domains;;
@@ -27,7 +32,8 @@ scp_program -> proc_of_formation_unary_tuple (*
 			=> nrel_goto: .proc_of_formation_unary_tuple_operatorA3;;
 			*);;
 
-		-> .proc_of_formation_unary_tuple_operatorA3 (*
+		-> .proc_of_formation_unary_tuple_operatorA3 
+			(*
 			<- call;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_const: proc_of_generating_set_of_domains;;
@@ -41,23 +47,17 @@ scp_program -> proc_of_formation_unary_tuple (*
 			=> nrel_goto: .proc_of_formation_unary_tuple_operatorA3wait;;
 			*);;
 
-		-> .proc_of_formation_unary_tuple_operatorA3wait (*
+		-> .proc_of_formation_unary_tuple_operatorA3wait 
+			(*
 			<- waitReturn;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _descr;;
 
-			=> nrel_goto: .proc_of_formation_unary_tuple_operator;;
-			*);;
-
-		-> .proc_of_formation_unary_tuple_operator (*
-			<- printEl;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_var: _domains;;
-
 			=> nrel_goto: .proc_of_formation_unary_tuple_operatorA4;;
 			*);;
 
-		-> .proc_of_formation_unary_tuple_operatorA4 (*
+		-> .proc_of_formation_unary_tuple_operatorA4 
+			(*
 			<- searchElStr3;;
 			
 			-> rrel_1: rrel_fixed: rrel_scp_var: _connective;;
@@ -68,7 +68,8 @@ scp_program -> proc_of_formation_unary_tuple (*
 			=> nrel_else: .proc_of_formation_unary_tuple_return;;
 			*);;
 
-		-> .proc_of_formation_unary_tuple_operatorA5 (*
+		-> .proc_of_formation_unary_tuple_operatorA5 
+			(*
 			<- searchElStr3;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _domains;;
@@ -76,10 +77,11 @@ scp_program -> proc_of_formation_unary_tuple (*
 			-> rrel_3: rrel_assign: rrel_scp_var: _elementFromDomain;;
 
 			=> nrel_then: .proc_of_formation_unary_tuple_operatorA6;;
-			=> nrel_else: .proc_of_formation_unary_tuple_operatorZ1;;
+			=> nrel_else: .proc_of_formation_unary_tuple_operatorB1;;
 			*);;
 
-		-> .proc_of_formation_unary_tuple_operatorA6 (*
+		-> .proc_of_formation_unary_tuple_operatorA6 
+			(*
 			<- eraseEl;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _arc;;
@@ -87,7 +89,8 @@ scp_program -> proc_of_formation_unary_tuple (*
 			=> nrel_goto: .proc_of_formation_unary_tuple_operatorA7;;
 			*);;
 
-		-> .proc_of_formation_unary_tuple_operatorA7 (*
+		-> .proc_of_formation_unary_tuple_operatorA7 
+			(*
 			<- searchElStr3;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _elementFromDomain;;
@@ -98,17 +101,19 @@ scp_program -> proc_of_formation_unary_tuple (*
 			=> nrel_else: .proc_of_formation_unary_tuple_operatorA5;;
 			*);;
 
-		-> .proc_of_formation_unary_tuple_operatorZ1 (*
+		-> .proc_of_formation_unary_tuple_operatorB1 
+			(*
 			<- genElStr3;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
 			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
 			-> rrel_3: rrel_fixed: rrel_scp_var: _connective;;
 
-			=> nrel_goto: .proc_of_formation_unary_tuple_operatorZ2;;
+			=> nrel_goto: .proc_of_formation_unary_tuple_operatorB2;;
 			*);;
 
-		-> .proc_of_formation_unary_tuple_operatorZ2 (*
+		-> .proc_of_formation_unary_tuple_operatorB2 
+			(*
 			<- searchSetStr5;;
 
 			-> rrel_1: rrel_assign: rrel_scp_var: rrel_norole_relation: _role;;
@@ -120,20 +125,22 @@ scp_program -> proc_of_formation_unary_tuple (*
 			-> rrel_set_1: rrel_fixed: rrel_scp_var: _answer;;
 			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer;;
 
-			=> nrel_goto: .proc_of_formation_unary_tuple_operatorZ3;;
+			=> nrel_goto: .proc_of_formation_unary_tuple_operatorB3;;
 			*);;
 
-		-> .proc_of_formation_unary_tuple_operatorZ3 (*
+		-> .proc_of_formation_unary_tuple_operatorB3 
+			(*
 			<- genElStr3;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
 			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
 			-> rrel_3: rrel_fixed: rrel_scp_var: _nodeFromConnective;;
 
-			=> nrel_goto: .proc_of_formation_unary_tuple_operatorZ4;;
+			=> nrel_goto: .proc_of_formation_unary_tuple_operatorB4;;
 			*);;
 
-		-> .proc_of_formation_unary_tuple_operatorZ4 (*
+		-> .proc_of_formation_unary_tuple_operatorB4 
+			(*
 			<- searchSetStr3;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _connective;;
@@ -142,10 +149,11 @@ scp_program -> proc_of_formation_unary_tuple (*
 
 			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer;;
 
-			=> nrel_goto: .proc_of_formation_unary_tuple_operatorZ5;;
+			=> nrel_goto: .proc_of_formation_unary_tuple_operatorB5;;
 			*);;
 
-		-> .proc_of_formation_unary_tuple_operatorZ5 (*
+		-> .proc_of_formation_unary_tuple_operatorB5 
+			(*
 			<- searchSetStr5;;
 
 			-> rrel_1: rrel_assign: rrel_scp_var: rrel_not_relation: _tempInputElement;;
@@ -160,7 +168,8 @@ scp_program -> proc_of_formation_unary_tuple (*
 			=> nrel_goto: .proc_of_formation_unary_tuple_return;;
 			*);;
 
-		-> .proc_of_formation_unary_tuple_return (*
+		-> .proc_of_formation_unary_tuple_return 
+			(*
 			<- return;;
 			*);;
 		*);;

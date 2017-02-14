@@ -1,13 +1,17 @@
-scp_program -> proc_of_verification_of_binary_arc_domains (* 
-	-> rrel_params: ..proc_check_domains_params (*
+аscp_program -> proc_of_verification_of_binary_arc_domains 
+	(* 
+	-> rrel_params: .proc_of_verification_of_binary_arc_domains_params 
+		(*
 		-> rrel_1: rrel_in: _firstElementFromConnective_domains;;
 		-> rrel_2: rrel_in: _secondElementFromConnective_domains;;
 		-> rrel_3: rrel_in: _connective;;
 		-> rrel_4: rrel_in: _answer;;
 		-> rrel_5: rrel_in: _struct;;
 		*);;
-	-> rrel_operators: ..proc_check_domains_operators (*
-		-> rrel_init: .proc_of_verification_of_binary_arc_domains_operatorA1 (*
+	-> rrel_operators: .proc_of_verification_of_binary_arc_domains_operators 
+		(*
+		-> rrel_init: .proc_of_verification_of_binary_arc_domains_operatorA1 
+			(*
 			<- searchElStr3;; 
 
 			-> rrel_1: rrel_assign: rrel_scp_var: _firstElementFromConnective;;
@@ -18,7 +22,8 @@ scp_program -> proc_of_verification_of_binary_arc_domains (*
 			=> nrel_else: .proc_of_verification_of_binary_arc_domains_return;;
 			*);;
 
-		-> .proc_of_verification_of_binary_arc_domains_operatorB1 (*
+		-> .proc_of_verification_of_binary_arc_domains_operatorB1 
+			(*
 			<- searchSetStr3;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _firstElementFromConnective_domains;;
@@ -31,7 +36,8 @@ scp_program -> proc_of_verification_of_binary_arc_domains (*
 			=> nrel_else: .proc_of_verification_of_binary_arc_domains_return;;
 			*);;
 
-		-> .proc_of_verification_of_binary_arc_domains_operatorB2 (*
+		-> .proc_of_verification_of_binary_arc_domains_operatorB2 
+			(*
 			<- searchElStr3;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _domains;;
@@ -39,10 +45,11 @@ scp_program -> proc_of_verification_of_binary_arc_domains (*
 			-> rrel_3: rrel_assign: rrel_scp_var: _tempOutputElement;;
 
 			=> nrel_then: .proc_of_verification_of_binary_arc_domains_operatorB3;;
-			=> nrel_else: .proc_of_verification_of_binary_arc_domains_operatorZ1;;
+			=> nrel_else: .proc_of_verification_of_binary_arc_domains_operatorD1;;
 			*);;
 
-		-> .proc_of_verification_of_binary_arc_domains_operatorB3 (*
+		-> .proc_of_verification_of_binary_arc_domains_operatorB3 
+			(*
 			<- eraseEl;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _arc;;
@@ -50,7 +57,8 @@ scp_program -> proc_of_verification_of_binary_arc_domains (*
 			=> nrel_goto: .proc_of_verification_of_binary_arc_domains_operatorB4;;
 			*);;
 
-		-> .proc_of_verification_of_binary_arc_domains_operatorB4 (* 
+		-> .proc_of_verification_of_binary_arc_domains_operatorB4 
+			(* 
 			<- searchElStr3;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _tempOutputElement;;
@@ -61,7 +69,8 @@ scp_program -> proc_of_verification_of_binary_arc_domains (*
 			=> nrel_else: .proc_of_verification_of_binary_arc_domains_operatorB2;;
 			*);;
 
-		-> .proc_of_verification_of_binary_arc_domains_operatorC1 (*
+		-> .proc_of_verification_of_binary_arc_domains_operatorC1 
+			(*
 			<- searchSetStr3;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _secondElementFromConnective_domains;;
@@ -74,7 +83,8 @@ scp_program -> proc_of_verification_of_binary_arc_domains (*
 			=> nrel_else: .proc_of_verification_of_binary_arc_domains_return;;
 			*);;
 
-		-> .proc_of_verification_of_binary_arc_domains_operatorC2 (*
+		-> .proc_of_verification_of_binary_arc_domains_operatorC2 
+			(*
 			<- searchElStr3;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _domains;;
@@ -82,10 +92,11 @@ scp_program -> proc_of_verification_of_binary_arc_domains (*
 			-> rrel_3: rrel_assign: rrel_scp_var: _tempOutputElement;;
 
 			=> nrel_then: .proc_of_verification_of_binary_arc_domains_operatorC3;;
-			=> nrel_else: .proc_of_verification_of_binary_arc_domains_operatorZ1;;
+			=> nrel_else: .proc_of_verification_of_binary_arc_domains_operatorD1;;
 			*);;
 
-		-> .proc_of_verification_of_binary_arc_domains_operatorC3 (*
+		-> .proc_of_verification_of_binary_arc_domains_operatorC3 
+			(*
 			<- eraseEl;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _arc;;
@@ -93,7 +104,8 @@ scp_program -> proc_of_verification_of_binary_arc_domains (*
 			=> nrel_goto: .proc_of_verification_of_binary_arc_domains_operatorC4;;
 			*);;
 
-		-> .proc_of_verification_of_binary_arc_domains_operatorC4 (* 
+		-> .proc_of_verification_of_binary_arc_domains_operatorC4 
+			(* 
 			<- searchElStr3;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _tempOutputElement;;
@@ -104,7 +116,8 @@ scp_program -> proc_of_verification_of_binary_arc_domains (*
 			=> nrel_else: .proc_of_verification_of_binary_arc_domains_operatorC2;;
 			*);;
 
-		-> .proc_of_verification_of_binary_arc_domains_operatorZ1 (*
+		-> .proc_of_verification_of_binary_arc_domains_operatorD1 
+			(*
 			<- searchElStr5;;
 
 			-> rrel_1: rrel_assign: rrel_scp_var: rrel_norole_relation: _role;;
@@ -113,61 +126,67 @@ scp_program -> proc_of_verification_of_binary_arc_domains (*
 			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _tempOutputElementArc;;
 			-> rrel_5: rrel_fixed: rrel_scp_var: _struct;;
 
-			=> nrel_then: .proc_of_verification_of_binary_arc_domains_operatorZ2;;
+			=> nrel_then: .proc_of_verification_of_binary_arc_domains_operatorD2;;
 			=> nrel_else: .proc_of_verification_of_binary_arc_domains_return;;
 			*);;
 
-		-> .proc_of_verification_of_binary_arc_domains_operatorZ2 (*
+		-> .proc_of_verification_of_binary_arc_domains_operatorD2 
+			(*
 			<- genElStr3;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
 			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
 			-> rrel_3: rrel_fixed: rrel_scp_var: _firstElementFromConnective;;
 
-			=> nrel_goto: .proc_of_verification_of_binary_arc_domains_operatorZ3;;
+			=> nrel_goto: .proc_of_verification_of_binary_arc_domains_operatorD3;;
 			*);;
 
-		-> .proc_of_verification_of_binary_arc_domains_operatorZ3 (*
+		-> .proc_of_verification_of_binary_arc_domains_operatorD3 
+			(*
 			<- genElStr3;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
 			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
 			-> rrel_3: rrel_fixed: rrel_scp_var: _connective;;
 
-			=> nrel_goto: .proc_of_verification_of_binary_arc_domains_operatorZ4;;
+			=> nrel_goto: .proc_of_verification_of_binary_arc_domains_operatorD4;;
 			*);;
 
-		-> .proc_of_verification_of_binary_arc_domains_operatorZ4 (*
+		-> .proc_of_verification_of_binary_arc_domains_operatorD4 
+			(*
 			<- genElStr3;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
 			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
 			-> rrel_3: rrel_fixed: rrel_scp_var: _secondElementFromConnective;;
 
-			=> nrel_goto: .proc_of_verification_of_binary_arc_domains_operatorZ5;;
+			=> nrel_goto: .proc_of_verification_of_binary_arc_domains_operatorD5;;
 			*);;
 
-		-> .proc_of_verification_of_binary_arc_domains_operatorZ5 (*
+		-> .proc_of_verification_of_binary_arc_domains_operatorD5 
+			(*
 			<- genElStr3;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
 			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
 			-> rrel_3: rrel_fixed: rrel_scp_var: _role;;
 
-			=> nrel_goto: .proc_of_verification_of_binary_arc_domains_operatorZ6;;
+			=> nrel_goto: .proc_of_verification_of_binary_arc_domains_operatorD6;;
 			*);;
 
-		-> .proc_of_verification_of_binary_arc_domains_operatorZ6 (*
+		-> .proc_of_verification_of_binary_arc_domains_operatorD6 
+			(*
 			<- genElStr3;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
 			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
 			-> rrel_3: rrel_fixed: rrel_scp_var: _posArc;;
 
-			=> nrel_goto: .proc_of_verification_of_binary_arc_domains_operatorZ7;;
+			=> nrel_goto: .proc_of_verification_of_binary_arc_domains_operatorD7;;
 			*);;
 
-		-> .proc_of_verification_of_binary_arc_domains_operatorZ7 (*
+		-> .proc_of_verification_of_binary_arc_domains_operatorD7 
+			(*
 			<- searchSetStr5;;
 
 			-> rrel_1: rrel_assign: rrel_scp_var: rrel_not_relation: _class;;
@@ -180,11 +199,12 @@ scp_program -> proc_of_verification_of_binary_arc_domains (*
 			-> rrel_set_1: rrel_fixed: rrel_scp_var: _answer;;
 			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer;;
 
-			=> nrel_then: .proc_of_verification_of_binary_arc_domains_operatorZ8;;
+			=> nrel_then: .proc_of_verification_of_binary_arc_domains_operatorD8;;
 			=> nrel_else: .proc_of_verification_of_binary_arc_domains_return;;
 			*);;
 
-		-> .proc_of_verification_of_binary_arc_domains_operatorZ8 (*
+		-> .proc_of_verification_of_binary_arc_domains_operatorD8 
+			(*
 			<- searchSetStr5;;
 
 			-> rrel_1: rrel_assign: rrel_scp_var: rrel_not_relation: _class;;
@@ -200,7 +220,8 @@ scp_program -> proc_of_verification_of_binary_arc_domains (*
 			=> nrel_else: .proc_of_verification_of_binary_arc_domains_return;;
 			*);;
 
-		-> .proc_of_verification_of_binary_arc_domains_return (*
+		-> .proc_of_verification_of_binary_arc_domains_return 
+			(*
 			<- return;;
 			*);;
 		*);;

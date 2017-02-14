@@ -1,11 +1,15 @@
-scp_program -> proc_of_formation_binary_tuple (*
-	-> rrel_params: ..proc_binary_connection_params (*
+scp_program -> proc_of_formation_binary_tuple 
+	(*
+	-> rrel_params: .proc_of_formation_binary_tuple_params 
+		(*
 		-> rrel_1: rrel_in: _cntv;;
 		-> rrel_2: rrel_in: _answer;;
 		-> rrel_3: rrel_in: _struct;;
 		*);;
-	-> rrel_operators: ..proc_binary_connection_operators (*
-		-> rrel_init: .proc_of_formation_binary_tuple_operatorA1 (*
+	-> rrel_operators: .proc_of_formation_binary_tuple_operators 
+		(*
+		-> rrel_init: .proc_of_formation_binary_tuple_operatorA1 
+			(*
 			<- searchElStr5;;
 
 			-> rrel_1: rrel_assign: rrel_scp_var: rrel_norole_relation: _role;;
@@ -26,7 +30,8 @@ scp_program -> proc_of_formation_binary_tuple (*
 			=> nrel_goto: .proc_of_formation_binary_tuple_operatorB2;;
 			*);;
 
-		-> .proc_of_formation_binary_tuple_operatorB2 (*
+		-> .proc_of_formation_binary_tuple_operatorB2 
+			(*
 			<- call;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_const: proc_of_generating_set_of_domains;;
@@ -40,7 +45,8 @@ scp_program -> proc_of_formation_binary_tuple (*
 			=> nrel_goto: .proc_of_formation_binary_tuple_operatorB3;;
 			*);;
 
-		-> .proc_of_formation_binary_tuple_operatorB3 (*
+		-> .proc_of_formation_binary_tuple_operatorB3 
+			(*
 			<- waitReturn;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _descr;;
@@ -48,7 +54,8 @@ scp_program -> proc_of_formation_binary_tuple (*
 			=> nrel_goto: .proc_of_formation_binary_tuple_operatorC1;;
 			*);;
 
-		-> .proc_of_formation_binary_tuple_operatorC1 (*
+		-> .proc_of_formation_binary_tuple_operatorC1 
+			(*
 			<- genEl;;
 
 			-> rrel_1: rrel_assign: rrel_scp_var: rrel_node: _second_domain;;
@@ -56,7 +63,8 @@ scp_program -> proc_of_formation_binary_tuple (*
 			=> nrel_goto: .proc_of_formation_binary_tuple_operatorC2;;
 			*);;
 
-		-> .proc_of_formation_binary_tuple_operatorC2 (*
+		-> .proc_of_formation_binary_tuple_operatorC2 
+			(*
 			<- call;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_const: proc_of_generating_set_of_domains;;
@@ -70,7 +78,8 @@ scp_program -> proc_of_formation_binary_tuple (*
 			=> nrel_goto: .proc_of_formation_binary_tuple_operatorC3;;
 			*);;
 
-		-> .proc_of_formation_binary_tuple_operatorC3 (*
+		-> .proc_of_formation_binary_tuple_operatorC3 
+			(*
 			<- waitReturn;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _descr;;
@@ -78,7 +87,8 @@ scp_program -> proc_of_formation_binary_tuple (*
 			=> nrel_goto: .proc_of_formation_binary_tuple_operatorA2;;
 			*);;
 
-		-> .proc_of_formation_binary_tuple_operatorA2 (*
+		-> .proc_of_formation_binary_tuple_operatorA2 
+			(*
 			<- searchElStr5;;
 			
 			-> rrel_1: rrel_fixed: rrel_scp_var: _cntv;;
@@ -91,7 +101,8 @@ scp_program -> proc_of_formation_binary_tuple (*
 			=> nrel_else: ..proc_error;;
 			*);;
 
-		-> .proc_of_formation_binary_tuple_operatorB4 (*
+		-> .proc_of_formation_binary_tuple_operatorB4 
+			(*
 			<- call;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_const: proc_of_verification_of_domains_of_tuple;;
@@ -106,7 +117,8 @@ scp_program -> proc_of_formation_binary_tuple (*
 			=> nrel_goto: .proc_of_formation_binary_tuple_operatorB5;;
 			*);;
 
-		-> .proc_of_formation_binary_tuple_operatorB5 (*
+		-> .proc_of_formation_binary_tuple_operatorB5 
+			(*
 			<- waitReturn;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _descr;;
@@ -114,7 +126,8 @@ scp_program -> proc_of_formation_binary_tuple (*
 			=> nrel_goto: .proc_of_formation_binary_tuple_operatorE1;;
 			*);;
 
-		-> .proc_of_formation_binary_tuple_operatorE1 (*
+		-> .proc_of_formation_binary_tuple_operatorE1 
+			(*
 			<- searchElStr3;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
@@ -125,7 +138,8 @@ scp_program -> proc_of_formation_binary_tuple (*
 			=> nrel_else: .proc_of_formation_binary_tuple_operatorA3;;
 			*);;
 
-		-> .proc_of_formation_binary_tuple_operatorA3 (*
+		-> .proc_of_formation_binary_tuple_operatorA3 
+			(*
 			<- searchElStr5;;
 			
 			-> rrel_1: rrel_fixed: rrel_scp_var: _cntv;;
@@ -138,7 +152,8 @@ scp_program -> proc_of_formation_binary_tuple (*
 			=> nrel_else: ..proc_error;;
 			*);;
 
-		-> .proc_of_formation_binary_tuple_operatorB6 (*
+		-> .proc_of_formation_binary_tuple_operatorB6 
+			(*
 			<- call;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_const: proc_of_verification_of_domains_of_tuple	;;
@@ -153,7 +168,8 @@ scp_program -> proc_of_formation_binary_tuple (*
 			=> nrel_goto: .proc_of_formation_binary_tuple_operatorB7;;
 			*);;
 
-		-> .proc_of_formation_binary_tuple_operatorB7 (*
+		-> .proc_of_formation_binary_tuple_operatorB7 
+			(*
 			<- waitReturn;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _descr;;
@@ -161,7 +177,8 @@ scp_program -> proc_of_formation_binary_tuple (*
 			=> nrel_goto: .proc_of_formation_binary_tuple_operatorE2;;
 			*);;
 
-		-> .proc_of_formation_binary_tuple_operatorE2 (*
+		-> .proc_of_formation_binary_tuple_operatorE2 
+			(*
 			<- searchElStr3;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
@@ -172,7 +189,8 @@ scp_program -> proc_of_formation_binary_tuple (*
 			=> nrel_else: .proc_of_formation_binary_tuple_return;;
 			*);;
 
-		-> .proc_of_formation_binary_tuple_operatorF1 (*
+		-> .proc_of_formation_binary_tuple_operatorF1 
+			(*
 			<- searchSetStr5;;
 			 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _cntv;;
@@ -189,7 +207,8 @@ scp_program -> proc_of_formation_binary_tuple (*
 			=> nrel_else: ..proc_error;;
 			*);;
 
-		-> .proc_of_formation_binary_tuple_operatorF2 (*
+		-> .proc_of_formation_binary_tuple_operatorF2 
+			(*
 			<- genElStr3;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
@@ -199,7 +218,8 @@ scp_program -> proc_of_formation_binary_tuple (*
 			=> nrel_goto: .proc_of_formation_binary_tuple_operatorH1;;
 			*);;
 
-		-> .proc_of_formation_binary_tuple_operatorH1 (*
+		-> .proc_of_formation_binary_tuple_operatorH1 
+			(*
 			<- searchSetStr5;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _cntv;;
@@ -214,7 +234,8 @@ scp_program -> proc_of_formation_binary_tuple (*
 			=> nrel_else: ..proc_error;;
 			*);;
 
-		-> .proc_of_formation_binary_tuple_operatorH2 (*
+		-> .proc_of_formation_binary_tuple_operatorH2 
+			(*
 			<- searchElStr3;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _tempSet;;
@@ -225,7 +246,8 @@ scp_program -> proc_of_formation_binary_tuple (*
 			=> nrel_else: .proc_of_formation_binary_tuple_return;;
 			*);;
 
-		-> .proc_of_formation_binary_tuple_operatorH3 (*
+		-> .proc_of_formation_binary_tuple_operatorH3 
+			(*
 			<- eraseEl;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _arc;;
@@ -233,7 +255,8 @@ scp_program -> proc_of_formation_binary_tuple (*
 			=> nrel_goto: .proc_of_formation_binary_tuple_operatorH4;;
 			*);;
 
-		-> .proc_of_formation_binary_tuple_operatorH4 (*
+		-> .proc_of_formation_binary_tuple_operatorH4 
+			(*
 			<- searchSetStr5;;
 
 			-> rrel_1: rrel_assign: rrel_scp_var: rrel_not_relation: _node;;
@@ -248,7 +271,8 @@ scp_program -> proc_of_formation_binary_tuple (*
 			=> nrel_goto: .proc_of_formation_binary_tuple_operatorH2;;
 			*);;
 
-		-> .proc_of_formation_binary_tuple_operatorG1 (*
+		-> .proc_of_formation_binary_tuple_operatorG1 
+			(*
 			<- searchSetStr5;;
 			 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _cntv;;
@@ -265,7 +289,8 @@ scp_program -> proc_of_formation_binary_tuple (*
 			=> nrel_else: ..proc_error;;
 			*);;
 
-		-> .proc_of_formation_binary_tuple_operatorG2 (*
+		-> .proc_of_formation_binary_tuple_operatorG2 
+			(*
 			<- genElStr3;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
@@ -275,7 +300,8 @@ scp_program -> proc_of_formation_binary_tuple (*
 			=> nrel_goto: .proc_of_formation_binary_tuple_operatorH1;;
 			*);;
 
-		-> .proc_of_formation_binary_tuple_return (*
+		-> .proc_of_formation_binary_tuple_return 
+			(*
 			<- return;;
 			*);;
 		*);;

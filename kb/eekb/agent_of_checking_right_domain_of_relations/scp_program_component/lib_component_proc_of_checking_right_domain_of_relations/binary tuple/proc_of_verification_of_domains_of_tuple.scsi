@@ -1,13 +1,17 @@
-scp_program -> proc_of_verification_of_domains_of_tuple (*
-	-> rrel_params: ..proc_check_node_domain_params (*
+scp_program -> proc_of_verification_of_domains_of_tuple 
+	(*
+	-> rrel_params: .proc_of_verification_of_domains_of_tuple_params 
+		(*
 		-> rrel_1: rrel_in: _domain;;
 		-> rrel_2: rrel_in: _node;;
 		-> rrel_3: rrel_in: _cntv;;
 		-> rrel_4: rrel_in: _answer;;
 		*);;
 
-	-> rrel_operators: ..proc_check_node_domain_operator1s (*
-		-> rrel_init: .proc_of_verification_of_domains_of_tuple_operator1A1 (*
+	-> rrel_operators: .proc_of_verification_of_domains_of_tuple_operators 
+		(*
+		-> rrel_init: .proc_of_verification_of_domains_of_tuple_operator1A1 
+			(*
 			<- searchSetStr3;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _domain;;
@@ -20,7 +24,8 @@ scp_program -> proc_of_verification_of_domains_of_tuple (*
 			=> nrel_else: .proc_of_verification_of_domains_of_tuple_return;;
 			*);;
 
-		-> .proc_of_verification_of_domains_of_tuple_operator1A2 (*
+		-> .proc_of_verification_of_domains_of_tuple_operator1A2 
+			(*
 			<- searchElStr3;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _set;;
@@ -31,7 +36,8 @@ scp_program -> proc_of_verification_of_domains_of_tuple (*
 			=> nrel_else: .proc_of_verification_of_domains_of_tuple_operator1B1;;
 			*);;
 
-		-> .proc_of_verification_of_domains_of_tuple_operator1A3 (*
+		-> .proc_of_verification_of_domains_of_tuple_operator1A3 
+			(*
 			<- eraseEl;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _arc;;
@@ -39,7 +45,8 @@ scp_program -> proc_of_verification_of_domains_of_tuple (*
 			=> nrel_goto: .proc_of_verification_of_domains_of_tuple_operator1A4;;
 			*);;
 
-		-> .proc_of_verification_of_domains_of_tuple_operator1A4 (*
+		-> .proc_of_verification_of_domains_of_tuple_operator1A4 
+			(*
 			<- searchElStr3;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _elem;;
@@ -50,7 +57,8 @@ scp_program -> proc_of_verification_of_domains_of_tuple (*
 			=> nrel_else: .proc_of_verification_of_domains_of_tuple_operator1A2;;
 			*);;
 
-		-> .proc_of_verification_of_domains_of_tuple_operator1B1 (*
+		-> .proc_of_verification_of_domains_of_tuple_operator1B1 
+			(*
 			<- genElStr3;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
@@ -60,7 +68,8 @@ scp_program -> proc_of_verification_of_domains_of_tuple (*
 			=> nrel_goto: .proc_of_verification_of_domains_of_tuple_operator1B2;;
 			*);;
 
-		-> .proc_of_verification_of_domains_of_tuple_operator1B2 (*
+		-> .proc_of_verification_of_domains_of_tuple_operator1B2 
+			(*
 			<- searchSetStr5;;
 			 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _cntv;;
@@ -77,7 +86,8 @@ scp_program -> proc_of_verification_of_domains_of_tuple (*
 			=> nrel_else: .proc_of_verification_of_domains_of_tuple_return;;
 			*);;
 
-		-> .proc_of_verification_of_domains_of_tuple_operator1B3 (*
+		-> .proc_of_verification_of_domains_of_tuple_operator1B3 
+			(*
 			<- genElStr3;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
@@ -87,7 +97,8 @@ scp_program -> proc_of_verification_of_domains_of_tuple (*
 			=> nrel_goto: .proc_of_verification_of_domains_of_tuple_return;;
 			*);;
 
-		-> .proc_of_verification_of_domains_of_tuple_return (*
+		-> .proc_of_verification_of_domains_of_tuple_return 
+			(*
 			<- return;;
 			*);;
 		*);;
