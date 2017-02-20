@@ -1,0 +1,165 @@
+scp_program -> proc_of_searching_wrong_elements 
+	(*	
+	-> rrel_params: .proc_of_searching_wrong_elements_params 
+		(*
+		-> rrel_1: rrel_in: _answer934;;
+		*);;
+
+	-> rrel_operators: .proc_of_searching_wrong_elements_operator_set 
+		(*
+		-> rrel_init: .proc_of_searching_wrong_elements_operator1A 
+            (*
+		  	<- genEl;;
+
+		  	-> rrel_1: rrel_assign: rrel_scp_var: rrel_const: rrel_node: _set1;;
+
+			=> nrel_goto: .proc_of_searching_wrong_elements_operator1B;;
+			*);;
+
+		-> .proc_of_searching_wrong_elements_operator1B
+			(*
+		  	<- genElStr3;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_var: _answer934;;
+		  	-> rrel_2: rrel_assign: rrel_scp_var: rrel_const: rrel_pos_const_perm: _arc1;;
+		  	-> rrel_3: rrel_fixed: rrel_scp_var: _set1;;
+
+		  	=> nrel_goto: .proc_of_searching_wrong_elements_operator1C;;
+			*);;
+
+		-> .proc_of_searching_wrong_elements_operator1C
+			(*
+		  	<- searchSetStr3;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_const: nrel_system_identifier;;
+		  	-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+		  	-> rrel_3: rrel_assign: rrel_scp_var: rrel_common: _arc1;;
+
+		  	-> rrel_set_3: rrel_assign: rrel_scp_var: _set2;;
+
+		   	=> nrel_then: .proc_of_searching_wrong_elements_operator1D1;;
+		  	=> nrel_else: .proc_of_searching_wrong_elements_operator_return;;
+			*);;
+
+		-> .proc_of_searching_wrong_elements_operator1D1
+			(*
+		  	<- searchElStr3;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_var: _set2;;
+		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+		  	-> rrel_3: rrel_assign: rrel_scp_var: rrel_common: _arc2;;
+
+		  	=> nrel_then: .proc_of_searching_wrong_elements_operator1D2;;
+		  	=> nrel_else: .proc_of_searching_wrong_elements_operator1E;;  
+			*);;
+
+		-> .proc_of_searching_wrong_elements_operator1D2
+			(*
+		  	<- searchElStr3;;
+
+		  	-> rrel_1: rrel_assign: rrel_scp_var: rrel_node: rrel_const: _node1;;
+		  	-> rrel_2: rrel_fixed: rrel_scp_var: rrel_common: _arc2;;
+		  	-> rrel_3: rrel_assign: rrel_scp_var: _node2;;
+
+		  	=> nrel_then: .proc_of_searching_wrong_elements_operator1D3;;
+		  	=> nrel_else: .proc_of_searching_wrong_elements_operator1D5;;  
+			*);;
+
+		-> .proc_of_searching_wrong_elements_operator1D3
+			(*
+		  	<- searchElStr5;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_var: _node1;;
+		  	-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc3;;
+		  	-> rrel_3: rrel_assign: rrel_scp_var: _node3;;
+		  	-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc4;;
+		  	-> rrel_5: rrel_fixed: rrel_scp_const: nrel_main_idtf;;
+
+		   	=> nrel_then: .proc_of_searching_wrong_elements_operator1D5;;
+		  	=> nrel_else: .proc_of_searching_wrong_elements_operator1D4;;  
+			*);;
+
+		-> .proc_of_searching_wrong_elements_operator1D4
+			(*
+		  	<- genElStr3;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_var: _set1;;
+		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc3;;
+		  	-> rrel_3: rrel_fixed: rrel_scp_var: _node1;;
+
+			=> nrel_goto: .proc_of_searching_wrong_elements_operator1D5;;  
+			*);;
+
+		-> .proc_of_searching_wrong_elements_operator1D5
+			(*
+		 	<- eraseEl;;
+
+		 	-> rrel_1: rrel_erase: rrel_fixed: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+
+		 	=> nrel_goto: .proc_of_searching_wrong_elements_operator1D1;;
+		 	*);;
+
+		-> .proc_of_searching_wrong_elements_operator1E
+			(*
+		 	<- searchSetStr3;;
+
+		 	-> rrel_1: rrel_fixed: rrel_scp_var: _set1;;
+		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: rrel_const: _arc3;;
+		  	-> rrel_3: rrel_assign: rrel_scp_var: _node1;;
+
+		  	-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer934;;
+		  	-> rrel_set_3: rrel_fixed: rrel_scp_var: _answer934;;
+
+		 	=> nrel_goto: .proc_of_searching_wrong_elements_operator1F;;
+		 	*);;
+
+		-> .proc_of_searching_wrong_elements_operator1F
+            (*
+		 	<- genElStr3;;
+
+		 	-> rrel_1: rrel_fixed: rrel_scp_var: _answer934;;
+		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: rrel_const: _arc3;;
+		  	-> rrel_3: rrel_fixed: rrel_scp_const: wrong_struct;;
+
+		 	=> nrel_goto: .proc_of_searching_wrong_elements_operator1G;;
+		 	*);;
+
+		-> .proc_of_searching_wrong_elements_operator1G 
+			(*
+		  	<- genElStr3;;
+
+		 	-> rrel_1: rrel_fixed: rrel_scp_const: wrong_struct;;
+		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc3;;
+		  	-> rrel_3: rrel_fixed: rrel_scp_const: _set1;;
+
+		 	=> nrel_goto: .proc_of_searching_wrong_elements_operator1H;;
+			*);; 
+
+		-> .proc_of_searching_wrong_elements_operator1H
+			(*
+		  	<- searchSetStr3;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_const: wrong_struct;;
+		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: rrel_const: _arc1;;
+		  	-> rrel_3: rrel_fixed: rrel_scp_const: _set1;;
+
+		  	-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer934;;
+
+		  	=> nrel_goto: .proc_of_searching_wrong_elements_operator1I;;
+			*);; 
+
+		-> .proc_of_searching_wrong_elements_operator1I 
+			(*
+		  	<- eraseEl;;
+
+		  	-> rrel_1: rrel_erase: rrel_fixed: rrel_scp_var: _set2;;
+
+		   	=> nrel_goto: .proc_of_searching_wrong_elements_operator_return;;
+			*);; 
+
+		-> .proc_of_searching_wrong_elements_operator_return 
+			(*
+			<- return;;
+			*);;
+		*);;
+	*);;
