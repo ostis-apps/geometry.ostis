@@ -195,21 +195,9 @@ scp_program -> agent_of_checking_key_sc_elements_of_the_semantic_neighborhoods_i
 			-> rrel_5: rrel_fixed: rrel_scp_const: rrel_key_sc_element;;
 
 		 	=> nrel_goto: .agent_of_checking_key_sc_elements_of_the_semantic_neighborhoods_in_the_given_structure_operator2B1;;
-		 	*);;
-
-		-> .agent_of_checking_key_sc_elements_of_the_semantic_neighborhoods_in_the_given_structure_operator_gen_verification_answer
-			(*
-		  	<- searchElStr3;;
-
-		  	-> rrel_1: rrel_fixed: rrel_scp_var: _struct_of_answer;;
-		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
-		  	-> rrel_3: rrel_assign: rrel_scp_var: rrel_node: _elem;;
-		  	
-		  	=> nrel_then: .agent_of_checking_key_sc_elements_of_the_semantic_neighborhoods_in_the_given_structure_operator_gen_verification_answer1;;
-		  	=> nrel_else: .agent_of_checking_key_sc_elements_of_the_semantic_neighborhoods_in_the_given_structure_operator01A;;
-			*);;	 	
+		 	*);; 	
 		 	
-		-> .agent_of_checking_key_sc_elements_of_the_semantic_neighborhoods_in_the_given_structure_operator_gen_verification_answer1
+		-> .agent_of_checking_key_sc_elements_of_the_semantic_neighborhoods_in_the_given_structure_operator_gen_verification_answer
 			(*
 		 	<- call;;
 
@@ -278,30 +266,6 @@ scp_program -> agent_of_checking_key_sc_elements_of_the_semantic_neighborhoods_i
 
 		  	=> nrel_goto: .agent_of_checking_key_sc_elements_of_the_semantic_neighborhoods_in_the_given_structure_operator_return;;
 			*);;
-
-	-> .agent_of_checking_key_sc_elements_of_the_semantic_neighborhoods_in_the_given_structure_operator01A
-        		(*
-		 	<- call;;
-
-		  	-> rrel_1: rrel_fixed: rrel_scp_const: proc_of_adding_general_action_comment;;
-		  	-> rrel_2: rrel_fixed: rrel_scp_const: .agent_of_checking_key_sc_elements_of_the_semantic_neighborhoods_in_the_given_structure_operator01A_params 
-				(*
-				-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
-				-> rrel_2: rrel_fixed: rrel_scp_const: [Problematic fragments are not found];;
-				*);;
-		  	-> rrel_3: rrel_assign: rrel_scp_var: _descr5;;
-
-		 	=> nrel_goto: .agent_of_checking_key_sc_elements_of_the_semantic_neighborhoods_in_the_given_structure_operator01B;;
-		 	*);;
-		 	
-		-> .agent_of_checking_key_sc_elements_of_the_semantic_neighborhoods_in_the_given_structure_operator01B 
-			(*
-		  	<- waitReturn;;
-
-		  	-> rrel_1: rrel_fixed: rrel_scp_var: _descr5;;
-
-		  	=> nrel_goto: .agent_of_checking_key_sc_elements_of_the_semantic_neighborhoods_in_the_given_structure_operator_return;;
-			*);; 	
 
 		-> .agent_of_checking_key_sc_elements_of_the_semantic_neighborhoods_in_the_given_structure_operator_return 
 			(*
