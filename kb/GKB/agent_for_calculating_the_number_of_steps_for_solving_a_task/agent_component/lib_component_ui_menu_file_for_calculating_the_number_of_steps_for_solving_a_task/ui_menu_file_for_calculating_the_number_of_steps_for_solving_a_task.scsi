@@ -1,0 +1,16 @@
+ui_menu_file_for_calculating_the_number_of_steps_for_solving_a_task <- ui_user_command_class_atom; ui_user_command_class_view_kb; ui_one_argument_command_class;;
+
+ui_menu_file_for_calculating_the_number_of_steps_for_solving_a_task => nrel_main_idtf: [Команда для подсчёта количества шагов решения задачи.] (* <- lang_ru;; *);;
+ui_menu_file_for_calculating_the_number_of_steps_for_solving_a_task => nrel_main_idtf: [Command for calculating the number of steps for solving a task.] (* <- lang_en;; *);;
+	
+ui_menu_file_for_calculating_the_number_of_steps_for_solving_a_task => ui_nrel_command_template:
+	[*
+		action_of_calculating_the_number_of_steps_for_solving_a_task _-> ._action_of_calculating_the_number_of_steps_for_solving_a_task_instance
+			(*
+			_-> ui_arg_1;;	
+			*);;
+		._action_of_calculating_the_number_of_steps_for_solving_a_task_instance _<- question;;
+	*];;
+
+ui_menu_file_for_calculating_the_number_of_steps_for_solving_a_task => ui_nrel_command_lang_template: [Команда для подсчёта количества шагов решения задачи ($ui_arg_1).] (* <- lang_ru;; *);;
+ui_menu_file_for_calculating_the_number_of_steps_for_solving_a_task => ui_nrel_command_lang_template: [Command of calculating the number of steps for solving a task($ui_arg_1).] (* <- lang_en;; *);;
