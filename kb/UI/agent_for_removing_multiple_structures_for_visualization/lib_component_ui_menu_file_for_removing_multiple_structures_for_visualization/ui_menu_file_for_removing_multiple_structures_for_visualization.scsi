@@ -1,0 +1,16 @@
+ui_menu_file_for_removing_multiple_structures_for_visualization <- ui_user_command_class_atom; ui_user_command_class_view_kb; ui_one_argument_command_class;;
+
+ui_menu_file_for_removing_multiple_structures_for_visualization => nrel_main_idtf: [Команда для удаления множества структур для визуализации.] (* <- lang_ru;; *);;
+ui_menu_file_for_removing_multiple_structures_for_visualization => nrel_main_idtf: [Command for removing multiple structures for visualization.] (* <- lang_en;; *);;
+	
+ui_menu_file_for_removing_multiple_structures_for_visualization => ui_nrel_command_template:
+	[*
+		action_of_removing_multiple_structures_for_visualization _-> ._action_of_removing_multiple_structures_for_visualization_instance
+			(*
+			_->  ui_arg_1;;
+			*);;
+		._action_of_removing_multiple_structures_for_visualization_instance _<- question;;
+	*];;
+
+ui_menu_file_for_removing_multiple_structures_for_visualization => ui_nrel_command_lang_template: [Команда удаления множества структур для визуализации.] (* <- lang_ru;; *);;
+ui_menu_file_for_removing_multiple_structures_for_visualization => ui_nrel_command_lang_template: [Command for removing multiple structures for visualization.] (* <- lang_en;; *);;
