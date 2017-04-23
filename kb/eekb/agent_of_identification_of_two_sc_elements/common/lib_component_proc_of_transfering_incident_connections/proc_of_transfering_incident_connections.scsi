@@ -6,7 +6,7 @@ scp_program -> proc_of_transfering_incident_connections
 		-> rrel_2: rrel_in: _second_elem;;
 		-> rrel_3: rrel_in: _answer;;
 		-> rrel_4: rrel_in: _concerted_part_of_kb;;
-    	*);;
+    		*);;
 
 	-> rrel_operators: .proc_of_transfering_incident_connections_operator_set
     		(*
@@ -21,7 +21,7 @@ scp_program -> proc_of_transfering_incident_connections
 		  	=> nrel_goto: .proc_of_transfering_incident_connections_operator2A;;	 
 		  	*);;
 
-    	-> .proc_of_transfering_incident_connections_operator2A
+    		-> .proc_of_transfering_incident_connections_operator2A
 			(*
 			<- searchSetStr5;;
 
@@ -37,7 +37,7 @@ scp_program -> proc_of_transfering_incident_connections
 			=> nrel_else: .proc_of_transfering_incident_connections_operator5A;;
 		  	*);;
 
-    	-> .proc_of_transfering_incident_connections_operator2B
+    		-> .proc_of_transfering_incident_connections_operator2B
 			(*
 			<- searchElStr3;;
 
@@ -58,7 +58,7 @@ scp_program -> proc_of_transfering_incident_connections
 			=> nrel_goto: .proc_of_transfering_incident_connections_operator2D;;
 			*);;
 
-    	-> .proc_of_transfering_incident_connections_operator2D
+    		-> .proc_of_transfering_incident_connections_operator2D
 			(*
 			<- searchElStr3;;
 
@@ -70,7 +70,7 @@ scp_program -> proc_of_transfering_incident_connections
 			=> nrel_else: .proc_of_transfering_incident_connections_operator4A;;
 		  	*);;
 
-    	-> .proc_of_transfering_incident_connections_operator2E
+    		-> .proc_of_transfering_incident_connections_operator2E
 			(*
 			<- ifType;;
 
@@ -80,7 +80,7 @@ scp_program -> proc_of_transfering_incident_connections
 			=> nrel_else: .proc_of_transfering_incident_connections_operator2F;;
 		  	*);;
 
-    	-> .proc_of_transfering_incident_connections_operator2F
+    		-> .proc_of_transfering_incident_connections_operator2F
 			(*
 			<- searchElStr3;;
 
@@ -92,7 +92,7 @@ scp_program -> proc_of_transfering_incident_connections
 			=> nrel_else: .proc_of_transfering_incident_connections_operator2G;;
 		  	*);;
 
-    	-> .proc_of_transfering_incident_connections_operator2G
+    		-> .proc_of_transfering_incident_connections_operator2G
 			(*
 			<- searchSetStr5;;
 
@@ -111,7 +111,7 @@ scp_program -> proc_of_transfering_incident_connections
 			=> nrel_else: .proc_of_transfering_incident_connections_operator2H;;
 		  	*);;
 
-    	-> .proc_of_transfering_incident_connections_operator2H
+    		-> .proc_of_transfering_incident_connections_operator2H
 			(*
 			<- searchSetStr3;;
 
@@ -122,14 +122,10 @@ scp_program -> proc_of_transfering_incident_connections
 			-> rrel_set_1: rrel_fixed: rrel_scp_var: _answer;;	
 			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer;;
 
-	 
 		  	=> nrel_goto: .proc_of_transfering_incident_connections_operator2I;;
 		  	*);;
 
-
-
-
-    	-> .proc_of_transfering_incident_connections_operator2I
+    		-> .proc_of_transfering_incident_connections_operator2I
 			(*
 			<- genElStr3;;
 
@@ -140,7 +136,7 @@ scp_program -> proc_of_transfering_incident_connections
 		  	=> nrel_goto: .proc_of_transfering_incident_connections_operator2J;;	 
 		  	*);;
 
-    	-> .proc_of_transfering_incident_connections_operator2J
+    		-> .proc_of_transfering_incident_connections_operator2J
 			(*
 			<- genElStr3;;
 
@@ -151,7 +147,7 @@ scp_program -> proc_of_transfering_incident_connections
 		  	=> nrel_goto: .proc_of_transfering_incident_connections_operator2K;;	 
 		  	*);;
 
-    	-> .proc_of_transfering_incident_connections_operator2K
+    		-> .proc_of_transfering_incident_connections_operator2K
 			(*
 			<- searchElStr3;;
 
@@ -163,7 +159,7 @@ scp_program -> proc_of_transfering_incident_connections
 			=> nrel_else: .proc_of_transfering_incident_connections_operator2L;; 
 		  	*);;
 
-    	-> .proc_of_transfering_incident_connections_operator2L
+    		-> .proc_of_transfering_incident_connections_operator2L
 			(*
 			<- genElStr3;;
 
@@ -209,7 +205,7 @@ scp_program -> proc_of_transfering_incident_connections
 		  	=> nrel_goto: .proc_of_transfering_incident_connections_operator5A;;	 
 		  	*);;
 
-    	-> .proc_of_transfering_incident_connections_operator5A
+    		-> .proc_of_transfering_incident_connections_operator5A
 			(*
 			<- searchSetStr5;;
 
@@ -225,7 +221,7 @@ scp_program -> proc_of_transfering_incident_connections
 			=> nrel_else: .proc_of_transfering_incident_connections_operator8A;;
 		  	*);;
 
-    	-> .proc_of_transfering_incident_connections_operator5B
+    		-> .proc_of_transfering_incident_connections_operator5B
 			(*
 			<- searchElStr3;;
 
@@ -246,7 +242,7 @@ scp_program -> proc_of_transfering_incident_connections
 			=> nrel_goto: .proc_of_transfering_incident_connections_operator5D;;
 			*);;
 
-    	-> .proc_of_transfering_incident_connections_operator5D
+    		-> .proc_of_transfering_incident_connections_operator5D
 			(*
 			<- searchElStr3;;
 
@@ -257,7 +253,7 @@ scp_program -> proc_of_transfering_incident_connections
 			=> nrel_goto: .proc_of_transfering_incident_connections_operator5E;;
 		  	*);;
 
-    	-> .proc_of_transfering_incident_connections_operator5E
+    		-> .proc_of_transfering_incident_connections_operator5E
 			(*
 			<- genElStr3;;
 
@@ -268,7 +264,7 @@ scp_program -> proc_of_transfering_incident_connections
 		  	=> nrel_goto: .proc_of_transfering_incident_connections_operator5F;;	 
 		  	*);;
 
-    	-> .proc_of_transfering_incident_connections_operator5F
+    		-> .proc_of_transfering_incident_connections_operator5F
 			(*
 			<- genElStr3;;
 
@@ -279,8 +275,7 @@ scp_program -> proc_of_transfering_incident_connections
 		  	=> nrel_goto: .proc_of_transfering_incident_connections_operator5G;;	 
 		  	*);;
 
-
-    	-> .proc_of_transfering_incident_connections_operator5G
+    		-> .proc_of_transfering_incident_connections_operator5G
 			(*
 			<- searchElStr3;;
 
@@ -292,7 +287,7 @@ scp_program -> proc_of_transfering_incident_connections
 			=> nrel_else: .proc_of_transfering_incident_connections_operator5H;; 
 		  	*);;
 
-    	-> .proc_of_transfering_incident_connections_operator5H
+    		-> .proc_of_transfering_incident_connections_operator5H
 			(*
 			<- genElStr3;;
 
@@ -338,7 +333,7 @@ scp_program -> proc_of_transfering_incident_connections
 		  	=> nrel_goto: .proc_of_transfering_incident_connections_operator8A;;	 
 		  	*);;
 
-    	-> .proc_of_transfering_incident_connections_operator8A
+    		-> .proc_of_transfering_incident_connections_operator8A
 			(*
 			<- searchSetStr5;;
 
@@ -354,7 +349,7 @@ scp_program -> proc_of_transfering_incident_connections
 			=> nrel_else: .proc_of_transfering_incident_connections_operator11A;;
 		  	*);;
 
-    	-> .proc_of_transfering_incident_connections_operator8B
+    		-> .proc_of_transfering_incident_connections_operator8B
 			(*
 			<- searchElStr3;;
 
@@ -375,7 +370,7 @@ scp_program -> proc_of_transfering_incident_connections
 			=> nrel_goto: .proc_of_transfering_incident_connections_operator8D;;
 			*);;
 
-    	-> .proc_of_transfering_incident_connections_operator8D
+    		-> .proc_of_transfering_incident_connections_operator8D
 			(*
 			<- searchElStr3;;
 
@@ -386,7 +381,7 @@ scp_program -> proc_of_transfering_incident_connections
 			=> nrel_goto: .proc_of_transfering_incident_connections_operator8E;;
 		  	*);;
 
-    	-> .proc_of_transfering_incident_connections_operator8E
+    		-> .proc_of_transfering_incident_connections_operator8E
 			(*
 			<- genElStr3;;
 
@@ -397,7 +392,7 @@ scp_program -> proc_of_transfering_incident_connections
 		  	=> nrel_goto: .proc_of_transfering_incident_connections_operator8F;;	 
 		  	*);;
 
-    	-> .proc_of_transfering_incident_connections_operator8F
+    		-> .proc_of_transfering_incident_connections_operator8F
 			(*
 			<- genElStr3;;
 
@@ -407,8 +402,8 @@ scp_program -> proc_of_transfering_incident_connections
 
 		  	=> nrel_goto: .proc_of_transfering_incident_connections_operator8G;;	 
 		  	*);;
-
-    	-> .proc_of_transfering_incident_connections_operator8G
+	
+    		-> .proc_of_transfering_incident_connections_operator8G
 			(*
 			<- searchElStr3;;
 
@@ -420,7 +415,7 @@ scp_program -> proc_of_transfering_incident_connections
 			=> nrel_else: .proc_of_transfering_incident_connections_operator8H;; 
 		  	*);;
 
-    	-> .proc_of_transfering_incident_connections_operator8H
+    		-> .proc_of_transfering_incident_connections_operator8H
 			(*
 			<- genElStr3;;
 
@@ -466,7 +461,7 @@ scp_program -> proc_of_transfering_incident_connections
 		  	=> nrel_goto: .proc_of_transfering_incident_connections_operator11A;;	 
 		  	*);;
 
-    	-> .proc_of_transfering_incident_connections_operator11A
+    		-> .proc_of_transfering_incident_connections_operator11A
 			(*
 			<- searchSetStr5;;
 
@@ -482,7 +477,7 @@ scp_program -> proc_of_transfering_incident_connections
 			=> nrel_else: .proc_of_transfering_incident_connections_operator14A;;
 		  	*);;
 
-    	-> .proc_of_transfering_incident_connections_operator11B
+    		-> .proc_of_transfering_incident_connections_operator11B
 			(*
 			<- searchElStr3;;
 
@@ -503,7 +498,7 @@ scp_program -> proc_of_transfering_incident_connections
 			=> nrel_goto: .proc_of_transfering_incident_connections_operator11D;;
 			*);;
 
-    	-> .proc_of_transfering_incident_connections_operator11D
+    		-> .proc_of_transfering_incident_connections_operator11D
 			(*
 			<- searchElStr3;;
 
@@ -514,7 +509,7 @@ scp_program -> proc_of_transfering_incident_connections
 			=> nrel_then: .proc_of_transfering_incident_connections_operator11E;;
 		  	*);;
 
-    	-> .proc_of_transfering_incident_connections_operator11E
+    		-> .proc_of_transfering_incident_connections_operator11E
 			(*
 			<- genElStr3;;
 
@@ -525,7 +520,7 @@ scp_program -> proc_of_transfering_incident_connections
 		  	=> nrel_goto: .proc_of_transfering_incident_connections_operator11F;;	 
 		  	*);;
 
-    	-> .proc_of_transfering_incident_connections_operator11F
+    		-> .proc_of_transfering_incident_connections_operator11F
 			(*
 			<- genElStr3;;
 
@@ -536,7 +531,7 @@ scp_program -> proc_of_transfering_incident_connections
 		  	=> nrel_goto: .proc_of_transfering_incident_connections_operator11G;;	 
 		  	*);;
 
-    	-> .proc_of_transfering_incident_connections_operator11G
+    		-> .proc_of_transfering_incident_connections_operator11G
 			(*
 			<- searchElStr3;;
 
@@ -548,7 +543,7 @@ scp_program -> proc_of_transfering_incident_connections
 			=> nrel_else: .proc_of_transfering_incident_connections_operator11H;; 
 		  	*);;
 
-    	-> .proc_of_transfering_incident_connections_operator11H
+    		-> .proc_of_transfering_incident_connections_operator11H
 			(*
 			<- genElStr3;;
 
@@ -594,8 +589,7 @@ scp_program -> proc_of_transfering_incident_connections
 		  	=> nrel_goto: .proc_of_transfering_incident_connections_operator14A;;	 
 		  	*);;
 
-
-    	-> .proc_of_transfering_incident_connections_operator14A
+   	 	-> .proc_of_transfering_incident_connections_operator14A
 			(*
 			<- searchSetStr5;;
 
@@ -611,7 +605,7 @@ scp_program -> proc_of_transfering_incident_connections
 			=> nrel_else: .proc_of_transfering_incident_connections_operator_return;;
 		  	*);;
 
-    	-> .proc_of_transfering_incident_connections_operator14B
+    		-> .proc_of_transfering_incident_connections_operator14B
 			(*
 			<- searchElStr3;;
 
@@ -632,7 +626,7 @@ scp_program -> proc_of_transfering_incident_connections
 			=> nrel_goto: .proc_of_transfering_incident_connections_operator14D;;
 			*);;
 
-    	-> .proc_of_transfering_incident_connections_operator14D
+    		-> .proc_of_transfering_incident_connections_operator14D
 			(*
 			<- searchElStr3;;
 
@@ -643,7 +637,7 @@ scp_program -> proc_of_transfering_incident_connections
 			=> nrel_goto: .proc_of_transfering_incident_connections_operator14E;;
 		  	*);;
 
-    	-> .proc_of_transfering_incident_connections_operator14E
+    		-> .proc_of_transfering_incident_connections_operator14E
 			(*
 			<- genElStr3;;
 
@@ -654,7 +648,7 @@ scp_program -> proc_of_transfering_incident_connections
 		  	=> nrel_goto: .proc_of_transfering_incident_connections_operator14F;;	 
 		  	*);;
 
-    	-> .proc_of_transfering_incident_connections_operator14F
+    		-> .proc_of_transfering_incident_connections_operator14F
 			(*
 			<- genElStr3;;
 
@@ -665,7 +659,7 @@ scp_program -> proc_of_transfering_incident_connections
 		  	=> nrel_goto: .proc_of_transfering_incident_connections_operator14G;;	 
 		  	*);;
 
-    	-> .proc_of_transfering_incident_connections_operator14G
+    		-> .proc_of_transfering_incident_connections_operator14G
 			(*
 			<- searchElStr3;;
 
@@ -677,7 +671,7 @@ scp_program -> proc_of_transfering_incident_connections
 			=> nrel_else: .proc_of_transfering_incident_connections_operator14H;; 
 		  	*);;
 
-    	-> .proc_of_transfering_incident_connections_operator14H
+    		-> .proc_of_transfering_incident_connections_operator14H
 			(*
 			<- genElStr3;;
 
