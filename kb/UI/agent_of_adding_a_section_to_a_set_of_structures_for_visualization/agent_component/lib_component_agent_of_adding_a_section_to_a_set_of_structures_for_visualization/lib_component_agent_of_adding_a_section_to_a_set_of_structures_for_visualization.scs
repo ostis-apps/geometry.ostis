@@ -1,0 +1,30 @@
+lib_component_agent_of_adding_a_section_to_a_set_of_structures_for_visualization
+=> nrel_main_idtf:
+	[Компонент библиотеки. Sc-агент добавления секции во множество структур для визуализации.]
+	(* <- lang_ru;; *);
+	[Library component. Sc-agent for adding a section to a set of structures for visualization.]
+	(* <- lang_en;; *);
+
+<- library_of_platform_independent_reusable_components; 
+<- library_of_atomic_reusable_components; 
+
+=> nrel_attendant_component: 
+	lib_component_ui_menu_file_of_adding_a_section_to_a_set_of_structures_for_visualization;
+
+-> rrel_key_sc_element: 
+	.platform_independent_realization_of_sc_agent_of_adding_a_section_to_a_set_of_structures_for_visualization;
+
+<- rrel_key_sc_element: 
+	...
+	(*
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://htmls/Agent_of_adding_a_section_to_a_set_of_structures_for_visualization.html"
+				(* <- lang_ru;; *);; 
+		*);;
+	*);;
+
+
