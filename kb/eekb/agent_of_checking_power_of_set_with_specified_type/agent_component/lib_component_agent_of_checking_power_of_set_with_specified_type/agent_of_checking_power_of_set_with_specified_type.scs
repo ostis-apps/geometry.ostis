@@ -1,0 +1,292 @@
+agent_of_checking_power_of_set_with_specified_type
+=> nrel_main_idtf:
+	[агентная scp-программа проверки соответствия мощности множеств с указанным типом] (* <- lang_ru;; *);
+	[agent scp-program of veification of compliance power sets with the specified type] (* <- lang_en;; *);
+	<- agent_scp_program;;
+
+scp_program -> agent_of_checking_power_of_set_with_specified_type 
+	(*
+	-> rrel_params: .agent_proc_type_power_checker_params 
+		(*
+		-> rrel_1: rrel_in: _event;;
+		-> rrel_2: rrel_in: _input_arc;;
+		*);;
+
+	-> rrel_operators: .agent_of_checking_power_of_set_with_specified_type_operator_set 
+		(*
+		-> rrel_init: .agent_proc_type_power_checker_operator1 
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: _temp;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _input_arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _quest;;
+
+			=> nrel_then: .agent_proc_type_power_checker_operator2;;
+			*);;
+
+        	-> .agent_proc_type_power_checker_operator2 
+        		(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: action_of_checking_power_of_set_with_specified_type;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _quest;;
+
+			=> nrel_then: .agent_proc_type_power_checker_operator3;;
+			=> nrel_else: .agent_proc_type_power_checker_operator_return;;
+			*);;
+
+		-> .agent_proc_type_power_checker_operator3
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _struct;;
+
+			=> nrel_then: .agent_proc_type_power_checker_operator_validate_input_param_gen;;
+			=> nrel_else: .agent_proc_type_power_checker_operator_return;;
+			*);;
+
+		-> .agent_proc_type_power_checker_operator_validate_input_param_gen
+        		(*
+		 	<- genEl;;
+
+		 	-> rrel_1: rrel_assign: rrel_scp_var: rrel_node: rrel_link: _result_of_validation;;
+
+		 	=> nrel_goto: .agent_proc_type_power_checker_operator_validate_input_param;;
+		 	*);;
+		
+		-> .agent_proc_type_power_checker_operator_validate_input_param
+        		(*
+		    	<- call;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_const: proc_of_validation_input_param_for_verification_agents;;
+		  	-> rrel_2: rrel_fixed: rrel_scp_const: .agent_proc_type_power_checker_operator_validate_input_param_params 
+		  		(*
+				-> rrel_1: rrel_fixed: rrel_scp_var: _quest;; 
+				-> rrel_2: rrel_fixed: rrel_scp_var: _struct;;
+				-> rrel_3: rrel_fixed: rrel_scp_var: _result_of_validation;;					                           
+				*);;
+		  	-> rrel_3: rrel_assign: rrel_scp_var: _descr111;;
+
+		  	=> nrel_goto: .agent_proc_type_power_checker_operator_validate_input_param_wait;;
+			*);;
+
+		-> .agent_proc_type_power_checker_operator_validate_input_param_wait 
+			(*
+		  	<- waitReturn;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_var: _descr111;;
+
+		  	=> nrel_goto: .agent_proc_type_power_checker_operator_check_result;;
+			*);;
+
+		-> .agent_proc_type_power_checker_operator_check_result
+			(*
+		 	<- ifEq;;
+
+		 	-> rrel_1: rrel_fixed: rrel_scp_var: _result_of_validation;;
+		 	-> rrel_2: rrel_fixed: rrel_scp_const: [1];;
+
+		 	=> nrel_then: .agent_proc_type_power_checker_operator_gen_incorrect_elems;;
+         		=> nrel_else: .agent_proc_type_power_checker_operator_return;;
+            		*);;	
+		           	            
+        	-> .agent_proc_type_power_checker_operator_gen_incorrect_elems
+        		(*
+		 	<- genEl;;
+
+		 	-> rrel_1: rrel_assign: rrel_node: rrel_struct: rrel_scp_var: _incorrect_elems;;
+
+		 	=> nrel_goto: .agent_proc_type_power_checker_operator_gen_set_of_checking_sets;;
+		 	*);;
+
+		-> .agent_proc_type_power_checker_operator_gen_set_of_checking_sets
+        		(*
+		 	<- genEl;;
+
+		 	-> rrel_1: rrel_assign: rrel_node: rrel_scp_var: _set_of_cheking_sets;;
+
+		 	=> nrel_goto: .agent_proc_type_power_checker_operator_add_pair_set_to_cheking;;
+		 	*);;
+
+		-> .agent_proc_type_power_checker_operator_add_pair_set_to_cheking
+			(*
+		    	<- genElStr3;;
+
+		    	-> rrel_1: rrel_fixed: rrel_scp_var: _set_of_cheking_sets;;
+		    	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+		    	-> rrel_3: rrel_fixed: rrel_scp_const: pair_set;; 
+
+		    	=> nrel_goto: .agent_proc_type_power_checker_operator_add_pairs_to_cheking_set;;		   
+			*);;		 	
+
+        	-> .agent_proc_type_power_checker_operator_add_pairs_to_cheking_set
+			(*
+		 	<- searchSetStr5;;
+
+		 	-> rrel_1: rrel_fixed: rrel_scp_const: pair_set;;
+		 	-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
+		 	-> rrel_3: rrel_assign: rrel_scp_var: _some_set;;
+            		-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+		 	-> rrel_5: rrel_fixed: rrel_scp_const: nrel_inclusion;;
+
+			-> rrel_set_3: rrel_fixed: rrel_scp_var: _set_of_cheking_sets;;
+
+            		=> nrel_goto: .agent_proc_type_power_checker_operator_check_all_pair_sets;;            
+            		*);;
+
+        	-> .agent_proc_type_power_checker_operator_check_all_pair_sets
+			(*
+		    	<- searchElStr3;;
+
+		    	-> rrel_1: rrel_fixed: rrel_scp_var: _set_of_cheking_sets;;
+		    	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+		    	-> rrel_3: rrel_assign: rrel_scp_var: _some_set;; 
+
+		    	=> nrel_then: .agent_proc_type_power_checker_operator_check_all_setsAerase;;
+		    	=> nrel_else: .agent_proc_type_power_checker_operator_add_triple_set_to_cheking;;
+			*);; 
+
+        	-> .agent_proc_type_power_checker_operator_check_all_setsAerase 
+        		(*
+		    	<- eraseEl;;
+
+		    	-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _arc1;;
+
+		    	=> nrel_goto: .agent_proc_type_power_checker_operator_check_concrete_pair_set;;
+		    	*);;
+
+        	-> .agent_proc_type_power_checker_operator_check_concrete_pair_set
+        		(*
+		    	<- call;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_const: proc_of_checking_power_of_set_with_specified_type;;
+		  	-> rrel_2: rrel_fixed: rrel_scp_const: .agent_proc_type_power_checker_operator_check_concrete_pair_set_params 
+		  		(*
+				-> rrel_1: rrel_fixed: rrel_scp_var: _incorrect_elems;; 
+				-> rrel_2: rrel_fixed: rrel_scp_var: _some_set;;
+				-> rrel_3: rrel_fixed: rrel_scp_const: [2];;
+				-> rrel_4: rrel_fixed: rrel_scp_var: _struct;;                               
+				*);;
+		  	-> rrel_3: rrel_assign: rrel_scp_var: _descr1;;
+
+		  	=> nrel_goto: .agent_proc_type_power_checker_operator_check_concrete_pair_set_wait;;
+			*);;
+
+		-> .agent_proc_type_power_checker_operator_check_concrete_pair_set_wait 
+			(*
+		  	<- waitReturn;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_var: _descr1;;
+
+		  	=> nrel_goto: .agent_proc_type_power_checker_operator_check_all_pair_sets;;
+			*);;
+		
+		-> .agent_proc_type_power_checker_operator_add_triple_set_to_cheking
+			(*
+		    	<- genElStr3;;
+
+		    	-> rrel_1: rrel_fixed: rrel_scp_var: _set_of_cheking_sets;;
+		    	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+		    	-> rrel_3: rrel_fixed: rrel_scp_const: triple_set;; 
+
+		    	=> nrel_goto: .agent_proc_type_power_checker_operator_add_tiples_to_cheking_set;;		   
+			*);;		 	
+
+        	-> .agent_proc_type_power_checker_operator_add_tiples_to_cheking_set
+			(*
+		 	<- searchSetStr5;;
+
+		 	-> rrel_1: rrel_fixed: rrel_scp_const: triple_set;;
+		 	-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
+		 	-> rrel_3: rrel_assign: rrel_scp_var: _some_set;;
+            		-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+		 	-> rrel_5: rrel_fixed: rrel_scp_const: nrel_inclusion;;
+
+			-> rrel_set_3: rrel_fixed: rrel_scp_var: _set_of_cheking_sets;;
+
+            		=> nrel_goto: .agent_proc_type_power_checker_operator_check_all_triple_sets;;
+            		*);;
+
+        	-> .agent_proc_type_power_checker_operator_check_all_triple_sets
+			(*
+		    	<- searchElStr3;;
+
+		    	-> rrel_1: rrel_fixed: rrel_scp_var: _set_of_cheking_sets;;
+		    	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+		    	-> rrel_3: rrel_assign: rrel_scp_var: _some_set;; 
+
+		    	=> nrel_then: .agent_proc_type_power_checker_operator_check_all_setsBerase;;
+		    	=> nrel_else: .agent_proc_type_power_checker_operator_gen_verification_answer;;
+			*);; 
+
+        	-> .agent_proc_type_power_checker_operator_check_all_setsBerase 
+        		(*
+		    	<- eraseEl;;
+
+		    	-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _arc1;;
+
+		    	=> nrel_goto: .agent_proc_type_power_checker_operator_check_concrete_triple_set;;
+		    	*);;
+
+        	-> .agent_proc_type_power_checker_operator_check_concrete_triple_set
+        		(*
+		    	<- call;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_const: proc_of_checking_power_of_set_with_specified_type;;
+		  	-> rrel_2: rrel_fixed: rrel_scp_const: .agent_proc_type_power_checker_operator_check_concrete_triple_set_params 
+		  		(*
+				-> rrel_1: rrel_fixed: rrel_scp_var: _incorrect_elems;; 
+				-> rrel_2: rrel_fixed: rrel_scp_var: _some_set;;
+				-> rrel_3: rrel_fixed: rrel_scp_const: [3];;
+				-> rrel_4: rrel_fixed: rrel_scp_var: _struct;;                               
+				*);;
+		  	-> rrel_3: rrel_assign: rrel_scp_var: _descr1;;
+
+		  	=> nrel_goto: .agent_proc_type_power_checker_operator_check_concrete_triple_set_wait;;
+			*);;
+
+		-> .agent_proc_type_power_checker_operator_check_concrete_triple_set_wait 
+			(*
+		  	<- waitReturn;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_var: _descr1;;
+
+		  	=> nrel_goto: .agent_proc_type_power_checker_operator_check_all_triple_sets;;
+			*);;
+
+		-> .agent_proc_type_power_checker_operator_gen_verification_answer
+			(*
+		 	<- call;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_const: proc_of_generation_of_verification_answer;;
+		  	-> rrel_2: rrel_fixed: rrel_scp_const: .agent_proc_type_power_checker_operator_gen_verification_answer_params 
+				(*
+				-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+				-> rrel_2: rrel_fixed: rrel_scp_const: action_of_checking_power_of_set_with_specified_type;;
+				-> rrel_3: rrel_fixed: rrel_scp_var: _incorrect_elems;;
+				-> rrel_4: rrel_fixed: rrel_scp_const: struct_of_sets_with_wrong_power_type;;
+				*);;
+		  	-> rrel_3: rrel_assign: rrel_scp_var: _descrV;;
+
+		  	=> nrel_goto: .agent_proc_type_power_checker_operator_waitreturn_generation_verification_answer;;
+			*);;
+
+		-> .agent_proc_type_power_checker_operator_waitreturn_generation_verification_answer 
+			(*
+		  	<- waitReturn;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_var: _descrV;;
+
+		  	=> nrel_goto: .agent_proc_type_power_checker_operator_return;;
+			*);;
+
+		-> .agent_proc_type_power_checker_operator_return 
+			(*
+		 	<- return;;
+			*);;
+	*);;
+*);;
