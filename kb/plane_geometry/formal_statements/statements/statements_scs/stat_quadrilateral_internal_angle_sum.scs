@@ -1,0 +1,14 @@
+stat_quadrilateral_internal_angle_sum <- statement;;
+
+stat_quadrilateral_internal_angle_sum -> rrel_key_sc_element: concept_quadrilateral; nrel_internal_angle; nrel_sum_quantities;;
+
+stat_quadrilateral_internal_angle_sum => nrel_main_idtf: [Утв.(четырехугольник; внутренний угол*; сумма величин*)] (*<- lang_ru;;*);;
+stat_quadrilateral_internal_angle_sum => nrel_main_idtf: [Stat.(quadrilateral; internal angle*; sum_quantities*)] (*<- lang_en;;*);;
+
+stat_quadrilateral_internal_angle_sum <= nrel_sc_text_translation: 
+		... 
+		(* 
+		-> rrel_example: 
+			[Сумма внутренних углов четырехугольника равна 360 градусов.] 
+			(* <- lang_ru;; *);; 
+		*);;
