@@ -1,0 +1,13 @@
+statement -> stat_equilateral_triangle_median_bisectrix_height;;
+
+stat_equilateral_triangle_median_bisectrix_height -> rrel_key_sc_element: concept_equilateral_triangle; nrel_median; nrel_bisectrix_of_triangle; nrel_height;;
+
+stat_equilateral_triangle_median_bisectrix_height => nrel_main_idtf: [Утв.(равносторонний треугольник; медиана*; биссектриса треугольника*; высота*)] (* <- lang_ru;; *);;
+stat_equilateral_triangle_median_bisectrix_height => nrel_main_idtf: [Stat.(equilateral triangle; median*; bisectrix of triangle*; height*)] (* <- lang_en;; *);;
+
+stat_equilateral_triangle_median_bisectrix_height <= nrel_sc_text_translation: ...
+	(*
+	-> rrel_example:
+		[В равностороннем треугольнике медиана является биссектрисой и высотой.] 
+		(* <- lang_ru;; *);;
+	*);;
