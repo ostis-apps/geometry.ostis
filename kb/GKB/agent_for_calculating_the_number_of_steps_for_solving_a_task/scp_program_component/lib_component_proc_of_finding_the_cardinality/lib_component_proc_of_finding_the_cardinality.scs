@@ -1,0 +1,27 @@
+lib_component_proc_of_finding_the_cardinality
+=> nrel_main_idtf:
+	[Компонент библиотеки. Scp-программа подсчёта мощности множества]
+	(* <- lang_ru;; *);
+	[Library component. Scp-program of count cardinality.]
+	(* <- lang_en;; *);
+
+<- library_of_platform_independent_reusable_components;
+
+-> rrel_key_sc_element: 
+	proc_of_finding_the_cardinality;
+
+<- rrel_key_sc_element: 
+	...
+	(*
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://htmls/Proc_Of_Finding_The_Cardinality.html" 
+				(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+lib_component_proc_of_finding_the_cardinality = [*^"file://proc_of_finding_the_cardinality.scsi"*];;
+
