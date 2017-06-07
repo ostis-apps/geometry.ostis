@@ -1,0 +1,27 @@
+lib_component_proc_of_formation_of_combinations_for_ternary_relation
+=> nrel_main_idtf:
+	[Компонент библиотеки. scp-программа формирования множества доменов для связки тернарного отношения]
+	(* <- lang_ru;; *);
+	[Library component. scp-program of formation of multiple domains for a bunch of ternary relations]
+	(* <- lang_en;; *);
+
+<- library_of_platform_independent_reusable_components;
+
+-> rrel_key_sc_element: 
+	proc_of_formation_of_combinations_for_ternary_relation;
+
+<- rrel_key_sc_element: 
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://htmls/Proc_of_formation_of_combinations_for_ternary_relation.html" 
+				(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+lib_component_proc_of_formation_of_combinations_for_ternary_relation = [*^"file://proc_of_formation_of_combinations_for_ternary_relation.scsi"*];;
+
