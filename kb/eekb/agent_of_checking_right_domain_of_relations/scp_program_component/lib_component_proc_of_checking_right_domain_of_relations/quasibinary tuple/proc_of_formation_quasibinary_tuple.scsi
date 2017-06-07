@@ -1,0 +1,284 @@
+scp_program -> proc_of_formation_quasibinary_tuple (* 
+	-> rrel_params: ..proc_quasi_binary_params (*
+		-> rrel_1: rrel_in: _cntv;;
+		-> rrel_2: rrel_in: _answer;;
+		-> rrel_3: rrel_in: _struct;;
+		*);;
+
+	-> rrel_operators: ..proc_quasi_binary_operators (*
+		-> rrel_init: .proc_of_formation_quasibinary_tuple_operatorA1 (*
+			<- searchElStr3;; 
+
+			-> rrel_1: rrel_assign: rrel_scp_var: rrel_norole_relation: _role;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _cntv;;
+
+			=> nrel_then: .proc_of_formation_quasibinary_tuple_operatorA2;;
+			=> nrel_else: .proc_of_formation_quasibinary_tuple_return;;
+			*);;
+
+		-> .proc_of_formation_quasibinary_tuple_operatorA2 (*
+			<- searchElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _role;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _elem;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_first_domain;;
+
+			=> nrel_then: .proc_of_formation_quasibinary_tuple_operatorA3;;
+			=> nrel_else: .proc_of_formation_quasibinary_tuple_return;;
+			*);;
+
+		-> .proc_of_formation_quasibinary_tuple_operatorA3 (*
+			<- searchElStr5;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: _first_domains;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _elem;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_boolean;;
+
+			=> nrel_then: .proc_of_formation_quasibinary_tuple_operatorA4;;
+			=> nrel_else: .proc_of_formation_quasibinary_tuple_return;;
+			*);;
+
+		-> .proc_of_formation_quasibinary_tuple_operatorA4 (*
+			<- genEl;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: rrel_node: _second_domains;;
+
+			=> nrel_goto: .proc_of_formation_quasibinary_tuple_operatorA5;;
+			*);;
+
+		-> .proc_of_formation_quasibinary_tuple_operatorA5 (*
+			<- call;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: proc_of_generating_set_of_domains;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: ... (*
+				-> rrel_1: rrel_fixed: rrel_scp_var: _role;;
+				-> rrel_2: rrel_fixed: rrel_scp_var: _second_domains;;
+				-> rrel_3: rrel_fixed: rrel_scp_const: nrel_second_domain;;
+				*);;
+			-> rrel_3: rrel_assign: rrel_scp_var: _descr;;
+
+			=> nrel_goto: .proc_of_formation_quasibinary_tuple_operatorA6;;
+			*);;
+
+		-> .proc_of_formation_quasibinary_tuple_operatorA6 (*
+			<- waitReturn;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _descr;;
+
+			=> nrel_goto: .proc_of_formation_quasibinary_tuple_operatorA7;;
+			*);;
+
+		-> .proc_of_formation_quasibinary_tuple_operatorA7 (*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: _first;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _cntv;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _second;;
+
+			=> nrel_then: .proc_of_formation_quasibinary_tuple_operatorB1;;
+			=> nrel_else: .proc_of_formation_quasibinary_tuple_return;;
+			*);;
+
+		-> .proc_of_formation_quasibinary_tuple_operatorB1 (*
+			<- searchSetStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _first;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _node;;
+
+			-> rrel_set_3: rrel_assign: rrel_scp_var: _set;;
+
+			=> nrel_then: .proc_of_formation_quasibinary_tuple_operatorB2;;
+			=> nrel_else: .proc_of_formation_quasibinary_tuple_return;;
+			*);;
+
+		-> .proc_of_formation_quasibinary_tuple_operatorB2 (*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _set;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _node;;
+
+			=> nrel_then: .proc_of_formation_quasibinary_tuple_operatorB3;;
+			=> nrel_else: .proc_of_formation_quasibinary_tuple_operatorC1;;
+			*);;
+
+		-> .proc_of_formation_quasibinary_tuple_operatorB3 (*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _arc;;
+
+			=> nrel_goto: .proc_of_formation_quasibinary_tuple_operatorB4;;
+			*);;
+
+		-> .proc_of_formation_quasibinary_tuple_operatorB4 (*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _first_domains;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _node;;
+
+			=> nrel_then: .proc_of_formation_quasibinary_tuple_operatorB2;;
+			=> nrel_else: .proc_of_formation_quasibinary_tuple_operatorZ1;;
+			*);;
+
+		-> .proc_of_formation_quasibinary_tuple_operatorC1 (*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _second_domains;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _node;;
+
+			=> nrel_then: .proc_of_formation_quasibinary_tuple_operatorC2;;
+			=> nrel_else: .proc_of_formation_quasibinary_tuple_operatorZ1;;
+			*);;
+
+		-> .proc_of_formation_quasibinary_tuple_operatorC2 (*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _arc;;
+
+			=> nrel_goto: .proc_of_formation_quasibinary_tuple_operatorC3;;
+			*);;
+
+		-> .proc_of_formation_quasibinary_tuple_operatorC3 (*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _node;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _second;;
+
+			=> nrel_then: .proc_of_formation_quasibinary_tuple_return;;
+			=> nrel_else: .proc_of_formation_quasibinary_tuple_operatorC1;;
+			*);;
+
+		-> .proc_of_formation_quasibinary_tuple_operatorZ1 (*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arcs;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _cntv;;
+
+			=> nrel_goto: .proc_of_formation_quasibinary_tuple_operatorZ2;;
+			*);;
+
+		-> .proc_of_formation_quasibinary_tuple_operatorZ2 (*
+			<- searchSetStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _first;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _elem;;
+
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_set_3: rrel_fixed: rrel_scp_var: _answer;;
+
+			=> nrel_then: .proc_of_formation_quasibinary_tuple_operatorZ3;;
+			=> nrel_else: .proc_of_formation_quasibinary_tuple_return;;
+			*);;
+
+		-> .proc_of_formation_quasibinary_tuple_operatorZ3 (*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _first;;
+
+			=> nrel_goto: .proc_of_formation_quasibinary_tuple_operatorZ4;;
+			*);;
+
+		-> .proc_of_formation_quasibinary_tuple_operatorZ4 (*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _second;;
+
+			=> nrel_goto: .proc_of_formation_quasibinary_tuple_operatorZ5;;
+			*);;
+
+		-> .proc_of_formation_quasibinary_tuple_operatorZ5 (*
+			<- searchSetStr3;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: rrel_norole_relation: _role;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _cntv;;
+
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_set_1: rrel_fixed: rrel_scp_var: _answer;;
+
+			=> nrel_then: .proc_of_formation_quasibinary_tuple_operatorZ6;;
+			=> nrel_else: .proc_of_formation_quasibinary_tuple_return;;
+			*);;
+
+		-> .proc_of_formation_quasibinary_tuple_operatorZ6 (*
+			<- searchSetStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _first;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _elem;;
+
+			-> rrel_set_3: rrel_assign: rrel_scp_var: _set;;
+
+			=> nrel_then: .proc_of_formation_quasibinary_tuple_operatorZ7;;
+			=> nrel_else: .proc_of_formation_quasibinary_tuple_operatorZ10;;
+			*);;
+
+		-> .proc_of_formation_quasibinary_tuple_operatorZ7 (*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _set;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _elem;;
+
+			=> nrel_then: .proc_of_formation_quasibinary_tuple_operatorZ8;;
+			=> nrel_else: .proc_of_formation_quasibinary_tuple_operatorZ10;;
+			*);;
+
+		-> .proc_of_formation_quasibinary_tuple_operatorZ8 (*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _arc;;
+
+			=> nrel_goto: .proc_of_formation_quasibinary_tuple_operatorZ9;;
+			*);;
+
+		-> .proc_of_formation_quasibinary_tuple_operatorZ9 (*
+			<- searchSetStr5;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: rrel_not_relation: _node;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _elem;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_var: _struct;;
+
+			-> rrel_set_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer;;
+
+			=> nrel_goto: .proc_of_formation_quasibinary_tuple_operatorZ7;;
+			*);;
+
+		-> .proc_of_formation_quasibinary_tuple_operatorZ10 (*
+			<- searchSetStr5;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: rrel_not_relation: _node;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _second;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_var: _struct;;
+
+			-> rrel_set_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer;;
+
+			=> nrel_goto: .proc_of_formation_quasibinary_tuple_return;;
+			*);;
+
+		-> .proc_of_formation_quasibinary_tuple_return (*
+			<- return;;
+			*);;
+		*);;
+	*);;

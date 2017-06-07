@@ -1,0 +1,415 @@
+agent_of_checking_right_domain_of_relations
+=> nrel_main_idtf:
+	[агентная scp-программа проверки  элементов, участвующих в отношении, на соответствие доменам для указанного отношения] (* <- lang_ru;; *);
+	[agent scp-program of checks the elements involved in relation to the compliance with the domains for the specified relation] (* <- lang_en;; *);
+	<- agent_scp_program;;
+
+scp_program -> agent_of_checking_right_domain_of_relations
+	(*
+	-> rrel_params: .agent_of_checking_right_domain_of_relations_params 
+		(*
+		-> rrel_1: rrel_in: _event;;
+		-> rrel_2: rrel_in: _input_arc;;
+		*);;
+
+	-> rrel_operators: .agent_of_checking_right_domain_of_relations_operator_set 
+		(*
+		-> rrel_init: .agent_of_checking_right_domain_of_relations_operator1A
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: _temp;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _input_arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _quest;;
+
+			=> nrel_goto: .agent_of_checking_right_domain_of_relations_operator1B;;
+			*);;
+				 
+		-> .agent_of_checking_right_domain_of_relations_operator1B
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: action_to_checking_right_domain_of_relations;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _quest;;
+
+			=> nrel_then: .agent_of_checking_right_domain_of_relations_operator2A;;
+			=> nrel_else: .agent_of_checking_right_domain_of_relations_operator_return;;
+			*);;
+
+		-> .agent_of_checking_right_domain_of_relations_operator2A
+			(*
+			<- genEl;;
+
+			-> rrel_1: rrel_assign: rrel_node: rrel_scp_var: rrel_struct: rrel_const: _answer;;
+
+			=> nrel_goto: .agent_of_checking_right_domain_of_relations_operator3A;;
+			*);;
+
+		-> .agent_of_checking_right_domain_of_relations_operator3A
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _struct;;
+
+			=> nrel_goto: .agent_of_checking_right_domain_of_relations_operator2B;;
+			*);;
+
+		-> .agent_of_checking_right_domain_of_relations_operator2B (*
+			<- searchSetStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _struct;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: rrel_norole_relation: _elem;;
+
+			-> rrel_set_3: rrel_assign: rrel_scp_var: _setRoles;;
+
+			=> nrel_then: .agent_of_checking_right_domain_of_relations_operator2;;
+			=> nrel_else: .agent_of_checking_right_domain_of_relations_operator_return;;
+			*);;
+
+		-> .agent_of_checking_right_domain_of_relations_operator2 (*
+			<- genEl;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: rrel_node: _connectives;;
+
+			=> nrel_goto: .agent_of_checking_right_domain_of_relations_operator3;;
+			*);;
+
+		-> .agent_of_checking_right_domain_of_relations_operator3 (*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _setRoles;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _role;;
+
+			=> nrel_then: .agent_of_checking_right_domain_of_relations_operator4;;
+			=> nrel_else: .agent_of_checking_right_domain_of_relations_operatorA2;;
+			*);;
+
+		-> .agent_of_checking_right_domain_of_relations_operator4 (*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _arc;;
+
+			=> nrel_goto: .agent_of_checking_right_domain_of_relations_operator5;;
+			*);;
+
+		-> .agent_of_checking_right_domain_of_relations_operator5 (*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _setRoles;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _role;;
+
+			=> nrel_then: .agent_of_checking_right_domain_of_relations_operator4;;
+			=> nrel_else: .agent_of_checking_right_domain_of_relations_operator6;;
+			*);;
+
+		-> .agent_of_checking_right_domain_of_relations_operator6 (*
+			<- searchSetStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _role;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _elem;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_var: _struct;;
+
+			-> rrel_set_3: rrel_fixed: rrel_scp_var: _connectives;;
+
+			=> nrel_goto: .agent_of_checking_right_domain_of_relations_operator3;;
+			*);;		
+
+		-> .agent_of_checking_right_domain_of_relations_operatorA2 (*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _connectives;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _cntv;;
+
+			=> nrel_then: .agent_of_checking_right_domain_of_relations_operatorA3;;
+			=> nrel_else: .agent_of_checking_right_domain_of_relations_operator_gen_agent_work_result;;
+			*);;
+
+		-> .agent_of_checking_right_domain_of_relations_operatorA3 (*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _arc;;
+
+			=> nrel_goto: .agent_of_checking_right_domain_of_relations_operatorA4;;
+			*);;
+
+		-> .agent_of_checking_right_domain_of_relations_operatorA4 (*
+			<- ifType;; 
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_common: _cntv;;
+
+			=> nrel_then: .agent_of_checking_right_domain_of_relations_operatorAA1;;
+			=> nrel_else: .agent_of_checking_right_domain_of_relations_operatorA5;;
+			*);;
+
+		-> .agent_of_checking_right_domain_of_relations_operatorAA1 (*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: rrel_norole_relation: _role;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _cntv;;
+
+			=> nrel_then: .agent_of_checking_right_domain_of_relations_operatorAA2;;
+			=> nrel_else: .agent_of_checking_right_domain_of_relations_operatorA2;;
+			*);;
+
+		-> .agent_of_checking_right_domain_of_relations_operatorAA2 (*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: binary_relation;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _role;;
+
+			=> nrel_then: .agent_of_checking_right_domain_of_relations_call_binary;;
+			=> nrel_else: .agent_of_checking_right_domain_of_relations_operatorAA3;;
+			*);;
+
+		-> .agent_of_checking_right_domain_of_relations_operatorAA3 (*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: quasybinary_relation;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _role;;
+
+			=> nrel_then: .agent_of_checking_right_domain_of_relations_call_quasi_binary;;
+			=> nrel_else: .agent_of_checking_right_domain_of_relations_operatorA2;;
+			*);;
+
+		-> .agent_of_checking_right_domain_of_relations_call_quasi_binary (*
+			<- call;; //Вызываю программу для проверки бинарных дуг, передам дугу, которую проверить нужно и ответ, куда добавить 
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: proc_of_formation_quasibinary_tuple;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: ... (*
+				-> rrel_1: rrel_fixed: rrel_scp_var: _cntv;;
+				-> rrel_2: rrel_fixed: rrel_scp_var: _answer;;
+				-> rrel_3: rrel_fixed: rrel_scp_var: _struct;;
+				*);;
+			-> rrel_3: rrel_assign: rrel_scp_var: _descr;;
+
+			=> nrel_goto: .agent_of_checking_right_domain_of_relations_wait_quasi_binary;;
+			*);;
+
+		-> .agent_of_checking_right_domain_of_relations_wait_quasi_binary (*
+			<- waitReturn;; //Жду пока проверится бинарная дуга и далее ищу следующую дугу. 
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _descr;;
+
+			=> nrel_goto: .agent_of_checking_right_domain_of_relations_operatorA2;;
+			*);;
+
+		-> .agent_of_checking_right_domain_of_relations_call_binary (*
+			<- call;; //Вызываю программу для проверки бинарных дуг, передам дугу, которую проверить нужно и ответ, куда добавить 
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: proc_of_formation_binary_common_arc;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: ... (*
+				-> rrel_1: rrel_fixed: rrel_scp_var: _cntv;;
+				-> rrel_2: rrel_fixed: rrel_scp_var: _answer;;
+				-> rrel_3: rrel_fixed: rrel_scp_var: _struct;;
+				*);;
+			-> rrel_3: rrel_assign: rrel_scp_var: _descr;;
+
+			=> nrel_goto: .agent_of_checking_right_domain_of_relations_wait_binary;;
+			*);;
+
+		-> .agent_of_checking_right_domain_of_relations_wait_binary (*
+			<- waitReturn;; //Жду пока проверится бинарная дуга и далее ищу следующую дугу. 
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _descr;;
+
+			=> nrel_goto: .agent_of_checking_right_domain_of_relations_operatorA2;;
+			*);;
+
+		-> .agent_of_checking_right_domain_of_relations_operatorA5 (*
+			<- ifType;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_node: _cntv;;
+
+			=> nrel_then: .agent_of_checking_right_domain_of_relations_operatorB1;;
+			=> nrel_else: .agent_of_checking_right_domain_of_relations_call_edge;;
+			*);;
+
+		-> .agent_of_checking_right_domain_of_relations_call_edge (*
+			<- call;; 
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: proc_of_formation_binary_edge_arc;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: ... (*
+				-> rrel_1: rrel_fixed: rrel_scp_var: _cntv;;
+				-> rrel_2: rrel_fixed: rrel_scp_var: _answer;;
+				-> rrel_3: rrel_fixed: rrel_scp_var: _struct;;
+				*);;
+			-> rrel_3: rrel_assign: rrel_scp_var: _descr;;
+
+			=> nrel_goto: .agent_of_checking_right_domain_of_relations_wait_edge;;
+			*);;
+
+		-> .agent_of_checking_right_domain_of_relations_wait_edge (*
+			<- waitReturn;; 
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _descr;;
+
+			=> nrel_goto: .agent_of_checking_right_domain_of_relations_operatorA2;;
+			*);;
+
+		-> .agent_of_checking_right_domain_of_relations_operatorB1 (*
+			<- searchElStr3;; 
+
+			-> rrel_1: rrel_assign: rrel_scp_var: rrel_norole_relation: _role;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _cntv;;
+
+			=> nrel_then: .agent_of_checking_right_domain_of_relations_operatorB2;;
+			=> nrel_else: .agent_of_checking_right_domain_of_relations_operatorA2;;
+			*);;
+
+		-> .agent_of_checking_right_domain_of_relations_operatorB2 (*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: ternary_relation;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _role;;
+
+			=> nrel_then: .agent_of_checking_right_domain_of_relations_call_ternary;;
+			=> nrel_else: .agent_of_checking_right_domain_of_relations_operatorB3;;
+			*);;
+
+		-> .agent_of_checking_right_domain_of_relations_operatorB3 (*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: binary_relation;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _role;;
+
+			=> nrel_then: .agent_of_checking_right_domain_of_relations_call_binary_tuple;;
+			=> nrel_else: .agent_of_checking_right_domain_of_relations_operatorB4;; //Отсюда должен пойти в унарное отношение
+			*);;
+
+		-> .agent_of_checking_right_domain_of_relations_operatorB4 (*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: unary_relation;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _role;;
+
+			=> nrel_then: .agent_of_checking_right_domain_of_relations_call_unary_tuple;;
+			=> nrel_else: .agent_of_checking_right_domain_of_relations_operatorA2;;
+			*);;
+
+		-> .agent_of_checking_right_domain_of_relations_call_binary_tuple (*
+			<- call;; 
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: proc_of_formation_binary_tuple;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: ... (*
+				-> rrel_1: rrel_fixed: rrel_scp_var: _cntv;;
+				-> rrel_2: rrel_fixed: rrel_scp_var: _answer;;
+				-> rrel_3: rrel_fixed: rrel_scp_var: _struct;;
+				*);;
+			-> rrel_3: rrel_assign: rrel_scp_var: _descr;;
+
+			=> nrel_goto: .agent_of_checking_right_domain_of_relations_wait_binary_connection;;
+			*);;
+
+		-> .agent_of_checking_right_domain_of_relations_wait_binary_connection (*
+			<- waitReturn;; 
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _descr;;
+
+			=> nrel_goto: .agent_of_checking_right_domain_of_relations_operatorA2;;
+			*);;
+
+		-> .agent_of_checking_right_domain_of_relations_call_unary_tuple (*
+			<- call;; 
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: proc_of_formation_unary_tuple;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: ... (*
+				-> rrel_1: rrel_fixed: rrel_scp_var: _cntv;;
+				-> rrel_2: rrel_fixed: rrel_scp_var: _answer;;
+				-> rrel_3: rrel_fixed: rrel_scp_var: _struct;;
+				*);;
+			-> rrel_3: rrel_assign: rrel_scp_var: _descr;;
+
+			=> nrel_goto: .agent_of_checking_right_domain_of_relations_wait_unary_connection;;
+			*);;
+
+		-> .agent_of_checking_right_domain_of_relations_wait_unary_connection (*
+			<- waitReturn;; 
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _descr;;
+
+			=> nrel_goto: .agent_of_checking_right_domain_of_relations_operatorA2;;
+			*);;
+
+		-> .agent_of_checking_right_domain_of_relations_call_ternary (*
+			<- call;; 
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: proc_of_formation_of_combinations_for_ternary_relation;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: ... (*
+				-> rrel_1: rrel_fixed: rrel_scp_var: _cntv;;
+				-> rrel_2: rrel_fixed: rrel_scp_var: _answer;;
+				-> rrel_3: rrel_fixed: rrel_scp_var: _role;;
+				-> rrel_4: rrel_fixed: rrel_scp_var: _struct;;
+				*);;
+			-> rrel_3: rrel_assign: rrel_scp_var: _descr;;
+
+			=> nrel_goto: .agent_of_checking_right_domain_of_relations_call_ternary_wait;;
+			*);;
+
+		-> .agent_of_checking_right_domain_of_relations_call_ternary_wait (*
+			<- waitReturn;; 
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _descr;;
+
+			=> nrel_goto: .agent_of_checking_right_domain_of_relations_operatorA2;;
+			*);;		
+
+		-> .agent_of_checking_right_domain_of_relations_operator_gen_agent_work_result
+			(*
+			<- call;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: proc_of_generation_of_verification_answer;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: .agent_of_checking_right_domain_of_relations_operator_gen_agent_work_result_params 
+				(*
+				-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+				-> rrel_2: rrel_fixed: rrel_scp_const: action_to_checking_right_domain_of_relations;;
+				-> rrel_3: rrel_fixed: rrel_scp_var: _answer;;
+				-> rrel_4: rrel_fixed: rrel_scp_const: struct_of_wrong_using_of_relations;;
+				*);;
+			-> rrel_3: rrel_assign: rrel_scp_var: _descr3;;
+
+			=> nrel_goto: .agent_of_checking_right_domain_of_relations_operator_waitreturn_generation_agent_work_result;;
+			*);;
+
+		-> .agent_of_checking_right_domain_of_relations_operator_waitreturn_generation_agent_work_result
+			(*
+			<- waitReturn;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _descr3;;
+
+			=> nrel_goto: .agent_of_checking_right_domain_of_relations_operator6A;;
+			*);;
+
+		-> .agent_of_checking_right_domain_of_relations_operator6A
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: question_finished_successfully;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: rrel_const: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _quest;;
+
+			=> nrel_goto: .agent_of_checking_right_domain_of_relations_operator_return;; 
+			*);;
+
+		-> .agent_of_checking_right_domain_of_relations_operator_return
+			(*
+			<- return;;
+			*);;
+		*);;
+	*);;
+
