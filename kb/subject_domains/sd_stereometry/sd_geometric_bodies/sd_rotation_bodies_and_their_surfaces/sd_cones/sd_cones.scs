@@ -1,0 +1,37 @@
+sc_node_struct -> subject_domain_of_cones;;
+
+subject_domain_of_cones
+=> nrel_main_idtf:
+	[Предметная область конусов]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Subject domain of cones]
+	(* <- lang_en;; *);;
+
+subject_domain_of_cones -> rrel_maximum_studied_object_class: concept_cone;;
+
+subject_domain_of_cones -> rrel_not_maximum_studied_object_class: 
+	concept_conical_surface;
+	concept_truncated_cone;;
+
+subject_domain_of_cones -> rrel_explored_relation: 
+	nrel_axis_of_cone;
+	nrel_axis_of_conical_surface;
+	nrel_axis_of_truncated_cone;
+	nrel_base_of_cone;
+	nrel_base_of_truncated_cone;
+	nrel_element_of_cone;
+	nrel_element_of_truncated_cone;
+	nrel_generatric;
+	nrel_generatrix_of_conical_surface;
+	nrel_height_of_cone;
+	nrel_height_of_truncated_cone;
+	nrel_lateral_surface_of_cone;
+	nrel_lateral_surface_of_truncated_cone;
+	nrel_lower_base_of_truncated_cone;
+	nrel_top_surface_of_truncated_cone;
+	nrel_vertex_of_cone;
+	nrel_vertex_of_conical_surface;
+	nrel_volume;;
+
+subject_domain_of_cones <- subject_domain;;

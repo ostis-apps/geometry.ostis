@@ -1,0 +1,49 @@
+sc_node_struct -> subject_domain_of_spheres_and_balls;;
+
+subject_domain_of_spheres_and_balls
+=> nrel_main_idtf:
+	[Предметная область сфер и шаров]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Subject domain of spheres and balls]
+	(* <- lang_en;; *);;
+
+subject_domain_of_spheres_and_balls -> rrel_maximum_studied_object_class: 
+	concept_sphere;
+	concept_ball;;
+
+subject_domain_of_spheres_and_balls -> rrel_not_maximum_studied_object_class: 
+	concept_segment_of_ball;
+	concept_segment_of_sphere;
+	concept_spheric_sector;
+	concept_spherical_layer;
+	concept_zone_of_sphere;;
+
+subject_domain_of_spheres_and_balls -> rrel_explored_relation: 
+	nrel_axial_section_of_solid_of_revolution;
+	nrel_base_of_segment_of_ball;
+	nrel_base_of_segment_of_sphere;
+	nrel_base_of_solid_of_revolution;
+	nrel_base_of_spherical_layer;
+	nrel_base_of_zone_of_sphere;
+	nrel_element_of_solid_of_revolution;
+	nrel_center_of_symmetry;
+	nrel_chord_of_ball;
+	nrel_chord_of_sphere;
+	nrel_diameter_of_ball;
+	nrel_diameter_of_sphere;
+	nrel_great_circle;
+	nrel_great_round;
+	nrel_height_of_segment_of_ball;
+	nrel_height_of_spheric_sector;
+	nrel_height_of_spherical_layer;
+	nrel_height_of_zone_of_sphere;
+	nrel_line_of_symmetry;
+	nrel_plane_of_symmetry;
+	nrel_radius_of_ball;
+	nrel_radius_of_sphere;
+	nrel_concentric;
+	nrel_diametral_plane;
+	nrel_axis_of_solid_of_revolution;;
+
+subject_domain_of_spheres_and_balls <- subject_domain;;

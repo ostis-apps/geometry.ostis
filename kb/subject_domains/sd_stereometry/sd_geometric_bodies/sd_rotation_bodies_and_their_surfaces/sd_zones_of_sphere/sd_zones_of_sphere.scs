@@ -1,0 +1,21 @@
+sc_node_struct -> subject_domain_of_zones_of_sphere;;
+
+subject_domain_of_zones_of_sphere
+=> nrel_main_idtf:
+	[Предметная область сферических поясов]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Subject domain of zones of sphere]
+	(* <- lang_en;; *);;
+
+subject_domain_of_zones_of_sphere -> rrel_maximum_studied_object_class: 
+	concept_zone_of_sphere;;
+
+subject_domain_of_zones_of_sphere -> rrel_explored_relation: 
+	nrel_base_of_zone_of_sphere;
+	nrel_center_of_symmetry;
+	nrel_height_of_zone_of_sphere;
+	nrel_line_of_symmetry;
+	nrel_plane_of_symmetry;;
+
+subject_domain_of_zones_of_sphere <- subject_domain;;
