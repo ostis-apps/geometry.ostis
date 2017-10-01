@@ -1,0 +1,18 @@
+s_prisms
+=> nrel_main_idtf:
+	[Раздел. Призмы]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Section. Prisms]
+	(* <- lang_en;; *);
+
+<- non_atomic_section;
+
+<= nrel_section_decomposition:
+	{
+		s_sd_of_prisms
+		(*
+		=> nrel_section_base_order: 
+			s_sd_of_regular_prisms;;
+		*);
+		

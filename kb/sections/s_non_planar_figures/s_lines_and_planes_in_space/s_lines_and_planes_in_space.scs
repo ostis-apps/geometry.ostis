@@ -1,0 +1,23 @@
+s_lines_and_planes_in_space
+=> nrel_main_idtf:
+	[Раздел. Прямые и плоскости в пространстве]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Section. Straight lines and planes in space]
+	(* <- lang_en;; *);
+
+<- non_atomic_section;
+
+<= nrel_section_decomposition:
+	{
+		s_mutual_location_of_lines_in_space
+		(*
+		=> nrel_section_base_order: 
+			s_mutual_location_of_planes;;
+		*);
+		
+		s_mutual_location_of_planes
+		(*
+		=> nrel_section_base_order: 
+			s_mutual_location_of_line_and_plane_in_space;;
+		*);

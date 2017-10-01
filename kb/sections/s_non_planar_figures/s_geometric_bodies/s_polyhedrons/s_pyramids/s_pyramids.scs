@@ -1,23 +1,23 @@
-s_non_planar_figures
+s_pyramids
 => nrel_main_idtf:
-	[Раздел. Непланарные фигуры]
+	[Раздел. Пирамиды]
 	(* <- lang_ru;; *);
 => nrel_main_idtf:
-	[Section. Non planar figures]
+	[Section. Pyramids]
 	(* <- lang_en;; *);
 
 <- non_atomic_section;
 
 <= nrel_section_decomposition:
 	{
-		s_lines_and_planes_in_space
+		s_sd_of_pyramids
 		(*
 		=> nrel_section_base_order: 
-			s_non_planar_angles;;
+			s_sd_of_truncated_pyramids;;
 		*);
 		
-		s_non_planar_angles
+		s_sd_of_truncated_pyramids
 		(*
 		=> nrel_section_base_order: 
-			s_geometric_bodies;;
+			s_sd_of_triangular_pyramids;;
 		*);

@@ -1,0 +1,17 @@
+s_cones
+=> nrel_main_idtf:
+	[Раздел. Конусы]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Section. Сones]
+	(* <- lang_en;; *);
+
+<- non_atomic_section;
+
+<= nrel_section_decomposition:
+	{
+		s_sd_of_cones
+		(*
+		=> nrel_section_base_order: 
+			s_sd_of_truncated_cones;;
+		*);

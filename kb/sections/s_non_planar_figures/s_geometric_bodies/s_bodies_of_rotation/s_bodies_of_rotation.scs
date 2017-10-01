@@ -1,0 +1,29 @@
+s_bodies_of_rotation
+=> nrel_main_idtf:
+	[Раздел. Тела вращения]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Section. Bodies of rotation]
+	(* <- lang_en;; *);
+
+<- non_atomic_section;
+
+<= nrel_section_decomposition:
+	{
+		s_sd_bodies_of_rotation
+		(*
+		=> nrel_section_base_order: 
+			s_sd_cylinders;;
+		*);
+		
+		s_sd_cylinders
+		(*
+		=> nrel_section_base_order: 
+			s_cones;;
+		*);
+
+		s_cones
+		(*
+		=> nrel_section_base_order: 
+			s_spheres_and_balls;;
+		*);
