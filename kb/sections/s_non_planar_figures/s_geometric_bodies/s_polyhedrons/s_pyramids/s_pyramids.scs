@@ -10,17 +10,17 @@ s_pyramids
 
 <= nrel_section_decomposition:
 	{
-		s_sd_of_pyramids
+		s_sd_pyramids
 		(*
 		=> nrel_section_base_order: 
-			s_sd_of_truncated_pyramids;;
+			s_sd_truncated_pyramids;;
 		*);
 		
-		s_sd_of_truncated_pyramids
+		s_sd_truncated_pyramids
 		(*
 		=> nrel_section_base_order: 
-			s_sd_of_triangular_pyramids;;
+			s_sd_triangular_pyramids;;
 		*);
 		
-		s_sd_of_triangular_pyramids
+		s_sd_triangular_pyramids
 	};;
