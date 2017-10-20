@@ -1,0 +1,50 @@
+sc_agent_for_calculating_the_number_of_steps_for_solving_a_task
+=> nrel_main_idtf:
+	[агентная scp-программа подсчёта количества шагов решения задачи.] (* <- lang_ru;; *);
+	[agent scp-program for calculating the number of steps for solving a task.] (* <- lang_en;; *);
+	
+<- abstract_sc_agent;
+
+=> nrel_primary_initiation_condition: 
+	(sc_event_add_output_arc => question_initiated);
+	
+=> nrel_initiation_condition_and_result: 
+	(..sc_agent_for_calculating_the_number_of_steps_for_solving_a_task_condition => ..sc_agent_for_calculating_the_number_of_steps_for_solving_a_task_result);
+	
+<= nrel_sc_agent_key_sc_elements: 
+	{
+	question_initiated;
+	question;
+	action_for_calculating_the_number_of_steps_for_solving_a_task
+	};
+	
+=> nrel_inclusion: 
+	.platform_independent_realization_of_sc_agent_for_calculating_the_number_of_steps_for_solving_a_task
+	(*
+	<- platform_independent_abstract_sc_agent;;
+	<= nrel_sc_agent_program: 
+		{
+		agent_for_calculating_the_number_of_steps_for_solving_a_task;
+        proc_of_finding_the_cardinality
+		};;
+		
+	-> sc_agent_for_calculating_the_number_of_steps_for_solving_a_task_scp 
+		(* <- active_sc_agent;; *);;
+	*);;
+
+..sc_agent_for_calculating_the_number_of_steps_for_solving_a_task_condition
+= [*
+	action_of_counting_action_for_pointing_essence _-> .._question;;
+	question_initiated _-> .._question;;
+	question _-> .._question;;
+	.._question _-> .._parameter1;;
+*];;
+
+..sc_agent_for_calculating_the_number_of_steps_for_solving_a_task_result
+= [*
+	action_of_counting_action_for_pointing_essence _-> .._question;;
+	question_finished _-> .._question;;
+	question _-> .._question;;
+	.._question _=> nrel_answer:: .._answer;;
+	.._question _-> .._parameter1;;
+*];;

@@ -1,0 +1,26 @@
+s_geometric_bodies
+=> nrel_main_idtf:
+	[Раздел. Геометрические тела]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Section. Geometric bodies]
+	(* <- lang_en;; *);
+
+<- non_atomic_section;
+
+<= nrel_section_decomposition:
+	{
+		s_sd_geometric_bodies
+		(*
+		=> nrel_section_base_order: 
+			s_polyhedrons;;
+		*);
+		
+		s_polyhedrons
+		(*
+		=> nrel_section_base_order: 
+			s_bodies_of_rotation;;
+		*);
+		
+		s_bodies_of_rotation
+	};;

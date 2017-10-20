@@ -1,0 +1,30 @@
+lib_component_agent_of_identification_two_elements
+=> nrel_main_idtf:
+	[Компонент библиотеки. Sc-агент поиска теоретико-множественной отнологии]
+	(* <- lang_ru;; *);
+	[Library component. Sc-agent of set-theoretic ontology]
+	(* <- lang_en;; *);
+
+<- library_of_platform_independent_reusable_components; 
+<- library_of_atomic_reusable_components; 
+
+=> nrel_attendant_component: 
+	lib_component_ui_menu_file_for_identification_two_elements;
+
+-> rrel_key_sc_element: 
+	.platform_independent_realization_of_sc_agent_ontology;
+
+<- rrel_key_sc_element: 
+	...
+	(*
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://htmls/Agent_Of_Identificathio_two_elements.html"
+				(* <- lang_ru;; *);; 
+		*);;
+	*);;
+
+

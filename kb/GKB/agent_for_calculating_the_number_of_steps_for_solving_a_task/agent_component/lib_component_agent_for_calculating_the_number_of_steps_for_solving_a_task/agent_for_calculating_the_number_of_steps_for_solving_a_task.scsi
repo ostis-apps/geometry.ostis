@@ -1,0 +1,732 @@
+agent_for_calculating_the_number_of_steps_for_solving_a_task
+=> nrel_main_idtf:
+    [агентная scp-программа подсчёта количества шагов решения задачи.] (* <- lang_ru;; *);
+    [agent scp-program of calculating the number of steps for solving a task.] (* <- lang_en;; *);
+    <- agent_scp_program;;
+
+scp_program -> agent_for_calculating_the_number_of_steps_for_solving_a_task
+(*
+    -> rrel_params: .agent_of_change_arc_direction_params 
+        (*
+        -> rrel_1: rrel_in: _event;;
+        -> rrel_2: rrel_in: _input_arc;;
+        *);;
+
+    -> rrel_operators: .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator_set 
+        (*
+        -> rrel_init: .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator1A
+            (*
+            <- searchElStr3;;
+
+            -> rrel_1: rrel_assign: rrel_scp_var: _temp;;
+            -> rrel_2: rrel_fixed: rrel_scp_var: _input_arc;;
+            -> rrel_3: rrel_assign: rrel_scp_var: _quest;;
+
+            => nrel_goto: .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator1B;;
+            *);;
+
+        -> .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator1B
+            (*
+            <- searchElStr3;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_const: action_of_calculating_the_number_of_steps_for_solving_a_task;;
+            -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+            -> rrel_3: rrel_fixed: rrel_scp_var: _quest;;
+
+            => nrel_then: .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator1C;;
+            => nrel_else: .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator_return;;
+            *);;
+        
+        -> .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator1C
+            (*
+            <- searchElStr3;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+            -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+            -> rrel_3: rrel_assign: rrel_scp_var: _param;;
+
+            => nrel_then: .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator2A;;
+            => nrel_else: .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator_return;;
+            *);;
+
+        -> .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator2A
+            (*
+            <- genEl;;
+
+            -> rrel_1: rrel_node: rrel_assign: rrel_const: rrel_scp_var: _answer_of_calculating_the_number_of_steps_for_solving_a_task;;
+
+            => nrel_goto: .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator3A;;
+            *);;
+
+        -> .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator3A
+            (*
+            <- searchElStr3;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_const: definition;;
+            -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+            -> rrel_3: rrel_fixed: rrel_scp_var: _param;;
+
+            => nrel_then: .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator3A_add_to_answer1;;
+            => nrel_else: .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator3B;;
+            *);;
+
+        -> .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator3A_add_to_answer1
+            (*
+            <- searchSetStr3;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_const: definition;;
+            -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+            -> rrel_3: rrel_fixed: rrel_scp_var: _param;;
+
+            -> rrel_set_2: rrel_fixed: rrel_scp_var: _answer_of_calculating_the_number_of_steps_for_solving_a_task;;
+
+            => nrel_goto: .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator3A_add_to_answer2;;
+            *);;
+
+        -> .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator3A_add_to_answer2
+            (*
+            <- genElStr3;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_calculating_the_number_of_steps_for_solving_a_task;;
+            -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+            -> rrel_3: rrel_fixed: rrel_scp_const: definition;;
+
+            => nrel_goto: .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator4A;;
+            *);;
+
+        -> .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator3B
+            (*
+            <- searchElStr3;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_const: statement;;
+            -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+            -> rrel_3: rrel_fixed: rrel_scp_var: _param;;
+
+            => nrel_then: .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator3B_add_to_answer1;;
+            => nrel_else: .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator3C;;
+            *);;
+
+        -> .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator3B_add_to_answer1
+            (*
+            <- searchSetStr3;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_const: statement;;
+            -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+            -> rrel_3: rrel_fixed: rrel_scp_var: _param;;
+
+            -> rrel_set_2: rrel_fixed: rrel_scp_var: _answer_of_calculating_the_number_of_steps_for_solving_a_task;;
+
+            => nrel_goto: .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator3B_add_to_answer2;;
+            *);;
+
+        -> .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator3B_add_to_answer2
+            (*
+            <- genElStr3;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_calculating_the_number_of_steps_for_solving_a_task;;
+            -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+            -> rrel_3: rrel_fixed: rrel_scp_const: statement;;
+
+            => nrel_goto: .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator4A;;
+            *);;
+
+        -> .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator3C
+            (*
+            <- searchElStr3;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_const: question;;
+            -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+            -> rrel_3: rrel_fixed: rrel_scp_var: _param;;
+
+            => nrel_then: .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator3C_add_to_answer1;;
+            => nrel_else: .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator_return;;
+            *);;
+
+        -> .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator3C_add_to_answer1
+            (*
+            <- searchSetStr3;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_const: question;;
+            -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+            -> rrel_3: rrel_fixed: rrel_scp_var: _param;;
+
+            -> rrel_set_2: rrel_fixed: rrel_scp_var: _answer_of_calculating_the_number_of_steps_for_solving_a_task;;
+
+            => nrel_goto: .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator3C_add_to_answer2;;
+            *);;
+
+        -> .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator3C_add_to_answer2
+            (*
+            <- genElStr3;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_calculating_the_number_of_steps_for_solving_a_task;;
+            -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+            -> rrel_3: rrel_fixed: rrel_scp_const: question;;
+
+            => nrel_goto: .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator4A;;
+            *);;
+
+        -> .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator4A
+            (*
+            <- searchElStr5;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_var: _param;;
+            -> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
+            -> rrel_3: rrel_assign: rrel_scp_var: _node_of_main_proof;;
+            -> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+            -> rrel_5: rrel_fixed: rrel_scp_const: nrel_main_proof;;
+
+            => nrel_then: .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator4A_add_to_answer1;;
+            => nrel_else: .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator4B;;
+            *);;
+
+        -> .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator4A_add_to_answer1
+            (*
+            <- searchSetStr5;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_var: _param;;
+            -> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
+            -> rrel_3: rrel_assign: rrel_scp_var: _node_of_main_proof;;
+            -> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+            -> rrel_5: rrel_fixed: rrel_scp_const: nrel_main_proof;;
+
+            -> rrel_set_2: rrel_fixed: rrel_scp_var: _answer_of_calculating_the_number_of_steps_for_solving_a_task;;
+            -> rrel_set_4: rrel_fixed: rrel_scp_var: _answer_of_calculating_the_number_of_steps_for_solving_a_task;;
+
+            => nrel_then: .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator4A_add_to_answer2;;
+            => nrel_else: .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator4B;;
+            *);;
+
+        -> .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator4A_add_to_answer2
+            (*
+            <- genElStr3;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_calculating_the_number_of_steps_for_solving_a_task;;
+            -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+            -> rrel_3: rrel_fixed: rrel_scp_var: _node_of_main_proof;;
+
+            => nrel_goto: .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator4A_add_to_answer3;;
+            *);;
+
+        -> .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator4A_add_to_answer3
+            (*
+            <- genElStr3;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_calculating_the_number_of_steps_for_solving_a_task;;
+            -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+            -> rrel_3: rrel_fixed: rrel_scp_const: nrel_main_proof;;
+
+            => nrel_goto: .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator4C;;
+            *);;
+
+        -> .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator4B
+            (*
+            <- searchElStr5;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_var: _param;;
+            -> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
+            -> rrel_3: rrel_assign: rrel_scp_var: _node_of_main_proof;;
+            -> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+            -> rrel_5: rrel_fixed: rrel_scp_const: nrel_solution;;
+
+            => nrel_then: .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator4B_add_to_answer1;;
+            => nrel_else: .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator_return;;
+            *);;
+
+        -> .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator4B_add_to_answer1
+            (*
+            <- searchSetStr5;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_var: _param;;
+            -> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
+            -> rrel_3: rrel_fixed: rrel_scp_var: _node_of_main_proof;;
+            -> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+            -> rrel_5: rrel_fixed: rrel_scp_const: nrel_solution;;
+
+            -> rrel_set_2: rrel_fixed: rrel_scp_var: _answer_of_calculating_the_number_of_steps_for_solving_a_task;;
+            -> rrel_set_4: rrel_fixed: rrel_scp_var: _answer_of_calculating_the_number_of_steps_for_solving_a_task;;
+
+            => nrel_then: .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator4B_add_to_answer2;;
+            => nrel_else: .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator_return;;
+            *);;
+
+        -> .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator4B_add_to_answer2
+            (*
+            <- genElStr3;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_calculating_the_number_of_steps_for_solving_a_task;;
+            -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+            -> rrel_3: rrel_fixed: rrel_scp_var: _node_of_main_proof;;
+
+            => nrel_goto: .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator4B_add_to_answer3;;
+            *);;
+
+        -> .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator4B_add_to_answer3
+            (*
+            <- genElStr3;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_calculating_the_number_of_steps_for_solving_a_task;;
+            -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+            -> rrel_3: rrel_fixed: rrel_scp_const: nrel_solution;;
+
+            => nrel_goto: .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator4C;;
+            *);;
+
+        -> .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator4C
+            (*
+            <- searchElStr5;;
+
+            -> rrel_1: rrel_assign: rrel_scp_var: _node_of_actions;;
+            -> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
+            -> rrel_3: rrel_fixed: rrel_scp_var: _node_of_main_proof;;
+            -> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+            -> rrel_5: rrel_fixed: rrel_scp_const: nrel_decomposition_of_action;;
+
+            => nrel_then: .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator4C_add_to_answer1;;
+            => nrel_else: .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator_return;;
+            *);;
+
+        -> .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator4C_add_to_answer1
+            (*
+            <- searchSetStr5;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_var: _node_of_actions;;
+            -> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
+            -> rrel_3: rrel_fixed: rrel_scp_var: _node_of_main_proof;;
+            -> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+            -> rrel_5: rrel_fixed: rrel_scp_const: nrel_decomposition_of_action;;
+
+            -> rrel_set_2: rrel_fixed: rrel_scp_var: _answer_of_calculating_the_number_of_steps_for_solving_a_task;;
+            -> rrel_set_4: rrel_fixed: rrel_scp_var: _answer_of_calculating_the_number_of_steps_for_solving_a_task;;
+
+            => nrel_then: .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator4C_add_to_answer2;;
+            => nrel_else: .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator_return;;
+            *);;
+
+        -> .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator4C_add_to_answer2
+            (*
+            <- genElStr3;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_calculating_the_number_of_steps_for_solving_a_task;;
+            -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+            -> rrel_3: rrel_fixed: rrel_scp_var: _node_of_actions;;
+
+            => nrel_goto: .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator4C_add_to_answer3;;
+            *);;
+
+        -> .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator4C_add_to_answer3
+            (*
+            <- genElStr3;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_calculating_the_number_of_steps_for_solving_a_task;;
+            -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+            -> rrel_3: rrel_fixed: rrel_scp_const: nrel_decomposition_of_action;;
+
+            => nrel_goto: .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator4D;;
+            *);;
+
+        -> .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator4D
+            (*
+            <- searchSetStr3;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_var: _node_of_actions;;
+            -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+            -> rrel_3: rrel_assign: rrel_scp_var: _action_node;;
+
+            -> rrel_set_3: rrel_assign: rrel_scp_var: _set;;
+
+            => nrel_then: .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator4D_add_to_answer1;;
+            => nrel_else: .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator_return;;
+            *);;
+
+        -> .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator4D_add_to_answer1
+            (*
+            <- searchSetStr3;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_var: _node_of_actions;;
+            -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+            -> rrel_3: rrel_assign: rrel_scp_var: _action_node;;
+
+            -> rrel_set_2: rrel_fixed: rrel_scp_var: _answer_of_calculating_the_number_of_steps_for_solving_a_task;;
+            -> rrel_set_3: rrel_fixed: rrel_scp_var: _answer_of_calculating_the_number_of_steps_for_solving_a_task;;
+
+            => nrel_then: .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator5A;;
+            => nrel_else: .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator_return;;
+            *);;
+
+        -> .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator5A
+            (*
+            <- genEl;;
+
+            -> rrel_1: rrel_node: rrel_assign: rrel_scp_var: rrel_const: _set_of_actions;;
+
+            => nrel_goto: .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator5B;;
+            *);;
+
+        -> .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator5B
+            (*
+            <- genElStr3;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_const: set;;
+            -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+            -> rrel_3: rrel_fixed: rrel_scp_var: _set_of_actions;;
+
+            => nrel_goto: .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator5B_add_to_answer1;;
+            *);;
+
+        -> .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator5B_add_to_answer1
+            (*
+            <- searchSetStr3;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_const: set;;
+            -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+            -> rrel_3: rrel_fixed: rrel_scp_var: _set_of_actions;;
+
+            -> rrel_set_2: rrel_fixed: rrel_scp_var: _answer_of_calculating_the_number_of_steps_for_solving_a_task;;
+
+            => nrel_goto: .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator5B_add_to_answer2;;
+            *);;
+
+        -> .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator5B_add_to_answer2
+            (*
+            <- genElStr3;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_calculating_the_number_of_steps_for_solving_a_task;;
+            -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+            -> rrel_3: rrel_fixed: rrel_scp_var: _set_of_actions;;
+
+            => nrel_goto: .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator5B_add_to_answer3;;
+            *);;
+
+        -> .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator5B_add_to_answer3
+            (*
+            <- genElStr3;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_calculating_the_number_of_steps_for_solving_a_task;;
+            -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+            -> rrel_3: rrel_fixed: rrel_scp_const: set;;
+
+            => nrel_goto: .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator6A;;
+            *);;
+
+        -> .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator6A
+            (*
+            <- searchElStr3;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_var: _set;;
+            -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+            -> rrel_3: rrel_assign: rrel_scp_var: _action_node;;
+
+            => nrel_then: .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator6B;;
+            => nrel_else: .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator7A;;
+            *);;
+
+        -> .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator6B
+            (*
+            <- eraseEl;;
+
+            -> rrel_1: rrel_erase: rrel_fixed: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+
+            => nrel_goto: .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator6C;;
+            *);;
+
+        -> .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator6C
+            (*
+            <- searchElStr3;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_const: action;;
+            -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+            -> rrel_3: rrel_fixed: rrel_scp_var: _action_node;;
+
+            => nrel_then: .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator6D;;
+            => nrel_else: .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator6A;;
+            *);;
+
+        -> .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator6D
+            (*
+            <- genElStr3;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_var: _set_of_actions;;
+            -> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+            -> rrel_3: rrel_fixed: rrel_scp_var: _action_node;;
+
+            => nrel_goto: .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator6A;;
+            *);;
+
+        -> .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator7A
+            (*
+            <- contAssign;;
+
+            -> rrel_1: rrel_assign: rrel_scp_var: rrel_link: _arity_of_set;;
+            -> rrel_2: rrel_fixed: rrel_scp_const: [0];;
+
+            => nrel_goto: .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator8A;;
+            *);;
+
+        -> .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator8A
+            (*
+            <- call;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_const: proc_of_finding_the_cardinality;;
+            -> rrel_2: rrel_fixed: rrel_scp_const: .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator8A_params 
+                (*
+                -> rrel_1: rrel_fixed: rrel_scp_var: _set_of_actions;;
+                -> rrel_2: rrel_fixed: rrel_scp_var: _arity_of_set;;
+                *);;
+            -> rrel_3: rrel_assign: rrel_scp_var: _descr1;;
+
+            => nrel_goto: .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator8B;;
+            *);;
+
+        -> .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator8B    
+            (*
+            <- waitReturn;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_var: _descr1;;
+
+            => nrel_goto: .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator9A;;
+            *);;
+
+        -> .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator9A
+            (*
+            <- genEl;;
+
+            -> rrel_1: rrel_node: rrel_assign: rrel_scp_var: rrel_const: _node_of_number;;
+
+            => nrel_goto: .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator9B;;
+            *);;
+
+        -> .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator9B
+            (*
+            <- genEl;;
+
+            -> rrel_1: rrel_node: rrel_assign: rrel_scp_var: rrel_const: _node_of_idtf;;
+
+            => nrel_goto: .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator9B_add_to_answer1;;
+            *);;
+
+        -> .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator9B_add_to_answer1
+            (*
+            <- genElStr3;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_calculating_the_number_of_steps_for_solving_a_task;;
+            -> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+            -> rrel_3: rrel_fixed: rrel_scp_var: _node_of_idtf;;
+
+            => nrel_goto: .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator9B_add_to_answer2;;
+            *);;
+
+        -> .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator9B_add_to_answer2
+            (*
+            <- genElStr3;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_calculating_the_number_of_steps_for_solving_a_task;;
+            -> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+            -> rrel_3: rrel_fixed: rrel_scp_var: _node_of_number;;
+
+            => nrel_goto: .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator10A;;
+            *);;
+
+        -> .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator10A
+            (*
+            <- genElStr5;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_var: _set_of_actions;;
+            -> rrel_2: rrel_assign: rrel_scp_var: rrel_const: rrel_common: _arc1;;
+            -> rrel_3: rrel_fixed: rrel_scp_var: _node_of_number;;
+            -> rrel_4: rrel_assign: rrel_scp_var: rrel_const: rrel_pos_const_perm: _arc2;;
+            -> rrel_5: rrel_fixed: rrel_scp_const: arity_of_set;;
+
+            => nrel_goto: .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator10A_add_to_answer1;;
+            *);;
+
+        -> .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator10A_add_to_answer1
+            (*
+            <- searchSetStr5;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_var: _set_of_actions;;
+            -> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc1;;
+            -> rrel_3: rrel_fixed: rrel_scp_var: _node_of_number;;
+            -> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+            -> rrel_5: rrel_fixed: rrel_scp_const: arity_of_set;;
+
+            -> rrel_set_2: rrel_fixed: rrel_scp_var: _answer_of_calculating_the_number_of_steps_for_solving_a_task;;
+            -> rrel_set_4: rrel_fixed: rrel_scp_var: _answer_of_calculating_the_number_of_steps_for_solving_a_task;;
+
+            => nrel_goto: .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator10A_add_to_answer2;;
+            *);;
+
+        -> .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator10A_add_to_answer2
+            (*
+            <- genElStr3;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_calculating_the_number_of_steps_for_solving_a_task;;
+            -> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+            -> rrel_3: rrel_fixed: rrel_scp_const: arity_of_set;;
+
+            => nrel_goto: .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator10B;;
+            *);;
+
+        -> .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator10B
+            (*
+            <- genElStr3;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_const: number;;
+            -> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+            -> rrel_3: rrel_fixed: rrel_scp_var: _node_of_number;;
+
+            => nrel_goto: .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator10B_add_to_answer1;;
+            *);;
+
+        -> .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator10B_add_to_answer1
+            (*
+            <- genElStr3;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_calculating_the_number_of_steps_for_solving_a_task;;
+            -> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+            -> rrel_3: rrel_fixed: rrel_scp_const: number;;
+
+            => nrel_goto: .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator10B_add_to_answer2;;
+            *);;
+
+        -> .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator10B_add_to_answer2
+            (*
+            <- searchSetStr3;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_const: number;;
+            -> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+            -> rrel_3: rrel_fixed: rrel_scp_var: _node_of_number;;
+
+            -> rrel_set_2: rrel_fixed: rrel_scp_var: _answer_of_calculating_the_number_of_steps_for_solving_a_task;;
+
+            => nrel_goto: .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator10C;;
+            *);;
+
+        -> .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator10C
+            (*
+            <- genElStr5;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_var: _node_of_idtf;;
+            -> rrel_2: rrel_assign: rrel_scp_var: rrel_const: rrel_common: _arc1;;
+            -> rrel_3: rrel_fixed: rrel_scp_var: _node_of_number;;
+            -> rrel_4: rrel_assign: rrel_scp_var: rrel_const: rrel_pos_const_perm: _arc2;;
+            -> rrel_5: rrel_fixed: rrel_scp_const: nrel_identification;;
+
+            => nrel_goto: .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator10C_add_to_answer1;;
+            *);;
+
+        -> .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator10C_add_to_answer1
+            (*
+            <- searchSetStr5;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_var: _node_of_idtf;;
+            -> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc1;;
+            -> rrel_3: rrel_fixed: rrel_scp_var: _node_of_number;;
+            -> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+            -> rrel_5: rrel_fixed: rrel_scp_const: nrel_identification;;
+
+            -> rrel_set_2: rrel_fixed: rrel_scp_var: _answer_of_calculating_the_number_of_steps_for_solving_a_task;;
+            -> rrel_set_4: rrel_fixed: rrel_scp_var: _answer_of_calculating_the_number_of_steps_for_solving_a_task;;
+
+            => nrel_goto: .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator10C_add_to_answer2;;
+            *);;
+
+        -> .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator10C_add_to_answer2
+            (*
+            <- genElStr3;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_calculating_the_number_of_steps_for_solving_a_task;;
+            -> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+            -> rrel_3: rrel_fixed: rrel_scp_const: nrel_identification;;
+
+            => nrel_goto: .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator10D;;
+            *);;
+
+        -> .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator10D
+            (*
+            <- genElStr3;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_var: _node_of_idtf;;
+            -> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+            -> rrel_3: rrel_fixed: rrel_scp_var: _arity_of_set;;
+
+            => nrel_goto: .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator10D_add_to_answer1;;
+            *);;
+
+        -> .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator10D_add_to_answer1
+            (*
+            <- searchSetStr3;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_var: _node_of_idtf;;
+            -> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+            -> rrel_3: rrel_fixed: rrel_scp_var: _arity_of_set;;
+
+            ->rrel_set_2: rrel_fixed: rrel_scp_var: _answer_of_calculating_the_number_of_steps_for_solving_a_task;;
+
+            => nrel_goto: .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator10D_add_to_answer2;;
+            *);;
+
+        -> .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator10D_add_to_answer2
+            (*
+            <- genElStr3;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_calculating_the_number_of_steps_for_solving_a_task;;
+            -> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+            -> rrel_3: rrel_fixed: rrel_scp_var: _arity_of_set;;
+
+            => nrel_goto: .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator10E;;
+            *);;
+
+        -> .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator10E
+            (*
+            <- searchSetStr3;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_var: _set_of_actions;;
+            -> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+            -> rrel_3: rrel_assign: rrel_scp_var: _node;;
+
+            ->rrel_set_2: rrel_scp_var: rrel_fixed: _answer_of_calculating_the_number_of_steps_for_solving_a_task;;
+            ->rrel_set_3: rrel_scp_var: rrel_fixed: _answer_of_calculating_the_number_of_steps_for_solving_a_task;;
+
+            => nrel_goto: .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator10F;;
+            *);;
+
+        -> .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator10F
+            (*
+            <- genElStr3;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_calculating_the_number_of_steps_for_solving_a_task;;
+            -> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+            -> rrel_3: rrel_fixed: rrel_scp_var: _param;;
+
+            => nrel_goto: .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator11A;;
+            *);;
+
+        -> .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator11A
+            (*
+            <- eraseEl;;
+
+            -> rrel_1: rrel_erase: rrel_fixed: rrel_scp_var: _set;;
+
+            => nrel_goto: .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator_gen_answer;;
+            *);;
+
+        -> .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator_gen_answer
+            (*
+            <- genElStr5;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+            -> rrel_2: rrel_assign: rrel_common: rrel_const: rrel_scp_var: _arc2;;
+            -> rrel_3: rrel_fixed: rrel_scp_var: _answer_of_calculating_the_number_of_steps_for_solving_a_task;;
+            -> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_const: rrel_scp_var: _arc3;;
+            -> rrel_5: rrel_fixed: rrel_scp_const: nrel_answer;;
+
+            => nrel_goto: .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator_return;;
+            *);;                                            
+                    
+        -> .agent_for_calculating_the_number_of_steps_for_solving_a_task_operator_return 
+            (*
+            <- return;;
+            *);;
+        *);;
+    *);;
