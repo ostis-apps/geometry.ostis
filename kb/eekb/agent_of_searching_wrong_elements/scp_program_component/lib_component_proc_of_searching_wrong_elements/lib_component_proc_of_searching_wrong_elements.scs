@@ -1,0 +1,27 @@
+lib_component_proc_of_searching_wrong_elements
+=> nrel_main_idtf:
+	[Компонент библиотеки. Scp-программа поиска sc-элементов, имеющих системный идентификатор, но не имеющих ни одного основного.]
+	(* <- lang_ru;; *);
+	[Library component. Scp-program of searching sc-elemnts without main identifier.]
+	(* <- lang_en;; *);
+
+<- library_of_platform_independent_reusable_components;
+
+-> rrel_key_sc_element: 
+	proc_of_searching_wrong_elements;
+	
+<- rrel_key_sc_element: 
+	...
+	(*
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://htmls/Proc_Of_Searching_Wrong_Elements.html" 
+				(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+lib_component_proc_of_searching_wrong_elements = [*^"file://proc_of_searching_wrong_elements.scsi"*];;
+

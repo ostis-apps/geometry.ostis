@@ -1,0 +1,42 @@
+sc_node_struct -> subject_domain_of_polyhedrons_and_their_surfaces;;
+
+subject_domain_of_polyhedrons_and_their_surfaces
+=> nrel_main_idtf:
+	[Предметная область многогранников и их поверхностей]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Subject domain of polyhedrons and their surfaces]
+	(* <- lang_en;; *);;
+
+subject_domain_of_polyhedrons_and_their_surfaces => nrel_primary_elements_class_private_subject_domain: subject_domain_of_prisms;;
+subject_domain_of_polyhedrons_and_their_surfaces => nrel_primary_elements_class_private_subject_domain: subject_domain_of_parallelepipeds;;
+subject_domain_of_polyhedrons_and_their_surfaces => nrel_primary_elements_class_private_subject_domain: subject_domain_of_cubes;;
+subject_domain_of_polyhedrons_and_their_surfaces => nrel_primary_elements_class_private_subject_domain: subject_domain_of_pyramids;;
+subject_domain_of_polyhedrons_and_their_surfaces => nrel_primary_elements_class_private_subject_domain: subject_domain_of_octahedrons;;
+subject_domain_of_polyhedrons_and_their_surfaces => nrel_primary_elements_class_private_subject_domain: subject_domain_of_dodecahedrons;;
+subject_domain_of_polyhedrons_and_their_surfaces => nrel_primary_elements_class_private_subject_domain: subject_domain_of_icosahedrons;;
+subject_domain_of_polyhedrons_and_their_surfaces => nrel_primary_elements_class_private_subject_domain: subject_domain_of_tetrahedrons;;
+
+subject_domain_of_polyhedrons_and_their_surfaces -> rrel_maximum_studied_object_class: concept_polyhedron;;
+
+subject_domain_of_polyhedrons_and_their_surfaces -> rrel_not_maximum_studied_object_class: 
+	concept_prism;
+	concept_cube;
+	concept_pyramid;
+	concept_dodecahedron;
+	concept_icosahedron;
+	concept_octahedron;
+	concept_tetrahedron;;
+
+subject_domain_of_polyhedrons_and_their_surfaces -> rrel_explored_relation: 
+	nrel_base_of_convex_polyhedron;
+	nrel_diagonal_of_polyhedron;
+	nrel_diagonal_section_of_polyhedron;
+	nrel_height_of_convex_polyhedron;
+	nrel_lateral_face_of_convex_polyhedron;
+	nrel_lateral_edge_of_convex_polyhedron;
+	nrel_lateral_surface_of_convex_polyhedron;
+	nrel_surface_area_of_polyhedron;
+	nrel_vertex_of_polyhedron;;
+
+subject_domain_of_polyhedrons_and_their_surfaces <- subject_domain;;

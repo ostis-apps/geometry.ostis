@@ -1,0 +1,25 @@
+lib_component_ui_menu_file_for_proof_text_translation
+=> nrel_main_idtf:
+	[Компонент библиотеки. Команда вывода текста доказательства утверждения на естественном языке]
+	(* <- lang_ru;; *);
+	[Library component. User interface command for the proof text output of the natural language statement]
+	(* <- lang_en;; *);
+
+<- library_of_platform_independent_reusable_components;
+<- library_of_atomic_reusable_components;
+<- library_of_reusable_components_of_knowledge_bases;
+
+<- rrel_key_sc_element:
+	... 
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://htmls/Ui_proof_text_translation.html"
+				(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+lib_component_ui_menu_file_for_proof_text_translation = [*^"file://ui_menu_file_for_proof_text_translation.scsi"*];; 

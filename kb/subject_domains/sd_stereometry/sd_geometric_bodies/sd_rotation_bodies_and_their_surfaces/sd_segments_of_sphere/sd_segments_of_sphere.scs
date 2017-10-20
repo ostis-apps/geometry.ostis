@@ -1,0 +1,20 @@
+sc_node_struct -> subject_domain_of_segments_of_sphere;;
+
+subject_domain_of_segments_of_sphere
+=> nrel_main_idtf:
+	[Предметная область сферических сегментов]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Subject domain of segments of sphere]
+	(* <- lang_en;; *);;
+
+subject_domain_of_segments_of_sphere -> rrel_maximum_studied_object_class: 
+	concept_segment_of_sphere;;
+
+subject_domain_of_segments_of_sphere -> rrel_explored_relation: 
+	nrel_base_of_segment_of_sphere;
+	nrel_center_of_symmetry;
+	nrel_line_of_symmetry;
+	nrel_plane_of_symmetry;;
+
+subject_domain_of_segments_of_sphere <- subject_domain;;

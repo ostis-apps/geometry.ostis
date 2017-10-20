@@ -1,0 +1,38 @@
+s_mutual_location_of_planes
+=> nrel_main_idtf:
+	[Раздел. Взаимное расположение плоскостей]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Section. Mutual location of planes]
+	(* <- lang_en;; *);
+
+<- non_atomic_section;
+
+<= nrel_section_decomposition:
+	{
+		s_crossed_planes
+		(*
+		=> nrel_section_base_order: 
+			s_perpendicular_planes;;
+		*);
+		
+		s_perpendicular_planes
+		(*
+		=> nrel_section_base_order: 
+			s_parallel_planes;;
+		*);
+
+		s_parallel_planes
+		(*
+		=> nrel_section_base_order: 
+			s_inclined_and_its_projection_on_the_plane;;
+		*);
+
+		s_inclined_and_its_projection_on_the_plane
+		(*
+		=> nrel_section_base_order: 
+			s_distance_from_point_and_line_to_plane_angle_between_line_and_plane;;
+		*);
+
+		s_distance_from_point_and_line_to_plane_angle_between_line_and_plane
+	};;

@@ -1,0 +1,917 @@
+scp_program -> proc_search_of_stats_connections 
+(*
+	-> rrel_params: .proc_search_of_stats_connections_params
+	(*
+		-> rrel_1: rrel_in: _parameter;;
+		-> rrel_2: rrel_in: _answer;;
+	*);;
+	
+	-> rrel_operators: .proc_search_of_stats_connections_operator_set
+	 (*
+		
+		-> rrel_init: .proc_search_of_stats_connections_operator1 
+			(*
+			<- genElStr3;;
+
+		 	-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+		 	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: rrel_const: _arc1;;
+		 	-> rrel_3: rrel_fixed: rrel_scp_var: _parameter;;
+		
+			=> nrel_goto: .proc_search_of_stats_connections_operator1A;;
+			*);;
+		
+		-> .proc_search_of_stats_connections_operator1A
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: statement;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _parameter;;
+			
+			=> nrel_then: .proc_search_of_stats_connections_operator1B;;
+			=> nrel_else: .proc_search_of_stats_connections_operator_return;;
+			*);;
+
+		-> .proc_search_of_stats_connections_operator1B
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_2: rrel_assign: rrel_const: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+			-> rrel_3: rrel_fixed: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			
+			=> nrel_goto: .proc_search_of_stats_connections_operator1C;;
+			*);;
+		
+		-> .proc_search_of_stats_connections_operator1C
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_2: rrel_assign: rrel_const: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: statement;;
+			
+			=> nrel_goto: .proc_search_of_stats_connections_operator2;;
+			*);;	
+
+		-> .proc_search_of_stats_connections_operator2
+			(*
+			<- searchSetStr5;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: _node1;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _parameter;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: rrel_theorem;;
+			
+			-> rrel_set_1: rrel_assign: rrel_scp_var: _set_subject_domains;;
+			
+			=> nrel_then: .proc_search_of_stats_connections_operator2A;;
+			=> nrel_else: .proc_search_of_stats_connections_operator4;;
+			*);;
+		
+		-> .proc_search_of_stats_connections_operator2A
+			(*
+			<- searchElStr3;;
+			
+			-> rrel_1: rrel_fixed: rrel_scp_var: _set_subject_domains;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc0;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _node1;;
+			
+			=> nrel_then: .proc_search_of_stats_connections_operator2B;;
+			=> nrel_else: .proc_search_of_stats_connections_operator2_delete_set;;
+			*);;
+		
+		-> .proc_search_of_stats_connections_operator2B 
+			(*
+			<-searchElStr3;;
+			
+			-> rrel_1: rrel_fixed: rrel_scp_const: subject_domain;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _node1;;
+			
+			=> nrel_then: .proc_search_of_stats_connections_operator2C;;
+			=> nrel_else: .proc_search_of_stats_connections_operator2_delete_arc;;
+			*);;
+		
+		-> .proc_search_of_stats_connections_operator2C 
+			(*
+			<-genElStr3;;
+			
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_const: rrel_scp_var: _arc2;;
+			-> rrel_3: rrel_fixed: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			
+			=> nrel_goto: .proc_search_of_stats_connections_operator2D;;
+			*);;
+		
+		-> .proc_search_of_stats_connections_operator2D
+			(*
+			<-genElStr3;;
+			
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_const: rrel_scp_var: _arc2;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _node1;;
+			
+			=> nrel_goto: .proc_search_of_stats_connections_operator2E;;
+			*);;
+
+		-> .proc_search_of_stats_connections_operator2E 
+			(*
+			<- searchElStr5;;
+			
+			-> rrel_1: rrel_fixed: rrel_scp_var: _node1;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _parameter;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: rrel_theorem;;
+			
+			=> nrel_goto: .proc_search_of_stats_connections_operator2F;;
+			*);;
+		
+		-> .proc_search_of_stats_connections_operator2F 
+			(*
+			<- genElStr3;;
+			
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_const: rrel_scp_var: _arc3;;
+			-> rrel_3: rrel_fixed: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			
+			=> nrel_goto: .proc_search_of_stats_connections_operator2G;;
+			*);;
+		
+		-> .proc_search_of_stats_connections_operator2G 
+			(*
+			<- genElStr3;;
+			
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_const: rrel_scp_var: _arc3;;
+			-> rrel_3: rrel_fixed: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+			
+			=> nrel_goto: .proc_search_of_stats_connections_operator2_delete_arc;;
+			*);;
+
+		-> .proc_search_of_stats_connections_operator2_delete_arc 
+			(*
+			<- eraseEl;;
+			
+			-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _arc0;;
+		
+			=> nrel_goto: .proc_search_of_stats_connections_operator2A;;
+			*);;
+
+
+		-> .proc_search_of_stats_connections_operator2_delete_set
+			(*
+			<- eraseEl;;
+			
+			-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_const: _set_subject_domains;;
+			
+			=> nrel_goto: .proc_search_of_stats_connections_operator2H;;
+			*);;
+
+		-> .proc_search_of_stats_connections_operator2H 
+			(*
+			<- searchElStr5;;
+			
+			-> rrel_1: rrel_fixed: rrel_scp_const: subject_domain;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _node1;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_var: _answer;;
+			
+			=> nrel_then: .proc_search_of_stats_connections_operator2I;;
+			=> nrel_else: .proc_search_of_stats_connections_operator4;;
+			*);;
+		
+		-> .proc_search_of_stats_connections_operator2I
+			(*
+			<- genElStr3;;
+			
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_2: rrel_assign: rrel_const: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: subject_domain;;
+			
+			=> nrel_goto: .proc_search_of_stats_connections_operator2J;;
+			*);;
+
+		-> .proc_search_of_stats_connections_operator2J
+			(*
+			<-searchElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: rrel_theorem;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc3;;
+			-> rrel_5: rrel_fixed: rrel_scp_var: _answer;;
+
+			=> nrel_goto: .proc_search_of_stats_connections_operator2K;;
+			*);;
+
+		-> .proc_search_of_stats_connections_operator2K
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: rrel_theorem;;
+
+			=> nrel_goto: .proc_search_of_stats_connections_operator3;;
+			*);;
+
+		-> .proc_search_of_stats_connections_operator3
+			(*
+			<- searchSetStr3;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: _node1;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _parameter;;
+		
+			-> rrel_set_1: rrel_assign: rrel_scp_var: _set_bunch;;
+			
+			=> nrel_then: .proc_search_of_stats_connections_operator3A;;
+			=> nrel_else: .proc_search_of_stats_connections_operator4;;
+			*);;
+
+		-> .proc_search_of_stats_connections_operator3A
+			(*
+			<- searchElStr3;;
+			
+			-> rrel_1: rrel_fixed: rrel_scp_var: _set_bunch;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc0;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _node1;;
+			
+			=> nrel_then: .proc_search_of_stats_connections_operator3_delete_arc;;
+			=> nrel_else: .proc_search_of_stats_connections_operator3_delete_set_bunch;;
+			*);;
+
+		-> .proc_search_of_stats_connections_operator3_delete_arc 
+			(*
+			<- eraseEl;;
+			
+			-> rrel_1: rrel_fixed: rrel_erase: rrel_pos_const_perm: rrel_scp_var: _arc0;;
+			
+			=> nrel_goto: .proc_search_of_stats_connections_operator3B;;
+			*);;
+		
+		-> .proc_search_of_stats_connections_operator3B 
+			(*
+			<- searchElStr3;;
+			
+			-> rrel_1: rrel_fixed: rrel_scp_const: nrel_converse_theorem;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _node1;;
+			
+			=> nrel_then: .proc_search_of_stats_connections_operator3E;;
+			=> nrel_else: .proc_search_of_stats_connections_operator3C;;
+			*);;
+
+		
+		-> .proc_search_of_stats_connections_operator3C 
+			(*
+			<- searchElStr3;;
+			
+			-> rrel_1: rrel_fixed: rrel_scp_const: nrel_reverse_theorem;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _node1;;
+			
+			=> nrel_then: .proc_search_of_stats_connections_operator3E;;
+			=> nrel_else: .proc_search_of_stats_connections_operator3D;;
+			*);;
+
+		-> .proc_search_of_stats_connections_operator3D
+			(*
+			<- searchElStr3;;
+			
+			-> rrel_1: rrel_fixed: rrel_scp_const: nrel_reverse_converse_theorem;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _node1;;
+			
+			=> nrel_then: .proc_search_of_stats_connections_operator3E;;
+			=> nrel_else: .proc_search_of_stats_connections_operator3A;;
+			*);;
+		
+		-> .proc_search_of_stats_connections_operator3E 
+			(*
+			<- searchElStr3;;
+			
+			-> rrel_1: rrel_fixed: rrel_scp_var: _node1;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _node2;;
+			
+			=> nrel_then: .proc_search_of_stats_connections_operator3G;;
+			=> nrel_else: .proc_search_of_stats_connections_operator3A;;
+			*);; 
+		
+		-> .proc_search_of_stats_connections_operator3G 
+			(*
+			<- searchSetStr3;;
+			
+			-> rrel_1: rrel_fixed: rrel_scp_const: statement;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _node2;;
+
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer;;
+			
+			=> nrel_then: .proc_search_of_stats_connections_operator3H;;
+			=> nrel_else: .proc_search_of_stats_connections_operator3A;;
+			*);;
+
+		-> .proc_search_of_stats_connections_operator3H
+			(*
+			<- genElStr3;;
+			
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _node2;;
+			
+			=> nrel_goto: .proc_search_of_stats_connections_operation_translation_3;;
+			*);;
+		
+		-> .proc_search_of_stats_connections_operation_translation_3
+			(*
+			<- call;;
+			
+			-> rrel_1: rrel_fixed: rrel_scp_const: proc_of_finding_translation;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: .proc_search_of_stats_connections_operation_translation_3_params
+				(*
+				-> rrel_1: rrel_fixed: rrel_scp_var: _node2;;
+				-> rrel_2: rrel_fixed: rrel_scp_var: _answer;;
+				*);;
+			-> rrel_3: rrel_assign: rrel_scp_var: _descr3;;
+
+			=> nrel_goto: .proc_search_of_stats_connections_operation_translation_3_wait;;
+			*);;
+
+		-> .proc_search_of_stats_connections_operation_translation_3_wait
+			(*
+			<- waitReturn;;
+			
+			-> rrel_1: rrel_fixed: rrel_scp_var: _descr3;;
+
+			=> nrel_goto: .proc_search_of_stats_connections_operator3J;;
+			*);;
+		
+		-> .proc_search_of_stats_connections_operator3J
+			(*
+			<- searchSetStr3;;
+			
+			-> rrel_1: rrel_fixed: rrel_scp_var: _node1;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _node2;;
+
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer;;
+			
+			=> nrel_then: .proc_search_of_stats_connections_operator3K;;
+			=> nrel_else: .proc_search_of_stats_connections_operator3K;;
+			*);;
+
+
+		-> .proc_search_of_stats_connections_operator3K 
+			(*
+			<- searchSetStr3;;
+			
+			-> rrel_1: rrel_fixed: rrel_scp_const: nrel_converse_theorem;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _node1;;
+
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer;;
+			
+			=> nrel_then: .proc_search_of_stats_connections_operator3N;;
+			=> nrel_else: .proc_search_of_stats_connections_operator3L;;
+			*);;
+		
+		-> .proc_search_of_stats_connections_operator3L 
+			(*
+			<- searchSetStr3;;
+			
+			-> rrel_1: rrel_fixed: rrel_scp_const: nrel_reverse_theorem;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _node1;;
+
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer;;
+			
+			=> nrel_then: .proc_search_of_stats_connections_operator3N;;
+			=> nrel_else: .proc_search_of_stats_connections_operator3M;;
+			*);;
+		
+		-> .proc_search_of_stats_connections_operator3M
+			(*
+			<- searchSetStr3;;
+			
+			-> rrel_1: rrel_fixed: rrel_scp_const: nrel_reverse_converse_theorem;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _node1;;
+
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer;;
+			
+			=> nrel_then: .proc_search_of_stats_connections_operator3N;;
+			=> nrel_else: .proc_search_of_stats_connections_operator3N;;
+			*);;
+		
+		-> .proc_search_of_stats_connections_operator3N 
+			(*
+			<- genElStr3;;
+			
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_2: rrel_assign: rrel_const: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _node1;;
+			
+			=> nrel_goto: .proc_search_of_stats_connections_operator3R;; 
+			*);;
+		
+		-> .proc_search_of_stats_connections_operator3R 
+			(*
+			<- searchSetStr3;;
+			
+			-> rrel_1: rrel_fixed: rrel_scp_var: _node1;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _parameter;;
+
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer;;
+			
+			=> nrel_then: .proc_search_of_stats_connections_operator3A;;
+			=> nrel_else: .proc_search_of_stats_connections_operator3A;;
+			*);;
+		
+		-> .proc_search_of_stats_connections_operator3_delete_set_bunch 
+			(*
+			<- eraseEl;;
+			
+			-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _set_bunch;;
+			
+			=> nrel_goto: .proc_search_of_stats_connections_operator3T;;
+			*);;
+
+		 -> .proc_search_of_stats_connections_operator3T
+		 	(*
+		 	<- searchElStr5;;
+
+		 	-> rrel_1: rrel_fixed: rrel_scp_const: nrel_converse_theorem;;
+		 	-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+		 	-> rrel_3: rrel_assign: rrel_scp_var: _node1;;
+		 	-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+		 	-> rrel_5: rrel_fixed: rrel_scp_var: _answer;;
+
+		 	=> nrel_then: .proc_search_of_stats_connections_operator3U;;
+		 	=> nrel_else: .proc_search_of_stats_connections_operator3V;;
+		 	*);;
+
+		 -> .proc_search_of_stats_connections_operator3U 
+			(*
+			<- genElStr3;;
+			
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: nrel_converse_theorem;;
+			
+			=> nrel_goto: .proc_search_of_stats_connections_operator3V;;
+			*);;
+
+		 -> .proc_search_of_stats_connections_operator3V
+		 	(*
+		 	<- searchElStr5;;
+
+		 	-> rrel_1: rrel_fixed: rrel_scp_const: nrel_reverse_theorem;;
+		 	-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+		 	-> rrel_3: rrel_assign: rrel_scp_var: _node1;;
+		 	-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+		 	-> rrel_5: rrel_fixed: rrel_scp_var: _answer;;
+
+		 	=> nrel_then: .proc_search_of_stats_connections_operator3W;;
+		 	=> nrel_else: .proc_search_of_stats_connections_operator3X;;
+		 	*);;	
+
+		 -> .proc_search_of_stats_connections_operator3W 
+			(*
+			<- genElStr3;;
+			
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: nrel_reverse_theorem;;
+			
+			=> nrel_goto: .proc_search_of_stats_connections_operator3X;;
+			*);;
+
+		 -> .proc_search_of_stats_connections_operator3X
+		 	(*
+		 	<- searchElStr5;;
+
+		 	-> rrel_1: rrel_fixed: rrel_scp_const: nrel_reverse_converse_theorem;;
+		 	-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+		 	-> rrel_3: rrel_assign: rrel_scp_var: _node1;;
+		 	-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+		 	-> rrel_5: rrel_fixed: rrel_scp_var: _answer;;
+
+		 	=> nrel_then: .proc_search_of_stats_connections_operator3Y;;
+		 	=> nrel_else: .proc_search_of_stats_connections_operator4;;
+		 	*);;
+
+		 -> .proc_search_of_stats_connections_operator3Y 
+			(*
+			<- genElStr3;;
+			
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: nrel_reverse_converse_theorem;;
+			
+			=> nrel_goto: .proc_search_of_stats_connections_operator4;;
+			*);;
+
+		-> .proc_search_of_stats_connections_operator4 
+			(*
+			<-searchSetStr5;;
+			
+			-> rrel_1: rrel_fixed: rrel_scp_var: _parameter;;
+			-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _node1;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_consequent;;
+			
+			-> rrel_set_3: rrel_assign: rrel_scp_var: _set_consequence;;
+			
+			=> nrel_then: .proc_search_of_stats_connections_operator4A;;
+			=> nrel_else: .proc_search_of_stats_connections_operator5;;
+			*);;
+		
+		-> .proc_search_of_stats_connections_operator4A 
+			(*
+			<- searchElStr3;;
+			
+			-> rrel_1: rrel_fixed: rrel_scp_var: _set_consequence;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc0;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _node1;;
+			
+			=> nrel_then: .proc_search_of_stats_connections_operator4B;;
+			=> nrel_else: .proc_search_of_stats_connections_operator4_delete_set_consequence;;
+			*);;
+		
+		-> .proc_search_of_stats_connections_operator4B 
+			(*
+			<- searchElStr3;;
+			
+			-> rrel_1: rrel_fixed: rrel_scp_const: statement;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _node1;;
+			
+			=> nrel_then: .proc_search_of_stats_connections_operator4C;;
+			=> nrel_else: .proc_search_of_stats_connections_operator4_delete_arc;; 
+			*);;
+		
+		-> .proc_search_of_stats_connections_operator4C 
+			(*
+			<- genElStr3;;
+			
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_const: rrel_scp_var: _arc2;;
+			-> rrel_3: rrel_fixed: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			
+			=> nrel_goto: .proc_search_of_stats_connections_operator4D;;
+			*);;
+		
+		-> .proc_search_of_stats_connections_operator4D 
+			(*
+			<- genElStr3;;
+			
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_const: rrel_scp_var: _arc2;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _node1;;
+			
+			=> nrel_goto: .proc_search_of_stats_connections_operation_translation_4;;
+			*);;
+		
+		-> .proc_search_of_stats_connections_operation_translation_4
+			(*
+			<- call;;
+			
+			-> rrel_1: rrel_fixed: rrel_scp_const: proc_of_finding_translation;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: .proc_search_of_stats_connections_operation_translation_4_params 
+				(*
+				-> rrel_1: rrel_fixed: rrel_scp_var: _node1;;
+				-> rrel_2: rrel_fixed: rrel_scp_var: _answer;;
+				*);;
+			-> rrel_3: rrel_assign: rrel_scp_var: _descr4;;
+
+			=> nrel_goto: .proc_search_of_stats_connections_operation_translation_4_wait;;
+			*);;
+
+		-> .proc_search_of_stats_connections_operation_translation_4_wait
+			(*
+			<- waitReturn;;
+			
+			-> rrel_1: rrel_fixed: rrel_scp_var: _descr4;;
+
+			=> nrel_goto: .proc_search_of_stats_connections_operator4E;;
+			*);;
+		
+		-> .proc_search_of_stats_connections_operator4E 
+			(*
+			<- searchElStr5;;
+			
+			-> rrel_1: rrel_fixed: rrel_scp_var: _parameter;;
+			-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _node1;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_consequent;;
+			
+			=> nrel_then: .proc_search_of_stats_connections_operator4F;;
+			=> nrel_else: .proc_search_of_stats_connections_operator4_delete_arc;;
+			*);;
+		
+		-> .proc_search_of_stats_connections_operator4F 
+			(*
+			<- genElStr3;;
+			
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_const: rrel_scp_var: _arc3;;
+			-> rrel_3: rrel_fixed: rrel_common: rrel_scp_var: _arc1;;
+			
+			=> nrel_goto: .proc_search_of_stats_connections_operator4G;;
+			*);;
+		
+		-> .proc_search_of_stats_connections_operator4G 
+			(*
+			<- genElStr3;;
+			
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_const: rrel_scp_var: _arc3;;
+			-> rrel_3: rrel_fixed: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+			
+			=> nrel_goto: .proc_search_of_stats_connections_operator4_delete_arc;;
+			*);;
+		
+		-> .proc_search_of_stats_connections_operator4_delete_arc 
+			(*
+			<- eraseEl;;
+			
+			-> rrel_1: rrel_fixed: rrel_erase: rrel_pos_const_perm: rrel_scp_var: _arc0;;
+			
+			=> nrel_goto: .proc_search_of_stats_connections_operator4A;;
+			*);;
+
+		-> .proc_search_of_stats_connections_operator4_delete_set_consequence 
+			(*
+			<- eraseEl;;
+			
+			-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _set_consequence;;
+			
+			=> nrel_goto: .proc_search_of_stats_connections_operator4H;;
+			*);;
+
+		-> .proc_search_of_stats_connections_operator4H
+			(*
+			<- searchElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: nrel_consequent;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_assign: rrel_common: rrel_scp_var: _arc2;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc3;;
+			-> rrel_5: rrel_fixed: rrel_scp_var: _answer;;
+
+			=> nrel_then: .proc_search_of_stats_connections_operator4I;;
+			=> nrel_else: .proc_search_of_stats_connections_operator5;;
+			*);;
+
+		-> .proc_search_of_stats_connections_operator4I
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: nrel_consequent;;
+
+			=> nrel_goto: .proc_search_of_stats_connections_operator5;;
+			*);;
+
+		-> .proc_search_of_stats_connections_operator5 
+			(*
+			<-searchSetStr5;;
+			
+			-> rrel_1: rrel_assign: rrel_scp_var: _node1;;
+			-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _parameter;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_consequent;;
+			
+			-> rrel_set_1: rrel_assign: rrel_scp_var: _set_consequence;;
+			
+			=> nrel_then: .proc_search_of_stats_connections_operator5A;;
+			=> nrel_else: .proc_search_of_stats_connections_operator5O;;
+			*);;
+		
+		-> .proc_search_of_stats_connections_operator5A 
+			(*
+			<- searchElStr3;;
+			
+			-> rrel_1: rrel_fixed: rrel_scp_var: _set_consequence;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc0;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _node1;;
+				
+			=> nrel_then: .proc_search_of_stats_connections_operator5B;;
+			=> nrel_else: .proc_search_of_stats_connections_operator5_delete_set_consequence;;
+			*);;
+		
+		-> .proc_search_of_stats_connections_operator5B 
+			(*
+			<- searchElStr3;;
+			
+			-> rrel_1: rrel_fixed: rrel_scp_const: statement;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _node1;;
+			
+			=> nrel_then: .proc_search_of_stats_connections_operator5C;;
+			=> nrel_else: .proc_search_of_stats_connections_operator5_delete_arc;; 
+			*);;
+		
+		-> .proc_search_of_stats_connections_operator5C 
+			(*
+			<- genElStr3;;
+			
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_2: rrel_assign: rrel_const: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+			-> rrel_3: rrel_fixed: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			
+			=> nrel_goto: .proc_search_of_stats_connections_operator5D;;
+		*);;
+		
+		-> .proc_search_of_stats_connections_operator5D 
+			(*
+			<- genElStr3;;
+			
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_2: rrel_assign: rrel_const: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _node1;;
+			
+			=> nrel_goto: .proc_search_of_stats_connections_find_translation_5;;
+			*);;
+		
+		-> .proc_search_of_stats_connections_find_translation_5
+			(*
+			<- call;;
+			
+			-> rrel_1: rrel_fixed: rrel_scp_const: proc_of_finding_translation;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: .proc_search_of_stats_connections_find_translation_5_params
+				(*
+				-> rrel_1: rrel_fixed: rrel_scp_var: _node1;;
+				-> rrel_2: rrel_fixed: rrel_scp_var: _answer;;
+				*);;
+			-> rrel_3: rrel_assign: rrel_scp_var: _descr5;;
+
+			=> nrel_goto: .proc_search_of_stats_connections_translation_5_wait;;
+			*);;
+
+		-> .proc_search_of_stats_connections_translation_5_wait
+			(*
+			<- waitReturn;;
+			
+			-> rrel_1: rrel_fixed: rrel_scp_var: _descr5;;
+
+			=> nrel_goto: .proc_search_of_stats_connections_operator5E;;
+			*);;
+		
+		-> .proc_search_of_stats_connections_operator5E 
+			(*
+			<- searchElStr5;;
+			
+			-> rrel_1: rrel_fixed: rrel_scp_var: _node1;;
+			-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _parameter;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_consequent;;
+			
+			=> nrel_then: .proc_search_of_stats_connections_operator5F;;
+			=> nrel_else: .proc_search_of_stats_connections_operator5_delete_arc;;
+			*);;
+		
+		-> .proc_search_of_stats_connections_operator5F 
+			(*
+			<- genElStr3;;
+			
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_const: rrel_scp_var: _arc3;;
+			-> rrel_3: rrel_fixed: rrel_common: rrel_scp_var: _arc1;;
+			
+			=> nrel_goto: .proc_search_of_stats_connections_operator5G;;
+			*);;
+		
+		-> .proc_search_of_stats_connections_operator5G 
+			(*
+			<- genElStr3;;
+			
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_const: rrel_scp_var: _arc3;;
+			-> rrel_3: rrel_fixed: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+			
+			=> nrel_goto: .proc_search_of_stats_connections_operator5_delete_arc;;
+			*);;
+		
+		-> .proc_search_of_stats_connections_operator5_delete_arc 
+			(*
+			<- eraseEl;;
+			
+			-> rrel_1: rrel_fixed: rrel_erase: rrel_pos_const_perm: rrel_scp_var: _arc0;;
+			
+			=> nrel_goto: .proc_search_of_stats_connections_operator5A;;
+			
+			*);;
+		
+		-> .proc_search_of_stats_connections_operator5O
+			(*
+			<-searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: nrel_consequent;;
+
+			=> nrel_then: .proc_search_of_stats_connections_operator_return;;
+			=> nrel_else: .proc_search_of_stats_connections_operator5H;;
+
+			*);;
+
+		-> .proc_search_of_stats_connections_operator5H
+			(*
+			<- searchElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: nrel_consequent;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_assign: rrel_common: rrel_scp_var: _arc2;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc3;;
+			-> rrel_5: rrel_fixed: rrel_scp_var: _answer;;
+		
+			=> nrel_then: .proc_search_of_stats_connections_operator5I;;
+			=> nrel_else: .proc_search_of_stats_connections_operator_check_answer_1;;
+			*);;
+		
+		-> .proc_search_of_stats_connections_operator5I 
+			(*
+			<- genElStr3;;
+			
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: nrel_consequent;;
+			
+			=> nrel_goto: .proc_search_of_stats_connections_operator_return;;
+			*);;
+		
+		-> .proc_search_of_stats_connections_operator5_delete_set_consequence 
+			(*
+			<- eraseEl;;
+			
+			-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _set_consequence;;
+
+			=> nrel_goto: .proc_search_of_stats_connections_operator5O;;
+			*);;
+
+		-> .proc_search_of_stats_connections_operator_check_answer_1
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_const: nrel_converse_theorem;;
+
+			=> nrel_then: .proc_search_of_stats_connections_operator_return;;
+			=> nrel_else: .proc_search_of_stats_connections_operator_check_answer_2;;
+			*);;
+
+		-> .proc_search_of_stats_connections_operator_check_answer_2
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_const: nrel_reverse_theorem;;
+
+			=> nrel_then: .proc_search_of_stats_connections_operator_return;;
+			=> nrel_else: .proc_search_of_stats_connections_operator_check_answer_3;;
+			*);;
+
+		-> .proc_search_of_stats_connections_operator_check_answer_3
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_const: nrel_reverse_converse_theorem;;
+
+			=> nrel_then: .proc_search_of_stats_connections_operator_return;;
+			=> nrel_else: .proc_search_of_stats_connections_operator_message;;
+			*);;
+
+		-> .proc_search_of_stats_connections_operator_message
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: ["Утверждения, связанные с исходным, найдены не были. "];;
+
+			=> nrel_goto: .proc_search_of_stats_connections_operator_return;;
+			*);;
+
+		-> .proc_search_of_stats_connections_operator_return 
+			(*
+			<- return;;
+			*);;
+	*);;
+*);;

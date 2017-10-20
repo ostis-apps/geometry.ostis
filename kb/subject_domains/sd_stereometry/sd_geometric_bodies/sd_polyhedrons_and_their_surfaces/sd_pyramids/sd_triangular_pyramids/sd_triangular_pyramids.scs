@@ -1,0 +1,22 @@
+sc_node_struct -> subject_domain_of_triangular_pyramids;;
+
+subject_domain_of_triangular_pyramids
+=> nrel_main_idtf:
+	[Предметная область треугольных пирамид]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Subject domain of triangular pyramids]
+	(* <- lang_en;; *);;
+
+subject_domain_of_triangular_pyramids => nrel_primary_elements_class_private_subject_domain: subject_domain_of_tetrahedrons;;
+
+subject_domain_of_triangular_pyramids -> rrel_maximum_studied_object_class: concept_triangular_pyramid;;
+
+subject_domain_of_triangular_pyramids -> rrel_explored_relation: 
+	nrel_apothem;
+	nrel_base_of_pyramid;
+	nrel_height_of_pyramid;
+	nrel_lateral_edge_of_pyramid;
+	nrel_lateral_face_of_pyramid;;
+
+subject_domain_of_triangular_pyramids <- subject_domain;;

@@ -1,0 +1,50 @@
+sc_agent_of_search_statements_that_using_the_original
+=> nrel_main_idtf:
+	[агентная scp-программа вывода всех утверждений, использующихся для доказательства исходного утверждения] (* <- lang_ru;; *);
+	[agent scp-program of display all statements, is used to prove the original statement] (* <- lang_en;; *);
+	
+<- abstract_sc_agent;
+
+=> nrel_primary_initiation_condition: 
+	(sc_event_add_output_arc => question_initiated);
+	
+=> nrel_initiation_condition_and_result: 
+	(..sc_agent_of_search_statements_that_using_the_original_condition => ..sc_agent_of_search_statements_that_using_the_original_result);
+	
+<= nrel_sc_agent_key_sc_elements: 
+	{
+	question_initiated;
+	question;
+	action_of_search_statements_that_using_the_original
+	};
+	
+=> nrel_inclusion: 
+	.platform_independent_realization_of_sc_agent_of_search_statements_that_using_the_original
+	(*
+	<- platform_independent_abstract_sc_agent;;
+	<= nrel_sc_agent_program: 
+		{
+		agent_of_search_statements_that_using_the_original;
+        proc_of_search_statements_that_using_the_original
+		};;
+		
+	-> sc_agent_of_search_statements_that_using_the_original_scp 
+		(* <- active_sc_agent;; *);;
+	*);;
+
+..sc_agent_of_search_statements_that_using_the_original_condition
+= [*
+	action_of_search_statements_that_using_the_original _-> .._question;;
+	question_initiated _-> .._question;;
+	question _-> .._question;;
+	.._question _-> .._parameter1;;
+*];;
+
+..sc_agent_of_search_statements_that_using_the_original_result
+= [*
+	action_of_search_statements_that_using_the_original _-> .._question;;
+	question_finished _-> .._question;;
+	question _-> .._question;;
+	.._question _=> nrel_answer:: .._answer;;
+	.._question _-> .._parameter1;;
+*];;

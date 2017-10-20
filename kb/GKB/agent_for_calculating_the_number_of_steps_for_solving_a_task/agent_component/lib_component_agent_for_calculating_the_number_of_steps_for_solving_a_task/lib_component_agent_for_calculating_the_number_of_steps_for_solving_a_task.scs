@@ -1,0 +1,30 @@
+lib_component_agent_for_calculating_the_number_of_steps_for_solving_a_task
+=> nrel_main_idtf:
+	[Компонент библиотеки. Sc-агент подсчёта количества шагов решения задачи.]
+	(* <- lang_ru;; *);
+	[Library component. Sc-agent for calculating the number of steps for solving a task]
+	(* <- lang_en;; *);
+
+<- library_of_platform_independent_reusable_components; 
+<- library_of_atomic_reusable_components; 
+
+=> nrel_attendant_component: 
+	lib_component_ui_menu_file_for_calculating_the_number_of_steps_for_solving_a_task;
+
+-> rrel_key_sc_element: 
+	.platform_independent_realization_of_sc_agent_for_calculating_the_number_of_steps_for_solving_a_task;
+
+<- rrel_key_sc_element: 
+	...
+	(*
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://htmls/Agent_for_calculating_the_number_of_steps_for_solving_a_task.html"
+				(* <- lang_ru;; *);; 
+		*);;
+	*);;
+
+

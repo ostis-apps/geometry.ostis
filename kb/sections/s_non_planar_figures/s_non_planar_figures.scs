@@ -10,53 +10,17 @@ s_non_planar_figures
 
 <= nrel_section_decomposition:
 	{
-		s_sd_non_planar_angles
+		s_lines_and_planes_in_space
 		(*
 		=> nrel_section_base_order: 
-			s_sd_prisms;;
+			s_non_planar_angles;;
 		*);
 		
-		s_sd_prisms
+		s_non_planar_angles
 		(*
 		=> nrel_section_base_order: 
-			s_sd_parallelepipeds;;
+			s_geometric_bodies;;
 		*);
 
-		s_sd_parallelepipeds
-		(*
-		=> nrel_section_base_order: 
-			s_sd_pyramids;;
-		*);
-
-		s_sd_pyramids
-		(*
-		=> nrel_section_base_order: 
-			s_sd_polyhedrons_and_their_surfaces;;
-		*);
-
-		s_sd_polyhedrons_and_their_surfaces
-		(*
-		=> nrel_section_base_order: 
-			s_sd_cylinders;;
-		*);
-		
-		s_sd_cylinders
-		(*
-		=> nrel_section_base_order: 
-			s_sd_cones;;
-		*);
-
-		s_sd_cones
-		(*
-		=> nrel_section_base_order: 
-			s_sd_spheres_and_balls;;
-		*);
-		
-		s_sd_spheres_and_balls
-		(*
-		=> nrel_section_base_order: 
-			s_sd_non_planar_figures;;
-		*);
-
-		s_sd_non_planar_figures
+		s_geometric_bodies
 	};;
