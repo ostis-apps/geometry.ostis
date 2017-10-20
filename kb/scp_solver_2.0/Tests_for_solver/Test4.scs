@@ -4,18 +4,20 @@ Question_Combo_Task <- question; sc_node_struct;;
 
 Condition_Graph1 = [* concept_circle -> Circle_OR;;
 				  concept_square -> Square_ORCD;;
-				  concept_segment -> Segment_OR;;
+				  concept_segment -> Segment_OR; Segment_RC; Segment_CD; Segment_OD;;
 				  concept_quantity -> OR_Len; Sqr_Area; Seg_OR_Len;;
 				  number -> n_16;;
 				  Circle_OR => nrel_length: OR_Len;;
-				  Segment_OR => nrel_length: Seg_OR_Len;;
 				  Circle_OR => nrel_radius: Segment_OR;;
 				  Square_ORCD => nrel_area: Sqr_Area;;
 				  Square_ORCD => nrel_side: Segment_OR;;
+				  Square_ORCD => nrel_side: Segment_RC;;
+				  Square_ORCD => nrel_side: Segment_CD;;
+				  Square_ORCD => nrel_side: Segment_OD;;
 				  Sqr_Area <= nrel_value: ... (* -> rrel_sq_sm: n_16;; *);;
 				 *];;
 
-sc_statement_for_solver -> stat_square_area; stat_circle_length;;
+sc_statement_for_solver -> stat_square_area; stat_circle_length; stat_square_side_congruence;;
 
 concept_square <- rrel_key_sc_element: stat_square_area;;
 
@@ -59,7 +61,7 @@ stat_circle_length_then = [* _crcl1 _=> nrel_radius:: _rd1;;
 					 _tup2 _-> n_pi; n_2; _rd_len1;;
 					 *];;
 
-atomic_existence -> stat_circle_length_if; stat_circle_length_then; stat_square_area_if; stat_square_area_then;;
+atomic_existence -> stat_circle_length_if; stat_circle_length_then; stat_square_area_if; stat_square_area_then; stat_square_side_congruence_if; stat_square_side_congruence_then;;
 
 n_16 <= nrel_identification: ...
 	(* -> rrel_decimal: [16];; *);;
@@ -68,5 +70,27 @@ n_pi <= nrel_identification: ...
 	(* -> rrel_decimal: [3,14];; *);;
 
 number -> n_2;;
+
+concept_square <- rrel_key_sc_element: stat_square_side_congruence;;
+
+stat_square_side_congruence -> rrel_main_key_sc_element: stat_square_side_congruence_formal;;
+
+stat_square_side_congruence_formal <- nrel_implication;;
+
+stat_square_side_congruence_formal -> rrel_if: stat_square_side_congruence_if;;
+
+stat_square_side_congruence_formal -> rrel_then: stat_square_side_congruence_then;;
+
+stat_square_side_congruence_if = [* concept_square _-> _sqr1;; *];;
+
+stat_square_side_congruence_then = [* 
+					 _sqr1 _=> nrel_side:: _Segm1; _Segm2; _Segm3; _Segm4;;
+					 concept_segment _-> _Segm1; _Segm2; _Segm3; _Segm4;;
+					 concept_quantity _-> _Slen1;;
+					 _Segm1 _=> nrel_length:: _Slen1;;
+					 _Segm2 _=> nrel_length:: _Slen1;;
+					 _Segm3 _=> nrel_length:: _Slen1;;
+					 _Segm4 _=> nrel_length:: _Slen1;;
+					  *];;
 
 

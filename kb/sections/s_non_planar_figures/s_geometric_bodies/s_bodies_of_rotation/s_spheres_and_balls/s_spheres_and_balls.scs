@@ -1,0 +1,44 @@
+s_spheres_and_balls
+=> nrel_main_idtf:
+	[Раздел. Сферы и шары]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Section. Spheres and balls]
+	(* <- lang_en;; *);
+
+<- non_atomic_section;
+
+<= nrel_section_decomposition:
+	{
+		s_sd_spheres_and_balls
+		(*
+		=> nrel_section_base_order: 
+			s_sd_spherical_layers;;
+		*);
+		
+		s_sd_spherical_layers
+		(*
+		=> nrel_section_base_order: 
+			s_sd_ball_sectors;;
+		*);
+
+		s_sd_ball_sectors
+		(*
+		=> nrel_section_base_order: 
+			s_sd_spherical_belts;;
+		*);
+
+		s_sd_spherical_belts
+		(*
+		=> nrel_section_base_order: 
+			s_sd_spherical_segments;;
+		*);
+
+		s_sd_spherical_segments
+		(*
+		=> nrel_section_base_order: 
+			s_sd_ball_segments;;
+		*);
+
+		s_sd_ball_segments
+	};;

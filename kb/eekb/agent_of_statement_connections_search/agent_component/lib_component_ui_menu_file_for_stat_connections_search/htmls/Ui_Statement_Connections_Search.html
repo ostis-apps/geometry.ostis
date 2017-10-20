@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+</head>
+<body>
+		<p>
+			<b><sc_element sys_idtf="ui_menu_file_for_search_of_stat_connections">Команда поиска связей утверждения с другими утверждениями</sc_element></b> предназначена для поиска <b><sc_element sys_idtf="statement">утверждений</sc_element></b> в рамках одной <b><sc_element sys_idtf="subject_domain">предметной области</sc_element></b>, которой принадлежит исходное утверждение, т.е. <b><sc_element sys_idtf="statement">утверждений</sc_element></b>, являющихся <b><sc_element sys_idtf="nrel_converse_theorem">обратной теоремой*</sc_element></b>, <b><sc_element sys_idtf="nrel_reverse_theorem">противоположной теоремой*</sc_element></b>, <b><sc_element sys_idtf="nrel_reverse_converse_theorem">теоремой, противоположной обратной*</sc_element></b>, а также <b><sc_element sys_idtf="statement">утверждений</sc_element></b>, являющихся <b><sc_element sys_idtf="nrel_consequent">следствием*</sc_element></b>. Аргументами команды являются <b><sc_element sys_idtf="statement">утверждение</sc_element></b>, для которого происходит поиск, узел ответа, к которому привязывается результат поиска. Результатом выполнения команды является <b><sc_element sys_idtf="subject_domain">предметная область</sc_element></b>, если исходное <b><sc_element sys_idtf="statement">утверждение</sc_element></b> принадлежит таковой, а также <b><sc_element sys_idtf="statement">утверждения</sc_element></b>, связанные с исходным утверждением через отношения <b><sc_element sys_idtf="nrel_converse_theorem">обратная теорема*</sc_element></b>, <b><sc_element sys_idtf="nrel_reverse_theorem">противоположная теорема*</sc_element></b>, <b><sc_element sys_idtf="nrel_reverse_converse_theorem">теоремой,противоположной обратной*</sc_element></b> либо <b><sc_element sys_idtf="nrel_consequent">следствия*</sc_element></b>. Для <b><sc_element sys_idtf="statement">утверждения</sc_element></b> будет построена следующая конструкция:
+		</p>
+		<img src="stat_connections_search.png" alt="Результат работы команды для поиска связи утверждения с другими утверждениями">
+		<p> В случает отсутствия связи <b><sc_element sys_idtf="statement">утверждения</sc_element></b> с другими <b><sc_element sys_idtf="statement">утверждениями</sc_element></b> будет выведено сообщение вида:
+		</p>
+		<img src="stat_connections_search_fail.png" alt="Результат работы команды для поиска связи утверждения с другими утверждениями в случае отсутствия связи">
+</body>
+</html>

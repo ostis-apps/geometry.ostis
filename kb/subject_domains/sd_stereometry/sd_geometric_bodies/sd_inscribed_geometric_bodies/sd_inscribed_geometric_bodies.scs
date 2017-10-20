@@ -1,0 +1,19 @@
+sc_node_struct -> subject_domain_of_inscribed_geometric_bodies;;
+
+subject_domain_of_inscribed_geometric_bodies
+=> nrel_main_idtf:
+	[Предметная область вписанных геометрических тел]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Subject domain of inscribed geometric bodies]
+	(* <- lang_en;; *);;
+
+subject_domain_of_inscribed_geometric_bodies -> rrel_maximum_studied_object_class: 
+	concept_polyhedron;
+	concept_ball;
+	concept_sphere;;
+
+subject_domain_of_inscribed_geometric_bodies -> rrel_explored_relation: 
+	nrel_be_inscribed;;
+
+subject_domain_of_inscribed_geometric_bodies <- subject_domain;;

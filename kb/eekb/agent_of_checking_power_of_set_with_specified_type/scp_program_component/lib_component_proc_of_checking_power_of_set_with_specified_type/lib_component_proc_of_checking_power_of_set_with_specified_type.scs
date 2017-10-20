@@ -1,0 +1,25 @@
+lib_component_proc_of_checking_power_of_set_with_specified_type
+=> nrel_main_idtf:
+	[Компонент библиотеки. scp-программа поиска всех множеств пар и троек, мощность которых не соответствует их типу]
+	(* <- lang_ru;; *);
+	[Library component. scp-program of searching all triples and pairs, power doesn't correspond to their type]
+	(* <- lang_en;; *);
+
+<- platform_independent_reusable_component_OSTIS;
+<- reusable_scp_program;
+
+-> rrel_key_sc_element: 
+	proc_of_checking_power_of_set_with_specified_type.scs;
+
+<- rrel_key_sc_element: 
+	...
+	(*
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://htmls/proc_of_checking_power_of_set_with_specified_type.html" 
+				(* <- lang_ru;; *);;
+		*);;
+	*);;
