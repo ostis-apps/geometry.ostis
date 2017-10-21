@@ -1,0 +1,26 @@
+s_mutual_location_of_line_and_plane_in_space
+=> nrel_main_idtf:
+	[Раздел. Взаимное расположение прямой и плоскости в пространстве]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Section. Mutual location of line and plane in space]
+	(* <- lang_en;; *);
+
+<- non_atomic_section;
+
+<= nrel_section_decomposition:
+	{
+		s_parallelism_of_line_and_plane
+		(*
+		=> nrel_section_base_order: 
+			s_intersection_of_line_with_plane;;
+		*);
+		
+		s_intersection_of_line_with_plane
+		(*
+		=> nrel_section_base_order: 
+			s_perpendicularity_of_line_and_plane;;
+		*);
+		
+		s_perpendicularity_of_line_and_plane
+	};;

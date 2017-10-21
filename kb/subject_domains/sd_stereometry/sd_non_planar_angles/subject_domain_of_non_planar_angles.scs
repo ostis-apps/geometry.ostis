@@ -1,0 +1,22 @@
+sc_node_struct -> subject_domain_of_non_planar_angles;;
+
+subject_domain_of_non_planar_angles
+=> nrel_main_idtf:
+	[Предметная область непланарных углов]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Subject domain of non planar angles]
+	(* <- lang_en;; *);;
+
+subject_domain_of_non_planar_angles => nrel_primary_elements_class_private_subject_domain: subject_domain_of_dihedral_angles;;
+subject_domain_of_non_planar_angles => nrel_primary_elements_class_private_subject_domain: subject_domain_of_trihedral_angles;;
+
+subject_domain_of_non_planar_angles -> rrel_not_maximum_studied_object_class: 
+	concept_dihedral_angle;
+	concept_trihedral_angle;;
+
+subject_domain_of_non_planar_angles -> rrel_explored_relation: 
+	nrel_edge_of_dihedral_angle;
+	nrel_face_of_dihedral_angle;;
+
+subject_domain_of_non_planar_angles <- subject_domain;;

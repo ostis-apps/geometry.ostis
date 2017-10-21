@@ -1,0 +1,22 @@
+ui_menu_file_for_proof_text_translation <- ui_user_command_class_atom; ui_user_command_class_view_kb; ui_one_argument_command_class;;
+
+ui_menu_file_for_proof_text_translation => nrel_main_idtf: 
+	[Вывести текст доказательства утверждения на естественном языке] 
+	(* <- lang_ru;; *);
+	[Output the proof text of the natural language statement] 
+	(* <- lang_en;; *);;
+
+ui_menu_file_for_proof_text_translation => ui_nrel_command_template:
+	[*
+		action_of_proof_text_translation _-> ._action_of_proof_text_translation_instance
+			(*
+			_-> ui_arg_1;;				
+			*);;
+		._action_of_proof_text_translation_instance _<- question;;
+	*];;
+
+ui_menu_file_for_proof_text_translation => ui_nrel_command_lang_template: 
+	[Вывести текст доказательства утверждения на естественном языке: $ui_arg_1] 
+	(* <- lang_ru;; *);
+	[Output the proof text of the natural language statement: $ui_arg_1] 
+	(* <- lang_en;; *);;

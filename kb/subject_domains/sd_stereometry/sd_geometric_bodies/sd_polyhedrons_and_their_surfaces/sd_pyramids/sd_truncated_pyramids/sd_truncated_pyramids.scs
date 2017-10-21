@@ -1,0 +1,22 @@
+sc_node_struct -> subject_domain_of_truncated_pyramids;;
+
+subject_domain_of_truncated_pyramids
+=> nrel_main_idtf:
+	[Предметная область усеченных пирамид]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Subject domain of truncated pyramids]
+	(* <- lang_en;; *);;
+
+subject_domain_of_pyramids -> rrel_maximum_studied_object_class: concept_truncated_pyramid;;
+
+subject_domain_of_pyramids -> rrel_explored_relation: 
+	nrel_apothem_of_regular_truncated_pyramid;
+	nrel_base_of_truncated_pyramid;
+	nrel_height_of_truncated_pyramid;
+	nrel_larger_base_of_truncated_pyramid;
+	nrel_lateral_edge_of_truncated_pyramid;
+	nrel_lateral_face_of_truncated_pyramid;
+	nrel_smaller_base_of_truncated_pyramid;;
+
+subject_domain_of_truncated_pyramids <- subject_domain;;

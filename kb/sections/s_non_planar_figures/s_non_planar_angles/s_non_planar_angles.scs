@@ -1,0 +1,26 @@
+s_non_planar_angles
+=> nrel_main_idtf:
+	[Раздел. Непланарные углы]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Section. Non planar angles]
+	(* <- lang_en;; *);
+
+<- non_atomic_section;
+
+<= nrel_section_decomposition:
+	{
+		s_sd_non_planar_angles
+		(*
+		=> nrel_section_base_order: 
+			s_sd_dihedral_angles;;
+		*);
+		
+		s_sd_dihedral_angles
+		(*
+		=> nrel_section_base_order: 
+			s_sd_trihedral_angles;;
+		*);
+
+		s_sd_trihedral_angles
+	};;

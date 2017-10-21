@@ -1,0 +1,32 @@
+s_mutual_location_of_lines_in_space
+=> nrel_main_idtf:
+	[Раздел. Взаимное расположение прямых в пространстве]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Section. Mutual location of lines in space]
+	(* <- lang_en;; *);
+
+<- non_atomic_section;
+
+<= nrel_section_decomposition:
+	{
+		s_parallel_lines_in_space
+		(*
+		=> nrel_section_base_order: 
+			s_crossed_lines_in_space;;
+		*);
+		
+		s_crossed_lines_in_space
+		(*
+		=> nrel_section_base_order: 
+			s_perpendicular_lines_in_space;;
+		*);
+
+		s_perpendicular_lines_in_space
+		(*
+		=> nrel_section_base_order: 
+			s_distance_and_angle_between_lines;;
+		*);
+	
+		s_distance_and_angle_between_lines
+	};;
