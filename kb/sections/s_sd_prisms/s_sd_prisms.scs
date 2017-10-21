@@ -1,0 +1,27 @@
+﻿s_sd_prisms
+=> nrel_main_idtf:
+	[Раздел. Предметная призм]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Section. Subject area prisms]
+	(* <- lang_en;; *);
+
+<- atomic_section;
+
+<= nrel_sc_text_traslation:
+	...
+	(*
+	->rrel_example:
+		"file://htmls/s_sd_prisms_ru.html"
+		(* <- lang_ru;; *);;
+=> nrel_summary:
+	...
+	(*
+	<= nrel_sc_text_translation:
+		...
+		(*
+		->rrel_example:
+			[В данном разделе описывается, что такое  призмы и какими основными свойствами они обладают.]
+			(*  <- lang_ru;; *);;
+		*);;
+	*);;

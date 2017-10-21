@@ -1,0 +1,28 @@
+s_sd_squares
+=> nrel_main_idtf:
+	[Раздел. Взаимное расположение прямых в пространстве. Скрещивающиеся прямые в пространстве.]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Section. Lines and planes in space. Mutual location of lines in space. Crossed lines in space.]
+	(* <- lang_en;; *);
+
+<= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+		"file://html/s_crossed_lines_in_space_ru.html"
+		(* <- lang_ru;; *);;
+	*);
+
+<- atomic_section;
+
+=> nrel_summary:
+	...
+	(*
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:[В данном разделе рассматриваются признак и теоремы о скрещивающихся прямых в пространстве.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
