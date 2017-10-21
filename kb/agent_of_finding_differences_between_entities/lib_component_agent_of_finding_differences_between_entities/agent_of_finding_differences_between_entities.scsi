@@ -1,0 +1,1043 @@
+agent_of_finding_differences_between_entities
+=> nrel_main_idtf:
+	[агентная scp-программа поиска различий между двумя сущностями] (* <- lang_ru;; *);
+	[agent scp-program of finding differences between entities] (* <- lang_en;; *);
+	<- agent_scp_program;;
+
+scp_program -> agent_of_finding_differences_between_entities
+	(*
+	-> rrel_params: .agent_of_finding_differences_between_entities_params
+		(*
+		-> rrel_1: rrel_in: _event;;
+		-> rrel_2: rrel_in: _input_arc;;
+		*);;
+
+	-> rrel_operators: .agent_of_finding_differences_between_entities_set
+		(*
+		-> rrel_init: .agent_of_finding_differences_between_entities1A
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: _temp;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _input_arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _quest;;
+
+			=> nrel_goto: .agent_of_finding_differences_between_entities1B;;
+			*);;
+                 
+		-> .agent_of_finding_differences_between_entities1B
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: action_of_finding_differences_between_entities;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _quest;;
+
+			=> nrel_then: .agent_of_finding_differences_between_entities2A;;
+			=> nrel_else: .agent_of_finding_differences_between_entities_return;;
+			*);;
+
+		-> .agent_of_finding_differences_between_entities2A
+			(*
+			<- searchElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _first_entity;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: rrel_1;;
+
+			=> nrel_then: .agent_of_finding_differences_between_entities2B;;
+			=> nrel_else: .agent_of_finding_differences_between_entities_call_proc_of_adding_validating_message;;
+			*);;
+
+		-> .agent_of_finding_differences_between_entities2B
+			(*
+			<- searchElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _second_entity;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: rrel_2;;
+
+			=> nrel_then: .agent_of_finding_differences_between_entities3A;;
+			=> nrel_else: .agent_of_finding_differences_between_entities_call_proc_of_adding_validating_message;;
+			*);;
+
+		-> .agent_of_finding_differences_between_entities3A
+			(*
+			<- genEl;;
+
+			-> rrel_1: rrel_assign: rrel_node: rrel_scp_var: rrel_const: _answer_for_finding_differences_between_entities;;
+
+			=> nrel_goto: .agent_of_finding_differences_between_entities4A;;
+			*);;
+		
+		-> .agent_of_finding_differences_between_entities4A
+			(*
+			<- searchSetStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _first_entity;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _elem;;
+
+			-> rrel_set_3: rrel_assign: rrel_scp_var: _set_for_out_triple;;
+
+			=> nrel_then: .agent_of_finding_differences_between_entities4B;;
+			=> nrel_else: .agent_of_finding_differences_between_entities5A;;
+			*);;
+
+		-> .agent_of_finding_differences_between_entities4B
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _set_for_out_triple;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _elem;;
+
+			=> nrel_then: .agent_of_finding_differences_between_entities4C;;
+			=> nrel_else: .agent_of_finding_differences_between_entities4I;;
+			*);;
+
+		-> .agent_of_finding_differences_between_entities4C
+			(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_erase: rrel_fixed: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+
+			=> nrel_goto: .agent_of_finding_differences_between_entities4D;;
+			*);;
+
+		-> .agent_of_finding_differences_between_entities4D
+			(*
+			<- ifCoin;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _elem;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _second_entity;;
+
+			=> nrel_then: .agent_of_finding_differences_between_entities4B;;
+			=> nrel_else: .agent_of_finding_differences_between_entities4E;;
+			*);;
+
+		-> .agent_of_finding_differences_between_entities4E
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: concerted_part_of_kb;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _elem;;
+
+			=> nrel_then: .agent_of_finding_differences_between_entities4F;;
+			=> nrel_else: .agent_of_finding_differences_between_entities4B;;
+			*);;
+
+		-> .agent_of_finding_differences_between_entities4F
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _second_entity;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _elem;;
+
+			=> nrel_then: .agent_of_finding_differences_between_entities4B;;
+			=> nrel_else: .agent_of_finding_differences_between_entities4G;;
+			*);;
+
+		-> .agent_of_finding_differences_between_entities4G
+			(*
+			<- searchSetStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _first_entity;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _elem;;
+
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer_for_finding_differences_between_entities;;
+
+			=> nrel_goto: .agent_of_finding_differences_between_entities4H;;
+			*);;
+
+		-> .agent_of_finding_differences_between_entities4H
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_for_finding_differences_between_entities;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_const: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _elem;;
+
+			=> nrel_goto: .agent_of_finding_differences_between_entities4B;;
+			*);;
+
+		-> .agent_of_finding_differences_between_entities4I
+			(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_erase: rrel_fixed: rrel_scp_var: _set_for_out_triple;;
+
+			=> nrel_goto: .agent_of_finding_differences_between_entities5A;;
+			*);;
+
+		-> .agent_of_finding_differences_between_entities5A
+			(*
+			<- searchSetStr3;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: _elem;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _first_entity;;
+
+			-> rrel_set_1: rrel_assign: rrel_scp_var: _set_for_in_triple;;
+
+			=> nrel_then: .agent_of_finding_differences_between_entities5B;;
+			=> nrel_else: .agent_of_finding_differences_between_entities6A;;
+			*);;
+
+		-> .agent_of_finding_differences_between_entities5B
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _set_for_in_triple;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _elem;;
+
+			=> nrel_then: .agent_of_finding_differences_between_entities5C;;
+			=> nrel_else: .agent_of_finding_differences_between_entities5M;;
+			*);;
+
+		-> .agent_of_finding_differences_between_entities5C
+			(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_erase: rrel_fixed: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+
+			=> nrel_goto: .agent_of_finding_differences_between_entities5D;;
+			*);;
+
+		-> .agent_of_finding_differences_between_entities5D
+			(*
+			<- ifCoin;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _elem;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _second_entity;;
+
+			=> nrel_then: .agent_of_finding_differences_between_entities5B;;
+			=> nrel_else: .agent_of_finding_differences_between_entities5E;;
+			*);;
+
+		-> .agent_of_finding_differences_between_entities5E
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: concerted_part_of_kb;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _elem;;
+
+			=> nrel_then: .agent_of_finding_differences_between_entities5F;;
+			=> nrel_else: .agent_of_finding_differences_between_entities5B;;
+			*);;
+
+		-> .agent_of_finding_differences_between_entities5F
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _elem;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _second_entity;;
+
+			=> nrel_then: .agent_of_finding_differences_between_entities5B;;
+			=> nrel_else: .agent_of_finding_differences_between_entities5G;;
+			*);;
+
+		-> .agent_of_finding_differences_between_entities5G
+			(*
+			<- searchSetStr3;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: rrel_norole_relation: _some_relation;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _elem;;
+
+			-> rrel_set_1: rrel_fixed: rrel_scp_var: _answer_for_finding_differences_between_entities;;
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer_for_finding_differences_between_entities;;
+
+			=> nrel_then: .agent_of_finding_differences_between_entities5I;;
+			=> nrel_else: .agent_of_finding_differences_between_entities5H;;
+			*);;
+
+		-> .agent_of_finding_differences_between_entities5H
+			(*
+			<- searchSetStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _elem;;
+			-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: rrel_node: _some_element;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_assign: rrel_scp_var: rrel_norole_relation: _some_relation;;
+
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer_for_finding_differences_between_entities;;
+			-> rrel_set_3: rrel_fixed: rrel_scp_var: _answer_for_finding_differences_between_entities;;
+			-> rrel_set_4: rrel_fixed: rrel_scp_var: _answer_for_finding_differences_between_entities;;
+			-> rrel_set_5: rrel_fixed: rrel_scp_var: _answer_for_finding_differences_between_entities;;
+
+			=> nrel_then: .agent_of_finding_differences_between_entities5J;;
+			=> nrel_else: .agent_of_finding_differences_between_entities5K;;
+			*);;
+
+		-> .agent_of_finding_differences_between_entities5I
+			(*
+			<- searchSetStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _elem;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: rrel_node: _some_element;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_assign: rrel_scp_var: rrel_role_relation: _some_role_relation;;
+
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer_for_finding_differences_between_entities;;
+			-> rrel_set_3: rrel_fixed: rrel_scp_var: _answer_for_finding_differences_between_entities;;
+			-> rrel_set_4: rrel_fixed: rrel_scp_var: _answer_for_finding_differences_between_entities;;
+			-> rrel_set_5: rrel_fixed: rrel_scp_var: _answer_for_finding_differences_between_entities;;
+
+			=> nrel_goto: .agent_of_finding_differences_between_entities5L;;
+			*);;
+
+		-> .agent_of_finding_differences_between_entities5J
+			(*
+			<- searchSetStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _elem;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _some_element;;
+
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer_for_finding_differences_between_entities;;
+			-> rrel_set_3: rrel_fixed: rrel_scp_var: _answer_for_finding_differences_between_entities;;
+
+			=> nrel_goto: .agent_of_finding_differences_between_entities5L;;
+			*);;
+
+		-> .agent_of_finding_differences_between_entities5K
+			(*
+			<- searchSetStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _elem;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_const: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _first_entity;;
+
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer_for_finding_differences_between_entities;;
+
+			=> nrel_goto: .agent_of_finding_differences_between_entities5L;;
+			*);;
+
+		-> .agent_of_finding_differences_between_entities5L
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_for_finding_differences_between_entities;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_const: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _elem;;
+
+			=> nrel_goto: .agent_of_finding_differences_between_entities5B;;
+			*);;
+
+		-> .agent_of_finding_differences_between_entities5M
+			(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_erase: rrel_fixed: rrel_scp_var: _set_for_in_triple;;
+
+			=> nrel_goto: .agent_of_finding_differences_between_entities6A;;
+			*);;
+
+		-> .agent_of_finding_differences_between_entities6A
+			(*
+			<- searchSetStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _first_entity;;
+			-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _elem;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+			-> rrel_5: rrel_assign: rrel_scp_var: rrel_norole_relation: _norole_relation;;
+
+			-> rrel_set_3: rrel_assign: rrel_scp_var: _set_for_out_five;;
+
+			=> nrel_then: .agent_of_finding_differences_between_entities6B;;
+			=> nrel_else: .agent_of_finding_differences_between_entities7A;;
+			*);;
+
+		-> .agent_of_finding_differences_between_entities6B
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _set_for_out_five;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _elem;;
+
+			=> nrel_then: .agent_of_finding_differences_between_entities6C;;
+			=> nrel_else: .agent_of_finding_differences_between_entities6L;;
+			*);;
+
+		-> .agent_of_finding_differences_between_entities6C
+			(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_erase: rrel_fixed: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+
+			=> nrel_goto: .agent_of_finding_differences_between_entities6D;;
+			*);;
+
+		-> .agent_of_finding_differences_between_entities6D
+			(*
+			<- ifCoin;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _elem;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _second_entity;;
+
+			=> nrel_then: .agent_of_finding_differences_between_entities6B;;
+			=> nrel_else: .agent_of_finding_differences_between_entities6E;;
+			*);;
+
+		-> .agent_of_finding_differences_between_entities6E
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: concerted_part_of_kb;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _elem;;
+
+			=> nrel_then: .agent_of_finding_differences_between_entities6F;;
+			=> nrel_else: .agent_of_finding_differences_between_entities6B;;
+			*);;
+
+		-> .agent_of_finding_differences_between_entities6F
+			(*
+			<- searchElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _first_entity;;
+			-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _elem;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+			-> rrel_5: rrel_assign: rrel_scp_var: rrel_norole_relation: _norole_relation;;
+
+			=> nrel_goto: .agent_of_finding_differences_between_entities6G;;
+			*);;
+
+		-> .agent_of_finding_differences_between_entities6G
+			(*
+			<- searchElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _second_entity;;
+			-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _elem;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_var: rrel_norole_relation: _norole_relation;;
+
+			=> nrel_then: .agent_of_finding_differences_between_entities6B;;
+			=> nrel_else: .agent_of_finding_differences_between_entities6H;;
+			*);;
+
+		-> .agent_of_finding_differences_between_entities6H
+			(*
+			<- searchSetStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _first_entity;;
+			-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _elem;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_var: rrel_norole_relation: _norole_relation;;
+
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer_for_finding_differences_between_entities;;
+			-> rrel_set_4: rrel_fixed: rrel_scp_var: _answer_for_finding_differences_between_entities;;
+
+			=> nrel_goto: .agent_of_finding_differences_between_entities6I;;
+			*);;
+
+		-> .agent_of_finding_differences_between_entities6I
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_for_finding_differences_between_entities;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _elem;;
+
+			=> nrel_goto: .agent_of_finding_differences_between_entities6J;;
+			*);;
+
+		-> .agent_of_finding_differences_between_entities6J
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_for_finding_differences_between_entities;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _norole_relation;;
+
+			=> nrel_then: .agent_of_finding_differences_between_entities6B;;
+			=> nrel_else: .agent_of_finding_differences_between_entities6K;;
+			*);;
+
+		-> .agent_of_finding_differences_between_entities6K
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_for_finding_differences_between_entities;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _norole_relation;;
+
+			=> nrel_goto: .agent_of_finding_differences_between_entities6B;;
+			*);;
+
+		-> .agent_of_finding_differences_between_entities6L
+			(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_erase: rrel_fixed: rrel_scp_var: _set_for_out_five;;
+
+			=> nrel_goto: .agent_of_finding_differences_between_entities7A;;
+			*);;
+
+		-> .agent_of_finding_differences_between_entities7A
+			(*
+			<- searchSetStr5;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: _elem;;
+			-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _first_entity;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+			-> rrel_5: rrel_assign: rrel_scp_var: rrel_norole_relation: _norole_relation;;
+
+			-> rrel_set_1: rrel_assign: rrel_scp_var: _set_for_in_five;;
+
+			=> nrel_then: .agent_of_finding_differences_between_entities7B;;
+			=> nrel_else: .agent_of_finding_differences_between_entities8A;;
+			*);;
+
+		-> .agent_of_finding_differences_between_entities7B
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _set_for_in_five;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _elem;;
+
+			=> nrel_then: .agent_of_finding_differences_between_entities7C;;
+			=> nrel_else: .agent_of_finding_differences_between_entities7L;;
+			*);;
+
+		-> .agent_of_finding_differences_between_entities7C
+			(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_erase: rrel_fixed: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+
+			=> nrel_goto: .agent_of_finding_differences_between_entities7D;;
+			*);;
+
+		-> .agent_of_finding_differences_between_entities7D
+			(*
+			<- ifCoin;;
+
+			-> rrel_1: _elem;;
+			-> rrel_2: _second_entity;;
+
+			=> nrel_then: .agent_of_finding_differences_between_entities7B;;
+			=> nrel_else: .agent_of_finding_differences_between_entities7E;;
+			*);;
+
+		-> .agent_of_finding_differences_between_entities7E
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: concerted_part_of_kb;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _elem;;
+
+			=> nrel_then: .agent_of_finding_differences_between_entities7F;;
+			=> nrel_else: .agent_of_finding_differences_between_entities7B;;
+			*);;
+
+		-> .agent_of_finding_differences_between_entities7F
+			(*
+			<- searchElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _elem;;
+			-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _first_entity;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+			-> rrel_5: rrel_assign: rrel_scp_var: rrel_norole_relation: _norole_relation;;
+
+			=> nrel_goto: .agent_of_finding_differences_between_entities7G;;
+			*);;
+
+		-> .agent_of_finding_differences_between_entities7G
+			(*
+			<- searchElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _elem;;
+			-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _second_entity;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_var: rrel_norole_relation: _norole_relation;;
+
+			=> nrel_then: .agent_of_finding_differences_between_entities7B;;
+			=> nrel_else: .agent_of_finding_differences_between_entities7H;;
+			*);;
+
+		-> .agent_of_finding_differences_between_entities7H
+			(*
+			<- searchSetStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _elem;;
+			-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _first_entity;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_var: rrel_norole_relation: _norole_relation;;
+
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer_for_finding_differences_between_entities;;
+			-> rrel_set_4: rrel_fixed: rrel_scp_var: _answer_for_finding_differences_between_entities;;
+
+			=> nrel_goto: .agent_of_finding_differences_between_entities7I;;
+			*);;
+
+		-> .agent_of_finding_differences_between_entities7I
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_for_finding_differences_between_entities;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _elem;;
+
+			=> nrel_goto: .agent_of_finding_differences_between_entities7J;;
+			*);;
+
+		-> .agent_of_finding_differences_between_entities7J
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_for_finding_differences_between_entities;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _norole_relation;;
+
+			=> nrel_then: .agent_of_finding_differences_between_entities7B;;
+			=> nrel_else: .agent_of_finding_differences_between_entities7K;;
+			*);;
+
+		-> .agent_of_finding_differences_between_entities7K
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_for_finding_differences_between_entities;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _norole_relation;;
+
+			=> nrel_goto: .agent_of_finding_differences_between_entities7B;;
+			*);;
+
+		-> .agent_of_finding_differences_between_entities7L
+			(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_erase: rrel_fixed: rrel_scp_var: _set_for_in_five;;
+
+			=> nrel_goto: .agent_of_finding_differences_between_entities8A;;
+			*);;
+
+		-> .agent_of_finding_differences_between_entities8A
+			(*
+			<- searchSetStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _first_entity;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _elem;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+			-> rrel_5: rrel_assign: rrel_scp_var: rrel_role_relation: _role_relation;;
+
+			-> rrel_set_3: rrel_assign: rrel_scp_var: _set_for_out_role_five;;
+
+			=> nrel_then: .agent_of_finding_differences_between_entities8B;;
+			=> nrel_else: .agent_of_finding_differences_between_entities9A;;
+			*);;
+
+		-> .agent_of_finding_differences_between_entities8B
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _set_for_out_role_five;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _elem;;
+
+			=> nrel_then: .agent_of_finding_differences_between_entities8C;;
+			=> nrel_else: .agent_of_finding_differences_between_entities8L;;
+			*);;
+
+		-> .agent_of_finding_differences_between_entities8C
+			(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_erase: rrel_fixed: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+
+			=> nrel_goto: .agent_of_finding_differences_between_entities8D;;
+			*);;
+
+		-> .agent_of_finding_differences_between_entities8D
+			(*
+			<- ifCoin;;
+
+			-> rrel_1: _elem;;
+			-> rrel_2: _second_entity;;
+
+			=> nrel_then: .agent_of_finding_differences_between_entities8B;;
+			=> nrel_else: .agent_of_finding_differences_between_entities8E;;
+			*);;
+
+		-> .agent_of_finding_differences_between_entities8E
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: concerted_part_of_kb;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _elem;;
+
+			=> nrel_then: .agent_of_finding_differences_between_entities8F;;
+			=> nrel_else: .agent_of_finding_differences_between_entities8B;;
+			*);;
+
+		-> .agent_of_finding_differences_between_entities8F
+			(*
+			<- searchElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _first_entity;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _elem;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+			-> rrel_5: rrel_assign: rrel_scp_var: rrel_role_relation: _role_relation;;
+
+			=> nrel_goto: .agent_of_finding_differences_between_entities8G;;
+			*);;
+
+		-> .agent_of_finding_differences_between_entities8G
+			(*
+			<- searchElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _second_entity;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _elem;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_var: rrel_role_relation: _role_relation;;
+
+			=> nrel_then: .agent_of_finding_differences_between_entities8B;;
+			=> nrel_else: .agent_of_finding_differences_between_entities8H;;
+			*);;
+
+		-> .agent_of_finding_differences_between_entities8H
+			(*
+			<- searchSetStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _first_entity;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _elem;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_var: rrel_role_relation: _role_relation;;
+
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer_for_finding_differences_between_entities;;
+			-> rrel_set_4: rrel_fixed: rrel_scp_var: _answer_for_finding_differences_between_entities;;
+
+			=> nrel_goto: .agent_of_finding_differences_between_entities8I;;
+			*);;
+
+		-> .agent_of_finding_differences_between_entities8I
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_for_finding_differences_between_entities;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _elem;;
+
+			=> nrel_goto: .agent_of_finding_differences_between_entities8J;;
+			*);;
+
+		-> .agent_of_finding_differences_between_entities8J
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_for_finding_differences_between_entities;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _role_relation;;
+
+			=> nrel_then: .agent_of_finding_differences_between_entities8B;;
+			=> nrel_else: .agent_of_finding_differences_between_entities8K;;
+			*);;
+
+		-> .agent_of_finding_differences_between_entities8K
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_for_finding_differences_between_entities;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _role_relation;;
+
+			=> nrel_goto: .agent_of_finding_differences_between_entities8B;;
+			*);;
+
+		-> .agent_of_finding_differences_between_entities8L
+			(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_erase: rrel_fixed: rrel_scp_var: _set_for_out_role_five;;
+
+			=> nrel_goto: .agent_of_finding_differences_between_entities9A;;
+			*);;
+
+		-> .agent_of_finding_differences_between_entities9A
+			(*
+			<- searchSetStr5;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: _elem;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _first_entity;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+			-> rrel_5: rrel_assign: rrel_scp_var: rrel_role_relation: _role_relation;;
+
+			-> rrel_set_1: rrel_assign: rrel_scp_var: _set_for_in_role_five;;
+
+			=> nrel_then: .agent_of_finding_differences_between_entities9B;;
+			=> nrel_else: .agent_of_finding_differences_between_entities10A;;
+			*);;
+
+		-> .agent_of_finding_differences_between_entities9B
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _set_for_in_role_five;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _elem;;
+
+			=> nrel_then: .agent_of_finding_differences_between_entities9C;;
+			=> nrel_else: .agent_of_finding_differences_between_entities9L;;
+			*);;
+
+		-> .agent_of_finding_differences_between_entities9C
+			(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_erase: rrel_fixed: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+
+			=> nrel_goto: .agent_of_finding_differences_between_entities9D;;
+			*);;
+
+		-> .agent_of_finding_differences_between_entities9D
+			(*
+			<- ifCoin;;
+
+			-> rrel_1: _elem;;
+			-> rrel_2: _second_entity;;
+
+			=> nrel_then: .agent_of_finding_differences_between_entities9B;;
+			=> nrel_else: .agent_of_finding_differences_between_entities9E;;
+			*);;
+
+		-> .agent_of_finding_differences_between_entities9E
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: concerted_part_of_kb;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _elem;;
+
+			=> nrel_then: .agent_of_finding_differences_between_entities9F;;
+			=> nrel_else: .agent_of_finding_differences_between_entities9B;;
+			*);;
+
+		-> .agent_of_finding_differences_between_entities9F
+			(*
+			<- searchElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _elem;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _first_entity;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+			-> rrel_5: rrel_assign: rrel_scp_var: rrel_role_relation: _role_relation;;
+
+			=> nrel_goto: .agent_of_finding_differences_between_entities9G;;
+			*);;
+
+		-> .agent_of_finding_differences_between_entities9G
+			(*
+			<- searchElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _elem;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _second_entity;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_var: rrel_role_relation: _role_relation;;
+
+			=> nrel_then: .agent_of_finding_differences_between_entities9B;;
+			=> nrel_else: .agent_of_finding_differences_between_entities9H;;
+			*);;
+
+		-> .agent_of_finding_differences_between_entities9H
+			(*
+			<- searchSetStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _elem;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _first_entity;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_var: rrel_role_relation: _role_relation;;
+
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer_for_finding_differences_between_entities;;
+			-> rrel_set_4: rrel_fixed: rrel_scp_var: _answer_for_finding_differences_between_entities;;
+
+			=> nrel_goto: .agent_of_finding_differences_between_entities9I;;
+			*);;
+
+		-> .agent_of_finding_differences_between_entities9I
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_for_finding_differences_between_entities;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _elem;;
+
+			=> nrel_goto: .agent_of_finding_differences_between_entities9J;;
+			*);;
+
+		-> .agent_of_finding_differences_between_entities9J
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_for_finding_differences_between_entities;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _role_relation;;
+
+			=> nrel_then: .agent_of_finding_differences_between_entities9B;;
+			=> nrel_else: .agent_of_finding_differences_between_entities9K;;
+			*);;
+
+		-> .agent_of_finding_differences_between_entities9K
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_for_finding_differences_between_entities;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _role_relation;;
+
+			=> nrel_goto: .agent_of_finding_differences_between_entities9B;;
+			*);;
+
+		-> .agent_of_finding_differences_between_entities9L
+			(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_erase: rrel_fixed: rrel_scp_var: _set_for_in_role_five;;
+
+			=> nrel_goto: .agent_of_finding_differences_between_entities10A;;
+			*);;
+
+		-> .agent_of_finding_differences_between_entities10A
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_for_finding_differences_between_entities;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _something;;
+
+			=> nrel_then: .agent_of_finding_differences_between_entities10B;;
+			=> nrel_else: .agent_of_finding_differences_between_entities10C;;
+			*);;
+
+		-> .agent_of_finding_differences_between_entities10B
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_for_finding_differences_between_entities;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: rrel_const: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _first_entity;;
+
+			=> nrel_goto: .agent_of_finding_differences_between_entities10C;;
+			*);;
+
+		-> .agent_of_finding_differences_between_entities10C
+			(*
+			<- ifVarAssign;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _check_for_quit;;
+
+			=> nrel_then: .agent_of_finding_differences_between_entities_gen_answer;;
+			=> nrel_else: .agent_of_finding_differences_between_entities10D;;
+			*);;
+
+		-> .agent_of_finding_differences_between_entities10D
+			(*
+			<- genEl;;
+
+			-> rrel_1: rrel_assign: rrel_node: rrel_scp_var: _check_for_quit;;
+
+			=> nrel_goto: .agent_of_finding_differences_between_entities10E;;
+			*);;
+
+		-> .agent_of_finding_differences_between_entities10E
+			(*
+			<- searchElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _second_entity;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: rrel_1;;
+
+			=> nrel_goto: .agent_of_finding_differences_between_entities10F;;
+			*);;
+
+		-> .agent_of_finding_differences_between_entities10F
+			(*
+			<- searchElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _first_entity;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: rrel_2;;
+
+			=> nrel_goto: .agent_of_finding_differences_between_entities4A;;
+			*);;
+
+		-> .agent_of_finding_differences_between_entities_gen_answer
+			(*
+			<- genElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_const: rrel_common: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var:  _answer_for_finding_differences_between_entities;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_const: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_answer;;
+
+			=> nrel_goto: .agent_of_finding_differences_between_entities_return;;
+			*);;
+
+		-> .agent_of_finding_differences_between_entities_call_proc_of_adding_validating_message
+			(*
+		  	<- call;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_const: proc_of_adding_validating_message;;
+		  	-> rrel_2: rrel_fixed: rrel_scp_const: .agent_of_finding_differences_between_entities_call_proc_of_adding_validating_message_params 
+				(*
+				-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+				-> rrel_2: rrel_fixed: rrel_scp_const: [Wrong parameter! It should be entity];;
+				*);;
+		  	-> rrel_3: rrel_assign: rrel_scp_var: _descr1;;
+
+		  	=> nrel_goto: .agent_of_finding_differences_between_entities_waitreturn_proc_of_adding_validating_message;;
+			*);;
+
+		-> .agent_of_finding_differences_between_entities_waitreturn_proc_of_adding_validating_message
+			(*
+		  	<- waitReturn;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_var: _descr1;;
+
+		  	=> nrel_goto: .agent_of_finding_differences_between_entities_return;;
+			*);;
+
+		-> .agent_of_finding_differences_between_entities_return
+			(*
+			<- return;;
+			*);;
+		*);; 
+	*);;

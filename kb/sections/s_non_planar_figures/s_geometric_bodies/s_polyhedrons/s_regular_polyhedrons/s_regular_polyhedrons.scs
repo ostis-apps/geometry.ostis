@@ -1,0 +1,39 @@
+s_regular_polyhedrons
+=> nrel_main_idtf:
+	[Раздел. Правильные многогранники]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Section. Regular polyhedrons]
+	(* <- lang_en;; *);
+
+<- non_atomic_section;
+
+<= nrel_section_decomposition:
+	{
+		s_sd_tetrahedrons
+		(*
+		=> nrel_section_base_order: 
+			s_sd_cubes;;
+		*);
+		
+		s_sd_cubes
+		(*
+		=> nrel_section_base_order: 
+			s_sd_octahedrons;;
+		*);
+
+		s_sd_octahedrons
+		(*
+		=> nrel_section_base_order: 
+			s_sd_dodecahedrons;;
+		*);
+
+		s_sd_dodecahedrons
+		(*
+		=> nrel_section_base_order: 
+			s_sd_icosahedrons;;
+		*);
+
+		s_sd_icosahedrons
+	};;
+

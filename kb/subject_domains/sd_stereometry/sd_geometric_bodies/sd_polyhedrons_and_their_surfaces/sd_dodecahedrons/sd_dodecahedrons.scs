@@ -1,0 +1,19 @@
+sc_node_struct -> subject_domain_of_dodecahedrons;;
+
+subject_domain_of_dodecahedrons
+=> nrel_main_idtf:
+	[Предметная область додекаэдров]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Subject domain of dodecahedrons]
+	(* <- lang_en;; *);;
+
+subject_domain_of_dodecahedrons -> rrel_maximum_studied_object_class: concept_dodecahedron;;
+
+subject_domain_of_dodecahedrons -> rrel_explored_relation: 
+	nrel_adjacent_faces;
+	nrel_cross_section;
+	nrel_edge;
+	nrel_volume;;
+
+subject_domain_of_dodecahedrons <- subject_domain;;

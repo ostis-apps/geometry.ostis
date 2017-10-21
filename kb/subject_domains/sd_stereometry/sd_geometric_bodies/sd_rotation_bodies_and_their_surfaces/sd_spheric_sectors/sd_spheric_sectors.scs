@@ -1,0 +1,21 @@
+sc_node_struct -> subject_domain_of_spheric_sectors;;
+
+subject_domain_of_spheric_sectors
+=> nrel_main_idtf:
+	[Предметная область шаровых секторов]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Subject domain of spheric sectors]
+	(* <- lang_en;; *);;
+
+subject_domain_of_spheric_sectors -> rrel_maximum_studied_object_class: 
+	concept_spheric_sector;;
+
+subject_domain_of_spheric_sectors -> rrel_explored_relation: 
+	nrel_center_of_symmetry;
+	nrel_height_of_spheric_sector;
+	nrel_line_of_symmetry;
+	nrel_plane_of_symmetry;
+	nrel_radius_of_sphere;;
+
+subject_domain_of_spheric_sectors <- subject_domain;;

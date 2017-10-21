@@ -1,0 +1,81 @@
+scp_program-> proc_of_finding_the_cardinality
+(*
+	-> rrel_params: .proc_of_finding_the_cardinality
+	(*
+		-> rrel_1: rrel_in: _set;;
+		-> rrel_2: rrel_in: _cardinality;;
+	*);;
+
+	-> rrel_operators: .proc_of_finding_the_cardinality_set
+	(*
+		-> rrel_init: .proc_of_finding_the_cardinality_1A
+			(*
+			<- searchSetStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _set;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _node1;;
+
+			-> rrel_set_3: rrel_assign: rrel_scp_var: _set_for_finding_cardinality;;
+
+			=> nrel_then: .proc_of_finding_the_cardinality_2A;;
+			=> nrel_else: .proc_of_finding_the_cardinality_2A;;
+			*);;
+
+		-> .proc_of_finding_the_cardinality_2A
+			(*
+			<- contAssign;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_link: _cardinality;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: [0];;
+
+			=> nrel_goto: .proc_of_finding_the_cardinality_3A;;
+			*);;
+
+		-> .proc_of_finding_the_cardinality_3A
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _set_for_finding_cardinality;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _node1;;
+
+			=> nrel_then: .proc_of_finding_the_cardinality_3B;;
+			=> nrel_else: .proc_of_finding_the_cardinality_4A;;
+			*);;
+
+		-> .proc_of_finding_the_cardinality_3B
+			(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_erase: rrel_fixed: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+
+			=> nrel_goto: .proc_of_finding_the_cardinality_3C;;
+			*);;
+
+		-> .proc_of_finding_the_cardinality_3C
+			(*
+			<- contAdd;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_link: _cardinality;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: rrel_link: _cardinality;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: [1];;
+
+			=> nrel_goto: .proc_of_finding_the_cardinality_3A;;
+			*);;
+
+		-> .proc_of_finding_the_cardinality_4A
+			(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_erase: rrel_fixed: rrel_scp_var: _set_for_finding_cardinality;;
+
+			=> nrel_goto: .proc_of_finding_the_cardinality_return;;
+			*);;
+
+		-> .proc_of_finding_the_cardinality_return
+			(*
+			<- return;;
+			*);;
+	*);;
+*);;

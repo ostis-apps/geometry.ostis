@@ -1,0 +1,24 @@
+lib_ui_menu_file_for_finding_differences_between_entities => nrel_main_idtf:
+	[Компонент библиотеки. Команда пользовательского интерфейса для поиска различий между заданными сущностями]
+	(* <- lang_ru;; *);
+	[Library component. User interface command for finding differences between given entities]
+	(* <- lang_en;; *);
+
+<- platform_independent_reusable_component_OSTIS;
+<- atomic_reusable_component_OSTIS;
+<- reusable_knowledge_base_sc_model_component;
+
+<- rrel_key_sc_element:
+	... 
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://htmls/Ui_Find_Differences_Between_Entities.html"
+				(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+lib_ui_menu_file_for_finding_differences_between_entities = [*^"file://ui_menu_file_for_finding_differences_between_entities.scsi"*];; 
