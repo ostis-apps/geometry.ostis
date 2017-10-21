@@ -1,0 +1,33 @@
+sc_node_struct -> subject_domain_of_cylinders;;
+
+subject_domain_of_cylinders
+=> nrel_main_idtf:
+	[Предметная область цилиндров]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Subject domain of cylinders]
+	(* <- lang_en;; *);;
+
+subject_domain_of_cylinders -> rrel_maximum_studied_object_class: concept_cylinder;;
+
+subject_domain_of_cones -> rrel_not_maximum_studied_object_class: 
+	concept_cylindrical_surface;
+	concept_equilateral_cylinder;;
+
+subject_domain_of_cylinders -> rrel_explored_relation: 
+	nrel_cross_section;
+	nrel_generatric;
+	nrel_center_of_symmetry;
+	nrel_element_of_cylinder;
+	nrel_generatrix_of_cylindrical_surface;
+	nrel_height_of_cylinder;
+	nrel_lateral_surface_of_cylinder;
+	nrel_line_of_symmetry;
+	nrel_plane_of_symmetry;
+	nrel_radius_of_cylinder;
+	nrel_base_of_cylinder;
+	nrel_axis_of_cylinder;
+	nrel_axis_of_cylindrical_surface;
+	nrel_volume;;
+
+subject_domain_of_cylinders <- subject_domain;;
