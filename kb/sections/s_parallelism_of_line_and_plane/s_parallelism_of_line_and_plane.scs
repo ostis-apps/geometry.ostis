@@ -1,0 +1,28 @@
+﻿s_parallelism_of_line_and_plane
+=> nrel_main_idtf:
+	[Раздел. Прямая. Плоскость. Параллельность прямой и плоскости]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Section.Straight line. Plane. Parallelism of a line and a plane]
+	(* <- lang_en;; *);
+
+<= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+		"file://html/s_parallelism_of_line_and_plane_ru.html" 
+		(* <- lang_ru;; *);;
+	*);
+
+<- atomic_section;
+
+=> nrel_summary:
+	...
+	(*
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:[В данном разделе рассматривается параллельность прямой и плоскости.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
