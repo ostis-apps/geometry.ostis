@@ -2,8 +2,28 @@ s_parallel_planes
 => nrel_main_idtf:
 	[Раздел. Параллельные плоскости]
 	(* <- lang_ru;; *);
+
 => nrel_main_idtf:
 	[Section. Parallel planes]
 	(* <- lang_en;; *);
 
-<- atomic_section;;
+<= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+		"file://html/s_parallel_planes.html"
+		(* <- lang_ru;; *);;
+	*);
+
+<- atomic_section;
+
+=> nrel_summary:
+	...
+	(*
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:[В данном разделе рассматриваются признак параллельности плоскостей, теоремы о параллельных плоскостях и расстояние между параллельными плоскостями.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
