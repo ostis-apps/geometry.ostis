@@ -2,10 +2,11 @@ s_parallel_planes
 => nrel_main_idtf:
 	[Раздел. Параллельные плоскости]
 	(* <- lang_ru;; *);
-
 => nrel_main_idtf:
 	[Section. Parallel planes]
 	(* <- lang_en;; *);
+
+<- atomic_section;
 
 <= nrel_sc_text_translation:
 	...
@@ -14,8 +15,6 @@ s_parallel_planes
 		"file://html/s_parallel_planes.html"
 		(* <- lang_ru;; *);;
 	*);
-
-<- atomic_section;
 
 => nrel_summary:
 	...
