@@ -6,4 +6,23 @@ s_distance_from_point_and_line_to_plane_angle_between_line_and_plane
 	[Section. Distance from point and line to plane. Angle between line and plane]
 	(* <- lang_en;; *);
 
-<- atomic_section;;
+<- atomic_section;
+
+<= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+		"file://html/s_distance_from_point_and_line_to_plane_angle_between_line_and_plane.html"
+		(* <- lang_ru;; *);;
+	*);
+
+=> nrel_summary:
+	...
+	(*
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:[В данном разделе рассматриваются расстояние от точки и прямой до плоскости, теоремы о расстояниях, угол между прямой и плоскостью.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
