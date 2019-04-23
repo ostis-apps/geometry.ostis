@@ -5,7 +5,7 @@ stat_Pythagorean_theorem -> rrel_then: [* _tr1 _=> nrel_cathetus:: _cat1; _cat2;
 					  _cat2 _=> nrel_length:: _len2;;
 					  _hyp1 _=> nrel_length:: _len3;;
 					  concept_segment _-> _cat1; _cat2; _hyp1;;
-					  concept_quantity _-> _len1; _len2; _len3; _pow1; _pow2; _pow3;;
+					  value _-> _len1; _len2; _len3; _pow1; _pow2; _pow3;;
 					  number -> n_2;;
 					  _con1 _=> nrel_pow_of_quantities:: _pow1;;
 					  _con1 _-> rrel_base_of_power:: _len1;;
@@ -110,25 +110,13 @@ Question2 -> rrel_1: Task_Pattern2;;
 Question2 -> rrel_2: Problem_Pattern1;;
 Question2 <- question; sc_node_struct;;
 
-nrel_comment <- sc_node_norole_relation;;
-
-nrel_comment => nrel_main_idtf: [комментарий*] (* <- lang_ru;; *);;
-
 nrel_identification <- sc_node_norole_relation;;
 
 nrel_identification => nrel_main_idtf: [идентификация*] (* <- lang_ru;; *);;
 
-nrel_value <- sc_node_norole_relation;;
-
-nrel_value => nrel_main_idtf: [значение*] (* <- lang_ru;; *);;
-
 question_finding_value <- sc_node_not_relation;;
 
 question_finding_value => nrel_main_idtf: [Вопросная конструкция, соответствующая поиску значения неизвестной величины] (* <- lang_ru;; *);;
-
-concept_quantity <- sc_node_not_relation;;
-
-concept_quantity => nrel_main_idtf: [величина] (* <- lang_ru;; *);;
 
 sc_node_not_relation -> number;;
 

@@ -9,14 +9,14 @@ nrel_volume => nrel_idtf: [объем геометрического тела*] 
 
 nrel_volume => nrel_first_domain: concept_geometric_body;;
 
-nrel_volume => nrel_second_domain: concept_quantity;;
+nrel_volume => nrel_second_domain: value;;
 
 concept_geometric_body => nrel_definitional_domain: ...
 	(*
 	<= nrel_combination: ...
 		(*
 		-> concept_geometric_body;;
-		-> concept_quantity;;
+		-> value;;
 		*);;
 	*);;
 

@@ -18,7 +18,7 @@ nrel_perimeter => nrel_definitional_domain:
 	<= nrel_combination: 
 		{	 
 		concept_polygon;
-		concept_quantity
+		value
 		};;
 	*);;
 
@@ -26,7 +26,7 @@ nrel_perimeter => nrel_first_domain:
 	concept_polygon;;
 
 nrel_perimeter => nrel_second_domain: 
-	concept_quantity;;
+	value;;
 
 nrel_perimeter <- relation;;
 nrel_perimeter <- binary_relation;;

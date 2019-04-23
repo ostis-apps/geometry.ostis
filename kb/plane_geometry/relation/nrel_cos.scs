@@ -11,13 +11,13 @@ nrel_cos => nrel_definitional_domain:
 	(*
 		<= nrel_combination:
 		{
-			concept_quantity;
+			value;
 			number
 		};;
 	*);;
 
 
-nrel_cos => nrel_first_domain: concept_quantity;;
+nrel_cos => nrel_first_domain: value;;
 
 nrel_cos => nrel_second_domain: number;;
 
