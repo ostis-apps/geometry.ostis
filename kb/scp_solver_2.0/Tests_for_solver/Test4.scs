@@ -34,7 +34,7 @@ stat_square_area_then = [* _sqr1 _=> nrel_area:: _Sqr_Area;;
 					 concept_segment _-> _Segm1;;
 					 concept_quantity _-> _Sqr_Area; _Slen1;;
 					 _Segm1 _=> nrel_length:: _Slen1;;
-					 _Sqr_Area _<= nrel_pow_quantities:: _con1;;
+					 _Sqr_Area _<= nrel_pow_of_quantities:: _con1;;
 					 _con1 _-> rrel_exponent_of_power:: n_2;;
 					 _con1 _-> rrel_base_of_power:: _Slen1;; *];;
 
@@ -55,7 +55,7 @@ stat_circle_length_then = [* _crcl1 _=> nrel_radius:: _rd1;;
 					 _crcl1 _=> nrel_length:: _crcl_len1;;
 					 concept_segment _-> _rd1;;
 					 concept_quantity _-> _rd_len1; _crcl_len1; _sq_rd_len1;;
-					 _crcl_len1 _<= nrel_multiplication_quantities:: _tup2;;
+					 _crcl_len1 _<= nrel_composition_of_quantities:: _tup2;;
 					 _tup2 _-> n_pi; n_2; _rd_len1;;
 					 *];;
 

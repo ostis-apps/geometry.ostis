@@ -904,7 +904,7 @@ scp_program -> proc_analogy_similarity
 
 		   	-> rrel_1: rrel_fixed: rrel_scp_const:
 				[* 
-				_mult_tuple _=> nrel_multiplication_quantities:: _param1;; 
+				_mult_tuple _=> nrel_composition_of_quantities:: _param1;; 
 				_mult_tuple _-> _base_param1;;
 				_mult_tuple _-> _coeffpow;;
 				_pow_tuple _=> nrel_pow_numbers:: _coeffpow;;
@@ -1004,7 +1004,7 @@ scp_program -> proc_analogy_similarity
 
 			-> rrel_1: rrel_fixed: rrel_scp_const: 
 				[* 
-				_mult_tuple _=> nrel_multiplication_quantities:: _param1;; 
+				_mult_tuple _=> nrel_composition_of_quantities:: _param1;; 
 				_mult_tuple _-> _base_param1;;
 				_mult_tuple _-> _coeffper;;
 				*];;
@@ -1034,7 +1034,7 @@ scp_program -> proc_analogy_similarity
 			
 			-> rrel_1: rrel_fixed: rrel_scp_var: _step3;;
 			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
-			-> rrel_3: rrel_fixed: rrel_scp_const: nrel_multiplication_quantities;; 
+			-> rrel_3: rrel_fixed: rrel_scp_const: nrel_composition_of_quantities;; 
 
 			=> nrel_goto: .proc_analogy_similarity_operator10A1;;
 			*);;
