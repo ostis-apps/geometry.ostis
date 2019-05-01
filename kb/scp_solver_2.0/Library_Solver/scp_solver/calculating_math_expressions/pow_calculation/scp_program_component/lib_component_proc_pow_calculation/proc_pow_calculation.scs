@@ -97,15 +97,15 @@ scp_program -> proc_pow_calculation
 		  	=> nrel_else: .proc_pow_calculation_operator2A2;;
 			*);;
 
-		-> .proc_pow_calculation_operator2A2
+		-> .proc_pow_calculation_operator2A2 //!!!
 			(*
 		  	<- searchElStr5;;
 
-		  	-> rrel_1: rrel_assign: rrel_scp_var: _identification;;
+		  	-> rrel_1: rrel_fixed: rrel_scp_var: _finish_node;;
 		  	-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
-		  	-> rrel_3: rrel_fixed: rrel_scp_var: _finish_node;;
+		  	-> rrel_3: rrel_assign: rrel_scp_var: _idtf;;
                   	-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
-                  	-> rrel_5: rrel_fixed: rrel_scp_const: nrel_identification;;
+                  	-> rrel_5: rrel_fixed: rrel_scp_const: nrel_idtf;;
 
 		  	=> nrel_then: .proc_pow_calculation_operator2B1;;
 		  	=> nrel_else: .proc_pow_calculation_operator2A3;; 
@@ -177,15 +177,15 @@ scp_program -> proc_pow_calculation
 		  	=> nrel_else: .proc_pow_calculation_operator3B2;;
 			*);;
 
-		-> .proc_pow_calculation_operator3B2
+		-> .proc_pow_calculation_operator3B2 
 			(*
 		  	<- searchElStr5;;
 
-		  	-> rrel_1: rrel_assign: rrel_scp_var: _identification;;
+		  	-> rrel_1: rrel_fixed: rrel_scp_var: _base_of_power;;
 		  	-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
-		  	-> rrel_3: rrel_fixed: rrel_scp_var: _base_of_power;;
+		  	-> rrel_3: rrel_assign: rrel_scp_var: _idtf;;
                   	-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
-                  	-> rrel_5: rrel_fixed: rrel_scp_const: nrel_identification;;
+                  	-> rrel_5: rrel_fixed: rrel_scp_const: nrel_idtf;;
 
 		  	=> nrel_then: .proc_pow_calculation_operator3C1;;
 		  	=> nrel_else: .proc_pow_calculation_operator3B3;; 
@@ -243,15 +243,15 @@ scp_program -> proc_pow_calculation
 		  	=> nrel_else: .proc_pow_calculation_operator9C1;;
 			*);; 
 
-		-> .proc_pow_calculation_operator4B1
+		-> .proc_pow_calculation_operator4B1  
 			(*
 		  	<- searchElStr5;;
 
-		  	-> rrel_1: rrel_assign: rrel_scp_var: _identification;;
+		  	-> rrel_1: rrel_fixed: rrel_scp_var: _exponent_of_power;;
 		  	-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
-		  	-> rrel_3: rrel_fixed: rrel_scp_var: _exponent_of_power;;
+		  	-> rrel_3: rrel_assign: rrel_scp_var: _idtf;;
                   	-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
-                  	-> rrel_5: rrel_fixed: rrel_scp_const: nrel_identification;;
+                  	-> rrel_5: rrel_fixed: rrel_scp_const: nrel_idtf;;
 
 		  	=> nrel_then: .proc_pow_calculation_operator4C1;;
 		  	=> nrel_else: .proc_pow_calculation_operator4B2;; 
@@ -542,7 +542,7 @@ scp_program -> proc_pow_calculation
 		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
 		  	-> rrel_3: rrel_fixed: rrel_scp_var: _param;;
 
-		  	=> nrel_then: .proc_pow_calculation_operator9A;;
+		  	=> nrel_then: .proc_pow_calculation_operator9A1;;
 		  	=> nrel_else: .proc_pow_calculation_operator8A5;; 
 			*);;
 
@@ -588,7 +588,7 @@ scp_program -> proc_pow_calculation
 		  	-> rrel_1: rrel_fixed: rrel_scp_var: _message;;
 		  	-> rrel_2: rrel_fixed: rrel_scp_const: [Quantity was successfully decreased!];;
 
-		  	=> nrel_then: .proc_pow_calculation_operator9A;;
+		  	=> nrel_then: .proc_pow_calculation_operator9A1;;
 			=> nrel_else: .proc_pow_calculation_operator9C1;;
 			*);;
 
@@ -639,7 +639,7 @@ scp_program -> proc_pow_calculation
 		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
 		  	-> rrel_3: rrel_fixed: rrel_scp_var: _param;;
 
-		  	=> nrel_then: .proc_pow_calculation_operator9A;;
+		  	=> nrel_then: .proc_pow_calculation_operator9A1;;
 		  	=> nrel_else: .proc_pow_calculation_operator8B5;;
 			*);;
 
@@ -685,35 +685,21 @@ scp_program -> proc_pow_calculation
 		  	-> rrel_1: rrel_fixed: rrel_scp_var: _message;;
 		  	-> rrel_2: rrel_fixed: rrel_scp_const: [Quantity was successfully increased!];;
 
-		  	=> nrel_then: .proc_pow_calculation_operator9A;;
+		  	=> nrel_then: .proc_pow_calculation_operator9A1;;
 			=> nrel_else: .proc_pow_calculation_operator9C1;;
 			*);;
 
-		-> .proc_pow_calculation_operator9A
-			(*
-		  	<- searchElStr5;;
-
-		  	-> rrel_1: rrel_fixed: rrel_scp_var: _tuple_node;;
-		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
-		  	-> rrel_3: rrel_assign: rrel_scp_var: _node1;;
-			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
-			-> rrel_5: rrel_fixed: rrel_scp_const: rrel_2;;
-			
-			=> nrel_then: .proc_pow_calculation_operator9B;;
-			=> nrel_else: .proc_pow_calculation_operator9C1;;
-			*);;
-
-		-> .proc_pow_calculation_operator9B 
+		-> .proc_pow_calculation_operator9A1
 			(*
 		  	<- genElStr5;;
 
-		  	-> rrel_1: rrel_fixed: rrel_scp_var: _node1;;
-		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+		  	-> rrel_1: rrel_fixed: rrel_scp_var: _param;;
+		  	-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
 		  	-> rrel_3: rrel_fixed: rrel_scp_var: _result;;
-		  	-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
-		  	-> rrel_5: rrel_fixed: rrel_scp_var: _attr;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_idtf;;
 			
-			=> nrel_goto: .proc_pow_calculation_operator9D1;;
+			=> nrel_goto: .proc_pow_calculation_operator9C1;;
 			*);;
 
 		-> .proc_pow_calculation_operator9C1 

@@ -194,34 +194,99 @@ scp_program -> proc_finding_value
 			(*
 			<- searchSetStr5;;
 
-			-> rrel_1: rrel_assign: rrel_scp_var: _identification;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _concrete_number;;
 			-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
-			-> rrel_3: rrel_fixed: rrel_scp_var: _concrete_number;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _idtf;;
 			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;; 
-			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_identification;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_idtf;;
 
-			-> rrel_set_1: rrel_fixed: rrel_scp_var: _answer_of_finding_value;;
 			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer_of_finding_value;;
 			-> rrel_set_4: rrel_fixed: rrel_scp_var: _answer_of_finding_value;;
 				  
-			=> nrel_then: .proc_finding_value_operator1O1;;
+			=> nrel_then: .proc_finding_value_operator1N2;;
 			=> nrel_else: .proc_finding_value_operator_return;;
+			*);;
+
+		-> .proc_finding_value_operator1N2
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_finding_value;;
+			-> rrel_2: rrel_assign:  rrel_pos_const_perm: rrel_scp_var: _arc1;; 
+			-> rrel_3: rrel_fixed: rrel_scp_var: _concrete_number;;
+
+			=> nrel_goto: .proc_finding_value_operator1O1;;
 			*);;
 
 		-> .proc_finding_value_operator1O1
 			(*
-			<- searchSetStr5;;
+			<- searchElStr3;;
 
-			-> rrel_1: rrel_fixed: rrel_scp_var: _identification;;
+			-> rrel_1: rrel_assign: rrel_scp_var: _decimal_class;;
+			-> rrel_2: rrel_assign:  rrel_pos_const_perm: rrel_scp_var: _arc_for_answer;; 
+			-> rrel_3: rrel_fixed: rrel_scp_var: _idtf;;
+
+			=> nrel_goto: .proc_finding_value_operator1O2;;
+			*);;
+
+		-> .proc_finding_value_operator1O2
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_finding_value;;
 			-> rrel_2: rrel_assign:  rrel_pos_const_perm: rrel_scp_var: _arc1;; 
-			-> rrel_3: rrel_assign: rrel_scp_var: _link;;
-			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;; 
-			-> rrel_5: rrel_assign: rrel_scp_var: _number_type;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _decimal_class;;
 
-			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer_of_finding_value;;
-			-> rrel_set_3: rrel_fixed: rrel_scp_var: _answer_of_finding_value;;
-			-> rrel_set_4: rrel_fixed: rrel_scp_var: _answer_of_finding_value;;
-			-> rrel_set_5: rrel_fixed: rrel_scp_var: _answer_of_finding_value;;
+			=> nrel_goto: .proc_finding_value_operator1O3;;
+			*);;
+
+		-> .proc_finding_value_operator1O3
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_finding_value;;
+			-> rrel_2: rrel_assign:  rrel_pos_const_perm: rrel_scp_var: _arc1;; 
+			-> rrel_3: rrel_fixed: rrel_scp_var: _arc_for_answer;;
+
+			=> nrel_goto: .proc_finding_value_operator1O4;;
+			*);;
+
+		-> .proc_finding_value_operator1O4
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_finding_value;;
+			-> rrel_2: rrel_assign:  rrel_pos_const_perm: rrel_scp_var: _arc1;; 
+			-> rrel_3: rrel_fixed: rrel_scp_var: _idtf;;
+
+			=> nrel_goto: .proc_finding_value_operator1O5;;
+			*);;
+
+		-> .proc_finding_value_operator1O5a
+        		(*
+		  	<- printNl;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_const: [-----------LOOK];;
+
+		  	=> nrel_goto: .proc_finding_value_operator1O5b;;
+			*);;
+
+		-> .proc_finding_value_operator1O5c
+        		(*
+		  	<- printNl;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_var: _idtf;;
+
+		  	=> nrel_goto: .proc_finding_value_operator1O5;;
+			*);;
+
+		-> .proc_finding_value_operator1O5
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_finding_value;;
+			-> rrel_2: rrel_assign:  rrel_pos_const_perm: rrel_scp_var: _arc1;; 
+			-> rrel_3: rrel_fixed: rrel_scp_var: _param;;
 
 			=> nrel_goto: .proc_finding_value_operator1I1;;
 			*);;
@@ -351,13 +416,12 @@ scp_program -> proc_finding_value
 			(*
 			<- searchSetStr5;;
 
-			-> rrel_1: rrel_assign: rrel_scp_var: _identification;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _param;;
 			-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
-			-> rrel_3: rrel_fixed: rrel_scp_var: _param;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _idtf;;
 			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;; 
-			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_identification;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_idtf;;
 
-			-> rrel_set_1: rrel_fixed: rrel_scp_var: _answer_of_finding_value;;
 			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer_of_finding_value;;
 			-> rrel_set_4: rrel_fixed: rrel_scp_var: _answer_of_finding_value;;
 				  
@@ -367,21 +431,76 @@ scp_program -> proc_finding_value
 
 		-> .proc_finding_value_operator2C
 			(*
-			<- searchSetStr5;;
+			<- searchElStr3;;
 
-			-> rrel_1: rrel_fixed: rrel_scp_var: _identification;;
-			-> rrel_2: rrel_assign:  rrel_pos_const_perm: rrel_scp_var: _arc1;; 
-			-> rrel_3: rrel_assign: rrel_scp_var: _link;;
-			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;; 
-			-> rrel_5: rrel_assign: rrel_scp_var: _number_type;;
+			-> rrel_1: rrel_assign: rrel_scp_var: _decimal_class;;
+			-> rrel_2: rrel_assign:  rrel_pos_const_perm: rrel_scp_var: _arc_for_answer;; 
+			-> rrel_3: rrel_fixed: rrel_scp_var: _idtf;;
 
-			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer_of_finding_value;;
-			-> rrel_set_3: rrel_fixed: rrel_scp_var: _answer_of_finding_value;;
-			-> rrel_set_4: rrel_fixed: rrel_scp_var: _answer_of_finding_value;;
-			-> rrel_set_5: rrel_fixed: rrel_scp_var: _answer_of_finding_value;;
-
-			=> nrel_then: .proc_finding_value_operator3A;;
+			=> nrel_then: .proc_finding_value_operator2D;;
 			=> nrel_else: .proc_finding_value_operator_return;;
+			*);;
+
+		-> .proc_finding_value_operator2D
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_finding_value;;
+			-> rrel_2: rrel_assign:  rrel_pos_const_perm: rrel_scp_var: _arc1;; 
+			-> rrel_3: rrel_fixed: rrel_scp_var: _decimal_class;;
+
+			=> nrel_goto: .proc_finding_value_operator2E;;
+			*);;
+
+		-> .proc_finding_value_operator2E
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_finding_value;;
+			-> rrel_2: rrel_assign:  rrel_pos_const_perm: rrel_scp_var: _arc1;; 
+			-> rrel_3: rrel_fixed: rrel_scp_var: _arc_for_answer;;
+
+			=> nrel_goto: .proc_finding_value_operator2F;;
+			*);;
+
+		-> .proc_finding_value_operator2F
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_finding_value;;
+			-> rrel_2: rrel_assign:  rrel_pos_const_perm: rrel_scp_var: _arc1;; 
+			-> rrel_3: rrel_fixed: rrel_scp_var: _idtf;;
+
+			=> nrel_goto: .proc_finding_value_operator2Ga;;
+			*);;
+
+		-> .proc_finding_value_operator2Ga
+        		(*
+		  	<- printNl;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_const: [-----------LOOK];;
+
+		  	=> nrel_goto: .proc_finding_value_operator2Gb;;
+			*);;
+
+		-> .proc_finding_value_operator2Gb
+        		(*
+		  	<- printNl;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_var: _idtf;;
+
+		  	=> nrel_goto: .proc_finding_value_operator2G;;
+			*);;
+
+		-> .proc_finding_value_operator2G
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_finding_value;;
+			-> rrel_2: rrel_assign:  rrel_pos_const_perm: rrel_scp_var: _arc1;; 
+			-> rrel_3: rrel_fixed: rrel_scp_var: _param;;
+
+			=> nrel_goto: .proc_finding_value_operator3A;;
 			*);;
 
 		-> .proc_finding_value_operator3A 
@@ -390,7 +509,7 @@ scp_program -> proc_finding_value
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_finding_value;;
 			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
-			-> rrel_3: rrel_fixed: rrel_scp_const: nrel_identification;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: nrel_idtf;;
 
 			=> nrel_goto: .proc_finding_value_operator3B;;
 			*);;
