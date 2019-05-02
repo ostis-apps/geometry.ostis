@@ -12,7 +12,7 @@ scp_program -> proc_finding_value
 			(*
 			<- searchSetStr3;;
 
-			-> rrel_1: rrel_fixed: rrel_scp_const: concept_quantity;;
+			-> rrel_1: rrel_fixed: rrel_scp_const: value;;
 			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
 			-> rrel_3: rrel_fixed: rrel_scp_var: _param;;
 
@@ -401,7 +401,7 @@ scp_program -> proc_finding_value
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_finding_value;;
 			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
-			-> rrel_3: rrel_fixed: rrel_scp_const: concept_quantity;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: value;;
 
 			=> nrel_goto: .proc_finding_value_operator3C;;
 			*);;

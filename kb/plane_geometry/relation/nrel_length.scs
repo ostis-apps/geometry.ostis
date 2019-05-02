@@ -19,7 +19,7 @@ nrel_length => nrel_definitional_domain:
 		concept_polyline;
 		concept_circle_arc;
 		concept_circle;
-		concept_quantity
+		value
 		};;
 	*);;
 
@@ -36,7 +36,7 @@ nrel_length => nrel_first_domain:
 	*);;
 
 nrel_length => nrel_second_domain: 
-	concept_quantity;;
+	value;;
 
 nrel_length <- relation;;
 nrel_length <- binary_relation;;

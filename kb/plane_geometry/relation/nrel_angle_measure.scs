@@ -20,7 +20,7 @@ nrel_angle_measure => nrel_definitional_domain:
 	<= nrel_combination: 
 		{
 		concept_angle;
-		concept_quantity
+		value
 		};;
 	*);;
 	
@@ -28,7 +28,7 @@ nrel_angle_measure => nrel_first_domain:
 	concept_angle;;
 
 nrel_angle_measure => nrel_second_domain: 
-	concept_quantity;;
+	value;;
 
 nrel_angle_measure <- relation;;
 nrel_angle_measure <- binary_relation;;
