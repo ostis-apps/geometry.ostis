@@ -83,11 +83,11 @@ scp_program -> proc_of_sum_calculation
 			(*
 		  	<- searchElStr5;;
 
-		  	-> rrel_1: rrel_assign: rrel_scp_var: _identification;;
+		  	-> rrel_1: rrel_fixed: rrel_scp_var: _finish_node;;
 		  	-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
-		  	-> rrel_3: rrel_fixed: rrel_scp_var: _finish_node;;
+		  	-> rrel_3: rrel_assign: rrel_scp_var: _idtf;;
                   	-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
-                  	-> rrel_5: rrel_fixed: rrel_scp_const: nrel_identification;;
+                  	-> rrel_5: rrel_fixed: rrel_scp_const: nrel_idtf;;
 
 		  	=> nrel_then: .proc_of_sum_calculation_operator2B1;;
 		  	=> nrel_else: .proc_of_sum_calculation_operator2A3;; 
@@ -227,11 +227,11 @@ scp_program -> proc_of_sum_calculation
 	    		(*
 			<- searchElStr5;;
 
-			-> rrel_1: rrel_assign: rrel_scp_var: _identification;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _multiplier;;
 			-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc;;
-			-> rrel_3: rrel_fixed: rrel_scp_var: _multiplier;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _idtf;;
 			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
-			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_identification;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_idtf;;
 
 			=> nrel_then: .proc_of_sum_calculation_operator3E1;;
 			=> nrel_else: .proc_of_sum_calculation_operator3D3;;
@@ -468,7 +468,7 @@ scp_program -> proc_of_sum_calculation
 	        	-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_erase: rrel_scp_var: _arc2;;
 	        	-> rrel_5: rrel_fixed: rrel_scp_const: rrel_1;;
 
-			=> nrel_goto: .proc_of_multiplication_calculation_operator3J2;;
+			=> nrel_goto: .proc_of_sum_calculation_operator3J2;;
 			*);;
 
 		-> .proc_of_sum_calculation_operator3J2
@@ -544,33 +544,56 @@ scp_program -> proc_of_sum_calculation
                   	-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
                   	-> rrel_5: rrel_fixed: rrel_scp_const: rrel_2;;
 
-		  	=> nrel_then: .proc_of_sum_calculation_operator5A;;
+		  	=> nrel_then: .proc_of_sum_calculation_operator5A1;;
 		  	=> nrel_else: .proc_of_sum_calculation_operator5C1;;
 			*);;
 
-		-> .proc_of_sum_calculation_operator5A
+		-> .proc_of_sum_calculation_operator5A1
 			(*
 		  	<- searchElStr5;;
 
-		  	-> rrel_1: rrel_fixed: rrel_scp_var: _tuple_node;;
-		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
-		  	-> rrel_3: rrel_assign: rrel_scp_var: _node1;;
+		  	-> rrel_1: rrel_assign: rrel_scp_var: _connect_node;;
+		  	-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
+		  	-> rrel_3: rrel_fixed: rrel_scp_var: _unknown_param;;
 			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
-			-> rrel_5: rrel_fixed: rrel_scp_const: rrel_2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_value;;
 			
-			=> nrel_then: .proc_of_sum_calculation_operator5B;;
-			=> nrel_else: .proc_of_sum_calculation_operator5C1;;
+			=> nrel_goto: .proc_of_sum_calculation_operator5A2;;
+			*);;
+
+		-> .proc_of_sum_calculation_operator5A2
+			(*
+		  	<- searchElStr5;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_var: _connect_node;;
+		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+		  	-> rrel_3: rrel_assign: rrel_scp_var: _result_number;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+			-> rrel_5: rrel_assign: rrel_scp_var: rrel_role_relation: _mesuare;;
+			
+			=> nrel_goto: .proc_of_sum_calculation_operator5A3;;
+			*);;
+
+		-> .proc_of_sum_calculation_operator5A3
+			(*
+		  	<- genElStr5;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_var: _result_number;;
+		  	-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
+		  	-> rrel_3: rrel_fixed: rrel_scp_var: _result;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_idtf;;
+			
+			=> nrel_goto: .proc_of_sum_calculation_operator5B;;
 			*);;
 
 		-> .proc_of_sum_calculation_operator5B 
 			(*
-		  	<- genElStr5;;
+		  	<- genElStr3;;
 
-		  	-> rrel_1: rrel_fixed: rrel_scp_var: _node1;;
+		  	-> rrel_1: rrel_fixed: rrel_scp_var: _attr;;
 		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
 		  	-> rrel_3: rrel_fixed: rrel_scp_var: _result;;
-		  	-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
-		  	-> rrel_5: rrel_fixed: rrel_scp_var: _attr;;
 			
 			=> nrel_goto: .proc_of_sum_calculation_operator5C1;;
 			*);;
