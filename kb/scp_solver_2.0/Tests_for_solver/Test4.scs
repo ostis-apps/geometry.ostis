@@ -61,12 +61,10 @@ stat_circle_length_then = [* _crcl1 _=> nrel_radius:: _rd1;;
 
 atomic_existence -> stat_circle_length_if; stat_circle_length_then; stat_square_area_if; stat_square_area_then;;
 
-n_16 <= nrel_identification: ...
-	(* -> rrel_decimal: [16];; *);;
-
-n_pi <= nrel_identification: ...
-	(* -> rrel_decimal: [3,14];; *);;
-
 number -> n_2;;
 
+n_16 => nrel_idtf: [16]
+	(* <- decimal_numeral_system;; *);;
 
+n_pi => nrel_idtf: [3,14]
+	(* <- decimal_numeral_system;; *);;
