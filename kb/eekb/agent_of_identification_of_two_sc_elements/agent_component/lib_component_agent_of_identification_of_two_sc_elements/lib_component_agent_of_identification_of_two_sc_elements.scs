@@ -1,0 +1,37 @@
+lib_component_agent_of_identification_of_two_sc_elements
+=> nrel_main_idtf:
+	[Компонент библиотеки. Sc-агент отождествления двух sc-элементов]
+	(* <- lang_ru;; *);
+	[Library component. Sc-agent of identification of two sc-elements]
+	(* <- lang_en;; *);
+
+<- library_of_platform_independent_reusable_components; 
+<- library_of_atomic_reusable_components; 
+
+=> nrel_attendant_component: 
+	lib_component_ui_menu_for_agent_of_identification_of_two_sc_elements;
+
+-> rrel_key_sc_element: 
+	.platform_independent_realization_of_sc_agent_of_identification_of_two_sc_elements; 
+
+<- rrel_key_sc_element: 
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://htmls/Agent_of_identification_of_two_sc_elements.html"
+				(* <- lang_ru;; *);; 
+		*);;
+	*);;
+
+action_of_identification_of_two_sc_elements
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[действие. отождествить два sc-элемента]
+		(*<- lang_ru;;*);
+=> nrel_main_idtf:
+	[action. identificate two sc-elements]
+		(* <- lang_en;; *);;
