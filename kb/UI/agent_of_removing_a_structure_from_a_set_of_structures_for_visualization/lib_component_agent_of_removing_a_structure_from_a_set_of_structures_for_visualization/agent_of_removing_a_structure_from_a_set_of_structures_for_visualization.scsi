@@ -1,0 +1,352 @@
+agent_of_removing_a_structure_from_a_set_of_structures_for_visualization
+=> nrel_main_idtf:
+    [агентная scp-программа удаления структуры из множества структур для визуализации.] (* <- lang_ru;; *);
+    [agent scp-program of removing a structure from a set of structures for visualization.] (* <- lang_en;; *);
+    <- agent_scp_program;;
+
+scp_program -> agent_of_removing_a_structure_from_a_set_of_structures_for_visualization
+(*
+    -> rrel_params: .agent_of_removing_a_structure_from_a_set_of_structures_for_visualization_params 
+        (*
+        -> rrel_1: rrel_in: _event;;
+        -> rrel_2: rrel_in: _input_arc;;
+        *);;
+
+    -> rrel_operators: .agent_of_removing_a_structure_from_a_set_of_structures_for_visualization_operator_set 
+        (*
+        -> rrel_init: .agent_of_removing_a_structure_from_a_set_of_structures_for_visualization_operator1A
+            (*
+            <- searchElStr3;;
+
+            -> rrel_1: rrel_assign: rrel_scp_var: _temp;;
+            -> rrel_2: rrel_fixed: rrel_scp_var: _input_arc;;
+            -> rrel_3: rrel_assign: rrel_scp_var: _quest;;
+
+            => nrel_goto: .agent_of_removing_a_structure_from_a_set_of_structures_for_visualization_operator1B;;
+            *);;
+
+        -> .agent_of_removing_a_structure_from_a_set_of_structures_for_visualization_operator1B
+            (*
+            <- searchElStr3;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_const: action_of_removing_a_structure_from_a_set_of_structures_for_visualization;;
+            -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+            -> rrel_3: rrel_fixed: rrel_scp_var: _quest;;
+
+            => nrel_then: .agent_of_removing_a_structure_from_a_set_of_structures_for_visualization_operator1C;;
+            => nrel_else: .agent_of_removing_a_structure_from_a_set_of_structures_for_visualization_operator_return;;
+            *);;
+
+        -> .agent_of_removing_a_structure_from_a_set_of_structures_for_visualization_operator1C
+            (*
+            <- searchElStr3;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+            -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+            -> rrel_3: rrel_assign: rrel_scp_var: _removing_vis_struct;;
+
+            => nrel_then: .agent_of_removing_a_structure_from_a_set_of_structures_for_visualization_operator1C_check_param;;
+            => nrel_else: .agent_of_removing_a_structure_from_a_set_of_structures_for_visualization_operator_return;;
+            *);;
+
+        -> .agent_of_removing_a_structure_from_a_set_of_structures_for_visualization_operator1C_check_param
+            (*
+            <- searchElStr3;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_const: struct_for_visualization;;
+            -> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+            -> rrel_3: rrel_fixed: rrel_scp_var: _removing_vis_struct;;
+
+            => nrel_then: .agent_of_removing_a_structure_from_a_set_of_structures_for_visualization_operator2A;;
+            => nrel_else: .agent_of_removing_a_structure_from_a_set_of_structures_for_visualization_operator_return;;
+            *);;
+
+        -> .agent_of_removing_a_structure_from_a_set_of_structures_for_visualization_operator2A
+            (*
+            <- genEl;;
+
+            -> rrel_1: rrel_node: rrel_assign: rrel_const: rrel_scp_var: _answer_of_removing_a_structure_from_a_set_of_structures_for_visualization;;
+
+            => nrel_goto: .agent_of_removing_a_structure_from_a_set_of_structures_for_visualization_operator3A;;
+            *);;
+
+        -> .agent_of_removing_a_structure_from_a_set_of_structures_for_visualization_operator3A
+            (*
+            <- searchElStr5;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_var: _removing_vis_struct;;
+            -> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc1;;
+            -> rrel_3: rrel_assign: rrel_scp_var: _next_visualisation;;
+            -> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+            -> rrel_5: rrel_fixed: rrel_scp_const: nrel_sequence_of_visualization;;
+
+            => nrel_then: .agent_of_removing_a_structure_from_a_set_of_structures_for_visualization_operator4A;;
+            => nrel_else: .agent_of_removing_a_structure_from_a_set_of_structures_for_visualization_operator5A;;
+            *);;
+
+        -> .agent_of_removing_a_structure_from_a_set_of_structures_for_visualization_operator4A
+            (*
+            <- call;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_const: proc_of_removing_an_arc_between_structures_for_visualization;;
+            -> rrel_2: rrel_fixed: rrel_scp_const: .agent_of_removing_a_structure_from_a_set_of_structures_for_visualization_operator4A_params 
+                (*
+                -> rrel_1: rrel_fixed: rrel_scp_var: _removing_vis_struct;;
+                *);;
+            -> rrel_3: rrel_assign: rrel_scp_var: _descr1;;
+
+            => nrel_goto: .agent_of_removing_a_structure_from_a_set_of_structures_for_visualization_operator4A_wait_return;;
+            *);;
+
+        -> .agent_of_removing_a_structure_from_a_set_of_structures_for_visualization_operator4A_wait_return
+            (*
+            <- waitReturn;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_var: _descr1;;
+
+            => nrel_goto: .agent_of_removing_a_structure_from_a_set_of_structures_for_visualization_operator5A;;
+            *);;
+
+        -> .agent_of_removing_a_structure_from_a_set_of_structures_for_visualization_operator5A
+            (*
+            <- searchElStr5;;
+
+            -> rrel_1: rrel_assign: rrel_scp_var: _previous_visualisation;;
+            -> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc1;;
+            -> rrel_3: rrel_fixed: rrel_scp_var: _removing_vis_struct;;
+            -> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+            -> rrel_5: rrel_fixed: rrel_scp_const: nrel_sequence_of_visualization;;
+
+            => nrel_then: .agent_of_removing_a_structure_from_a_set_of_structures_for_visualization_operator6A;;
+            => nrel_else: .agent_of_removing_a_structure_from_a_set_of_structures_for_visualization_operator7A;;
+            *);;
+
+        -> .agent_of_removing_a_structure_from_a_set_of_structures_for_visualization_operator6A
+            (*
+            <- call;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_const: proc_of_removing_an_arc_between_structures_for_visualization;;
+            -> rrel_2: rrel_fixed: rrel_scp_const: .agent_of_removing_a_structure_from_a_set_of_structures_for_visualization_operator6A_params 
+                (*
+                -> rrel_1: rrel_fixed: rrel_scp_var: _previous_visualisation;;
+                *);;
+            -> rrel_3: rrel_assign: rrel_scp_var: _descr2;;
+
+            => nrel_goto: .agent_of_removing_a_structure_from_a_set_of_structures_for_visualization_operator6A_wait_return;;
+            *);;
+
+        -> .agent_of_removing_a_structure_from_a_set_of_structures_for_visualization_operator6A_wait_return
+            (*
+            <- waitReturn;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_var: _descr2;;
+
+            => nrel_goto: .agent_of_removing_a_structure_from_a_set_of_structures_for_visualization_operator7A;;
+            *);;
+
+        -> .agent_of_removing_a_structure_from_a_set_of_structures_for_visualization_operator7A
+            (*
+            <- eraseEl;;
+
+            -> rrel_1: rrel_erase: rrel_fixed: rrel_scp_var: _removing_vis_struct;;
+
+            => nrel_goto: .agent_of_removing_a_structure_from_a_set_of_structures_for_visualization_operator8A;;
+            *);;
+
+        -> .agent_of_removing_a_structure_from_a_set_of_structures_for_visualization_operator8A
+            (*
+            <- ifVarAssign;;
+
+            -> rrel_1: rrel_scp_var: rrel_fixed: _next_visualisation;;
+
+            => nrel_then: .agent_of_removing_a_structure_from_a_set_of_structures_for_visualization_operator8B;;
+            => nrel_else: .agent_of_removing_a_structure_from_a_set_of_structures_for_visualization_operator_add_to_answer1A;;
+            *);;
+
+        -> .agent_of_removing_a_structure_from_a_set_of_structures_for_visualization_operator8B
+            (*
+            <- ifVarAssign;;
+
+            -> rrel_1: rrel_scp_var: rrel_fixed: _previous_visualisation;;
+
+            => nrel_then: .agent_of_removing_a_structure_from_a_set_of_structures_for_visualization_operator9A;;
+            => nrel_else: .agent_of_removing_a_structure_from_a_set_of_structures_for_visualization_operator_add_to_answer1A;;
+            *);;
+
+        -> .agent_of_removing_a_structure_from_a_set_of_structures_for_visualization_operator9A
+            (*
+            <- call;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_const: proc_of_adding_an_arc_between_structures_for_visualization;;
+            -> rrel_2: rrel_fixed: rrel_scp_const: .agent_of_removing_a_structure_from_a_set_of_structures_for_visualization_operator9A_params 
+                (*
+                -> rrel_1: rrel_fixed: rrel_scp_var: _previous_visualisation;;
+                -> rrel_2: rrel_fixed: rrel_scp_var: _next_visualisation;;
+                *);;
+            -> rrel_3: rrel_assign: rrel_scp_var: _descr3;;
+
+            => nrel_goto: .agent_of_removing_a_structure_from_a_set_of_structures_for_visualization_operator9A_wait_return;;
+            *);;
+
+        -> .agent_of_removing_a_structure_from_a_set_of_structures_for_visualization_operator9A_wait_return
+            (*
+            <- waitReturn;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_var: _descr3;;
+
+            => nrel_goto: .agent_of_removing_a_structure_from_a_set_of_structures_for_visualization_operator_add_to_answer1A;;
+            *);;
+
+        -> .agent_of_removing_a_structure_from_a_set_of_structures_for_visualization_operator_add_to_answer1A
+            (*
+            <- searchSetStr3;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_const: struct_for_visualization;;
+            -> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+            -> rrel_3: rrel_assign: rrel_scp_var: _visualisation;;
+
+            -> rrel_set_2: rrel_fixed: rrel_scp_var: _answer_of_removing_a_structure_from_a_set_of_structures_for_visualization;;
+            -> rrel_set_3: rrel_fixed: rrel_scp_var: _answer_of_removing_a_structure_from_a_set_of_structures_for_visualization;;
+
+            => nrel_then: .agent_of_removing_a_structure_from_a_set_of_structures_for_visualization_operator_add_to_answer2A;;
+            => nrel_else: .agent_of_removing_a_structure_from_a_set_of_structures_for_visualization_operator_return;;
+            *);;
+
+        -> .agent_of_removing_a_structure_from_a_set_of_structures_for_visualization_operator_add_to_answer2A
+            (*
+            <- searchSetStr3;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_const: struct_for_visualization;;
+            -> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+            -> rrel_3: rrel_assign: rrel_scp_var: _visualisation;;          
+
+            -> rrel_set_3: rrel_assign: rrel_scp_var: _set_of_visualisations;;
+
+            => nrel_then: .agent_of_removing_a_structure_from_a_set_of_structures_for_visualization_operator_add_to_answer3A;;
+            => nrel_else: .agent_of_removing_a_structure_from_a_set_of_structures_for_visualization_operator_return;;
+            *);;
+
+        -> .agent_of_removing_a_structure_from_a_set_of_structures_for_visualization_operator_add_to_answer3A
+            (*
+            <- searchElStr3;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_var: _set_of_visualisations;;
+            -> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+            -> rrel_3: rrel_assign: rrel_scp_var: _visualisation;;          
+
+            => nrel_then: .agent_of_removing_a_structure_from_a_set_of_structures_for_visualization_operator_add_to_answer3B;;
+            => nrel_else: .agent_of_removing_a_structure_from_a_set_of_structures_for_visualization_operator_add_to_answer4A;;
+            *);;
+
+        -> .agent_of_removing_a_structure_from_a_set_of_structures_for_visualization_operator_add_to_answer3B
+            (*
+            <- eraseEl;;
+
+            -> rrel_1: rrel_erase: rrel_fixed: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+
+            => nrel_goto: .agent_of_removing_a_structure_from_a_set_of_structures_for_visualization_operator_add_to_answer3C;;
+            *);;
+
+        -> .agent_of_removing_a_structure_from_a_set_of_structures_for_visualization_operator_add_to_answer3C
+            (*
+            <- searchSetStr5;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_var: _visualisation;;
+            -> rrel_2: rrel_assign: rrel_scp_var: rrel_const: rrel_common: _arc1;;
+            -> rrel_3: rrel_assign: rrel_scp_var: _next_vis_struct;;
+            -> rrel_4: rrel_assign: rrel_scp_var: rrel_const: rrel_pos_const_perm: _arc2;;
+            -> rrel_5: rrel_fixed: rrel_scp_const: nrel_sequence_of_visualization;;
+
+            -> rrel_set_2: rrel_fixed: rrel_scp_var: _answer_of_removing_a_structure_from_a_set_of_structures_for_visualization;;
+            -> rrel_set_4: rrel_fixed: rrel_scp_var: _answer_of_removing_a_structure_from_a_set_of_structures_for_visualization;;
+
+            => nrel_goto: .agent_of_removing_a_structure_from_a_set_of_structures_for_visualization_operator_add_to_answer3D;;
+            *);;
+
+        -> .agent_of_removing_a_structure_from_a_set_of_structures_for_visualization_operator_add_to_answer3D
+            (*
+            <- searchSetStr5;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_var: _visualisation;;
+            -> rrel_2: rrel_assign: rrel_scp_var: rrel_const: rrel_common: _arc1;;
+            -> rrel_3: rrel_assign: rrel_scp_var: _next_vis_struct;;
+            -> rrel_4: rrel_assign: rrel_scp_var: rrel_const: rrel_pos_const_perm: _arc2;;
+            -> rrel_5: rrel_fixed: rrel_scp_const: nrel_sequence;;
+
+            -> rrel_set_2: rrel_fixed: rrel_scp_var: _answer_of_removing_a_structure_from_a_set_of_structures_for_visualization;;
+            -> rrel_set_4: rrel_fixed: rrel_scp_var: _answer_of_removing_a_structure_from_a_set_of_structures_for_visualization;;
+
+            => nrel_goto: .agent_of_removing_a_structure_from_a_set_of_structures_for_visualization_operator_add_to_answer3A;;
+            *);;
+
+        -> .agent_of_removing_a_structure_from_a_set_of_structures_for_visualization_operator_add_to_answer4A
+            (*
+            <- genElStr3;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_removing_a_structure_from_a_set_of_structures_for_visualization;;
+            -> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+            -> rrel_3: rrel_fixed: rrel_scp_const: nrel_sequence_of_visualization;;          
+
+            => nrel_goto: .agent_of_removing_a_structure_from_a_set_of_structures_for_visualization_operator_add_to_answer5A;;
+            *);;
+
+        -> .agent_of_removing_a_structure_from_a_set_of_structures_for_visualization_operator_add_to_answer5A
+            (*
+            <- genElStr3;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_removing_a_structure_from_a_set_of_structures_for_visualization;;
+            -> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+            -> rrel_3: rrel_fixed: rrel_scp_const: nrel_sequence;;          
+
+            => nrel_goto: .agent_of_removing_a_structure_from_a_set_of_structures_for_visualization_operator_add_to_answer6A;;
+            *);;
+
+        -> .agent_of_removing_a_structure_from_a_set_of_structures_for_visualization_operator_add_to_answer6A
+            (*
+            <- genElStr3;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_removing_a_structure_from_a_set_of_structures_for_visualization;;
+            -> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+            -> rrel_3: rrel_fixed: rrel_scp_const: struct_for_visualization;;          
+
+            => nrel_goto: .agent_of_removing_a_structure_from_a_set_of_structures_for_visualization_operator_remove1A;;
+            *);;
+
+        -> .agent_of_removing_a_structure_from_a_set_of_structures_for_visualization_operator_remove1A
+            (*
+            <- ifVarAssign;;
+
+            -> rrel_1: _set_of_visualisations;;
+
+            => nrel_then: .agent_of_removing_a_structure_from_a_set_of_structures_for_visualization_operator_remove1B;;
+            => nrel_else: .agent_of_removing_a_structure_from_a_set_of_structures_for_visualization_operator_remove2A;;
+            *);;
+
+        -> .agent_of_removing_a_structure_from_a_set_of_structures_for_visualization_operator_remove1B
+            (*
+            <- eraseEl;;
+
+            -> rrel_1: rrel_erase: rrel_fixed: rrel_scp_var: _set_of_visualisations;;
+
+            => nrel_goto: .agent_of_removing_a_structure_from_a_set_of_structures_for_visualization_operator_gen_answer;;
+            *);;
+
+        -> .agent_of_removing_a_structure_from_a_set_of_structures_for_visualization_operator_gen_answer 
+            (*
+            <- genElStr5;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+            -> rrel_2: rrel_assign: rrel_const: rrel_common: rrel_scp_var: _arc;;
+            -> rrel_3: rrel_fixed: rrel_scp_var: _answer_of_removing_a_structure_from_a_set_of_structures_for_visualization;;
+            -> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+            -> rrel_5: rrel_fixed: rrel_scp_const: nrel_answer;;
+
+            => nrel_goto: .agent_of_removing_a_structure_from_a_set_of_structures_for_visualization_operator_return;;
+            *);;
+                    
+        -> .agent_of_removing_a_structure_from_a_set_of_structures_for_visualization_operator_return 
+            (*
+            <- return;;
+            *);;
+        *);;
+    *);;
