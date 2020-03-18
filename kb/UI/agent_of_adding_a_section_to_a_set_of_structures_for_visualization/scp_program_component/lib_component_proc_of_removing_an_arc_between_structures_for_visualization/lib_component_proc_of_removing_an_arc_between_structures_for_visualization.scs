@@ -1,0 +1,27 @@
+lib_component_proc_of_removing_an_arc_between_structures_for_visualization
+=> nrel_main_idtf:
+	[Компонент библиотеки. Scp-программа удаление дуги между двумя структурами визуализации.]
+	(* <- lang_ru;; *);
+	[Library component. Scp-program of remove an arc between two visualization structures..]
+	(* <- lang_en;; *);
+
+<- library_of_platform_independent_reusable_components;
+
+-> rrel_key_sc_element: 
+	proc_of_removing_an_arc_between_structures_for_visualization;
+
+<- rrel_key_sc_element: 
+	...
+	(*
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://htmls/proc_of_removing_an_arc_between_structures_for_visualization.html" 
+				(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+lib_component_proc_of_removing_an_arc_between_structures_for_visualization = [*^"file://proc_of_removing_an_arc_between_structures_for_visualization.scsi"*];;
+

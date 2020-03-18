@@ -1,0 +1,51 @@
+sc_agent_of_adding_a_section_to_a_set_of_structures_for_visualization
+=> nrel_main_idtf:
+	[агентная scp-программа добавления секции во множество структур для визуализации.] (* <- lang_ru;; *);
+	[agent scp-program for adding a section to a set of structures for visualization.] (* <- lang_en;; *);
+	
+<- abstract_sc_agent;
+
+=> nrel_primary_initiation_condition: 
+	(sc_event_add_output_arc => question_initiated);
+	
+=> nrel_initiation_condition_and_result: 
+	(..sc_agent_of_adding_a_section_to_a_set_of_structures_for_visualization_condition => ..sc_agent_of_adding_a_section_to_a_set_of_structures_for_visualization_result);
+	
+<= nrel_sc_agent_key_sc_elements: 
+	{
+	question_initiated;
+	question;
+	action_of_adding_a_section_to_a_set_of_structures_for_visualization
+	};
+	
+=> nrel_inclusion: 
+	.platform_independent_realization_of_sc_agent_of_adding_a_section_to_a_set_of_structures_for_visualization
+	(*
+	<- platform_independent_abstract_sc_agent;;
+	<= nrel_sc_agent_program: 
+		{
+		agent_of_adding_a_section_to_a_set_of_structures_for_visualization;
+		proc_of_adding_an_arc_between_structures_for_visualization;
+		proc_of_removing_an_arc_between_structures_for_visualization
+		};;
+		
+	-> sc_agent_of_adding_a_section_to_a_set_of_structures_for_visualization_scp 
+		(* <- active_sc_agent;; *);;
+	*);;
+
+..sc_agent_of_adding_a_section_to_a_set_of_structures_for_visualization_condition
+= [*
+	action_of_counting_action_for_pointing_essence _-> .._question;;
+	question_initiated _-> .._question;;
+	question _-> .._question;;
+	.._question _-> .._parameter1;;
+*];;
+
+..sc_agent_of_adding_a_section_to_a_set_of_structures_for_visualization_result
+= [*
+	action_of_counting_action_for_pointing_essence _-> .._question;;
+	question_finished _-> .._question;;
+	question _-> .._question;;
+	.._question _=> nrel_answer:: .._answer;;
+	.._question _-> .._parameter1;;
+*];;
