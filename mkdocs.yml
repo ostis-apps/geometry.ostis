@@ -1,0 +1,88 @@
+site_name: Geometry
+
+dev_addr: 127.0.0.1:8002
+
+extra_css:
+  - _assets/main.css
+extra_javascript:
+  - _assets/scg.min.js
+  - _assets/main.js
+
+plugins:
+  - search                                       
+  - i18n:
+      default_language: en
+      languages:
+        en: English
+        ru: Русский
+      no_translation:
+        ru: "Эта страница не переведена на русский язык"
+        en: "This page isn't translated to English"
+      translate_nav:
+        ru:
+          Home: "Домашняя"
+          Build: "Сборка"
+          Ubuntu-18.04: "Ubuntu-18.04"
+          Development: "Разработка"
+          Project structure: "Структура проекта"
+          Agent1: "Агент1"
+          Changelog: "Список изменений"
+
+
+nav:
+  - Home: index.md
+  - Home: index.ru.md
+  - Build:
+    - Ubuntu-18.04: build/build.md
+    - Ubuntu-18.04: build/build.ru.md
+  - Development:
+    - Project structure: dev/project_structure.md
+    - Project structure: dev/project_structure.ru.md
+  - Agents:
+    - Agent1: agents/Agent1.md
+    - Agent1: agents/Agent1.ru.md
+  - Changelog: changelog.md
+
+theme: 
+  name: material
+  #logo : .png
+  font:
+    text: Raleway
+  palette: 
+    # Palette toggle for light mode
+    - scheme: default
+      primary: cyan
+      accent: undigo
+      toggle:
+        icon: material/lightbulb 
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - scheme: slate
+      primary: deep purple
+      accent: undigo
+      toggle:
+        icon: material/lightbulb-outline
+        name: Switch to light mode
+
+  language: en
+
+extra:
+  # Default mkdocs-material alternate links for untranslated pages
+  # https://squidfunk.github.io/mkdocs-material/setup/changing-the-language/#site-language-selector
+  # For translated pages the language name is replaced by the string configured in i18n plugin
+  # secction and link is replaced by the link to the translated page
+  alternate:
+    - name: "Home"
+      link: ""
+      lang: en
+
+    - name: "Домашняя"
+      link: index.ru.md
+      lang: ru
+
+
+markdown_extensions:
+  - admonition
+  - codehilite
+  - pymdownx.details
+  - pymdownx.superfences
