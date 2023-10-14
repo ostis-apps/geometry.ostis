@@ -1,13 +1,9 @@
-#!/bin/bash
+#!/usr/bin/env bash
+set -eo pipefail
 
-./copy_ims_kb.sh
-
-export LD_LIBRARY_PATH=../sc-machine/bin
-if [ ! -d "../kb.bin" ]; then
-    mkdir ../kb.bin
+if [ -z "${SC_MACHINE_PATH}" ];
+then
+  source "$(cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd)"/set_vars.sh
 fi
 
-cd ..
-sc-machine/bin/sc-builder -f -c -i repo.path -o kb.bin -s config/sc-web.ini -e sc-machine/bin/extensions
-
-
+"${SC_MACHINE_PATH}/scripts/build_kb.sh" "$@"
