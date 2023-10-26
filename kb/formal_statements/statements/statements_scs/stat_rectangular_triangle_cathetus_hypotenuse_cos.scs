@@ -1,0 +1,24 @@
+stat_rectangular_triangle_cathetus_hypotenuse_cos <- statement;;
+
+stat_rectangular_triangle_cathetus_hypotenuse_cos
+-> rrel_key_sc_element:
+	concept_rectangular_triangle;
+	concept_cathetus;
+	nrel_cos;
+	nrel_adjacent;
+	concept_hypotenuse;;
+
+stat_rectangular_triangle_cathetus_hypotenuse_cos
+=> nrel_main_idtf:
+	[Утв.(прямоугольный треугольник;прилежащий*;катет*;гипотенуза*;косинус*)] (* <-lang_ru;; *);;
+
+stat_rectangular_triangle_cathetus_hypotenuse_cos
+=> nrel_main_idtf:
+	[Stat.(rectangular triangle;adjacent*;cathetus*;hypotenuse*;cos*)] (* <-lang_en;; *);;
+
+stat_rectangular_triangle_cathetus_hypotenuse_cos <= nrel_sc_text_translation: 
+	...
+	(*
+		-> rrel_example: 
+		[В прямоугольном треугольнике каждый катет равен гипотенузе, умноженной на косинус прилежащего к этому катету угла.] (* <- lang_ru;; *);;
+	*);;

@@ -1,0 +1,25 @@
+stat_triangle_similarity_side_side_side <- statement;;
+
+//stat_triangle_similarity_side_side_side <- sc_statement_for_solver;;
+stat_triangle_similarity_side_side_side -> rrel_key_sc_element: concept_triangle; nrel_similarity; nrel_side;;
+
+stat_triangle_similarity_side_side_side => nrel_main_idtf: [Утв.(треугольник;подобие*;сторона*)] (* <-lang_ru;; *);;
+stat_triangle_similarity_side_side_side => nrel_main_idtf: [Stat.(triangle;similarity*;side*)] (* <-lang_en;; *);;
+
+stat_triangle_similarity_side_side_side => nrel_idtf: [Признак подобия треугольников по трем сторонам] (* <-lang_ru;; *);;
+stat_triangle_similarity_side_side_side => nrel_idtf: [Sing of similarity of triangles. Three sides in proportion] (* <-lang_en;; *);;
+
+stat_triangle_similarity_side_side_side <= nrel_sc_text_translation: 
+	...
+	(*
+		-> rrel_example: 
+		[Если три стороны одного треугольника пропорциональны трем сторонам другого треугольника, то такие треугольники подобны.](* <- lang_ru;; *);;
+	*);;
+
+stat_triangle_similarity_side_side_side <= nrel_sc_text_translation: 
+	...
+	(*
+		-> rrel_example: 
+		[Triangles are similar if all three sides in one triangle are in the same proportion to the corresponding sides in the other.](* <- lang_en;; *);;
+	*);;
+

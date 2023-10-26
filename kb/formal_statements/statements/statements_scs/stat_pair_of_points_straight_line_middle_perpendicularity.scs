@@ -1,0 +1,13 @@
+statement -> stat_pair_of_points_straight_line_middle_perpendicularity;;
+
+stat_pair_of_points_straight_line_middle_perpendicularity -> rrel_key_sc_element: concept_geometric_point; concept_straight_line; nrel_distance;;
+
+stat_pair_of_points_straight_line_middle_perpendicularity => nrel_main_idtf: [Утв.(пара точек; прямая; середина*; перпендикулярность*)] (* <- lang_ru;; *);;
+stat_pair_of_points_straight_line_middle_perpendicularity => nrel_main_idtf: [Stat.(pair of points; straight line; middle*; perpendicularity*)] (*<- lang_en;;*);;
+
+stat_pair_of_points_straight_line_middle_perpendicularity <= nrel_sc_text_translation: ...
+	(*
+	-> rrel_example:
+		[Геометрическое место точек, равноудалённых от двух данных точек, есть прямая, перпендикулярная к отрезку, соединяющему эти точки, и проходящая через его середину.] 
+		(* <- lang_ru;; *);;
+	*);;

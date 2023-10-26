@@ -1,0 +1,14 @@
+axiom_angle_angle_measure <- statement;;
+
+axiom_angle_angle_measure -> rrel_key_sc_element: concept_angle; nrel_angle_measure;;
+
+axiom_angle_angle_measure => nrel_main_idtf: [Акс.(угол; мера угла*)] (*<- lang_ru;;*);;
+axiom_angle_angle_measure => nrel_main_idtf: [Ax.(angle; angle measure*)] (*<- lang_en;;*);;
+
+axiom_angle_angle_measure <= nrel_sc_text_translation: 
+		... 
+		(* 
+		-> rrel_example: 
+			[Каждый угол имеет определенную градусную меру, большую нуля.] 
+			(* <- lang_ru;; *);; 
+		*);;

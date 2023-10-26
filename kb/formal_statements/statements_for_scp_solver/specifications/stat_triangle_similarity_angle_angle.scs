@@ -1,0 +1,24 @@
+stat_triangle_similarity_angle_angle <- statement;;
+//stat_triangle_similarity_angle_angle <- sc_statement_for_solver;;
+stat_triangle_similarity_angle_angle -> rrel_key_sc_element: concept_triangle; nrel_similarity; nrel_internal_angle;;
+
+stat_triangle_similarity_angle_angle => nrel_main_idtf: [Утв.(треугольник;подобие*;внутренний угол*)] (* <-lang_ru;; *);;
+stat_triangle_similarity_angle_angle => nrel_main_idtf: [Stat.(triangle;similarity*;internal angle*)] (* <-lang_en;; *);;
+
+stat_triangle_similarity_angle_angle => nrel_idtf: [Признак подобия треугольников по двум углам] (* <-lang_ru;; *);;
+stat_triangle_similarity_angle_angle => nrel_idtf: [Sing of similarity of triangles. All corresponding angles equal] (* <-lang_en;; *);;
+
+stat_triangle_similarity_angle_angle <= nrel_sc_text_translation: 
+	...
+	(*
+		-> rrel_example: 
+		[Если два угла одного треугольника равны двум углам другого треугольника, то такие треугольники подобны.](* <- lang_ru;; *);;
+	*);;
+
+stat_triangle_similarity_angle_angle <= nrel_sc_text_translation: 
+	...
+	(*
+		-> rrel_example: 
+		[Triangles are similar if the measure of all three internal angles in one triangle are the same as the corresponding angles in the other.](* <- lang_en;; *);;
+	*);;
+

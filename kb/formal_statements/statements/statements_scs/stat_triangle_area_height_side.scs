@@ -1,0 +1,24 @@
+stat_triangle_area_height_side <- statement;;
+
+stat_triangle_area_height_side
+-> rrel_key_sc_element:
+	concept_triangle;
+	nrel_area;
+	nrel_height;
+	nrel_side;;
+
+stat_triangle_area_height_side
+=> nrel_main_idtf:
+	[Утв.(треугольник;площадь*;высота*;сторона*)] (*<- lang_ru;;*);;
+
+stat_triangle_area_height_side
+=> nrel_main_idtf:
+	[Stat.(triangle;area*;height*;side*)] (*<- lang_en;;*);;
+
+stat_triangle_area_height_side <= nrel_sc_text_translation: 
+	... 
+	(* 
+	-> rrel_example: 
+		[Площадь треугольника равна половине произведения его стороны на опущенную на неё высоту S=a*h_a/2.] 
+		(* <- lang_ru;; *);; 
+	*);;

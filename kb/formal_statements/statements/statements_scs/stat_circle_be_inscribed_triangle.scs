@@ -1,0 +1,22 @@
+stat_circle_be_inscribed_triangle <- statement;;
+
+stat_circle_be_inscribed_triangle
+-> rrel_key_sc_element:
+	concept_triangle;
+	concept_circle;
+	nrel_be_inscribed;;
+
+stat_circle_be_inscribed_triangle
+=> nrel_main_idtf:
+	[Утв.(окружность;быть вписанным*;треугольник)] (* <-lang_ru;; *);;
+
+stat_circle_be_inscribed_triangle
+=> nrel_main_idtf:
+	[Stat.(circle;be inscribed*;triangle)] (* <-lang_en;; *);;
+
+stat_circle_be_inscribed_triangle <= nrel_sc_text_translation: 
+	...
+	(*
+		-> rrel_example: 
+		[В любой треугольник можно вписать окружность и притом только одну.] (* <- lang_ru;; *);;
+	*);;

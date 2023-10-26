@@ -1,0 +1,47 @@
+statement -> stat_Pythagorean_theorem;;
+statement -> stat_converse_Pythagorean_theorem;;
+statement -> stat_reverse_Pythagorean_theorem ;;
+statement -> stat_reverse_converse_Pythagorean_theorem;;
+
+stat_Pythagorean_theorem => nrel_main_idtf: [Утв.(прямоугольный треугольник;катет*;гипотенуза*)] (* <- lang_ru;; *);;
+stat_Pythagorean_theorem => nrel_idtf: [Теорема Пифагора] (* <- lang_ru;; *);;
+stat_converse_Pythagorean_theorem => nrel_main_idtf: [Обр.утв.(прямоугольный треугольник;катет*;гипотенуза*)] (* <- lang_ru;; *);;
+stat_converse_Pythagorean_theorem => nrel_idtf: [Теорема, обратная теореме Пифагора] (* <- lang_ru;; *);;
+stat_reverse_Pythagorean_theorem => nrel_main_idtf: [Прот.утв.(прямоугольный треугольник;катет*;гипотенуза*)] (* <- lang_ru;; *);;
+stat_reverse_Pythagorean_theorem => nrel_idtf: [Теорема, противоположная теореме Пифагора] (* <- lang_ru;; *);;
+stat_reverse_converse_Pythagorean_theorem => nrel_main_idtf: [Прот.обр.утв.(прямоугольный треугольник;катет*;гипотенуза*)] (* <- lang_ru;; *);;
+stat_reverse_converse_Pythagorean_theorem => nrel_idtf: [Теорема, противоположная обратной теореме Пифагора] (* <- lang_ru;; *);;
+
+stat_Pythagorean_theorem <= nrel_sc_text_translation: ...
+	(*
+	-> rrel_example:
+		[В прямоугольном треугольнике квадрат гипотенузы равен сумме квадратов катетов.] 
+		(* <- lang_ru;; *);;
+	*);;
+
+stat_converse_Pythagorean_theorem <= nrel_sc_text_translation: ...
+	(*
+	-> rrel_example:
+		[Треугольник, у которого квадрат гипотенузы равен сумме квадратов катетов, должен быть прямоугольным.] 
+		(* <- lang_ru;; *);;
+	*);;
+
+stat_reverse_Pythagorean_theorem <= nrel_sc_text_translation: ...
+	(*
+	-> rrel_example:
+		[Если треугольник не прямоугольный, то квадрат гипотенузы не равен сумме квадратов катетов.] 
+		(* <- lang_ru;; *);;
+	*);;
+
+stat_reverse_converse_Pythagorean_theorem <= nrel_sc_text_translation: ...
+	(*
+	-> rrel_example:
+		[Треугольник, у которого квадрат гипотенузы не равен сумме квадратов катетов, не является прямоугольным.] (* <- lang_ru;; *);;
+	*);;
+
+stat_Pythagorean_theorem  <=> nrel_converse_theorem: stat_converse_Pythagorean_theorem;;
+stat_reverse_Pythagorean_theorem  <=> nrel_converse_theorem: stat_reverse_converse_Pythagorean_theorem;;
+stat_Pythagorean_theorem  <=> nrel_reverse_theorem: stat_reverse_Pythagorean_theorem ;;
+stat_converse_Pythagorean_theorem <=> nrel_reverse_theorem: stat_reverse_converse_Pythagorean_theorem;;
+stat_Pythagorean_theorem  <=> nrel_reverse_converse_theorem: stat_reverse_converse_Pythagorean_theorem;;
+stat_converse_Pythagorean_theorem <=> nrel_reverse_converse_theorem: stat_reverse_Pythagorean_theorem ;;

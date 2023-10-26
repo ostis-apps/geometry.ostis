@@ -1,0 +1,13 @@
+statement -> stat_straight_line_geometric_point_inclined_congruence;;
+
+stat_straight_line_geometric_point_inclined_congruence -> rrel_key_sc_element: concept_straight_line; nrel_perpendicular; concept_geometric_point; nrel_inclined; nrel_congruence;;
+
+stat_straight_line_geometric_point_inclined_congruence => nrel_main_idtf: [Утв.(прямая; геометрическая точка; наклонная*; конгруэнтность*; перпендикуляр*)] (* <- lang_ru;; *);;
+stat_straight_line_geometric_point_inclined_congruence => nrel_main_idtf: [Stat.(straight line; geometric point; inclined*; congruence*; perpendicular*)] (* <- lang_en;; *);;
+
+stat_straight_line_geometric_point_inclined_congruence <= nrel_sc_text_translation: ...
+	(*
+	-> rrel_example:
+		[Если к прямой из одной точки проведены наклонные, то любая наклонная больше перпендикуляра, равные наклонные имеют равные проекции, из двух наклонных больше та, у которой проекция больше.] 
+		(* <- lang_ru;; *);;
+	*);;

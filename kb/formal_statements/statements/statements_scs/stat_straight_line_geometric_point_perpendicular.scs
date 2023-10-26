@@ -1,0 +1,13 @@
+statement -> stat_straight_line_geometric_point_perpendicular;;
+
+stat_straight_line_geometric_point_perpendicular -> rrel_key_sc_element: concept_straight_line; nrel_perpendicularity; concept_geometric_point;;
+
+stat_straight_line_geometric_point_perpendicular => nrel_main_idtf: [Утв.(прямая; перпендикулярность*; геометрическая точка)] (* <- lang_ru;; *);;
+stat_straight_line_geometric_point_perpendicular => nrel_main_idtf: [Stat.(straight line; perpendicularity*; geometric point)] (* <- lang_en;; *);;
+
+stat_straight_line_geometric_point_perpendicular <= nrel_sc_text_translation: ...
+	(*
+	-> rrel_example:
+		[Через каждую точку прямой можно провести перпендикулярную ей прямую, и только одну.] 
+		(* <- lang_ru;; *);;
+	*);;

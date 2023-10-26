@@ -1,0 +1,52 @@
+statement -> stat_rectangular_triangle_cathetus_opposite_angle;;
+statement -> stat_converse_rectangular_triangle_cathetus_opposite_angle;;
+statement -> stat_reverse_rectangular_triangle_cathetus_opposite_angle;;
+statement -> stat_reverse_converse_rectangular_triangle_cathetus_opposite_angle;;
+
+stat_rectangular_triangle_cathetus_opposite_angle -> rrel_key_sc_element: concept_rectangular_triangle; nrel_cathetus; nrel_hypotenuse; nrel_internal_angle; nrel_opposite;;
+stat_converse_rectangular_triangle_cathetus_opposite_angle -> rrel_key_sc_element: concept_rectangular_triangle; nrel_cathetus; nrel_hypotenuse; nrel_internal_angle; nrel_opposite;;
+stat_reverse_rectangular_triangle_cathetus_opposite_angle -> rrel_key_sc_element: concept_rectangular_triangle; nrel_cathetus; nrel_hypotenuse; nrel_internal_angle; nrel_opposite;;
+stat_reverse_converse_rectangular_triangle_cathetus_opposite_angle -> rrel_key_sc_element: concept_rectangular_triangle; nrel_cathetus; nrel_hypotenuse; nrel_internal_angle; nrel_opposite;;
+
+
+stat_rectangular_triangle_cathetus_opposite_angle => nrel_main_idtf: [Утв.(прямоугольный треугольник; катет*; число)] (* <- lang_ru;; *);;
+stat_rectangular_triangle_cathetus_opposite_angle => nrel_idtf: [Теорема о катете лежащем против угла в 30 градусов.] (* <- lang_ru;; *);;
+stat_converse_rectangular_triangle_cathetus_opposite_angle => nrel_main_idtf: [ Прот.утв.(прямоугольный треугольник; катет*; число)] (* <- lang_ru;; *);;
+stat_converse_rectangular_triangle_cathetus_opposite_angle => nrel_idtf: [Теорема, обратная теореме о катете лежащем против угла в 30 градусов] (* <- lang_ru;; *);;
+stat_reverse_rectangular_triangle_cathetus_opposite_angle => nrel_main_idtf: [Прот.утв.(прямоугольный треугольник; катет*; число)] (* <- lang_ru;; *);;
+stat_reverse_converse_rectangular_triangle_cathetus_opposite_angle => nrel_main_idtf: [Прот.обр.утв.(прямоугольный треугольник; катет*; число)] (* <- lang_ru;; *);;
+
+stat_rectangular_triangle_cathetus_opposite_angle <= nrel_sc_text_translation: ...
+	(*
+	-> rrel_example:
+		[Если в прямоугольном треугольнике катет составляет половину гипотенузы, то угол лежащий против этого катета, равен тридцати градусам.](* <- lang_ru;; *);;
+	*);;
+
+stat_converse_rectangular_triangle_cathetus_opposite_angle <= nrel_sc_text_translation: ...
+	(*
+	-> rrel_example:
+		[Если в прямоугольном треугольнике угол лежащий против катета, равен тридцати градусам, то катет составляет половину гипотенузы.](* <- lang_ru;; *);;
+	*);;
+
+stat_reverse_rectangular_triangle_cathetus_opposite_angle <= nrel_sc_text_translation: ...
+	(*
+	-> rrel_example:
+		[Если в прямоугольном треугольнике катет не составляет половину гипотенузы, то угол лежащий против этого катета, не равен тридцати градусам.](* <- lang_ru;; *);;
+	*);;
+
+stat_reverse_converse_rectangular_triangle_cathetus_opposite_angle <= nrel_sc_text_translation: ...
+	(*
+	-> rrel_example:
+		[Если в прямоугольном треугольнике угол лежащий против катета, не равен тридцати градусам, то катет не составляет половину гипотенузы.](* <- lang_ru;; *);;
+	*);;
+
+stat_rectangular_triangle_cathetus_opposite_angle <=> nrel_converse_theorem: stat_converse_rectangular_triangle_cathetus_opposite_angle;;
+stat_reverse_rectangular_triangle_cathetus_opposite_angle <=> nrel_converse_theorem: stat_reverse_converse_rectangular_triangle_cathetus_opposite_angle;;
+stat_rectangular_triangle_cathetus_opposite_angle <=> nrel_reverse_theorem: stat_reverse_rectangular_triangle_cathetus_opposite_anglee;;
+stat_converse_rectangular_triangle_cathetus_opposite_angle <=> nrel_reverse_theorem: stat_reverse_converse_rectangular_triangle_cathetus_opposite_angle;;
+stat_rectangular_triangle_cathetus_opposite_angle <=> nrel_reverse_converse_theorem: stat_reverse_rectangular_triangle_cathetus_opposite_angle;;
+stat_converse_rectangular_triangle_cathetus_opposite_angle <=> nrel_reverse_converse_theorem: stat_reverse_converse_rectangular_triangle_cathetus_opposite_angle;;
+
+stat_rectangular_triangle_cathetus_opposite_angle => nrel_particular_theorem: stat_rectangular_triangle_hypotenuse_be_more_cathetus;
+																			stat_cosinus_acute_angle;
+																			stat_straight_line_geometric_point_inclined_congruence;;

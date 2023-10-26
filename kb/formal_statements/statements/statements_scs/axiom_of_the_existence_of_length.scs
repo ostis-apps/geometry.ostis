@@ -1,0 +1,14 @@
+axiom_of_the_existence_of_length <- statement;;
+
+axiom_of_the_existence_of_length -> rrel_key_sc_element: concept_segment; concept_geometric_point; nrel_length;;
+
+axiom_of_the_existence_of_length => nrel_main_idtf: [Акс.(отрезок; геометрическая точка; длина*)] (*<- lang_ru;;*);;
+axiom_of_the_existence_of_length => nrel_main_idtf: [Ax.(segment; geometric point; length*)] (*<- lang_en;;*);;
+
+axiom_of_the_existence_of_length <= nrel_sc_text_translation: 
+		... 
+		(* 
+		-> rrel_example: 
+			[Каждый отрезок имеет определённую длину больше нуля.] 
+			(* <- lang_ru;; *);; 
+		*);;

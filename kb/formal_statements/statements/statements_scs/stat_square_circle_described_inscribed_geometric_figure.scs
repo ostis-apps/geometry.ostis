@@ -1,0 +1,24 @@
+stat_square_circle_described_inscribed_geometric_figure <- statement;;
+
+stat_square_circle_described_inscribed_geometric_figure 
+	-> rrel_key_sc_element:
+	concept_square;
+	concept_circle;
+	nrel_radius;
+	nrel_inscribed;;
+
+stat_square_circle_described_inscribed_geometric_figure
+	=> nrel_main_idtf:
+	[Утв.(квадрат;окружность;радиус*;вписанность*)] (*<- lang_ru;;*);;
+
+stat_square_circle_described_inscribed_geometric_figure
+	=> nrel_main_idtf:
+	[Stat.(square;circle;radius*;inscribed*)] (*<- lang_en;;*);;
+
+stat_square_circle_described_inscribed_geometric_figure <= nrel_sc_text_translation: 
+	... 
+	(* 
+	-> rrel_example: 
+		[Связь между радиусами описанной и вписанной окружности квадрата: R=sqrt(2)*r.] 
+		(* <- lang_ru;; *);; 
+	*);;

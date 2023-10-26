@@ -1,0 +1,23 @@
+stat_triangle_be_inscribed_radius <- statement;;
+
+stat_triangle_be_inscribed_radius
+-> rrel_key_sc_element:
+	concept_triangle;
+	nrel_be_inscribed;
+	concept_circle;
+	nrel_radius;;
+
+stat_triangle_be_inscribed_radius
+=> nrel_main_idtf:
+	[Утв.(треугольник;быть вписанным*;радиус*;окружность)] (* <-lang_ru;; *);;
+
+stat_triangle_be_inscribed_radius
+=> nrel_main_idtf:
+	[Stat.(triangle;be inscribed*;radius*;circle)] (* <-lang_en;; *);;
+
+stat_triangle_be_inscribed_radius <= nrel_sc_text_translation: 
+	...
+	(*
+		-> rrel_example: 
+		[Радиус r вписанной окружности вычисляется по формуле r=sqrt(((p-a)*(p-b)*(p-c))/p), где p - полупериметр треугольника, a,b,c - стороны треугольника.] (* <- lang_ru;; *);;
+	*);;
