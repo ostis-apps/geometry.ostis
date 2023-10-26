@@ -1,0 +1,20 @@
+d_concept_surface <- definition;;
+
+d_concept_surface => nrel_main_idtf: [Опр.(поверхность)] (* <- lang_ru;; *);;
+d_concept_surface => nrel_main_idtf: [Def.(surface)] (* <- lang_en;; *);;
+
+d_concept_surface -> rrel_key_sc_element: concept_surface;;
+
+d_concept_surface <= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[Поверхность - граница геометрического тела.]
+		(* <- lang_ru;; *);;
+	*);;
+
+d_concept_surface <= nrel_using_constants: ...
+	(*
+	-> nrel_bound;;
+	-> concept_geometric_body;;
+	*);;

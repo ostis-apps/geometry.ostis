@@ -1,0 +1,20 @@
+d_concept_non_planar_surface <- definition;;
+
+d_concept_non_planar_surface => nrel_main_idtf: [Опр.(непланарная поверхность)] (* <- lang_ru;; *);;
+ 
+d_concept_non_planar_surface -> rrel_key_sc_element: concept_non_planar_surface;;
+
+d_concept_non_planar_surface <= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[Непланарная поверхность - это поверхность, для которой не существует плоскости такой, что любая точка поверхности принадлежит данной плоскости.]
+		(* <- lang_ru;; *);;
+	*);;
+	
+d_concept_non_planar_surface <= nrel_using_constants:
+	{
+	concept_surface; 
+	concept_plane; 
+	concept_geometric_point
+	};;

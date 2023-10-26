@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>В треугольнике против большего угла лежит большая сторона, против большей стороны лежит больший угол</title>
+	<meta charset=utf-8>
+</head>
+<body>
+	<p>
+		<ul>
+			<li>
+				Пусть <i>a</i> и <i>b</i> - две 
+				<sc_element sys_idtf="nrel_side">стороны</sc_element> 
+				<sc_element sys_idtf="concept_triangle">треугольника</sc_element>, &#945;, &#946; - 
+				<sc_element sys_idtf="nrel_opposite">противолежащие</sc_element> им 
+				<sc_element sys_idtf="concept_angle">углы</sc_element>.
+			</li> 
+			<li>
+				Докажем, что если <i>&#945 > &#946, то a > b</i>.		
+				<ul>
+					<li>
+						Если 
+						<sc_element sys_idtf="concept_angle">углы</sc_element> &#8736 &#945, &#8736 &#946 - 
+						<sc_element sys_idtf="concept_acute_angle">острые</sc_element>, то
+							<ol>
+								<li>
+									При <i> &#945 > &#946 </i> будет <i>sin&#945 > sin&#946</i>.
+								</li>
+								<li>
+									А так как <i>sin&#945 / a = sin&#946 / b</i>, то <i>a > b</i>.
+								</li>
+							</ol>
+					</li>
+					<li>
+						Если <i>&#8736 &#945</i> - 
+						<sc_element sys_idtf="concept_obtuse_angle">тупой</sc_element> (оба 
+						<sc_element sys_idtf="concept_angle">угла</sc_element> не могут быть 
+						<sc_element sys_idtf="concept_obtuse_angle">тупыми</sc_element>), то 
+							<ol>
+								<li>
+									<sc_element sys_idtf="concept_angle">Угол</sc_element> <i>180-&#945</i> 									<sc_element sys_idtf="concept_acute_angle">острый</sc_element>.
+								</li>
+								<li>
+									Причем 
+									<sc_element sys_idtf="concept_angle">угол</sc_element> <i>180-&#945</i> 									<sc_element sys_idtf="nrel_be_more">больше</sc_element> 
+									<sc_element sys_idtf="concept_angle">угла</sc_element> &#946 как 										<sc_element sys_idtf="nrel_external_angle">внешний угол</sc_element> 										<sc_element sys_idtf="concept_triangle">треугольника</sc_element>, не 										<sc_element sys_idtf="nrel_adjacent_angles">смежный</sc_element> с 
+									<sc_element sys_idtf="concept_angle">углом</sc_element> &#946. 
+								</li>
+								<li>
+									Поэтому <i>sin&#945 = sin(180-&#945) > sin&#946</i>.
+								</li>
+								<li>
+									И снова заключаем, что <i>a > b</i>.
+								</li>
+							</ol>
+					</li>
+				</ul>
+			<li>
+				Докажем обратное утверждение.
+				<ul>	
+					<li>			
+						<ul>
+							<li>
+								Если <i>&#945 = &#946</i>, то 
+								<sc_element sys_idtf="concept_isosceles_triangle">треугольник равнобедренный   									</sc_element> и <i>a=b</i>.
+							</li>
+							<li>
+								Если <i>&#945 < &#946</i>, то по доказанному <i>a < b </i>.
+							</li>
+						</ul>
+					</li>
+					<li>
+						В обоих случае получается противоречие, т.к. по предположению a < b, значит, <i>&#945 > &#946
+						</i>.
+					</li>
+
+				</ul>
+			</li>
+		</ul>
+	</p>
+</body>
+</html>

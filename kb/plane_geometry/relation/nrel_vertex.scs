@@ -1,0 +1,49 @@
+sc_node_norole_relation -> nrel_vertex;;
+
+nrel_vertex => nrel_main_idtf:
+	[вершина*]
+	(* <- lang_ru;; *);
+	[vertex*]
+	(* <- lang_en;; *);;
+
+nrel_vertex => nrel_idtf: [быть вершиной*]
+	(* <- lang_ru;; *);;
+
+nrel_vertex => nrel_idtf: [вершина геометрической фигуры*]
+	(* <- lang_ru;; *);;
+
+nrel_vertex => nrel_idtf: [быть вершиной геометрической фигуры*]
+	(* <- lang_ru;; *);;
+
+nrel_vertex => nrel_definitional_domain:
+	...
+	(*
+	<= nrel_combination: 
+		{
+		concept_planar_angle; 
+		concept_polygon;
+		concept_geometric_point
+		};;
+	*);;
+
+nrel_vertex => nrel_first_domain: 
+	...
+	(*
+	<= nrel_combination: 
+		{
+		concept_planar_angle; 
+		concept_polygon	
+		};;
+	*);;
+
+nrel_vertex => nrel_second_domain: 
+	concept_geometric_point;;
+
+nrel_vertex <- relation;;
+nrel_vertex <- binary_relation;;
+nrel_vertex <- oriented_relation;;
+nrel_vertex <- antireflexive_relation;;
+nrel_vertex <- antisymmetric_relation;;
+nrel_vertex <- antitransitive_relation;;
+
+

@@ -1,0 +1,14 @@
+stat_Heron_formula <= nrel_main_proof: proof_stat_Heron_formula;;
+
+proof_stat_Heron_formula => nrel_main_idtf:
+	 [Док. Утв. (Формула Герона)] (* <- lang_ru;; *);
+	 [Pr. Stat. (Heron formula)] (* <- lang_en;; *);;
+
+proof_stat_Heron_formula <- rrel_key_sc_element: ...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation: ... 
+		(* 	
+		-> rrel_example: "file://htmls/proof_stat_Heron_formula.html";; 
+		*);;
+	*);;	

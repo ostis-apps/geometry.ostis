@@ -1,0 +1,23 @@
+d_nrel_adjacent 
+=> nrel_main_idtf: [Опр.(прилежащий*)] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Def.(adjacent*)] (*<- lang_en;;*);
+<- definition;
+-> rrel_key_sc_element: nrel_adjacent;
+
+<= nrel_using_constants:
+	{
+	nrel_internal_angle;
+	concept_geometric_figure; 
+	concept_segment; 
+	nrel_side_of_polygon; 
+	nrel_side_of_angle
+	};
+<= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[Прилежащий - это отношение, связывающее между собой внутренний угол некоторой геометрической фигуры и отрезок, являющийся стороной некоторой геометрической фигуры и лежащий на стороне этого угла.]
+		(* <- lang_ru;; *);;
+	*);;
+
+

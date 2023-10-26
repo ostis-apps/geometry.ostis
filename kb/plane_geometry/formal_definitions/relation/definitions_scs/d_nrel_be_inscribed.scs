@@ -1,0 +1,22 @@
+d_nrel_be_inscribed 
+=> nrel_main_idtf: [Опр.(вписанность*)] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Def.(be inscribed*)] (*<- lang_en;;*);
+<- definition; 
+-> rrel_key_sc_element: nrel_be_inscribed;
+
+<= nrel_using_constants:
+	{
+	concept_circle; 
+	concept_polygon; 
+	nrel_vertex
+	};
+
+<= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[Вписанный многоугольник - многоугольник, все вершины которого лежат на данной окружности.]
+		(* <- lang_ru;; *);;
+	*);;
+	
+

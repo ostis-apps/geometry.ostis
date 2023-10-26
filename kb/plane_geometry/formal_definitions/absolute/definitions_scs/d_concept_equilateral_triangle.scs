@@ -1,0 +1,20 @@
+d_concept_equilateral_triangle <- definition;;
+
+d_concept_equilateral_triangle => nrel_main_idtf: [Опр.(равносторонний треугольник)] (* <- lang_ru;; *);;
+
+d_concept_equilateral_triangle -> rrel_key_sc_element: concept_equilateral_triangle;;
+ 
+d_concept_equilateral_triangle <= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[Равносторонний треугольник - треугольник, у которого все стороны равны друг другу.]
+		(* <- lang_ru;; *);;
+	*);;
+
+d_concept_equilateral_triangle <= nrel_using_constants:
+	{
+	concept_triangle; 
+	nrel_side; 
+	nrel_congruence
+	};;	

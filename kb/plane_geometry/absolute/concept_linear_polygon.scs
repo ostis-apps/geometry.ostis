@@ -1,0 +1,15 @@
+sc_node_not_relation -> concept_linear_polygon;;
+
+concept_linear_polygon => nrel_main_idtf:
+	[линейный многоугольник](* <- lang_ru;; *);
+	[linear polygon](* <- lang_en;; *);;
+
+concept_linear_polygon => nrel_idtf: [Класс линейных многоугольников] (* <- lang_ru;; *);;
+concept_linear_polygon => nrel_idtf: [Понятие линейного многоугольника] (* <- lang_ru;; *);;
+concept_linear_polygon => nrel_idtf: [Множество всевозможных линейных многоугольников] (* <- lang_ru;; *);;
+concept_linear_polygon => nrel_idtf: [Множество знаков всевозможных линейных многоугольников] (* <- lang_ru;; *);;
+concept_linear_polygon => nrel_idtf: [Простая планарная замкнутая ломаная] (* <- lang_ru;; *);;
+
+concept_linear_polygon <= nrel_strict_inclusion: concept_planar_figure;;
+
+concept_linear_polygon -> rrel_example: struct_Polygon_K_A_B_C_D_E;;

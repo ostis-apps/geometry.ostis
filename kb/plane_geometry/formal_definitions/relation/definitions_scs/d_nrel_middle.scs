@@ -1,0 +1,20 @@
+d_nrel_middle 
+=> nrel_main_idtf: [Опр.(середина*)](* <- lang_ru;; *);
+=> nrel_main_idtf: [Def.(middle*)] (*<- lang_en;;*);
+<- definition;
+-> rrel_key_sc_element: nrel_middle;
+
+<= nrel_using_constants:
+	{
+		concept_geometric_point; 
+		concept_segment; 
+		nrel_congruence; 
+		nrel_length
+	};
+
+<= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[Геометрическая точка, которая делит исходный отрезок на два равных по величине отрезка.] (* <- lang_ru;; *);;
+	*);;

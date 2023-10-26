@@ -1,0 +1,48 @@
+sc_node_norole_relation -> nrel_central_angle;;
+
+nrel_central_angle => nrel_main_idtf:
+	[центральный угол*]
+	(* <- lang_ru;; *);
+	[central angle*]
+	(* <- lang_en;; *);;
+
+nrel_central_angle => nrel_idtf: [быть центральным углом*] (* <- lang_ru;; *);;
+nrel_central_angle => nrel_idtf: [центральный угол в окружности*] (* <- lang_ru;; *);;
+nrel_central_angle => nrel_idtf: [быть центральным углом в окружности*] (* <- lang_ru;; *);;
+
+nrel_central_angle => nrel_definitional_domain: 
+	...
+	(*
+	<= nrel_combination: 
+		{
+		concept_circle; 
+		concept_planar_angle
+		};;
+	*);;	
+	
+
+nrel_central_angle => nrel_first_domain: 
+	concept_circle;;
+
+nrel_central_angle => nrel_second_domain: 
+	concept_planar_angle;;
+
+nrel_central_angle <- relation;;
+nrel_central_angle <- binary_relation;;
+nrel_central_angle <- oriented_relation;;
+nrel_central_angle <- antireflexive_relation;;
+nrel_central_angle <- antisymmetric_relation;;
+nrel_central_angle <- antitransitive_relation;;
+
+nrel_central_angle <- rrel_key_sc_element: 
+	...
+	(*
+	<- illustration;;
+	<= nrel_sc_text_translation:
+	...
+		(*
+		-> rrel_example:
+			"file://images/central_angle.png";;
+		*);;
+	*);;
+

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Из любой точки, не лежащей на данной прямой, можно опустить на эту прямую перпендикуляр, и только один.</title>
+	<meta charset="utf-8">
+	<style>
+	ol {
+		list-style: none;
+		counter-reset: li;
+	}
+	li:before {
+		counter-increment: li; 
+		content: counters(li,".") ". ";
+	}
+	</style>
+</head>
+<body>
+	<p>
+		<ol>
+			<li>
+				Пусть <i>а</i> - данная <sc_element sys_idtf="concept_straight_line">прямая</sc_element> и <i>А</i> - не лежащая на ней <sc_element sys_idtf="concept_geometric_point">точка</sc_element>.
+			</li>
+			<li>
+				Проведем через какую-нибудь <sc_element sys_idtf="concept_geometric_point">точку</sc_element> <sc_element sys_idtf="concept_straight_line">прямой</sc_element> <i>а</i> <sc_element sys_idtf="nrel_perpendicularity">перпендикулярную</sc_element> <sc_element sys_idtf="concept_straight_line">прямую</sc_element>.
+			</li>
+			<li>	
+				А теперь проведем через <sc_element sys_idtf="concept_geometric_point">точку</sc_element> <i>А</i> <sc_element sys_idtf="nrel_parallelism">параллельную</sc_element> ей <sc_element sys_idtf="concept_straight_line">прямую</sc_element> <i>b</i>.
+			</li>
+			<li>	
+				Она будет <sc_element sys_idtf="nrel_perpendicularity">перпендикулярна</sc_element> <sc_element sys_idtf="concept_straight_line">прямой</sc_element> <i>а</i>, т.к. <sc_element sys_idtf="concept_straight_line">прямая</sc_element> <i>а</i>, будучи <sc_element sys_idtf="nrel_perpendicularity">перпендикулярной</sc_element> одной из <sc_element sys_idtf="nrel_parallelism">параллельных</sc_element> <sc_element sys_idtf="concept_straight_line">прямых</sc_element>, <sc_element sys_idtf="nrel_perpendicularity">перпендикулярна</sc_element> и другой.
+			</li>	
+			<li>
+				<sc_element sys_idtf="concept_segment">Отрезок</sc_element> <i>АВ</i> <sc_element sys_idtf="concept_straight_line">прямой</sc_element> <i>b</i> и есть <sc_element sys_idtf="nrel_perpendicular">перпендикуляр</sc_element>, проведенный из <sc_element sys_idtf="concept_geometric_point">точки</sc_element> <i>А</i> к <sc_element sys_idtf="concept_straight_line">прямой</sc_element> <i>а</i>.
+			</li>
+			<li>	
+				Докажем единственность <sc_element sys_idtf="nrel_perpendicular">перпендикуляра</sc_element> <i>АВ</i>. 
+				<ol>
+					<li>
+						Допустим существует другой <sc_element sys_idtf="nrel_perpendicular">перпендикуляр</sc_element> <i>АС</i>.
+					</li>
+					<li>
+						Тогда у <sc_element sys_idtf="concept_triangle">треугольника</sc_element> <i>АВС</i> будут два <sc_element sys_idtf="concept_right_angle">прямых угла</sc_element>. А это, как мы знаем, невозможно.
+					</li>
+				</ol>
+			</li>
+		</ol>
+	</p>
+</body>
+</html>

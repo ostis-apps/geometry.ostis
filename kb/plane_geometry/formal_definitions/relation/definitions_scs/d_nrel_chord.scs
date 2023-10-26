@@ -1,0 +1,21 @@
+d_nrel_chord
+=> nrel_main_idtf: [Опр.(хорда*)] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Def.(chord*)] (*<-lang_en;;*);
+<- definition;
+-> rrel_key_sc_element: nrel_chord;
+
+<= nrel_using_constants:
+	{
+	concept_segment; 
+	concept_geometric_point; 
+	concept_circle
+	};
+
+<= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[Хорда - это отрезок, соединяющий две точки окружности.]
+		(* <- lang_ru;; *);;
+	*);;
+

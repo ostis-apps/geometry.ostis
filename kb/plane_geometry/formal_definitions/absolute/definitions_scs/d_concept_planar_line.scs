@@ -1,0 +1,20 @@
+d_concept_planar_line <- definition;;
+
+d_concept_planar_line => nrel_main_idtf: [Опр.(планарная линия)] (* <- lang_ru;; *);;
+
+d_concept_planar_line -> rrel_key_sc_element: concept_planar_line;;
+
+d_concept_planar_line <= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[Планарная линия - это линия, все точки которой принадлежат некоторой плоскости.]
+		(* <- lang_ru;; *);;
+	*);;
+
+d_concept_planar_line <= nrel_using_constants:
+	{
+	concept_line; 
+	concept_geometric_point; 
+	concept_plane
+	};;

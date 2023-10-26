@@ -1,0 +1,14 @@
+stat_adjacent_angle_sum <= nrel_main_proof: proof_stat_adjacent_angle_sum;;
+
+proof_stat_adjacent_angle_sum => nrel_main_idtf:
+	 [Док. Утв. (смежные углы*, сумма величин*)] (* <- lang_ru;; *);
+	 [Pr. Stat. (adjacent angles*, sum of quantities*)] (* <- lang_en;; *);;
+
+proof_stat_adjacent_angle_sum <- rrel_key_sc_element: ...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation: ... 
+		(* 	
+		-> rrel_example: "file://htmls/proof_stat_adjacent_angle_sum.html";; 
+		*);;
+	*);;

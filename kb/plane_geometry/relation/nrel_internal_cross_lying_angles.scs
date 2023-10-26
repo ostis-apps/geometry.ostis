@@ -1,0 +1,38 @@
+sc_node_norole_relation -> nrel_internal_cross_lying_angles;;
+
+nrel_internal_cross_lying_angles => nrel_main_idtf:
+	[внутренние накрест лежащие углы*]
+	(* <- lang_ru;; *);
+	[internal crosswise lying angles*]
+	(* <- lang_en;; *);;
+
+nrel_internal_cross_lying_angles => nrel_idtf: [быть внутренними накрест лежащими углами*]
+	(* <- lang_ru;; *);;
+
+nrel_internal_cross_lying_angles => nrel_definitional_domain:
+	concept_planar_angle;;
+	
+nrel_internal_cross_lying_angles => nrel_first_domain: 
+	concept_planar_angle;;
+	
+nrel_internal_cross_lying_angles => nrel_second_domain: 
+	concept_planar_angle;;
+
+nrel_internal_cross_lying_angles <- relation;;
+nrel_internal_cross_lying_angles <- binary_relation;;
+nrel_internal_cross_lying_angles <- non_oriented_relation;;
+nrel_internal_cross_lying_angles <- antireflexive_relation;;
+nrel_internal_cross_lying_angles <- symmetric_relation;;
+nrel_internal_cross_lying_angles <- antitransitive_relation;;
+
+nrel_internal_cross_lying_angles <- rrel_key_sc_element: 
+	...
+	(*
+	<- illustration;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			"file://images/Internal_cross_lying_angles.png";;
+		*);; 
+	*);;

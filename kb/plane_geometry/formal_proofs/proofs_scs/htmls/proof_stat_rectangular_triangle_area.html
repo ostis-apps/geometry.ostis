@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Площадь прямоугольника со сторонами a,b вычисляется по формуле S=ab</title>
+	<meta charset=utf-8>
+</head>
+<body>
+	<p>
+		<ol>
+			<li>
+				Пусть <i>АBCD</i> и <i>AB<sub>1</sub>C<sub>1</sub>D</i> - два 
+				<sc_element sys_idtf="concept_rectangle">прямоугольника</sc_element> с общим 
+				<sc_element sys_idtf="nrel_base">основанием</sc_element> <i>AD</i>. 
+				Пусть <i>S</i> и <i>S<sub>1</sub></i> - их 
+				<sc_element sys_idtf="nrel_area">площади</sc_element>. Докажем, что <i>S / S<sub>1</sub> = AB / A<sub>1        					</sub>B<sub>1</sub></i>. 
+			</li>
+			<li>
+				Разобьем 
+				<sc_element sys_idtf="nrel_side">сторону</sc_element> <i>АВ</i> 
+				<sc_element sys_idtf="concept_rectangle">прямоугольника</sc_element> на <i>n</i> равных частей, каждая из них 					равна <i>AB / n</i>.
+			</li>
+			<li>
+				Пусть <i>m</i> - число точек деления, которые лежат на 
+				<sc_element sys_idtf="nrel_side">стороне</sc_element> <i>АВ<sub>1</sub></i>. Тогда <i>(AB / n) &#183; 					m &#8804; AB<sub>1</sub> &#8804; (AB / n)(m + 1).</i>
+			</li>
+			<li>
+				Отсюда, разделив на <i>АВ</i>, получим: <i>m / n  &#8804; AB<sub>1</sub>/AB &#8804; m / n + 1 / n</i> (*).
+			</li>
+			<li>
+				Проведем через 
+				<sc_element sys_idtf="concept_geometric_point">точки</sc_element> деления 
+				<sc_element sys_idtf="concept_straight_line">прямые</sc_element>, 
+				<sc_element sys_idtf="nrel_parallelism">параллельные</sc_element>
+				<sc_element sys_idtf="nrel_base">основанию</sc_element> <i>AD</i>.
+			</li>
+			<li>
+				Они разобьют 
+				<sc_element sys_idtf="concept_rectangle">прямоугольник</sc_element> <i>ABCD</i> на <i>n</i> равных 					<sc_element sys_idtf="concept_rectangle">прямоугольников</sc_element>. Каждый из них имеет 
+				<sc_element sys_idtf="nrel_area">площадь</sc_element> <i>S / n</i>.
+			</li>
+			<li>
+				<sc_element sys_idtf="concept_rectangle">Прямоугольник</sc_element>  <i>AB<sub>1</sub>C<sub>1</sub>D</i> 					содержит первые <i>m</i> 
+				<sc_element sys_idtf="concept_rectangle">прямоугольников</sc_element>, считая снизу, и 					содержится в <i>m + 1</i> 
+				<sc_element sys_idtf="concept_rectangle">прямоугольниках</sc_element>. Поэтому <i>(S / n)m &#8804; S<sub>1     					</sub> &#8804; (S / n)(m + 1)</i> (**), откуда m / n &#8804; S<sub>1</sub> / S &#8804; m / n + 1 / n </i>.
+			</li> 
+			<li>
+ 				Из неравенств (*) и (**) мы видим, что оба числа <i>AB<sub>1</sub> / АВ</i> и <i>S<sub>1</sub> / S</i> 					заключены между <i>m / n</i> и <i>m / n + 1 / n</i>. Поэтому они отличаются не более, чем на <i>1 / n</i>.
+			</li> 
+			<li>
+				А так как <i>m</i> можно взять сколь угодно большим, что это может быть только при <i>AB<sub>1</sub> / AB = 					S<sub>1</sub> / S</i>, что и требовалось доказать.
+			</li>
+			<li>
+				Возьмем теперь 
+				<sc_element sys_idtf="concept_square">квадрат</sc_element>, являющийся единицей 
+				<sc_element sys_idtf="nrel_area">площади</sc_element>, 
+				<sc_element sys_idtf="concept_rectangle">прямоугольник</sc_element> со 
+				<sc_element sys_idtf="nrel_side">сторонами</sc_element> <i>1</i>, <i>а</i> и 
+				<sc_element sys_idtf="concept_rectangle">прямоугольник</sc_element> со 
+				<sc_element sys_idtf="nrel_side">сторонами</sc_element> <i>a</i>,<i>b</i>.
+			</li>
+			<li>
+				Сравнивая их 
+				<sc_element sys_idtf="nrel_area">площади</sc_element>, по доказанному будем иметь: <i>S' / 1 = a / 1</i> и 					<i>S / S' = b / 1</i>.
+			</li>
+			<li>
+				Перемножая эти равенства почленно, получим <i>S = ab</i>.
+			</li>
+  
+		</ol>
+	</p>
+</body>
+</html>

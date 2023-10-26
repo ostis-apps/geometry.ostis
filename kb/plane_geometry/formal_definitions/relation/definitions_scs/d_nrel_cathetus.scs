@@ -1,0 +1,23 @@
+d_nrel_cathetus 
+=> nrel_main_idtf: [Опр.(катет*)] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Def.(cathetus*)] (*<- lang_en;;*);	
+<- definition;
+-> rrel_key_sc_element: nrel_cathetus;
+
+<= nrel_using_constants:
+	{
+	concept_segment;  
+	nrel_side; 
+	concept_rectangular_triangle; 
+	concept_right_angle;
+	nrel_adjacent
+	};	
+
+<= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[Катет - это отрезок, который является стороной прямоугольного треугольника и один из прилежащих углов которого является прямым углом.]
+		(* <- lang_ru;; *);;
+	*);;
+

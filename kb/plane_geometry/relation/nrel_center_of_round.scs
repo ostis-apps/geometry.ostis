@@ -1,0 +1,37 @@
+sc_node_norole_relation -> nrel_center_of_round;;
+
+nrel_center_of_round => nrel_main_idtf:
+	[центр круга*]
+	(* <- lang_ru;; *);
+	[center of round*]
+	(*<-lang_en;;*);;
+
+nrel_center_of_round => nrel_idtf:
+	[быть центром круга*]
+	(* <- lang_ru;; *);;
+
+nrel_center_of_round <= nrel_definitional_domain: 
+	...
+	(*
+	<= nrel_combination: 
+		{
+		concept_round;
+		concept_geometric_point
+		};;
+	*);;
+
+nrel_center_of_round <= nrel_first_domain:
+	concept_round;;		
+
+nrel_center_of_round <= nrel_second_domain: 
+	concept_geometric_point;;
+
+nrel_center_of_round <- relation;;
+nrel_center_of_round <- binary_relation;;
+nrel_center_of_round <- oriented_relation;;
+nrel_center_of_round <- antireflexive_relation;;
+nrel_center_of_round <- antisymmetric_relation;;
+nrel_center_of_round <- antitransitive_relation;;
+
+
+

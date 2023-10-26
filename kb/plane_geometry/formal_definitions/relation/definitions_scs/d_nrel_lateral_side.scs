@@ -1,0 +1,24 @@
+d_nrel_lateral_side
+=> nrel_main_idtf: [Опр.(боковая сторона*)]	(* <- lang_ru;; *);
+=> nrel_main_idtf: [Def.(lateral side*)] (*<- lang_en;;*);
+<- definition;
+-> rrel_key_sc_element: nrel_lateral_side;
+
+<= nrel_using_constants:
+	{
+	nrel_side; 
+	concept_geometric_figure; 
+	concept_isosceles_triangle; 
+	concept_isosceles_trapezoid; 
+	concept_segment; 
+	nrel_side; 
+	concept_angle; 
+	nrel_base
+	};
+
+<= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[Боковая сторона геометрической фигуры (равнобедренного треугольника или трапеции) - это отрезок, который является стороной этой геометрической фигуры и имеет общий угол с основанием той же фигуры.] (* <- lang_ru;; *);;
+	*);;

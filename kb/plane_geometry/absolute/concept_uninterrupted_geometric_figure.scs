@@ -1,0 +1,21 @@
+sc_node_not_relation -> concept_uninterrupted_geometric_figure;;
+
+concept_uninterrupted_geometric_figure => nrel_main_idtf:
+	[непрерывная геометрическая фигура](* <- lang_ru;; *);
+	[uninterrupted geometric figure](* <- lang_en;;	*);;
+
+concept_uninterrupted_geometric_figure => nrel_idtf: [Класс непрерывных геометрических фигур] (* <- lang_ru;; *);;
+concept_uninterrupted_geometric_figure => nrel_idtf: [Понятие непрерывной геометрической фигуры] (* <- lang_ru;; *);;
+concept_uninterrupted_geometric_figure => nrel_idtf: [Множество непрерывных геометрических фигур] (* <- lang_ru;; *);;
+concept_uninterrupted_geometric_figure => nrel_idtf: [Множество всевозможных непрерывных геометрических фигур] (* <- lang_ru;; *);;
+
+concept_uninterrupted_geometric_figure <= nrel_strict_inclusion: concept_geometric_figure;;
+concept_uninterrupted_geometric_figure => nrel_strict_inclusion: concept_uninterrupted_geometric_figure_of_mixed_dimension;;
+concept_uninterrupted_geometric_figure => nrel_strict_inclusion: concept_plane;;
+
+concept_uninterrupted_geometric_figure -> rrel_example: struct_Straight_Line_A;;
+concept_uninterrupted_geometric_figure -> rrel_example: struct_Plane_P;;
+concept_uninterrupted_geometric_figure -> rrel_example: struct_Segment_A_B;;
+concept_uninterrupted_geometric_figure -> rrel_example: struct_Circle_O_R;;
+concept_uninterrupted_geometric_figure -> rrel_example: struct_Opened_ray_k;;
+concept_uninterrupted_geometric_figure -> rrel_example: struct_Opened_Half_Plane_K1;;

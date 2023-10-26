@@ -1,0 +1,18 @@
+sc_node_not_relation -> concept_regular_polygon;;
+
+concept_regular_polygon => nrel_main_idtf:
+	[правильный многоугольник](* <- lang_ru;; *);
+	[regular polygon](* <- lang_en;; *);;
+
+concept_regular_polygon => nrel_idtf: [Класс правильных многоугольников] (* <- lang_ru;; *);;
+concept_regular_polygon => nrel_idtf: [Понятие правильного многоугольника] (* <- lang_ru;; *);;
+concept_regular_polygon => nrel_idtf: [Множество всевозможных правильных многоугольников] (* <- lang_ru;; *);;
+concept_regular_polygon => nrel_idtf: [Множество знаков всевозможных правильных многоугольников] (* <- lang_ru;; *);;
+
+concept_regular_polygon => nrel_strict_inclusion: concept_equilateral_triangle;;
+concept_regular_polygon => nrel_strict_inclusion: concept_square;;
+concept_regular_polygon => nrel_strict_inclusion: concept_regular_pentagon;;
+concept_regular_polygon => nrel_strict_inclusion: concept_regular_hexagon;;
+	
+concept_regular_polygon -> rrel_example: struct_Regular_Polygon_A_B_C_D_E_F;;
+concept_regular_polygon -> rrel_example: struct_Equilateral_triangle_X_Y_Z;;

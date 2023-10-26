@@ -1,0 +1,26 @@
+sc_node_not_relation -> concept_acute_angled_triangle;;
+
+concept_acute_angled_triangle => nrel_main_idtf:
+	[остроугольный треугольник](* <- lang_ru;; *);
+	[acute angled triangle](* <- lang_en;; *);;
+
+concept_acute_angled_triangle => nrel_idtf: [Класс остроугольных треугольников] (* <- lang_ru;; *);;
+
+concept_acute_angled_triangle => nrel_idtf: [Множество всевозможных остроугольных треугольников] (* <- lang_ru;; *);;
+
+concept_acute_angled_triangle => nrel_idtf: [Множество знаков всевозможных остроугольных треугольников] (* <- lang_ru;; *);;
+	
+concept_acute_angled_triangle -> rrel_example: struct_Acute_angled_triangle_O_S_T;;
+concept_acute_angled_triangle -> rrel_example: struct_Triangle_A_B_C;;
+
+concept_acute_angled_triangle <- rrel_key_sc_element: 
+	...
+	(*
+	<- illustration;; 
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: 
+		"file://images/concept_acute_angled_triangle.png";;
+
+		*);;
+	*);;

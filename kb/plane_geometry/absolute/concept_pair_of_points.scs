@@ -1,0 +1,24 @@
+sc_node_not_relation -> concept_pair_of_points;;
+
+concept_pair_of_points => nrel_main_idtf:
+	[пара точек](* <- lang_ru;; *);
+	[pair of points](* <- lang_en;; *);;
+
+concept_pair_of_points => nrel_idtf: [пара разных точек] (* <- lang_ru;; *);;
+concept_pair_of_points => nrel_idtf: [пара геометрических точек] (* <- lang_ru;; *);;
+concept_pair_of_points => nrel_idtf: [пара разных геометрических точек] (* <- lang_ru;; *);;
+concept_pair_of_points => nrel_idtf: [Понятие пары точек] (* <- lang_ru;; *);;
+concept_pair_of_points => nrel_idtf: [Понятие пары геометрических точек] (* <- lang_ru;; *);;
+concept_pair_of_points => nrel_idtf: [Множество пар точек] (* <- lang_ru;; *);;
+concept_pair_of_points => nrel_idtf: [Множество пар геометрических точек] (* <- lang_ru;; *);;
+concept_pair_of_points => nrel_idtf: [Множество всевозможных пар точек] (* <- lang_ru;; *);;
+concept_pair_of_points => nrel_idtf: [Множество всевозможных пар геометрических точек] (* <- lang_ru;; *);;
+concept_pair_of_points => nrel_idtf: [геометрическая фигура, состоящая из двух точек] (* <- lang_ru;; *);;
+concept_pair_of_points => nrel_idtf: [геометрическая фигура, состоящая из двух разных точек] (* <- lang_ru;; *);;
+concept_pair_of_points => nrel_idtf: [геометрическая фигура, состоящая из двух геометрических точек] (* <- lang_ru;; *);;
+concept_pair_of_points => nrel_idtf: [геометрическая фигура, состоящая из двух разных геометрических точек] (* <- lang_ru;; *);;
+
+concept_pair_of_points <= nrel_strict_inclusion: concept_discret_geometric_figure;;
+concept_pair_of_points <= nrel_strict_inclusion: concept_countable_set_of_points;;
+
+

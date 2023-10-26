@@ -1,0 +1,21 @@
+d_nrel_diagonal 
+=> nrel_main_idtf: [Опр.(диагональ*)] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Def.(diagonal*)] (*<-lang_en;;*);
+<- definition;  
+-> rrel_key_sc_element: nrel_diagonal;
+
+<= nrel_using_constants:
+	{
+    	concept_segment; 
+	nrel_vertex_of_polygon; 
+	concept_polygon; 
+	nrel_side_of_polygon
+	};
+<= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[Диагональ - отрезок, соединяющий две вершины многоугольника, не принадлежащие одной его стороне.]
+		(* <- lang_ru;;	*);;
+	*);;
+	

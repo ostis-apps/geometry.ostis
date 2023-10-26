@@ -1,0 +1,102 @@
+sc_node_not_relation -> concept_geometric_figure;;
+
+concept_geometric_figure => nrel_main_idtf:
+	[геометрическая фигура](* <- lang_ru;; *);
+	[geometric figure](* <- lang_en;; *);;
+
+concept_geometric_figure => nrel_idtf: [Класс геометрических фигур] (* <- lang_ru;; *);;
+concept_geometric_figure => nrel_idtf: [Понятие геометрической фигуры] (* <- lang_ru;; *);;
+concept_geometric_figure => nrel_idtf: [Множество точек] (* <- lang_ru;; *);;
+concept_geometric_figure => nrel_idtf: [Множество геометрических точек] (* <- lang_ru;; *);;
+concept_geometric_figure => nrel_idtf: [Множество разных геометрических точек] (* <- lang_ru;; *);;
+concept_geometric_figure => nrel_idtf: [Канторовское множество геометрических точек] (* <- lang_ru;; *);;
+concept_geometric_figure => nrel_idtf: [Булеан множества всевозможных геометрических точек] (* <- lang_ru;; *);;
+concept_geometric_figure => nrel_idtf: [фигура] (* <- lang_ru;; *);;
+concept_geometric_figure => nrel_idtf: [неэлементарный геометрический объект] (* <- lang_ru;; *);;
+
+concept_geometric_figure <= nrel_subdividing:
+	...
+	(*
+	=> nrel_main_idtf: [Разбиение по признаку ограниченности размера] (* <- lang_ru;; *);;
+
+	-> concept_geometric_figure_of_limited_size;
+	  concept_geometric_figure_of_unlimited_size;;
+	*);;
+
+concept_geometric_figure <= nrel_subdividing:
+	...
+	(*
+	=> nrel_main_idtf: [Разбиение по признаку существования граничных точек] (* <- lang_ru;; *);;
+
+	-> concept_geometric_figure_with_boundary_points;
+	  concept_geometric_figure_without_boundary_points;;
+	*);;
+
+concept_geometric_figure <= nrel_subdividing:
+	...
+	(*
+	=> nrel_main_idtf: [Разбиение по признаку расположения в одной плоскости] (* <- lang_ru;; *);;
+
+	-> concept_planar_figure;
+	  concept_non_planar_figure;;
+	*);;
+
+concept_geometric_figure <= nrel_subdividing:
+	...
+	(*
+	=> nrel_main_idtf: [Разбиение по признаку расположения на одной прямой] (* <- lang_ru;; *);;
+
+	-> concept_rectilinear_figure;
+	  concept_non_rectlinear_geometric_figure;;
+	*);;
+
+concept_geometric_figure <= nrel_subdividing:
+	...
+	(*
+	=> nrel_main_idtf: [Разбиение по признаку счетности множества] (* <- lang_ru;; *);;
+
+	-> concept_countable_set_of_points;
+	  concept_non_countable_set_of_points;;
+	*);;
+
+
+concept_geometric_figure <= nrel_subdividing:
+	...
+	(*
+	=> nrel_main_idtf: [Разбиение по признаку размерности] (* <- lang_ru;; *);;
+
+	-> concept_linear_figure;
+	  concept_discret_geometric_figure;
+	  concept_flat_geometric_figure;
+	  concept_geometric_body;;
+	*);;
+
+concept_geometric_figure -> rrel_example: struct_Rectilinear_triple_Of_Points_P_Q_R;;
+concept_geometric_figure -> rrel_example: struct_Straight_Line_A;;
+concept_geometric_figure -> rrel_example: struct_Rectangular_triangle_D_F_G;;
+concept_geometric_figure -> rrel_example: struct_Scalene_triangle_K_L_M;;
+concept_geometric_figure -> rrel_example: struct_Obtuse_triangle_L_D_K;;
+concept_geometric_figure -> rrel_example: struct_Acute_angled_triangle_O_S_T;;
+concept_geometric_figure -> rrel_example: struct_Equilateral_triangle_X_Y_Z;;
+concept_geometric_figure -> rrel_example: struct_Opened_ray_k;;
+concept_geometric_figure -> rrel_example: struct_Regular_Polyhon_A_B_C_D_E_F;;
+concept_geometric_figure -> rrel_example: struct_Irregular_polygon_K_A_B_C_D_E;;
+concept_geometric_figure -> rrel_example: struct_Polygon_K_A_B_C_D_E;;
+concept_geometric_figure -> rrel_example: struct_Non_Convex_Polygon_O_P_R_S_Q_T;;
+concept_geometric_figure -> rrel_example: struct_Circle_O_R;;
+concept_geometric_figure -> rrel_example: struct_Segment_A_B;;
+concept_geometric_figure -> rrel_example: struct_Parallelogram_A_B_C_D;;
+concept_geometric_figure -> rrel_example: struct_Plane_P;;
+concept_geometric_figure -> rrel_example: struct_Opened_Half_Plane_K1;;
+concept_geometric_figure -> rrel_example: struct_Rectangle_B_C_D_E;;
+concept_geometric_figure -> rrel_example: struct_Isosceles_trapezoid_K_L_M_N;;
+concept_geometric_figure -> rrel_example: struct_Rectangular_Trapezoid_P_Q_R_S;;
+concept_geometric_figure -> rrel_example: struct_Versatile_trapezoid_Z_X_C_V;;
+concept_geometric_figure -> rrel_example: struct_Non_convex_angle_A_B_K;;
+concept_geometric_figure -> rrel_example: struct_Straight_angle_A_O_B;;
+concept_geometric_figure -> rrel_example: struct_Acute_Angle_K_L_M;;
+concept_geometric_figure -> rrel_example: struct_Zero_Angle_N_K_N;;
+concept_geometric_figure -> rrel_example: struct_Full_angle_P_K_P;;
+concept_geometric_figure -> rrel_example: struct_struct_Right_Angle_P_T_R_P_T_R;;
+concept_geometric_figure -> rrel_example: struct_Obtuse_angle_T_P_R;;
+concept_geometric_figure -> rrel_example: struct_Rhomb_E_F_G_H;;

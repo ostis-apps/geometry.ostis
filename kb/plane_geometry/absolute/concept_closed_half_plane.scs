@@ -1,0 +1,20 @@
+sc_node_not_relation -> concept_closed_half_plane;;
+
+concept_closed_half_plane => nrel_main_idtf:
+	[закрытая полуплоскость](* <- lang_ru;;	*);
+	[closed half plane](* <- lang_en;; *);;
+
+concept_closed_half_plane => nrel_idtf: [Класс закрытых полуплоскостей] (* <- lang_ru;; *);;
+concept_closed_half_plane => nrel_idtf: [Множество закрытых полуплоскостей] (* <- lang_ru;; *);;
+concept_closed_half_plane => nrel_idtf: [Множество всевозможных закрытых полуплоскостей] (* <- lang_ru;; *);;
+concept_closed_half_plane => nrel_idtf: [Канторовское множество закрытых плоскостей] (* <- lang_ru;; *);;
+concept_closed_half_plane => nrel_idtf: [замкнутая полуплоскость] (* <- lang_ru;; *);;
+concept_closed_half_plane => nrel_idtf: [Класс замкнутых полуплоскостей] (* <- lang_ru;; *);;
+concept_closed_half_plane => nrel_idtf: [Множество замкнутых полуплоскостей] (* <- lang_ru;; *);;
+concept_closed_half_plane => nrel_idtf: [Множество всевозможных замкнутых полуплоскостей] (* <- lang_ru;; *);;
+concept_closed_half_plane => nrel_idtf: [Канторовское множество замкнутых плоскостей] (* <- lang_ru;; *);;
+
+concept_closed_half_plane <= nrel_strict_inclusion: concept_half_plane;;
+concept_closed_half_plane <=> nrel_analogue: concept_closed_ray;;
+concept_closed_half_plane <=> nrel_antipode: concept_opened_half_plane;;
+

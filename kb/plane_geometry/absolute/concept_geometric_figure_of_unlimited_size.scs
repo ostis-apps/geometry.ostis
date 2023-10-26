@@ -1,0 +1,19 @@
+sc_node_not_relation -> concept_geometric_figure_of_unlimited_size;;
+
+concept_geometric_figure_of_unlimited_size => nrel_main_idtf:
+	[геометрическая фигура неограниченного размера](* <- lang_ru;;	*);
+	[geometric figure of unlimited size](* <- lang_en;; *);;
+
+concept_geometric_figure_of_unlimited_size => nrel_idtf: [бесконечная геометрическая фигура] (* <- lang_ru;; *);;
+concept_geometric_figure_of_unlimited_size => nrel_idtf: [Понятие геометрической фигуры неограниченного размера] (* <- lang_ru;; *);;
+concept_geometric_figure_of_unlimited_size => nrel_idtf: [Класс геометрических фигур неограниченного размера] (* <- lang_ru;; *);;
+concept_geometric_figure_of_unlimited_size => nrel_idtf: [Множество геометрических фигур неограниченного размера] (* <- lang_ru;; *);;
+
+concept_geometric_figure_of_unlimited_size => nrel_strict_inclusion: concept_straight_line;;
+concept_geometric_figure_of_unlimited_size => nrel_strict_inclusion: concept_ray;;
+concept_geometric_figure_of_unlimited_size => nrel_strict_inclusion: concept_angle;;
+
+concept_geometric_figure_of_unlimited_size -> rrel_example: struct_Opened_Half_Plane_K1;;
+concept_geometric_figure_of_unlimited_size -> rrel_example: struct_Plane_P;;
+concept_geometric_figure_of_unlimited_size -> rrel_example: struct_Opened_ray_k;;
+concept_geometric_figure_of_unlimited_size -> rrel_example: struct_Straight_Line_A;;

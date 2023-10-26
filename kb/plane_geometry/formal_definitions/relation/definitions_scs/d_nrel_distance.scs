@@ -1,0 +1,20 @@
+d_nrel_distance 
+=> nrel_main_idtf: [Опр.(расстояние*)] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Def.(distance*)] (* <-lang_en;;*);
+<- definition;  
+-> rrel_key_sc_element: nrel_distance;
+
+<= nrel_using_constants:
+	{
+	concept_geometric_point; 
+	concept_segment
+	};
+
+<= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[Расстоянием между точками A и B называют длину отрезка AB.]
+		(* <- lang_ru;; *);;
+	*);;
+

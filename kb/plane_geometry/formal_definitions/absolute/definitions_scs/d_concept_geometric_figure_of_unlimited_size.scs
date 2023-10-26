@@ -1,0 +1,19 @@
+d_concept_geometric_figure_of_unlimited_size <- definition;;
+
+d_concept_geometric_figure_of_unlimited_size => nrel_main_idtf: [Опр.(геометрическая фигура неограниченного размера)] (* <- lang_ru;; *);;
+
+d_concept_geometric_figure_of_unlimited_size -> rrel_key_sc_element: concept_geometric_figure_of_unlimited_size;;
+
+d_concept_geometric_figure_of_unlimited_size <= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+		[Геометрическая фигура неограниченного размера - результат теоретико-множественной разности множеств понятия геометрической фигуры и понятия геометрической фигуры ограниченного размера.]
+		(* <- lang_ru;; *);;
+	*);;
+
+d_concept_geometric_figure_of_unlimited_size <= nrel_using_constants:
+	{
+	concept_geometric_figure; 
+	concept_geometric_figure_of_limited_size
+	};;

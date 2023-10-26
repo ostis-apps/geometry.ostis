@@ -1,0 +1,20 @@
+d_nrel_opposite 
+=> nrel_main_idtf: [Опр.(противолежащий*)] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Def.(opposite*)] (*<- lang_en;;*);
+<- definition;
+-> rrel_key_sc_element: nrel_opposite;
+
+<= nrel_using_constants:
+	{
+		nrel_internal_angle; 
+		concept_polygon; 
+		concept_segment; 
+		nrel_side_of_polygon
+	};
+
+<= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[Противолежащий - отношение, связывающее внутренний угол многоугольника и отрезок, являющийся стороной этого многоугольника.] (* <- lang_ru;; *);;
+	*);;

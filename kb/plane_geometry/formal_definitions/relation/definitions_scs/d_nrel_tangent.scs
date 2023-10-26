@@ -1,0 +1,20 @@
+d_nrel_tangent
+=> nrel_main_idtf: [Опр.(касательная*)]	(* <- lang_ru;; *);
+=> nrel_main_idtf: [Def.(tangent*)] (*<- lang_en;;*);
+<- definition;
+-> rrel_key_sc_element: nrel_tangent;
+
+<= nrel_using_constants:
+	{
+		concept_straight_line; 
+		concept_geometric_point; 
+		concept_circle; 
+		concept_plane	
+	};
+
+<= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[Касательная - прямая, имеющая одну общую точку с окружностью и лежащая в её плоскости.] (* <- lang_ru;; *);;
+	*);;

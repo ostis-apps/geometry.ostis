@@ -1,0 +1,21 @@
+d_nrel_internal_cross_lying_angles 
+=> nrel_main_idtf: [Опр.(внутренние накрестлежащие углы*)] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Def.(internal cross lying angles*)] (*<- lang_en;;*);
+<- definition;
+-> rrel_key_sc_element: nrel_internal_cross_lying_angles;
+
+<= nrel_using_constants:
+	{
+	concept_angle; 
+	nrel_intersection; 
+	concept_straight_line; 
+	nrel_secant; 
+	nrel_between
+	};
+
+<= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[Внутренние накрест лежащие углы - углы, образованные при пересечении двух прямых секущей, лежащие по разные стороны от секущей между прямыми.] (* <- lang_ru;; *);;
+	*);;

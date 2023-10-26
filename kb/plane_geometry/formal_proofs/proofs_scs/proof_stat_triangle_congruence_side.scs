@@ -1,0 +1,14 @@
+stat_triangle_congruence_side <= nrel_main_proof: proof_stat_triangle_congruence_side;;
+
+proof_stat_triangle_congruence_side => nrel_main_idtf:
+	 [Док. Утв. (треугольник, сторона многоугольника*, конгруэнтность*)] (* <- lang_ru;; *);
+	 [Pr. Stat. (triangle, side of polygon*, congruence*)] (* <- lang_en;; *);;
+
+proof_stat_triangle_congruence_side <- rrel_key_sc_element: ...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation: ... 
+		(* 	
+		-> rrel_example: "file://htmls/proof_stat_triangle_congruence_side.html";; 
+		*);;
+	*);;

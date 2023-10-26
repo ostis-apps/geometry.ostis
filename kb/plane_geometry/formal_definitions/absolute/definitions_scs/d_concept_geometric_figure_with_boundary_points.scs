@@ -1,0 +1,19 @@
+d_concept_geometric_figure_with_boundary_points <- definition;;
+
+d_concept_geometric_figure_with_boundary_points => nrel_main_idtf: [Опр.(геометрическая фигура, имеющая граничные точки)] (* <- lang_ru;; *);;
+
+d_concept_geometric_figure_with_boundary_points -> rrel_key_sc_element: concept_geometric_figure_with_boundary_points;;
+
+d_concept_geometric_figure_with_boundary_points <= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+		[Геометрическая фигура, имеющая граничные точки - это фигура, которая имеет хотя бы одну граничную точку.]
+		(* <- lang_ru;; *);;
+	*);;
+
+d_concept_geometric_figure_with_boundary_points <= nrel_using_constants:
+	{
+	concept_geometric_figure; 
+	nrel_boundary_point
+	};;

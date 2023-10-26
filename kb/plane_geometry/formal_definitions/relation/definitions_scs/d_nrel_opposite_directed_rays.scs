@@ -1,0 +1,19 @@
+d_nrel_opposite_directed_rays 
+=> nrel_main_idtf: [Опр.(противоположно направленные лучи*)]	(* <- lang_ru;; *);
+=> nrel_main_idtf: [Def.(opposite directed rays*)] (*<- lang_en;;*);
+<- definition;
+-> rrel_key_sc_element: nrel_opposite_directed_rays;
+
+<= nrel_using_constants:
+	{
+		concept_ray; 
+		nrel_codirectional_rays; 
+		nrel_additional_rays	
+	};
+
+<= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[Противоположно направленные лучи - два луча, каждый из которых одинаково направлен с лучом, дополнительным к другому.] (* <- lang_ru;; *);;
+	*);;

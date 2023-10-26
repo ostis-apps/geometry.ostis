@@ -1,0 +1,21 @@
+d_concept_triangle <- definition;;
+
+d_concept_triangle => nrel_main_idtf: [Опр.(треугольник)] (* <- lang_ru;; *);;
+d_concept_triangle => nrel_main_idtf: [Def.(triangle)] (* <- lang_en;; *);;
+ 
+d_concept_triangle -> rrel_key_sc_element: concept_triangle;;
+d_concept_triangle <= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[Треугольник - фигура, состоящая из трёх точек, не лежащих на одной прямой, трех отрезков, попарно соединяющих эти точки, а также части плоскости, ограниченной этими отрезками.]
+		(* <- lang_ru;; *);;
+	*);;
+
+d_concept_triangle <= nrel_using_constants:
+	{
+	concept_geometric_figure;
+	concept_geometric_point;
+	concept_segment;
+	concept_plane
+	};;	

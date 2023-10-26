@@ -1,0 +1,12 @@
+sc_node_not_relation -> concept_round;;
+
+concept_round => nrel_main_idtf:
+	[круг](* <- lang_ru;; *);
+	[round](* <- lang_en;; *);;
+
+concept_round => nrel_idtf: [Класс кругов] (* <- lang_ru;; *);;
+concept_round => nrel_idtf: [Понятие круга] (* <- lang_ru;; *);;
+concept_round => nrel_idtf: [Множество всевозможных кругов] (* <- lang_ru;; *);;
+concept_round => nrel_idtf: [Множество всевозможных знаков кругов] (* <- lang_ru;; *);;
+
+concept_round <= nrel_strict_inclusion: concept_flat_geometric_figure;;

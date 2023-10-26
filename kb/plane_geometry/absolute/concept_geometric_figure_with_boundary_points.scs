@@ -1,0 +1,30 @@
+sc_node_not_relation -> concept_geometric_figure_with_boundary_points;;
+
+concept_geometric_figure_with_boundary_points => nrel_main_idtf:
+	[геометрическая фигура, имеющая граничные точки](* <- lang_ru;; *);
+	[geometrical figure with boundary points](* <- lang_en;; *);;
+
+concept_geometric_figure_with_boundary_points => nrel_idtf: [Класс геометрических фигур, имеющих граничные точки] (* <- lang_ru;; *);;
+concept_geometric_figure_with_boundary_points => nrel_idtf: [Понятие геометрической фигуры, имеющей граничные точки] (* <- lang_ru;; *);;
+concept_geometric_figure_with_boundary_points => nrel_idtf: [Множество всевозможных геометрических фигур, имеющих граничные точки] (* <- lang_ru;; *);;
+concept_geometric_figure_with_boundary_points => nrel_idtf: [Множество знаков всевозможных геометрических фигур, имеющих граничные точки] (* <- lang_ru;; *);;
+
+concept_geometric_figure_with_boundary_points => nrel_strict_inclusion: concept_round;;
+concept_geometric_figure_with_boundary_points => nrel_strict_inclusion: concept_circle;;
+concept_geometric_figure_with_boundary_points => nrel_strict_inclusion: concept_polyline;;
+concept_geometric_figure_with_boundary_points => nrel_strict_inclusion: concept_ray;;
+concept_geometric_figure_with_boundary_points => nrel_strict_inclusion: concept_segment;;
+
+concept_geometric_figure_with_boundary_points <= nrel_subdividing:
+	...
+	(*
+	=> nrel_main_idtf: [по признаку включения граничных точек] (* <- lang_ru;; *);;
+
+	-> concept_geometric_figure_with_all_boundary_points;
+	  concept_geometric_figure_without_boundary_points;
+	  concept_geometric_figure_with_some_boundary_points;;
+	*);;
+
+concept_geometric_figure_with_boundary_points -> rrel_example: struct_Segment_A_B;;
+concept_geometric_figure_with_boundary_points -> rrel_example: struct_Opened_ray_k;;
+concept_geometric_figure_with_boundary_points -> rrel_example: struct_Opened_Half_Plane_K1;;

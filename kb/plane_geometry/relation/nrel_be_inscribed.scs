@@ -1,0 +1,55 @@
+sc_node_norole_relation -> nrel_be_inscribed;;
+
+nrel_be_inscribed => nrel_main_idtf:
+	[вписанность*]
+	(* <- lang_ru;; *);
+	[be inscribed*]
+	(* <- lang_en;; *);;
+
+nrel_be_inscribed => nrel_idtf:
+	[быть вписанным*]
+	(* <- lang_ru;; *);;
+nrel_be_inscribed => nrel_idtf:
+	[быть вписанной геометрической фигурой*]
+	(* <- lang_ru;; *);;
+
+nrel_be_inscribed => nrel_definitional_domain:
+...
+	(*
+	<= nrel_combination: 
+		{	 
+		concept_polygon;
+		concept_planar_angle;
+		concept_circle
+		};;
+	*);;
+	
+nrel_be_inscribed => nrel_first_domain: 
+	...
+	(*
+	<= nrel_combination: 
+		{	 
+		concept_polygon;
+		concept_planar_angle;
+		concept_circle
+		};;
+	*);;
+
+nrel_be_inscribed => nrel_second_domain: 
+	...
+	(*
+	<= nrel_combination: 
+		{	 
+		concept_polygon;
+		concept_planar_angle;
+		concept_circle
+		};;
+	*);;
+
+nrel_be_inscribed <- relation;;
+nrel_be_inscribed <- binary_relation;;
+nrel_be_inscribed <- oriented_relation;;
+nrel_be_inscribed <- antireflexive_relation;;
+nrel_be_inscribed <- antisymmetric_relation;;
+nrel_be_inscribed <- antitransitive_relation;;
+
