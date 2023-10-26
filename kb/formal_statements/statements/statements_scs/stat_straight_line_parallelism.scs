@@ -1,0 +1,37 @@
+stat_straight_line_parallelism <- statement;;
+
+stat_straight_line_parallelism
+-> rrel_key_sc_element:
+	concept_straight_line;
+	nrel_parallelism;;
+
+stat_straight_line_parallelism
+=> nrel_main_idtf:
+	[Утв.(прямая;параллельность*)] (*<- lang_ru;;*);;
+
+stat_straight_line_parallelism
+=> nrel_main_idtf:
+	[Stat.(straight line;parallelism*)] (*<- lang_en;;*);;
+
+stat_straight_line_parallelism <= nrel_sc_text_translation: 
+	... 
+	(* 
+	-> rrel_example: 
+		[Если две различные прямые параллельны третьей прямой, то они параллельны между собой.] 
+		(* <- lang_ru;; *);; 
+	*);;
+
+stat_reverse_converse_straight_line_parallelism <- statement;;
+
+stat_reverse_converse_straight_line_parallelism
+=> nrel_main_idtf:
+	[Прот.обр.утв.(прямая; параллельность*)] (* <- lang_ru;; *);;
+
+stat_reverse_converse_straight_line_parallelism <= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+		[Если прямые не парралельны между собой, то они не параллельны третьей прямой.] (* <- lang_ru;; *);;
+	*);;
+
+stat_straight_line_parallelism <=> nrel_reverse_converse_theorem: stat_reverse_converse_straight_line_parallelism;;

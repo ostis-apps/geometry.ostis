@@ -1,0 +1,24 @@
+stat_straight_line_perpendicular_congruence_segment_parallelism <- statement;;
+
+stat_straight_line_perpendicular_congruence_segment_parallelism
+-> rrel_key_sc_element:
+	concept_straight_line;
+	nrel_perpendicular;
+	nrel_congruence;
+	concept_segment;
+	nrel_parallelism;;
+
+stat_straight_line_perpendicular_congruence_segment_parallelism
+=> nrel_main_idtf:
+	[Утв.(прямая;перпендикуляр*;конгруэнтность*;отрезок;параллельность*)] (* <-lang_ru;; *);;
+
+stat_straight_line_perpendicular_congruence_segment_parallelism
+=> nrel_main_idtf:
+	[Stat.(straight line;perpendicular*;congruence*;segment;parallelism*)] (* <-lang_en;; *);;
+
+stat_straight_line_perpendicular_congruence_segment_parallelism <= nrel_sc_text_translation:
+	...
+	(*
+		-> rrel_example: 
+		[Расстояние от всех точек данной прямой до прямой, параллельной ей, равны т.е. параллельные прямые равноотстоящие.] (* <- lang_ru;; *);;
+	*);;

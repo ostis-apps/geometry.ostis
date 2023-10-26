@@ -1,0 +1,40 @@
+statement -> stat_rectangle_angle_congruence;;
+statement -> stat_converse_rectangle_angle_congruence;;
+statement -> stat_reverse_rectangle_angle_congruence;;
+statement -> stat_reverse_converse_rectangle_angle_congruence;;
+
+stat_rectangle_angle_congruence => nrel_main_idtf: [Утв.(прямоугольник; угол; конгруэнтность*)] (* <- lang_ru;; *);;
+stat_converse_rectangle_angle_congruence => nrel_main_idtf: [Обр.утв.(прямоугольник; угол; конгруэнтность*)] (* <- lang_ru;; *);;
+stat_reverse_rectangle_angle_congruence => nrel_main_idtf: [Прот.утв.(прямоугольник; угол; конгруэнтность*)] (* <- lang_ru;; *);;
+stat_reverse_converse_rectangle_angle_congruence => nrel_main_idtf: [Прот.обр.утв.(прямоугольник; угол; конгруэнтность*)] (* <- lang_ru;; *);;
+
+stat_rectangle_angle_congruence <= nrel_sc_text_translation: ...
+	(*
+	-> rrel_example:
+		[У прямоугольника все углы равны.] (* <- lang_ru;; *);;
+	*);;
+
+stat_converse_rectangle_angle_congruence <= nrel_sc_text_translation: ...
+	(*
+	-> rrel_example:
+		[Если все углы четырёхугольника равны, то четырёхугольник является прямоугольником.] (* <- lang_ru;; *);;
+	*);;
+
+stat_reverse_rectangle_angle_congruence <= nrel_sc_text_translation: ...
+	(*
+	-> rrel_example:
+		[Если четырёхугольник не является прямоугольником, все углы имеют разную величину.] (* <- lang_ru;; *);;
+	*);;
+
+stat_reverse_converse_rectangle_angle_congruence <= nrel_sc_text_translation: ...
+	(*
+	-> rrel_example:
+		[Если все углы четырёхугольника имеют разную величину, то четырёхугольник не является прямоугольником.] (* <- lang_ru;; *);;
+	*);;
+
+stat_rectangle_angle_congruence <=> nrel_converse_theorem: stat_converse_rectangle_angle_congruence;;
+stat_reverse_rectangle_angle_congruence <=> nrel_converse_theorem: stat_reverse_converse_rectangle_angle_congruence;;
+stat_rectangle_angle_congruence <=> nrel_reverse_theorem: stat_reverse_rectangle_angle_congruencee;;
+stat_converse_rectangle_angle_congruence <=> nrel_reverse_theorem: stat_reverse_converse_rectangle_angle_congruence;;
+stat_rectangle_angle_congruence <=> nrel_reverse_converse_theorem: stat_reverse_rectangle_angle_congruence;;
+stat_converse_rectangle_angle_congruence <=> nrel_reverse_converse_theorem: stat_reverse_converse_rectangle_angle_congruence;;

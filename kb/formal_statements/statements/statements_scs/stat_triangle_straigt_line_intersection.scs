@@ -1,0 +1,21 @@
+stat_triangle_straigt_line_intersection <- statement;;
+
+stat_triangle_straigt_line_intersection
+	-> rrel_key_sc_element:
+	concept_triangle;
+	concept_straight_line;
+	nrel_intersection;;
+
+stat_triangle_straigt_line_intersection
+	=> nrel_main_idtf:
+	[Утв.(треугольник; прямая линия; пересечение*)] (* <-lang_ru;; *);;
+stat_triangle_straigt_line_intersection
+	=> nrel_main_idtf:
+	[Stat.(triangle; straight line; intersection*)] (* <-lang_en;; *);;
+
+stat_triangle_straigt_line_intersection <= nrel_sc_text_translation: 
+	...
+	(*
+		-> rrel_example: 
+		[Пусть на стороне АВ и продолжении стороны АС за точку С треугольника АВС выбраны соотвественно точки D и K, такие, что BD/DA=k/q, АК/CK=lambda и пусть Е - точка пересечения прямой DK со стороной BC. Тогда BE/EC=(lambda*k)/q.] (* <- lang_ru;; *);;
+	*);;

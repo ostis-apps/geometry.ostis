@@ -1,0 +1,13 @@
+statement -> stat_quadrilateral_diagonal_intersection_area_internal_angle_between;;
+
+stat_quadrilateral_diagonal_intersection_area_internal_angle_between -> rrel_key_sc_element: concept_quadrilateral; nrel_diagonal; nrel_area;;
+
+stat_quadrilateral_diagonal_intersection_area_internal_angle_between => nrel_main_idtf: [Утв.(четырёхугольник; диагональ*; площадь*)] (* <- lang_ru;; *);;
+stat_quadrilateral_diagonal_intersection_area_internal_angle_between => nrel_main_idtf: [Stat.(quadrilateral; diagonal*; area*)] (*<- lang_en;;*);;
+
+stat_quadrilateral_diagonal_intersection_area_internal_angle_between <= nrel_sc_text_translation: ...
+	(*
+	-> rrel_example:
+		[Если диагонали четырехугольника пересекаются, то площадь четырехугольника равна половине произведения диагоналей на синус угла между ними.] 
+		(* <- lang_ru;; *);;
+	*);;

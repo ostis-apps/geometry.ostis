@@ -1,0 +1,15 @@
+stat_rectangular_triangle_area <- statement;;
+
+//stat_rectangular_triangle_area <- sc_statement_for_solver;;
+
+stat_rectangular_triangle_area -> rrel_key_sc_element: concept_rectangular_triangle; nrel_cathetus; nrel_hypotenuse; nrel_height; nrel_area;;
+
+stat_rectangular_triangle_area => nrel_main_idtf: [Утв.(прямоугольный треугольник; катет*; гипотенуза*; высота*; площадь*)] (* <-lang_ru;; *);;
+stat_rectangular_triangle_area => nrel_main_idtf: [Stat.(rectangular triangle; cathetus*; hypotenuse*; height*; area*)] (* <-lang_en;; *);;
+
+stat_rectangular_triangle_area <= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+		[Площадь прямоугольного треугольника равна половине произведения его катетов или половине произведения гипотенузы на высоту, опущенную из вершины прямого угла.] (* <- lang_ru;; *);;
+		*);;

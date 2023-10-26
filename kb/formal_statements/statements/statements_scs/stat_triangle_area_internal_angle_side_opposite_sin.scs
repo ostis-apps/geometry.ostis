@@ -1,0 +1,24 @@
+stat_triangle_area_internal_angle_side_opposite_sin <- statement;;
+
+stat_triangle_area_internal_angle_side_opposite_sin
+-> rrel_key_sc_element:
+	concept_triangle;
+	nrel_area;
+	nrel_opposite;
+	nrel_side;
+	nrel_internal_angle;;
+
+stat_triangle_area_internal_angle_side_opposite_sin
+=> nrel_main_idtf:
+	[Утв.(треугольник;площадь*;противолежащий*;сторона*;внутренний угол*;синус*)] (* <-lang_ru;; *);;
+
+stat_triangle_area_internal_angle_side_opposite_sin
+=> nrel_main_idtf:
+	[Stat.(triangle;area*;opposite*;side*;internal angle*;sin*)] (* <-lang_en;; *);;
+
+stat_triangle_area_internal_angle_side_opposite_sin <= nrel_sc_text_translation: 
+	...
+	(*
+		-> rrel_example: 
+		[Площадь треугольника находится по формуле S=a^2*Sin(beta)*Sin(gamma)/(2*Sin(alpha)), где а - сторона треугольника, alpha - угол, лежащий напротив стороны а, beta и gamma два других угла треугольника.] (* <- lang_ru;; *);;
+	*);;

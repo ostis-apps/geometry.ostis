@@ -1,0 +1,19 @@
+statement -> stat_rhomb_be_inscribed_circle;;
+statement -> stat_reverse_converce_rhomb_be_inscribed_circle;;
+
+stat_rhomb_be_inscribed_circle => nrel_main_idtf: [Утв.(ромб; окружность; быть вписанным*)] (* <- lang_ru;; *);;
+stat_reverse_converce_rhomb_be_inscribed_circle => nrel_main_idtf: [Прот.обр.утв.(ромб; окружность; быть вписанным*)] (* <- lang_ru;; *);;
+
+stat_rhomb_be_inscribed_circle <= nrel_translation: ...
+	(*
+	-> rrel_example:
+		[В ромб можно вписать окружность.] (* <- lang_ru;; *);;
+	*);;
+
+stat_reverse_converce_rhomb_be_inscribed_circle <= nrel_translation: ...
+	(*
+	-> rrel_example:
+		[Если в четырёхугольник нельзя вписать окружность, то этот четырёхугольник не является ромбом.] (* <- lang_ru;; *);;
+	*);;
+
+stat_rhomb_be_inscribed_circle <=> nrel_reverse_converse_theorem: stat_reverse_converce_rhomb_be_inscribed_circle;;

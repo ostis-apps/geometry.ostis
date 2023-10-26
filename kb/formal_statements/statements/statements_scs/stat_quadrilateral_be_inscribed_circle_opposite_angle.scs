@@ -1,0 +1,17 @@
+statement -> stat_quadrilateral_be_inscribed_circle_opposite_angle;;
+
+stat_quadrilateral_be_inscribed_circle_opposite_angle -> rrel_key_sc_element: concept_quadrilateral; nrel_be_inscribed; concept_circle; nrel_opposite; nrel_side;;
+
+
+stat_quadrilateral_be_inscribed_circle_opposite_angle => nrel_main_idtf: [Утв.(четырёхугольник; быть вписанным*; окружность; противолежащий*; сторона*)] (* <- lang_ru;; *);;
+stat_quadrilateral_be_inscribed_circle_opposite_angle => nrel_main_idtf: [Stat.(quadrilateral; be inscribed*; circle; opposite*; side*)] (*<- lang_en;;*);;
+
+
+stat_quadrilateral_be_inscribed_circle_opposite_angle <= nrel_sc_text_translation: ...
+	(*
+	-> rrel_example:
+		[У четырёхугольника, вписанного в окружность, сумма противолежащих углов равна 180°.] 
+		(* <- lang_ru;; *);;
+	*);;
+
+stat_quadrilateral_be_inscribed_circle_opposite_angle => nrel_converse_theorem: stat_quadrilateral_be_inscribed_circle_opposite_side;;

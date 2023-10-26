@@ -1,0 +1,13 @@
+statement -> stat_chord_circle_intersection_congruence;;
+
+stat_chord_circle_intersection_congruence -> rrel_key_sc_element: concept_circle; concept_segment; nrel_chord; nrel_congruence;;
+
+stat_chord_circle_intersection_congruence => nrel_main_idtf: [Утв.(хорда*; окружность; пересечение*; конгруэнтность*)] (* <- lang_ru;; *);;
+stat_chord_circle_intersection_congruence => nrel_main_idtf: [Stat.(chord*; circle; intersection*; congruence*)] (*<- lang_en;;*);;
+
+stat_chord_circle_intersection_congruence <= nrel_sc_text_translation: ...
+	(*
+	-> rrel_example:
+		[Если хорды окружности пересекаются в какой-либо точке, то произведение отрезков одной хорды равно произведению отрезков другой.] 
+		(* <- lang_ru;; *);;
+	*);;

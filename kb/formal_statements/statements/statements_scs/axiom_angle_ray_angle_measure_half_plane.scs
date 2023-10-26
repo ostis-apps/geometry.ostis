@@ -1,0 +1,14 @@
+axiom_angle_ray_angle_measure_half_plane <- statement;;
+
+axiom_angle_ray_angle_measure_half_plane -> rrel_key_sc_element: concept_angle; nrel_angle_measure; concept_ray; concept_half_plane;;
+
+axiom_angle_ray_angle_measure_half_plane => nrel_main_idtf: [Акс.(угол; луч; полуплоскость; мера угла*)] (*<- lang_ru;;*);;
+axiom_angle_ray_angle_measure_half_plane => nrel_main_idtf: [Ax.(angle; ray; half plane; angle measure*)] (*<- lang_en;;*);;
+
+axiom_angle_ray_angle_measure_half_plane <= nrel_sc_text_translation: 
+		... 
+		(* 
+		-> rrel_example: 
+			[От любого луча в любой из полуплоскостей можно отложить любой заданный угол, меньший 180⁰, и только один.] 
+			(* <- lang_ru;; *);; 
+		*);;

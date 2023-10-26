@@ -1,0 +1,19 @@
+statement -> stat_rectangle_diagonal_congruence;;
+statement -> stat_reverse_converse_rectangle_diagonal_congruence;;
+
+stat_rectangle_diagonal_congruence => nrel_main_idtf: [Утв.(прямоугольник; диагональ*; конгруэнтность*)] (* <- lang_ru;; *);;
+stat_reverse_converse_rectangle_diagonal_congruence => nrel_main_idtf: [Прот.обр.утв.(прямоугольник; диагональ*; конгруэнтность*)] (* <- lang_ru;; *);;
+
+stat_rectangle_diagonal_congruence <= nrel_sc_text_translation: ...
+	(*
+	-> rrel_example:
+		[Диагонали прямоугольника равны.] (* <- lang_ru;; *);;
+	*);;
+
+stat_reverse_converse_rectangle_diagonal_congruence <= nrel_sc_text_translation: ...
+	(*
+	-> rrel_example:
+		[Если диагонали четырёхугольника не равны, то четырёхугольник не является прямоугольником.] (* <- lang_ru;; *);;
+	*);;
+
+stat_rectangle_diagonal_congruence <=> nrel_reverse_converse_theorem: stat_reverse_converse_rectangle_diagonal_congruence;;

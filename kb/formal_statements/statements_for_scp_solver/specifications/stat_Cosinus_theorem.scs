@@ -1,0 +1,16 @@
+stat_Cosinus_theorem <- statement;;
+
+//stat_Cosinus_theorem <- sc_statement_for_solver;;
+
+stat_Cosinus_theorem -> rrel_key_sc_element: concept_triangle; nrel_side_of_polygon; nrel_internal_angle; nrel_cos;;
+
+stat_Cosinus_theorem => nrel_main_idtf: [Утв.(треугольник; сторона многоугольника*; внутренний угол*; косинус*)] (* <-lang_ru;; *);;
+stat_Cosinus_theorem => nrel_main_idtf: [Stat.(triangle; side of polygon*; internal angle*; cosine*)] (* <-lang_en;; *);;
+
+stat_Cosinus_theorem <= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+		[Квадрат стороны треугольника равен сумме квадратов двух других сторон минус удвоенное произведение этих сторон на косинус угла между ними.] (* <- lang_ru;; *);;
+		*);;
+

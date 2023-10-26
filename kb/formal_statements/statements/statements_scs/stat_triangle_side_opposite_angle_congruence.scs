@@ -1,0 +1,40 @@
+statement -> stat_triangle_side_opposite_angle_congruence;;
+statement -> stat_converse_triangle_side_opposite_angle_congruence;;
+statement -> stat_reverse_triangle_side_opposite_angle_congruence;;
+statement -> stat_reverse_converse_triangle_side_opposite_angle_congruence;;
+
+stat_triangle_side_opposite_angle_congruence => nrel_main_idtf: [Утв.(треугольник; сторона*; конгруэнтность*; внутренний угол*)] (* <- lang_ru;; *);;
+stat_converse_triangle_side_opposite_angle_congruence => nrel_main_idtf: [Обр.утв.(треугольник; сторона*; конгруэнтность*; внутренний угол*)] (* <- lang_ru;; *);;
+stat_reverse_triangle_side_opposite_angle_congruence => nrel_main_idtf: [Прот.утв.(треугольник; сторона*; конгруэнтность*; внутренний угол*)] (* <- lang_ru;; *);;
+stat_reverse_converse_triangle_side_opposite_angle_congruence => nrel_main_idtf: [Прот.обр.утв.(треугольник; сторона*; конгруэнтность*; внутренний угол*)] (* <- lang_ru;; *);;
+
+stat_triangle_side_opposite_angle_congruence <= nrel_sc_text_translation: ...
+	(*
+	-> rrel_example: 
+		[Во всяком треугольнике против равных сторон лежат равные углы.](* <- lang_ru;; *);;
+	*);;
+
+stat_converse_triangle_side_opposite_angle_congruence <= nrel_sc_text_translation: ...
+	(*
+	-> rrel_example:
+		[Во всяком треугольнике против равных углов лежат равные стороны.](* <- lang_ru;; *);;
+	*);;
+
+stat_reverse_triangle_side_opposite_angle_congruence <= nrel_sc_text_translation: ...
+	(*
+	-> rrel_example:
+		[Во всяком треугольнике против не равных сторон лежат не равные углы.](* <- lang_ru;; *);;
+	*);;
+
+stat_reverse_converse_triangle_side_opposite_angle_congruence <= nrel_sc_text_translation: ...
+	(*
+	-> rrel_example:
+		[Во всяком треугольнике против не равных углов лежат не равный стороны.](* <- lang_ru;; *);;
+	*);;
+
+stat_triangle_side_opposite_angle_congruence <=> nrel_converse_theorem: stat_converse_triangle_side_opposite_angle_congruence;;
+stat_reverse_triangle_side_opposite_angle_congruence <=> nrel_converse_theorem: stat_reverse_converse_triangle_side_opposite_angle_congruence;;
+stat_triangle_side_opposite_angle_congruence <=> nrel_reverse_theorem: stat_reverse_triangle_side_opposite_angle_congruencee;;
+stat_converse_triangle_side_opposite_angle_congruence <=> nrel_reverse_theorem: stat_reverse_converse_triangle_side_opposite_angle_congruence;;
+stat_triangle_side_opposite_angle_congruence <=> nrel_reverse_converse_theorem: stat_reverse_triangle_side_opposite_angle_congruence;;
+stat_converse_triangle_side_opposite_angle_congruence <=> nrel_reverse_converse_theorem: stat_reverse_converse_triangle_side_opposite_angle_congruence;;
