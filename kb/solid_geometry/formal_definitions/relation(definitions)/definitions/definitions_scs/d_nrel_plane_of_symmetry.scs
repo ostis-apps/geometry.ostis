@@ -1,0 +1,20 @@
+d_nrel_plane_of_symmetry <- definition;;
+
+d_nrel_plane_of_symmetry => nrel_main_idtf: [Опр.(плоскость симметрии*)] (*<-lang_ru;;*);;
+d_nrel_plane_of_symmetry => nrel_main_idtf: [Def.(plane of symmetry*)] (*<-lang_en;;*);;
+
+d_nrel_plane_of_symmetry -> rrel_key_sc_element: nrel_plane_of_symmetry;;
+
+d_nrel_plane_of_symmetry <= nrel_using_constants:
+	{
+	concept_plane;
+	concept_geometric_point;
+	concept_geometric_figure
+	};;
+
+d_nrel_plane_of_symmetry <= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+	[Плоскость симметрии фигуры – плоскость, относительно которой каждая точка данной фигуры симметрична некоторой точке этой же фигуры.] (*<-lang_ru;;*);;
+	*);;

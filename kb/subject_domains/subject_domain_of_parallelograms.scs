@@ -1,0 +1,18 @@
+sc_node_struct -> subject_domain_of_parallelograms;;
+
+subject_domain_of_parallelograms
+=> nrel_main_idtf:
+	[Предметная область параллелограммов]
+	(* <- lang_ru;; *);
+	[Subject domain of parallelograms]
+	(* <- lang_en;; *);;
+	
+subject_domain_of_parallelograms -> rrel_maximum_studied_object_class: concept_parallelogram;;
+
+subject_domain_of_parallelograms -> rrel_not_maximum_studied_object_class: 
+	concept_rhomb;
+	concept_rectangle;;
+
+subject_domain_of_parallelograms <= nrel_private_subject_domain: subject_domain_of_quadrilaterals;;
+
+subject_domain_of_parallelograms <- subject_domain;;

@@ -1,0 +1,21 @@
+d_nrel_vertex_of_geometric_body <- definition;;
+
+d_nrel_vertex_of_geometric_body => nrel_main_idtf: [Опр.(вершина геометрического тела*)] (*<-lang_ru;;*);;
+d_nrel_vertex_of_geometric_body => nrel_main_idtf: [Def.(vertex of geometric body*)] (*<-lang_en;;*);;
+
+d_nrel_vertex_of_geometric_body -> rrel_key_sc_element: nrel_vertex_of_geometric_body;;
+
+d_nrel_vertex_of_geometric_body <= nrel_using_constants:
+	{
+		nrel_vertex_of_polyhedron;
+		nrel_vertex_of_cone
+	};;
+
+d_nrel_vertex_of_geometric_body <= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+	[Вершина геометрического тела - это теоретико-множественное объединение понятий вершины многогранника и вершины конуса.] (*<-lang_ru;;*);;
+	*);;
+
+

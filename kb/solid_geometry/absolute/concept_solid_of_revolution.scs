@@ -1,0 +1,20 @@
+sc_node_not_relation -> concept_solid_of_revolution;;
+
+concept_solid_of_revolution => nrel_main_idtf: [тело вращения] (*<-lang_ru;;*);;
+concept_solid_of_revolution => nrel_main_idtf: [solid of revolution] (*<-lang_en;;*);;
+
+concept_solid_of_revolution => nrel_idtf: [круглое тело] (* <- lang_ru;; *);;
+
+concept_solid_of_revolution <= nrel_strict_inclusion: concept_geometric_body;;
+
+concept_solid_of_revolution <- rrel_key_sc_element: 
+	...
+	(*
+	<- illustration;; 
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: 
+		"file://images/concept_solid_of_revolution.gif";;
+		*);;
+	*);;

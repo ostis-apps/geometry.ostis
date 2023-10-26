@@ -1,0 +1,18 @@
+sc_node_not_relation -> concept_dodecahedron;;
+
+concept_dodecahedron => nrel_main_idtf: [додекаэдр] (*<-lang_ru;;*);;
+concept_dodecahedron => nrel_main_idtf: [dodecahedron] (*<-lang_en;;*);;
+
+concept_dodecahedron => nrel_idtf: [Множество всевозможных додекаэдров] (* <- lang_ru;; *);;
+
+concept_dodecahedron <- rrel_key_sc_element: 
+	...
+	(*
+	<- illustration;; 
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: 
+		"file://images/concept_dodecahedron.gif";;
+
+	*);;
+*);;

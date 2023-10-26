@@ -1,0 +1,72 @@
+sc_node_struct -> struct_Obtuse_triangle_L_D_K;;
+
+struct_Obtuse_triangle_L_D_K => nrel_main_idtf:
+	[Тупоугольный треугольник LDK]
+	(* <- lang_ru;; *);
+	[Obtuse triangle LDK]
+	(* <- lang_en;; *);;
+
+struct_Obtuse_triangle_L_D_K => nrel_idtf: [Тр-к (L; D; K)] (* <- lang_ru;; *);;
+struct_Obtuse_triangle_L_D_K=> nrel_idtf: [Triangle(L; D; K)] (*<-lang_en;;*);;
+
+struct_Obtuse_triangle_L_D_K => nrel_idtf: [Тупоугольный треугольник (L; D; K)] (* <- lang_ru;; *);;
+struct_Obtuse_triangle_L_D_K=> nrel_idtf: [Obtuse triangle L; D; K)] (*<-lang_en;;*);;
+
+struct_Obtuse_triangle_L_D_K => nrel_idtf: [Треугольник, вершинами которого являются Точка L, Точка D, Точка K] (* <- lang_ru;; *);;
+struct_Obtuse_triangle_L_D_K=> nrel_idtf: [A triangle whose vertices are the points L, point D, point K] (*<-lang_en;;*);;
+
+struct_Obtuse_triangle_L_D_K => nrel_vertex: struct_Geometric_point_L;;
+
+struct_Obtuse_triangle_L_D_K => nrel_vertex: struct_Geometric_point_D;;
+
+struct_Obtuse_triangle_L_D_K => nrel_vertex: struct_Geometric_point_K;;
+
+struct_Obtuse_triangle_L_D_K => nrel_side: struct_Segment_D_K;;
+
+struct_Obtuse_triangle_L_D_K => nrel_side: struct_Segment_K_L;;
+
+struct_Obtuse_triangle_L_D_K => nrel_side: struct_Segment_D_L;;
+
+struct_Obtuse_triangle_L_D_K => nrel_internal_angle: struct_Obtuse_angle_Alpha;;
+
+struct_Obtuse_triangle_L_D_K => nrel_internal_angle: struct_Obtuse_angle_Beta;;
+
+struct_Obtuse_triangle_L_D_K => nrel_internal_angle: struct_Obtuse_angle_Gamma;;
+
+struct_Segment_D_L => nrel_boundary_point: struct_Geometric_point_L;;
+
+struct_Segment_D_L => nrel_boundary_point: struct_Geometric_point_D;;
+
+struct_Segment_D_K => nrel_boundary_point: struct_Geometric_point_D;;
+
+struct_Segment_D_K => nrel_boundary_point: struct_Geometric_point_K;;
+
+struct_Obtuse_triangle_L_D_K <- rrel_key_sc_element: 
+	...
+	(*
+	<- illustration;;
+	<= nrel_sc_text_translation:
+	...
+		(*
+		-> rrel_example:
+			"file://images/Triangle_LDK.png";;
+	*);;
+*);;
+
+struct_Obtuse_triangle_L_D_K <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Факт.утв.(Тупоугольный треугольник LDK)] (* <- lang_ru;; *);;
+	<- statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Треугольник LDK является тупоугольным, разносторонним. Геометрические точки L, D и K являются вершинами Треугольника LDK. Отрезки l, d и k являются сторонами Треугольника LDK. Углы alpha, beta, gamma являются внутренним углами Треугольника LDK. Точка L является граничной точкой отрезков k, d. Точка D является граничной точкой отрезков k, l.
+			Точка K является граничной точкой отрезков l, d.]
+			(* <- lang_ru;; *);
+			[LDK is an obtuse triangle, versatile. Geometric point of L, D and K are the vertices of a triangle LDK. Stretches l, d and k are the sides of the triangle LDK. The angles alpha, beta, gamma is an internal angled triangle LDK. Point L is a boundary point of the segment k, d. Point D is a boundary point of the segment k, l.
+Point K is a boundary point of the segment l, d.]
+			(* <- lang_en;; *);;
+		*);;
+	*);;

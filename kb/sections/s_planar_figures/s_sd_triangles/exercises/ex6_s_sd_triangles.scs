@@ -1,0 +1,24 @@
+ex6_s_sd_triangles
+<- exercises_s_sd_triangles;
+
+-> rrel_key_sc_element: concept_triangle; concept_angle; nrel_perimeter;
+
+=> nrel_next: ex7_s_sd_triangles;
+
+=> nrel_main_idtf:
+	[Упражнение 6. Раздел. Предметная область треугольников]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Exercise 6. Section. Subject domain of triangles]
+	(* <- lang_en;; *);
+
+<= nrel_sc_text_translation:
+	...
+	(* 
+	-> rrel_example: "file://htmls/ex6_s_sd_triangles_ru.html" (* <-lang_ru;; *);;
+	*);
+<= nrel_sc_text_translation:
+	...
+	(* 
+	-> rrel_example: "file://htmls/ex6_s_sd_triangles_en.html" (* <-lang_en;; *);;
+	*);;

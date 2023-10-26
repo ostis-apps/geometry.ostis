@@ -1,0 +1,21 @@
+d_nrel_lateral_edge_of_pyramid <- definition;;
+
+d_nrel_lateral_edge_of_pyramid => nrel_main_idtf: [Опр.(боковое ребро пирамиды*)] (*<-lang_ru;;*);;
+d_nrel_lateral_edge_of_pyramid => nrel_main_idtf: [Def.(lateral edge of pyramid*)] (*<-lang_en;;*);;
+
+d_nrel_lateral_edge_of_pyramid -> rrel_key_sc_element: nrel_lateral_edge_of_pyramid;;
+
+d_nrel_lateral_edge_of_pyramid <= nrel_using_constants:
+	{
+	concept_pyramid;
+	concept_segment;
+	nrel_vertex;
+	nrel_base_of_pyramid
+	};;
+
+d_nrel_lateral_edge_of_pyramid <= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example:
+		[Боковое ребро пирамиды – отрезок, соединяющий вершину пирамиды с вершиной основания.] (*<-lang_ru;;*);;
+	*);;

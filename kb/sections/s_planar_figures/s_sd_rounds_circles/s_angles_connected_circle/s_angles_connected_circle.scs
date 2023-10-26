@@ -1,0 +1,29 @@
+s_angles_connected_circle
+=> nrel_main_idtf:
+	[Раздел. Углы, связанные с окружностью]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Section. Angles connected with circle]
+	(* <- lang_en;; *);
+
+<= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+		"file://html/s_angles_connected_circle_ru.html"
+		(* <- lang_ru;; *);;
+	*);
+
+<- atomic_section;
+
+=> nrel_summary:
+	...
+	(*
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[В данном разделе рассматриваются свойства углов, связанных с окружностью.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;

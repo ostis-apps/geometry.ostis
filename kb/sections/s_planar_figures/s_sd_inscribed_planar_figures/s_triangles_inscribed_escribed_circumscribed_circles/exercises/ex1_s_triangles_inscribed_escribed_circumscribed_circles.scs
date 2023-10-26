@@ -1,0 +1,24 @@
+ex1_s_triangles_inscribed_escribed_circumscribed_circles
+<- exercises_s_triangles_inscribed_escribed_circumscribed_circles;
+
+-> rrel_key_sc_element: concept_isosceles_triangle; nrel_distance; nrel_be_inscribed; nrel_orthocenter;
+
+=> nrel_next: ex2_s_triangles_inscribed_escribed_circumscribed_circles;
+
+=> nrel_main_idtf:
+	[Упражнение 1. Раздел. Вписанная и вневписанная окружности треугольника и окружность, описанная около треугольника]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Exercise 1. Section. Inscribed, escribed, circumscribed circles of a triangle]
+	(* <- lang_en;; *);
+
+<= nrel_sc_text_translation:
+	...
+	(* 
+	-> rrel_example: "file://htmls/ex1_s_triangles_inscribed_escribed_circumscribed_circles_ru.html" (* <-lang_ru;; *);;
+	*);
+<= nrel_sc_text_translation:
+	...
+	(* 
+	-> rrel_example: "file://htmls/ex1_s_triangles_inscribed_escribed_circumscribed_circles_en.html" (* <-lang_en;; *);;
+	*);;

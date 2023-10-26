@@ -1,0 +1,43 @@
+s_sd_geometric_points
+=> nrel_main_idtf:
+	[Раздел. Предметная область геометрических точек]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Section. Subject domain of geometric points]
+	(* <- lang_en;; *);
+-> rrel_key_sc_element: subject_domain_of_geometric_points;
+
+<- atomic_section;
+
+<= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+		"file://htmls/s_sd_geometric_points_en.html"
+		(* <- lang_en;; *);;
+	*);
+<= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+		"file://htmls/s_sd_geometric_points_ru.html"
+		(* <- lang_ru;; *);;
+	*);
+
+=> nrel_summary:
+	...
+	(*
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[This section describes the main provisions relating to the term "geometric point" also there are the basic axioms of Euclidean geometry directly associated with this concept.]
+			(* <- lang_en;; *);;
+		*);;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:[В данном разделе рассматривается основные положения, связанные с понятием «геометрическая точка», а также приведены основные аксиомы Евклидовой геометрии, непосредственно связанные с этим понятием.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;

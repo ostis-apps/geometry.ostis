@@ -1,0 +1,19 @@
+d_concept_parallelepiped <- definition;;
+
+d_concept_parallelepiped -> rrel_key_sc_element: concept_parallelepiped;;
+
+d_concept_parallelepiped  => nrel_main_idtf: [Oпр.(параллелепипед)] (*<-lang_ru;;*);;
+d_concept_parallelepiped  => nrel_main_idtf: [Def.(parallelepiped)](*<-lang_en;;*);;
+
+d_concept_parallelepiped => nrel_using_constants: 
+	{
+		concept_parallelogram;
+		nrel_base;
+		concept_prism
+	};;
+
+d_concept_parallelepiped  <= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example: [Параллелепипед - это призма, основаниями которой являются параллелограмм.](*<-lang_ru;;*);;
+	*);;

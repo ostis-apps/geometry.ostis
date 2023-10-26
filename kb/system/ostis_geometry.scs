@@ -1,0 +1,154 @@
+knowledge_base_of_Euclidean_geometry <= nrel_section_decomposition:
+	{
+	documentation_Euclidean_geometry;
+	documentation_Ostis_Geometry;
+	context_Ostis_Geometry_within_Global_knowledge_base;
+	development_history_of_Ostis_Geometry;
+	documentation_project_Ostis_Geometry
+	};;
+
+//knowledge_base_of_Euclidean_geometry <- ui_start_sc_element;;
+	
+rrel_key_sc_element -> (logical_hierarchy_of_statements_of_subject_domain_of_triangles -> stat_isosceles_triangle_congruence_angle)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_base_order: (logical_hierarchy_of_statements_of_subject_domain_of_triangles -> stat_angle_measure_external_angle_equality_quantities_sum_internal_angle_triangle)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_base_order: (logical_hierarchy_of_statements_of_subject_domain_of_triangles -> stat_median_isosceles_triangle_bisectrix_height)
+(* <- rrel_key_sc_element;; *);;
+*);;*);;
+
+knowledge_base_of_Euclidean_geometry => nrel_main_idtf: [База знаний ИСС по геометрии] (*<- lang_ru;; *);;
+documentation_Euclidean_geometry => nrel_main_idtf: [Документация. Геометрия Евклида] (*<- lang_ru;; *);;
+documentation_Ostis_Geometry => nrel_main_idtf: [Документация. ИСС по геометрии] (* <- lang_ru;; *);;
+context_Ostis_Geometry_within_Global_knowledge_base => nrel_main_idtf: [Контекст ИСС по геометрии в рамках Глобальной базы знаний] (*<- lang_ru;; *);;
+development_history_of_Ostis_Geometry => nrel_main_idtf:[История развития ИСС по геометрии] (*<- lang_ru;; *);;
+documentation_project_Ostis_Geometry => nrel_main_idtf: [Документация. Проект ИСС по геометрии] (* <- lang_ru;; *);;
+
+documentation_Ostis_Geometry <= nrel_section_decomposition:
+	{
+	rationale_for_developing_Ostis_Geometry;
+	rationale_for_choice_Ostis_Geometry;
+	structure_knowledge_base_of_Ostis_Geometry;
+	structure_knowledge_processing_machine_of_Ostis_Geometry;
+	structure_knowledge_user_interface_of_Ostis_Geometry;
+	section_subsystem_of_Ostis_Geometry_for_consultation_maintenance_and_use_training;
+	section_subsystem_of_Ostis_Geometry_for_automation;
+	section_subsystem_of_Ostis_Geometry_for_management_design;
+	section_subsystem_of_Ostis_Geometry_for_management_information_security
+	};;
+	
+documentation_Euclidean_geometry = [*^"file://subject_domain_of_Euclidean_geometry.scsi"*];;
+
+rationale_for_developing_Ostis_Geometry => nrel_main_idtf: [Обоснование разработки. ИСС по геометрии] (* <- lang_ru;; *);;
+rationale_for_choice_Ostis_Geometry => nrel_main_idtf: [Обоснование выбора. Платформа реализации ИСС по геометрии ] (* <- lang_ru;; *);;
+structure_knowledge_base_of_Ostis_Geometry => nrel_main_idtf: [Структура. База знаний ИСС по геометрии ] (* <- lang_ru;; *);;
+structure_knowledge_processing_machine_of_Ostis_Geometry => nrel_main_idtf: [Структура. Машина обработки знаний ИСС по геометрии] (* <- lang_ru;; *);;
+structure_knowledge_user_interface_of_Ostis_Geometry => nrel_main_idtf: [Структура. Пользовательский интерфейс ИСС по геометрии] (* <- lang_ru;; *);;
+section_subsystem_of_Ostis_Geometry_for_consultation_maintenance_and_use_training => nrel_main_idtf: [Раздел. Подсистема ИСС по геометрии для консультационного обслуживания и обучения конечных пользователей ИСС по геометрии] (* <- lang_ru;; *);;
+section_subsystem_of_Ostis_Geometry_for_automation => nrel_main_idtf: [Раздел. Подсистема ИСС по геометрии для автоматизации
+проектирования ИСС по геометрии] (* <- lang_ru;; *);;
+section_subsystem_of_Ostis_Geometry_for_management_design => nrel_main_idtf: [Раздел. Подсистема ИСС по геометрии для управления
+проектированием ИСС по геометрии ] (* <- lang_ru;; *);;
+section_subsystem_of_Ostis_Geometry_for_management_information_security => nrel_main_idtf: [Раздел. Подсистема ИСС по геометрии для управления
+информационной безопасностью ИСС по геометрии ] (* <- lang_ru;; *);;
+
+rationale_for_developing_Ostis_Geometry => nrel_idtf: [Раздел. Обоснование, принципы построения и состав ИСС по геометрии] (* <- lang_ru;; *);;
+rationale_for_developing_Ostis_Geometry <= nrel_section_decomposition:
+	{
+	section_type_function_and_composition_of_Ostis_Geometry;
+	section_relevance_of_Ostis_Geometry;
+	section_analogues_of_Ostis_Geometry;
+	section_attempts_to_address_defects_of_Ostis_Geometry;
+	section_what_stops_corrective_action_analogues_of_Ostis_Geometry;
+	section_principles_of_Ostis_Geometry;
+	section_background_of_Ostis_Geometry;
+	section_features_used_for_comparative_analysis_of_Ostis_Geometry;
+	section_comparative_analysis_and_testing_of_Ostis_Geometry;
+	section_competitive_advantages_of_Ostis_Geometry;
+	section_novelty_of_solutions_of_Ostis_Geometry;
+	section_project_of_Ostis_Geometry;
+	section_project_of_Ostis_Geometry_dialog
+	};;
+
+section_type_function_and_composition_of_Ostis_Geometry => nrel_main_idtf: [Раздел. Тип, назначение и состав ИСС по геометрии] (* <- lang_ru;; *);;
+section_relevance_of_Ostis_Geometry => nrel_main_idtf: [Обоснование выбора. Платформа реализации ИСС по геометрии] (* <- lang_ru;; *);;
+section_analogues_of_Ostis_Geometry => nrel_main_idtf: [Раздел. Аналоги ИСС по геометрии и их недостатки] (* <- lang_ru;; *);;
+section_attempts_to_address_defects_of_Ostis_Geometry => nrel_main_idtf: [Раздел. Попытки устранения недостатков аналогов ИСС по
+геометрии] (* <- lang_ru;; *);;
+section_what_stops_corrective_action_analogues_of_Ostis_Geometry => nrel_main_idtf: [Раздел. Что препятствует устранению недостатков аналогов
+ИСС по геометрии] (* <- lang_ru;; *);;
+section_principles_of_Ostis_Geometry => nrel_main_idtf: [Раздел. Принципы, лежащие в основе ИСС по геометрии] (* <- lang_ru;; *);;
+section_background_of_Ostis_Geometry => nrel_main_idtf: [Раздел. Предпосылки создания ИСС по геометрии] (* <- lang_ru;; *);;
+section_features_used_for_comparative_analysis_of_Ostis_Geometry => nrel_main_idtf: [Раздел. Характеристики, используемые для сравнительного анализа ИСС по геометрии, и набор тестовых задач] (* <- lang_ru;; *);;
+section_comparative_analysis_and_testing_of_Ostis_Geometry => nrel_main_idtf: [Раздел. Сравнительный анализ и тестирование ИСС по геометрии] (* <- lang_ru;; *);;
+section_competitive_advantages_of_Ostis_Geometry => nrel_main_idtf: [Раздел. Конкурентные преимущества и ИСС по геометрии] (* <- lang_ru;; *);;
+section_novelty_of_solutions_of_Ostis_Geometry => nrel_main_idtf: [Раздел. Новизна решений, реализуемых в ИСС по геометрии] (* <- lang_ru;; *);;
+section_project_of_Ostis_Geometry => nrel_main_idtf: [Раздел. Проект ИСС по геометрии] (* <- lang_ru;; *);;
+section_project_of_Ostis_Geometry_dialog => nrel_main_idtf: [Раздел. Пример диалога пользователя с ИСС по геометрии, демонстрирующий ее возможности и достоинства] (* <- lang_ru;; *);;
+
+section_competitive_advantages_of_Ostis_Geometry <= nrel_sc_text_translation:	
+	...
+	(*
+	-> "file://section_intelligent_system_geometry_advantages.pdf"
+		(* <- lang_ru;; *);;
+	*);;
+	
+section_analogues_of_Ostis_Geometry <= nrel_sc_text_translation:
+	...
+	(*
+	-> "file://section_intelligent_system_geometry_counterparts_deficiencies.pdf"
+		(* <- lang_ru;; *);;
+	*);;
+	
+section_novelty_of_solutions_of_Ostis_Geometry <= nrel_sc_text_translation:	
+	...
+	(*
+	-> "file://section_intelligent_system_geometry_novelty.pdf"
+		(* <- lang_ru;; *);;
+	*);;
+	
+section_background_of_Ostis_Geometry <= nrel_sc_text_translation:	
+	...
+	(*
+	-> "file://section_intelligent_system_geometry_premises.pdf"
+		(* <- lang_ru;; *);;
+	*);;
+	
+section_principles_of_Ostis_Geometry <= nrel_sc_text_translation:	
+	...
+	(*
+	-> "file://section_intelligent_system_geometry_principles.pdf"
+		(* <- lang_ru;; *);;
+	*);;
+	
+section_type_function_and_composition_of_Ostis_Geometry <= nrel_sc_text_translation:	
+	...
+	(*
+	-> "file://section_intelligent_system_geometry_principles.pdf"
+		(* <- lang_ru;; *);;
+	-> "file://section_intelligent_system_geometry_type_purpose.pdf"
+		(* <- lang_ru;; *);;
+	*);;
+	
+section_subsystem_of_Ostis_Geometry_for_consultation_maintenance_and_use_training <= nrel_sc_text_translation:	
+	...
+	(*
+	-> "file://user_guide.pdf"
+		(* <- lang_ru;; *);;
+	*);;
+	
+section_subsystem_of_Ostis_Geometry_for_management_design <= nrel_sc_text_translation:	
+	...
+	(*
+	-> "file://developer_guide.pdf"
+		(* <- lang_ru;; *);;
+	*);;
+
+section_project_of_Ostis_Geometry_dialog <= nrel_sc_text_translation:	
+	...
+	(*
+	-> "file://geom_dialog.pdf"
+		(* <- lang_ru;; *);;
+	*);;

@@ -1,0 +1,21 @@
+d_nrel_radius_of_sphere <- definition;;
+
+d_nrel_radius_of_sphere => nrel_main_idtf: [Опр.(радиус сферы*)] (*<-lang_ru;;*);;
+d_nrel_radius_of_sphere => nrel_main_idtf: [Def.(radius of sphere*)] (*<-lang_en;;*);;
+
+d_nrel_radius_of_sphere -> rrel_key_sc_element: nrel_radius_of_sphere;;
+
+d_nrel_radius_of_sphere <= nrel_using_constants:
+	{
+		concept_sphere;
+		concept_segment;
+		nrel_center;
+		concept_geometric_point		
+	};;
+
+d_nrel_radius_of_sphere <= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+	[Радиусом сферы называется любой отрезок, соединяющий центр сферы с какой-либо ее точкой.] (*<-lang_ru;;*);;
+	*);;

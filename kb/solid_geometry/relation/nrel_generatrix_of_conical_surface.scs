@@ -1,0 +1,23 @@
+sc_node_norole_relation -> nrel_generatrix_of_conical_surface;;
+
+nrel_generatrix_of_conical_surface => nrel_main_idtf: [образующая конической поверхности*] (*<-lang_ru;;*);;
+nrel_generatrix_of_conical_surface => nrel_main_idtf: [generatrix of conical surface*] (*<-lang_en;;*);;
+
+nrel_generatrix_of_conical_surface => nrel_first_domain: concept_conical_surface;;
+nrel_generatrix_of_conical_surface => nrel_second_domain: concept_straight_line;;
+nrel_generatrix_of_conical_surface => nrel_definitional_domain: 
+	...
+	(*
+	<= nrel_combination: 
+		{
+			concept_conical_surface;
+			concept_straight_line
+		};;
+	*);;
+	
+nrel_generatrix_of_conical_surface <- relation;;	
+nrel_generatrix_of_conical_surface <- binary_relation;;
+nrel_generatrix_of_conical_surface <- oriented_relation;;
+nrel_generatrix_of_conical_surface <- antireflexive_relation; antisymmetric_relation; antitransitive_relation;;
+
+

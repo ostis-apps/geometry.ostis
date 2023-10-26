@@ -1,0 +1,113 @@
+sc_node_struct -> struct_Opened_ray_k;;
+sc_node_struct -> struct_Ray_A_O;;
+sc_node_struct -> struct_Ray_B_A;;
+sc_node_struct -> struct_Ray_B_K;;
+sc_node_struct -> struct_Ray_K_N;;
+sc_node_struct -> struct_Ray_K_P;;
+sc_node_struct -> struct_Ray_L_K;;
+sc_node_struct -> struct_Ray_L_M;;
+sc_node_struct -> struct_Ray_O_B;;
+sc_node_struct -> struct_Ray_P_K;;
+sc_node_struct -> struct_Ray_P_R;;
+sc_node_struct -> struct_Ray_P_T;;
+sc_node_struct -> struct_Ray_T_P;;
+sc_node_struct -> struct_Ray_T_R;;
+
+struct_Opened_ray_k <- rrel_example: concept_opened_ray;;
+struct_Ray_A_O <- rrel_example: concept_ray;;
+struct_Ray_B_A <- rrel_example: concept_ray;;
+struct_Ray_B_K <- rrel_example: concept_ray;;
+struct_Ray_K_N <- rrel_example: concept_ray;;
+struct_Ray_K_P <- rrel_example: concept_ray;;
+struct_Ray_L_K <- rrel_example: concept_ray;;
+struct_Ray_L_M <- rrel_example: concept_ray;;
+struct_Ray_O_B <- rrel_example: concept_ray;;
+struct_Ray_P_K <- rrel_example: concept_ray;;
+struct_Ray_P_R <- rrel_example: concept_ray;;
+struct_Ray_P_T <- rrel_example: concept_ray;;
+struct_Ray_T_P <- rrel_example: concept_ray;;
+struct_Ray_T_R <- rrel_example: concept_ray;;
+
+struct_Opened_ray_k => nrel_main_idtf:
+	[Открытый луч k]
+	(* <- lang_ru;;*);
+	[Opened ray k]
+	(* <- lang_en;; *);;
+
+struct_Ray_A_O => nrel_main_idtf:
+	[Луч AO]
+	(* <- lang_ru;;	*);
+	[Ray AO]
+	(* <- lang_en;;	*);;
+
+struct_Ray_B_A => nrel_main_idtf:
+	[Луч BA]
+	(* <- lang_ru;;	*);
+	[Ray BA]
+	(* <- lang_en;;	*);;
+
+struct_Ray_B_K => nrel_main_idtf:
+	[Луч BK]
+	(* <- lang_ru;;	*);
+	[Ray BK]
+	(* <- lang_en;;	*);;
+
+struct_Ray_K_N => nrel_main_idtf:
+	[Луч KN]
+	(* <- lang_ru;;	*);
+	[Ray KN]
+	(* <- lang_en;;	*);;
+
+struct_Ray_K_P => nrel_main_idtf:
+	[Луч KP]
+	(* <- lang_ru;;	*);
+	[Ray KP]
+	(* <- lang_en;;	*);;
+
+struct_Ray_L_K => nrel_main_idtf:
+	[Луч LK]
+	(* <- lang_ru;;	*);
+	[Ray LK]
+	(* <- lang_en;;	*);;
+
+struct_Ray_L_M => nrel_main_idtf:
+	[Луч LM]
+	(* <- lang_ru;;	*);
+	[Ray LM]
+	(* <- lang_en;;	*);;
+
+struct_Ray_O_B => nrel_main_idtf:
+	[Луч OB]
+	(* <- lang_ru;;	*);
+	[Ray OB]
+	(* <- lang_en;;	*);;
+
+struct_Ray_P_K => nrel_main_idtf:
+	[Луч PK]
+	(* <- lang_ru;;	*);
+	[Ray PK]
+	(* <- lang_en;;	*);;
+
+struct_Ray_P_R => nrel_main_idtf:
+	[Луч PR]
+	(* <- lang_ru;;	*);
+	[Ray PR]
+	(* <- lang_en;;	*);;
+
+struct_Ray_P_T => nrel_main_idtf:
+	[Луч PT]
+	(* <- lang_ru;;	*);
+	[Ray PT]
+	(* <- lang_en;;	*);;
+
+struct_Ray_T_P => nrel_main_idtf:
+	[Луч TP]
+	(* <- lang_ru;;	*);
+	[Ray TP]
+	(* <- lang_en;;	*);;
+
+struct_Ray_T_R => nrel_main_idtf:
+	[Луч TR]
+	(* <- lang_ru;;	*);
+	[Ray TR]
+	(* <- lang_en;;	*);;

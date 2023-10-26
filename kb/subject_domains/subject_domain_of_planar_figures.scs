@@ -1,0 +1,35 @@
+sc_node_struct -> subject_domain_of_planar_figures;;
+
+subject_domain_of_planar_figures
+=> nrel_main_idtf:
+	[Предметная область планарных геометрических фигур]
+	(* <- lang_ru;; *);
+	[Subject domain of planar geometric figures]
+	(* <- lang_en;; *);;
+
+subject_domain_of_planar_figures -> rrel_maximum_studied_object_class: concept_planar_figure;;
+
+subject_domain_of_planar_angles -> rrel_not_maximum_studied_object_class: 
+	concept_planar_angle;
+	concept_polygon;
+	concept_planar_line;;
+
+subject_domain_of_planar_figures <- subject_domain;;
+
+subject_domain_of_planar_figures => nrel_private_subject_domain: subject_domain_of_rectilinear_geometric_figures;;
+subject_domain_of_planar_figures => nrel_private_subject_domain: subject_domain_of_planar_angles;;
+subject_domain_of_planar_figures => nrel_private_subject_domain: subject_domain_of_polygons;;
+subject_domain_of_planar_figures => nrel_private_subject_domain: subject_domain_of_inscribed_planar_figures;;
+subject_domain_of_planar_figures => nrel_private_subject_domain: subject_domain_of_rounds_and_circles;;
+
+subject_domain_of_planar_figures -> rrel_explored_relation:
+	nrel_boundary_point;
+	nrel_perpendicularity;
+	nrel_parallelism;
+	nrel_secant;
+	nrel_tangent;
+	nrel_parallelism;
+	nrel_perpendicularity;
+	nrel_middle;
+	nrel_length;;
+	

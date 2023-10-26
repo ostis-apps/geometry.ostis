@@ -1,0 +1,16 @@
+sc_node_struct -> subject_domain_of_geometric_figure_congruence;;
+
+subject_domain_of_geometric_figure_congruence
+=> nrel_main_idtf:
+	[Предметная область конгруэнтности геометрических фигур]
+	(* <- lang_ru;; *);
+	[Subject domain of geometric figure congruence]
+	(* <- lang_en;; *);;
+	
+subject_domain_of_geometric_figure_congruence -> rrel_maximum_studied_object_class: concept_geometric_figure;;
+
+subject_domain_of_geometric_figure_congruence -> rrel_explored_relation: nrel_congruence_of_pair_of_points;;
+subject_domain_of_geometric_figure_congruence -> rrel_explored_relation: nrel_congruence;;
+
+
+subject_domain_of_geometric_figure_congruence <- subject_domain;;

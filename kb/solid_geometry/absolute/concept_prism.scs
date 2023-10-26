@@ -1,0 +1,18 @@
+sc_node_not_relation -> concept_prism;;
+
+concept_prism => nrel_main_idtf: [призма] (*<-lang_ru;;*);;
+concept_prism => nrel_main_idtf: [prism] (*<-lang_en;;*);;
+
+concept_prism <= nrel_strict_inclusion: concept_convex_polyhedron;;
+
+concept_prism <- rrel_key_sc_element: 
+	...
+	(*
+	<- illustration;; 
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: 
+		"file://images/concept_prism.png";;
+		*);;
+	*);;

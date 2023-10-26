@@ -1,0 +1,22 @@
+d_concept_dihedral_angle <- definition;;
+
+d_concept_dihedral_angle -> rrel_key_sc_element: concept_dihedral_angle;;
+
+d_concept_dihedral_angle => nrel_main_idtf: [Опр.(двугранный угол)] (*<-lang_ru;;*);;
+d_concept_dihedral_angle => nrel_main_idtf: [Def.(dihedral angle)] (*<-lang_en;;*);;
+
+
+d_concept_dihedral_angle <= nrel_using_constants:
+		{
+			concept_geometric_figure;
+			concept_half_plane;
+			concept_straight_line;
+			concept_plane
+		};;
+
+d_concept_dihedral_angle<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+		[Двугранным углом называется фигура, образованная двумя полуплоскостями, имеющими общую границу(прямую линию) и не принадлежащими ни одной плоскости.] (*<-lang_ru;;*);;
+		*);;

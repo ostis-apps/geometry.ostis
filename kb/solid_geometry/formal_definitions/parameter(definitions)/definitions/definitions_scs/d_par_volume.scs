@@ -1,0 +1,19 @@
+definition -> d_par_volume;;
+d_par_volume <- rrel_key_sc_element: par_volume;;
+
+d_par_volume => nrel_using_constants: ...
+	(*
+		-> value;;
+		-> concept_space;;
+		-> concept_geometric_body;;
+	*);;
+
+d_par_volume => nrel_main_idtf:
+	[Опр.(объём)] 
+	(* <- lang_ru;; *);;
+
+d_par_volume <= nrel_sc_text_translation: ...
+	(*
+		-> [Объемом тела называется положительная величина, характеризующая часть пространства, занимаемую телом.]
+			(* <-lang_ru ;; *);;
+	*);;

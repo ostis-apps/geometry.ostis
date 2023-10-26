@@ -1,0 +1,42 @@
+s_triangles_similarity
+=> nrel_main_idtf:
+	[Раздел. Подобие треугольников]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Section. Similarity of triangles]
+	(* <- lang_en;; *);
+
+<- atomic_section;
+
+<= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+		"file://htmls/s_triangles_similarity_en.html"
+		(* <- lang_en;; *);;
+	*);
+<= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+		"file://htmls/s_triangles_similarity_ru.html"
+		(* <- lang_ru;; *);;
+	*);
+
+=> nrel_summary:
+	...
+	(*
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[This section discusses the signs of similarity of triangles.]
+			(* <- lang_en;; *);;
+		*);;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:[В данном разделе рассматриваются признаки подобия треугольников.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;

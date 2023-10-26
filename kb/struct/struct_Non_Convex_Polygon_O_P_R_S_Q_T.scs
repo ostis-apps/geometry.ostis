@@ -1,0 +1,93 @@
+sc_node_struct -> struct_Non_Convex_Polygon_O_P_R_S_Q_T;;
+
+struct_Non_Convex_Polygon_O_P_R_S_Q_T => nrel_main_idtf:
+	[Невыпуклый многоугольник OPRSQT]
+	(* <- lang_ru;; *);
+	[Non Convex Polygon OPRSQT]
+	(* <- lang_en;; *);;
+
+struct_Non_Convex_Polygon_O_P_R_S_Q_T => nrel_idtf: [Невыпуклый многоугольник (O; P; R; S; Q; T)] (* <- lang_ru;; *);;
+
+struct_Non_Convex_Polygon_O_P_R_S_Q_T => nrel_idtf: [Невыпуклый многоугольник, вершинами которого являются Точка O, Точка P, Точка R, Точка S, Точка Q и Точка T] (* <- lang_ru;; *);;
+
+struct_Non_Convex_Polygon_O_P_R_S_Q_T  => nrel_vertex: struct_Geometric_point_O;;
+
+struct_Non_Convex_Polygon_O_P_R_S_Q_T  => nrel_vertex: struct_Geometric_point_P;;
+
+struct_Non_Convex_Polygon_O_P_R_S_Q_T  => nrel_vertex: struct_Geometric_point_R;;
+
+struct_Non_Convex_Polygon_O_P_R_S_Q_T  => nrel_vertex: struct_Geometric_point_S;;
+
+struct_Non_Convex_Polygon_O_P_R_S_Q_T  => nrel_vertex: struct_Geometric_point_Q;;
+
+struct_Non_Convex_Polygon_O_P_R_S_Q_T  => nrel_vertex: struct_Geometric_point_T;;
+
+struct_Non_Convex_Polygon_O_P_R_S_Q_T => nrel_side: struct_Segment_O_T;;
+
+struct_Non_Convex_Polygon_O_P_R_S_Q_T => nrel_side: struct_Segment_O_P;;
+
+struct_Non_Convex_Polygon_O_P_R_S_Q_T => nrel_side: struct_Segment_P_R;;
+
+struct_Non_Convex_Polygon_O_P_R_S_Q_T => nrel_side: struct_Segment_R_S;;
+
+struct_Non_Convex_Polygon_O_P_R_S_Q_T => nrel_side: struct_Segment_S_Q;;
+
+struct_Non_Convex_Polygon_O_P_R_S_Q_T => nrel_side: struct_Segment_Q_T;;
+
+struct_Non_Convex_Polygon_O_P_R_S_Q_T  => nrel_internal_angle: struct_Angle_Alpha;;
+
+struct_Non_Convex_Polygon_O_P_R_S_Q_T  => nrel_internal_angle: struct_Angle_Beta;;
+
+struct_Non_Convex_Polygon_O_P_R_S_Q_T  => nrel_internal_angle: struct_Angle_Gamma;;
+
+struct_Non_Convex_Polygon_O_P_R_S_Q_T  => nrel_internal_angle: struct_Angle_Delta;;
+
+struct_Non_Convex_Polygon_O_P_R_S_Q_T  => nrel_internal_angle: struct_Angle_Epsilon;;
+
+struct_Non_Convex_Polygon_O_P_R_S_Q_T  => nrel_internal_angle: struct_Angle_Sigma;;
+
+struct_Segment_O_T => nrel_boundary_point: struct_Geometric_point_O;;
+
+struct_Segment_O_P => nrel_boundary_point: struct_Geometric_point_O;;
+
+struct_Segment_O_P => nrel_boundary_point: struct_Geometric_point_P;;
+
+struct_Segment_P_R => nrel_boundary_point: struct_Geometric_point_P;;
+
+struct_Segment_P_R => nrel_boundary_point: struct_Geometric_point_R;;
+
+struct_Segment_S_Q => nrel_boundary_point: struct_Geometric_point_S;;
+
+struct_Segment_S_Q => nrel_boundary_point: struct_Geometric_point_Q;;
+
+struct_Segment_Q_T => nrel_boundary_point: struct_Geometric_point_Q;;
+
+struct_Segment_Q_T => nrel_boundary_point: struct_Geometric_point_T;;
+
+struct_Segment_O_T => nrel_boundary_point: struct_Geometric_point_T;;
+
+struct_Non_Convex_Polygon_O_P_R_S_Q_T <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Факт.утв.(Невыпуклый многоугольник OPRSQT)] (* <- lang_ru;; *);;
+	<- statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+         	-> rrel_example: 
+			[OPRSQT - невыпуклый многоугольник. Геометрические точки O, P, R, S, Q, T являются вершинами Многоугольника OPRSQT. Отрезки o, p, r, s, q, t являются сторонами Многоугольника OPRSQT. Углы alpha, beta, gamma, sigma, epsilon и delta являются внутренним углами Многоугольника OPRSQT. Точка O является граничной точкой отрезков o, p. Точка P является граничной точкой отрезков p, r. Точка R является граничной точкой отрезков r, s. Точка S является граничной точкой отрезков s, q. Точка Q является граничной точкой отрезков q, t. Точка T является граничной точкой отрезков t, o.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+struct_Non_Convex_Polygon_O_P_R_S_Q_T <- rrel_key_sc_element: 
+	...
+	(*
+	<- illustration;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			"file://images/Polygon OPRSQT.png";;
+		*);; 
+	*);; 

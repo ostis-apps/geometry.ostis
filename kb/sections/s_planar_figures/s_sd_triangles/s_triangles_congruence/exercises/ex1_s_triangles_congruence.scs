@@ -1,0 +1,22 @@
+ex1_s_triangles_congruence
+<- exercises_s_triangles_congruence;
+
+-> rrel_key_sc_element: concept_triangle; nrel_congruence; nrel_side_of_polygon;
+
+=> nrel_main_idtf:
+	[Упражнение 1. Раздел. Равенство треугольников]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Exercise 1. Section. Congruence of triangles]
+	(* <- lang_en;; *);
+
+<= nrel_sc_text_translation:
+	...
+	(* 
+	-> rrel_example: "file://htmls/ex1_s_triangles_congruence_ru.html" (* <-lang_ru;; *);;
+	*);
+<= nrel_sc_text_translation:
+	...
+	(* 
+	-> rrel_example: "file://htmls/ex1_s_triangles_congruence_en.html" (* <-lang_en;; *);;
+	*);;

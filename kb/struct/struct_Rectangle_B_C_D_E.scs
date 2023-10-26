@@ -1,0 +1,65 @@
+sc_node_struct -> struct_Rectangle_B_C_D_E;;
+
+struct_Rectangle_B_C_D_E => nrel_main_idtf:
+	[Прямоугольник BCDE]
+	(* <- lang_ru;; *);
+	[Rectangle BCDE]
+	(* <- lang_en;; *);;
+
+struct_Rectangle_B_C_D_E => nrel_idtf: [Пр-к (B; C; D; E)] (* <- lang_ru;; *);;
+
+struct_Rectangle_B_C_D_E => nrel_idtf: [Прямоугольник(B; C; D; E)] (* <- lang_ru;; *);;
+
+struct_Rectangle_B_C_D_E => nrel_idtf: [Прямоугольник, вершинами которого являются Точка B, Точка C, Точка D, Точка E] (* <- lang_ru;; *);;
+
+struct_Rectangle_B_C_D_E <- concept_rectangle;;
+
+struct_Rectangle_B_C_D_E  => nrel_vertex: struct_Geometric_point_B;;
+
+struct_Rectangle_B_C_D_E  => nrel_vertex: struct_Geometric_point_C;;
+
+struct_Rectangle_B_C_D_E  => nrel_vertex: struct_Geometric_point_D;;
+
+struct_Rectangle_B_C_D_E  => nrel_vertex: struct_Geometric_point_E;;
+
+struct_Rectangle_B_C_D_E  => nrel_side: struct_Segment_B_C;;
+
+struct_Rectangle_B_C_D_E  => nrel_side: struct_Segment_C_D;;
+
+struct_Rectangle_B_C_D_E  => nrel_side: struct_Segment_D_E;;
+
+struct_Rectangle_B_C_D_E  => nrel_side: struct_Segment_B_E;;
+
+nrel_congruence -> ... (* -> struct_Segment_B_C; struct_Segment_C_D; struct_Segment_D_E; struct_Segment_B_E;;*);;
+
+struct_Segment_B_E => nrel_boundary_point: struct_Geometric_point_B;;
+
+struct_Segment_B_E => nrel_boundary_point: struct_Geometric_point_E;;
+
+struct_Rectangle_B_C_D_E <- rrel_key_sc_element: 
+	...
+	(*
+	<- illustration;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://images/PryamougolnikBCDE.png";;
+		*);;
+	*);;
+
+struct_Rectangle_B_C_D_E  <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Факт.утв.(Прямоугольник BCDE)] (* <- lang_ru;; *);;
+	<- statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[BCDE - прямоугольник. Геометрические точки B, C, D и E являются вершинами Прямоугольника BCDE. Отрезки b, c, d и e являются сторонами Прямоугольника BCDE. Отрезки b, c и d, e конгруэнтны соответственно. Точка B является граничной точкой отрезков b, c. Точка C является граничной точкой отрезков c, d. Точка D является граничной точкой отрезков d, e. Точка E является граничной точкой отрезков e, b.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+

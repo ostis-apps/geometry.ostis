@@ -1,0 +1,21 @@
+sc_node_norole_relation -> nrel_larger_base_of_truncated_pyramid;;
+
+nrel_larger_base_of_truncated_pyramid => nrel_main_idtf: [нижнее основание усеченной пирамиды*] (*<-lang_ru;;*);;
+nrel_larger_base_of_truncated_pyramid => nrel_main_idtf: [larger base of truncated pyramid*] (*<-lang_en;;*);;
+
+nrel_larger_base_of_truncated_pyramid => nrel_first_domain: concept_truncated_pyramid;;
+nrel_larger_base_of_truncated_pyramid => nrel_second_domain: concept_polygon;;
+nrel_larger_base_of_truncated_pyramid => nrel_definitional_domain: 
+	...
+	(*
+	<= nrel_combination: 
+		{
+			concept_truncated_pyramid;
+			concept_polygon
+		};;
+	*);;
+	
+nrel_larger_base_of_truncated_pyramid <- relation;;	
+nrel_larger_base_of_truncated_pyramid <- binary_relation;;
+nrel_larger_base_of_truncated_pyramid <- oriented_relation;;
+nrel_larger_base_of_truncated_pyramid <- antireflexive_relation; antisymmetric_relation; antitransitive_relation;;

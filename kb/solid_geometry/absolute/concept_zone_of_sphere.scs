@@ -1,0 +1,18 @@
+sc_node_not_relation -> concept_zone_of_sphere;;
+
+concept_zone_of_sphere => nrel_main_idtf: [сферический пояс] (*<-lang_ru;;*);;
+concept_zone_of_sphere => nrel_main_idtf: [zone of sphere] (*<-lang_en;;*);;
+
+concept_zone_of_sphere <= nrel_strict_inclusion: concept_solid_of_revolution;;
+
+concept_zone_of_sphere <- rrel_key_sc_element: 
+	...
+	(*
+	<- illustration;; 
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: 
+		"file://images/concept_zone_of_sphere.jpg";;
+		*);;
+	*);;

@@ -1,0 +1,61 @@
+sc_node_norole_relation -> nrel_diagonal_section_of_polyhedron;;
+
+nrel_diagonal_section_of_polyhedron => nrel_main_idtf: [диагональное сечение многогранника*] (*<-lang_ru;;*);;
+nrel_diagonal_section_of_polyhedron => nrel_main_idtf: [diagonal section of polyhedron*] (*<-lang_en;;*);;
+
+nrel_diagonal_section_of_polyhedron <= nrel_strict_inclusion: nrel_cross_section;;
+
+nrel_diagonal_section_of_polyhedron => nrel_first_domain:
+	...
+	(*
+	<- rrel_3:
+		...
+		(*
+		<- nrel_sets_difference;;
+		-> rrel_1: concept_polyhedron;;
+		-> rrel_2:
+			... 
+			(*
+			<= nrel_combination: 
+				{
+				concept_triangular_pyramid;
+				concept_triangular_prism
+				};;
+			*);;
+		*);;
+	*);;
+	
+nrel_diagonal_section_of_polyhedron => nrel_second_domain: concept_plane;;
+	
+nrel_diagonal_section_of_polyhedron => nrel_definitional_domain:
+	...
+	(*
+	<= nrel_combination:
+		...
+		(*
+		-> concept_plane;;
+		-> ... (*
+			<- rrel_3:
+				...
+				(*
+				<- nrel_sets_difference;;
+				-> rrel_1: concept_polyhedron;;
+				-> rrel_2:
+					... 
+					(*
+					<= nrel_combination: 
+						{
+						concept_triangular_pyramid;
+						concept_triangular_prism
+						};;
+					*);;
+				*);;
+			*);;
+		*);;	
+	*);;
+	
+nrel_diagonal_section_of_polyhedron <- relation;;	
+nrel_diagonal_section_of_polyhedron <- binary_relation;;
+nrel_diagonal_section_of_polyhedron <- oriented_relation;;
+nrel_diagonal_section_of_polyhedron <- antireflexive_relation; antisymmetric_relation; antitransitive_relation;;
+

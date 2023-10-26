@@ -1,0 +1,22 @@
+d_concept_truncated_cone <- definition;;
+
+d_concept_truncated_cone -> rrel_key_sc_element: concept_truncated_cone;;
+
+d_concept_truncated_cone => nrel_main_idtf: [Опр.(усеченный конус)] (*<-lang_ru;;*);;
+d_concept_truncated_cone => nrel_main_idtf: [Def.(truncated cone)] (*<-lang_en;;*);;
+
+d_concept_truncated_cone <= nrel_using_constants:
+	{
+	concept_cone;
+	nrel_base;
+	nrel_secant;
+	concept_plane;
+	nrel_perpendicularity
+	};;
+
+d_concept_truncated_cone <= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+		[́Усеченным конусом называется часть конуса, расположенная между его основанием и секущей плоскостью B, перпендикулярной оси конуса.] (*<-lang_ru;;*);;
+		*);;

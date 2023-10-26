@@ -1,0 +1,36 @@
+s_main_concepts_circles_rounds
+=> nrel_main_idtf:
+	[Раздел. Основные понятия предметной области кругов и окружностей]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Section. Main concepts of subject domain of rounds and circles]
+	(* <- lang_en;; *);
+
+<- atomic_section;
+
+<= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+		"file://html/s_main_concepts_circles_rounds_ru.html"
+		(* <- lang_ru;; *);;
+	*);
+
+=> nrel_summary:
+	...
+	(*
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[This section discusses the basic definitions of circles and rounds.]
+			(* <- lang_en;; *);;
+		*);;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[В данном разделе рассматриваются основные определения кругов и окружностей.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;

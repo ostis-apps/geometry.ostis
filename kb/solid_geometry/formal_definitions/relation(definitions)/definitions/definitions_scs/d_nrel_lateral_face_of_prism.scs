@@ -1,0 +1,20 @@
+d_nrel_lateral_face_of_prism <- definition;;
+
+d_nrel_lateral_face_of_prism => nrel_main_idtf: [Опр.(боковая грань призмы*)] (*<-lang_ru;;*);;
+d_nrel_lateral_face_of_prism => nrel_main_idtf: [Def.(lateral face of prism*)] (*<-lang_en;;*);;
+
+d_nrel_lateral_face_of_prism -> rrel_key_sc_element: nrel_lateral_face_of_prism;;
+
+d_nrel_lateral_face_of_prism <= nrel_using_constants:
+	{
+	concept_prism;
+	concept_parallelogram;
+	nrel_base_of_prism
+	};;
+
+d_nrel_lateral_face_of_prism <= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example:
+		[Боковая грань призмы - параллелограмм, не являющийся основаниями.] (*<-lang_ru;;*);;
+	*);;

@@ -1,0 +1,21 @@
+d_concept_regular_prism <- definition;;
+
+d_concept_regular_prism -> rrel_key_sc_element: concept_regular_prism;;
+
+d_concept_regular_prism => nrel_main_idtf: [Опр.(правильная призма)] (*<-lang_ru;;*);;
+d_concept_regular_prism => nrel_main_idtf: [Def.(regular prism)] (*<-lang_en;;*);;
+
+
+d_concept_regular_prism <= nrel_using_constants:
+	{
+	concept_right_prism;
+	nrel_base;
+	concept_regular_polygon
+	};;
+
+d_concept_regular_prism <= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+		[́Правильной призмой называется прямая призма, основаниями которой являются правильные многоугольники.] (*<-lang_ru;;*);;
+		*);;

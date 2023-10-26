@@ -1,0 +1,70 @@
+sc_node_struct -> struct_Regular_Polygon_A_B_C_D_E_F;;
+
+struct_Regular_Polygon_A_B_C_D_E_F => nrel_main_idtf:
+	[Правильный многоугольник ABCDEF]
+	(* <- lang_ru;; *);
+	[Regular Polyhon ABCDEF]
+	(* <- lang_en;; *);;
+
+struct_Regular_Polygon_A_B_C_D_E_F => nrel_idtf: [Правильный многоугольник (A; B; C; D; E; F)] (* <- lang_ru;; *);;
+
+struct_Regular_Polygon_A_B_C_D_E_F => nrel_idtf: [Правильный многоугольник, вершинами которого являются Точка A, Точка B, Точка С, Точка D, Точка E и Точка F] (* <- lang_ru;; *);;
+
+struct_Regular_Polygon_A_B_C_D_E_F <- concept_regular_polygon;;
+
+struct_Regular_Polygon_A_B_C_D_E_F => nrel_vertex: struct_Geometric_point_F;;
+
+struct_Regular_Polygon_A_B_C_D_E_F => nrel_vertex: struct_Geometric_point_A;;
+
+struct_Regular_Polygon_A_B_C_D_E_F => nrel_vertex: struct_Geometric_point_B;;
+
+struct_Regular_Polygon_A_B_C_D_E_F => nrel_vertex: struct_Geometric_point_C;;
+
+struct_Regular_Polygon_A_B_C_D_E_F => nrel_vertex: struct_Geometric_point_D;;
+
+struct_Regular_Polygon_A_B_C_D_E_F => nrel_vertex: struct_Geometric_point_E;;
+
+struct_Regular_Polygon_A_B_C_D_E_F => nrel_side: struct_Segment_E_F;;
+
+struct_Regular_Polygon_A_B_C_D_E_F => nrel_side: struct_Segment_A_F;;
+
+struct_Regular_Polygon_A_B_C_D_E_F => nrel_side: struct_Segment_A_B;;
+
+struct_Regular_Polygon_A_B_C_D_E_F => nrel_side: struct_Segment_B_C;;
+
+struct_Regular_Polygon_A_B_C_D_E_F => nrel_side: struct_Segment_C_D;;
+
+struct_Regular_Polygon_A_B_C_D_E_F => nrel_side: struct_Segment_D_E;;
+
+nrel_congruence -> ... (* -> struct_Segment_A_B; struct_Segment_B_C; struct_Segment_C_D; struct_Segment_D_E; struct_Segment_E_F; struct_Segment_A_F;; *);;
+
+struct_Segment_A_F => nrel_boundary_point: struct_Geometric_point_F;;
+
+struct_Segment_A_F => nrel_boundary_point: struct_Geometric_point_A;;
+
+struct_Regular_Polygon_A_B_C_D_E_F <- rrel_key_sc_element: 
+	...
+	(*
+	<- illustration;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://images/Polygon ABCDEF.png";;
+		*);;
+	*);;
+
+struct_Regular_Polygon_A_B_C_D_E_F <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Факт.утв.(Правильный многоугольник ABCDEF)] (* <- lang_ru;; *);;
+	<- statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[ABCDEF - правильный многоугольник. Геометрические точки A, B, C, D, E и F являются вершинами Многоугольника ABCDEF. Отрезки a, b, c, d, e, f являются сторонами Многоугольника ABCDEF. Стороны a, b, c, d, e, f равны. Точка A является граничной точкой отрезков a, b. Точка B является граничной точкой отрезков b, c. Точка C является граничной точкой отрезков c, d. Точка D является граничной точкой отрезков d, e. Точка E является граничной точкой отрезков e, f. Точка F является граничной точкой отрезков f, a.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+

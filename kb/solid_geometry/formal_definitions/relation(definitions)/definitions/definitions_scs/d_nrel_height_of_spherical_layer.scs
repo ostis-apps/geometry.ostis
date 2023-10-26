@@ -1,0 +1,20 @@
+d_nrel_height_of_spherical_layer <- definition;;
+
+d_nrel_height_of_spherical_layer => nrel_main_idtf: [Опр.(высота шарового слоя*)] (*<-lang_ru;;*);;
+d_nrel_height_of_spherical_layer => nrel_main_idtf: [Def.(height of spherical layer*)] (*<-lang_en;;*);;
+
+d_nrel_height_of_spherical_layer -> rrel_key_sc_element: nrel_height_of_spherical_layer;;
+
+d_nrel_height_of_spherical_layer <= nrel_using_constants:
+	{
+	concept_spherical_layer;
+	nrel_distance;
+	nrel_cross_section
+	};;
+
+d_nrel_height_of_spherical_layer <= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+	[Высота шарового слоя - это расстояние между секущими плоскостями, которые образуют шаровой слой.] (*<-lang_ru;;*);;
+	*);;

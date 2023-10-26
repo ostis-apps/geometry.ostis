@@ -1,0 +1,29 @@
+sc_node_norole_relation -> nrel_height_of_convex_polyhedron;;
+
+nrel_height_of_convex_polyhedron => nrel_main_idtf: [высота выпуклого многогранника*] (*<-lang_ru;;*);;
+nrel_height_of_convex_polyhedron => nrel_main_idtf: [height of convex polyhedron*] (*<-lang_en;;*);;
+
+nrel_height_of_convex_polyhedron <= nrel_combination:
+{
+	nrel_height_of_prism;
+	nrel_height_of_pyramid;
+	nrel_height_of_truncated_pyramid
+};;
+
+nrel_height_of_convex_polyhedron => nrel_first_domain: concept_convex_polyhedron;;
+nrel_height_of_convex_polyhedron => nrel_second_domain: concept_segment;;
+	
+nrel_height_of_convex_polyhedron => nrel_definitional_domain:
+	...
+	(*
+	<= nrel_combination: 
+		{
+			concept_convex_polyhedron;
+			concept_segment
+		};;
+	*);;
+	
+nrel_height_of_convex_polyhedron <- relation;;	
+nrel_height_of_convex_polyhedron <- binary_relation;;
+nrel_height_of_convex_polyhedron <- oriented_relation;;
+nrel_height_of_convex_polyhedron <- antireflexive_relation; antisymmetric_relation; antitransitive_relation;;

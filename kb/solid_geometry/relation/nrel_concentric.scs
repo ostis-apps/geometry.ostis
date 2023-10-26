@@ -1,0 +1,50 @@
+sc_node_norole_relation -> nrel_concentric;;
+
+nrel_concentric => nrel_main_idtf: [концентрические*] (*<-lang_ru;;*);;
+nrel_concentric => nrel_main_idtf: [concentric*] (*<-lang_en;;*);;
+
+nrel_concentric => nrel_idtf: [быть концентрическими*] (*<-lang_ru;;*);;
+	
+nrel_concentric => nrel_first_domain: ...
+	(*
+	<= nrel_combination: 
+		{
+			concept_circle;
+			concept_sphere
+		};;
+	*);;
+	
+nrel_concentric => nrel_second_domain: ...
+	(*
+	<= nrel_combination: 
+		{
+			concept_circle;
+			concept_sphere
+		};;
+	*);;
+	
+nrel_concentric => nrel_definitional_domain: ...
+	(*
+	<= nrel_combination: 
+		{
+			concept_circle;
+			concept_sphere
+		};;
+	*);;
+	
+nrel_concentric <- relation;;	
+nrel_concentric <- binary_relation;;
+nrel_concentric <- oriented_relation;;
+nrel_concentric <- antireflexive_relation; symmetric_relation; transitive_relation;;
+
+
+nrel_concentric <- rrel_key_sc_element: 
+	...
+	(*
+	<- illustration;; 
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: 
+		"file://images/nrel_concentric.png";;
+		*);;
+	*);;

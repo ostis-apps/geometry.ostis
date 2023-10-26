@@ -1,0 +1,21 @@
+d_nrel_height_of_truncated_cone <- definition;;
+
+d_nrel_height_of_truncated_cone => nrel_main_idtf: [Опр.(высота усеченного конуса*)] (*<-lang_ru;;*);;
+d_nrel_height_of_truncated_cone => nrel_main_idtf: [Def.(height of truncated cone*)] (*<-lang_en;;*);;
+
+d_nrel_height_of_truncated_cone -> rrel_key_sc_element: nrel_height_of_truncated_cone;;
+
+d_nrel_height_of_truncated_cone <= nrel_using_constants:
+	{
+		concept_truncated_cone;
+		concept_segment;
+		nrel_center;
+		nrel_base_of_truncated_cone
+	};;
+
+d_nrel_height_of_truncated_cone <= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+	[Высота усеченного конуса – это отрезок, соединяющий центры его оснований] (*<-lang_ru;;*);;
+	*);;

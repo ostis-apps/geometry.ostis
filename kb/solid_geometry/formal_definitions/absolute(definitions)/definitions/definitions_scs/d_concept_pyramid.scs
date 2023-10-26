@@ -1,0 +1,21 @@
+d_concept_pyramid <- definition;;
+
+d_concept_pyramid => nrel_main_idtf: [Опр.(пирамида)] (*<-lang_ru;;*);;
+d_concept_pyramid => nrel_main_idtf: [Def.(pyramid)] (*<-lang_en;;*);;
+
+d_concept_pyramid -> rrel_key_sc_element: concept_pyramid;;
+
+d_concept_pyramid <= nrel_using_constants:
+	{
+	concept_polyhedron;
+	concept_polygon;
+	concept_triangle;
+	nrel_vertex_of_pyramid
+	};;
+
+d_concept_pyramid <= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+		[Пирамида – многогранник, у которого одна грань – некоторый многоугольник, а остальные грани – треугольники с общей вершиной.] (*<-lang_ru;;*);;
+		*);;

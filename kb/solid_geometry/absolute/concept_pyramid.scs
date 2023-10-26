@@ -1,0 +1,18 @@
+sc_node_not_relation -> concept_pyramid;;
+
+concept_pyramid => nrel_main_idtf: [пирамида] (*<-lang_ru;;*);;
+concept_pyramid => nrel_main_idtf: [pyramid] (*<-lang_en;;*);;
+
+concept_pyramid <= nrel_strict_inclusion: concept_convex_polyhedron;;
+
+concept_pyramid <- rrel_key_sc_element: 
+	...
+	(*
+	<- illustration;; 
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: 
+		"file://images/concept_pyramid.png";;
+		*);;
+	*);;

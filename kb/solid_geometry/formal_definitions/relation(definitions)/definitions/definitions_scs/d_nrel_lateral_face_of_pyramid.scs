@@ -1,0 +1,23 @@
+d_nrel_lateral_face_of_pyramid <- definition;;
+
+d_nrel_lateral_face_of_pyramid => nrel_main_idtf: [Опр.(боковая грань пирамиды*)] (*<-lang_ru;;*);;
+d_nrel_lateral_face_of_pyramid => nrel_main_idtf: [Def.(lateral face of pyramid*)] (*<-lang_en;;*);;
+
+d_nrel_lateral_face_of_pyramid -> rrel_key_sc_element: nrel_lateral_face_of_pyramid;;
+
+d_nrel_lateral_face_of_pyramid <= nrel_using_constants:
+	{
+	concept_pyramid;
+	concept_triangle;
+	nrel_base_of_pyramid;
+	nrel_side_of_polygon;
+	nrel_vertex_of_polygon;
+	nrel_vertex_of_polyhedron
+	};;
+
+d_nrel_lateral_face_of_pyramid <= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+	[Боковая грань пирамиды - треугольник, одна сторона которого лежит на основании пирамиды, а противоположная вершина является вершиной пирамиды.] (*<-lang_ru;;*);;
+	*);;

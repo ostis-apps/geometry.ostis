@@ -1,0 +1,19 @@
+d_concept_segment_of_sphere <- definition;;
+
+d_concept_segment_of_sphere => nrel_main_idtf: [Опр.(сферический сегмент)] (*<-lang_ru;;*);;
+d_concept_segment_of_sphere => nrel_main_idtf: [Def.(segment of sphere)] (*<-lang_en;;*);;
+
+d_concept_segment_of_sphere -> rrel_key_sc_element: concept_segment_of_sphere;;
+
+d_concept_segment_of_sphere <= nrel_using_constants:
+	{
+	concept_sphere;
+	concept_plane
+	};;
+
+d_concept_segment_of_sphere <= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+		[Сферическим сегментом называется часть сферы, отсекаемая от нее плоскостью.] (*<-lang_ru;;*);;
+		*);;

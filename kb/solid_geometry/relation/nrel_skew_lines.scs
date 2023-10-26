@@ -1,0 +1,25 @@
+sc_node_norole_relation -> nrel_skew_lines;;
+
+nrel_skew_lines => nrel_main_idtf: [скрещивающиеся прямые*] (*<-lang_ru;;*);;
+nrel_skew_lines => nrel_main_idtf: [skew lines*] (*<-lang_en;;*);;
+
+nrel_skew_lines => nrel_first_domain: concept_straight_line;;
+nrel_skew_lines => nrel_second_domain: concept_straight_line;;
+nrel_skew_lines => nrel_definitional_domain: concept_straight_line;;
+	
+nrel_skew_lines <- relation;;	
+nrel_skew_lines <- binary_relation;;
+nrel_skew_lines <- oriented_relation;;
+nrel_skew_lines <- reflexive_relation; symmetric_relation; antitransitive_relation;;
+
+nrel_skew_lines <- rrel_key_sc_element: 
+	...
+	(*
+	<- illustration;; 
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: 
+		"file://images/nrel_skew_lines.gif";;
+		*);;
+	*);;

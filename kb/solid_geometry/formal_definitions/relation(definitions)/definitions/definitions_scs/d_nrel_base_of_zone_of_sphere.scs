@@ -1,0 +1,21 @@
+d_nrel_base_of_zone_of_sphere <- definition;;
+
+d_nrel_base_of_zone_of_sphere => nrel_main_idtf: [Опр.(основание сферического пояса*)] (*<-lang_ru;;*);;
+d_nrel_base_of_zone_of_sphere => nrel_main_idtf: [Def.(base of zone of sphere*)] (*<-lang_en;;*);;
+
+d_nrel_base_of_zone_of_sphere -> rrel_key_sc_element: nrel_base_of_zone_of_sphere;;
+
+d_nrel_base_of_zone_of_sphere <= nrel_using_constants:
+	{
+	concept_zone_of_sphere;
+	concept_sphere;
+	concept_circle;
+	nrel_cross_section
+	};;
+
+d_nrel_base_of_zone_of_sphere <= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example:
+	[Основанием сферического пояса называется окружность, которая получается в сечении сферы одной из параллельных секущих плоскостей.] (*<-lang_ru;;*);;
+	*);;

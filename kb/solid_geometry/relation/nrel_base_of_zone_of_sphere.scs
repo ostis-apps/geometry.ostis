@@ -1,0 +1,22 @@
+sc_node_norole_relation -> nrel_base_of_zone_of_sphere;;
+
+nrel_base_of_zone_of_sphere => nrel_main_idtf: [основание сферического пояса*] (*<-lang_ru;;*);;
+nrel_base_of_zone_of_sphere => nrel_main_idtf: [base of zone of sphere*] (*<-lang_en;;*);;
+
+nrel_base_of_zone_of_sphere => nrel_first_domain: concept_zone_of_sphere;;
+nrel_base_of_zone_of_sphere => nrel_second_domain: concept_circle;;
+nrel_base_of_zone_of_sphere => nrel_definitional_domain: 
+	...
+	(*
+	<= nrel_combination: 
+		{
+			concept_zone_of_sphere;
+			concept_circle
+		};;
+	*);;
+	
+nrel_base_of_zone_of_sphere <- relation;;	
+nrel_base_of_zone_of_sphere <- binary_relation;;
+nrel_base_of_zone_of_sphere <- oriented_relation;;
+nrel_base_of_zone_of_sphere <- antireflexive_relation; antisymmetric_relation; antitransitive_relation;;
+
