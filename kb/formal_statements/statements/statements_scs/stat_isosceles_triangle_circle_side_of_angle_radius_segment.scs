@@ -1,0 +1,25 @@
+stat_isosceles_triangle_circle_side_of_angle_radius_segment <- statement;;
+
+stat_isosceles_triangle_circle_side_of_angle_radius_segment
+-> rrel_key_sc_element:
+	concept_isosceles_triangle;
+	concept_circle;
+	concept_segment;
+	nrel_side_of_angle;
+	nrel_radius;;
+
+stat_isosceles_triangle_circle_side_of_angle_radius_segment
+=> nrel_main_idtf:
+	[Stat.(равнобедренный треугольник;окружность;отрезок;сторона угла*;радиус*)] (*<- lang_ru;;*);;
+
+stat_isosceles_triangle_circle_side_of_angle_radius_segment
+=> nrel_main_idtf:
+	[Утв.(isosceles triangle;circle;segment;side of angle*;radius*)] (*<- lang_en;;*);;
+
+stat_isosceles_triangle_circle_side_of_angle_radius_segment <= nrel_sc_text_translation: 
+	... 
+	(* 
+	-> rrel_example: 
+		[Радиус окружности, описанной около равнобедренного треугольника, выражается через его боковую сторону и угол alpha при основании по формуле К=(a/2Sin(alpha)).] 
+		(* <- lang_ru;; *);; 
+	*);;

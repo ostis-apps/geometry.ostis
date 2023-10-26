@@ -1,0 +1,14 @@
+statement -> stat_triangle_side_be_more_sum;;
+
+stat_triangle_side_be_more_sum -> rrel_key_sc_element: concept_triangle; nrel_side; nrel_be_more;;
+
+stat_triangle_side_be_more_sum => nrel_main_idtf: [Утв.(треугольник; сторона*; быть больше*; сумма*)] (* <- lang_ru;; *);;
+stat_triangle_side_be_more_sum => nrel_main_idtf: [Stat.(triangle; side*; be more*; sum*)] (* <- lang_en;; *);;
+
+
+stat_triangle_side_be_more_sum <= nrel_sc_text_translation: ...
+	(*
+	-> rrel_example:
+		[В любом треугольнике каждая сторона меньше суммы двух других сторон.] 
+		(* <- lang_ru;; *);;
+	*);;

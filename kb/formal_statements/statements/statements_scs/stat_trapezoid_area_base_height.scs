@@ -1,0 +1,14 @@
+statement -> stat_trapezoid_area_base_height;;
+
+stat_trapezoid_area_base_height -> rrel_key_sc_element: concept_trapezoid; nrel_area; nrel_height; nrel_base;;
+
+
+stat_trapezoid_area_base_height => nrel_main_idtf: [Утв.(трапеция; площадь*; высота*; основание*)] (* <- lang_ru;; *);;
+stat_trapezoid_area_base_height => nrel_main_idtf: [Stat.(trapezoid; area*; height*; base*)] (*<- lang_en;;*);;
+
+stat_trapezoid_area_base_height <= nrel_sc_text_translation: ...
+	(*
+	-> rrel_example:
+		[Площадь трапеции равна произведению полусуммы ее оснований на высоту.] 
+		(* <- lang_ru;; *);;
+	*);;

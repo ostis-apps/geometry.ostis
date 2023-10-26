@@ -1,0 +1,41 @@
+statement ->  stat_converse_quadrilateral_opposite_angle_vertex_circle;;
+statement -> stat_quadrilateral_opposite_angle_vertex_circle;;
+statement -> stat_reverse_converse_quadrilateral_opposite_angle_vertex_circle;;
+statement -> stat_reverse_quadrilateral_opposite_angle_vertex_circle;;
+
+stat_converse_quadrilateral_opposite_angle_vertex_circle => nrel_main_idtf: [Обр.утв.(четырёхугольник; окружность; быть вписанным*; угол)] (* <- lang_ru;; *);;
+stat_quadrilateral_opposite_angle_vertex_circle => nrel_main_idtf: [Утв.(четырёхугольник; окружность; быть вписанным*; угол)] (* <- lang_ru;; *);;
+stat_quadrilateral_opposite_angle_vertex_circle => nrel_idtf: [Условие вписанности окружности] (* <- lang_ru;; *);;
+stat_reverse_quadrilateral_opposite_angle_vertex_circle => nrel_main_idtf: [ Прот.утв.(четырёхугольник; окружность; быть вписанным*; угол)] (* <- lang_ru;; *);;
+stat_reverse_converse_quadrilateral_opposite_angle_vertex_circle => nrel_main_idtf: [Прот.обр.утв.(четырёхугольник; окружность; быть вписанным*; угол)] (* <- lang_ru;; *);;
+
+stat_converse_quadrilateral_opposite_angle_vertex_circle <= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+			[Если в четырёхугольнике сумма противоположных углов равна ста восьмидесяти градусам, то через вершины этого четырёхугольника можно провести окружность.](* <- lang_ru;; *);;
+	*);;
+
+stat_quadrilateral_opposite_angle_vertex_circle <= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+			[Если через вершины четырёхугольника можно провести окружность, то сумма противоположных углов равна ста восьмидесяти градусам.](* <- lang_ru;; *);;
+	*);;
+
+stat_reverse_converse_quadrilateral_opposite_angle_vertex_circle <= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+			[Если в четырёхугольнике сумма противоположных углов не  равна ста восьмидесяти градусам, то через вершины этого четырёхугольника нельзя провести окружность.](* <- lang_ru;; *);;
+	*);;
+
+stat_reverse_quadrilateral_opposite_angle_vertex_circle <= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+			[Если через вершины четырёхугольника нельзя провести окружность, то сумма противоположных углов не равна ста восьмидесяти градусам.](* <- lang_ru;; *);;
+	*);;
+
+stat_converse_quadrilateral_opposite_angle_vertex_circle <=> nrel_converse_theorem: stat_quadrilateral_opposite_angle_vertex_circle;;
+stat_reverse_converse_quadrilateral_opposite_angle_vertex_circle <=> nrel_converse_theorem: stat_reverse_quadrilateral_opposite_angle_vertex_circle;;
+stat_converse_quadrilateral_opposite_angle_vertex_circle <=> nrel_reverse_theorem: stat_reverse_converse_quadrilateral_opposite_angle_vertex_circle;;
+stat_quadrilateral_opposite_angle_vertex_circle <=> nrel_reverse_theorem: stat_reverse_quadrilateral_opposite_angle_vertex_circle;;
+stat_converse_quadrilateral_opposite_angle_vertex_circle <=> nrel_reverse_converse_theorem: stat_reverse_quadrilateral_opposite_angle_vertex_circle;;
+stat_quadrilateral_opposite_angle_vertex_circle <=> nrel_reverse_converse_theorem: stat_reverse_converse_quadrilateral_opposite_angle_vertex_circle;;

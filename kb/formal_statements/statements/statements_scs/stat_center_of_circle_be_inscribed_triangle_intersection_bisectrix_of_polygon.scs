@@ -1,0 +1,13 @@
+statement -> stat_center_of_circle_be_inscribed_triangle_intersection_bisectrix_of_polygon;;
+
+stat_center_of_circle_be_inscribed_triangle_intersection_bisectrix_of_polygon -> rrel_key_sc_element: concept_triangle; concept_circle; concept_geometric_point; nrel_center_of_circle; nrel_bisectrix_of_polygon;;
+
+stat_center_of_circle_be_inscribed_triangle_intersection_bisectrix_of_polygon => nrel_main_idtf: [Утв.(треугольник; центр окружности*; пересечение*; биссектриса многоугольника*)] (* <- lang_ru;; *);;
+stat_center_of_circle_be_inscribed_triangle_intersection_bisectrix_of_polygon => nrel_main_idtf: [Stat.(triangle; center_of_circle*; intersection*; bisectrix of polygon*)] (* <- lang_en;; *);;
+
+stat_center_of_circle_be_inscribed_triangle_intersection_bisectrix_of_polygon <= nrel_sc_text_translation: ...
+	(*
+	-> rrel_example:
+		[Центр окружности, вписанной в треугольник, является точкой пересечения его биссектрис.] 
+		(* <- lang_ru;; *);;
+	*);;

@@ -1,0 +1,13 @@
+statement -> stat_straight_angle_angle_measure_be_more;;
+
+stat_straight_angle_angle_measure_be_more -> rrel_key_sc_element: concept_trapezoid; nrel_area; nrel_height; nrel_base;;
+
+stat_straight_angle_angle_measure_be_more => nrel_main_idtf: [Утв.(развернутый угол; мера угла*; быть больше*)] (* <- lang_ru;; *);;
+stat_straight_angle_angle_measure_be_more => nrel_main_idtf: [Stat.(straight angle; angle measure*; be more*)] (* <- lang_en;; *);;
+
+stat_straight_angle_angle_measure_be_more <= nrel_sc_text_translation: ...
+	(*
+	-> rrel_example:
+		[Если угол не развёрнутый, то его градусная мера меньше 180°.] 
+		(* <- lang_ru;; *);;
+	*);;

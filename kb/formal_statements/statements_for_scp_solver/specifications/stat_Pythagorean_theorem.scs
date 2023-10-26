@@ -1,0 +1,25 @@
+stat_Pythagorean_theorem <- statement;;
+
+//stat_Pythagorean_theorem <- sc_statement_for_solver;;
+
+stat_Pythagorean_theorem -> rrel_key_sc_element: concept_rectangular_triangle; nrel_hypotenuse; nrel_cathetus;;
+
+stat_Pythagorean_theorem => nrel_main_idtf: [Утв.(прямоугольный треугольник;катет*;гипотенуза*)] (* <-lang_ru;; *);;
+stat_Pythagorean_theorem => nrel_main_idtf: [Stat.(rectangular triangle;hypotenuse*;cathetus*)] (* <-lang_en;; *);;
+
+stat_Pythagorean_theorem => nrel_idtf: [Теорема Пифагора] (* <-lang_ru;; *);;
+stat_Pythagorean_theorem => nrel_idtf: [Pythagorean theorem] (* <-lang_en;; *);;
+
+stat_Pythagorean_theorem <= nrel_sc_text_translation: 
+	...
+	(*
+		-> rrel_example: 
+		[В прямоугольном треугольнике квадрат длины гипотенузы равен сумме квадратов длин его катетов.](* <- lang_ru;; *);;
+	*);;
+
+stat_Pythagorean_theorem <= nrel_sc_text_translation:
+	...
+	(*
+		-> rrel_example: 
+		[The square of the hypotenuse is equal to the sum of the squares of the other two sides.](* <- lang_en;; *);;
+	*);;

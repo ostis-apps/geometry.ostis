@@ -1,0 +1,25 @@
+stat_rectangular_triangle_cathetus_median_acute_angle_opposite <- statement;;
+
+stat_rectangular_triangle_cathetus_median_acute_angle_opposite
+	-> rrel_key_sc_element: 
+	concept_rectangular_triangle;
+	nrel_cathetus;
+	nrel_median;
+	concept_acute_angle;
+	nrel_opposite;;
+
+stat_rectangular_triangle_cathetus_median_acute_angle_opposite
+	=> nrel_main_idtf:
+	[Утв.(прямоугольный треугольник;катет*;медиана*;острый угол;противолежащий*)] (*<- lang_ru;;*);;
+
+stat_rectangular_triangle_cathetus_median_acute_angle_opposite
+	=> nrel_main_idtf:
+	[Stat.(rectangular triangle;cathetus*;median*;acute angle;opposite*)] (*<- lang_en;;*);;
+
+stat_rectangular_triangle_cathetus_median_acute_angle_opposite <= nrel_sc_text_translation: 
+	... 
+	(* 
+	-> rrel_example: 
+		[Для медиан m_a и m_b, проведенных из вершин острых углов прямоугольного треугольника, справедливы равенства m_a=sqrt(4*b^2+a^2)/2, m_b=sqrt(4*a^2+b^2)/2.] 
+		(* <- lang_ru;; *);; 
+	*);;

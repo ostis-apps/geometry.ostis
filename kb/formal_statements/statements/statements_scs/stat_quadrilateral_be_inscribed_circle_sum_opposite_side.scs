@@ -1,0 +1,24 @@
+statement -> stat_quadrilateral_be_inscribed_circle_sum_opposite_side;;
+statement -> stat_converse_quadrilateral_inscribed_circle_sum_opposite_side;;
+
+stat_quadrilateral_be_inscribed_circle_sum_opposite_side => nrel_main_idtf: [Утв.(четырёхугольник; быть вписанным*; окружность; сумма*; противолежащий*; сторона*)] (* <- lang_ru;; *);;
+stat_quadrilateral_be_inscribed_circle_sum_opposite_side => nrel_main_idtf: [Stat.(quadrilateral; be inscribed*; circle; sum*; opposite*; side*)] (*<- lang_en;;*);;
+stat_converse_quadrilateral_inscribed_circle_sum_opposite_side => nrel_main_idtf: [Прот.утв.(четырёхугольник; быть вписанным*; окружность; сумма*; противолежащий*; сторона*)] (* <- lang_ru;; *);;
+stat_converse_quadrilateral_inscribed_circle_sum_opposite_side => nrel_main_idtf: [Conv.stat.(quadrilateral; be inscribed*; circle; sum*; opposite*; side*)] (*<- lang_en;;*);;
+
+
+stat_quadrilateral_be_inscribed_circle_sum_opposite_side <= nrel_sc_text_translation: ...
+	(*
+	-> rrel_example:
+		[В описанном четырёхугольнике суммы противолежащих сторон равны.] 
+		(* <- lang_ru;; *);;
+	*);;
+
+stat_converse_quadrilateral_inscribed_circle_sum_opposite_side <= nrel_sc_text_translation: ...
+	(*
+	-> rrel_example:
+		[Если в выпуклом четырёхугольнике суммы противолежащих сторон равны, то в него можно вписать окружность.] 
+		(* <- lang_ru;; *);;
+	*);;
+
+stat_quadrilateral_be_inscribed_circle_sum_opposite_side => nrel_converse_theorem: stat_converse_quadrilateral_inscribed_circle_sum_opposite_side;;

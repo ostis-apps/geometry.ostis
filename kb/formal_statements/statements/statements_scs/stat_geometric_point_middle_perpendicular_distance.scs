@@ -1,0 +1,40 @@
+statement -> stat_geometric_point_middle_perpendicular_distance;;
+statement -> stat_converse_geometric_point_middle_perpendicular_distance;;
+statement -> stat_reverse_geometric_point_middle_perpendicular_distance;;
+statement -> stat_reverse_converse_geometric_point_middle_perpendicular_distance;;
+
+stat_geometric_point_middle_perpendicular_distance => nrel_main_idtf: [Утв.(точка; перпендикуляр*; середина*; отрезок; прямая)] (* <- lang_ru;; *);;
+stat_converse_geometric_point_middle_perpendicular_distance => nrel_main_idtf: [Обр.утв.(точка; перпендикуляр*; середина*; отрезок; прямая)] (* <- lang_ru;; *);;
+ stat_reverse_geometric_point_middle_perpendicular_distance => nrel_main_idtf: [Прот.утв.(точка; перпендикуляр*; середина*; отрезок; прямая)] (* <- lang_ru;; *);;
+stat_reverse_converse_geometric_point_middle_perpendicular_distance => nrel_main_idtf: [Прот.обр.утв.(точка; перпендикуляр*; середина*; отрезок; прямая)] (* <- lang_ru;; *);;
+
+stat_geometric_point_middle_perpendicular_distance <= nrel_sc_text_translation: ...
+	(*
+	-> rrel_example:
+		[Если точка лежит на перпендикуляре, проведенном через середину отрезка, то она равноудалена от концов этого отрезка.] (* <- lang_ru;; *);;
+	*);;
+
+stat_converse_geometric_point_middle_perpendicular_distance <= nrel_sc_text_translation: ...
+	(*
+	-> rrel_example:
+		[Если какая-нибудь точка равноудалена от концов этого отрезка, то она лежит на перпендикуляре, проведенном через середину отрезка.] (* <- lang_ru;; *);;
+	*);;
+
+stat_reverse_geometric_point_middle_perpendicular_distance <= nrel_sc_text_translation: ...
+	(*
+	-> rrel_example:
+		[Если точка не лежит на перпендикуляре, проведенном через середину отрезка, то она не равноудалена от концов этого отрезка.] (* <- lang_ru;; *);;
+	*);;
+
+stat_reverse_converse_geometric_point_middle_perpendicular_distance <= nrel_sc_text_translation: ...
+	(*
+	-> rrel_example:
+		[Если какая-нибудь точка не равноудалена от концов этого отрезка, то она не лежит на перпендикуляре, проведенном через середину отрезка.] (* <- lang_ru;; *);;
+	*);;
+
+stat_geometric_point_middle_perpendicular_distance <=> nrel_converse_theorem: stat_converse_median_of_straight_triangle;;
+stat_reverse_geometric_point_middle_perpendicular_distance <=> nrel_converse_theorem: stat_reverse_converse_geometric_point_middle_perpendicular_distance;;
+stat_geometric_point_middle_perpendicular_distance <=> nrel_reverse_theorem: stat_reverse_geometric_point_middle_perpendicular_distancee;;
+stat_converse_geometric_point_middle_perpendicular_distance <=> nrel_reverse_theorem: stat_reverse_converse_geometric_point_middle_perpendicular_distance;;
+stat_geometric_point_middle_perpendicular_distance <=> nrel_reverse_converse_theorem: stat_reverse_geometric_point_middle_perpendicular_distance;;
+stat_converse_geometric_point_middle_perpendicular_distance <=> nrel_reverse_converse_theorem: stat_reverse_converse_geometric_point_middle_perpendicular_distance;;

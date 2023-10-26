@@ -1,0 +1,41 @@
+statement -> stat_round_center_chord_distance;;
+statement ->  stat_converse_round_center_chord_distance;;
+statement -> stat_reverse_round_center_chord_distance;;
+statement -> stat_reverse_converse_round_center_chord_distance;;
+
+stat_round_center_chord_distance => nrel_main_idtf: [Утв.(круг; расстояние*; хорда*; быть больше*)] (* <- lang_ru;; *);;
+stat_converse_round_center_chord_distance => nrel_main_idtf: [Обр.утв.(круг; расстояние*; хорда*; быть больше*)] (* <- lang_ru;; *);;
+stat_reverse_round_center_chord_distance => nrel_main_idtf: [Прот.утв.(круг; расстояние*; хорда*; быть больше*)] (* <- lang_ru;; *);;
+stat_reverse_converse_round_center_chord_distance => nrel_main_idtf: [Прот.обр.утв.(круг; расстояние*; хорда*; быть больше*)] (* <- lang_ru;; *);;
+
+
+stat_round_center_chord_distance <= nrel_sc_text_translation: ...
+	(*
+	-> rrel_example:
+		[В одном и том же или равных кругах большая хорда ближе к центру.](* <- lang_ru;; *);;
+	*);;
+
+ stat_converse_round_center_chord_distance <= nrel_sc_text_translation: ...
+	(*
+	-> rrel_example:
+		[В одном и том же или равных кругах, хорда, которая ближе к центру, является большей.](* <- lang_ru;; *);;
+	*);;
+
+stat_reverse_round_center_chord_distance <= nrel_sc_text_translation: ...
+	(*
+	-> rrel_example:
+		[В одном и том же или равных кругах не большая хорда не ближе к центру.](* <- lang_ru;; *);;
+	*);;
+
+stat_reverse_converse_round_center_chord_distance <= nrel_sc_text_translation: ...
+	(*
+	-> rrel_example:
+		[В одном и том же или равных кругах, хорда, которая не ближе к центру, не является большей.](* <- lang_ru;; *);;
+	*);;
+
+stat_round_center_chord_distance <=> nrel_converse_theorem:  stat_converse_round_center_chord_distance;;
+stat_reverse_round_center_chord_distance <=> nrel_converse_theorem: stat_reverse_converse_round_center_chord_distance;;
+stat_round_center_chord_distance <=> nrel_reverse_theorem: stat_reverse_round_center_chord_distance;;
+ stat_converse_round_center_chord_distance <=> nrel_reverse_theorem: stat_reverse_converse_round_center_chord_distance;;
+stat_round_center_chord_distance <=> nrel_reverse_converse_theorem: stat_reverse_round_center_chord_distance;;
+ stat_converse_round_center_chord_distance <=> nrel_reverse_converse_theorem: stat_reverse_converse_round_center_chord_distance;;

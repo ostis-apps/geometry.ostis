@@ -1,0 +1,24 @@
+stat_triangle_area_internal_angle_side <- statement;;
+
+stat_triangle_area_internal_angle_side
+-> rrel_key_sc_element:
+	concept_triangle;
+	nrel_area;
+	nrel_internal_angle;
+	nrel_side;;
+
+stat_triangle_area_internal_angle_side
+=> nrel_main_idtf:
+	[Утв.(треугольник;площадь*;внутренний угол*;сторона*)] (*<- lang_ru;;*);;
+
+stat_triangle_area_internal_angle_side
+=> nrel_main_idtf:
+	[Stat.(triangle;area*;internal angle*;side*)] (*<- lang_en;;*);;
+
+stat_triangle_area_internal_angle_side <= nrel_sc_text_translation: 
+	... 
+	(* 
+	-> rrel_example: 
+		[Площадь треугольника равна половине произведения двух любых его сторон на синус угла между ними.] 
+		(* <- lang_ru;; *);; 
+	*);;

@@ -1,0 +1,23 @@
+stat_triangle_bisectrix_side_segment <- statement;;
+
+stat_triangle_bisectrix_side_segment
+-> rrel_key_sc_element:
+	concept_triangle;
+	nrel_bisectrix;
+	concept_segment;
+	nrel_side_of_polygon;;
+
+stat_triangle_bisectrix_side_segment
+=> nrel_main_idtf:
+	[Утв.(треугольник;биссектриса*;отрезок;сторона многоугольника*)] (* <-lang_ru;; *);;
+
+stat_triangle_bisectrix_side_segment
+=> nrel_main_idtf:
+	[Stat.(triangle;bisectrix*;segment;side of polygon*)] (* <-lang_en;; *);;
+
+stat_triangle_bisectrix_side_segment <= nrel_sc_text_translation: 
+	...
+	(*
+		-> rrel_example: 
+		[Отрезки, на которые биссектриса делит сторону треугольника можно найти по формуле: пусть биссектриса АА1 делит сторону а на отрезки b1 и c1, причём b1 находится ближе к стороне b, а c1 - к стороне c. Тогда справедливы формулы: c1=(a*c)/(b+c); b1=(a*b)/(b+c).] (* <- lang_ru;; *);;
+	*);;

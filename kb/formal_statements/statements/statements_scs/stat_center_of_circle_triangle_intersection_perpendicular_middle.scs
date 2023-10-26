@@ -1,0 +1,13 @@
+statement -> stat_center_of_circle_triangle_intersection_perpendicular_middle;;
+
+stat_center_of_circle_triangle_intersection_perpendicular_middle -> rrel_key_sc_element: concept_triangle; concept_circle; nrel_center_of_circle; nrel_perpendicular; nrel_middle;;
+
+stat_center_of_circle_triangle_intersection_perpendicular_middle => nrel_main_idtf: [Утв.(треугольник; центр окружности*; пересечение*; перпендикуляр*; середина*)] (* <- lang_ru;; *);;
+stat_center_of_circle_triangle_intersection_perpendicular_middle => nrel_main_idtf: [Stat.(triangle; center of circle*; intersection*; perpendicular*; middle*)] (* <- lang_en;; *);;
+
+stat_center_of_circle_triangle_intersection_perpendicular_middle <= nrel_sc_text_translation: ...
+	(*
+	-> rrel_example:
+		[Центр окружности, описанной около треугольника, является точкой пересечения перпендикуляров к сторонам треугольника, проведенных через середины этих сторон.] 
+		(* <- lang_ru;; *);;
+	*);;

@@ -1,0 +1,13 @@
+statement -> stat_trapezoid_center_line_parallelism_base;;
+
+stat_trapezoid_center_line_parallelism_base -> rrel_key_sc_element: concept_trapezoid; nrel_center_line; nrel_parallelism; nrel_base;;
+
+stat_trapezoid_center_line_parallelism_base => nrel_main_idtf: [Утв.(трапеция; средняя линия*; параллельность*; основание*)] (* <- lang_ru;; *);;
+stat_trapezoid_center_line_parallelism_base => nrel_main_idtf: [Stat.(trapezoid; center line*; parallelism*; base*)] (* <- lang_en;; *);;
+
+stat_trapezoid_center_line_parallelism_base <= nrel_sc_text_translation: ...
+	(*
+	-> rrel_example:
+		[Средняя линия трапеции параллельна основаниям и равна их полусумме.] 
+		(* <- lang_ru;; *);;
+	*);;

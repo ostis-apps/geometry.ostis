@@ -1,0 +1,13 @@
+statement -> stat_convex_polygon_internal_angle_angle_measure_sum;;
+
+stat_convex_polygon_internal_angle_angle_measure_sum -> rrel_key_sc_element: concept_convex_polygon; nrel_internal_angle; nrel_angle_measure;;
+
+stat_convex_polygon_internal_angle_angle_measure_sum => nrel_main_idtf: [Утв.(выпуклый многоугольник; внутренний угол*; мера угла*)] (* <- lang_ru;; *);;
+stat_convex_polygon_internal_angle_angle_measure_sum => nrel_main_idtf: [Stat.(convex polygon; internal angle*; angle measure*)] (* <- lang_en;; *);;
+
+stat_convex_polygon_internal_angle_angle_measure_sum <= nrel_sc_text_translation: ...
+	(*
+	-> rrel_example:
+		[Сумма углов выпуклого n-угольника равна 180° * (n -2).] 
+		(* <- lang_ru;; *);;
+	*);;
