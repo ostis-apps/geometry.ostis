@@ -1,0 +1,22 @@
+d_nrel_height_of_pyramid <- definition;;
+
+d_nrel_height_of_pyramid => nrel_main_idtf: [Опр.(высота пирамиды*)] (*<-lang_ru;;*);;
+d_nrel_height_of_pyramid => nrel_main_idtf: [Def.(height of pyramid*)] (*<-lang_en;;*);;
+
+d_nrel_height_of_pyramid -> rrel_key_sc_element: nrel_height_of_pyramid;;
+
+d_nrel_height_of_pyramid <= nrel_using_constants:
+	{
+		concept_pyramid;
+		nrel_perpendicular;
+		nrel_length;
+		concept_plane;
+		nrel_base_of_pyramid
+	};;
+
+d_nrel_height_of_pyramid <= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example:
+		[Высотой пирамиды называется перпендикуляр, проведенный из вершины пирамиды к плоскости ее основания.] (*<-lang_ru;;*);;
+	*);;

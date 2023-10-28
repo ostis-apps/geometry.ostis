@@ -1,0 +1,23 @@
+sc_node_not_relation -> concept_right_angle;;
+
+concept_right_angle => nrel_main_idtf:
+	[прямой угол] (* <- lang_ru;; *);
+	[right angle] (* <- lang_en;; *);;
+
+concept_right_angle => nrel_idtf: [Класс прямых углов] (* <- lang_ru;; *);;
+concept_right_angle => nrel_idtf: [Понятие прямого угла] (* <- lang_ru;; *);;
+concept_right_angle => nrel_idtf: [Множество всевозможных прямых углов] (* <- lang_ru;; *);;
+concept_right_angle => nrel_idtf: [Множество знаков прямых углов] (* <- lang_ru;; *);;
+
+concept_right_angle <- rrel_key_sc_element: 
+	...
+	(*
+	<- illustration;; 
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: 
+		"file://images/concept_right_angle.png";;
+		*);;
+	*);;
+
+concept_right_angle -> rrel_example: struct_Right_Angle_P_T_R;;

@@ -1,0 +1,26 @@
+sc_node_norole_relation -> nrel_codirectional_rays;;
+
+nrel_codirectional_rays => nrel_main_idtf:
+	[сонаправленные лучи*]
+	(* <- lang_ru;; *);
+	[codirectional rays*]
+	(* <- lang_en;; *);;
+
+nrel_codirectional_rays => nrel_idtf: [быть сонаправленными лучами*] (* <- lang_ru;; *);;
+
+nrel_codirectional_rays => nrel_definitional_domain: 
+	concept_ray;;
+
+nrel_codirectional_rays => nrel_first_domain: 
+	concept_ray;;
+
+nrel_codirectional_rays => nrel_second_domain: 
+	concept_ray;;
+
+nrel_codirectional_rays <- relation;;
+nrel_codirectional_rays <- binary_relation;;
+nrel_codirectional_rays <- non_oriented_relation;;
+nrel_codirectional_rays <- reflexive_relation;;
+nrel_codirectional_rays <- symmetric_relation;;
+nrel_codirectional_rays <- transitive_relation;;
+

@@ -1,0 +1,22 @@
+d_nrel_additional_rays
+=> nrel_main_idtf: [Опр.(дополнительные лучи*)]	(* <- lang_ru;; *);
+=> nrel_main_idtf: [Def.(additional rays*)] (*<- lang_en;;*);
+<- definition;
+-> rrel_key_sc_element: nrel_additional_rays;
+
+<= nrel_using_constants:
+	{
+    concept_ray;
+	concept_straight_line;
+	concept_geometric_point; 
+	nrel_boundary_point
+	};
+
+<= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[Дополнительные лучи - это два различных луча, лежащих на одной прямой и имеющих общую граничную точку.] 
+		(* <- lang_ru;; *);;
+	*);;
+

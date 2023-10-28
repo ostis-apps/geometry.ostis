@@ -1,0 +1,15 @@
+stat_triangle_internal_angle_angle_measure_sum <- statement;;
+
+//stat_triangle_internal_angle_angle_measure_sum <- sc_statement_for_solver;;
+
+stat_triangle_internal_angle_angle_measure_sum -> rrel_key_sc_element: concept_triangle; nrel_internal_angle; nrel_angle_measure;;
+
+stat_triangle_internal_angle_angle_measure_sum => nrel_main_idtf: [Утв.(треугольник; внутренний угол*; мера угла*)] (* <-lang_ru;; *);;
+stat_triangle_internal_angle_angle_measure_sum => nrel_main_idtf: [Stat.(triangle; internal angle*; angle measure*)] (* <-lang_en;; *);;
+
+stat_triangle_internal_angle_angle_measure_sum <= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+		[Сумма внутренних углов треугольника равна 180°.] (* <- lang_ru;; *);;
+		*);;

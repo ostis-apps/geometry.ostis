@@ -1,0 +1,360 @@
+
+..el_94166254101760
+ => nrel_main_idtf: [Angle(B)];;
+
+..el_94166254154512
+ => nrel_main_idtf: [Angle(C)];;
+
+..el_94166253694800
+ => nrel_main_idtf: [Segment(B;C)];;
+
+..el_94166254027296
+ => nrel_main_idtf: [Segment(B;C)];;
+
+..el_94166253711760
+ => nrel_main_idtf: [Triangle(A;B;C)];;
+
+..el_94166254010464
+ => nrel_main_idtf: [Angle(A)];;
+
+..el_94166253783488
+ => nrel_main_idtf: [Triangle(A;B;C)];;
+
+..el_94166254084512
+ => nrel_main_idtf: [Angle(B)];;
+
+..el_94166253677808
+ => nrel_main_idtf: [Angle(A)];;
+
+..el_94166254450656
+ => nrel_main_idtf: [Triangle(A;B;C)];;
+
+..el_94166254344000
+ => nrel_main_idtf: [Triangle(A;B;C)];;
+nrel_congruence
+  <- sc_node_norole_relation;;
+
+..el_94166254101760
+  <- sc_node;;
+
+..el_94166254154512
+  <- sc_node;;
+
+concept_angle
+  <- sc_node_class;;
+
+concept_segment
+  <- sc_node_class;;
+
+..el_94166253694800
+  <- sc_node;;
+
+rrel_degree
+  <- sc_node_role_relation;;
+
+decimal_numeral_system
+  <- sc_node_class;;
+
+concept_isosceles_triangle
+  <- sc_node_class;;
+
+..el_94166254027296
+  <- sc_node;;
+
+nrel_idtf
+  <- sc_node_norole_relation;;
+
+..el_94166253728960
+  <- sc_node;;
+
+value
+  <- sc_node_class;;
+
+nrel_angle_measure
+  <- sc_node_norole_relation;;
+
+..el_94166253711760
+  <- sc_node;;
+
+nrel_adjacent
+  <- sc_node_norole_relation;;
+
+..el_94166254010464
+  <- sc_node;;
+
+nrel_internal_angle
+  <- sc_node_norole_relation;;
+
+..el_94166253956080
+  <- sc_node;;
+
+number
+  <- sc_node_class;;
+
+nrel_angle_measure
+  <- sc_node_norole_relation;;
+
+x
+  <- sc_node;;
+
+concept_angle
+  <- sc_node_class;;
+
+concept_angle
+  <- sc_node_class;;
+
+value
+  <- sc_node_class;;
+
+nrel_base
+  <- sc_node_norole_relation;;
+
+..el_94166253783488
+  <- sc_node;;
+
+..el_94166254084512
+  <- sc_node;;
+
+..el_94166253782640
+  <- sc_node;;
+
+nrel_value
+  <- sc_node_norole_relation;;
+
+@link_94166254062432 = ["float:40"];;
+
+rrel_degree
+  <- sc_node_role_relation;;
+
+nrel_idtf
+  <- sc_node_norole_relation;;
+
+@link_94166253656368 = ["float:100"];;
+
+decimal_numeral_system
+  <- sc_node_class;;
+
+nrel_value
+  <- sc_node_norole_relation;;
+
+value
+  <- sc_node_class;;
+
+..el_94166253574544
+  <- sc_node;;
+
+nrel_angle_measure
+  <- sc_node_norole_relation;;
+
+concept_angle
+  <- sc_node_class;;
+
+x
+  <- sc_node;;
+
+number
+  <- sc_node_class;;
+
+..el_94166253590576
+  <- sc_node;;
+
+..el_94166253677808
+  <- sc_node;;
+
+nrel_decomposition_of_action
+  <- sc_node_norole_relation;;
+
+stat_triangle_internal_angle_angle_measure_sum
+  <- sc_node;;
+
+rrel_2
+  <- sc_node_role_relation;;
+
+nrel_result
+  <- sc_node_norole_relation;;
+
+rrel_1
+  <- sc_node_role_relation;;
+
+action
+  <- sc_node_class;;
+
+..el_94166254524576
+  <- sc_node;;
+
+ariphmetic_action
+  <- sc_node_class;;
+
+task_find_angle_measure_isosceles_triangle
+  <- sc_node;;
+
+..el_94166254487088
+  <- sc_node;;
+
+nrel_sc_text_translation
+  <- sc_node_norole_relation;;
+
+..el_94166254450656
+  <- sc_node;;
+
+rrel_1
+  <- sc_node_role_relation;;
+
+ariphmetic_action
+  <- sc_node_class;;
+
+action
+  <- sc_node_class;;
+
+stat_isosceles_triangle_congruence_angle_base
+  <- sc_node;;
+
+rrel_2
+  <- sc_node_role_relation;;
+
+..el_94166254344000
+  <- sc_node;;
+
+rrel_1
+  <- sc_node_role_relation;;
+
+nrel_result
+  <- sc_node_norole_relation;;
+
+nrel_context_of_action
+  <- sc_node_norole_relation;;
+
+rrel_1
+  <- sc_node_role_relation;;
+
+nrel_sequence_of_actions
+  <- sc_node_norole_relation;;
+
+..el_94166254254240
+  <- sc_node;;
+
+rrel_example
+  <- sc_node_role_relation;;
+
+lang_ru
+  <- sc_node_class;;
+
+action_finding_value_task
+  <- sc_node_class;;
+
+action
+  <- sc_node_class;;
+
+@link_94166254177744 = [Угол B равен Углу C.];;
+
+@link_94166254173712 = [Мера Угла А равна 100 градусам.];;
+
+..el_94166254172784
+  <- sc_node_tuple;;
+
+..el_94166254171936
+  <- sc_node;;
+
+
+
+..el_94166254717120
+ => nrel_main_idtf: [..el_94166254717120];;
+..el_94166254717120 = [*
+    @edge_94166254669472 = (..el_94166254154512 <=> ..el_94166254101760);;
+    @edge_94166254670384 = (nrel_congruence -> @edge_94166254669472);;
+    @edge_94166254672464 = (concept_angle -> ..el_94166254154512);;
+    @edge_94166254671424 = (concept_angle -> ..el_94166254101760);;
+
+*];;
+
+
+..el_94166248681152
+ => nrel_main_idtf: [..el_94166248681152];;
+..el_94166248681152 = [*
+    @edge_94166254643056 = (task_find_angle_measure_isosceles_triangle -> x);;
+    @edge_94166254650864 = (..el_94166253783488 => ..el_94166253694800);;
+    @edge_94166254643968 = (..el_94166253711760 => ..el_94166254010464);;
+    @edge_94166254649760 = (..el_94166254027296 <=> ..el_94166254084512);;
+    @edge_94166254646832 = (..el_94166253711760 => ..el_94166254084512);;
+    @edge_94166254644880 = (..el_94166254010464 => x);;
+    @edge_94166254645856 = (..el_94166253728960 => @link_94166254062432);;
+    @edge_94166254647808 = (..el_94166253782640 => ..el_94166253956080);;
+    @edge_94166254648784 = (..el_94166254084512 => ..el_94166253956080);;
+    @edge_94166254660624 = (nrel_idtf -> @edge_94166254645856);;
+    @edge_94166254663552 = (nrel_angle_measure -> @edge_94166254644880);;
+    @edge_94166254666544 = (value -> ..el_94166253956080);;
+    @edge_94166254661600 = (nrel_base -> @edge_94166254650864);;
+    @edge_94166254664528 = (nrel_internal_angle -> @edge_94166254643968);;
+    @edge_94166254668496 = (nrel_internal_angle -> @edge_94166254646832);;
+    @edge_94166254651776 = (..el_94166253782640 -> ..el_94166253728960);;
+    @edge_94166254652816 = (value -> x);;
+    @edge_94166254653792 = (number -> ..el_94166253728960);;
+    @edge_94166254656720 = (nrel_angle_measure -> @edge_94166254648784);;
+    @edge_94166254654768 = (concept_angle -> ..el_94166254084512);;
+    @edge_94166254655744 = (nrel_adjacent -> @edge_94166254649760);;
+    @edge_94166254657696 = (nrel_value -> @edge_94166254647808);;
+    @edge_94166254659648 = (concept_segment -> ..el_94166253694800);;
+    @edge_94166254658672 = (concept_angle -> ..el_94166254010464);;
+    @edge_94166254662576 = (concept_isosceles_triangle -> ..el_94166253783488);;
+    @edge_94166254665568 = (decimal_numeral_system -> @link_94166254062432);;
+    @edge_94166254667520 = (rrel_degree -> @edge_94166254651776);;
+
+*];;
+
+
+..el_94166246766576
+ => nrel_main_idtf: [..el_94166246766576];;
+..el_94166246766576 = [*
+    @edge_94166248503696 = (..el_94166253574544 => @link_94166253656368);;
+    @edge_94166254179520 = (..el_94166253677808 => x);;
+    @edge_94166248503456 = (..el_94166253590576 => x);;
+    @edge_94166247842144 = (decimal_numeral_system -> @link_94166253656368);;
+    @edge_94166254637200 = (nrel_value -> @edge_94166248503456);;
+    @edge_94166254638176 = (concept_angle -> ..el_94166253677808);;
+    @edge_94166254639152 = (number -> ..el_94166253574544);;
+    @edge_94166254640128 = (nrel_angle_measure -> @edge_94166254179520);;
+    @edge_94166254641104 = (..el_94166253590576 -> ..el_94166253574544);;
+    @edge_94166248628352 = (nrel_idtf -> @edge_94166248503696);;
+    @edge_94166248627856 = (value -> x);;
+    @edge_94166248503216 = (rrel_degree -> @edge_94166254641104);;
+
+*];;
+
+@edge_94166254642080 = (rrel_1 -> @edge_94166254643056);;
+@edge_94166254706800 = (..el_94166254171936 -> @link_94166254173712);;
+@edge_94166254705824 = (lang_ru -> @link_94166254173712);;
+@edge_94166254701920 = (lang_ru -> @link_94166254177744);;
+@edge_94166254700944 = (..el_94166254524576 -> ..el_94166254344000);;
+@edge_94166254698016 = (..el_94166254487088 -> ..el_94166254450656);;
+@edge_94166254697040 = (ariphmetic_action -> ..el_94166254487088);;
+@edge_94166254696064 = (action -> task_find_angle_measure_isosceles_triangle);;
+@edge_94166254694112 = (action -> ..el_94166254524576);;
+@edge_94166254693136 = (action_finding_value_task -> task_find_angle_measure_isosceles_triangle);;
+@edge_94166254692160 = (ariphmetic_action -> ..el_94166254524576);;
+@edge_94166254691184 = (rrel_1 -> @edge_94166254700944);;
+@edge_94166254690208 = (action -> ..el_94166254487088);;
+@edge_94166254689232 = (..el_94166254487088 -> stat_triangle_internal_angle_angle_measure_sum);;
+@edge_94166254688256 = (..el_94166254524576 -> stat_isosceles_triangle_congruence_angle_base);;
+@edge_94166254687280 = (..el_94166254172784 -> ..el_94166254524576);;
+@edge_94166254686304 = (rrel_1 -> @edge_94166254687280);;
+@edge_94166254685328 = (..el_94166254172784 -> ..el_94166254487088);;
+@edge_94166254682400 = (rrel_example -> @edge_94166254706800);;
+@edge_94166254430624 = (..el_94166254254240 -> @link_94166254177744);;
+@edge_94166254679360 = (..el_94166254171936 => ..el_94166246766576);;
+@edge_94166254678384 = (..el_94166254487088 => ..el_94166246766576);;
+@edge_94166254677408 = (..el_94166254254240 => ..el_94166254717120);;
+@edge_94166254676432 = (..el_94166254524576 => ..el_94166254717120);;
+@edge_94166254675520 = (task_find_angle_measure_isosceles_triangle => ..el_94166248681152);;
+@edge_94166254674416 = (..el_94166254524576 => ..el_94166254487088);;
+@edge_94166254673504 = (..el_94166254172784 => task_find_angle_measure_isosceles_triangle);;
+@edge_94166254709728 = (nrel_result -> @edge_94166254678384);;
+@edge_94166254708752 = (nrel_result -> @edge_94166254676432);;
+@edge_94166254707776 = (nrel_context_of_action -> @edge_94166254675520);;
+@edge_94166254704848 = (rrel_example -> @edge_94166254430624);;
+@edge_94166254703872 = (rrel_1 -> @edge_94166254698016);;
+@edge_94166254702896 = (nrel_sequence_of_actions -> @edge_94166254674416);;
+@edge_94166254699968 = (rrel_2 -> @edge_94166254688256);;
+@edge_94166254698992 = (rrel_2 -> @edge_94166254689232);;
+@edge_94166254695088 = (nrel_decomposition_of_action -> @edge_94166254673504);;
+@edge_94166254684352 = (nrel_sc_text_translation -> @edge_94166254677408);;
+@edge_94166254683376 = (nrel_sc_text_translation -> @edge_94166254679360);;

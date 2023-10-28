@@ -1,0 +1,24 @@
+sc_node_norole_relation -> nrel_axial_section_of_solid_of_revolution;;
+
+nrel_axial_section_of_solid_of_revolution => nrel_main_idtf: [осевое сечение тела вращения*] (*<-lang_ru;;*);;
+nrel_axial_section_of_solid_of_revolution => nrel_main_idtf: [axial section of solid of revolution*] (*<-lang_en;;*);;
+
+nrel_axial_section_of_solid_of_revolution <= nrel_strict_inclusion: nrel_cross_section;;
+
+nrel_axial_section_of_solid_of_revolution => nrel_first_domain: concept_solid_of_revolution;;
+nrel_axial_section_of_solid_of_revolution => nrel_second_domain: concept_plane;;
+nrel_axial_section_of_solid_of_revolution => nrel_third_domain: concept_flat_geometric_figure;;
+nrel_axial_section_of_solid_of_revolution => nrel_definitional_domain:
+	...
+	(*
+	<= nrel_combination: 
+		{
+			concept_solid_of_revolution;
+			concept_flat_geometric_figure;
+			concept_plane
+		};;
+	*);;
+	
+nrel_axial_section_of_solid_of_revolution <- relation;;	
+nrel_axial_section_of_solid_of_revolution <- ternary_relation;;
+

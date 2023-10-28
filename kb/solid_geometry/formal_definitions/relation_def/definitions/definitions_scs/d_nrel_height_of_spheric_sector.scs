@@ -1,0 +1,19 @@
+d_nrel_height_of_spheric_sector <- definition;;
+
+d_nrel_height_of_spheric_sector => nrel_main_idtf: [Опр.(высота шарового сектора*)] (*<-lang_ru;;*);;
+d_nrel_height_of_spheric_sector => nrel_main_idtf: [Def.(height of spheric sector*)] (*<-lang_en;;*);;
+
+d_nrel_height_of_spheric_sector -> rrel_key_sc_element: nrel_height_of_spheric_sector;;
+
+d_nrel_height_of_spheric_sector <= nrel_using_constants:
+	{
+	concept_spheric_sector;
+	concept_sphere
+	};;
+
+d_nrel_height_of_spheric_sector <= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+	[Высота шарового сектора называется высота части его сферической поверхности.] (*<-lang_ru;;*);;
+	*);;

@@ -1,0 +1,44 @@
+statement -> stat_straight_line_intersection_internal_cross_lying_angles;;
+statement -> stat_converse_straight_line_intersection_internal_cross_lying_angles;;
+statement -> stat_reverse_straight_line_intersection_internal_cross_lying_angles;;
+statement -> stat_reverse_converce_straight_line_intersection_internal_cross_lying_angles;;
+
+stat_straight_line_intersection_internal_cross_lying_angles => nrel_main_idtf: [Утв.(прямая; параллельность*; угол; накрестлежащий*)] (* <- lang_ru;; *);;
+stat_converse_straight_line_intersection_internal_cross_lying_angles => nrel_main_idtf: [Обр.утв.(прямая; параллельность*; угол; накрестлежащий*)] (* <- lang_ru;; *);;
+stat_reverse_straight_line_intersection_internal_cross_lying_angles => nrel_main_idtf: [Прот.утв.(прямая; параллельность*; угол; накрестлежащий*)] (* <- lang_ru;; *);;
+stat_reverse_converce_straight_line_intersection_internal_cross_lying_angles => nrel_main_idtf: [Прот.обр.утв.(прямая; параллельность*; угол; накрестлежащий*)] (* <- lang_ru;; *);;
+
+
+stat_straight_line_intersection_internal_cross_lying_angles <= nrel_sc_text_translation: ...
+	(*
+	-> rrel_example:
+		[Если две параллельные прямые пересечены третьей, то внутренние накрест лежащие углы равны.] (* <- lang_ru;; *);;
+	*);;
+
+stat_converse_straight_line_intersection_internal_cross_lying_angles <= nrel_sc_text_translation: ...
+	(*
+	-> rrel_example:
+		[Если две прямые пересечены третьей, и внутренние накрест лежащие углы равны, то эти прямые параллельны.] (* <- lang_ru;; *);;
+	*);;
+
+stat_reverse_straight_line_intersection_internal_cross_lying_angles <= nrel_sc_text_translation: ...
+	(*
+	-> rrel_example:
+		[Если две не параллельные  прямые пересечены третьей, то внутренние накрест лежащие углы не равны.] (* <- lang_ru;; *);;
+	*);;
+
+stat_reverse_converce_straight_line_intersection_internal_cross_lying_angles <= nrel_sc_text_translation: ...
+	(*
+	-> rrel_example:
+		[Если две прямые пересечены третьей, и внутренние накрест лежащие углы не равны, то эти прямые не параллельны.] (* <- lang_ru;; *);;
+	*);;
+
+stat_straight_line_intersection_internal_cross_lying_angles  <=> nrel_converse_theorem: stat_converse_straight_line_intersection_internal_cross_lying_angles;;
+stat_reverse_straight_line_intersection_internal_cross_lying_angles  <=> nrel_converse_theorem: stat_reverse_converce_straight_line_intersection_internal_cross_lying_angles;;
+stat_straight_line_intersection_internal_cross_lying_angles  <=> nrel_reverse_theorem: stat_reverse_straight_line_intersection_internal_cross_lying_angles ;;
+stat_converse_straight_line_intersection_internal_cross_lying_angles <=> nrel_reverse_theorem: stat_reverse_converce_straight_line_intersection_internal_cross_lying_angles;;
+stat_straight_line_intersection_internal_cross_lying_angles  <=> nrel_reverse_converse_theorem: stat_reverse_converce_straight_line_intersection_internal_cross_lying_angles;;
+stat_converse_straight_line_intersection_internal_cross_lying_angles <=> nrel_reverse_converse_theorem: stat_reverse_straight_line_intersection_internal_cross_lying_angles ;;
+
+stat_converse_straight_line_intersection_internal_cross_lying_angles => nrel_particular_theorem: stat_internal_cross_lying_angles_straight_line_parallelism;;
+stat_straight_line_intersection_internal_cross_lying_angles => nrel_particular_theorem: stat_converse_internal_cross_lying_angles_straight_line_parallelism;;

@@ -1,0 +1,29 @@
+s_sd_geometric_figures
+=> nrel_main_idtf:
+	[Раздел. Предметная область геометрических фигур]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Section. Subject domain of geometric figures]
+	(* <- lang_en;; *);
+
+<- atomic_section;
+
+<= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+		"file://htmls/s_sd_geometric_figures_ru.html"
+		(* <- lang_ru;; *);;
+	*);
+
+=> nrel_summary:
+	...
+	(*
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[В данном разделе описывается, что такое геометрическая фигура, а также представлена классификация геометрических фигур]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;

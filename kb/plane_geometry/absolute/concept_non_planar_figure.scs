@@ -1,0 +1,12 @@
+sc_node_not_relation -> concept_non_planar_figure;;
+
+concept_non_planar_figure => nrel_main_idtf:
+	[непланарная геометрическая фигура](* <- lang_ru;; *);
+	[non planar geometric figure](* <- lang_en;; *);;
+
+concept_non_planar_figure => nrel_idtf: [фигура, не лежащая в плоскости] (* <- lang_ru;; *);;
+concept_non_planar_figure => nrel_idtf: [Класс непланарных фигур] (* <- lang_ru;; *);;
+concept_non_planar_figure => nrel_idtf: [Множество всевозможных непланарных фигур] (* <- lang_ru;; *);;
+concept_non_planar_figure => nrel_idtf: [Множество знаков всевозможных непланарных фигур] (* <- lang_ru;; *);;
+
+concept_non_planar_figure => nrel_strict_inclusion: concept_geometric_body;;

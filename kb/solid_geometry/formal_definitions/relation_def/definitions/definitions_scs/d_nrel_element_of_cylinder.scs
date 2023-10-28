@@ -1,0 +1,22 @@
+d_nrel_element_of_cylinder <- definition;;
+
+d_nrel_element_of_cylinder => nrel_main_idtf: [Опр.(образующая цилиндра*)] (*<-lang_ru;;*);;
+d_nrel_element_of_cylinder => nrel_main_idtf: [Def.(element of cylinder*)] (*<-lang_en;;*);;
+
+d_nrel_element_of_cylinder -> rrel_key_sc_element: nrel_element_of_cylinder;;
+
+d_nrel_element_of_cylinder <= nrel_using_constants:
+	{
+		concept_cylinder;
+		concept_segment;
+		nrel_generatrix_of_cylindrical_surface;
+		concept_plane;
+		nrel_base_of_cylinder		
+	};;
+
+d_nrel_element_of_cylinder <= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+	[Образующая цилиндра – отрезок образующей цилиндрической поверхности, расположенный между параллельными плоскостями, на которых расположены основания цилиндра.] (*<-lang_ru;;*);;
+	*);;

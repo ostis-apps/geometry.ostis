@@ -1,0 +1,22 @@
+d_nrel_center_of_circle 
+=> nrel_main_idtf:[Опр.(центр окружности*)](* <- lang_ru;; *);
+=> nrel_main_idtf: [Def.(center of circle*)] (*<- lang_en;;*);
+<- definition;
+-> rrel_key_sc_element: nrel_center_of_circle;
+
+<= nrel_using_constants:
+	{
+	concept_geometric_point; 
+	concept_circle; 
+	nrel_distance
+	};
+
+<= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[Центр окружности - точка, от которой любые точки, принадлежащие окружности, удалены на равные расстояния.]
+		(* <- lang_ru;; *);;
+	*);;
+	
+

@@ -1,0 +1,46 @@
+sc_node_norole_relation -> nrel_bisectrix;;
+
+nrel_bisectrix => nrel_main_idtf:
+	[биссектриса*]
+	(* <- lang_ru;; *);
+	[bisectrix*]
+	(* <- lang_en;; *);;
+
+nrel_bisectrix => nrel_idtf: [быть биссектрисой*]
+	(* <- lang_ru;; *);;
+
+nrel_bisectrix => nrel_definitional_domain: 
+	...
+	(*
+	<= nrel_combination: 
+		{	 
+		concept_planar_angle;
+		concept_triangle;
+		concept_ray
+		};;
+	*);;
+	
+
+nrel_bisectrix => nrel_first_domain: 
+	...
+	(*
+	<= nrel_combination: 
+		{	 
+		concept_planar_angle;
+		concept_triangle
+		};;
+	*);;
+
+nrel_bisectrix => nrel_second_domain: 
+	concept_ray;;
+
+
+nrel_bisectrix <- relation;;
+nrel_bisectrix <- binary_relation;;
+nrel_bisectrix <- oriented_relation;;
+nrel_bisectrix <- antireflexive_relation;;
+nrel_bisectrix <- antisymmetric_relation;;
+nrel_bisectrix <- antitransitive_relation;;
+
+
+

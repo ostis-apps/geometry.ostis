@@ -1,0 +1,49 @@
+sc_node_norole_relation -> nrel_height_of_geometric_body;;
+
+nrel_height_of_geometric_body => nrel_main_idtf: [высота геометрического тела*] (*<-lang_ru;;*);;
+nrel_height_of_geometric_body => nrel_main_idtf: [height of geometric body*] (*<-lang_en;;*);;
+
+nrel_height_of_geometric_body <= nrel_combination:
+{
+	nrel_height_of_convex_polyhedron;
+	nrel_height_of_solid_of_revolution
+};;
+
+nrel_height_of_geometric_body => nrel_first_domain:
+	...
+	(*
+	<= nrel_combination: 
+		{
+			concept_convex_polyhedron;
+			concept_cylinder;
+			concept_cone;
+			concept_truncated_cone;
+			concept_segment_of_ball;
+			concept_zone_of_sphere;
+			concept_spherical_layer;
+			concept_spheric_sector
+		};;
+	*);;
+nrel_height_of_geometric_body => nrel_second_domain: concept_segment;;
+
+nrel_height_of_geometric_body => nrel_definitional_domain:
+	...
+	(*
+	<= nrel_combination: 
+		{
+			concept_convex_polyhedron;
+			concept_cylinder;
+			concept_cone;
+			concept_truncated_cone;
+			concept_segment_of_ball;
+			concept_zone_of_sphere;
+			concept_spherical_layer;
+			concept_spheric_sector;
+			concept_segment
+		};;
+	*);;
+	
+nrel_height_of_geometric_body <- relation;;	
+nrel_height_of_geometric_body <- binary_relation;;
+nrel_height_of_geometric_body <- oriented_relation;;
+nrel_height_of_geometric_body <- antireflexive_relation; antisymmetric_relation; antitransitive_relation;;

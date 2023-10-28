@@ -1,0 +1,43 @@
+sc_node_struct -> subject_domain_of_polygons;;
+
+subject_domain_of_polygons
+=> nrel_main_idtf:
+	[Предметная область многоугольников]
+	(* <- lang_ru;; *);
+	[Subject domain of polygons]
+	(* <- lang_en;; *);;
+	
+subject_domain_of_polygons => nrel_private_subject_domain: subject_domain_of_triangles;;
+subject_domain_of_polygons => nrel_private_subject_domain: subject_domain_of_quadrilaterals;;
+	
+subject_domain_of_polygons -> rrel_maximum_studied_object_class: concept_polygon;;
+
+subject_domain_of_polygons -> rrel_not_maximum_studied_object_class: 
+	concept_convex_polygon;
+	concept_regular_polygon;
+	concept_regular_hexagon;
+	concept_regular_pentagon;
+	concept_non_convex_polygon;
+	concept_pentagon;
+	concept_hexagon;;
+
+subject_domain_of_polygons -> rrel_explored_relation:
+	nrel_area;
+	nrel_bound;
+	nrel_be_inscribed;
+	nrel_congruence;
+	nrel_equal_sized;
+	nrel_perimeter;
+	nrel_side;
+	nrel_diagonal;
+	nrel_coefficient_of_similarity;
+	nrel_height;
+	nrel_internal_angle;
+	nrel_external_angle;
+	nrel_side_of_polygon;
+	nrel_similarity;
+	nrel_vertex_of_polygon;;
+	
+subject_domain_of_rounds_and_circles -> rrel_example: 
+struct_Polygon_K_L_M_N_E_P;;
+subject_domain_of_polygons <- subject_domain;;

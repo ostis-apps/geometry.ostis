@@ -1,0 +1,21 @@
+d_concept_acute_angled_triangle <- definition;;
+
+d_concept_acute_angled_triangle => nrel_main_idtf: [Опр.(остроугольный треугольник)] (* <- lang_ru;; *);;
+d_concept_acute_angled_triangle => nrel_main_idtf: [Def.(acute triangle)] (* <- lang_en;; *);;
+
+d_concept_acute_angled_triangle -> rrel_key_sc_element: concept_acute_angled_triangle;;
+
+d_concept_acute_angled_triangle <= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[Остроугольный треугольник – это треугольник, все внутренние углы которого являются острыми углами.]
+		(* <- lang_ru;; *);;
+	*);;
+
+d_concept_acute_angled_triangle <= nrel_using_constants:
+	{
+	concept_angle; 
+	concept_triangle; 
+	concept_acute_angle
+	};;

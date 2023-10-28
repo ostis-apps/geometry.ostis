@@ -1,0 +1,22 @@
+d_nrel_height_of_prism <- definition;;
+
+d_nrel_height_of_prism => nrel_main_idtf: [Опр.(высота призмы*)] (*<-lang_ru;;*);;
+d_nrel_height_of_prism => nrel_main_idtf: [Def.(height of prism*)] (*<-lang_en;;*);;
+
+d_nrel_height_of_prism -> rrel_key_sc_element: nrel_height_of_prism;;
+
+d_nrel_height_of_prism <= nrel_using_constants:
+	{
+		concept_prism;
+		nrel_perpendicular;
+		concept_geometric_point;
+		concept_plane;
+		nrel_base_of_prism
+	};;
+
+d_nrel_height_of_prism <= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example:
+		[Высотой призмы называется перпендикуляр, проведенный из какой-нибудь точки плоскости одного основания к плоскости другого основания.] (*<-lang_ru;;*);;
+	*);;

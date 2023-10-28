@@ -1,0 +1,19 @@
+d_nrel_perimeter 
+=> nrel_main_idtf: [Опр.(периметр*)]	(* <- lang_ru;; *);
+=> nrel_main_idtf: [Def.(perimeter*)] (*<- lang_en;;*);
+<- definition;
+-> rrel_key_sc_element: nrel_perimeter;
+
+<= nrel_using_constants:
+	{
+		nrel_length; 
+		nrel_side_of_polygon
+	};
+
+<= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[Периметр - сумма длин всех сторон многоугольника.] (* <- lang_ru;; *);;
+	*);;
+

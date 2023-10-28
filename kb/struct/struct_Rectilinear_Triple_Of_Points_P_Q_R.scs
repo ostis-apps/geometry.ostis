@@ -1,0 +1,49 @@
+sc_node_struct -> struct_Rectilinear_triple_Of_Points_P_Q_R;;
+
+struct_Rectilinear_triple_Of_Points_P_Q_R => nrel_main_idtf:
+	[Прямолинейная тройка точек PQR]
+	(* <- lang_ru;; *);
+	[Rectilinear Triple Of Points PQR]
+	(* <- lang_en;; *);;
+
+struct_Rectilinear_triple_Of_Points_P_Q_R => nrel_idtf: [Прямолинейная тройка точек (P; Q; R)] (* <- lang_ru;; *);;
+
+struct_Rectilinear_triple_Of_Points_P_Q_R <- concept_rectilinear_three_of_points;;
+
+struct_Rectilinear_triple_Of_Points_P_Q_R -> struct_Geometric_point_P;;
+
+struct_Rectilinear_triple_Of_Points_P_Q_R -> struct_Geometric_point_Q;;
+
+struct_Rectilinear_triple_Of_Points_P_Q_R -> struct_Geometric_point_R;;
+
+struct_Straight_Line_A -> struct_Geometric_point_P;;
+
+struct_Straight_Line_A -> struct_Geometric_point_Q;;
+
+struct_Straight_Line_A -> struct_Geometric_point_R;;
+
+struct_Rectilinear_triple_Of_Points_P_Q_R <- rrel_key_sc_element: 
+	...
+	(*
+	<- illustration;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://images/Troyka tochek PQR.png";;
+		*);;
+	*);;
+
+struct_Rectilinear_triple_Of_Points_P_Q_R <- rrel_key_sc_element:	
+	...
+	(*
+	=> nrel_main_idtf: [Факт.утв.(Прямолинейная тройка точек PQR)] (* <- lang_ru;; *);;
+	<- statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[(P; Q; R) - прямолинейная тройка точек. P, Q, R - геометрические точки, принадлежащие фигуре и лежащие на одной прямой a.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;

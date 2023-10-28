@@ -1,0 +1,13 @@
+statement -> stat_triangle_acute_angle;;
+
+stat_triangle_acute_angle -> rrel_key_sc_element: concept_triangle; nrel_internal_angle; concept_acute_angle;;
+
+stat_triangle_acute_angle => nrel_main_idtf: [Утв.(треугольник; внутренний угол*; острый угол*)] (* <- lang_ru;; *);;
+stat_triangle_acute_angle => nrel_main_idtf: [Stat.(triangle; internal angle*; acute angle)] (* <- lang_en;; *);;
+
+stat_triangle_acute_angle <= nrel_sc_text_translation: ...
+	(*
+	-> rrel_example:
+		[У любого треугольника хотя бы два угла острые.] 
+		(* <- lang_ru;; *);;
+	*);;

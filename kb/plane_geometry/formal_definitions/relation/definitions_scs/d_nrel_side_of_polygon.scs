@@ -1,0 +1,18 @@
+d_nrel_side_of_polygon 
+=> nrel_main_idtf: [Опр.(сторона многоугольника*)]	(* <- lang_ru;; *);
+=> nrel_main_idtf: [Def.(side of polygon*)] (*<- lang_en;;*);
+<- definition;
+-> rrel_key_sc_element: nrel_side_of_polygon;
+
+<= nrel_using_constants:
+	{
+		concept_segment; 
+		nrel_vertex_of_polygon
+	};
+
+<= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[Сторона многоугольника - отрезок, соединяющий две соседние вершины многоугольника.] (* <- lang_ru;; *);;
+	*);;

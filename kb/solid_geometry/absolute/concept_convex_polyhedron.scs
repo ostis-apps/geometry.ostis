@@ -1,0 +1,16 @@
+sc_node_not_relation -> concept_convex_polyhedron;;
+
+concept_convex_polyhedron => nrel_main_idtf: [выпуклый многогранник] (*<-lang_ru;;*);;
+concept_convex_polyhedron => nrel_main_idtf: [convex polyhedron] (*<-lang_en;;*);;
+
+concept_convex_polyhedron <- rrel_key_sc_element: 
+	...
+	(*
+	<- illustration;; 
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: 
+		"file://images/concept_convex_polyhedron.png";;
+		*);;
+	*);;

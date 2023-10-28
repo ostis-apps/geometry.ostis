@@ -1,0 +1,13 @@
+statement -> stat_vertical_angle_congruence;;
+
+stat_vertical_angle_congruence -> rrel_key_sc_element: nrel_vertical_angles; nrel_congruence;;
+
+stat_vertical_angle_congruence => nrel_main_idtf: [Утв.(вертикальные углы*; конгруэнтность*)] (* <- lang_ru;; *);;
+stat_vertical_angle_congruence => nrel_main_idtf: [Stat.(vertical angles*; congruence*)] (*<- lang_en;;*);;
+
+stat_vertical_angle_congruence <= nrel_sc_text_translation: ...
+	(*
+	-> rrel_example:
+		[Вертикальные углы равны.] 
+		(* <- lang_ru;; *);;
+	*);;

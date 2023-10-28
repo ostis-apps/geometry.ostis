@@ -1,0 +1,22 @@
+sc_node_norole_relation -> nrel_element_of_cone;;
+
+nrel_element_of_cone => nrel_main_idtf: [образующая конуса*] (*<-lang_ru;;*);;
+nrel_element_of_cone => nrel_main_idtf: [element of cone*] (*<-lang_en;;*);;
+
+nrel_element_of_cone => nrel_first_domain: concept_cone;;
+nrel_element_of_cone => nrel_second_domain: concept_segment;;
+	
+nrel_element_of_cone => nrel_definitional_domain:
+	...
+	(*
+	<= nrel_combination: 
+		{
+			concept_cone;
+			concept_segment
+		};;
+	*);;
+	
+nrel_element_of_cone <- relation;;	
+nrel_element_of_cone <- binary_relation;;
+nrel_element_of_cone <- oriented_relation;;
+nrel_element_of_cone <- antireflexive_relation; antisymmetric_relation; antitransitive_relation;;

@@ -1,0 +1,24 @@
+sc_node_not_relation -> concept_non_convex_angle;;
+
+concept_non_convex_angle => nrel_main_idtf:
+	[невыпуклый угол](*<- lang_ru;;*);
+	[non convex angle](*<- lang_en;;*);;
+
+concept_non_convex_angle => nrel_idtf:[Класс невыпуклых углов](*<-lang_ru;;*);;
+concept_non_convex_angle => nrel_idtf:[Понятие невыпуклого угла](*<-lang_ru;;*);;
+concept_non_convex_angle => nrel_idtf:[Множество невыпуклых углов](*<-lang_ru;;*);;
+concept_non_convex_angle => nrel_idtf:[Множество знаков невыпуклых углов](*<-lang_ru;;*);;
+
+concept_non_convex_angle <= nrel_strict_inclusion: concept_planar_angle;;
+
+concept_non_convex_angle <- rrel_key_sc_element: 
+	...
+	(*
+	<- illustration;; 
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: 
+		"file://images/concept_non_convex_angle.png";;
+
+		*);;
+	*);;

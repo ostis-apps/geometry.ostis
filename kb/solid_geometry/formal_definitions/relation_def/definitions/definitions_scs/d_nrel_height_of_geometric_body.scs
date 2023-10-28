@@ -1,0 +1,21 @@
+d_nrel_height_of_geometric_body <- definition;;
+
+d_nrel_height_of_geometric_body => nrel_main_idtf: [Опр.(высота геометрического тела*)] (*<-lang_ru;;*);;
+d_nrel_height_of_geometric_body => nrel_main_idtf: [Def.(height of geometric body*)] (*<-lang_en;;*);;
+
+d_nrel_height_of_geometric_body -> rrel_key_sc_element: nrel_height_of_geometric_body;;
+
+d_nrel_height_of_geometric_body <= nrel_using_constants:
+	{
+		nrel_height_of_convex_polyhedron;
+		nrel_height_of_solid_of_revolution
+	};;
+
+d_nrel_height_of_geometric_body <= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+	[Высота геометрического тела - это теоретико-множественное объединение понятий высоты многогранника и высоты тела вращения.] (*<-lang_ru;;*);;
+	*);;
+
+

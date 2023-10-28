@@ -1,0 +1,13 @@
+statement -> stat_height_rectangular_triangle_hypotenuse_projection;;
+
+stat_height_rectangular_triangle_hypotenuse_projection -> rrel_key_sc_element: concept_rectangular_triangle; nrel_cathetus; nrel_hypotenuse; nrel_height; nrel_projection;;
+
+stat_height_rectangular_triangle_hypotenuse_projection => nrel_main_idtf: [Утв.(прямоугольный треугольник; высота*; гипотенуза*; проекция*)] (* <- lang_ru;; *);;
+stat_height_rectangulare_triangle_hypotenuse_projection => nrel_main_idtf: [Stat.(rectangular triangle; height*; hypotenuse*; projection*)] (* <- lang_en;; *);;
+
+stat_height_rectangular_triangle_hypotenuse_projection <= nrel_sc_text_translation: ...
+	(*
+	-> rrel_example:
+		[Высота прямоугольного треугольника, проведённая из вершины прямого угла, есть среднее пропорциональное между проекциями катетов на гипотенузу.] 
+		(* <- lang_ru;; *);;
+	*);;

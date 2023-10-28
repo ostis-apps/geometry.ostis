@@ -1,0 +1,41 @@
+sc_node_struct -> struct_Opened_Half_Plane_K1;;
+
+struct_Opened_Half_Plane_K1 => nrel_main_idtf:
+	[Открытая полуплоскость K1]
+	(* <- lang_ru;; *);
+	[Opened half plane K1]
+	(* <- lang_en;; *);;
+
+sc_node_struct -> struct_Straight_line_K;;
+
+struct_Straight_line_K <- concept_straight_line;;
+
+struct_Opened_Half_Plane_K1 => nrel_bound: struct_Straight_line_K;;
+
+struct_Opened_Half_Plane_K1 -|> struct_Straight_line_K;;
+
+struct_Opened_Half_Plane_K1 <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Факт.утв.(Открытая полуплоскость K1)] (* <- lang_ru;; *);;
+	<- statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[K1 - открытая полуплоскость. Прямая k является границей полуплоскости K1, но не входит в состав полуплоскости.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+struct_Opened_Half_Plane_K1 <- rrel_key_sc_element: 
+	...
+	(*
+	<- illustration;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			"file://images/SemiplaneK1.png";;
+		*);; 
+	*);; 

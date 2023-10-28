@@ -1,0 +1,37 @@
+s_sd_trapezoids_classification
+=> nrel_main_idtf:
+	[Раздел. Основные понятия трапеции. Классификация]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Section. Main concepts of subject domain of trapezoids. Сlassification]
+	(* <- lang_en;; *);
+
+<- atomic_section;
+
+<= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+		"file://html/s_sd_trapezoids_classification_ru.html"
+		(* <- lang_ru;; *);;
+	*);
+
+
+=> nrel_summary:
+	...
+	(*
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[This section discusses the main concepts of trapezoids.]
+			(* <- lang_en;; *);;
+		*);;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[В данном разделе рассматриваются основные понятия трапеции.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;

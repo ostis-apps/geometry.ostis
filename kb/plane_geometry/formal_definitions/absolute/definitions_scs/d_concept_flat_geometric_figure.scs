@@ -1,0 +1,18 @@
+d_concept_flat_geometric_figure <- definition;; 
+
+d_concept_flat_geometric_figure => nrel_main_idtf: [Опр.(плоская геометрическая фигура)] (* <- lang_ru;; *);;
+
+d_concept_flat_geometric_figure -> rrel_key_sc_element: concept_flat_geometric_figure;;
+
+d_concept_flat_geometric_figure <= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[Плоская геометрическая фигура - ограниченная часть плоскости.]
+		(* <- lang_ru;; *);;
+	*);;
+
+d_concept_flat_geometric_figure <= nrel_using_constants:
+	{
+        concept_plane
+	};;	

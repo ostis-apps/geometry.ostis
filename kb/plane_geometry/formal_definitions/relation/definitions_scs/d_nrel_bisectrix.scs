@@ -1,0 +1,20 @@
+d_nrel_bisectrix 
+=> nrel_main_idtf: [Опр.(биссектриса*)] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Def.(bisection*)] (*<- lang_en;;*);
+<- definition;
+-> rrel_key_sc_element: nrel_bisectrix;
+
+<= nrel_using_constants:
+	{ 
+	nrel_bisectrix_of_angle; 
+	nrel_bisectrix_of_triangle
+	};
+<= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[Биссектриса - это объединение понятий биссектрисы угла и биссектрисы треугольника.]
+		(* <- lang_ru;; *);;
+	*);;
+	
+

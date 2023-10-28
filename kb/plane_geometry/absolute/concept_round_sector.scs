@@ -1,0 +1,12 @@
+sc_node_not_relation -> concept_round_sector;;
+
+concept_round_sector => nrel_main_idtf:
+	[круговой сектор] (* <- lang_ru;; *);
+	[circular sector] (* <- lang_en;; *);;
+
+concept_round_sector => nrel_idtf: [Класс круговых секторов] (* <- lang_ru;; *);;
+concept_round_sector => nrel_idtf: [Понятие кругового сектора] (* <- lang_ru;; *);;
+concept_round_sector => nrel_idtf: [Множество всевозможных круговых секторов] (* <- lang_ru;; *);;
+concept_round_sector => nrel_idtf: [Множество знаков всевозможных круговых секторов] (* <- lang_ru;; *);;
+
+concept_round_sector <= nrel_strict_inclusion: concept_flat_geometric_figure;;

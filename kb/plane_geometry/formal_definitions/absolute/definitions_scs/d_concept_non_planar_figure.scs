@@ -1,0 +1,20 @@
+d_concept_non_planar_figure <- definition;;
+
+d_concept_non_planar_figure => nrel_main_idtf: [Опр.(непланарная фигура)] (* <- lang_ru;; *);;
+
+d_concept_non_planar_figure -> rrel_key_sc_element: concept_non_planar_figure;;
+
+d_concept_non_planar_figure <= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[Непланарная фигура - это геометрическая фигура, у которой хотя бы одна из геометрических точек, принадлежащих ей, не лежит в одной плоскости.]
+		(* <- lang_ru;; *);;
+	*);;
+
+d_concept_non_planar_figure <= nrel_using_constants:
+	{
+	concept_geometric_figure; 
+	concept_geometric_point; 
+	concept_plane
+	};;

@@ -1,0 +1,21 @@
+d_nrel_radius_of_cylinder <- definition;;
+
+d_nrel_radius_of_cylinder => nrel_main_idtf: [Опр.(радиус цилиндра*)] (*<-lang_ru;;*);;
+d_nrel_radius_of_cylinder => nrel_main_idtf: [Def.(radius of cylinder*)] (*<-lang_en;;*);;
+
+d_nrel_radius_of_cylinder -> rrel_key_sc_element: nrel_radius_of_cylinder;;
+
+d_nrel_radius_of_cylinder <= nrel_using_constants:
+	{
+	concept_cylinder;
+	nrel_radius;
+	nrel_base_of_cylinder
+	};;
+
+
+d_nrel_radius_of_cylinder <= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example:
+		[Радиус цилиндра – радиус его основания.] (*<-lang_ru;;*);;
+	*);;

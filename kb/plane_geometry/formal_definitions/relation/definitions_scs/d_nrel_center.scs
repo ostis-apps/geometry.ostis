@@ -1,0 +1,22 @@
+d_nrel_center
+=> nrel_main_idtf: [Опр.(центр*)] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Def.(center*)] (*<- lang_en;;*);
+<- definition;
+-> rrel_key_sc_element: nrel_center;
+
+<= nrel_using_constants:
+	{
+	nrel_center_of_circle; 
+	nrel_center_of_regular_polygon; 
+	nrel_center_of_round
+	};
+
+<= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[Центр геометрической фигуры - это понятие, являющееся теоретико-множественным объединением понятий центр окружности, центр круга и центр правильного многоугольника.]
+		(* <- lang_ru;; *);;
+	*);;
+	
+

@@ -1,0 +1,38 @@
+sc_node_norole_relation -> nrel_apothem;;
+
+nrel_apothem => nrel_main_idtf: [апофема*] (*<-lang_ru;;*);;
+nrel_apothem => nrel_main_idtf: [apothem*] (*<-lang_en;;*);;
+
+nrel_apothem <= nrel_combination:
+{
+	nrel_apothem_of_regular_truncated_pyramid;
+	nrel_apothem_of_regular_pyramid
+};;
+
+nrel_apothem => nrel_first_domain:
+	...
+	(*
+	<= nrel_combination: 
+		{
+			concept_regular_truncated_pyramid;
+			concept_regular_pyramid
+		};;
+	*);;
+	
+nrel_apothem => nrel_second_domain: concept_segment;;
+	
+nrel_apothem => nrel_definitional_domain:
+	...
+	(*
+	<= nrel_combination: 
+		{
+			concept_regular_truncated_pyramid;
+			concept_regular_pyramid;
+			concept_segment
+		};;
+	*);;
+	
+nrel_apothem <- relation;;	
+nrel_apothem <- binary_relation;;
+nrel_apothem <- oriented_relation;;
+nrel_apothem <- antireflexive_relation; antisymmetric_relation; antitransitive_relation;;

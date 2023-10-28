@@ -1,0 +1,17 @@
+stat_isosceles_triangle_congruence_angle <- statement;;
+
+//stat_isosceles_triangle_congruence_angle <- sc_statement_for_solver;;
+
+stat_isosceles_triangle_congruence_angle -> rrel_key_sc_element: concept_isosceles_triangle; nrel_internal_angle; nrel_congruence;;
+
+stat_isosceles_triangle_congruence_angle => nrel_main_idtf: [Утв.(равнобедренный треугольник; внутренний угол*; конгруэнтность*)] (* <-lang_ru;; *);;
+stat_isosceles_triangle_congruence_angle => nrel_main_idtf: [Stat.(isosceles triangle; internal angle*; congruence*)] (* <-lang_en;; *);;
+
+stat_isosceles_triangle_congruence_angle <= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+		[Если в теугольнике два угла равны, то такой треугольник является равнобедренным.] (* <- lang_ru;; *);;
+		*);;
+
+stat_isosceles_triangle_congruence_angle <=> nrel_converse_theorem : stat_isosceles_triangle_congruence_angle_base;;

@@ -1,0 +1,20 @@
+sc_node_not_relation -> concept_truncated_pyramid;;
+
+concept_truncated_pyramid => nrel_main_idtf: [усеченная пирамида] (*<-lang_ru;;*);;
+concept_truncated_pyramid => nrel_main_idtf: [truncated pyramid] (*<-lang_en;;*);;
+
+concept_truncated_pyramid <= nrel_strict_inclusion: concept_pyramid;;
+
+concept_truncated_pyramid <- rrel_key_sc_element: 
+	...
+	(*
+	<- illustration;; 
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: 
+		"file://images/concept_truncated_pyramid.gif";;
+		*);;
+	*);;
+
+

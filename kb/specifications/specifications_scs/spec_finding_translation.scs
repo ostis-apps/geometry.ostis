@@ -1,0 +1,7 @@
+semantic_neighbourhood <- rrel_key_sc_element: spec_finding_translation;;
+
+spec_finding_translation -> rrel_key_sc_element: nrel_sc_text_translation;;
+
+general_specification -> spec_finding_translation;;
+
+spec_finding_translation => nrel_main_idtf: [Обобщённая спецификация для поиска трансляции семантической окрестности] (* <- lang_ru;; *);;

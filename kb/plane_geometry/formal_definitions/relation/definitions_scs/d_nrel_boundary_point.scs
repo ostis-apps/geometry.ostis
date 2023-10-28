@@ -1,0 +1,18 @@
+d_nrel_boundary_point
+=> nrel_main_idtf: [Опр.(граничная точка*)] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Def.(boundary point*)] (*<- lang_en;;*);	
+<- definition;
+-> rrel_key_sc_element: nrel_boundary_point;
+
+<= nrel_using_constants:
+	{
+	concept_geometric_point
+	};
+<= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[Граничная точка (фигуры) - такая геометрическая точка, что в любой окрестности этой точки найдется как геометрическая точка, принадлежащая данной фигуре, так и точка, не принадлежащая этой фигуре.]
+		(* <- lang_ru;; *);;
+	*);;
+

@@ -1,0 +1,27 @@
+s_sd_quadrilaterals
+=> nrel_main_idtf:
+	[Раздел. Предметная область четырёхугольников]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf: [Section. Subject domain of quadrilaterals]
+	(* <- lang_en;; *);
+
+<- non_atomic_section;
+
+<= nrel_section_decomposition:
+	{
+		s_sd_quadrilaterals_main_concepts
+		(*
+		=> nrel_section_base_order:
+			s_convex_quadrilaterals;;
+		*);
+
+		s_convex_quadrilaterals
+		(*
+		=> nrel_section_base_order: 
+			s_area_quadrilaterals;;
+		*);
+
+		s_area_quadrilaterals
+	};
+
+-> rrel_key_sc_element: subject_domain_of_quadrilaterals;;

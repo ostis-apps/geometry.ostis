@@ -1,0 +1,26 @@
+sc_node_norole_relation -> nrel_corresponding_angles;;
+
+nrel_corresponding_angles => nrel_main_idtf:
+	[соответственные углы*]
+	(* <- lang_ru;; *);
+	[corresponding angles*]
+	(* <- lang_en;; *);;
+
+nrel_corresponding_angles => nrel_idtf: [быть соответственными углами*] (* <- lang_ru;; *);;
+
+nrel_corresponding_angles => nrel_definitional_domain: 
+	concept_planar_angle;;
+
+nrel_corresponding_angles => nrel_first_domain: 
+	concept_planar_angle;;	
+
+nrel_corresponding_angles => nrel_second_domain: 
+	concept_planar_angle;;
+
+nrel_corresponding_angles <- relation;;
+nrel_corresponding_angles <- binary_relation;;
+nrel_corresponding_angles <- non_oriented_relation;;
+nrel_corresponding_angles <- antireflexive_relation;;
+nrel_corresponding_angles <- symmetric_relation;;
+nrel_corresponding_angles <- transitive_relation;;
+

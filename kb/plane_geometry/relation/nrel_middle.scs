@@ -1,0 +1,38 @@
+sc_node_norole_relation -> nrel_middle;;
+
+nrel_middle => nrel_main_idtf:
+	[середина*]
+	(* <- lang_ru;; *);
+	[middle*]
+	(* <- lang_en;; *);;
+
+nrel_middle => nrel_idtf: [быть серединой*] (* <- lang_ru;; *);;
+
+nrel_middle => nrel_idtf: [середина отрезка*] (* <- lang_ru;; *);;
+
+nrel_middle => nrel_idtf: [быть серединой отрезка*] (* <- lang_ru;; *);;
+
+nrel_middle => nrel_definitional_domain: 
+	...
+	(*
+	<= nrel_combination: 
+		{	 
+		concept_segment;
+		concept_geometric_point
+		};;
+	*);;
+
+nrel_middle => nrel_first_domain: 
+	concept_segment;;
+	
+nrel_middle => nrel_second_domain: 
+	concept_geometric_point;;
+
+nrel_middle <- relation;;
+nrel_middle <- binary_relation;;
+nrel_middle <- oriented_relation;;
+nrel_middle <- antireflexive_relation;;
+nrel_middle <- antisymmetric_relation;;
+nrel_middle <- antitransitive_relation;;
+
+

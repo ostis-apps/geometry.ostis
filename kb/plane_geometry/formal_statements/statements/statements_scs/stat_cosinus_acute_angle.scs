@@ -1,0 +1,13 @@
+statement -> stat_cosinus_acute_angle;;
+
+stat_cosinus_acute_angle -> rrel_key_sc_element: concept_acute_angle; nrel_be_more;;
+
+stat_cosinus_acute_angle => nrel_main_idtf: [Утв.(угол; быть больше*)] (* <- lang_ru;; *);;
+stat_cosinus_acute_angle => nrel_main_idtf: [Stat.(angle; be more*)] (* <- lang_en;; *);;
+
+stat_cosinus_acute_angle <= nrel_sc_text_translation: ...
+	(*
+	-> rrel_example:
+		[Косинус любого острого угла меньше единицы.] 
+		(* <- lang_ru;; *);;
+	*);;

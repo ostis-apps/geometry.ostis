@@ -1,0 +1,24 @@
+stat_regular_hexagon_circle_be_inscribed_radius_side <- statement;;
+
+stat_regular_hexagon_circle_be_inscribed_radius_side
+-> rrel_key_sc_element:
+	concept_regular_hexagon;
+	concept_circle;
+	nrel_be_inscribed;
+	nrel_radius;
+	nrel_side_of_polygon;;
+
+stat_regular_hexagon_circle_be_inscribed_radius_side
+=> nrel_main_idtf:
+	[Утв.(правильный шестиугольник;окружность;быть вписанным*;радиус*;сторона многоугольника*)] (* <-lang_ru;; *);;
+
+stat_regular_hexagon_circle_be_inscribed_radius_side
+=> nrel_main_idtf:
+	[Stat.(regular hexagon;circle;be inscribed*;radius*;side of polygon*)] (* <-lang_en;; *);;
+
+stat_regular_hexagon_circle_be_inscribed_radius_side <= nrel_sc_text_translation:
+	...
+	(*
+		-> rrel_example: 
+		[Радиус окружности, описанной около правильного шестиугольника, определяется через сторону шестиугольника a по формуле: R=a] (* <- lang_ru;; *);;
+	*);;

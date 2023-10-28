@@ -1,0 +1,24 @@
+d_nrel_base 
+=> nrel_main_idtf: [Опр.(основание*)] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Def.(base*)] (*<- lang_en;;*);
+<- definition; 
+-> rrel_key_sc_element: nrel_base;
+
+<= nrel_using_constants:
+	{
+	nrel_side_of_polygon; 
+	nrel_perpendicularity; 
+	nrel_height; 
+	concept_isosceles_triangle; 
+	concept_parallelogram; 
+	concept_isosceles_trapezoid
+	};
+
+<= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[Основание - это сторона равнобедренного треугольника, трапеции или параллелограмма, перпендикулярная их высоте.]
+		(* <- lang_ru;; *);;
+	*);;
+	

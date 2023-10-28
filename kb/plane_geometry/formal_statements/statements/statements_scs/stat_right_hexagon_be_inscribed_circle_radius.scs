@@ -1,0 +1,13 @@
+stat_right_hexagon_be_inscribed_circle_radius <- statement;;
+
+stat_right_hexagon_be_inscribed_circle_radius-> rrel_key_sc_element: concept_right_hexagon; concept_circle; nrel_be_inscribed; nrel_radius;;
+
+stat_right_hexagon_be_inscribed_circle_radius => nrel_main_idtf: [Утв.(правильный шестиугольник; окружность; быть вписанным*; радиус*)] (* <-lang_ru;; *);;
+stat_right_hexagon_be_inscribed_circle_radius => nrel_main_idtf: [Stat.(right hexagon; circle; be inscribed*; radius*)] (* <-lang_en;; *);;
+
+stat_right_hexagon_be_inscribed_circle_radius <= nrel_sc_text_translation: 
+	...
+	(*
+		-> rrel_example: 
+		[Радиус окружности, вписанной в правильный шестиугольник определяется через сторону шестиугольника по формуле: r=sqrt(3)*a/2, где a - сторона шестиугольника.] (* <- lang_ru;; *);;
+	*);;

@@ -1,0 +1,23 @@
+sc_node_not_relation -> concept_rectangular_triangle;;
+
+concept_rectangular_triangle => nrel_main_idtf:
+	[прямоугольный треугольник] (* <- lang_ru;; *);
+	[rectangular triangle] (* <- lang_en;; *);;
+
+concept_rectangular_triangle => nrel_idtf: [Класс прямоугольных треугольников] (* <- lang_ru;; *);;
+concept_rectangular_triangle => nrel_idtf: [Понятие прямоугольного треугольника] (* <- lang_ru;; *);;
+concept_rectangular_triangle => nrel_idtf: [Множество всевозможных прямоугольных треугольников] (* <- lang_ru;; *);;
+concept_rectangular_triangle => nrel_idtf: [Множество знаков всевозможных прямоугольных треугольников] (* <- lang_ru;; *);;
+
+concept_rectangular_triangle <- rrel_key_sc_element: 
+	...
+	(*
+	<- illustration;; 
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: 
+		"file://images/concept_rectangular_triangle.png";;
+		*);;
+	*);;
+	
+concept_rectangular_triangle -> rrel_example: struct_Rectangular_triangle_D_F_G;;

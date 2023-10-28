@@ -1,0 +1,19 @@
+sc_node_not_relation -> concept_octahedron;;
+
+concept_octahedron => nrel_main_idtf: [октаэдр] (*<-lang_ru;;*);;
+concept_octahedron => nrel_main_idtf: [octahedron] (*<-lang_en;;*);;
+
+concept_octahedron => nrel_idtf: [Класс октаэдров] (*<-lang_ru;;*);;
+concept_octahedron => nrel_idtf: [Множество всевозможных октаэдров] (* <- lang_ru;; *);;
+
+concept_octahedron <- rrel_key_sc_element: 
+	...
+	(*
+	<- illustration;; 
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: 
+		"file://images/concept_octahedron.gif";;
+		*);;
+	*);;

@@ -1,0 +1,16 @@
+sc_node_struct -> subject_domain_of_rectangles;;
+
+subject_domain_of_rectangles
+=> nrel_main_idtf:
+	[Предметная область прямоугольников]
+	(* <- lang_ru;; *);
+	[Subject domain of rectangles]
+	(* <- lang_en;; *);;
+	
+subject_domain_of_rectangles -> rrel_maximum_studied_object_class: concept_rectangle;;
+
+subject_domain_of_rectangles -> rrel_not_maximum_studied_object_class: concept_square;;
+
+subject_domain_of_rectangles <= nrel_private_subject_domain: subject_domain_of_parallelograms;;
+
+subject_domain_of_rectangles <- subject_domain;;

@@ -1,0 +1,11 @@
+stat_geometric_body_equality_volume <- statement;;
+
+stat_geometric_body_equality_volume -> rrel_key_sc_element: nrel_volume; nrel_geometric_body; nrel_equal_of_quantities; nrel_congruence;;
+
+stat_geometric_body_equality_volume => nrel_main_idtf: [Утв. (геометрическое тело; объем*; равенство величин*; конгруэнтность*)] (* <- lang_ru;;*);;
+stat_geometric_body_equality_volume => nrel_main_idtf: [Stat. (geometric body; volume*; equal quantities*; congruence*)] (* <- lang_en;;*);;
+
+stat_geometric_body_equality_volume <= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: [Равные геометрические тела имеют равный объем.] (* <- lang_ru;;*);;
+		*);;

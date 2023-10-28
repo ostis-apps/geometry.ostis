@@ -1,0 +1,24 @@
+sc_node_not_relation -> concept_simple_broken_line;;
+
+concept_simple_broken_line => nrel_main_idtf:
+	[простая ломаная](* <- lang_ru;; *);
+	[simple broken line](* <- lang_en;; *);;
+
+concept_simple_broken_line => nrel_idtf: [Класс простых ломаных] (* <- lang_ru;; *);;
+concept_simple_broken_line => nrel_idtf: [Понятие простой ломаной] (* <- lang_ru;; *);;
+concept_simple_broken_line => nrel_idtf: [Множество простых ломанных] (* <- lang_ru;; *);;
+concept_simple_broken_line => nrel_idtf: [Множество всевозможных простых ломаных] (* <- lang_ru;; *);;
+
+concept_simple_broken_line => nrel_strict_inclusion: concept_linear_polygon;;
+
+concept_simple_broken_line  <- rrel_key_sc_element: 
+	...
+	(*
+	<- illustration;;
+	<= nrel_sc_text_translation:
+	...
+		(*
+		-> rrel_example:
+			"file://images/LomanajaKMNLST.png";;
+		*);;
+	*);;

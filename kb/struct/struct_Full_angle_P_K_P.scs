@@ -1,0 +1,31 @@
+struct_Full_angle_P_K_P => nrel_idtf: [Полный угол (P; K; P)] (* <- lang_ru;; *);;
+
+struct_Full_angle_P_K_P => nrel_vertex: struct_Geometric_point_K;;
+
+struct_Full_angle_P_K_P => nrel_side: struct_Ray_K_P;;
+
+struct_Full_angle_P_K_P <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Факт.утв.(Острый угол KLM)] (* <- lang_ru;; *);;
+	<- statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Угол PKP является полным. P и K являются геометрическими точками. Геометрическая точка K является вершиной угла PKP. Луч KP является сторонами угла PKP.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+struct_Full_angle_P_K_P <- rrel_key_sc_element: 
+	...
+	(*
+	<- illustration;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			"file://images/Angle PKP.png";;
+		*);; 
+	*);;  

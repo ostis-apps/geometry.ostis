@@ -1,0 +1,22 @@
+stat_equilateral_triangle_bisectrix_of_triangle_external_angle <- statement;;
+
+stat_equilateral_triangle_bisectrix_of_triangle_external_angle
+-> rrel_key_sc_element:
+	concept_equilateral_triangle;
+	nrel_bisectrix_of_triangle;
+	nrel_external_angle;;
+
+stat_equilateral_triangle_bisectrix_of_triangle_external_angle
+=> nrel_main_idtf:
+	[Утв.(равносторонний треугольник;биссектриса треугольника*;внешний угол*)] (* <-lang_ru;; *);;
+
+stat_equilateral_triangle_bisectrix_of_triangle_external_angle
+=> nrel_main_idtf:
+	[Stat.(equilateral triangle;bisectrix of triangle*;external angle*)] (* <-lang_en;; *);;
+
+stat_equilateral_triangle_bisectrix_of_triangle_external_angle <= nrel_sc_text_translation:
+	...
+	(*
+		-> rrel_example: 
+		[Равносторонний треугольник не имеет внешних биссектрис.] (* <- lang_ru;; *);;
+	*);;

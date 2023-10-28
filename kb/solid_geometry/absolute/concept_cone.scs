@@ -1,0 +1,23 @@
+sc_node_not_relation -> concept_cone;;
+
+concept_cone => nrel_main_idtf:
+	[конус] (* <- lang_ru;;	*);
+	[cone] (* <- lang_en;;	*);;
+
+concept_cone => nrel_idtf: [Множество всевозможных конусов] (* <- lang_ru;; *);;
+concept_cone => nrel_idtf: [Класс конусов] (* <- lang_ru;; *);;
+concept_cone => nrel_idtf: [Множество знаков всевозможных конусов] (* <- lang_ru;; *);;
+
+concept_cone <= nrel_strict_inclusion: concept_solid_of_revolution;;
+
+concept_cone <- rrel_key_sc_element: 
+	...
+	(*
+	<- illustration;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+		"file://images/concept_cone.png";;
+		*);; 
+	*);;

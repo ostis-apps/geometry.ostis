@@ -1,0 +1,20 @@
+d_concept_rectangular_triangle <- definition;;
+
+d_concept_rectangular_triangle => nrel_main_idtf: [Опр.(прямоугольный треугольник)] (* <- lang_ru;; *);;
+
+d_concept_rectangular_triangle -> rrel_key_sc_element: concept_rectangular_triangle;;
+
+d_concept_rectangular_triangle <= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[Прямоугольный треугольник – это треугольник, у которого хотя бы один внутренний угол является прямым углом.]
+		(* <- lang_ru;; *);;
+	*);;
+
+d_concept_rectangular_triangle <= nrel_using_constants:
+	{
+	concept_triangle; 
+	nrel_internal_angle; 
+	concept_right_angle
+	};;

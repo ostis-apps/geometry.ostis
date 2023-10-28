@@ -1,0 +1,19 @@
+d_nrel_external_angle
+=> nrel_main_idtf: [Опр.(внешний угол*)] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Def.(external angle*)] (*<- lang_en;;*);
+<- definition;
+-> rrel_key_sc_element: nrel_external_angle;
+
+<= nrel_using_constants:
+	{
+	concept_angle;
+	concept_polygon; 
+	nrel_vertex
+	};
+
+<= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[Внешний угол - угол, смежный с углом многоугольника при этой вершине.] (* <- lang_ru;; *);;
+	*);;

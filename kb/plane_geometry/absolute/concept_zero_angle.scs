@@ -1,0 +1,14 @@
+sc_node_not_relation -> concept_zero_angle;;
+
+concept_zero_angle => nrel_main_idtf:
+	[нулевой угол] (* <- lang_ru;; *);
+	[zero angle] (* <- lang_en;; *);;
+
+concept_zero_angle => nrel_idtf: [Понятие нулевого угла] (* <- lang_ru;; *);;
+concept_zero_angle => nrel_idtf: [Класс нулевых углов] (* <- lang_ru;; *);;
+concept_zero_angle => nrel_idtf: [Множество всевозможных нулевых углов] (* <- lang_ru;; *);;
+concept_zero_angle => nrel_idtf: [Множество знаков всевозможных нулевых углов] (* <- lang_ru;; *);;
+
+concept_zero_angle <= nrel_strict_inclusion: concept_angle;;
+
+concept_zero_angle -> rrel_example: struct_Zero_Angle_N_K_N;;

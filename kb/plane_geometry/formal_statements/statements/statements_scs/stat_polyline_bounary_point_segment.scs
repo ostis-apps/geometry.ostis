@@ -1,0 +1,26 @@
+stat_polyline_bounary_point_segment <- statement;;
+
+stat_polyline_bounary_point_segment
+-> rrel_key_sc_element:
+	concept_polyline;
+	concept_segment;
+	nrel_bounary_point;;
+
+stat_polyline_bounary_point_segment
+=> nrel_main_idtf:
+	[Утв.(ломаная;отрезок;граничная точка*)] (* <-lang_ru;; *);;
+
+stat_polyline_bounary_point_segment
+=> nrel_main_idtf:
+	[Stat.(polyline;segment;bounary point*)] (* <-lang_en;; *);;
+
+stat_polyline_bounary_point_segment
+=> nrel_idtf:
+	[Основное свойство ломаной] (* <-lang_ru;; *);;
+
+stat_polyline_bounary_point_segment <= nrel_sc_text_translation:
+	...
+	(*
+		-> rrel_example: 
+		[Длина ломаной не меньше длины отрезка, соединяющего его концы.] (* <- lang_ru;; *);;
+	*);;

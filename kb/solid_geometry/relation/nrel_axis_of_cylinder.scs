@@ -1,0 +1,24 @@
+sc_node_norole_relation -> nrel_axis_of_cylinder;;
+
+nrel_axis_of_cylinder => nrel_main_idtf: [ось цилиндра*] (*<-lang_ru;;*);;
+nrel_axis_of_cylinder => nrel_main_idtf: [axis of cylinder*] (*<-lang_en;;*);;
+
+nrel_axis_of_cylinder => nrel_first_domain: concept_cylinder;;
+nrel_axis_of_cylinder => nrel_second_domain: concept_straight_line;;
+	
+nrel_axis_of_cylinder => nrel_definitional_domain:
+	...
+	(*
+	<= nrel_combination: 
+		{
+			concept_cylinder;
+			concept_straight_line
+		};;
+	*);;
+	
+nrel_axis_of_cylinder <- relation;;	
+nrel_axis_of_cylinder <- binary_relation;;
+nrel_axis_of_cylinder <- oriented_relation;;
+nrel_axis_of_cylinder <- antireflexive_relation; antisymmetric_relation; antitransitive_relation;;
+
+

@@ -1,0 +1,36 @@
+s_general_properties_planar_angles
+=> nrel_main_idtf:
+	[Раздел. Общие свойства углов]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Section. General properties of angles]
+	(* <- lang_en;; *);
+
+<- atomic_section;
+
+<= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+		"file://html/s_general_properties_planar_angles_ru.html"
+		(* <- lang_ru;; *);;
+	*);
+
+
+=> nrel_summary:
+	...
+	(*
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[This section discusses general properties of angles.]
+			(* <- lang_en;; *);;
+		*);;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:[Раздел содержит общие свойства углов.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;

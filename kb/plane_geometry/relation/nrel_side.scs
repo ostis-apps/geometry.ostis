@@ -1,0 +1,42 @@
+sc_node_norole_relation -> nrel_side;;
+
+nrel_side => nrel_main_idtf:
+	[сторона*]
+	(* <- lang_ru;; *);
+	[side*]
+	(* <- lang_en;; *);;
+
+nrel_side => nrel_idtf: [быть стороной*] (* <- lang_ru;; *);;
+
+nrel_side => nrel_idtf: [быть стороной геометрической фигуры*] (* <- lang_ru;; *);;
+
+nrel_side => nrel_definitional_domain: 
+	...
+	(*
+	<= nrel_combination: 
+		{
+		concept_planar_angle; 
+		concept_polygon;
+		concept_segment
+		};;
+	*);;	
+
+nrel_side => nrel_first_domain: 
+	...
+	(*
+	<= nrel_combination: 
+		{
+		concept_planar_angle; 
+		concept_polygon
+		};;
+	*);;	
+
+nrel_side => nrel_second_domain: 
+	concept_segment;;
+
+nrel_side <- relation;;
+nrel_side <- binary_relation;;
+nrel_side <- oriented_relation;;
+nrel_side <- antireflexive_relation;;
+nrel_side <- antisymmetric_relation;;
+nrel_side <- antitransitive_relation;;

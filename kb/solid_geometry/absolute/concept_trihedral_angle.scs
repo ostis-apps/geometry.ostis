@@ -1,0 +1,19 @@
+sc_node_not_relation -> concept_trihedral_angle;;
+
+concept_trihedral_angle => nrel_main_idtf: [трехгранный угол] (*<-lang_ru;;*);;
+concept_trihedral_angle => nrel_main_idtf: [trihedral angle] (*<-lang_en;;*);;
+
+concept_trihedral_angle => nrel_idtf: [Класс трехгранных углов] (*<-lang_ru;;*);;
+
+concept_trihedral_angle => nrel_idtf: [Множество всевозможных трехгранных углов] (* <- lang_ru;; *);;
+
+concept_trihedral_angle <- rrel_key_sc_element: 
+	...
+	(*
+	<- illustration;; 
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: 
+		"file://images/concept_trihedral_angle.png";;
+		*);;
+	*);;

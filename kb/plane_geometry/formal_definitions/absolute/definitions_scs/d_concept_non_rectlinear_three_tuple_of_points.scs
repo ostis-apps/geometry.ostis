@@ -1,0 +1,19 @@
+d_concept_non_rectlinear_three_tuple_of_points <- definition;;
+
+d_concept_non_rectlinear_three_tuple_of_points => nrel_main_idtf: [Опр.(непрямолинейная тройка точек)] (* <- lang_ru;; *);;
+
+d_concept_non_rectlinear_three_tuple_of_points -> rrel_key_sc_element: concept_non_rectlinear_three_tuple_of_points;;
+
+d_concept_non_rectlinear_three_tuple_of_points <= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[Непрямолинейная тройка точек - тройка точек, для которой не существует прямой, на которой лежат все три элемента заданной тройки.]
+		(* <- lang_ru;; *);;
+	*);;
+
+d_concept_non_rectlinear_three_tuple_of_points <= nrel_using_constants:
+	{
+	concept_triple_of_points;
+	concept_straight_line
+	};;

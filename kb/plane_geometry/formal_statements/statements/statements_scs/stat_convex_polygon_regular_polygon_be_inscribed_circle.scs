@@ -1,0 +1,13 @@
+statement -> stat_convex_polygon_regular_polygon_be_inscribed_circle;;
+
+stat_convex_polygon_regular_polygon_be_inscribed_circle -> rrel_key_sc_element: concept_convex_polygon; concept_right_polygon; nrel_be_inscribed; concept_circle;;
+
+stat_convex_polygon_regular_polygon_be_inscribed_circle => nrel_main_idtf: [Утв.(выпуклый многоугольник; правильный многоугольник; быть вписанным*; окружность)] (* <- lang_ru;; *);;
+stat_convex_polygon_regular_polygon_be_inscribed_circle => nrel_main_idtf: [Stat.(convex polygon; right polygon; be inscribed*; circle)] (*<- lang_en;;*);;
+
+stat_convex_polygon_regular_polygon_be_inscribed_circle <= nrel_sc_text_translation: ...
+	(*
+	-> rrel_example:
+		[Правильный выпуклый многоугольник является вписанным в окружность и описанным около окружности.] 
+		(* <- lang_ru;; *);;
+	*);;

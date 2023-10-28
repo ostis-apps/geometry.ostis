@@ -1,0 +1,22 @@
+stat_triangle_excircle_center <- statement;;
+
+stat_triangle_excircle_center
+-> rrel_key_sc_element:
+	concept_triangle;
+	nrel_excircle;
+	nrel_center;;
+
+stat_triangle_excircle_center
+=> nrel_main_idtf:
+	[Утв.(треугольник;вневписанная окружность*;центр*)] (* <-lang_ru;; *);;
+
+stat_triangle_excircle_center
+=> nrel_main_idtf:
+	[Stat.(triangle;excircle*;center*)] (* <-lang_en;; *);;
+
+stat_triangle_excircle_center <= nrel_sc_text_translation:
+	...
+	(*
+		-> rrel_example: 
+		[Центром вневписанной окружности треугольника является точка пересечения проходящих через вершины треугольника трёх прямых, на двух из которых лежат биссектрисы внешних углов, на третьей - биссектриса внутреннего угла.] (* <- lang_ru;; *);;
+	*);;

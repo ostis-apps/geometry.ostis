@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Правильный выпуклый многоугольник является вписанным в окружность и описанным около окружности</title>
+	<meta charset=utf-8>
+</head>
+<body>
+	<p>
+		<ol>
+			<li>
+				Пусть <i>А</i> и <i>В</i> - две соседние 
+				<sc_element sys_idtf="nrel_vertex">вершины</sc_element> 
+				<sc_element sys_idtf="concept_regular_polygon">правильного многоугольника</sc_element>.
+			</li>
+			<li>
+				Проведем 
+				<sc_element sys_idtf="nrel_bisectrix_of_angle">биссектрисы углов</sc_element> 
+				<sc_element sys_idtf="concept_polygon">многоугольника</sc_element> из 
+				<sc_element sys_idtf="nrel_vertex">вершин</sc_element>  <i>А</i> и <i>В</i>.
+			</li>
+			<li>
+				Пусть <i>О</i> - 
+				<sc_element sys_idtf="concept_geometric_point">точка</sc_element> их пересечения.
+			</li>
+			<li>
+				<sc_element sys_idtf="concept_triangle">Треугольник</sc_element> <i>АОВ</i> - 
+				<sc_element sys_idtf="concept_isosceles_triangle">равнобедренный</sc_element>, с 
+				<sc_element sys_idtf="nrel_base">основанием</sc_element> <i>АВ</i> и 
+				<sc_element sys_idtf="concept_angle">углами</sc_element> при 
+				<sc_element sys_idtf="nrel_base">основании</sc_element>, равными 
+				&#945; / 2, где &#945; - 
+				<sc_element sys_idtf="concept_angle">угол</sc_element> 
+				<sc_element sys_idtf="concept_polygon">многоугольника</sc_element>.    
+			</li>
+			<li>
+				Соединим 
+				<sc_element sys_idtf="concept_geometric_point">точку</sc_element> <i>О</i> с 
+				<sc_element sys_idtf="nrel_vertex">вершиной</sc_element> <i>С</i>, соседней с <i>В</i>. 
+			</li>
+			<li>
+				<sc_element sys_idtf="concept_triangle">Треугольники</sc_element> <i>АВО</i> и <i>СВО</i> 
+				<sc_element sys_idtf="nrel_congruence">равны</sc_element> по 
+				<sc_element sys_idtf="stat_congruence_triangle_side_angle_between">первому признаку равенства треугольников    					</sc_element> (У них 
+				<sc_element sys_idtf="nrel_side">сторона</sc_element> <i>ОВ</i> - общая, 
+				<sc_element sys_idtf="nrel_side">стороны</sc_element> <i>АВ</i> и <i>ВС</i> 
+				<sc_element sys_idtf="nrel_congruence">равны</sc_element> как 
+				<sc_element sys_idtf="nrel_side">стороны</sc_element> 
+				<sc_element sys_idtf="concept_polygon">многоугольника</sc_element>, а 
+				<sc_element sys_idtf="concept_angle">углы</sc_element> при 
+				<sc_element sys_idtf="nrel_vertex">вершине</sc_element> <i>В</i> равны 
+				&#945; / 2).
+			</li>
+			<li>
+				Из 
+				<sc_element sys_idtf="nrel_congruence">равенства</sc_element> 
+				<sc_element sys_idtf="concept_triangle">треугольников</sc_element> следует, что 
+				<sc_element sys_idtf="concept_triangle">треугольник</sc_element> <i>ОВС</i> 
+				<sc_element sys_idtf="concept_isosceles_triangle">равнобедренный</sc_element> с 
+				<sc_element sys_idtf="concept_angle">углом</sc_element> при 
+				<sc_element sys_idtf="nrel_vertex">вершине</sc_element> <i>С</i>, равным &#945; / 2, т.е. <i>СО</i> есть 				<sc_element sys_idtf="nrel_bisectrix_of_angle">биссектриса угла</sc_element> <i>С</i>. 
+			</li>
+			<li>
+				Теперь соединяем 
+				<sc_element sys_idtf="concept_geometric_point">точку</sc_element> <i>О</i> с 
+				<sc_element sys_idtf="nrel_vertex">вершиной</sc_element> <i>D</i>, соседней с <i>С</i>, и доказываем, что 					<sc_element sys_idtf="concept_triangle">треугольник</sc_element> <i>COD</i> - 
+				<sc_element sys_idtf="concept_isosceles_triangle">равнобедренный</sc_element> и <i>DO</i> - 
+				<sc_element sys_idtf="nrel_bisectrix_of_angle">биссектриса угла</sc_element> <i>D</i> 
+				<sc_element sys_idtf="concept_polygon">многоугольника</sc_element> и т.д. 
+			</li>
+			<li>
+				В итоге получается, что каждый 
+				<sc_element sys_idtf="concept_triangle">треугольник</sc_element>, у которого одна 
+				<sc_element sys_idtf="nrel_side">сторона</sc_element> есть 
+				<sc_element sys_idtf="nrel_side_of_polygon">сторона многоугольника</sc_element>, а 
+				<sc_element sys_idtf="nrel_opposite">противолежащая</sc_element>
+				<sc_element sys_idtf="nrel_vertex">вершина</sc_element> - 
+				<sc_element sys_idtf="concept_geometric_point">точка</sc_element> <i>О</i>, является 
+				<sc_element sys_idtf="concept_isosceles_triangle">равнобедренным</sc_element>.
+			</li>
+			<li>
+				Все эти 
+				<sc_element sys_idtf="concept_triangle">треугольники</sc_element> имеют 
+				<sc_element sys_idtf="nrel_congruence">равные</sc_element> 
+				<sc_element sys_idtf="nrel_lateral_side">боковые стороны</sc_element> и 
+				<sc_element sys_idtf="nrel_congruence">равные</sc_element> 
+				<sc_element sys_idtf="nrel_height">высоты</sc_element>, опущенные на их 
+				<sc_element sys_idtf="nrel_base">основания</sc_element>. Отсюда следует, 
+				что все 
+				<sc_element sys_idtf="nrel_vertex_of_polygon">вершины многоугольника</sc_element> находятся на 
+				<sc_element sys_idtf="concept_circle">окружности</sc_element> с 
+				<sc_element sys_idtf="nrel_center">центром</sc_element> <i>О</i> и 
+				<sc_element sys_idtf="nrel_radius">радиусом</sc_element>, равным 
+				<sc_element sys_idtf="nrel_lateral_side">боковым сторонам</sc_element>
+				<sc_element sys_idtf="concept_triangle">треугольников</sc_element>, а все 
+				<sc_element sys_idtf="nrel_side_of_polygon">стороны многоугольника</sc_element> касаются 
+				<sc_element sys_idtf="concept_circle">окружности</sc_element> с
+				<sc_element sys_idtf="nrel_center">центром</sc_element> <i>О</i> и 
+				<sc_element sys_idtf="nrel_radius">радиусом</sc_element>, равным 
+				<sc_element sys_idtf="nrel_height">высотам</sc_element>
+				<sc_element sys_idtf="concept_triangle">треугольников</sc_element>, опущенным из 
+				<sc_element sys_idtf="nrel_vertex">вершины</sc_element> <i>О</i>.
+			</li> 
+				
+		</ol>
+	</p>
+</body>
+</html>

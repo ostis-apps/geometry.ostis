@@ -1,0 +1,23 @@
+sc_node_norole_relation -> nrel_chord_of_sphere;;
+
+nrel_chord_of_sphere => nrel_main_idtf: [хорда сферы*] (*<-lang_ru;;*);;
+nrel_chord_of_sphere => nrel_main_idtf: [chord of sphere*] (*<-lang_en;;*);;
+
+nrel_chord_of_sphere => nrel_first_domain: concept_sphere;;
+nrel_chord_of_sphere => nrel_second_domain: concept_segment;;
+nrel_chord_of_sphere => nrel_definitional_domain:
+	...
+	(*
+	<= nrel_combination: 
+		{
+			concept_sphere;
+			concept_segment
+		};;
+	*);;
+	
+nrel_chord_of_sphere <- relation;;	
+nrel_chord_of_sphere <- binary_relation;;
+nrel_chord_of_sphere <- oriented_relation;;
+nrel_chord_of_sphere <- antireflexive_relation; antisymmetric_relation; antitransitive_relation;;
+
+

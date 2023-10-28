@@ -1,0 +1,25 @@
+sc_node_not_relation -> concept_rectangle;;
+
+concept_rectangle => nrel_main_idtf:
+	[прямоугольник] (* <- lang_ru;; *);
+	[rectangle] (* <- lang_en;; *);;
+
+concept_rectangle => nrel_idtf: [Класс прямоугольников] (* <- lang_ru;; *);;
+concept_rectangle => nrel_idtf: [Понятие прямоугольника] (* <- lang_ru;; *);;
+concept_rectangle => nrel_idtf: [Множество всевозможных прямоугольников] (* <- lang_ru;; *);;
+concept_rectangle => nrel_idtf: [Множество знаков всевозможных прямоугольников] (* <- lang_ru;; *);;
+
+concept_rectangle => nrel_strict_inclusion: concept_square;;
+
+concept_rectangle <- rrel_key_sc_element: 
+	...
+	(*
+	<- illustration;; 
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: 
+		"file://images/concept_rectangle.png";;
+		*);;
+	*);;
+	
+concept_rectangle -> rrel_example: struct_Rectangle_B_C_D_E;;

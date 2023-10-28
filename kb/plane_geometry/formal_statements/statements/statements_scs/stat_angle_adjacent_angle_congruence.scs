@@ -1,0 +1,13 @@
+statement -> stat_angle_adjacent_angle_congruence;;
+
+stat_angle_adjacent_angle_congruence -> rrel_key_sc_element: concept_angle; nrel_adjacent_angles; nrel_congruence;; 
+
+stat_angle_adjacent_angle_congruence => nrel_main_idtf: [Утв.(угол; смежные углы*; конгруэнтность*)] (* <- lang_ru;; *);;
+stat_angle_adjacent_angle_congruence => nrel_main_idtf: [Stat.(angle; adjacent angles*; congruence*)] (* <- lang_en;; *);;
+
+stat_angle_adjacent_angle_congruence <= nrel_sc_text_translation: ...
+	(*
+	-> rrel_example:
+		[Если два угла равны, то смежные с ним углы равны.] 
+		(* <- lang_ru;; *);;
+	*);;

@@ -1,0 +1,24 @@
+d_nrel_height
+=> nrel_main_idtf: [Опр.(высота*)](* <- lang_ru;; *);
+=> nrel_main_idtf: [Def.(height*)] (*<- lang_en;;*);
+<- definition;
+-> rrel_key_sc_element: nrel_height;
+
+<= nrel_using_constants:
+	{
+	concept_polygon; 
+	concept_segment; 
+	nrel_perpendicular; 
+	nrel_vertex_of_polygon; 
+	nrel_base; 
+	concept_straight_line; 
+	nrel_length
+	};
+
+<= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[Высота - отрезок перпендикуляра, опущенного из вершины многоугольника на его основание или на продолжение основания.] (* <- lang_ru;; *);;
+	*);;
+

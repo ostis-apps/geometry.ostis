@@ -1,0 +1,22 @@
+d_nrel_diameter 
+=> nrel_main_idtf: [Опр.(диаметр*)] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Def.(diameter*)] (*<-lang_en;;*);
+<- definition;  
+
+-> rrel_key_sc_element: nrel_diameter;
+
+<= nrel_using_constants:
+	{
+	nrel_chord; 
+	nrel_center_of_circle
+	};
+
+<= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[Диаметр - это хорда, проходящая через центр окружности.]
+		(* <- lang_ru;; *);;
+	*);;
+
+

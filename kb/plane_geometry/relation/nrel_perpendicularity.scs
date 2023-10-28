@@ -1,0 +1,53 @@
+sc_node_norole_relation -> nrel_perpendicularity;;
+
+nrel_perpendicularity => nrel_main_idtf:
+	[перпендикулярность*]
+	(*<- lang_ru;;	*);
+	[perpendicularity*]
+	(* <- lang_en;; *);;
+
+nrel_perpendicularity => nrel_idtf: [перпендикулярность геометрических фигур*] (* <- lang_ru;; *);;
+
+nrel_perpendicularity => nrel_definitional_domain: 
+	...
+	(*
+	<= nrel_combination: 
+		{	 
+		concept_plane;
+		concept_rectilinear_figure
+		};;
+	*);;
+
+nrel_perpendicularity => nrel_first_domain: 
+	...
+	(*
+	<= nrel_combination: 
+		{	 
+		concept_plane;
+		concept_rectilinear_figure
+		};;
+	*);;
+
+
+nrel_perpendicularity => nrel_second_domain: 
+	...
+	(*
+	<= nrel_combination: 
+		{	 
+		concept_plane;
+		concept_rectilinear_figure
+		};;
+	*);;
+
+nrel_perpendicularity <- relation;;
+nrel_perpendicularity <- binary_relation;;
+nrel_perpendicularity <- non_oriented_relation;;
+nrel_perpendicularity <- antireflexive_relation;;
+nrel_perpendicularity <- symmetric_relation;;
+nrel_perpendicularity <- antitransitive_relation;;
+
+
+	
+
+
+

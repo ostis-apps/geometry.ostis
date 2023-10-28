@@ -1,0 +1,21 @@
+d_concept_straight_angle <- definition;;
+
+d_concept_straight_angle => nrel_main_idtf: [Опр.(развернутый угол)] (* <- lang_ru;; *);;
+
+d_concept_straight_angle -> rrel_key_sc_element: concept_straight_angle;;
+  
+d_concept_straight_angle <= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[Развёрнутый угол - угол, стороны которого являются взаимно противоположными лучами]
+		(* <- lang_ru;; *);;
+	*);;
+	
+d_concept_straight_angle <= nrel_using_constants:
+	{
+	concept_angle; 
+	nrel_side_of_angle; 
+	concept_ray;
+	nrel_opposite_directed_rays
+	};;

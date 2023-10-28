@@ -1,0 +1,27 @@
+sc_node_not_relation -> concept_parallelogram;;
+
+concept_parallelogram => nrel_main_idtf:
+	[параллелограмм] (* <- lang_ru;; *);
+	[parallelogram] (* <- lang_en;; *);;
+
+concept_parallelogram => nrel_idtf: [плоский параллелограмм] (* <- lang_ru;; *);;
+concept_parallelogram => nrel_idtf: [Класс параллелограммов] (* <- lang_ru;; *);;
+concept_parallelogram => nrel_idtf: [Понятие параллелограмма] (* <- lang_ru;; *);;
+concept_parallelogram => nrel_idtf: [Множество всевозможных параллелограммов] (* <- lang_ru;; *);;
+concept_parallelogram => nrel_idtf: [Множество знаков всевозможных параллелограммов] (* <- lang_ru;; *);;
+
+concept_parallelogram  => nrel_strict_inclusion: concept_rectangle;;
+concept_parallelogram  => nrel_strict_inclusion: concept_rhomb;;
+	
+concept_parallelogram <- rrel_key_sc_element: 
+	...
+	(*
+	<- illustration;; 
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: 
+		"file://images/concept_parallelogram.png";;
+		*);;
+	*);;
+
+concept_parallelogram -> rrel_example: struct_Parallelogram_A_B_C_D;;

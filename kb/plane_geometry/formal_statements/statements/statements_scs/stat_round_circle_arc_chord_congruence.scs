@@ -1,0 +1,40 @@
+statement -> stat_round_circle_arc_chord_congruence;;
+statement -> stat_converse_round_circle_arc_chord_congruence;;
+statement -> stat_reverse_round_circle_arc_chord_congruence;;
+statement -> stat_reverse_converse_round_circle_arc_chord_congruence;;
+
+stat_round_circle_arc_chord_congruence => nrel_main_idtf: [Утв.(круг; дуга; конгруэнтность*; стягивающая хорда*)] (* <- lang_ru;; *);;
+stat_converse_round_circle_arc_chord_congruence => nrel_main_idtf: [Обр.утв.(круг; дуга; конгруэнтность*; стягивающая хорда*)] (* <- lang_ru;; *);;
+stat_reverse_round_circle_arc_chord_congruence => nrel_main_idtf: [Прот.утв.(круг; дуга; конгруэнтность*; стягивающая хорда*)] (* <- lang_ru;; *);;
+stat_reverse_converse_round_circle_arc_chord_congruence => nrel_main_idtf: [Прот.обр.утв.(круг; дуга; конгруэнтность*; стягивающая хорда*)] (* <- lang_ru;; *);;
+
+stat_round_circle_arc_chord_congruence <= nrel_sc_text_translation: ...
+	(*
+	-> rrel_example:
+		[Если две дуги одного круга равны, то стягивающие стягивающие их хорды равны.] (* <- lang_ru;; *);;
+	*);;
+
+stat_converse_round_circle_arc_chord_congruence <= nrel_sc_text_translation: ...
+	(*
+	-> rrel_example:
+		[Если две стягивающие хорды одной окружности равны, то равны и эти дуги.] (* <- lang_ru;; *);;
+	*);;
+
+stat_reverse_round_circle_arc_chord_congruence <= nrel_sc_text_translation: ...
+	(*
+	-> rrel_example:
+		[Если две дуги одного круга  не равны, то стягивающие стягивающие их хорды не равны.] (* <- lang_ru;; *);;
+	*);;
+
+stat_reverse_converse_round_circle_arc_chord_congruence <= nrel_sc_text_translation: ...
+	(*
+	-> rrel_example:
+		[Если две стягивающие хорды одной окружности не  равны, то не равны и эти дуги.] (* <- lang_ru;; *);;
+	*);;
+
+stat_round_circle_arc_chord_congruence <=> nrel_converse_theorem: stat_converse_round_circle_arc_chord_congruence;;
+stat_reverse_round_circle_arc_chord_congruence <=> nrel_converse_theorem: stat_reverse_converse_round_circle_arc_chord_congruence;;
+stat_round_circle_arc_chord_congruence <=> nrel_reverse_theorem: stat_reverse_round_circle_arc_chord_congruence;;
+stat_converse_round_circle_arc_chord_congruence <=> nrel_reverse_theorem: stat_reverse_converse_round_circle_arc_chord_congruence;;
+stat_round_circle_arc_chord_congruence <=> nrel_reverse_converse_theorem: stat_reverse_converse_round_circle_arc_chord_congruence;;
+stat_converse_round_circle_arc_chord_congruence <=> nrel_reverse_converse_theorem: stat_reverse_round_circle_arc_chord_congruence;;

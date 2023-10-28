@@ -1,0 +1,29 @@
+sc_node_norole_relation -> nrel_cos;;
+
+nrel_cos => nrel_main_idtf:
+	[косинус*] 
+	(* <- lang_ru;; *);
+	[cosine*] 
+	(* <- lang_en;; *);;
+
+nrel_cos => nrel_definitional_domain: 
+	...
+	(*
+		<= nrel_combination:
+		{
+			value;
+			number
+		};;
+	*);;
+
+
+nrel_cos => nrel_first_domain: value;;
+
+nrel_cos => nrel_second_domain: number;;
+
+nrel_cos <- relation;;
+nrel_cos <- binary_relation;;
+nrel_cos <- oriented_relation;;
+nrel_cos <- antireflexive_relation;;
+nrel_cos <- antisymmetric_relation;;
+nrel_cos <- antitransitive_relation;;

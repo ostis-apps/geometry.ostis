@@ -1,0 +1,21 @@
+d_nrel_inclined 
+=> nrel_main_idtf: [Опр.(наклонная*)]	(* <- lang_ru;; *);
+=> nrel_main_idtf: [Def.(inclined*)] (*<- lang_en;;*);
+<- definition;
+-> rrel_key_sc_element: nrel_inclined;
+
+<= nrel_using_constants:
+	{
+	concept_geometric_point;
+	concept_segment;
+	concept_plane; 
+	concept_straight_line; 
+	nrel_perpendicular
+	};
+
+<= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[Наклонная (к прямой) - отрезок, соединяющий какую-нибудь точку плоскости с точкой прямой и не являющийся перпендикуляром к этой прямой.]  (* <- lang_ru;; *);;
+	*);;

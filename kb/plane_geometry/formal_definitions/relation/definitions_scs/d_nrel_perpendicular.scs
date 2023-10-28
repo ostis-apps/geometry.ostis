@@ -1,0 +1,20 @@
+d_nrel_perpendicular 
+=> nrel_main_idtf: [Опр.(перпендикуляр*)] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Def.(perpendicular*)] (*<- lang_en;;*);
+<- definition;
+-> rrel_key_sc_element: nrel_perpendicular;
+
+<= nrel_using_constants:
+	{
+		concept_segment; 
+		concept_straight_line; 
+		nrel_perpendicularity; 
+		concept_geometric_figure
+	};
+
+<= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[Перпендикуляр (из точки к данной прямой или плоскости) - отрезок прямой, перпендикулярной данной, который имеет одним из своих концов точку пересечения прямых.] (* <- lang_ru;; *);;
+	*);;

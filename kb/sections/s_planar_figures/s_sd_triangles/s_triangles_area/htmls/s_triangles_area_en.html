@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Section. Area of triangle</title>
+	<meta charset="utf-8">
+</head>
+<body>
+<p>
+	<u><b>Definition</b></u>. 
+	<sc_element sys_idtf="nrel_area">Area</sc_element> of the 
+	<sc_element sys_idtf="concept_geometric_figure">geometric figure</sc_element> is a numeric characteristics which shows size of the figure (part of the 
+	<sc_element sys_idtf="concept_plane">plane</sc_element> occupied by figure). 
+	<sc_element sys_idtf="value">Value of the</sc_element> 
+	<sc_element sys_idtf="nrel_area">area</sc_element> is expressed by 
+	<sc_element sys_idtf="number">number</sc_element> of the square units contained in the figure.
+</p>
+<ol><b>Area of the triangle:</b>
+	<li>
+		<div>
+			Using 
+			<sc_element sys_idtf="nrel_side_of_polygon">the side</sc_element> and the 
+			<sc_element sys_idtf="nrel_height">altitude</sc_element> construcned to the 
+			<sc_element sys_idtf="nrel_side_of_polygon">side</sc_element>:
+		</div>
+		<div>
+			<img src="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAALkAAAA1CAIAAACSvd2oAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwwAADsMBx2+oZAAAAxpJREFUeF7tmy9oW0Ecx8+diCiBqlExKiZKqFhNKkbUxCAsMIjYUzWriKmM6UTEM5nYRFRNIBQiwljHCCtsYkS04kFgTGSFxsREjIrnInd3ueW915H290L7esd9P6a5/Lle8j75/b53pWwGAA24AqjAFUAFrgAqcAVQgSuAClwBVJx1ZehvM7btD/UQ3I6brvQ8poAraXC3B8nCAlfSAFcAFbgCqMAVQAWuACpwBVCBK4CKu67IMxa4kgY3Xfl3FieBL1TcrSsZ86dT0XJ6PX2XbcCVDBl92GWs1LrUQ9sw2pWoVYjv4tD3LO8WYbdqdcsz1xW5T1nUa2WN7cnitJZnG/WBHtmHsa78t6V9mLoSjr/5Lx/nGMsVm+c/v386n+gH0iPfUX7/qPumIKbja8+aQagfsQRz64oqJXecA1U/W4p+UoxJz1vnT2qfx2EYNESZW7ogwmIvWyWhSK5Q+3hxNZscPbcvuRicV1QTuuH6COJ73wR30q5GrRJnm/XB/OuvlrNs3ttdCXseZ7zc1nVJvsC2nmqwK5JIhuw/WBkvYr9WDvO1Uz1KjXz55uGZHknxuNezqwkZ7oqCUGDugUF9g8WiaNDYYqzaXfXqyvcQTSY3z7zSmeqhJRicV/xEJVEV5npxuc8eJOfmeyd6pNKGCBjT4MuP3/q+FEzb5VhRUlXFOlWMzrbJCy4/4CwbUSJRyGvNthqB+LnKGlRYKbe1HIsGdHa4s9+3pw+Z7EqiPiQuXRZMOxWusujVxVf/dWFdtMDur3e7UeZIgexn0a7nZI+zV8fT8XF1Z5XJHgzDe9AiqmQsimLSPyjkGF97etCfhIO34nauuNKhyOh9Mb78MGgWxbyPXrTsOmGxIdsCM4ArgIqbrkT7p0y34ZbjoCsiA2lD5mkIuhBxz5XEuY2yBbLQcD2vyG4EV2g47oqsK1CFiNuuCFWyP7axFqdduf5nBHAj7roSbYcADVddQUlJj5OuiM1PrKTY/w8CGeGcK/PztwSoMDSczrYgFXAFUIErgApcAVTgCqACVwAVuAKowBVABa4AGrPZX7rDYKZYIYpUAAAAAElFTkSuQmCC">
+		</div>
+	</li>
+	<li>
+		<div>
+			Heron's formula:
+		</div>
+		<div>
+			<img src="data:image/png;base64, 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">
+		</div>
+	</li>
+	<li>
+		<div>
+			Using two 
+			<sc_element sys_idtf="nrel_side_of_polygon">sides</sc_element> and the 
+			<sc_element sys_idtf="concept_angle">angle</sc_element> between them:
+		</div>
+		<div>
+			<img src="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAAOwAAAAyCAIAAADQhaAcAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwwAADsMBx2+oZAAABNJJREFUeF7tmz9oI0cUh7fbQoRDIFIIF4cJJhxGhQXHHSncXAqDsJu4yFaCYBcuzpDGjVy42MZpXIgUR8CJMahYiC8EgeCOEJTDLkQMvhzoChuCCKhSsZ3KvDczq/1zlqzbO8v7kt9Xadaj2dHON2/ezGJrCIBwIDEQDyQG4oHEQDyQGIgHEgPxQGIgHkgMxAOJQzzHsizHMyUgBkisOXdLZDAkFgkkjsChGBLLAxJHgMQygcQRILFMIHEESCwTSBwBEssEEkeAxDKBxBEgsUwgcYg6K4bE8oDEmtHLDgYiywIS3x2ntXk9aUruubkE0gCJ75bm5idWfqtlSrfC3z+u5uzPdl+Z4n8QYRKHqz5HL8+RvvB39h5YtuP5pghSIUpiPj0Ill6ts3CJL+vLllU57JsiSIckid85AbubSDy4ON5YumdbdrHqXZydvHyTOo76nmNbpW8Pthdz1NpKvfMhEbnX3H5YyNHEzt1fNS3RJWrZyj3aNy37nf1HfGFxu9nz3zTUz6D6Xx+9VX+OYJa8MFvnh5/VoCFJYvVgP/ImiEdmPKZSBL/jlu3Ck4OzwbDXWM9TnTEdmqazrS1qgOZC48r32zvz1nzt1PwlhvLnBn269WW7VPuj33+5u5TPrfxwORz2PWfBaVx1qCOmH/2jtfJex+ccJr+wsPjEfUE3/uu7x5Zdfa5aGWHCA93Z3HeaPtwZsnJiHQ4myREmzUk+xgj4ra2CZVcOe7rI3RmX0U4hsa5CVqkSN3Z9/SkEer1fth7sdUxJQanK44PusH9YCfpIH5frl0O/uUlzZ3RfldIkWj93XX3h3HVUlzLtsLSNXczSmT9UNd6htarIWqSD9Qq/Pk3kHg9LbNn3lipP3Z8vBuqS73M3uwcUZ2PzTOUwkUScl4O5nbYpJfEc7hN3LnXfbh9xEmtuDsm3gLIuHH6/sW4lw997oBPioP+67fQzoudt3OeEmLCX611zVTmc32xGHKaUghwObzTZYdbX8djhzIZhQlZObBY5jY7J7yyEo0Cd4MNHQbVd3n9tijz8fMT79vdfOynOF9o7c6E9Ojzy8p+CwUXr5NUVier3//y+QqnC6Kfy65S4w2rmhXNHpRYTHFah2HFKGQ7DhCyJKSqYzwqOxzOMEEri0f1YQmu9wTuyVAe9/P0vn+nsundYsa3CVitFM2Z7GMwtjuij/SHfQjl8WiubFyqqcjhZuKiqn9Y+Xzu6birGf3Q2ESZxNKLO/vFyYJvfafsU8Y43vijmKaKd/VItXD/6N8FBcO7piwEF0mdrBbvspj1gIxE//ebkH/q2aqngeGbfOXxetWma9c/2ymUTSTl3tsP+mk3dgGoUx00hihQZd1hgOhGkw8TMH67fqa8UbXMS2/3pq6LNh8WBM+9LcIxbeLhxbHZjqej95q6qhJhbakSOrf32buIEmrSOBfyeV6XfM/GMWsBrUaEbOzArKGZkOyEmIDGYBK97kFgIOt9mMj9ks0TCtg4Sa/SRvv4EjyOwxNl/GpA42DAGiFhAQRRInERG8AERIHESCdtxEAMSJyCHM7+RAXEgcQzKJaCwOCBxhPCQAkgCEgcgCIsFEivI4GgQlv9v1P8rILE+GU4AhyUBiYF4IDEQDyQG4oHEQDyQGAhnOPwXrjTVBt5X/sUAAAAASUVORK5CYII=">
+		</div>
+	</li>
+	<li>
+		<div>
+			<sc_element sys_idtf="nrel_area">Area</sc_element> of the 
+			<sc_element sys_idtf="concept_rectangular_triangle">right triangle</sc_element>:
+		</div>
+		<div>
+			<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANEAAAAyCAYAAADC6j7DAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwgAADsIBFShKgAAABOZJREFUeF7t3V9oW1UcB/CvvuSiaCmTCTpkW6HD2HYuHVlbttlZO6xQMc6uUFFrHsoUC2LYw8yG6FYmzMBE0ZcZq5Vo6bR0QTuMrpsrtsaa2bSLZLo5ZE6UQR1SuHnSc5PTfyPWNCc3q/d+P3Cbm3ND8nK/Ob9z7rnpDbqu/w0iytuN8pGI8sQQESliiIgUMUREihgiIkUMEZEihohIEUNUBGGvBk3zIiyfk7UwRKZKIODW0BKST8mSGCJTOeGL6tD72uRzsiKGiEgRQ0SkiCEiUsQQESliiIgUMUREihiiIkicm5R7ZEUMkakyF1td/rjYD6FF0+DlsgXL4e3hdhU7AGfdAVww9qu6EIv64EwfoKViT2RXrr1I6J+i4xagdHM1A6TANiFKBNzQRDmV3twBUWiF4bV7bTUxhuG/HGjaVisbKB/2CFHYK8YlQFdMhyhfoXcD7VqLGKXY26VvTogvk0Y0bnbIFsqHLUIU7hdxadsH30zN4vQhqvdhOS8LnU4eRWfd7SjRSrB2VxjJM4MY/ikljxZCCme+HhXjoXJcfXUjVhif4zmCiUJ+hE3YIkRl91QBof0IJGRDWjOCwWa5X1izZeN/bP8mNRHAdvfz+PnJ47is/4jAdAfW13rwwsB5+YpsMjOBmVI1FyMYGhSJSX6E72sGcPlqBE8kn0ProZg8TrmyRYicvn2i14nD78rtJFswfsq6LX6DXbpkzGHLKnUSe5r8mGw8hOCuDbgZK+HZ2SQOOFBRXpZ5TSEkvsPwlOiIXhzA65474XC4sbEGuHBsKMcQ0gybTCyIXkePoUt0SIj74TKCsMikgtMXzXrSz21B8Y7muNRzEG9dcWDHU4+K+Mi2338Vf2tQt2GxsYu8dynHqeqp8RHxtXIfOh6vFPE0JMBrwvmxSYgM8iSbGQuFWpZQ+hTLFE4fPyUe5w/2U/j2lGhz3o9Nq2STshSGIxHRDW1H3cx7To1jxLgmXFqCWzMtlCNbhCgRCMwrv4xeSUfM6JZEr/Ralg5JtZzL32+4/It4qN6K6tJMizF2Of2FOLfrN6Hy4igiE6IGUzaOsa9SWNW0ZbbXSg1HIGKFWk8DCpZVm7BJT9SL/mvO+sw4KbvrWc6lrVuDcrmL6BCOidw8sKUW0Xe9+PDiTfKAurvLVsu9P/DJex8jdduzeOnpNbKNcmWbci7UsnDdWiKwHyERI4+paVgqJ7Y9vBYYHUM0lcLU2aPo3NODaVTh3tUnEXynEg8W5JrOemx9qBQ/TCbFe08j+X4ndkcq0DV4EPW8ZLRkNglRK/pED+LpnyvJXP4K0WZyj5IH1+5evLmuB40ld6D25T/R8dmXOPzYFbxS/wzw9hvYOVvmqXCgYe8H2HHiEazQ7kLDkZU4HP0cvkomKB9cgEqkyEazc0TmYIhMJVcRyBLSvXDJBFkEQ2SisLcd6JYzen1tiPtdDJIFMURmSQRwzhOdW/TaHITxQ6jx3kEuq7EYhsgsTh9810z9pRfCkuUwREV0/mwcVa1NOa1to/8PTnEXTRherR+eZXhtitSwJyoSY4UE+hggK2KIiiHsRTu6YdI9gHSdMURmSwTg7vcgOjtNR1bDEJnJCJBxqWh+FyR6Jf6Ao7VwYsEsIixa1v8z2bYsF75S/hgiIkUs54gUMUREihgiIkUMEZES4B+67ruFB4PSbQAAAABJRU5ErkJggg==">
+		</div>
+	</li>
+</ol>
+<ul><u><b>Designations:</b></u>
+	<li>	
+		S - 
+		<sc_element sys_idtf="nrel_area">area</sc_element> of the 
+		<sc_element sys_idtf="concept_triangle">triangle</sc_element>
+	</li>
+	<li>
+		a, b, c - 
+		<sc_element sys_idtf="nrel_length">length</sc_element> of the 
+		<sc_element sys_idtf="nrel_side_of_polygon">sides</sc_element> of the 
+		<sc_element sys_idtf="concept_triangle">triangle</sc_element>
+	</li>
+	<li>
+		h - 
+		<sc_element sys_idtf="nrel_height">altitude</sc_element> of the 
+		<sc_element sys_idtf="concept_triangle">triangle</sc_element>
+	</li>
+	<li>
+		γ - 
+		<sc_element sys_idtf="concept_angle">angle</sc_element> between the 
+		<sc_element sys_idtf="nrel_side">sides</sc_element> a and b
+	</li>
+	<li>
+		p - half of the 
+		<sc_element sys_idtf="nrel_perimeter">perimeter</sc_element> of the 
+		<sc_element sys_idtf="concept_triangle">triangle</sc_element>
+	</li>
+</ul>
+</body>
+</html>

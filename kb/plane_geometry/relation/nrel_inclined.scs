@@ -1,0 +1,39 @@
+sc_node_norole_relation -> nrel_inclined;;
+
+nrel_inclined => nrel_main_idtf:
+	[наклонная*]
+	(* <- lang_ru;; *);
+	[inclined*]
+	(* <- lang_en;; *);;
+
+nrel_inclined => nrel_idtf:
+	[быть наклонной*]
+	(* <- lang_ru;; *);;
+
+nrel_inclined => nrel_definitional_domain:
+...
+	(*
+	<= nrel_combination: 
+		{
+		concept_straight_line;
+		concept_segment
+		};;
+	*);;
+	
+
+nrel_inclined => nrel_first_domain: 
+	concept_straight_line;;
+
+nrel_inclined => nrel_second_domain: 
+	concept_segment;;
+
+nrel_inclined <- relation;;
+nrel_inclined <- binary_relation;;
+nrel_inclined <- oriented_relation;;
+nrel_inclined <- antireflexive_relation;;
+nrel_inclined <- antisymmetric_relation;;
+nrel_inclined <- antitransitive_relation;;
+
+	
+
+

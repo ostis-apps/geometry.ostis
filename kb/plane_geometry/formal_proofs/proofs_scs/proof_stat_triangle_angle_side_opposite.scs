@@ -1,0 +1,14 @@
+stat_triangle_angle_side_opposite <= nrel_main_proof: proof_stat_triangle_angle_side_opposite;;
+
+proof_stat_triangle_angle_side_opposite => nrel_main_idtf:
+	 [Док. Утв. (треугольник, угол, сторона многоугольника*, противолежащий*)] (* <- lang_ru;; *);
+	 [Pr. Stat. (triangle, angle, side of polygon*, opposite*)] (* <- lang_en;; *);;
+
+proof_stat_triangle_angle_side_opposite <- rrel_key_sc_element: ...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation: ... 
+		(* 	
+		-> rrel_example: "file://htmls/proof_stat_triangle_angle_side_opposite.html";; 
+		*);;
+	*);;	

@@ -1,0 +1,18 @@
+d_nrel_excircle <- definition;;
+d_nrel_excircle	-> rrel_key_sc_element: nrel_excircle;;
+d_nrel_excircle => nrel_main_idtf: [Опр.(вневписанная*)] (*<-lang_ru;;*);;
+d_nrel_excircle => nrel_main_idtf: [Def.(excircle*)] (*<-lang_en;;*);;
+
+
+d_nrel_excircle <= nrel_using_constants:
+	{
+	concept_circle;
+	concept_triangle;
+	nrel_side
+	};;
+
+d_nrel_excircle <= nrel_sc_text_translation: ...
+		(*
+			<-rrel_example:
+			[Вневписанная окружность треугольника - окружность, которая касается одной стороны и продолжений двух других сторон треугольника] (*<-lang_ru;;*);;
+		*);;

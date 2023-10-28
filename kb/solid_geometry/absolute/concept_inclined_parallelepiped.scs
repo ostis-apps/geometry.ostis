@@ -1,0 +1,20 @@
+sc_node_not_relation -> concept_inclined_parallelepiped;;
+
+concept_inclined_parallelepiped => nrel_main_idtf: [наклонный параллелепипед] (*<-lang_ru;;*);;
+concept_inclined_parallelepiped => nrel_main_idtf: [inclined parallelepiped] (*<-lang_en;;*);;
+
+concept_inclined_parallelepiped <= nrel_strict_inclusion: concept_parallelepiped;;
+
+concept_inclined_parallelepiped <- rrel_key_sc_element: 
+	...
+	(*
+	<- illustration;; 
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: 
+		"file://images/concept_inclined_parallelepiped.png";;
+		*);;
+	*);;
+
+

@@ -1,0 +1,52 @@
+sc_node_norole_relation -> nrel_be_described;;
+
+nrel_be_described => nrel_main_idtf:
+	[описанность*]
+	(* <- lang_ru;;	*);
+	[be described*]
+	(* <- lang_en;;	*);;
+
+nrel_be_described => nrel_idtf: [быть описанным*] (* <- lang_ru;; *);;
+
+nrel_be_described => nrel_idtf: [быть описанной геометрической фигурой*] (* <- lang_ru;; *);;
+
+nrel_be_described <- relation;;
+
+nrel_be_described <- binary_relation;;
+
+nrel_be_described <- oriented_relation;;
+
+nrel_be_described => nrel_definitional_domain:
+...
+	(*
+	<= nrel_combination: 
+		{	 
+		concept_polygon;
+		concept_planar_angle;
+		concept_circle
+		};;
+	*);;
+	
+nrel_be_described => nrel_first_domain: 
+	...
+	(*
+	<= nrel_combination: 
+		{
+		concept_polygon;
+		concept_planar_angle;
+		concept_circle
+		};;
+	*);;
+
+nrel_be_described => nrel_second_domain: 
+	...
+	(*
+	<= nrel_combination: 
+		{
+		concept_polygon;
+		concept_planar_angle;
+		concept_circle
+		};;
+	*);;
+
+	

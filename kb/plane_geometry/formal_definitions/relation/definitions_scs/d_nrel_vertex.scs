@@ -1,0 +1,18 @@
+d_nrel_vertex
+=> nrel_main_idtf: [Опр.(вершина*)] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Def.(vertex*)] (*<- lang_en;;*);
+<- definition;
+-> rrel_key_sc_element: nrel_vertex;
+
+<= nrel_using_constants:
+	{
+		nrel_vertex_of_angle; 
+		nrel_vertex_of_polygon	
+	};
+
+<= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[Вершина - объединение понятий вершины угла и вершины многоугольника.] (* <- lang_ru;; *);;
+	*);;

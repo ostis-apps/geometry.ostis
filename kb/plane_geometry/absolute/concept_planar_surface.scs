@@ -1,0 +1,10 @@
+sc_node_not_relation -> concept_planar_surface;;
+
+concept_planar_surface => nrel_main_idtf:
+	[планарная поверхность] (* <- lang_ru;; *);;
+concept_planar_surface => nrel_main_idtf:
+	[planar surface] (* <- lang_en;; *);;
+
+concept_planar_surface => nrel_idtf: [Множество планарных поверхностей] (* <- lang_ru;; *);;
+
+concept_planar_surface <= nrel_strict_inclusion: concept_flat_geometric_figure;;

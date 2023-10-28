@@ -1,0 +1,22 @@
+stat_vertex_polyhedron_be_skew_diagonal_edge_cube_regular_tetrahedron <- statement;;
+
+stat_vertex_polyhedron_be_skew_diagonal_edge_cube_regular_tetrahedron -> rrel_key_sc_element: 
+nrel_vertex; 
+concept_polyhedron;
+nrel_skew; number;
+nrel_diagonal;
+nrel_opposite; 
+nrel_edge; 
+concept_cube;
+ concept_regular_tetrahedron;;
+
+stat_vertex_polyhedron_be_skew_diagonal_edge_cube_regular_tetrahedron => nrel_main_idtf: [Утв.(число, вершина*)] (* <-lang_ru;; *);;
+stat_vertex_polyhedron_be_skew_diagonal_edge_cube_regular_tetrahedron => nrel_main_idtf: [Stat.(number; vertex*)] (* <-lang_en;; *);;
+
+
+stat_vertex_polyhedron_be_skew_diagonal_edge_cube_regular_tetrahedron <= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+		[Многогранник, вершинами которого являются концы 2 скрещивающихся диагоналей противолежащих граней куба, является правильным тетраэдром.] (* <- lang_ru;; *);;
+		*);;

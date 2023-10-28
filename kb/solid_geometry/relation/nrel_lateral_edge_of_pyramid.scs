@@ -1,0 +1,21 @@
+sc_node_norole_relation -> nrel_lateral_edge_of_pyramid;;
+
+nrel_lateral_edge_of_pyramid => nrel_main_idtf: [боковое ребро пирамиды*] (*<-lang_ru;;*);;
+nrel_lateral_edge_of_pyramid => nrel_main_idtf: [lateral edge of pyramid*] (*<-lang_en;;*);;
+
+nrel_lateral_edge_of_pyramid => nrel_first_domain: concept_pyramid;;
+nrel_lateral_edge_of_pyramid => nrel_second_domain: concept_segment;;
+nrel_lateral_edge_of_pyramid => nrel_definitional_domain: 
+	...
+	(*
+	<= nrel_combination: 
+		{
+			concept_pyramid;
+			concept_segment
+		};;
+	*);;
+	
+nrel_lateral_edge_of_pyramid <- relation;;	
+nrel_lateral_edge_of_pyramid <- binary_relation;;
+nrel_lateral_edge_of_pyramid <- oriented_relation;;
+nrel_lateral_edge_of_pyramid <- antireflexive_relation; antisymmetric_relation; antitransitive_relation;;

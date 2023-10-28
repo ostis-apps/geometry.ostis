@@ -1,0 +1,19 @@
+d_nrel_center_of_regular_polygon 
+=> nrel_main_idtf:[Опр.(центр правильного многоугольника*)] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Def.(center of polygon*)] (*<- lang_en;;*);
+<- definition;
+-> rrel_key_sc_element: nrel_center_of_regular_polygon;
+
+<= nrel_using_constants:
+	{ 
+	concept_circle; 
+	nrel_be_inscribed	
+	}; 
+<= nrel_sc_text_translation: 
+...
+(*
+-> rrel_example: 
+	[Центром правильного многоугольника называется центр вписанной в него или описанной около него окружности.]
+	(* <- lang_ru;; *);;
+*);;
+
