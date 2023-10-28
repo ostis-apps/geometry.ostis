@@ -1,0 +1,21 @@
+d_nrel_lateral_face_of_truncated_pyramid <- definition;;
+
+d_nrel_lateral_face_of_truncated_pyramid => nrel_main_idtf: [Опр.(боковая грань усеченной пирамиды*)] (*<-lang_ru;;*);;
+d_nrel_lateral_face_of_truncated_pyramid => nrel_main_idtf: [Def.(lateral face of truncated pyramid*)] (*<-lang_en;;*);;
+
+d_nrel_lateral_face_of_truncated_pyramid -> rrel_key_sc_element: nrel_lateral_face_of_truncated_pyramid;;
+
+d_nrel_lateral_face_of_truncated_pyramid <= nrel_using_constants:
+	{
+	concept_truncated_pyramid;
+	concept_quadrilateral;
+	nrel_side;
+	nrel_base_of_truncated_pyramid
+	};;
+
+d_nrel_lateral_face_of_truncated_pyramid <= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example:
+		[Боковая грань усеченной пирамиды - четырехугольник, две параллельные стороны которого лежат на основания усеченной пирамиды.] (*<-lang_ru;;*);;
+	*);;

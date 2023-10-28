@@ -1,0 +1,22 @@
+d_concept_equilateral_cylinder <- definition;;
+
+d_concept_equilateral_cylinder -> rrel_key_sc_element: concept_equilateral_cylinder;;
+
+d_concept_equilateral_cylinder => nrel_main_idtf: [Опр.(равносторонний циллиндр)] (*<-lang_ru;;*);;
+d_concept_equilateral_cylinder => nrel_main_idtf: [Def.(equilateral cylinder)] (*<-lang_en;;*);;
+
+d_concept_equilateral_cylinder <= nrel_using_constants:
+	{
+	nrel_height;
+	concept_circle;
+	nrel_diameter;
+	nrel_base;
+	nrel_center
+	};;
+
+d_concept_equilateral_cylinder <= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+		[Циллиндр называется равносторонним, если его высота равна диаметру основания.] (*<-lang_ru;;*);;
+		*);;

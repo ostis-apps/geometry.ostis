@@ -1,0 +1,22 @@
+d_nrel_height_of_cone <- definition;;
+
+d_nrel_height_of_cone => nrel_main_idtf: [Опр.(высота конуса*)] (*<-lang_ru;;*);;
+d_nrel_height_of_cone => nrel_main_idtf: [Def.(height of cone*)] (*<-lang_en;;*);;
+
+d_nrel_height_of_cone -> rrel_key_sc_element: nrel_height_of_cone;;
+
+d_nrel_height_of_cone <= nrel_using_constants:
+	{
+		concept_cone;
+		concept_segment;
+		nrel_vertex_of_cone;
+		nrel_center;
+		nrel_base_of_cone
+	};;
+
+d_nrel_height_of_cone <= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+		[Высота конуса – отрезок, расположенный между вершиной конуса и центром его основания.] (*<-lang_ru;;*);;
+	*);;

@@ -1,0 +1,20 @@
+d_nrel_generatric <- definition;;
+
+d_nrel_generatric => nrel_main_idtf: [Опр.(образующая*)] (*<-lang_ru;;*);;
+d_nrel_generatric => nrel_main_idtf: [Def.(generatric*)] (*<-lang_en;;*);;
+
+d_nrel_generatric -> rrel_key_sc_element: nrel_generatric;;
+
+d_nrel_generatric <= nrel_using_constants:
+	{
+		nrel_element_of_solid_of_revolution;
+		nrel_generatrix_of_conical_surface;
+		nrel_generatrix_of_cylindrical_surface
+	};;
+
+d_nrel_generatric <= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+	[Образующая - это теоретико-множественное объединение понятий образующей тела вращения, образующей конической поверхности и образующей цилиндрической поверхности.] (*<-lang_ru;;*);;
+	*);;

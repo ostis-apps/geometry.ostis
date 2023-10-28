@@ -1,0 +1,21 @@
+d_nrel_vertex_of_conical_surface <- definition;;
+
+d_nrel_vertex_of_conical_surface => nrel_main_idtf: [Опр.(вершина конической поверхности*)] (*<-lang_ru;;*);;
+d_nrel_vertex_of_conical_surface => nrel_main_idtf: [Def.(vertex of conical surface*)] (*<-lang_en;;*);;
+
+d_nrel_vertex_of_conical_surface -> rrel_key_sc_element: nrel_vertex_of_conical_surface;;
+
+d_nrel_vertex_of_conical_surface <= nrel_using_constants:
+	{
+	concept_conical_surface;
+	nrel_generatrix_of_conical_surface;
+	concept_geometric_point;
+	nrel_intersection
+	};;
+
+d_nrel_vertex_of_conical_surface <= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example:
+	[Вершина конической поверхности - точка пересечения образующих конической поверхности.] (*<-lang_ru;;*);;
+	*);;

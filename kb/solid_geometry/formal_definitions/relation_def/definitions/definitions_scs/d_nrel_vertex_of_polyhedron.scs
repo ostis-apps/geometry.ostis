@@ -1,0 +1,20 @@
+d_nrel_vertex_of_polyhedron <- definition;;
+
+d_nrel_vertex_of_polyhedron => nrel_main_idtf: [Опр.(вершина многогранника*)] (*<-lang_ru;;*);;
+d_nrel_vertex_of_polyhedron => nrel_main_idtf: [Def.(vertex of polyhedron*)] (*<-lang_en;;*);;
+
+d_nrel_vertex_of_polyhedron -> rrel_key_sc_element: nrel_vertex_of_polyhedron;;
+
+d_nrel_vertex_of_polyhedron <= nrel_using_constants:
+	{
+	concept_polyhedron;
+	nrel_vertex_of_polygon;
+	concept_polygon
+	};;
+
+d_nrel_vertex_of_polyhedron <= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example:
+		[Вершина многогранника - это каждая из вершин любого многоугольника, ограничивающего многогранник.] (*<-lang_ru;;*);;
+	*);;

@@ -1,0 +1,20 @@
+d_nrel_chord_of_sphere <- definition;;
+
+d_nrel_chord_of_sphere => nrel_main_idtf: [Опр.(хорда сферы*)] (*<-lang_ru;;*);;
+d_nrel_chord_of_sphere => nrel_main_idtf: [Def.(chord of sphere*)] (*<-lang_en;;*);;
+
+d_nrel_chord_of_sphere -> rrel_key_sc_element: nrel_chord_of_sphere;;
+
+d_nrel_chord_of_sphere <= nrel_using_constants:
+	{
+		concept_sphere;
+		concept_segment;
+		concept_geometric_point
+	};;
+
+d_nrel_chord_of_sphere <= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+	[Хордой сферы называется отрезок, соединяющий две любые ее точки.] (*<-lang_ru;;*);;
+	*);;

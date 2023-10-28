@@ -1,0 +1,18 @@
+d_nrel_face_of_polyhedron <- definition;;
+
+d_nrel_face_of_polyhedron -> rrel_key_sc_element: nrel_face_of_polyhedron;;
+
+d_nrel_face_of_polyhedron => nrel_main_idtf: [Опр.(грань*)] (*<-lang_ru;;*);;
+d_nrel_face_of_polyhedron => nrel_main_idtf: [Def.(face of polyhedron*)] (*<-lang_en;;*);;
+
+d_nrel_face_of_polyhedron <= nrel_using_constants:
+	{
+		concept_polyhedron;
+		concept_polygon
+	};;
+
+d_nrel_face_of_polyhedron <= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+		[Гранью многогранника называется каждый из многоугольников, ограничевающих многогранник.] (*<-lang_ru;;*);;
+		*);;

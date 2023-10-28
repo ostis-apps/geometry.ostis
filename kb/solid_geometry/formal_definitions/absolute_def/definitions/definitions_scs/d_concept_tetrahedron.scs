@@ -1,0 +1,21 @@
+d_concept_tetrahedron <- definition;;
+
+d_concept_tetrahedron -> rrel_key_sc_element: concept_tetrahedron;;
+
+d_concept_tetrahedron => nrel_main_idtf: [Опр.(тетраэдр)] (*<-lang_ru;;*);;
+d_concept_tetrahedron => nrel_main_idtf: [Def.(tetrahedron)] (*<-lang_en;;*);;
+
+
+d_cocnept_tetrahedron <= nrel_using_constants:
+	{
+		concept_polyhedron;
+		concept_equilateral_triangle;
+		nrel_face_of_polyhedron
+	};;
+
+d_concept_tetrahedron <= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+		[Тетраэдром называют простейший многогранник, гранями которого являются четыре равносторонних треугольника.] (*<-lang_ru;;*);;
+		*);;

@@ -1,0 +1,20 @@
+d_nrel_lateral_surface_of_solid_of_revolution <- definition;;
+
+d_nrel_lateral_surface_of_solid_of_revolution => nrel_main_idtf: [Опр.(боковая поверхность тела вращения*)] (*<-lang_ru;;*);;
+d_nrel_lateral_surface_of_solid_of_revolution => nrel_main_idtf: [Def.(lateral surface of solid of revolution*)] (*<-lang_en;;*);;
+
+d_nrel_lateral_surface_of_solid_of_revolution -> rrel_key_sc_element: nrel_lateral_surface_of_solid_of_revolution;;
+
+d_nrel_lateral_surface_of_solid_of_revolution <= nrel_using_constants:
+	{
+		nrel_lateral_surface_of_cylinder;
+		nrel_lateral_surface_of_cone;
+		nrel_lateral_surface_of_truncated_cone
+	};;
+
+d_nrel_lateral_surface_of_solid_of_revolution <= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+		[Боковая поверхность тела вращения - это теоретико-множественное объединение понятий боковой поверхности цилиндра, боковой поверхности конуса и боковой поверхности усеченного конуса.] (*<-lang_ru;;*);;
+	*);;

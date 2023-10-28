@@ -1,0 +1,21 @@
+d_nrel_axial_section_of_solid_of_revolution <- definition;;
+
+d_nrel_axial_section_of_solid_of_revolution => nrel_main_idtf: [Опр.(осевое сечение тела вращения*)] (*<-lang_ru;;*);;
+d_nrel_axial_section_of_solid_of_revolution => nrel_main_idtf: [Def.(axial section of solid of revolution*)] (*<-lang_en;;*);;
+
+d_nrel_axial_section_of_solid_of_revolution -> rrel_key_sc_element: nrel_axial_section_of_solid_of_revolution;;
+
+d_nrel_axial_section_of_solid_of_revolution <= nrel_using_constants:
+	{
+		concept_solid_of_revolution;
+		nrel_cross_section;
+		concept_plane;
+		nrel_axis_of_solid_of_revolution	
+	};;
+
+d_nrel_axial_section_of_solid_of_revolution <= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+	[Осевым сечением тела вращения называется сечение плоскостью, проходящей через ось тела вращения.] (*<-lang_ru;;*);;
+	*);;

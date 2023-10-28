@@ -1,0 +1,13 @@
+d_concept_cuboid <- sc_text_definition;;
+
+d_concept_cuboid -> rrel_key_sc_element: concept_cuboid;;
+
+d_concept_cuboid => nrel_main_idtf: [Опр.(прямоугольный параллелепипед)] (*<-lang_ru;;*);;
+d_concept_cuboid => nrel_main_idtf: [Def.(cuboid)] (*<-lang_en;;*);;
+
+d_concept_cuboid <= nrel_sc_text_translation: 
+		...
+		(*
+		<- rrel_example: 
+		[́Прямоугольным называется параллелепипед, у которого все грани - прямоугольники.] (*<-lang_ru;;*);;
+		*);;

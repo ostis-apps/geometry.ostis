@@ -1,0 +1,20 @@
+d_nrel_cross_section <- definition;;
+
+d_nrel_cross_section => nrel_main_idtf: [Опр.(сечение*)] (*<-lang_ru;;*);;
+d_nrel_cross_section => nrel_main_idtf: [Def.(cross section*)] (*<-lang_en;;*);;
+
+d_nrel_cross_section -> rrel_key_sc_element: nrel_cross_section;;
+
+d_nrel_cross_section <= nrel_using_constants:
+	{ 	
+		concept_geometric_body;
+		concept_flat_geometric_figure;
+		nrel_intersection
+	};;
+
+d_nrel_cross_section <= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+	[Сечение - плоская фигура, которая была получена в результате пересечения данного тела и некоторой секущей плоскости.] (*<-lang_ru;;*);;
+	*);;

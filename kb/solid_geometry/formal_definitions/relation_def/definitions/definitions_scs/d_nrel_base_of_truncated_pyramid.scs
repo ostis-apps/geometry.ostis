@@ -1,0 +1,23 @@
+d_nrel_base_of_truncated_pyramid <- definition;;
+
+d_nrel_base_of_truncated_pyramid => nrel_main_idtf: [Опр.(основание усеченной пирамиды*)] (*<-lang_ru;;*);;
+d_nrel_base_of_truncated_pyramid => nrel_main_idtf: [Def.(base of truncated pyramid*)] (*<-lang_en;;*);;
+
+d_nrel_base_of_truncated_pyramid -> rrel_key_sc_element: nrel_base_of_truncated_pyramid;;
+
+d_nrel_base_of_truncated_pyramid <= nrel_using_constants:
+	{
+	concept_truncated_pyramid;
+	nrel_face_of_polyhedron;
+	concept_polygon;
+	nrel_parallelism;
+	nrel_smaller_base_of_truncated_pyramid;
+	nrel_larger_base_of_truncated_pyramid
+	};;
+
+d_nrel_base_of_truncated_pyramid <= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example:
+		[Основанием усеченной пирамиды называется одна из двух параллельных граней, которые являются многоугольниками и называются нижним и верхним основаниями усеченной пирамиды.] (*<-lang_ru;;*);;
+	*);;
