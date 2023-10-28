@@ -1,0 +1,21 @@
+d_nrel_base_of_segment_of_sphere <- definition;;
+
+d_nrel_base_of_segment_of_sphere => nrel_main_idtf: [Опр.(основание сферического сегмента*)] (*<-lang_ru;;*);;
+d_nrel_base_of_segment_of_sphere => nrel_main_idtf: [Def.(base of segment of sphere*)] (*<-lang_en;;*);;
+
+d_nrel_base_of_segment_of_sphere -> rrel_key_sc_element: nrel_base_of_segment_of_sphere;;
+
+d_nrel_base_of_segment_of_sphere <= nrel_using_constants:
+	{
+	concept_sphere;
+	concept_circle;
+	nrel_cross_section;
+	nrel_intersection
+	};;
+
+d_nrel_base_of_segment_of_sphere <= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example:
+	[Основанием сферического сегмента называется окружность, по которой секущая плоскость пересекает данную сферу.] (*<-lang_ru;;*);;
+	*);;

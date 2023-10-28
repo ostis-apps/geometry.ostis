@@ -1,0 +1,19 @@
+d_concept_segment_of_ball <- definition;;
+
+d_concept_segment_of_ball => nrel_main_idtf: [Опр.(шаровой сегмент)] (*<-lang_ru;;*);;
+d_concept_segment_of_ball => nrel_main_idtf: [Def.(segment of ball)] (*<-lang_en;;*);;
+
+d_concept_segment_of_ball -> rrel_key_sc_element: concept_segment_of_ball;;
+
+d_concept_segment_of_ball <= nrel_using_constants:
+	{
+	concept_ball;
+	concept_plane
+	};;
+
+d_concept_segment_of_ball <= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+		[Шаровым сегментом называется часть шара, отсекаемая от него плоскостью.] (*<-lang_ru;;*);;
+		*);;

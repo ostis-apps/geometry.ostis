@@ -1,0 +1,24 @@
+d_nrel_base_of_solid_of_revolution <- definition;;
+
+d_nrel_base_of_solid_of_revolution => nrel_main_idtf: [Опр.(основание тела вращения*)] (*<-lang_ru;;*);;
+d_nrel_base_of_solid_of_revolution => nrel_main_idtf: [Def.(base of solid of revolution*)] (*<-lang_en;;*);;
+
+d_nrel_base_of_solid_of_revolution -> rrel_key_sc_element: nrel_base_of_solid_of_revolution;;
+
+d_nrel_base_of_solid_of_revolution <= nrel_using_constants:
+	{
+		nrel_base_of_cylinder;
+		nrel_base_of_cone;
+		nrel_base_of_truncated_cone;
+		nrel_base_of_segment_of_sphere;
+		nrel_base_of_segment_of_ball;
+		nrel_base_of_spherical_layer;
+		nrel_base_of_zone_of_sphere
+	};;
+
+d_nrel_base_of_solid_of_revolution <= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+	[Основание тела вращения - это теоретико-множественное объединение понятий основания цилиндра, основания конуса, основания усеченного конуса, основания сферического пояса, основания шарового слоя, основания шарового сегмента и основания сферического сегмента.] (*<-lang_ru;;*);;
+	*);;

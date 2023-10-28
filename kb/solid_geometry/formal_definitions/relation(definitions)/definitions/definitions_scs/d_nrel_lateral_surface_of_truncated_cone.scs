@@ -1,0 +1,19 @@
+d_nrel_lateral_surface_of_truncated_cone <- definition;;
+
+d_nrel_lateral_surface_of_truncated_cone => nrel_main_idtf: [Опр.(боковая поверхность усеченного конуса*)] (*<-lang_ru;;*);;
+d_nrel_lateral_surface_of_truncated_cone => nrel_main_idtf: [Def.(lateral surface of truncated cone*)] (*<-lang_en;;*);;
+
+d_nrel_lateral_surface_of_truncated_cone -> rrel_key_sc_element: nrel_lateral_surface_of_truncated_cone;;
+
+d_nrel_lateral_surface_of_truncated_cone <= nrel_using_constants:
+	{
+		concept_conical_surface;
+		concept_truncated_cone
+	};;
+
+d_nrel_lateral_surface_of_truncated_cone <= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example:
+	[Боковая поверхность усеченного конуса - это часть конической поверхности, ограничивающая усеченный конус.] (*<-lang_ru;;*);;
+	*);;

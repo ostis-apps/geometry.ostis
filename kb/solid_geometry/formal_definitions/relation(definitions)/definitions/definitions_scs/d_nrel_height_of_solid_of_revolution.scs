@@ -1,0 +1,24 @@
+d_nrel_height_of_solid_of_revolution <- definition;;
+
+d_nrel_height_of_solid_of_revolution => nrel_main_idtf: [Опр.(высота тела вращения*)] (*<-lang_ru;;*);;
+d_nrel_height_of_solid_of_revolution => nrel_main_idtf: [Def.(height of solid of revolution*)] (*<-lang_en;;*);;
+
+d_nrel_height_of_solid_of_revolution -> rrel_key_sc_element: nrel_height_of_solid_of_revolution;;
+
+d_nrel_height_of_solid_of_revolution <= nrel_using_constants:
+	{
+		nrel_height_of_cylinder;
+		nrel_height_of_cone;
+		nrel_height_of_truncated_cone;
+		nrel_height_of_segment_of_ball;
+		nrel_height_of_zone_of_sphere;
+		nrel_height_of_spherical_layer;
+		nrel_height_of_spheric_sector 
+	};;
+
+d_nrel_height_of_solid_of_revolution <= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+	[Высота тела вращения - это теоретико-множественное объединение понятий высоты цилиндра, высоты конуса, высоты усеченного конуса, высоты шарового сектора, высоты шарового слоя, высоты шарового сегмента и высоты сферического пояса.] (*<-lang_ru;;*);;
+	*);;

@@ -1,0 +1,22 @@
+d_nrel_height_of_segment_of_ball <- definition;;
+
+d_nrel_height_of_segment_of_ball => nrel_main_idtf: [Опр.(высота шарового сегмента*)] (*<-lang_ru;;*);;
+d_nrel_height_of_segment_of_ball => nrel_main_idtf: [Def.(height of segment of ball*)] (*<-lang_en;;*);;
+
+d_nrel_height_of_segment_of_ball -> rrel_key_sc_element: nrel_height_of_segment_of_ball;;
+
+d_nrel_height_of_segment_of_ball <= nrel_using_constants:
+	{
+	concept_segment;
+	nrel_diameter_of_ball;
+	nrel_base_of_segment_of_ball;
+	nrel_perpendicularity;
+	concept_sphere	
+	};;
+
+d_nrel_height_of_segment_of_ball <= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+	[Высота шарового сегмента - отрезок диаметра, перпендикулярного основанию шарового сегмента, расположенного между этим основанием и сферой, ограничевающей шар.] (*<-lang_ru;;*);;
+	*);;

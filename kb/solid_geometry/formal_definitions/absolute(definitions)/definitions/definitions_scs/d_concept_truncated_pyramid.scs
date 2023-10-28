@@ -1,0 +1,24 @@
+d_concept_truncated_pyramid <- definition;;
+
+d_concept_truncated_pyramid => nrel_main_idtf: [Опр.(усеченная пирамида)] (*<-lang_ru;;*);;
+d_concept_truncated_pyramid => nrel_main_idtf: [Def.(truncated pyramid)] (*<-lang_en;;*);;
+
+d_concept_truncated_pyramid -> rrel_key_sc_element: concept_truncated_pyramid;;
+
+d_concept_truncated_pyramid <= nrel_using_constants:
+	{
+	concept_polyhedron;
+	concept_polygon;
+	concept_quadrilateral;
+	concept_pyramid;
+	concept_plane;
+	nrel_parallelism;
+	nrel_base_of_pyramid
+	};;
+
+d_concept_truncated_pyramid <= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+	[Усеченная пирамида - многогранник, гранями которого являются два многоугольника и n четырехугольников, которые отсекаются от пирамиды плоскостью, параллельной плоскости основания пирамиды и пересекающей ее боковые ребра.] (*<-lang_ru;;*);;
+	*);;

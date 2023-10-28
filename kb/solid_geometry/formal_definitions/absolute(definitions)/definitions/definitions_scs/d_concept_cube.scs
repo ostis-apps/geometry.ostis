@@ -1,0 +1,23 @@
+d_concept_cube <- definition;;
+
+d_concept_cube -> rrel_key_sc_element: concept_cube;;
+
+d_concept_cube => nrel_main_idtf: [Опр.(куб)] (*<- lang_ru;;*);; 
+d_concept_cube => nrel_main_idtf: [Def.(cube)] (* <- lang_en;;*);; 
+
+
+d_concept_cube <= nrel_using_constants:
+	{
+	concept_square;
+	nrel_face_of_polyhedron;
+	concept_cuboid;
+	concept_surface
+	};;
+
+d_concept_cube <= nrel_sc_text_translation: 
+		...
+		(*
+			-> rrel_example:
+			[Куб - это шестигранник (прямоуольный параллелепипед), все грани которого - равные квадраты.]
+			(* <- lang_ru;; *);;
+		*);;

@@ -1,0 +1,19 @@
+d_nrel_height_of_cylinder <- definition;;
+
+d_nrel_height_of_cylinder => nrel_main_idtf: [Опр.(высота цилиндра*)] (*<-lang_ru;;*);;
+d_nrel_height_of_cylinder => nrel_main_idtf: [Def.(height of cylinder*)] (*<-lang_en;;*);;
+
+d_nrel_height_of_cylinder -> rrel_key_sc_element: nrel_height_of_cylinder;;
+
+d_nrel_height_of_cylinder <= nrel_using_constants:
+	{
+	nrel_distance;
+	nrel_base_of_cylinder
+	};;
+
+d_nrel_height_of_cylinder <= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+		[Высота цилиндра - это расстояние между основаниями цилиндра.] (*<-lang_ru;;*);;
+	*);;

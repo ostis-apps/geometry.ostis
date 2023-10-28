@@ -1,0 +1,20 @@
+d_nrel_lateral_edge_of_prism <- definition;;
+
+d_nrel_lateral_edge_of_prism => nrel_main_idtf: [Опр.(боковое ребро призмы*)] (*<-lang_ru;;*);;
+d_nrel_lateral_edge_of_prism => nrel_main_idtf: [Def.(lateral edge of prism*)] (*<-lang_en;;*);;
+
+d_nrel_lateral_edge_of_prism -> rrel_key_sc_element: nrel_lateral_edge_of_prism;;
+
+d_nrel_lateral_edge_of_prism <= nrel_using_constants:
+	{
+	concept_prism;
+	nrel_side;
+	nrel_base_of_prism
+	};;
+
+d_nrel_lateral_edge_of_prism <= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+		[Боковое ребро призмы – это сторона, не лежащая на основаниях призмы.] (*<-lang_ru;;*);;
+	*);;

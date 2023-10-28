@@ -1,0 +1,22 @@
+d_concept_prism <- definition;;
+
+d_concept_prism => nrel_main_idtf: [Опр.(призма)] (*<-lang_ru;;*);;
+d_concept_prism => nrel_main_idtf: [Def.(prism)] (*<-lang_en;;*);;
+
+d_concept_prism -> rrel_key_sc_element: concept_prism;;
+
+d_concept_prism <= nrel_using_constants:
+	{
+	concept_polyhedron;
+	concept_polygon;
+	concept_parallelogram;
+	nrel_side;
+	nrel_base_of_prism
+	};;
+
+d_concept_prism <= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+		[Призма – многогранник, у которого две грани – равные многоугольники (называемые основаниями) с соответственно параллельными сторонами, а остальные грани – параллелограммы, у каждого из которых две стороны являются соответственными сторонами основания.] (*<-lang_ru;;*);;
+		*);;

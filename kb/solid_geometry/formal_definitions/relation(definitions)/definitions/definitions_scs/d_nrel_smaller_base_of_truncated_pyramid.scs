@@ -1,0 +1,22 @@
+d_nrel_smaller_base_of_truncated_pyramid <- definition;;
+
+d_nrel_smaller_base_of_truncated_pyramid => nrel_main_idtf: [Опр.(верхнее основание усеченной пирамиды*)] (*<-lang_ru;;*);;
+d_nrel_smaller_base_of_truncated_pyramid => nrel_main_idtf: [Def.(smaller base of truncated pyramid*)] (*<-lang_en;;*);;
+
+d_nrel_smaller_base_of_truncated_pyramid -> rrel_key_sc_element: nrel_smaller_base_of_truncated_pyramid;;
+
+d_nrel_smaller_base_of_truncated_pyramid <= nrel_using_constants:
+	{
+	concept_truncated_pyramid;
+	concept_pyramid;
+	concept_plane;
+	concept_polygon;
+	nrel_cross_section
+	};;
+
+d_nrel_smaller_base_of_truncated_pyramid <= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example:
+		[Верхнее основание усеченной пирамиды - это многоугольник, образованный в сечении исходной пирамиды плоскостью.] (*<-lang_ru;;*);;
+	*);;

@@ -1,0 +1,22 @@
+d_nrel_axis_of_cone <- definition;;
+
+d_nrel_axis_of_cone => nrel_main_idtf: [Опр.(ось конуса*)] (*<-lang_ru;;*);;
+d_nrel_axis_of_cone => nrel_main_idtf: [Def.(axis of cone*)] (*<-lang_en;;*);;
+
+d_nrel_axis_of_cone -> rrel_key_sc_element: nrel_axis_of_cone;;
+
+d_nrel_axis_of_cone <= nrel_using_constants:
+	{
+		concept_cone;
+		concept_straight_line;
+		nrel_center;
+		nrel_base_of_cone;
+		nrel_vertex_of_cone
+	};;
+
+d_nrel_axis_of_cone <= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+	[Ось конуса - это прямая, одна точка которой принадлежит центру основания конуса, а вторая – вершина конуса.] (*<-lang_ru;;*);;
+	*);;

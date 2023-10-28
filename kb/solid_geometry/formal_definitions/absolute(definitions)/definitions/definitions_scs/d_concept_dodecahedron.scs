@@ -1,0 +1,21 @@
+d_concept_dodecahedron <- definition;;
+
+d_concept_dodecahedron -> rrel_key_sc_element: concept_dodecahedron;;
+
+d_concept_dodecahedron => nrel_main_idtf: [Опр.(додекаэдр)] (*<-lang_ru;;*);;
+d_concept_dodecahedron => nrel_main_idtf: [Def.(dodecahedron)] (*<-lang_en;;*);;
+
+
+d_concept_dodecahedron <= nrel_using_constants:
+	{
+	nrel_face_of_polyhedron;
+	nrel_vertex;
+	concept_regular_hexagon
+	};;
+
+d_concept_dodecahedron <= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+		[Додекаэдр - это правильный многогранник, у которого 12 граней, 20 вершин, 30 ребер.] (*<-lang_ru;;*);;
+		*);;
