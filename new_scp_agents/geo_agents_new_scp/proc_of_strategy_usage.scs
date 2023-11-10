@@ -1,0 +1,28 @@
+proc_of_strategy_usage
+=> nrel_main_idtf:
+	[] (* <- lang_ru;; *);
+	[] (* <- lang_en;; *);
+<- scp_program;
+-> rrel_key_sc_element: .._process1;;
+
+proc_of_strategy_usage = [*
+.._process1
+_<- scp_process;
+
+_-> rrel_1:: _parameter;
+_-> rrel_2:: _start_node;
+_-> rrel_3:: _used_statements;
+_-> rrel_4:: _used_vertexes;
+_-> rrel_5:: _decomp;
+_-> rrel_6:: _tezaurus;
+_-> rrel_7:: _condition_graph;
+_<= nrel_decomposition_of_action:: .._actions (*
+
+	_-> rrel_1:: .._proc_of_strategy_usage_operator0 (*
+		_-> rrel_1:: _start_node;;
+
+	*);;
+
+*);;
+
+*];;

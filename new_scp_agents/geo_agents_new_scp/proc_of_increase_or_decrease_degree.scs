@@ -1,0 +1,28 @@
+proc_of_increase_or_decrease_degree
+=> nrel_main_idtf:
+	[] (* <- lang_ru;; *);
+	[] (* <- lang_en;; *);
+<- scp_program;
+-> rrel_key_sc_element: .._process1;;
+
+proc_of_increase_or_decrease_degree = [*
+.._process1
+_<- scp_process;
+
+_-> rrel_1:: _connection_node;
+_-> rrel_2:: _exponent;
+_-> rrel_3:: _message;
+_<= nrel_decomposition_of_action:: .._actions (*
+
+	_-> rrel_1:: .._proc_of_increase_or_decrease_degree_operator0 (*
+		_-> rrel_1:: _connection_node;;
+		_-> rrel_2:: _arc1;;
+		_-> rrel_3:: _arc_for_unit_of_measure;;
+		_-> rrel_4:: _arc2;;
+		_-> rrel_5:: rrel_1;;
+
+	*);;
+
+*);;
+
+*];;

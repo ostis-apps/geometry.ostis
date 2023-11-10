@@ -1,0 +1,26 @@
+agent_of_changing_system_identifier
+=> nrel_main_idtf:
+	[агентная scp-программа замены системного идентификатора на указанный файл] (* <- lang_ru;; *);
+	[agent scp-program of changing system identifier on specified file] (* <- lang_en;; *);
+<- scp_program;
+<- agent_scp_program;
+-> rrel_key_sc_element: .._process1;;
+
+agent_of_changing_system_identifier = [*
+.._process1
+_<- scp_process;
+
+_-> rrel_1:: _event;
+_-> rrel_2:: _input_arc;
+_<= nrel_decomposition_of_action:: .._actions (*
+
+	_-> rrel_1:: .._agent_of_changing_system_identifier_operator0 (*
+		_-> rrel_1:: _temp;;
+		_-> rrel_2:: _input_arc;;
+		_-> rrel_3:: _quest;;
+
+	*);;
+
+*);;
+
+*];;

@@ -1,0 +1,23 @@
+proc_of_finding_associated_statements
+=> nrel_main_idtf:
+	[] (* <- lang_ru;; *);
+	[] (* <- lang_en;; *);
+<- scp_program;
+-> rrel_key_sc_element: .._process1;;
+
+proc_of_finding_associated_statements = [*
+.._process1
+_<- scp_process;
+
+_-> rrel_1:: _param;
+_-> rrel_2:: _answer_of_finding_of_all_statements;
+_<= nrel_decomposition_of_action:: .._actions (*
+
+	_-> rrel_1:: .._proc_of_finding_associated_statements_operator0 (*
+		_-> rrel_1:: _set_for_statement;;
+
+	*);;
+
+*);;
+
+*];;

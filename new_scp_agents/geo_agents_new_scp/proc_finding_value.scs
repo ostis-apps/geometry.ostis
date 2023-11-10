@@ -1,0 +1,25 @@
+proc_finding_value
+=> nrel_main_idtf:
+	[] (* <- lang_ru;; *);
+	[] (* <- lang_en;; *);
+<- scp_program;
+-> rrel_key_sc_element: .._process1;;
+
+proc_finding_value = [*
+.._process1
+_<- scp_process;
+
+_-> rrel_1:: _param;
+_-> rrel_2:: _answer_of_finding_value;
+_<= nrel_decomposition_of_action:: .._actions (*
+
+	_-> rrel_1:: .._proc_finding_value_operator0 (*
+		_-> rrel_1:: value;;
+		_-> rrel_2:: _arc1;;
+		_-> rrel_3:: _param;;
+
+	*);;
+
+*);;
+
+*];;

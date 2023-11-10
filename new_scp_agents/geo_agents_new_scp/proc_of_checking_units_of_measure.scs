@@ -1,0 +1,23 @@
+proc_of_checking_units_of_measure
+=> nrel_main_idtf:
+	[] (* <- lang_ru;; *);
+	[] (* <- lang_en;; *);
+<- scp_program;
+-> rrel_key_sc_element: .._process1;;
+
+proc_of_checking_units_of_measure = [*
+.._process1
+_<- scp_process;
+
+_-> rrel_1:: _binary_arc;
+_-> rrel_2:: _message;
+_<= nrel_decomposition_of_action:: .._actions (*
+
+	_-> rrel_1:: .._proc_of_checking_units_of_measure_operator0 (*
+		_-> rrel_1:: _example;;
+
+	*);;
+
+*);;
+
+*];;

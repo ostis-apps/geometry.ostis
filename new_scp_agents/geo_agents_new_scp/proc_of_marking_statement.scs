@@ -1,0 +1,30 @@
+proc_of_marking_statement
+=> nrel_main_idtf:
+	[] (* <- lang_ru;; *);
+	[] (* <- lang_en;; *);
+<- scp_program;
+-> rrel_key_sc_element: .._process1;;
+
+proc_of_marking_statement = [*
+.._process1
+_<- scp_process;
+
+_-> rrel_1:: _connection_vars;
+_-> rrel_2:: _then_part;
+_-> rrel_3:: _object;
+_-> rrel_4:: _condition_graph;
+_-> rrel_5:: _set_of_pairs;
+_-> rrel_6:: _visited_vertexes;
+_-> rrel_7:: _define_nodes;
+_<= nrel_decomposition_of_action:: .._actions (*
+
+	_-> rrel_1:: .._proc_of_marking_statement_operator0 (*
+		_-> rrel_1:: _connection_vars;;
+		_-> rrel_2:: _arc1;;
+		_-> rrel_3:: _node1;;
+
+	*);;
+
+*);;
+
+*];;

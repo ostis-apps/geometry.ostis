@@ -1,0 +1,24 @@
+proc_generation_pair
+=> nrel_main_idtf:
+	[] (* <- lang_ru;; *);
+	[] (* <- lang_en;; *);
+<- scp_program;
+-> rrel_key_sc_element: .._process1;;
+
+proc_generation_pair = [*
+.._process1
+_<- scp_process;
+
+_-> rrel_1:: _node1;
+_-> rrel_2:: _node2;
+_-> rrel_3:: _set_of_pairs;
+_<= nrel_decomposition_of_action:: .._actions (*
+
+	_-> rrel_1:: .._proc_generation_pair_operator0 (*
+		_-> rrel_1:: _tuple;;
+
+	*);;
+
+*);;
+
+*];;

@@ -1,0 +1,24 @@
+proc_of_calculating_math_expressions
+=> nrel_main_idtf:
+	[] (* <- lang_ru;; *);
+	[] (* <- lang_en;; *);
+<- scp_program;
+-> rrel_key_sc_element: .._process1;;
+
+proc_of_calculating_math_expressions = [*
+.._process1
+_<- scp_process;
+
+_-> rrel_1:: _pattern;
+_-> rrel_2:: _final;
+_<= nrel_decomposition_of_action:: .._actions (*
+
+	_-> rrel_1:: .._proc_of_calculating_math_expressions_operator0 (*
+		_-> rrel_1:: _message;;
+		_-> rrel_2:: [Nessecary information will be here.];;
+
+	*);;
+
+*);;
+
+*];;

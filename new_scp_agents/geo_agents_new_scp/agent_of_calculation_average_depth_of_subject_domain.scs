@@ -1,0 +1,26 @@
+agent_of_calculation_average_depth_of_subject_domain
+=> nrel_main_idtf:
+	[агентная scp-программа вычисления cредней глубины предметных областей] (* <- lang_ru;; *);
+	[agent scp-program of calculation average depth of subject domain] (* <- lang_en;; *);
+<- scp_program;
+<- agent_scp_program;
+-> rrel_key_sc_element: .._process1;;
+
+agent_of_calculation_average_depth_of_subject_domain = [*
+.._process1
+_<- scp_process;
+
+_-> rrel_1:: _event;
+_-> rrel_2:: _input_arc;
+_<= nrel_decomposition_of_action:: .._actions (*
+
+	_-> rrel_1:: .._agent_of_calculation_average_depth_of_subject_domain_operator0 (*
+		_-> rrel_1:: _temp;;
+		_-> rrel_2:: _input_arc;;
+		_-> rrel_3:: _quest;;
+
+	*);;
+
+*);;
+
+*];;

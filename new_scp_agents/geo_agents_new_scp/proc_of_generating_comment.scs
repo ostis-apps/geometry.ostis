@@ -1,0 +1,26 @@
+proc_of_generating_comment
+=> nrel_main_idtf:
+	[] (* <- lang_ru;; *);
+	[] (* <- lang_en;; *);
+<- scp_program;
+-> rrel_key_sc_element: .._process1;;
+
+proc_of_generating_comment = [*
+.._process1
+_<- scp_process;
+
+_-> rrel_1:: _quest_node;
+_-> rrel_2:: _message;
+_-> rrel_3:: _answer_gen_comment;
+_<= nrel_decomposition_of_action:: .._actions (*
+
+	_-> rrel_1:: .._proc_of_generating_comment_operator0 (*
+		_-> rrel_1:: _answer_gen_comment;;
+		_-> rrel_2:: _arc1;;
+		_-> rrel_3:: _quest_node;;
+
+	*);;
+
+*);;
+
+*];;

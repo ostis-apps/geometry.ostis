@@ -1,0 +1,26 @@
+agent_of_finding_connection_between_entity_and_alternative_of_specification
+=> nrel_main_idtf:
+	[агентная scp-программа нахождения связи между сущностью и альтернативой спецификации] (* <- lang_ru;; *);
+	[agent scp-program of finding connection between entity and alternative of specification] (* <- lang_en;; *);
+<- scp_program;
+<- agent_scp_program;
+-> rrel_key_sc_element: .._process1;;
+
+agent_of_finding_connection_between_entity_and_alternative_of_specification = [*
+.._process1
+_<- scp_process;
+
+_-> rrel_1:: _event;
+_-> rrel_2:: _input_arc;
+_<= nrel_decomposition_of_action:: .._actions (*
+
+	_-> rrel_1:: .._agent_of_finding_connection_between_entity_and_alternative_of_specification_operator0 (*
+		_-> rrel_1:: _temp;;
+		_-> rrel_2:: _input_arc;;
+		_-> rrel_3:: _quest;;
+
+	*);;
+
+*);;
+
+*];;

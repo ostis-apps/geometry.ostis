@@ -1,0 +1,24 @@
+proc_generation_chain
+=> nrel_main_idtf:
+	[] (* <- lang_ru;; *);
+	[] (* <- lang_en;; *);
+<- scp_program;
+-> rrel_key_sc_element: .._process1;;
+
+proc_generation_chain = [*
+.._process1
+_<- scp_process;
+
+_-> rrel_1:: _param;
+_-> rrel_2:: _units_of_measure;
+_-> rrel_3:: _connection_node;
+_<= nrel_decomposition_of_action:: .._actions (*
+
+	_-> rrel_1:: .._proc_generation_chain_operator0 (*
+		_-> rrel_1:: _node2;;
+
+	*);;
+
+*);;
+
+*];;

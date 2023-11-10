@@ -1,0 +1,28 @@
+proc_of_calculation_number_of_all_types_of_input_connections
+=> nrel_main_idtf:
+	[] (* <- lang_ru;; *);
+	[] (* <- lang_en;; *);
+<- scp_program;
+-> rrel_key_sc_element: .._process1;;
+
+proc_of_calculation_number_of_all_types_of_input_connections = [*
+.._process1
+_<- scp_process;
+
+_-> rrel_1:: _input_set;
+_-> rrel_2:: _ontology;
+_-> rrel_3:: _set_of_links;
+_<= nrel_decomposition_of_action:: .._actions (*
+
+	_-> rrel_1:: .._proc_of_calculation_number_of_all_types_of_input_connections_operator0 (*
+		_-> rrel_1:: _subject_domain;;
+		_-> rrel_2:: _arc1;;
+		_-> rrel_3:: _ontology;;
+		_-> rrel_4:: _arc2;;
+		_-> rrel_5:: nrel_ontology;;
+
+	*);;
+
+*);;
+
+*];;

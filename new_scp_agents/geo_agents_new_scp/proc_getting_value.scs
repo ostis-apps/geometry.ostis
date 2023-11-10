@@ -1,0 +1,26 @@
+proc_getting_value
+=> nrel_main_idtf:
+	[] (* <- lang_ru;; *);
+	[] (* <- lang_en;; *);
+<- scp_program;
+-> rrel_key_sc_element: .._process1;;
+
+proc_getting_value = [*
+.._process1
+_<- scp_process;
+
+_-> rrel_1:: _param;
+_-> rrel_2:: _features;
+_-> rrel_3:: _features2;
+_<= nrel_decomposition_of_action:: .._actions (*
+
+	_-> rrel_1:: .._proc_getting_value_operator0 (*
+		_-> rrel_1:: value;;
+		_-> rrel_2:: _arc1;;
+		_-> rrel_3:: _param;;
+
+	*);;
+
+*);;
+
+*];;

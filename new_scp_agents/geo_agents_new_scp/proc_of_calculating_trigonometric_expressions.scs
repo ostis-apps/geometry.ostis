@@ -1,0 +1,25 @@
+proc_of_calculating_trigonometric_expressions
+=> nrel_main_idtf:
+	[] (* <- lang_ru;; *);
+	[] (* <- lang_en;; *);
+<- scp_program;
+-> rrel_key_sc_element: .._process1;;
+
+proc_of_calculating_trigonometric_expressions = [*
+.._process1
+_<- scp_process;
+
+_-> rrel_1:: _connection;
+_-> rrel_2:: _second_vertex;
+_-> rrel_3:: _message;
+_-> rrel_4:: _unknown;
+_<= nrel_decomposition_of_action:: .._actions (*
+
+	_-> rrel_1:: .._proc_of_calculating_trigonometric_expressions_operator0 (*
+		_-> rrel_1:: _sc_link;;
+
+	*);;
+
+*);;
+
+*];;

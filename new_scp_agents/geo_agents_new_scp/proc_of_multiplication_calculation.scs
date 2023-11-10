@@ -1,0 +1,25 @@
+proc_of_multiplication_calculation
+=> nrel_main_idtf:
+	[] (* <- lang_ru;; *);
+	[] (* <- lang_en;; *);
+<- scp_program;
+-> rrel_key_sc_element: .._process1;;
+
+proc_of_multiplication_calculation = [*
+.._process1
+_<- scp_process;
+
+_-> rrel_1:: _binary_arc;
+_-> rrel_2:: _unknown;
+_<= nrel_decomposition_of_action:: .._actions (*
+
+	_-> rrel_1:: .._proc_of_multiplication_calculation_operator0 (*
+		_-> rrel_1:: _tuple;;
+		_-> rrel_2:: _binary_arc;;
+		_-> rrel_3:: _finish_node;;
+
+	*);;
+
+*);;
+
+*];;

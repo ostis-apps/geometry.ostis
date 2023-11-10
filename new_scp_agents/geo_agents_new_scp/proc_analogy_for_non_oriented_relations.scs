@@ -1,0 +1,33 @@
+proc_analogy_for_non_oriented_relations
+=> nrel_main_idtf:
+	[] (* <- lang_ru;; *);
+	[] (* <- lang_en;; *);
+<- scp_program;
+-> rrel_key_sc_element: .._process1;;
+
+proc_analogy_for_non_oriented_relations = [*
+.._process1
+_<- scp_process;
+
+_-> rrel_10:: _relation_marker;
+_-> rrel_1:: _param;
+_-> rrel_2:: _figure;
+_-> rrel_3:: _base_figure;
+_-> rrel_4:: _relaton_message;
+_-> rrel_5:: _step1;
+_-> rrel_6:: _step2;
+_-> rrel_7:: _step3;
+_-> rrel_8:: _step4;
+_-> rrel_9:: _message;
+_<= nrel_decomposition_of_action:: .._actions (*
+
+	_-> rrel_1:: .._proc_analogy_for_non_oriented_relations_operator0 (*
+		_-> rrel_1:: _tuple;;
+		_-> rrel_2:: _arc1;;
+		_-> rrel_3:: _figure;;
+
+	*);;
+
+*);;
+
+*];;
