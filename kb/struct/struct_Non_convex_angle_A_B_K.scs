@@ -1,0 +1,33 @@
+struct_Non_convex_angle_A_B_K => nrel_idtf: [Невыпуклый угол(A; B; K)] (* <- lang_ru;; *);;
+
+struct_Non_convex_angle_A_B_K => nrel_vertex: struct_Geometric_point_B;;
+
+struct_Non_convex_angle_A_B_K => nrel_side: struct_Ray_B_A;;
+
+struct_Non_convex_angle_A_B_K => nrel_side: struct_Ray_B_K;;
+
+struct_Non_convex_angle_A_B_K <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Факт.утв.(Невыпуклый угол ABK)] (* <- lang_ru;; *);;
+	<- statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+           	-> rrel_example: 
+			[Угол ABK является невыпуклым. A, B и K являются геометрическими точками. Геометрическая точка B является вершиной угла ABK. Лучи BA и BK являются сторонами угла ABK.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+struct_Non_convex_angle_A_B_K <- rrel_key_sc_element: 
+	...
+	(*
+	<- illustration;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			"file://images/Angle ABK.png";;
+		*);; 
+	*);; 

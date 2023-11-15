@@ -1,0 +1,81 @@
+sc_node_struct -> struct_Equilateral_triangle_X_Y_Z;;
+
+struct_Equilateral_triangle_X_Y_Z => nrel_main_idtf:
+	[Равносторонний треугольник XYZ]
+	(* <- lang_ru;; *);
+	[Equilateral triangle XYZ]
+	(* <- lang_en;; *);;
+
+struct_Equilateral_triangle_X_Y_Z => nrel_idtf: [Тр-к (X; Y; Z)] (* <- lang_ru;; *);
+										        [Triangle (X; Y; Z)] (* <- lang_en;; *);;
+
+struct_Equilateral_triangle_X_Y_Z => nrel_idtf: [Правильный треугольник(X; Y; Z)] (* <- lang_ru;; *);
+												[Regular triangle(X; Y; Z)] (* <- lang_en;; *);;
+
+struct_Equilateral_triangle_X_Y_Z => nrel_idtf: [Равносторонний треугольник(X; Y; Z)] (* <- lang_ru;; *);
+												[Equilateral triangle(X; Y; Z)] (* <- lang_en;; *);;
+
+struct_Equilateral_triangle_X_Y_Z => nrel_idtf: [Треугольник, вершинами которого являются Точка X, Точка Y, Точка Z] (* <- lang_ru;; *);
+												[Triangle that has Point X, Point Y, Point Z as vertexes.] (* <- lang_en;; *);;
+
+struct_Equilateral_triangle_X_Y_Z => nrel_vertex: struct_Geometric_point_X;;
+
+struct_Equilateral_triangle_X_Y_Z => nrel_vertex: struct_Geometric_point_Y;;
+
+struct_Equilateral_triangle_X_Y_Z => nrel_vertex: struct_Geometric_point_Z;;
+
+struct_Equilateral_triangle_X_Y_Z => nrel_side: struct_Segment_Y_Z;;
+
+struct_Equilateral_triangle_X_Y_Z => nrel_side: struct_Segment_X_Z;;
+
+struct_Equilateral_triangle_X_Y_Z => nrel_side: struct_Segment_X_Y;;
+
+nrel_congruence -> ... (* -> struct_Segment_X_Z; struct_Segment_Y_Z; struct_Segment_X_Y;; *);;
+
+struct_Equilateral_triangle_X_Y_Z => nrel_internal_angle: struct_Angle_Alpha;;
+
+struct_Equilateral_triangle_X_Y_Z => nrel_internal_angle: struct_Angle_Beta;;
+
+struct_Equilateral_triangle_X_Y_Z => nrel_internal_angle: struct_Angle_Gamma;;
+
+nrel_congruence -> ... (* -> struct_Angle_Alpha; struct_Angle_Gamma; struct_Angle_Beta;;*);;
+
+struct_Segment_X_Y => nrel_boundary_point: struct_Geometric_point_X;;
+
+struct_Segment_Y_Z => nrel_boundary_point: struct_Geometric_point_Y;;
+
+struct_Segment_X_Y => nrel_boundary_point: struct_Geometric_point_Y;;
+
+struct_Segment_Y_Z => nrel_boundary_point: struct_Geometric_point_Z;;
+
+struct_Equilateral_triangle_X_Y_Z <- rrel_key_sc_element: 
+	...
+	(*
+	<- illustration;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://images/Triangle XYZ.png";;
+		*);;
+	*);;
+
+struct_Equilateral_triangle_X_Y_Z  <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Факт.утв.(Равносторонний треугольник XYZ)](* <- lang_ru;; *);
+					   [Factual Statement(Equilateral triangle XYZ)] (* <- lang_en;; *);;
+	<- statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Треугольник XYZ является равносторонним,Геометрические точки X, Y и Z являются вершинами Треугольника XYZ. Отрезки x, y и z являются сторонами Треугольника XYZ. Углы alpha, beta, gamma являются внутренним углами Треугольника XYZ. Углы alpha, beta и gamma равны. Отрезки x, y и z равны. Точка X является граничной точкой отрезков y, z. Точка Y является граничной точкой отрезков x, z. Точка Z является граничной точкой отрезков x, y.]
+			(* <- lang_ru;; *);
+			[XYZ is equilateral triangle, a geometric point of X, Y and Z are the vertices of the triangle XYZ. The segments x, y and z are sides of a triangle XYZ. The angles alpha, beta, gamma is an internal angled triangle XYZ. The angles alpha, beta and gamma equal. The segments x, y and z are equal. Point X is a boundary point of the interval y, z. Point Y is a boundary point of the segment x, z. Point Z is a boundary point of the segment x, y.]
+			(* <- lang_en;; *);;
+		*);;
+	*);;
+
+
+

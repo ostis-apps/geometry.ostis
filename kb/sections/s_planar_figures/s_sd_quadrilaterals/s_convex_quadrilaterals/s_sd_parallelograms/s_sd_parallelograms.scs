@@ -1,0 +1,36 @@
+s_sd_parallelograms
+=> nrel_main_idtf:
+	[Раздел. Параллелограмм. Свойства и признаки параллелограмма ]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Section. Parallelogram. Properties and characteristics of a parallelogram]
+	(* <- lang_en;; *);
+
+<- atomic_section;
+
+<= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+		"file://html/s_sd_parallelograms_ru.html"
+		(* <- lang_ru;; *);;
+	*);
+
+
+=> nrel_summary:
+	...
+	(*
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[This section discusses properties and characteristics of a parallelogram.]
+			(* <- lang_en;; *);;
+		*);;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:[В данном разделе рассматриваются cвойства и признаки параллелограмма.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;

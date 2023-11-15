@@ -1,0 +1,43 @@
+sc_node_norole_relation -> nrel_secant;;
+
+nrel_secant => nrel_main_idtf:
+	[секущая*]
+	(* <- lang_ru;; *);
+	[secant*]
+	(* <- lang_en;; *);;
+
+nrel_secant => nrel_idtf: [быть секущей*] (* <- lang_ru;; *);;
+
+nrel_secant => nrel_idtf: [быть секущей геометрической фигуры*] (* <- lang_ru;; *);;
+
+
+nrel_secant => nrel_definitional_domain: 
+	...
+	(*
+	<= nrel_combination: 
+		{
+		... (* <= nrel_boolean: concept_straight_line;; *);
+		concept_circle;
+		concept_straight_line
+		};;
+	*);;	
+
+nrel_secant => nrel_first_domain: 
+	...
+	(*
+	<= nrel_combination: 
+		{
+		... (* <= nrel_boolean: concept_straight_line;; *);
+		concept_circle
+		};;
+	*);;	
+
+nrel_secant => nrel_second_domain: 
+	concept_straight_line;;
+
+nrel_secant <- relation;;
+nrel_secant <- binary_relation;;
+nrel_secant <- oriented_relation;;
+nrel_secant <- antireflexive_relation;;
+nrel_secant <- antisymmetric_relation;;
+nrel_secant <- antitransitive_relation;;

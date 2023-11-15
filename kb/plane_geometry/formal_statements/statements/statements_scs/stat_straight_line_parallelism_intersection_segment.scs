@@ -1,0 +1,28 @@
+stat_straight_line_parallelism_intersection_segment <- statement;;
+
+stat_straight_line_parallelism_intersection_segment
+	-> rrel_key_sc_element:
+	concept_straight_line;
+	nrel_parallelism;
+	nrel_intersection;
+	concept_segment;;
+
+stat_straight_line_parallelism_intersection_segment
+	=> nrel_main_idtf:
+	[Утв.(прямая;параллелизм*;пересечение*;отрезок)] (*<- lang_ru;;*);;
+
+stat_straight_line_parallelism_intersection_segment
+	=> nrel_main_idtf:
+	[Stat.(straight line;parallelism*;intersection*;segment)] (*<- lang_en;;*);;
+
+stat_straight_line_parallelism_intersection_segment
+	=> nrel_idtf:
+	[Обобщённая теорема Фалеса] (*<- lang_ru;;*);;
+
+stat_straight_line_parallelism_intersection_segment <= nrel_sc_text_translation: 
+	... 
+	(* 
+	-> rrel_example: 
+		[Параллельные прямые, пересекающие две данные прямые, отсекают на этих прямых, пропорциональные отрезки.] 
+		(* <- lang_ru;; *);; 
+	*);;

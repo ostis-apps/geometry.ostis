@@ -1,0 +1,20 @@
+sc_node_not_relation -> concept_spheric_sector;;
+
+concept_spheric_sector => nrel_main_idtf: [шаровой сектор] (*<-lang_ru;;*);;
+concept_spheric_sector => nrel_main_idtf: [spheric sector] (*<-lang_en;;*);;
+
+concept_spheric_sector <= nrel_strict_inclusion: concept_solid_of_revolution;;
+
+concept_spheric_sector <- rrel_key_sc_element: 
+	...
+	(*
+	<- illustration;; 
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: 
+		"file://images/concept_spheric_sector.png";;
+		*);;
+	*);;
+
+

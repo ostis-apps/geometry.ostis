@@ -1,0 +1,27 @@
+d_concept_Simson_line <- definition;;
+
+d_concept_Simson_line => nrel_main_idtf: [Опр.(прямая Симсона)] (* <- lang_ru;;*);; 
+d_concept_Simson_line => nrel_main_idtf: [Def.(Simson line)](* <- lang_en;; *);;
+
+d_concept_Simson_line -> rrel_key_sc_element: concept_Simson_line;; 
+
+d_concept_Simson_line <= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example:
+		[Прямая Симсона - это прямая, на которой лежат основания перпендикуляров, опущенных из точки описанной окружности треугольника на его стороны или продолжение сторон.]
+		(* <- lang_ru;; *);;
+	*);;
+
+d_concept_Simson_line <= nrel_using_constants:
+	{
+		concept_straight_line; 
+		nrel_perpendicular; 
+		concept_segment;
+		concept_geometric_point;
+		concept_circle;
+		nrel_be_inscribed;
+		concept_triangle;
+		concept_ray;
+		nrel_side
+	};;

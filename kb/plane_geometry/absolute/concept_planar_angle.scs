@@ -1,0 +1,20 @@
+sc_node_not_relation -> concept_planar_angle;;
+
+concept_planar_angle => nrel_main_idtf:
+	[планарный угол](* <- lang_ru;; *);
+	[planar angle](* <- lang_en;; *);;
+
+concept_planar_angle => nrel_idtf: [Класс планарных углов] (* <- lang_ru;; *);;
+concept_planar_angle => nrel_idtf: [Понятие планарного угла] (* <- lang_ru;; *);;
+concept_planar_angle => nrel_idtf: [Множество планарных углов] (* <- lang_ru;; *);;
+concept_planar_angle => nrel_idtf: [Множество знаков планарных углов] (* <- lang_ru;; *);;
+
+concept_planar_angle <= nrel_strict_inclusion: concept_flat_geometric_figure;;
+
+/*concept_planar_angle -> rrel_example: Угол ABK;;
+concept_planar_angle -> rrel_example: Угол AOB;;
+concept_planar_angle -> rrel_example: Угол KLM;;
+concept_planar_angle -> rrel_example: Угол NKN;;
+concept_planar_angle -> rrel_example: Угол PKP;;
+concept_planar_angle -> rrel_example: Угол PTR;;
+concept_planar_angle -> rrel_example: Угол TPR;;*/

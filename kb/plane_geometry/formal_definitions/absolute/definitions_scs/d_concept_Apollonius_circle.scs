@@ -1,0 +1,23 @@
+d_concept_Apollonius_circle <- definition;;
+
+d_concept_Apollonius_circle  -> rrel_key_sc_element: concept_Apollonius_circle;;
+
+d_concept_Apollonius_circle => nrel_main_idtf: [Опр.(окружность Аполлония] (*<-lang_ru;;*);;
+d_concept_Apollonius_circle => nrel_main_idtf: [Def.(Apollonius circle)] (*<-lang_en;;*);;
+
+d_concept_Apollonius_circle <= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[Окружность Аполлония - геометрическая фигура, состоящая из точек плоскости, отношение расстояний от которых до двух заданных точек — величина постоянная, не равная единице.]
+		(*<-lang_ru;;*);;
+	*);;
+
+d_concept_Apollonius_circle <= nrel_using_constants:
+	{
+		concept_geometric_point;
+		concept_geometric_figure;
+		concept_plane;
+		nrel_distance;
+		nrel_equal_of_quantities
+	};;

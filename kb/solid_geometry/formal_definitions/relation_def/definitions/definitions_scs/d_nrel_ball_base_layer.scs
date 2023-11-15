@@ -1,0 +1,24 @@
+d_nrel_ball_base_layer <- definition;;
+
+d_nrel_ball_base_layer => nrel_main_idtf: 
+	[Опр. (основание шарового слоя*)] 
+	(* <- lang_ru;;*);;
+
+d_nrel_ball_base_layer => nrel_main_idtf: 
+	[Def. (ball base layer*)] 
+	(* <- lang_en;;*);;
+
+d_nrel_ball_base_layer -> rrel_key_sc_element: nrel_ball_base_layer;;
+
+d_nrel_ball_base_layer <= nrel_using_constants: ...
+	(*
+	-> concept_ball;;		
+	-> concept_round;;
+	-> concept_spherical_layer;;
+	*);;
+
+d_nrel_ball_base_layer <= nrel_sc_text_translation: ...
+	(*
+	-> [Основаниями шарового слоя называются сечения шара, образовавшиеся в результате пересечения шара двумя параллельными плоскостями.] (* <- lang_ru;;*);;
+	*);;
+

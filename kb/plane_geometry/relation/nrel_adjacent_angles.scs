@@ -1,0 +1,27 @@
+sc_node_norole_relation -> nrel_adjacent_angles;;
+
+nrel_adjacent_angles => nrel_main_idtf:
+	[смежные углы*]
+	(* <- lang_ru;;	*);
+	[adjacent angles*]
+	(* <- lang_en;;	*);;
+
+nrel_adjacent_angles => nrel_idtf: [быть смежными углами*]
+	(* <- lang_ru;;	*);;
+
+nrel_adjacent_angles => nrel_definitional_domain: 
+	concept_planar_angle;;
+
+nrel_adjacent_angles => nrel_first_domain: 
+	concept_planar_angle;;
+
+nrel_adjacent_angles => nrel_second_domain: 
+	concept_planar_angle;;
+
+nrel_adjacent_angles <- relation;;
+nrel_adjacent_angles <- binary_relation;;
+nrel_adjacent_angles <- non_oriented_relation;;
+nrel_adjacent_angles <- antireflexive_relation;;
+nrel_adjacent_angles <- symmetric_relation;;
+nrel_adjacent_angles <- antitransitive_relation;;
+

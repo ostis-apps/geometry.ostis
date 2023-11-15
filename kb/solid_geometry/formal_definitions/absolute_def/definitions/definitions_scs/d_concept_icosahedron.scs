@@ -1,0 +1,22 @@
+d_concept_icosahedron <- definition;;
+
+d_concept_icosahedron -> rrel_key_sc_element: concept_icosahedron;;
+
+d_concept_icosahedron => nrel_main_idtf: [Опр.(икосаэдр)] (*<-lang_ru;;*);;
+d_concept_icosahedron => nrel_main_idtf: [Def.(icosahedron)] (*<-lang_en;;*);;
+
+
+d_concept_icosahedron <= nrel_using_constants:
+	{
+	nrel_face_of_polyhedron;
+	nrel_vertex;
+	concept_platonic_solid;	
+	concept_equilateral_triangle
+	};;
+
+d_concept_icosahedron <= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+		[Икосаэдр - это правильный многогранник, у которого 20 граней, 12 вершин, 30 ребер.] (*<-lang_ru;;*);;
+		*);;

@@ -1,0 +1,40 @@
+statement -> stat_triangle_median_congrunce_middle_side;;
+statement -> stat_converse_triangle_median_congrunce_middle_side;;
+statement -> stat_reverse_triangle_median_congrunce_middle_side;;
+statement -> stat_reverse_converse_triangle_median_congrunce_middle_side;;
+
+stat_triangle_median_congrunce_middle_side => nrel_main_idtf: [Утв.(точка; перпендикуляр*; середина*; отрезок; прямая)] (* <- lang_ru;; *);;
+stat_converse_triangle_median_congrunce_middle_side => nrel_main_idtf: [Обр.утв.(точка; перпендикуляр*; середина*; отрезок; прямая)] (* <- lang_ru;; *);;
+stat_reverse_triangle_median_congrunce_middle_side => nrel_main_idtf: [Прот.утв.(точка; перпендикуляр*; середина*; отрезок; прямая)] (* <- lang_ru;; *);;
+stat_reverse_converse_triangle_median_congrunce_middle_side => nrel_main_idtf: [Прот.обр.утв.(точка; перпендикуляр*; середина*; отрезок; прямая)] (* <- lang_ru;; *);;
+
+stat_triangle_median_congrunce_middle_side <= nrel_sc_text_translation: ...
+	(*
+	-> rrel_example:
+		[Если медиана треугольника равна половине стороны, которую делит пополам, то треугольник является прямоугольным.] (* <- lang_ru;; *);;
+	*);;
+
+stat_converse_triangle_median_congrunce_middle_side <= nrel_sc_text_translation: ...
+	(*
+	-> rrel_example:
+		[Если треугольник является прямоугольным, то медиана треугольника равна половине стороны, которую делит пополам.] (* <- lang_ru;; *);;
+	*);;
+
+stat_reverse_triangle_median_congrunce_middle_side <= nrel_sc_text_translation: ...
+	(*
+	-> rrel_example:
+		[Если медиана треугольника не равна половине стороны, которую делит пополам, то треугольник не является прямоугольным.] (* <- lang_ru;; *);;
+	*);;
+
+stat_reverse_converse_triangle_median_congrunce_middle_side <= nrel_sc_text_translation: ...
+	(*
+	-> rrel_example:
+		[Если треугольник не является прямоугольным, то медиана треугольника не равна половине стороны, которую делит пополам.] (* <- lang_ru;; *);;
+	*);;
+
+stat_triangle_median_congrunce_middle_side <=> nrel_converse_theorem: stat_converse_triangle_median_congrunce_middle_side;;
+stat_reverse_triangle_median_congrunce_middle_side <=> nrel_converse_theorem: stat_reverse_converse_triangle_median_congrunce_middle_side;;
+stat_triangle_median_congrunce_middle_side <=> nrel_reverse_theorem: stat_reverse_triangle_median_congrunce_middle_sidee;;
+stat_converse_triangle_median_congrunce_middle_side <=> nrel_reverse_theorem: stat_reverse_converse_triangle_median_congrunce_middle_side;;
+stat_triangle_median_congrunce_middle_side <=> nrel_reverse_converse_theorem: stat_reverse_triangle_median_congrunce_middle_side;;
+stat_converse_triangle_median_congrunce_middle_side <=> nrel_reverse_converse_theorem: stat_reverse_converse_triangle_median_congrunce_middle_side;;

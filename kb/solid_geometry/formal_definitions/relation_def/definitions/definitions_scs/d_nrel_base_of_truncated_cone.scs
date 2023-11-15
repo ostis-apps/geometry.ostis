@@ -1,0 +1,19 @@
+d_nrel_base_of_truncated_cone <- definition;;
+
+d_nrel_base_of_truncated_cone => nrel_main_idtf: [Опр.(основание усеченного конуса*)] (*<-lang_ru;;*);;
+d_nrel_base_of_truncated_cone => nrel_main_idtf: [Def.(base of truncated cone*)] (*<-lang_en;;*);;
+
+d_nrel_base_of_truncated_cone -> rrel_key_sc_element: nrel_base_of_truncated_cone;;
+
+d_nrel_base_of_truncated_cone <= nrel_using_constants:
+	{
+		concept_truncated_cone;
+		nrel_lower_base_of_truncated_cone;
+		nrel_top_surface_of_truncated_cone
+	};;
+
+d_nrel_base_of_truncated_cone <= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+		[Основание усеченного конуса - это теоретико-множественное объединение понятий нижнего основания усеченного конуса и верхнего основания усеченного конуса.] (*<-lang_ru;;*);;
+		*);;

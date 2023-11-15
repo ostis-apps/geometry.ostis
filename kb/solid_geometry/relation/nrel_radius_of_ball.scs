@@ -1,0 +1,33 @@
+sc_node_norole_relation -> nrel_radius_of_ball;;
+
+nrel_radius_of_ball => nrel_main_idtf: [радиус шара*] (*<-lang_ru;;*);;
+nrel_radius_of_ball => nrel_main_idtf: [radius of ball*] (*<-lang_en;;*);;
+
+nrel_radius_of_ball => nrel_first_domain: concept_ball;;
+nrel_radius_of_ball => nrel_second_domain: concept_segment;;
+nrel_radius_of_ball => nrel_definitional_domain:
+	...
+	(*
+	<= nrel_combination: 
+		{
+			concept_ball;
+			concept_segment
+		};;
+	*);;
+	
+nrel_radius_of_ball <- relation;;	
+nrel_radius_of_ball <- binary_relation;;
+nrel_radius_of_ball <- oriented_relation;;
+nrel_radius_of_ball <- antireflexive_relation; antisymmetric_relation; antitransitive_relation;;
+
+nrel_radius_of_ball <- rrel_key_sc_element: 
+	...
+	(*
+	<- illustration;; 
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: 
+		"file://images/nrel_radius_of_ball.jpg";;
+		*);;
+	*);;

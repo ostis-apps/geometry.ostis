@@ -1,0 +1,22 @@
+d_concept_trapezoid <- definition;;
+
+d_concept_trapezoid => nrel_main_idtf: [Опр.(трапеция)] (* <- lang_ru;; *);;
+d_concept_trapezoid => nrel_main_idtf: [Def.(trapezoid)] (* <- lang_en;; *);;
+
+d_concept_trapezoid -> rrel_key_sc_element: concept_trapezoid;;
+ 
+d_concept_trapezoid <= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[Трапеция - четырёхугольник, у которого две противоположные стороны параллельны, а две другие непараллельны.]
+		(* <- lang_ru;; *);;
+	*);;
+
+d_concept_trapezoid <= nrel_using_constants:
+	{
+	 concept_quadrilateral;
+	 nrel_side_of_polygon; 
+	 nrel_parallelism;  
+	 nrel_opposite
+	};;	

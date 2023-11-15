@@ -1,0 +1,45 @@
+sc_node_norole_relation -> nrel_center;;
+
+nrel_center => nrel_main_idtf:
+	[центр*]
+	(* <- lang_ru;; *);
+	[center*]
+	(* <- lang_en;; *);;
+
+nrel_center => nrel_idtf: [быть центром*] (* <- lang_ru;; *);;
+nrel_center => nrel_idtf: [быть центром геометрической фигуры*] (* <- lang_ru;; *);;
+
+
+nrel_center <= nrel_definitional_domain: 
+	...
+	(*
+	<= nrel_combination: 
+		{
+		concept_circle; 
+		concept_round;
+		concept_regular_polygon;
+		concept_geometric_point
+		};;
+	*);;
+
+nrel_center => nrel_first_domain:
+	...
+	(*
+	<= nrel_combination: 
+		{
+		concept_circle; 
+		concept_round;
+		concept_regular_polygon
+		};;
+	*);;
+
+nrel_center => nrel_second_domain: 
+	concept_geometric_point;;
+
+nrel_center <- relation;;
+nrel_center <- binary_relation;;
+nrel_center <- oriented_relation;;
+nrel_center <- antireflexive_relation;;
+nrel_center <- antisymmetric_relation;;
+nrel_center <- antitransitive_relation;;
+

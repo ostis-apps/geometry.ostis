@@ -1,0 +1,19 @@
+d_concept_geometric_figure_with_some_boundary_points <- definition;;
+
+d_concept_geometric_figure_with_some_boundary_points => nrel_main_idtf: [Опр.(геометрическая фигура, в состав которой входят не все граничные точки)] (* <- lang_ru;; *);;
+
+d_concept_geometric_figure_with_some_boundary_points -> rrel_key_sc_element: concept_geometric_figure_with_some_boundary_points;;
+
+d_concept_geometric_figure_with_some_boundary_points <= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[Геометрическая фигура, в состав которой входят не все граничные точки - это фигура, для которой существуют хотя бы две граничные точки, при этом одна из которых принадлежит данной фигуре, а другая не принадлежит.]
+		(* <- lang_ru;; *);;
+	*);;
+
+d_concept_geometric_figure_with_some_boundary_points <= nrel_using_constants:
+	{
+	concept_geometric_figure; 
+	nrel_boundary_point
+	};;

@@ -1,0 +1,37 @@
+sc_node_struct -> struct_Circle_O_R;;
+
+struct_Circle_O_R =>  nrel_main_idtf:
+	[Окружность (O; R)]
+	(* <- lang_ru;; *);
+	[Circle (O; R)]
+	(* <- lang_en;; *);;
+
+struct_Circle_O_R => nrel_center: struct_Geometric_point_O;;
+
+struct_Circle_O_R => nrel_radius: struct_Segment_O_R;;
+
+struct_Circle_O_R <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Факт.утв.(Неправильный многоугольник KABCDE] (* <- lang_ru;; *);;
+	<- statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+          	-> rrel_example: 
+			[(O; R) - окружность. Геометрическая точка O является центром окружности (O; R). Отрезок R является радиусом окружности (O; R).]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+struct_Circle_O_R <- rrel_key_sc_element: 
+	...
+	(*
+	<- illustration;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			"file://images/CircleOR.png";;
+		*);; 
+	*);; 

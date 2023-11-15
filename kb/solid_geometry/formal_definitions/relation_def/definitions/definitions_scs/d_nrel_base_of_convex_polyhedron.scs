@@ -1,0 +1,20 @@
+d_nrel_base_of_convex_polyhedron <- definition;;
+
+d_nrel_base_of_convex_polyhedron => nrel_main_idtf: [Опр.(основание выпуклого многогранника*)] (*<-lang_ru;;*);;
+d_nrel_base_of_convex_polyhedron => nrel_main_idtf: [Def.(base of convex polyhedron*)] (*<-lang_en;;*);;
+
+d_nrel_base_of_convex_polyhedron -> rrel_key_sc_element: nrel_base_of_convex_polyhedron;;
+
+d_nrel_base_of_convex_polyhedron <= nrel_using_constants:
+	{
+		nrel_base_of_prism;
+		nrel_base_of_pyramid;
+		nrel_base_of_truncated_pyramid
+	};;
+
+d_nrel_base_of_convex_polyhedron <= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+	[Основание выпуклого многогранника - это теоретико-множественное объединение понятий основания призмы, основания пирамиды и основания усеченной пирамиды.] (*<-lang_ru;;*);;
+	*);;

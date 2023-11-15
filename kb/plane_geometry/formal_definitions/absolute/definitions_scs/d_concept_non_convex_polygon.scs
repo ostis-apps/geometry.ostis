@@ -1,0 +1,19 @@
+d_concept_non_convex_polygon <- definition;;
+
+d_concept_non_convex_polygon => nrel_main_idtf: [Опр.(невыпуклый многоугольник)] (* <- lang_ru;; *);;
+
+d_concept_non_convex_polygon -> rrel_key_sc_element: concept_non_convex_polygon;;
+
+d_concept_non_convex_polygon <= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[Невыпуклый многоугольник - многоугольник, у которого есть хотя бы один невыпуклый угол.]
+		(* <- lang_ru;; *);;
+	*);;
+
+d_concept_non_convex_polygon <= nrel_using_constants:
+	{
+	concept_polygon; 
+	concept_non_convex_angle
+	};;

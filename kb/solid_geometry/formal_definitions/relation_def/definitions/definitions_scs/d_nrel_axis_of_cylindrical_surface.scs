@@ -1,0 +1,24 @@
+d_nrel_axis_of_cylindrical_surface <- definition;;
+
+d_nrel_axis_of_cylindrical_surface => nrel_main_idtf: [Опр.(ось цилиндрической поверхности*)] (*<-lang_ru;;*);;
+d_nrel_axis_of_cylindrical_surface => nrel_main_idtf: [Def.(axis of cylindrical surface*)] (*<-lang_en;;*);;
+
+d_nrel_axis_of_cylindrical_surface -> rrel_key_sc_element: nrel_axis_of_cylindrical_surface;;
+
+d_nrel_axis_of_cylindrical_surface <= nrel_using_constants:
+	{
+		concept_straight_line;
+		concept_cylindrical_surface;		
+		nrel_generatrix_of_cylindrical_surface;
+		concept_circle;
+		concept_plane;
+		nrel_center_of_circle;
+		nrel_parallelism		
+	};;
+
+d_nrel_axis_of_cylindrical_surface <= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+	[Ось цилиндрической поверхности – прямая, параллельная образующим цилиндрической поверхности и проходящая через центр окружности, лежащей в некоторой плоскости.] (*<-lang_ru;;*);;
+	*);;

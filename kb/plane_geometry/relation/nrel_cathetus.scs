@@ -1,0 +1,36 @@
+sc_node_norole_relation -> nrel_cathetus;;
+
+nrel_cathetus => nrel_main_idtf:
+	[катет*]
+	(* <- lang_ru;; *);
+	[cathetus*]
+	(* <- lang_en;; *);;
+
+nrel_cathetus => nrel_idtf: [быть катетом*] (* <- lang_ru;; *);;
+nrel_cathetus => nrel_idtf: [катет прямоугольного треугольника*] (* <- lang_ru;; *);;
+nrel_cathetus => nrel_idtf: [быть катетом прямоугольного треугольника*] (* <- lang_ru;; *);;
+
+nrel_cathetus => nrel_definitional_domain:
+	...
+	(*
+	<= nrel_combination: 
+		{	 
+		concept_rectangular_triangle;
+		concept_segment
+		};;
+	*);;
+
+nrel_cathetus => nrel_first_domain: 
+	concept_rectangular_triangle;;
+
+nrel_cathetus => nrel_second_domain: 
+	concept_segment;;
+
+nrel_cathetus <- relation;;
+nrel_cathetus <- binary_relation;;
+nrel_cathetus <- oriented_relation;;
+nrel_cathetus <- antireflexive_relation;;
+nrel_cathetus <- antisymmetric_relation;;
+nrel_cathetus <- antitransitive_relation;;
+
+

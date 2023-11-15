@@ -1,0 +1,24 @@
+sc_node_not_relation -> concept_non_convex_polygon;;
+
+concept_non_convex_polygon => nrel_main_idtf:
+	[невыпуклый многоугольник](* <- lang_ru;; *);
+	[non convex polygon](* <- lang_en;; *);;
+
+concept_non_convex_polygon => nrel_idtf: [Класс невыпуклых многоугольников] (* <- lang_ru;; *);;
+concept_non_convex_polygon => nrel_idtf: [Понятие невыпуклого многоугольника] (* <- lang_ru;; *);;
+concept_non_convex_polygon => nrel_idtf: [Множество всевозможных невыпуклых многоугольников] (* <- lang_ru;; *);;
+concept_non_convex_polygon => nrel_idtf: [Множество знаков всевозможных невыпуклых многоугольников] (* <- lang_ru;; *);;
+
+concept_non_convex_polygon <- rrel_key_sc_element: 
+	...
+	(*
+	<- illustration;; 
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: 
+		"file://images/concept_non_convex_polygon.png";;
+
+		*);;
+	*);;
+
+concept_non_convex_polygon -> rrel_example: struct_Non_Convex_Polygon_O_P_R_S_Q_T;;

@@ -1,0 +1,20 @@
+sc_node_not_relation -> concept_segment_of_sphere;;
+
+concept_segment_of_sphere => nrel_main_idtf: [сферический сегмент] (*<-lang_ru;;*);;
+concept_segment_of_sphere => nrel_main_idtf: [segment of sphere] (*<-lang_en;;*);;
+
+concept_segment_of_sphere <= nrel_strict_inclusion: concept_solid_of_revolution;;
+
+concept_segment_of_sphere <- rrel_key_sc_element: 
+	...
+	(*
+	<- illustration;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+		"file://images/concept_segment_of_sphere.png";;
+		*);;
+	*);;
+
+

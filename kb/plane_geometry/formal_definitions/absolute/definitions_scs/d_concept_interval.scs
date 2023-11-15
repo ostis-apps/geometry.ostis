@@ -1,0 +1,20 @@
+d_concept_interval <- definition;;
+
+d_concept_interval => nrel_main_idtf: [Опр.(интервал)] (* <- lang_ru;; *);;
+d_concept_interval => nrel_main_idtf: [Def.(interval)] (* <- lang_en;; *);;
+
+d_concept_interval -> rrel_key_sc_element: concept_interval;;
+
+d_concept_interval <= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[Интервал - это отрезок, которому не принадлежат его граничные точки.]
+		(* <- lang_ru;; *);;
+	*);;
+
+d_concept_interval <= nrel_using_constants:
+	{
+	concept_segment; 
+	nrel_boundary_point
+	};;

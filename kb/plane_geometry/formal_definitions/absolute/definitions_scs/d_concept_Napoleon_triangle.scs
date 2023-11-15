@@ -1,0 +1,23 @@
+d_concept_Napoleon_triangle <- definition;;
+
+d_concept_Napoleon_triangle => nrel_main_idtf: [Опр. (треугольник Наполеона)] (*<-lang_ru;;*);;
+d_concept_Napoleon_triangle => nrel_main_idtf: [Def.(Napoleon triangle)] (*<-lang_en;;*);;
+
+d_concept_Napoleon_triangle -> rrel_key_sc_element: concept_Napoleon_triangle;;
+
+d_concept_Napoleon_triangle <= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[Если на сторонах произвольного треугольника внешним образом построить равносторонние треугольники, то их центры являются вершинами равностороннего внешнего треугольника Наполеона.]
+		(*<-lang_ru;;*);;
+	*);;
+
+d_concept_Napoleon_triangle <= nrel_using_constants:
+	{
+	nrel_side;
+	concept_triangle;
+	concept_equilateral_triangle;
+	nrel_center;
+	nrel_vertex
+	};;

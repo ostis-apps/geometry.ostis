@@ -1,0 +1,21 @@
+d_concept_linear_angle <- definition;;
+
+d_concept_linear_angle => nrel_main_idtf: [Опр.(линейный угол)] (* <- lang_ru;; *);;
+
+d_concept_linear_angle -> rrel_key_sc_element: concept_linear_angle;;
+ 
+d_concept_linear_angle <= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[Линейный угол - это угол, образованный двумя лучами, которые имеют общее начало, при этом точки плоскости, лежащие между этими двумя лучами, не принадлежат линейному углу.]
+		(* <- lang_ru;; *);;
+	*);;
+
+d_concept_linear_angle <= nrel_using_constants:
+	{
+	concept_geometric_figure; 
+	concept_ray; 
+	concept_geometric_point; 
+	concept_plane
+	};;

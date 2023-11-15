@@ -1,0 +1,20 @@
+d_nrel_lateral_edge_of_convex_polyhedron <- definition;;
+
+d_nrel_lateral_edge_of_convex_polyhedron => nrel_main_idtf: [Опр.(боковое ребро выпуклого многогранника*)] (*<-lang_ru;;*);;
+d_nrel_lateral_edge_of_convex_polyhedron => nrel_main_idtf: [Def.(lateral edge of convex polyhedron*)] (*<-lang_en;;*);;
+
+d_nrel_lateral_edge_of_convex_polyhedron -> rrel_key_sc_element: nrel_lateral_edge_of_convex_polyhedron;;
+
+d_nrel_lateral_edge_of_convex_polyhedron <= nrel_using_constants:
+	{
+		nrel_lateral_edge_of_prism;
+		nrel_lateral_edge_of_pyramid;
+		nrel_lateral_edge_of_truncated_pyramid
+	};;
+
+d_nrel_lateral_edge_of_convex_polyhedron <= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+	[Боковое ребро выпуклого многогранника - это теоретико-множественное объединение понятий бокового ребра призмы, бокового ребра пирамиды и бокового ребра усеченной пирамиды.] (*<-lang_ru;;*);;
+	*);;

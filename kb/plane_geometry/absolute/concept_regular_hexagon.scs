@@ -1,0 +1,16 @@
+sc_node_not_relation -> concept_regular_hexagon;;
+
+concept_regular_hexagon => nrel_main_idtf:
+	[правильный шестиугольник]
+	(* <- lang_ru;; *);
+	[right hexagon]
+	(* <- lang_en;;	*);;
+
+concept_regular_hexagon => nrel_idtf: [Класс правильных шестиугольников] (* <- lang_ru;; *);;
+concept_regular_hexagon => nrel_idtf: [Плоский правильный шестиугольник] (* <- lang_ru;; *);;
+concept_regular_hexagon => nrel_idtf: [Понятие правильного шестиугольника] (* <- lang_ru;; *);;
+concept_regular_hexagon => nrel_idtf: [Множество всевозможных правильных шестиугольников] (* <- lang_ru;; *);;
+concept_regular_hexagon => nrel_idtf: [Множество знаков всевозможных правильных шестиугольников] (* <- lang_ru;; *);;
+concept_regular_hexagon => nrel_idtf: [Многоугольник с шестью равными сторонами] (* <- lang_ru;; *);;
+
+concept_regular_hexagon <= nrel_strict_inclusion: concept_hexagon;;

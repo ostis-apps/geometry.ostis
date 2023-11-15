@@ -1,0 +1,46 @@
+sc_node_norole_relation -> nrel_between;;
+
+nrel_between => nrel_main_idtf:
+	[между*]
+	(* <- lang_ru;; *);
+	[between*]
+	(* <- lang_en;; *);;
+
+nrel_between => nrel_idtf: 
+	[лежать между*] 
+	(* <- lang_ru;; *);;
+
+nrel_between => nrel_idtf: 
+	[находиться между*] 
+	(* <- lang_ru;; *);;
+
+
+nrel_between => nrel_first_domain: concept_pair_of_points;;
+nrel_between => nrel_second_domain: concept_geometric_point;;
+nrel_between => nrel_definitional_domain: ...
+	(*
+	<= nrel_combination: ...
+		(*
+			-> concept_pair_of_points;;
+			-> concept_geometric_point;;
+		*);;
+	*);;
+
+nrel_between <- rrel_key_sc_element: ...
+	(*
+	<- illustration;;
+	<= nrel_sc_text_translation:
+	...
+		(*
+		-> rrel_example:
+			"file://images/nrel_between_illustration.png";;
+		*);;
+	*);;
+
+binary_relation -> nrel_between;;
+
+oriented_relation -> nrel_between;;
+
+antireflexive_relation -> nrel_between;;
+antisymmetric_relation -> nrel_between;;
+antitransitive_relation -> nrel_between;;

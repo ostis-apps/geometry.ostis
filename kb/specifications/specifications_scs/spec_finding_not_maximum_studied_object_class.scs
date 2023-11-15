@@ -1,0 +1,7 @@
+subject_domain <- rrel_key_sc_element: spec_finding_not_maximum_studied_object_class;;
+
+spec_finding_not_maximum_studied_object_class -> rrel_key_sc_element: rrel_not_maximum_studied_object_class;;
+
+general_specification -> spec_finding_not_maximum_studied_object_class;;
+
+spec_finding_not_maximum_studied_object_class => nrel_main_idtf: [Обобщённая спецификация для поиска немаксимального класса объектов исследования предметной области] (* <- lang_ru;; *);;

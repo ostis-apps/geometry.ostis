@@ -1,0 +1,21 @@
+d_nrel_middle_perpendicular 
+=> nrel_main_idtf: [Опр.(серединный перпендикуляр*)] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Def.(middle perpendicular*)] (*<- lang_en;;*);
+<- definition;
+-> rrel_key_sc_element: nrel_middle_perpendicular;
+
+<= nrel_using_constants:
+	{
+		concept_straight_line; 
+		nrel_intersection; 
+		nrel_middle; 
+		concept_segment; 
+		nrel_perpendicularity
+	};
+
+<= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[Серединный перпендикуляр - прямая, проходящая через середину отрезка перпендикулярно к нему.] (* <- lang_ru;; *);;
+	*);;

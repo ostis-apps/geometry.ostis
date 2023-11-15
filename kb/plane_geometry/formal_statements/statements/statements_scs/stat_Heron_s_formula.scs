@@ -1,0 +1,19 @@
+stat_Heron_s_formula <- statement;;
+
+//stat_Heron_s_formula <- sc_statement_for_solver;;
+
+stat_Heron_s_formula -> rrel_key_sc_element: concept_triangle; nrel_side_of_polygon; nrel_perimeter;;
+
+stat_Heron_s_formula => nrel_main_idtf: [Утв.(треугольник; сторона многоугольника*; периметр*)] (* <-lang_ru;; *);;
+stat_Heron_s_formula => nrel_main_idtf: [Stat.(triangle; side of polygon*; perimeter*)] (* <-lang_en;; *);;
+
+stat_Heron_s_formula => nrel_idtf: [Формула Герона] (* <-lang_ru;; *);;
+stat_Heron_s_formula => nrel_idtf: [Heron's formula] (* <-lang_en;; *);;
+
+stat_Heron_s_formula <= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+		[Площадь треугольника вычисляется по формуле: S = √(p(p-a)(p-b)(p-c)), где p - полупериметр, a,b,c - стороны треугольника.] (* <- lang_ru;; *);;
+		*);;
+

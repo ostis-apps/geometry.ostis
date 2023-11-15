@@ -1,0 +1,29 @@
+stat_triangle_cos_angle_side_opposite <- statement;;
+
+stat_triangle_cos_angle_side_opposite
+	-> rrel_key_sc_element:
+	concept_triangle;
+	nrel_cos;
+	concept_angle;
+	nrel_side;
+	nrel_opposite;;
+
+stat_triangle_cos_angle_side_opposite
+	=> nrel_main_idtf:
+	[Утв.(треугольник;косинус*;угол;сторона*;быть противолежащим*)] (*<- lang_ru;;*);;
+
+stat_triangle_cos_angle_side_opposite
+	=> nrel_main_idtf:
+	[Stat.(triangle;cos*;angle;side*;opposite*)] (*<- lang_en;;*);;
+
+stat_triangle_cos_angle_side_opposite
+	=> nrel_idtf:
+	[Теорема о проекциях] (*<- lang_ru;;*);;
+
+stat_triangle_cos_angle_side_opposite <= nrel_sc_text_translation: 
+	...
+	(* 
+	-> rrel_example: 
+		[В треугольнике длина стороны c определяется по формуле c=a*Cos(β)+b*Cos(α), где a и b - другие стороны треугольника, а α и β - углы, им противолежащие.] 
+		(* <- lang_ru;; *);; 
+	*);;

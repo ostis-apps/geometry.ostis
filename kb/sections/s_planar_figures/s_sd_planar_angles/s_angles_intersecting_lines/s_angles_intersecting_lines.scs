@@ -1,0 +1,36 @@
+s_angles_intersecting_lines
+=> nrel_main_idtf:
+	[Раздел. Углы при пересекающихся прямых ]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Section. The angles at intersecting lines]
+	(* <- lang_en;; *);
+
+<- atomic_section;
+
+<= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+		"file://html/s_angles_intersecting_lines_ru.html"
+		(* <- lang_ru;; *);;
+	*);
+
+
+=> nrel_summary:
+	...
+	(*
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[This section discusses the basic definitions and properties of  angles at intersecting lines.]
+			(* <- lang_en;; *);;
+		*);;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:[В данном разделе рассматриваются основные определения и свойства углов при пересекающихся прямых.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;

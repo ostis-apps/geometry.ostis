@@ -1,0 +1,46 @@
+sc_node_norole_relation -> nrel_length;;
+
+nrel_length => nrel_main_idtf:
+	[длина*]
+	(* <- lang_ru;; *);
+	[length*]
+	(* <- lang_en;; *);;
+
+nrel_length => nrel_idtf: [быть длиной*] (* <- lang_ru;; *);;
+nrel_length => nrel_idtf: [длина объекта*] (* <- lang_ru;; *);;
+nrel_length => nrel_idtf: [быть длиной объекта*] (* <- lang_ru;; *);;
+
+nrel_length => nrel_definitional_domain:
+	...
+	(*
+	<= nrel_combination: 
+		{
+		concept_segment;
+		concept_polyline;
+		concept_circle_arc;
+		concept_circle;
+		value
+		};;
+	*);;
+
+nrel_length => nrel_first_domain: 
+	...
+	(*
+	<= nrel_combination: 
+		{
+		concept_segment;
+		concept_polyline;
+		concept_circle_arc;
+		concept_circle
+		};;
+	*);;
+
+nrel_length => nrel_second_domain: 
+	value;;
+
+nrel_length <- relation;;
+nrel_length <- binary_relation;;
+nrel_length <- oriented_relation;;
+nrel_length <- antireflexive_relation;;
+nrel_length <- antisymmetric_relation;;
+nrel_length <- antitransitive_relation;;	

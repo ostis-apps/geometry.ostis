@@ -1,0 +1,14 @@
+sc_node_not_relation -> concept_segment;;
+
+concept_segment => nrel_main_idtf:
+	[отрезок](* <- lang_ru;; *);
+	[segment](* <- lang_en;; *);;
+
+concept_segment => nrel_idtf: [Геометрический отрезок] (* <- lang_ru;; *);;
+concept_segment => nrel_idtf: [Понятие отрезка] (* <- lang_ru;; *);;
+concept_segment => nrel_idtf: [Понятие геометрического отрезка] (* <- lang_ru;; *);;
+concept_segment => nrel_idtf: [Класс отрезков] (* <- lang_ru;; *);;
+concept_segment => nrel_idtf: [Множество всевозможных отрезков] (* <- lang_ru;; *);;
+concept_segment => nrel_idtf: [Множество знаков всевозможных отрезков] (* <- lang_ru;; *);;
+		
+concept_segment -> rrel_example: struct_Segment_A_B;;

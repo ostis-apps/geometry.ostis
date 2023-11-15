@@ -1,0 +1,37 @@
+sc_node_norole_relation -> nrel_height;;
+
+nrel_height => nrel_main_idtf:
+	[высота*]
+	(* <- lang_ru;; *);
+	[height*]
+	(* <- lang_en;; *);;
+
+nrel_height => nrel_idtf: [быть высотой*]
+	(* <- lang_ru;; *);;
+
+nrel_height => nrel_definitional_domain:
+	...
+	(*
+	<= nrel_combination: 
+		{
+		concept_polygon; 
+		concept_segment
+		};;
+	*);;	
+
+nrel_height => nrel_first_domain:
+	concept_polygon;;	
+
+nrel_height => nrel_second_domain: 
+	concept_segment;;
+
+nrel_height <- relation;;
+nrel_height <- binary_relation;;
+nrel_height <- oriented_relation;;
+nrel_height <- antireflexive_relation;;
+nrel_height <- antisymmetric_relation;;
+nrel_height <- antitransitive_relation;;
+
+
+
+

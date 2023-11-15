@@ -1,0 +1,20 @@
+d_concept_sphere <- definition;;
+
+d_concept_sphere => nrel_main_idtf: [Опр.(сфера)] (*<-lang_ru;;*);;
+d_concept_sphere => nrel_main_idtf: [Def.(sphere)] (*<-lang_en;;*);;
+
+d_concept_sphere -> rrel_key_sc_element: concept_sphere;;
+
+d_concept_sphere <= nrel_using_constants:
+	{
+	concept_surface;
+	concept_geometric_point;
+	nrel_center
+	};;
+
+d_concept_sphere <= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+	[Сфера - поверхность, состоящая их всех точек пространства, расположенных на одинаковом расстоянии от центра сферы.] (*<-lang_ru;;*);;
+	*);;

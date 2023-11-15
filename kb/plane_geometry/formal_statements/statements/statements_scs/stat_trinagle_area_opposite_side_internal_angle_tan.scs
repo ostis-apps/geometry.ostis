@@ -1,0 +1,25 @@
+stat_trinagle_area_opposite_side_internal_angle_tan <- statement;;
+
+stat_trinagle_area_opposite_side_internal_angle_tan
+-> rrel_key_sc_element:
+	concept_triangle;
+	nrel_area;
+	nrel_opposite;
+	nrel_side;
+	nrel_tan;
+	nrel_internal_angle;;
+
+stat_trinagle_area_opposite_side_internal_angle_tan
+=> nrel_main_idtf:
+	[Утв.(треугольник;площадь*;противолежащий*;сторона*;внутренний угол*;тангенс*)] (* <-lang_ru;; *);;
+
+stat_trinagle_area_opposite_side_internal_angle_tan
+=> nrel_main_idtf:
+	[Stat.(triangle;area*;opposite*;side*;internal angle*;tan*)] (* <-lang_en;; *);;
+
+stat_trinagle_area_opposite_side_internal_angle_tan <= nrel_sc_text_translation: 
+	...
+	(*
+		-> rrel_example: 
+		[Для треугольника имеет место равенство: tg(alpha/2)=sqrt(((p-b)(p-c))/(p(p-a))), где p - полупериметр треугольника AВС, a, b, c - стороны треугольника АВС, alpha - угол, противолежащий стороне а.] (* <- lang_ru;; *);;
+	*);;

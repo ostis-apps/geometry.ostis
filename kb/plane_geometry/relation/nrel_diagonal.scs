@@ -1,0 +1,36 @@
+sc_node_norole_relation -> nrel_diagonal;;
+
+nrel_diagonal => nrel_main_idtf:
+	[диагональ*]
+	(* <- lang_ru;; *);
+	[diagonal*]
+	(* <- lang_en;; *);;
+
+nrel_diagonal => nrel_idtf: [быть диагональю*] (* <- lang_ru;; *);;
+
+nrel_diagonal => nrel_definitional_domain: 
+	...
+	(*
+	<= nrel_combination: 
+		{
+		concept_polygon; 
+		concept_segment
+		};;
+	*);;	
+
+nrel_diagonal => nrel_first_domain:
+	concept_polygon;;	
+
+nrel_diagonal => nrel_second_domain: 
+	concept_segment;;
+
+nrel_diagonal <- relation;;
+nrel_diagonal <- binary_relation;;
+nrel_diagonal <- oriented_relation;;
+nrel_diagonal <- antireflexive_relation;;
+nrel_diagonal <- antisymmetric_relation;;
+nrel_diagonal <- antitransitive_relation;;
+
+
+    
+

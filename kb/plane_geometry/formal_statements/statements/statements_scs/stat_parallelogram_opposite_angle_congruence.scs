@@ -1,0 +1,13 @@
+statement -> stat_parallelogram_opposite_angle_congruence;;
+
+stat_parallelogram_opposite_angle_congruence -> rrel_key_sc_element: concept_parallelogram; nrel_opposite; concept_angle; nrel_congruence;;
+
+stat_parallelogram_opposite_angle_congruence => nrel_main_idtf: [Утв.(параллелограмм; противолежащий*; угол; конгруэнтность*)] (* <- lang_ru;; *);;
+stat_parallelogram_opposite_angle_congruence => nrel_main_idtf: [Stat.(parallelogram; opposite*; angle; congruence*)] (* <- lang_en;; *);;
+
+stat_parallelogram_opposite_angle_congruence <= nrel_sc_text_translation: ...
+	(*
+	-> rrel_example:
+		[У параллелограмма противолежащие углы равны.] 
+		(* <- lang_ru;; *);;
+	*);;

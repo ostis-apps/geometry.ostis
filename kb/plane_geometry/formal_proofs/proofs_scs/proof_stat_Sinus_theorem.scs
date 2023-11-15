@@ -1,0 +1,14 @@
+stat_Sinus_theorem <= nrel_main_proof: proof_stat_Sinus_theorem;;
+
+proof_stat_Sinus_theorem => nrel_main_idtf:
+	 [Док. Утв. (Теорема синусов)] (* <- lang_ru;; *);
+	 [Pr. Stat. (Sinus theorem)] (* <- lang_en;; *);;
+
+proof_stat_Sinus_theorem <- rrel_key_sc_element: ...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation: ... 
+		(* 	
+		-> rrel_example: "file://htmls/proof_stat_Sinus_theorem.html";; 
+		*);;
+	*);;	

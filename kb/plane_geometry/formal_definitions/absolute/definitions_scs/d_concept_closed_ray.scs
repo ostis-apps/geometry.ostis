@@ -1,0 +1,19 @@
+d_concept_closed_ray <- definition;;
+
+d_concept_closed_ray => nrel_main_idtf: [Опр.(закрытый луч)] (* <- lang_ru;; *);;
+ 
+d_concept_closed_ray -> rrel_key_sc_element: concept_closed_ray;;
+
+d_concept_closed_ray <= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[Закрытый луч - луч, который содержит свою граничную точку.]
+		(* <- lang_ru;;	*);;
+	*);;
+
+d_concept_closed_ray <= nrel_using_constants:
+	{
+	concept_ray; 
+	nrel_boundary_point
+	};;	

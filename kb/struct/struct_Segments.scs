@@ -1,0 +1,369 @@
+sc_node_struct -> struct_Segment_A_B;;
+sc_node_struct -> struct_Segment_A_D;;
+sc_node_struct -> struct_Segment_A_F;;
+sc_node_struct -> struct_Segment_A_K;;
+sc_node_struct -> struct_Segment_A_O;;
+sc_node_struct -> struct_Segment_B_C;;
+sc_node_struct -> struct_Segment_B_E;;
+sc_node_struct -> struct_Segment_C_D;;
+sc_node_struct -> struct_Segment_C_V;;
+sc_node_struct -> struct_Segment_C_X;;
+sc_node_struct -> struct_Segment_D_E;;
+sc_node_struct -> struct_Segment_D_F;;
+sc_node_struct -> struct_Segment_D_G;;
+sc_node_struct -> struct_Segment_D_K;;
+sc_node_struct -> struct_Segment_D_L;;
+sc_node_struct -> struct_Segment_E_F;;
+sc_node_struct -> struct_Segment_E_H;;
+sc_node_struct -> struct_Segment_E_P;;
+sc_node_struct -> struct_Segment_F_G;;
+sc_node_struct -> struct_Segment_G_H;;
+sc_node_struct -> struct_Segment_K_E;;
+sc_node_struct -> struct_Segment_K_L;;
+sc_node_struct -> struct_Segment_K_M;;
+sc_node_struct -> struct_Segment_K_N;;
+sc_node_struct -> struct_Segment_L_M;;
+sc_node_struct -> struct_Segment_M_N;;
+sc_node_struct -> struct_Segment_N_E;;
+sc_node_struct -> struct_Segment_O_B;;
+sc_node_struct -> struct_Segment_O_P;;
+sc_node_struct -> struct_Segment_O_R;;
+sc_node_struct -> struct_Segment_O_S;;
+sc_node_struct -> struct_Segment_O_T;;
+sc_node_struct -> struct_Segment_P_K;;
+sc_node_struct -> struct_Segment_P_Q;;
+sc_node_struct -> struct_Segment_P_R;;
+sc_node_struct -> struct_Segment_P_S;;
+sc_node_struct -> struct_Segment_P_T;;
+sc_node_struct -> struct_Segment_Q_R;;
+sc_node_struct -> struct_Segment_Q_T;;
+sc_node_struct -> struct_Segment_R_S;;
+sc_node_struct -> struct_Segment_S_Q;;
+sc_node_struct -> struct_Segment_S_T;;
+sc_node_struct -> struct_Segment_V_Z;;
+sc_node_struct -> struct_Segment_X_Y;;
+sc_node_struct -> struct_Segment_X_Z;;
+sc_node_struct -> struct_Segment_Y_Z;;
+
+struct_Segment_A_B <- rrel_example: concept_segment;;
+struct_Segment_A_D <- rrel_example: concept_segment;;
+struct_Segment_A_F <- rrel_example: concept_segment;;
+struct_Segment_A_K <- rrel_example: concept_segment;;
+struct_Segment_A_O <- rrel_example: concept_segment;;
+struct_Segment_B_C <- rrel_example: concept_segment;;
+struct_Segment_B_E <- rrel_example: concept_segment;;
+struct_Segment_C_D <- rrel_example: concept_segment;;
+struct_Segment_C_V <- rrel_example: concept_segment;;
+struct_Segment_C_X <- rrel_example: concept_segment;;
+struct_Segment_D_E <- rrel_example: concept_segment;;
+struct_Segment_D_F <- rrel_example: concept_segment;;
+struct_Segment_D_G <- rrel_example: concept_segment;;
+struct_Segment_D_K <- rrel_example: concept_segment;;
+struct_Segment_D_L <- rrel_example: concept_segment;;
+struct_Segment_E_F <- rrel_example: concept_segment;;
+struct_Segment_E_H <- rrel_example: concept_segment;;
+struct_Segment_E_P <- rrel_example: concept_segment;;
+struct_Segment_F_G <- rrel_example: concept_segment;;
+struct_Segment_G_H <- rrel_example: concept_segment;;
+struct_Segment_K_E <- rrel_example: concept_segment;;
+struct_Segment_K_L <- rrel_example: concept_segment;;
+struct_Segment_K_M <- rrel_example: concept_segment;;
+struct_Segment_K_N <- rrel_example: concept_segment;;
+struct_Segment_L_M <- rrel_example: concept_segment;;
+struct_Segment_M_N <- rrel_example: concept_segment;;
+struct_Segment_N_E <- rrel_example: concept_segment;;
+struct_Segment_O_B <- rrel_example: concept_segment;;
+struct_Segment_O_P <- rrel_example: concept_segment;;
+struct_Segment_O_R <- rrel_example: concept_segment;;
+struct_Segment_O_S <- rrel_example: concept_segment;;
+struct_Segment_O_T <- rrel_example: concept_segment;;
+struct_Segment_P_K <- rrel_example: concept_segment;;
+struct_Segment_P_Q <- rrel_example: concept_segment;;
+struct_Segment_P_R <- rrel_example: concept_segment;;
+struct_Segment_P_S <- rrel_example: concept_segment;;
+struct_Segment_P_T <- rrel_example: concept_segment;;
+struct_Segment_Q_R <- rrel_example: concept_segment;;
+struct_Segment_Q_T <- rrel_example: concept_segment;;
+struct_Segment_R_S <- rrel_example: concept_segment;;
+struct_Segment_S_Q <- rrel_example: concept_segment;;
+struct_Segment_S_T <- rrel_example: concept_segment;;
+struct_Segment_V_Z <- rrel_example: concept_segment;;
+struct_Segment_X_Y <- rrel_example: concept_segment;;
+struct_Segment_X_Z <- rrel_example: concept_segment;;
+struct_Segment_Y_Z <- rrel_example: concept_segment;;
+
+struct_Segment_A_B => nrel_main_idtf:
+	[Отрезок AB]
+	(* <- lang_ru;; *);
+	[Segment AB]
+	(* <- lang_en;; *);;
+
+struct_Segment_A_D => nrel_main_idtf:
+	[Отрезок AD]
+	(* <- lang_ru;;	*);
+	[Segment AD]
+	(* <- lang_en;;	*);;
+
+struct_Segment_A_F => nrel_main_idtf:
+	[Отрезок AF]
+	(* <- lang_ru;;	*);
+	[Segment AF]
+	(* <- lang_en;;	*);;
+
+struct_Segment_A_K => nrel_main_idtf:
+	[Отрезок AK]
+	(* <- lang_ru;;	*);
+	[Segment AK]
+	(* <- lang_en;;	*);;
+
+struct_Segment_A_O => nrel_main_idtf:
+	[Отрезок AO]
+	(* <- lang_ru;;	*);
+	[Segment AO]
+	(* <- lang_en;;	*);;
+
+struct_Segment_B_C => nrel_main_idtf:
+	[Отрезок BC]
+	(* <- lang_ru;;	*);
+	[Segment BC]
+	(* <- lang_en;;	*);;
+
+struct_Segment_B_E => nrel_main_idtf:
+	[Отрезок BE]
+	(* <- lang_ru;;	*);
+	[Segment BE]
+	(* <- lang_en;;	*);;
+
+struct_Segment_C_D => nrel_main_idtf:
+	[Отрезок CD]
+	(* <- lang_ru;;	*);
+	[Segment CD]
+	(* <- lang_en;;	*);;
+
+struct_Segment_C_V => nrel_main_idtf:
+	[Отрезок CV]
+	(* <- lang_ru;;	*);
+	[Segment CV]
+	(* <- lang_en;;	*);;
+
+struct_Segment_C_X => nrel_main_idtf:
+	[Отрезок CX]
+	(* <- lang_ru;;	*);
+	[Segment CX]
+	(* <- lang_en;;	*);;
+
+struct_Segment_D_E => nrel_main_idtf:
+	[Отрезок DE]
+	(* <- lang_ru;;	*);
+	[Segment DE]
+	(* <- lang_en;;	*);;
+
+struct_Segment_D_F => nrel_main_idtf:
+	[Отрезок DF]
+	(* <- lang_ru;;	*);
+	[Segment DF]
+	(* <- lang_en;; *);;
+
+struct_Segment_D_G => nrel_main_idtf:
+	[Отрезок DG]
+	(* <- lang_ru;; *);
+	[Segment DG]
+	(* <- lang_en;;	*);;
+
+struct_Segment_D_K => nrel_main_idtf:
+	[Отрезок DK]
+	(* <- lang_ru;;	*);
+	[Segment DK]
+	(* <- lang_en;; *);;
+
+struct_Segment_D_L => nrel_main_idtf:
+	[Отрезок DL]
+	(* <- lang_ru;; *);
+	[Segment DL]
+	(* <- lang_en;; *);;
+
+struct_Segment_E_F => nrel_main_idtf:
+	[Отрезок EF]
+	(* <- lang_ru;;	*);
+	[Segment EF]
+	(* <- lang_en;; *);;
+
+struct_Segment_E_H => nrel_main_idtf:
+	[Отрезок H]
+	(* <- lang_ru;;	*);
+	[Segment H]
+	(* <- lang_en;;	*);;
+
+struct_Segment_E_P => nrel_main_idtf:
+	[Отрезок EP]
+	(* <- lang_ru;;	*);
+	[Segment EP]
+	(* <- lang_en;; *);;
+
+struct_Segment_F_G => nrel_main_idtf:
+	[Отрезок FG]
+	(* <- lang_ru;; *);
+	[Segment FG]
+	(* <- lang_en;;	*);;
+
+struct_Segment_G_H => nrel_main_idtf:
+	[Отрезок GH]
+	(* <- lang_ru;;	*);
+	[Segment GH]
+	(* <- lang_en;;	*);;
+
+struct_Segment_K_E => nrel_main_idtf:
+	[Отрезок KE]
+	(* <- lang_ru;;	*);
+	[Segment KE]
+	(* <- lang_en;;	*);;
+
+struct_Segment_K_L => nrel_main_idtf:
+	[Отрезок KL]
+	(* <- lang_ru;;	*);
+	[Segment KL]
+	(* <- lang_en;;	*);;
+
+struct_Segment_K_M => nrel_main_idtf:
+	[Отрезок KM]
+	(* <- lang_ru;;	*);
+	[Segment KM]
+	(* <- lang_en;;	*);;
+
+struct_Segment_K_N => nrel_main_idtf:
+	[Отрезок KN]
+	(* <- lang_ru;;	*);
+	[Segment KN]
+	(* <- lang_en;;	*);;
+
+struct_Segment_L_M => nrel_main_idtf:
+	[Отрезок LM]
+	(* <- lang_ru;;	*);
+	[Segment LM]
+	(* <- lang_en;;	*);;
+
+struct_Segment_M_N => nrel_main_idtf:
+	[Отрезок MN]
+	(* <- lang_ru;;	*);
+	[Segment MN]
+	(* <- lang_en;;	*);;
+
+struct_Segment_N_E => nrel_main_idtf:
+	[Отрезок NE]
+	(* <- lang_ru;;	*);
+	[Segment NE]
+	(* <- lang_en;;	*);;
+
+struct_Segment_O_B => nrel_main_idtf:
+	[Отрезок OB]
+	(* <- lang_ru;;	*);
+	[Segment OB]
+	(* <- lang_en;;	*);;
+
+struct_Segment_O_P => nrel_main_idtf:
+	[Отрезок OP]
+	(* <- lang_ru;; *);
+	[Segment OP]
+	(* <- lang_en;;	*);;
+
+struct_Segment_O_R => nrel_main_idtf:
+	[Отрезок OR]
+	(* <- lang_ru;; *);
+	[Segment OR]
+	(* <- lang_en;;	*);;
+
+struct_Segment_O_S => nrel_main_idtf:
+	[Отрезок OS]
+	(* <- lang_ru;; *);
+	[Segment OS]
+	(* <- lang_en;;	*);;
+
+struct_Segment_O_T => nrel_main_idtf:
+	[Отрезок OT]
+	(* <- lang_ru;; *);
+	[Segment OT]
+	(* <- lang_en;;	*);;
+
+struct_Segment_P_K => nrel_main_idtf:
+	[Отрезок PK]
+	(* <- lang_ru;;	*);
+	[Segment PK]
+	(* <- lang_en;;	*);;
+
+struct_Segment_P_Q => nrel_main_idtf:
+	[Отрезок PQ]
+	(* <- lang_ru;; *);
+	[Segment PQ]
+	(* <- lang_en;;	*);;
+
+struct_Segment_P_R => nrel_main_idtf:
+	[Отрезок PR]
+	(* <- lang_ru;;	*);
+	[Segment PR]
+	(* <- lang_en;;	*);;
+
+struct_Segment_P_S => nrel_main_idtf:
+	[Отрезок PS]
+	(* <- lang_ru;;	*);
+	[Segment PS]
+	(* <- lang_en;;	*);;
+
+struct_Segment_P_T => nrel_main_idtf:
+	[Отрезок PT]
+	(* <- lang_ru;;	*);
+	[Segment PT]
+	(* <- lang_en;;	*);;
+
+struct_Segment_Q_R => nrel_main_idtf:
+	[Отрезок QR]
+	(* <- lang_ru;;	*);
+	[Segment QR]
+	(* <- lang_en;;	*);;
+
+struct_Segment_Q_T => nrel_main_idtf:
+	[Отрезок QT]
+	(* <- lang_ru;;	*);
+	[Segment QT]
+	(* <- lang_en;;	*);;
+
+struct_Segment_R_S => nrel_main_idtf:
+	[Отрезок RS]
+	(* <- lang_ru;;	*);
+	[Segment RS]
+	(* <- lang_en;;	*);;
+
+struct_Segment_S_Q => nrel_main_idtf:
+	[Отрезок SQ]
+	(* <- lang_ru;; *);
+	[Segment SQ]
+	(* <- lang_en;;	*);;
+
+struct_Segment_S_T => nrel_main_idtf:
+	[Отрезок ST]
+	(* <- lang_ru;; *);
+	[Segment ST]
+	(* <- lang_en;;	*);;
+
+struct_Segment_V_Z => nrel_main_idtf:
+	[Отрезок VZ]
+	(* <- lang_ru;;	*);
+	[Segment VZ]
+	(* <- lang_en;;	*);;
+
+struct_Segment_X_Y => nrel_main_idtf:
+	[Отрезок XY]
+	(* <- lang_ru;;	*);
+	[Segment XY]
+	(* <- lang_en;;	*);;
+
+struct_Segment_X_Z => nrel_main_idtf:
+	[Отрезок XZ]
+	(* <- lang_ru;;	*);
+	[Segment XZ]
+	(* <- lang_en;;	*);;
+
+struct_Segment_Y_Z => nrel_main_idtf:
+	[Отрезок YZ]
+	(* <- lang_ru;;	*);
+	[Segment YZ]
+	(* <- lang_en;;	*);;

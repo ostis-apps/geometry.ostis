@@ -1,0 +1,19 @@
+d_concept_geometric_figure <- definition;;
+
+d_concept_geometric_figure => nrel_main_idtf: [Опр.(геометрическая фигура)] (* <- lang_ru;; *);;
+d_concept_geometric_figure => nrel_main_idtf: [Def.(geometric figure)] (* <- lang_ru;; *);;
+
+d_concept_geometric_figure -> rrel_key_sc_element: concept_geometric_figure;;
+
+d_concept_geometric_figure <= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[Геометрическая фигура - это непустое множество геометрических точек.]
+		(* <- lang_ru;; *);;
+	*);;
+
+d_concept_geometric_figure <= nrel_using_constants:
+	{
+	concept_geometric_point
+	};;

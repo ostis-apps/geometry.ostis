@@ -1,0 +1,36 @@
+s_sd_convex_polygons
+=> nrel_main_idtf:
+	[Раздел. Выпуклые многоугольники]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Section. Convex polygons]
+	(* <- lang_en;; *);
+
+<- atomic_section;
+
+<= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+		"file://html/s_sd_convex_polygons_ru.html"
+		(* <- lang_ru;; *);;
+	*);
+
+
+=> nrel_summary:
+	...
+	(*
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[This section discusses the basic concepts of convex polygons.]
+			(* <- lang_en;; *);;
+		*);;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:[В данном разделе рассматриваются основные понятия выпуклых многоугольников.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;

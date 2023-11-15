@@ -1,0 +1,21 @@
+d_nrel_perpendicularity
+=> nrel_main_idtf: [Опр.(перпендикулярность*)]	(* <- lang_ru;; *);
+=> nrel_main_idtf: [Def.(perpendicularity*)] (*<- lang_en;;*);
+<- definition;
+-> rrel_key_sc_element: nrel_perpendicularity;
+
+<= nrel_using_constants:
+	{
+		concept_geometric_figure; 
+		concept_ray; 
+		nrel_boundary_point; 
+		nrel_intersection; 
+		concept_right_angle
+	};
+
+<= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[Перпендикулярные геометрические фигуры - пересекающиеся фигуры, у которых любые два луча такие, что один из них принадлежит одной из исходных фигур, второй принадлежит другой фигуре и оба они имеют общую граничную точку, принадлежащую пересечению исходных фигур, и образуют прямой угол.] (* <- lang_ru;; *);;
+	*);;

@@ -1,0 +1,21 @@
+d_concept_rectangular_trapezoid <- definition;;
+
+d_concept_rectangular_trapezoid => nrel_main_idtf: [Опр.(прямоугольная трапеция)] (* <- lang_ru;; *);;
+ 
+d_concept_rectangular_trapezoid -> rrel_key_sc_element: concept_rectangular_trapezoid;;
+
+d_concept_rectangular_trapezoid <= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[Прямоугольная трапеция - трапеция, у которой одна из боковых сторон перпендикулярна основаниям.]
+		(* <- lang_ru;; *);;
+	*);;
+
+d_concept_rectangular_trapezoid <= nrel_using_constants:
+	{
+	concept_trapezoid; 
+	nrel_lateral_side; 
+	nrel_perpendicularity; 
+	nrel_base
+	};;

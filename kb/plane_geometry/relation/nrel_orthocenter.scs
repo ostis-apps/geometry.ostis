@@ -1,0 +1,26 @@
+sc_node_norole_relation -> nrel_orthocenter;;
+
+nrel_orthocenter => nrel_main_idtf: [ортоцентр*]
+(*<-lang_ru;;*);;
+nrel_orthocenter => nrel_main_idtf: [orthocenter*]
+(* <- lang_en;; *);;
+
+
+nrel_orthocenter => nrel_definitional_domain: ...
+(*
+<= nrel_combination:
+	{
+		concept_triangle;	
+		concept_geometric_point
+	};;
+*);;
+
+nrel_orthocenter => nrel_first_domain: consept_triangle;;
+nrel_orthocenter => nrel_second_domain: consept_geometric_point;;
+
+nrel_orthocenter <- relation;;
+nrel_orthocenter <- binary_relation;;
+nrel_orthocenter <- oriented_relation;;
+nrel_orthocenter <- antireflexive_relation;;
+nrel_orthocenter <- antisymmetric_relation;;
+nrel_orthocenter <- antitransitive_relation;;

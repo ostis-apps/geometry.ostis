@@ -1,0 +1,20 @@
+d_nrel_lower_base_of_truncated_cone <- definition;;
+
+d_nrel_lower_base_of_truncated_cone => nrel_main_idtf: [Опр.(нижнее основание усеченного конуса*)] (*<-lang_ru;;*);;
+d_nrel_lower_base_of_truncated_cone => nrel_main_idtf: [Def.(lower base of truncated cone*)] (*<-lang_en;;*);;
+
+d_nrel_lower_base_of_truncated_cone -> rrel_key_sc_element: nrel_lower_base_of_truncated_cone;;
+
+d_nrel_lower_base_of_truncated_cone <= nrel_using_constants:
+	{
+		concept_truncated_cone;
+		nrel_base_of_cone
+		
+	};;
+
+d_nrel_lower_base_of_truncated_cone <= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+	[Нижним основанием усеченного конуса является основание исходного конуса.] (*<-lang_ru;;*);;
+	*);;

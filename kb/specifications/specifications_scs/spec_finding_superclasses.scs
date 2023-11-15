@@ -1,0 +1,7 @@
+set <- rrel_key_sc_element: spec_finding_superclasses;;
+
+spec_finding_superclasses -> rrel_key_sc_element: nrel_inclusion;;
+
+general_specification -> spec_finding_superclasses;;
+
+spec_finding_superclasses => nrel_main_idtf: [Обобщённая спецификация для поиска надмножеств] (* <- lang_ru;; *);;

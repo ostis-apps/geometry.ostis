@@ -1,0 +1,23 @@
+sc_node_not_relation -> concept_quadrilateral;;
+
+concept_quadrilateral => nrel_main_idtf:
+	[четырехугольник] (* <- lang_ru;; *);
+	[quadrilateral] (* <- lang_en;; *);;
+
+concept_quadrilateral => nrel_idtf: [Класс четырехугольников] (* <- lang_ru;; *);;
+concept_quadrilateral => nrel_idtf: [плоский четырехугольник] (* <- lang_ru;; *);;
+concept_quadrilateral => nrel_idtf: [Понятие четырехугольника] (* <- lang_ru;; *);;
+concept_quadrilateral => nrel_idtf: [Множество всевозможных четырехугольников] (* <- lang_ru;; *);;
+concept_quadrilateral => nrel_idtf: [Множество знаков всевозможных четырехугольников] (* <- lang_ru;; *);;
+
+concept_quadrilateral <=  nrel_strict_inclusion: concept_polygon;;
+concept_quadrilateral =>  nrel_strict_inclusion: concept_parallelogram;;
+concept_quadrilateral =>  nrel_strict_inclusion: concept_trapezoid;;
+concept_quadrilateral =>  nrel_strict_inclusion: concept_square;;
+
+concept_quadrilateral -> rrel_example: struct_Rhomb_E_F_G_H;;
+concept_quadrilateral -> rrel_example: struct_Rectangle_B_C_D_E;;
+concept_quadrilateral -> rrel_example: struct_Parallelogram_A_B_C_D;;
+concept_quadrilateral -> rrel_example: struct_Isosceles_trapezoid_K_L_M_N;;
+concept_quadrilateral -> rrel_example: struct_Rectangular_Trapezoid_P_Q_R_S;;
+concept_quadrilateral -> rrel_example: struct_Versatile_trapezoid_Z_X_C_V;;

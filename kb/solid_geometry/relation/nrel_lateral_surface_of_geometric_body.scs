@@ -1,0 +1,51 @@
+sc_node_norole_relation -> nrel_lateral_surface_of_geometric_body;;
+
+nrel_lateral_surface_of_geometric_body => nrel_main_idtf: [боковая поверхность геометрического тела*] (*<-lang_ru;;*);;
+nrel_lateral_surface_of_geometric_body => nrel_main_idtf: [lateral surface of geometric body*] (*<-lang_en;;*);;
+
+nrel_lateral_surface_of_geometric_body <= nrel_combination:
+{
+	nrel_lateral_surface_of_convex_polyhedron;
+	nrel_lateral_surface_of_solid_of_revolution
+};;
+
+nrel_lateral_surface_of_geometric_body => nrel_first_domain:
+	...
+	(*
+	<= nrel_combination: 
+		{
+			concept_convex_polyhedron;
+			concept_cone;
+			concept_cylinder;
+			concept_truncated_cone
+		};;
+	*);;
+	
+nrel_lateral_surface_of_geometric_body => nrel_second_domain:
+	...
+	(*
+	<= nrel_combination: 
+		{
+			concept_geometric_figure;
+			concept_surface
+		};;
+	*);;
+	
+nrel_lateral_surface_of_geometric_body => nrel_definitional_domain:
+	...
+	(*
+	<= nrel_combination: 
+		{
+			concept_convex_polyhedron;
+			concept_cone;
+			concept_cylinder;
+			concept_truncated_cone;
+			concept_geometric_figure;
+			concept_surface
+		};;
+	*);;
+	
+nrel_lateral_surface_of_geometric_body <- relation;;	
+nrel_lateral_surface_of_geometric_body <- binary_relation;;
+nrel_lateral_surface_of_geometric_body <- oriented_relation;;
+nrel_lateral_surface_of_geometric_body <- antireflexive_relation; antisymmetric_relation; antitransitive_relation;;

@@ -1,0 +1,20 @@
+d_nrel_adjacent_angles
+=> nrel_main_idtf: [Опр.(смежные углы*)] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Def.(adjacent angles*)] (*<- lang_en;;*);
+<- definition;
+-> rrel_key_sc_element: nrel_adjacent_angles;  
+<= nrel_using_constants:
+	{
+	concept_angle; 
+	nrel_vertex_of_angle; 
+	concept_straight_line; 
+	nrel_side_of_angle
+	};
+<= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[Смежные углы - углы, у которых вершина и одна сторона общие, а две другие стороны образуют прямую.]
+		(* <- lang_ru;;	*);;
+	*);;
+

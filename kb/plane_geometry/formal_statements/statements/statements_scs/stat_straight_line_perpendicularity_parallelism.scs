@@ -1,0 +1,13 @@
+statement -> stat_straight_line_perpendicularity_parallelism;;
+
+stat_straight_line_perpendicularity_parallelism -> rrel_key_sc_element: concept_straight_line; nrel_perpendicularity; nrel_parallelism;;
+
+stat_straight_line_perpendicularity_parallelism => nrel_main_idtf: [Утв.(прямая; перпендикулярность*; параллельность*)] (* <- lang_ru;; *);;
+stat_straight_line_perpendicularity_parallelism => nrel_main_idtf: [Stat.(straight line; perpendicularity*; parallelism*)] (* <- lang_en;; *);;
+
+stat_straight_line_perpendicularity_parallelism <= nrel_sc_text_translation: ...
+	(*
+	-> rrel_example:
+		[Если прямая перпендикулярна одной из параллельных прямых, то она перпендикулярна и другой.] 
+		(* <- lang_ru;; *);;
+	*);;

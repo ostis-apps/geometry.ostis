@@ -1,0 +1,21 @@
+d_nrel_element_of_cone <- definition;;
+
+d_nrel_element_of_cone => nrel_main_idtf: [Опр.(образующая конуса*)] (*<-lang_ru;;*);;
+d_nrel_element_of_cone => nrel_main_idtf: [Def.(element of cone*)] (*<-lang_en;;*);;
+
+d_nrel_element_of_cone -> rrel_key_sc_element: nrel_element_of_cone;;
+
+d_nrel_element_of_cone <= nrel_using_constants:
+	{
+		concept_cone;
+		concept_segment;
+		nrel_base_of_cone;
+		nrel_vertex_of_cone	
+	};;
+
+d_nrel_element_of_cone <= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+	[Образующая конуса – отрезок, соединяющий вершину конуса с точкой окружности его основания.] (*<-lang_ru;;*);;
+	*);;

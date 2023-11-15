@@ -1,0 +1,25 @@
+d_concept_Morley_triangle <- definition;;
+
+d_concept_Morley_triangle -> rrel_key_sc_element: concept_Morley_triangle;;
+
+d_concept_Morley_triangle => nrel_main_idtf: [Опр.(треугольник Морлея)] (*<-lang_ru;;*);;
+d_concept_Morley_triangle => nrel_main_idtf: [Def.(Morley's triangles)] (*<-lang_en;;*);;
+
+d_concept_Morley_triangle <= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+		[Треугольник Морлея - это равносторонний треугольник, вершинами которого являются точки пересечения смежных триссектрис углов произвольного треугольника.] (*<-lang_ru;;*);;
+		*);;
+
+d_concept_Morley_triangle <= nrel_using_constants: 
+	{
+	nrel_adjacent; 
+	concept_triangle; 
+	concept_equilateral_triangle; 
+	nrel_vertex; 
+	concept_angle; 
+	nrel_trisector; 
+	nrel_intersection; 
+	concept_geometric_point
+	};;

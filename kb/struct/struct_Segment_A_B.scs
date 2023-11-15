@@ -1,0 +1,35 @@
+struct_Segment_A_B => nrel_idtf: [Отрезок(A; B)] (* <- lang_ru;; *);;
+
+struct_Segment_A_B => nrel_boundary_point: struct_Geometric_point_A;;
+
+struct_Segment_A_B => nrel_boundary_point: struct_Geometric_point_B;;
+
+struct_Segment_A_B -> struct_Geometric_point_A;;
+
+struct_Segment_A_B -> struct_Geometric_point_B;;
+
+struct_Segment_A_B <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Факт.утв.(Отрезок AB)] (* <- lang_ru;; *);;
+	<- statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+                -> rrel_example: 
+			[AB - отрезок. Геометрические точки A и B являются граничными точками отрезка AB, которые включаются в него.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+struct_Segment_A_B <- rrel_key_sc_element: 
+	...
+	(*
+	<- illustration;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			"file://images/OtrezokAB.png";;
+		*);; 
+	*);; 

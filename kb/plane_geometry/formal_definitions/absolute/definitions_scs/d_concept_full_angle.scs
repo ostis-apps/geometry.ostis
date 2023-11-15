@@ -1,0 +1,19 @@
+d_concept_full_angle <- definition;;
+
+d_concept_full_angle => nrel_main_idtf: [Опр.(полный угол)] (* <- lang_ru;; *);;
+
+d_concept_full_angle -> rrel_key_sc_element: concept_full_angle;;
+
+d_concept_full_angle <= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[Полный угол - угол, у которого совпадают образующие лучи.]
+		(* <- lang_ru;;	*);;
+	*);;
+
+d_concept_full_angle <= nrel_using_constants:
+	{
+	concept_angle; 
+	concept_ray
+	};;

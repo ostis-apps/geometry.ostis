@@ -1,0 +1,25 @@
+axiom_straight_line_pair_of_points_between_geometric_point <- statement;;
+
+axiom_straight_line_pair_of_points_between_geometric_point -> rrel_key_sc_element: concept_straight_line; concept_pair_of_points; concept_geometric_point; nrel_between;;
+
+axiom_straight_line_pair_of_points_between_geometric_point <- rrel_axiom: section_subject_domain_of_geometric_points;;
+
+axiom_straight_line_pair_of_points_between_geometric_point => nrel_main_idtf: [Акс.(прямая; пара точек; геометрическая точка; между*)] (*<- lang_ru;;*);;
+axiom_straight_line_pair_of_points_between_geometric_point => nrel_main_idtf: [Ax.(straight line; pair of points; geometric point; between*)] (*<- lang_en;;*);;
+
+axiom_straight_line_pair_of_points_between_geometric_point <= nrel_sc_text_translation: 
+		... 
+		(* 
+		-> rrel_example: 
+			[ Для любых двух данных точек существует третья точка, которая лежит между данными точками.] 
+			(* <- lang_ru;; *);; 
+		*);;
+
+axiom_straight_line_pair_of_points_between_geometric_point <= nrel_sc_text_translation: 
+		... 
+		(* 
+		-> rrel_example: 
+			[ For any two any points there is a third point that lies between these points.] 
+			(* <- lang_en;; *);; 
+		*);;
+

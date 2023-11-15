@@ -1,0 +1,23 @@
+sc_node_norole_relation -> nrel_edge;;
+
+nrel_edge => nrel_main_idtf: [ребро*] (*<-lang_ru;;*);;
+nrel_edge => nrel_main_idtf: [edge*] (*<-lang_en;;*);;
+
+nrel_edge => nrel_idtf: [быть ребром*] (*<-lang_ru;;*);;
+	
+nrel_edge => nrel_first_domain: concept_polyhedron;;
+nrel_edge => nrel_second_domain: concept_segment;;
+	
+nrel_edge => nrel_definitional_domain: ...
+	(*
+	<= nrel_combination: 
+		{
+			concept_polyhedron;
+			concept_segment
+		};;
+	*);;
+	
+nrel_edge <- relation;;	
+nrel_edge <- binary_relation;;
+nrel_edge <- oriented_relation;;
+nrel_edge <- antireflexive_relation; antisymmetric_relation; antitransitive_relation;;

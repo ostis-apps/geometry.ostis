@@ -1,0 +1,23 @@
+sc_node_norole_relation -> nrel_lateral_surface_of_cylinder;;
+
+nrel_lateral_surface_of_cylinder => nrel_main_idtf: [боковая поверхность цилиндра*] (*<-lang_ru;;*);;
+nrel_lateral_surface_of_cylinder => nrel_main_idtf: [lateral surface of cylinder*] (*<-lang_en;;*);;
+
+nrel_lateral_surface_of_cylinder => nrel_first_domain: concept_cylinder;;
+nrel_lateral_surface_of_cylinder => nrel_second_domain: concept_surface;;
+nrel_lateral_surface_of_cylinder => nrel_definitional_domain: 
+	...
+	(*
+	<= nrel_combination: 
+		{
+			concept_cylinder;
+			concept_surface
+		};;
+	*);;
+	
+nrel_lateral_surface_of_cylinder <- relation;;	
+nrel_lateral_surface_of_cylinder <- binary_relation;;
+nrel_lateral_surface_of_cylinder <- oriented_relation;;
+nrel_lateral_surface_of_cylinder <- antireflexive_relation; antisymmetric_relation; antitransitive_relation;;
+
+

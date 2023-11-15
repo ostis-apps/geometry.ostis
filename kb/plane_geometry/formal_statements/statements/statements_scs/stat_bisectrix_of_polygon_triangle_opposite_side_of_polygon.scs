@@ -1,0 +1,13 @@
+statement -> stat_bisectrix_of_polygon_triangle_opposite_side_of_polygon;;
+
+stat_bisectrix_of_polygon_triangle_opposite_side_of_polygon -> rrel_key_sc_element: concept_triangle; nrel_bisectrix_of_polygon; nrel_opposite; nrel_side_of_polygon;;
+
+stat_bisectrix_of_polygon_triangle_opposite_side_of_polygon => nrel_main_idtf: [Утв.(треугольник; биссектриса многоугольника*; противолежащий*; сторона многоугольника*)] (* <- lang_ru;; *);;
+stat_bisectrix_of_polygon_triangle_opposite_side_of_polygon => nrel_main_idtf: [Stat.(triangle; bisectrix of polygon*; opposite*; side of polygon*)] (* <- lang_en;; *);;
+
+stat_bisectrix_of_polygon_triangle_opposite_side_of_polygon <= nrel_sc_text_translation: ...
+	(*
+	-> rrel_example:
+		[Биссектриса треугольника делит противолежащую сторону на отрезки, пропорциональные двум другим сторонам.] 
+		(* <- lang_ru;; *);;
+	*);;

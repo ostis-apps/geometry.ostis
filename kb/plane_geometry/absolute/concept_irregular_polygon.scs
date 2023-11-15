@@ -1,0 +1,13 @@
+sc_node_not_relation -> concept_irregular_polygon;;
+
+concept_irregular_polygon => nrel_main_idtf:
+	[неправильный многоугольник](* <- lang_ru;; *);
+	[irregular polygon](* <- lang_en;; *);;
+
+concept_irregular_polygon => nrel_idtf: [Класс неправильных многоугольников] (* <- lang_ru;; *);;
+concept_irregular_polygon => nrel_idtf: [Понятие неправильного многоугольника] (* <- lang_ru;; *);;
+concept_irregular_polygon => nrel_idtf: [Множество всевозможных неправильных многоугольников] (* <- lang_ru;; *);;
+concept_irregular_polygon => nrel_idtf: [Множество знаков всевозможных неправильных многоугольников] (* <- lang_ru;; *);;
+
+concept_irregular_polygon -> rrel_example: struct_Irregular_polygon_K_A_B_C_D_E;;
+concept_irregular_polygon -> rrel_example: struct_Scalene_triangle_K_L_M;;

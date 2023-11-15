@@ -1,0 +1,21 @@
+d_concept_angle <- definition;;
+
+d_concept_angle => nrel_main_idtf: [Опр.(угол)] (* <- lang_ru;; *);;
+d_concept_angle => nrel_main_idtf: [Def.(angle)] (* <- lang_en;; *);;
+
+d_concept_angle -> rrel_key_sc_element: concept_angle;;
+
+d_concept_angle <= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[Угол - геометрическая фигура, состоящая из пары лучей, выходящих из общей вершины.]
+		(* <- lang_ru;; *);;
+	*);;
+
+d_concept_angle <= nrel_using_constants:
+	{
+	concept_geometric_figure;
+	concept_ray; 
+	nrel_vertex
+	};;

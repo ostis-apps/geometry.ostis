@@ -1,0 +1,25 @@
+d_nrel_bisectrix_of_triangle 
+=> nrel_main_idtf: [Опр.(биссектриса треугольника*)] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Def.(bisection of triangle*)] (*<- lang_en;;*);
+<- definition;
+-> rrel_key_sc_element: nrel_bisectrix_of_triangle;
+
+<= nrel_using_constants:
+	{ 
+	nrel_bisectrix; 
+	concept_segment; 
+	nrel_internal_angle; 
+	concept_triangle;  
+	nrel_vertex_of_angle; 
+	nrel_side; 
+	nrel_opposite
+	};
+
+<= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[Биссектриса треугольника - отрезок биссектрисы внутреннего угла треугольника от вершины угла до пересечения с противолежащей стороной.]
+		(* <- lang_ru;; *);;
+	*);;
+

@@ -1,0 +1,76 @@
+sc_node_struct -> struct_Rectangular_Trapezoid_P_Q_R_S;;
+
+struct_Rectangular_Trapezoid_P_Q_R_S => nrel_main_idtf:
+	[Прямоугольная трапеция PQRS]
+	(* <- lang_ru;; *);
+	[Rectangular Trapezoid PQRS]
+	(* <- lang_en;; *);;
+
+struct_Rectangular_Trapezoid_P_Q_R_S => nrel_idtf: [Тр-я (P; Q; R; S)] (* <- lang_ru;; *);;
+
+struct_Rectangular_Trapezoid_P_Q_R_S => nrel_idtf: [Прямоугольная трапеция (P; Q; R; S)] (* <- lang_ru;; *);;
+
+struct_Rectangular_Trapezoid_P_Q_R_S => nrel_idtf: [Прямоугольная трапеция, вершинами которой являются Точка P, Точка Q, Точка R, Точка S] (* <- lang_ru;; *);;
+
+struct_Rectangular_Trapezoid_P_Q_R_S <- concept_rectangular_trapezoid;;
+
+struct_Rectangular_Trapezoid_P_Q_R_S  => nrel_vertex: struct_Geometric_point_P;;
+
+struct_Rectangular_Trapezoid_P_Q_R_S  => nrel_vertex: struct_Geometric_point_Q;;
+
+struct_Rectangular_Trapezoid_P_Q_R_S  => nrel_vertex: struct_Geometric_point_R;;
+
+struct_Rectangular_Trapezoid_P_Q_R_S  => nrel_vertex: struct_Geometric_point_S;;
+
+struct_Rectangular_Trapezoid_P_Q_R_S  => nrel_lateral_side: struct_Segment_P_Q;;
+
+struct_Rectangular_Trapezoid_P_Q_R_S  => nrel_lateral_side: struct_Segment_R_S;;
+
+struct_Rectangular_Trapezoid_P_Q_R_S  => nrel_base: struct_Segment_P_S;;
+
+struct_Rectangular_Trapezoid_P_Q_R_S  => nrel_base: struct_Segment_Q_R;;
+
+struct_Segment_P_S => nrel_boundary_point: struct_Geometric_point_P;;
+
+struct_Segment_P_Q => nrel_boundary_point: struct_Geometric_point_P;;
+
+struct_Segment_Q_R => nrel_boundary_point: struct_Geometric_point_R;;
+
+struct_Segment_R_S => nrel_boundary_point: struct_Geometric_point_R;;
+
+struct_Segment_P_Q => nrel_boundary_point: struct_Geometric_point_Q;;
+
+struct_Segment_Q_R => nrel_boundary_point: struct_Geometric_point_Q;;
+
+struct_Segment_R_S => nrel_boundary_point: struct_Geometric_point_S;;
+
+struct_Segment_P_S => nrel_boundary_point: struct_Geometric_point_S;;
+
+struct_Rectangular_Trapezoid_P_Q_R_S <- rrel_key_sc_element: 
+	...
+		(*
+		<- illustration;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+			-> rrel_example:
+				"file://images/TrapeciyaPQRS.png";;
+		*);;
+	*);;
+
+struct_Rectangular_Trapezoid_P_Q_R_S <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Факт.утв.(Прямоугольная трапеция PQRS)] (* <- lang_ru;; *);;
+	<- statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[PQRS - прямоугольная трапеция.Геометрические точки P, Q, R и S являются вершинами Трапеции PQRS.
+			Отрезки q, s являются боковыми сторонами, а отрезки p, r являются основаниями Трапеции PQRS.
+			Точка P является граничной точкой отрезков p, q. Точка Q является граничной точкой отрезков q, r. Точка R является граничной точкой отрезков r, s. Точка S является граничной точкой отрезков s, p.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+

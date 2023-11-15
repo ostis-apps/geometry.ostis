@@ -1,0 +1,36 @@
+s_sd_rectangles
+=> nrel_main_idtf:
+	[Раздел. Прямоугольник. Свойства и признаки прямоугольника]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Section. Rectangle. Properties and characteristics of the rectangle]
+	(* <- lang_en;; *);
+
+<- atomic_section;
+
+<= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+		"file://html/s_sd_rectangles_ru.html"
+		(* <- lang_ru;; *);;
+	*);
+
+
+=> nrel_summary:
+	...
+	(*
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[This section discusses properties and characteristics of a rectangle.]
+			(* <- lang_en;; *);;
+		*);;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:[В данном разделе рассматриваются cвойства и признаки прямоугольника.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;

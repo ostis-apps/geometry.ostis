@@ -1,0 +1,19 @@
+d_nrel_element_of_solid_of_revolution <- definition;;
+
+d_nrel_element_of_solid_of_revolution => nrel_main_idtf: [Опр.(образующая тела вращения*)] (*<-lang_ru;;*);;
+d_nrel_element_of_solid_of_revolution => nrel_main_idtf: [Def.(element of solid of revolution*)] (*<-lang_en;;*);;
+
+d_nrel_element_of_solid_of_revolution -> rrel_key_sc_element: nrel_element_of_solid_of_revolution;;
+
+d_nrel_element_of_solid_of_revolution <= nrel_using_constants:
+	{
+		nrel_element_of_cone;
+		nrel_element_of_cylinder;
+		nrel_element_of_truncated_cone
+	};;
+
+d_nrel_element_of_solid_of_revolution <= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+		[Образующая тела вращения - это теоретико-множественное объединение понятий образующей цилиндра, образующей конуса и образующей усеченного конуса.] (*<-lang_ru;;*);;
+		*);;

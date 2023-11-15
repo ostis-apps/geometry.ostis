@@ -1,0 +1,19 @@
+d_concept_geometric_figure_without_boundary_points <- definition;;
+
+d_concept_geometric_figure_without_boundary_points => nrel_main_idtf: [Опр.(геометрическая фигура, в состав которой не входит ни одной граничной точки)] (* <- lang_ru;; *);;
+
+d_concept_geometric_figure_without_boundary_points -> rrel_key_sc_element: concept_geometric_figure_without_boundary_points;;
+
+d_concept_geometric_figure_without_boundary_points <= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+		[Геометрическая фигура, в состав которой не входит ни одной граничной точки - геометрическая фигура, в состав которой не входит ни одной её граничной точки.]
+		(* <- lang_ru;;	*);;
+	*);;
+
+d_concept_geometric_figure_without_boundary_points <= nrel_using_constants:
+	{
+	concept_geometric_figure; 
+	nrel_boundary_point
+	};;	

@@ -1,0 +1,23 @@
+d_nrel_height_of_parallelogram
+=> nrel_main_idtf: [Опр.(высота параллелограмма*)](* <- lang_ru;; *);
+=> nrel_main_idtf: [Def.(height of parallelogram*)] (*<- lang_en;;*);
+<- definition;
+-> rrel_key_sc_element: nrel_height_of_parallelogram;
+
+<= nrel_using_constants:
+	{
+	concept_parallelogram;
+	nrel_height;
+	nrel_perpendicular;
+	concept_geometric_point;
+	concept_straight_line;
+	nrel_side_of_polygon
+	};
+
+<= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[Высотой параллелогрмма, проведенной к данной его стороне, называется перпендикуляр, опущенный из произвольной точки противолежащей стороны к прямой, содержащей данную сторону.] (* <- lang_ru;; *);;
+	*);;
+

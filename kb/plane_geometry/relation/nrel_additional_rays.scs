@@ -1,0 +1,16 @@
+sc_node_norole_relation -> nrel_additional_rays;;
+
+nrel_additional_rays => nrel_main_idtf:
+	[дополнительные лучи*] (* <- lang_ru;; *);
+	[additional rays*] (* <- lang_en;; *);;
+
+nrel_additional_rays => nrel_idtf: [быть дополнительными лучами*] (* <- lang_ru;; *);;
+
+nrel_additional_rays => nrel_definitional_domain: concept_ray;;
+nrel_additional_rays => nrel_first_domain: concept_ray;;
+nrel_additional_rays => nrel_second_domain: concept_ray;;
+
+nrel_additional_rays <- relation;;
+nrel_additional_rays <- binary_relation;;
+nrel_additional_rays <- non_oriented_relation;;
+nrel_additional_rays <- symmetric_relation; transitive_relation;;

@@ -1,0 +1,21 @@
+d_nrel_center_line 
+=> nrel_main_idtf: [Опр.(средняя линия*)] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Def.(midline*)] (*<- lang_en;;*);
+<- definition;  
+-> rrel_key_sc_element: nrel_center_line;  
+
+<= nrel_using_constants:
+	{	
+		nrel_midline_triangle; 
+		nrel_midline_trapezoid; 
+		nrel_midline_quadrilateral
+	};
+
+<= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[Средняя линия - это теоретико-множественное объединение понятий средняя линия треугольника, средняя линия четырехугольника и средняя линия трапеции.]
+		(* <- lang_ru;; *);;
+	*);;
+	

@@ -1,0 +1,7 @@
+sc_element <- rrel_key_sc_element: spec_finding_system_idtf;;
+
+spec_finding_system_idtf -> rrel_key_sc_element: nrel_system_identifier;;
+
+general_specification -> spec_finding_system_idtf;;
+
+spec_finding_system_idtf => nrel_main_idtf: [Обобщённая спецификация для поиска системного идентификатора] (* <- lang_ru;; *);;

@@ -1,0 +1,21 @@
+d_nrel_base_of_spherical_layer <- definition;;
+
+d_nrel_base_of_spherical_layer => nrel_main_idtf: [Опр.(основание шарового слоя*)] (*<-lang_ru;;*);;
+d_nrel_base_of_spherical_layer => nrel_main_idtf: [Def.(base of spherical layer*)] (*<-lang_en;;*);;
+
+d_nrel_base_of_spherical_layer -> rrel_key_sc_element: nrel_base_of_spherical_layer;;
+
+d_nrel_base_of_spherical_layer <= nrel_using_constants:
+	{
+	concept_spherical_layer;
+	concept_ball;
+	concept_round;
+	nrel_cross_section
+	};;
+
+d_nrel_base_of_spherical_layer <= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example:
+	[Основанием шарового слоя называется круг, который получается в сечении шара одной из параллельных секущих плоскостей.] (*<-lang_ru;;*);;
+	*);;

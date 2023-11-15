@@ -1,0 +1,24 @@
+stat_obtuse_triangle_height_side_straight_line <- statement;;
+
+stat_obtuse_triangle_height_side_straight_line
+	-> rrel_key_sc_element:
+	concept_obtuse_triangle;
+	nrel_height;
+	nrel_side;
+	concept_straight_line;;
+
+stat_obtuse_triangle_height_side_straight_line
+	=> nrel_main_idtf:
+	[Утв.(тупоугольный треугольник;высота*;сторона*;прямая)] (*<- lang_ru;;*);;
+
+stat_obtuse_triangle_height_side_straight_line
+	=> nrel_main_idtf:
+	[Stat.(obtuse triangle;height*;side*;straight line)] (*<- lang_en;;*);;
+
+stat_obtuse_triangle_height_side_straight_line <= nrel_sc_text_translation: 
+	... 
+	(* 
+	-> rrel_example: 
+		[В тупоугольном треугольнике две высоты падают на продолжение сторон и лежат вне треугольника, третья высота лежит внутри треугольника.] 
+		(* <- lang_ru;; *);; 
+	*);;

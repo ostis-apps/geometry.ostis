@@ -1,0 +1,31 @@
+sc_node_not_relation -> concept_curved_line;;
+
+concept_curved_line => nrel_main_idtf:
+	[кривая](* <- lang_ru;;	*);
+	[curved line](*	<- lang_en;; *);;
+
+concept_curved_line => nrel_idtf: [множество кривых линий] (* <- lang_ru;; *);;
+concept_curved_line => nrel_idtf: [множество кривых] (* <- lang_ru;; *);;
+concept_curved_line => nrel_idtf: [Множество всевозможных кривых линий] (* <- lang_ru;; *);;
+concept_curved_line => nrel_idtf: [Множество знаков всевозможных кривых линий] (* <- lang_ru;; *);;
+
+concept_curved_line <= nrel_strict_inclusion: concept_linear_figure;;
+concept_curved_line <= nrel_strict_inclusion: concept_non_rectlinear_geometric_figure;;
+concept_curved_line <= nrel_strict_inclusion: concept_uninterrupted_geometric_figure;;
+concept_curved_line <= nrel_strict_inclusion: concept_geometric_figure_without_boundary_points;;
+concept_curved_line => nrel_strict_inclusion: concept_circle;;
+	
+concept_curved_line <- rrel_key_sc_element: 
+	...
+	(*
+	<- illustration;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+		"file://images/concept_curved_line.png";;
+		*);; 
+	*);;
+
+
+

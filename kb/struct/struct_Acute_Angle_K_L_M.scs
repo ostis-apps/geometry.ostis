@@ -1,0 +1,33 @@
+struct_Acute_Angle_K_L_M => nrel_idtf: [Острый угол (K; L; M)] (* <- lang_ru;; *);;
+
+struct_Acute_Angle_K_L_M => nrel_vertex: struct_Geometric_point_L;;
+
+struct_Acute_Angle_K_L_M => nrel_side: struct_Ray_L_K;;
+
+struct_Acute_Angle_K_L_M => nrel_side: struct_Ray_L_M;;
+
+struct_Acute_Angle_K_L_M <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Факт.утв.(Острый угол KLM)] (* <- lang_ru;; *);;
+	<- statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Угол KLM является острым. K, L и M являются геометрическими точками. Геометрическая точка L является вершиной угла KLM. Лучи LK и LM являются сторонами угла KLM.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+struct_Acute_Angle_K_L_M <- rrel_key_sc_element: 
+	...
+	(*
+	<- illustration;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			"file://images/Angle KLM.png";;
+		*);; 
+	*);; 

@@ -1,0 +1,21 @@
+d_nrel_apothem_of_regular_truncated_pyramid <- definition;;
+
+d_nrel_apothem_of_regular_truncated_pyramid => nrel_main_idtf: [Опр.(апофема правильной усеченной пирамиды*)] (*<-lang_ru;;*);;
+d_nrel_apothem_of_regular_truncated_pyramid => nrel_main_idtf: [Def.(apothem of regular truncated pyramid*)] (*<-lang_en;;*);;
+
+d_nrel_apothem_of_regular_truncated_pyramid -> rrel_key_sc_element: nrel_apothem_of_regular_truncated_pyramid;;
+
+d_nrel_apothem_of_regular_truncated_pyramid <= nrel_using_constants:
+	{
+		concept_regular_truncated_pyramid;		
+		nrel_height;
+		nrel_lateral_face_of_truncated_pyramid
+		
+	};;
+
+d_nrel_apothem_of_regular_truncated_pyramid <= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+	[Апофема правильной усеченной пирамиды - это высота ее боковой грани.] (*<-lang_ru;;*);;
+	*);;

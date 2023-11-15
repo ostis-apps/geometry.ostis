@@ -1,0 +1,20 @@
+d_nrel_surface_area_of_solid_of_revolution <- definition;;
+
+d_nrel_surface_area_of_solid_of_revolution => nrel_main_idtf: [Опр.(полная поверхность тела вращения*)] (*<-lang_ru;;*);;
+d_nrel_surface_area_of_solid_of_revolution => nrel_main_idtf: [Def.(surface area of solid of revolution*)] (*<-lang_en;;*);;
+
+d_nrel_surface_area_of_solid_of_revolution -> rrel_key_sc_element: nrel_surface_area_of_solid_of_revolution;;
+
+d_nrel_surface_area_of_solid_of_revolution <= nrel_using_constants:
+	{
+	concept_geometric_figure;
+	nrel_lateral_surface_of_solid_of_revolution;
+	nrel_base_of_solid_of_revolution
+	};;
+
+d_nrel_surface_area_of_solid_of_revolution <= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+	[Полная поверхность тела вращения - это геометрическая фигура, образованная боковой поверхностью тела вращения и его основаниями.] (*<-lang_ru;;*);;
+	*);;

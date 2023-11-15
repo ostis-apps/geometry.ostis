@@ -1,0 +1,22 @@
+sc_node_norole_relation -> nrel_congruence_of_pair_of_points;;
+
+nrel_congruence_of_pair_of_points => nrel_main_idtf:
+	[конгруэнтность пар точек*] (* <- lang_ru;; *);
+	[congruence of pair of points*] (* <- lang_en;; *);;
+
+nrel_congruence_of_pair_of_points => nrel_idtf: [равенство расстояний для двух заданных пар точек*] (* <- lang_ru;; *);;
+
+nrel_congruence_of_pair_of_points => nrel_definitional_domain:
+	concept_pair_of_points;;
+
+nrel_congruence_of_pair_of_points => nrel_first_domain:
+	concept_pair_of_points;;
+
+nrel_congruence_of_pair_of_points => nrel_second_domain: 
+	concept_pair_of_points;;
+
+nrel_congruence_of_pair_of_points <- binary_relation; relation; non_oriented_relation;;
+nrel_congruence_of_pair_of_points <- reflexive_relation;;
+nrel_congruence_of_pair_of_points <- symmetric_relation;;
+nrel_congruence_of_pair_of_points <- transitive_relation;;
+

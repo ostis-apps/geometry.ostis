@@ -1,0 +1,21 @@
+d_concept_regular_polygon <- definition;;
+
+d_concept_regular_polygon => nrel_main_idtf: [Опр.(правильный многоугольник)] (* <- lang_ru;; *);;
+
+d_concept_regular_polygon -> rrel_key_sc_element: concept_regular_polygon;;
+
+d_concept_regular_polygon <= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[Правильный многоугольник - многоугольник, у которого все стороны и все углы равны.]
+		(* <- lang_ru;; *);;
+	*);;
+
+d_concept_regular_polygon <= nrel_using_constants:
+	{
+	concept_polygon; 
+	concept_angle; 
+	nrel_side_of_polygon; 
+	nrel_congruence
+	};;

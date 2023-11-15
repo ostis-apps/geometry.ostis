@@ -1,0 +1,36 @@
+s_sd_trapezoids_isosceles_trapezoid
+=> nrel_main_idtf:
+	[Раздел. Свойства равнобедренной трапеции]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Section. Properties of isosceles trapezoids]
+	(* <- lang_en;; *);
+
+<- atomic_section;
+
+<= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+		"file://html/s_sd_trapezoids_isosceles_trapezoid_ru.html"
+		(* <- lang_ru;; *);;
+	*);
+
+
+=> nrel_summary:
+	...
+	(*
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[This section discusses the main properties of isosceles trapezoid.]
+			(* <- lang_en;; *);;
+		*);;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:[В данном разделе рассматриваютс¤ основные свойства равнобедренной трапеции.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;

@@ -1,0 +1,23 @@
+stat_rectangular_triangle_isosceles_triangle_acute_angle <- statement;;
+
+stat_rectangular_triangle_isosceles_triangle_acute_angle
+-> rrel_key_sc_element:
+	concept_rectangular_triangle;
+	concept_isoscales_triangle;
+	concept_acute_angle;
+	nrel_angle_measure;;
+
+stat_rectangular_triangle_isosceles_triangle_acute_angle
+=> nrel_main_idtf:
+	[Утв.(прямоугольный треугольник;равнобедренный треугольник;острый угол;мера угла*)] (* <-lang_ru;; *);;
+
+stat_rectangular_triangle_isosceles_triangle_acute_angle
+=> nrel_main_idtf:
+	[Stat.(rectangular triangle;isoscales triangle;acute angle;angle measure*)] (* <-lang_en;; *);;
+
+stat_rectangular_triangle_isosceles_triangle_acute_angle <= nrel_sc_text_translation: 
+	...
+	(*
+		-> rrel_example: 
+		[В равнобедренном прямоугольном треугольнике каждый острый угол равен 45°.] (* <- lang_ru;; *);;
+	*);;

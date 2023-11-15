@@ -1,0 +1,7 @@
+sc_element <- rrel_key_sc_element: spec_finding_explanation;;
+
+spec_finding_explanation -> rrel_key_sc_element: explanation;;
+
+general_specification -> spec_finding_explanation;;
+
+spec_finding_explanation => nrel_main_idtf: [Обобщённая спецификация для поиска пояснения] (* <- lang_ru;; *);;

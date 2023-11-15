@@ -1,0 +1,20 @@
+d_nrel_congruence_of_pair_of_points 
+=> nrel_main_idtf: [Опр.(конгруэнтность пар точек*)] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Def.(congruence of pair of points*)] (*<-lang_en;;*);
+<- definition;
+-> rrel_key_sc_element: nrel_congruence_of_pair_of_points;
+
+<= nrel_using_constants:
+	{
+	concept_geometric_point; 
+	nrel_distance
+	};
+
+<= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[Конгруэнтность пары точек {t1, t2} и пары точек {t3, t4} -  равенство расстояния между точками t1 и t2 и расстояния между точками t3 и t4.]
+		(* <- lang_ru;; *);;
+	*);;
+

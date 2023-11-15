@@ -1,0 +1,19 @@
+d_nrel_surface_area_of_polyhedron <- definition;;
+
+d_nrel_surface_area_of_polyhedron => nrel_main_idtf: [Опр.(полная поверхность многогранника*)] (*<-lang_ru;;*);;
+d_nrel_surface_area_of_polyhedron => nrel_main_idtf: [Def.(surface area of polyhedron*)] (*<-lang_en;;*);;
+
+d_nrel_surface_area_of_polyhedron -> rrel_key_sc_element: nrel_surface_area_of_polyhedron;;
+
+d_nrel_surface_area_of_polyhedron <= nrel_using_constants:
+	{
+	concept_geometric_figure;
+	nrel_face_of_polyhedron
+	};;
+
+d_nrel_surface_area_of_polyhedron <= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+	[Полная поверхность (или просто поверхность) многогранника - это геометрическая фигура, образованная всеми его гранями.] (*<-lang_ru;;*);;
+	*);;

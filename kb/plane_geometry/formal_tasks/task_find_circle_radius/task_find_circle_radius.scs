@@ -1,0 +1,20 @@
+task_find_circle_radius => nrel_main_idtf: [Задача 1] (* <-lang_ru;; *);;
+
+task_find_circle_radius <= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[Найдите радиус окружности, описанной около треугольника со сторонами 5м, 6м и 7м.]
+		(* <- lang_ru;; *);;
+	*);;
+
+task_find_circle_radius <- rrel_key_sc_element: 
+	...
+	(*
+	<- illustration;; 
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: "file://task_find_circle_radius.png";;
+		*);;
+	*);;

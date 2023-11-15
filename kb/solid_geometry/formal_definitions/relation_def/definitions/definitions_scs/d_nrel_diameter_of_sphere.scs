@@ -1,0 +1,20 @@
+d_nrel_diameter_of_sphere <- definition;;
+
+d_nrel_diameter_of_sphere => nrel_main_idtf: [Опр.(диаметр сферы*)] (*<-lang_ru;;*);;
+d_nrel_diameter_of_sphere => nrel_main_idtf: [Def.(diameter of sphere*)] (*<-lang_en;;*);;
+
+d_nrel_diameter_of_sphere -> rrel_key_sc_element: nrel_diameter_of_sphere;;
+
+d_nrel_diameter_of_sphere <= nrel_using_constants:
+	{
+		concept_sphere;
+		nrel_chord_of_sphere;
+		nrel_center
+	};;
+
+d_nrel_diameter_of_sphere <= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+	[Диаметром сферы называется хорда, проходящая через ее центр.] (*<-lang_ru;;*);;
+	*);;

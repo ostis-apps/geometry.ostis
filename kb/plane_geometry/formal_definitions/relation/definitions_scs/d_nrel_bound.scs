@@ -1,0 +1,22 @@
+d_nrel_bound
+=> nrel_main_idtf: [Опр.(граница*)] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Def.(bound*)] (*<- lang_en;;*);
+<- definition;
+-> rrel_key_sc_element: nrel_bound;
+
+<= nrel_using_constants:
+	{
+	concept_linear_figure;  
+	concept_geometric_point; 
+	concept_geometric_figure; 
+	nrel_boundary_point
+	};
+
+<= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[Граница - линейная геометрическая фигура, каждая точка которой является граничной для заданной геометрической фигуры.]
+		(* <- lang_ru;; *);;
+	*);;
+

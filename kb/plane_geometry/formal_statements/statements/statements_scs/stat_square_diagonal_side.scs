@@ -1,0 +1,22 @@
+stat_square_diagonal_side <- statement;;
+
+stat_square_diagonal_side
+-> rrel_key_sc_element:
+	concept_square;
+	nrel_diagonal;
+	nrel_side_of_polygon;;
+
+stat_square_diagonal_side
+=> nrel_main_idtf:
+	[Утв.(квадрат;диагональ*;сторона многоугольника*)] (* <-lang_ru;; *);;
+
+stat_square_diagonal_side
+=> nrel_main_idtf:
+	[Stat.(square*;diagonal*;side of polygon*)] (* <-lang_en;; *);;
+
+stat_square_diagonal_side <= nrel_sc_text_translation: 
+	...
+	(*
+		-> rrel_example: 
+		[Диагональ квадрата d выражается через его сторону a по формуле: d = a√2.] (* <- lang_ru;; *);;
+	*);;

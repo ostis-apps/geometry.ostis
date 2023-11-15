@@ -1,0 +1,32 @@
+struct_Zero_Angle_N_K_N => nrel_idtf: [Нулевой угол (N; K; N)] (* <- lang_ru;; *);;
+
+struct_Zero_Angle_N_K_N => nrel_vertex: struct_Geometric_point_K;;
+
+struct_Zero_Angle_N_K_N => nrel_side: struct_Ray_K_N;;
+
+struct_Zero_Angle_N_K_N <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Факт.утв.(Нулевой угол NKN)] (* <- lang_ru;; *);;
+	<- statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Угол NKN является нулевым. N и K являются геометрическими точками. Геометрическая точка K является вершиной угла NKN. Луч KN является сторонами угла NKN.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+struct_Zero_Angle_N_K_N <- rrel_key_sc_element: 
+	...
+	(*
+	<- illustration;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			"file://images/Corner NKN.png";;
+		*);; 
+	*);; 
+

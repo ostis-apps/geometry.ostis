@@ -1,0 +1,14 @@
+stat_ball_sphere_radius_congruence <- statement;;
+	
+stat_ball_sphere_radius_congruence -> rrel_key_sc_element: concept_sphere; concept_ball; nrel_radius; nrel_congruence;;
+
+stat_ball_sphere_radius_congruence => nrel_main_idtf: [Утв.(шар; сфера; радиус*; конгруэнтность*)] (* <-lang_ru;; *);;
+stat_ball_sphere_radius_congruence => nrel_main_idtf: [Stat.(ball; sphere; radius*; congruence*)] (* <-lang_ru;; *);;
+
+
+stat_ball_sphere_radius_congruence <= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+		[Все радиусы одного шара(одной сферы) равны между собой.] (* <- lang_ru;; *);;
+		*);;

@@ -1,0 +1,20 @@
+d_nrel_vertex_of_polygon 
+=> nrel_main_idtf: [Опр.(вершина многоугольника*)] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Def.(vertex of polygon*)] (*<- lang_en;;*);
+<- definition;
+-> rrel_key_sc_element: nrel_vertex_of_polygon;
+
+<= nrel_using_constants:
+	{
+		nrel_boundary_point; 
+		concept_segment; 
+		nrel_side_of_polygon; 
+		concept_polygon
+	};
+
+<= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[Вершина многоугольника - общая граничная точка двух отрезков, которые являются сторонами многоугольника.] (* <- lang_ru;; *);;
+	*);;

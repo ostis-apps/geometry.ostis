@@ -1,0 +1,27 @@
+sc_node_not_relation -> concept_circle;;
+
+concept_circle => nrel_main_idtf:
+	[окружность](* <- lang_ru;; *);
+	[circle](*<- lang_en;; *);;
+
+concept_circle => nrel_idtf: [Класс окружностей] (* <- lang_ru;; *);;
+concept_circle => nrel_idtf: [Понятие окружности] (* <- lang_ru;; *);;
+concept_circle => nrel_idtf: [Множество всевозможных окружностей] (* <- lang_ru;; *);;
+concept_circle => nrel_idtf: [Множество знаков всевозможных окружностей] (* <- lang_ru;; *);;
+
+concept_circle <= nrel_strict_inclusion: concept_planar_line;;
+concept_circle <= nrel_strict_inclusion: concept_geometric_figure_of_limited_size;;
+concept_circle <= nrel_strict_inclusion: concept_linear_figure;;
+
+concept_circle <- rrel_key_sc_element: 
+	...
+	(*
+	<- illustration;; 
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: 
+		"file://images/concept_circle.png";;
+		*);;
+	*);;
+
+concept_circle -> rrel_example: struct_Circle_O_R;;

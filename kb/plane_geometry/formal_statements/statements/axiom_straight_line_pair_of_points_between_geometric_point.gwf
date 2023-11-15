@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GWF version="2.0">
+    <staticSector>
+        <node type="node/const/perm/group" idtf="concept_geometric_point" shapeColor="193" id="94166125416224" parent="94166124571504" left="0" top="0" right="195.156" bottom="25" textColor="244" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="435" y="225" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/var/perm/general" idtf="_Y" shapeColor="193" id="94166122438848" parent="94166124571504" left="0" top="0" right="28.9063" bottom="25" textColor="244" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="510" y="285" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/var/perm/general" idtf="_X" shapeColor="193" id="94166125153504" parent="94166124571504" left="0" top="0" right="28.5156" bottom="25" textColor="244" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="360" y="285" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <pair type="pair/var/pos/perm/orient/membership" idtf="" shapeColor="193" id="94166125505296" parent="94166124571504" id_b="94166125416224" id_e="94166122438848" b_x="435" b_y="225" e_x="510" e_y="285" dotBBalance="0" dotEBalance="0">
+            <points>
+                <point x="435" y="255"/>
+            </points>
+        </pair>
+        <pair type="pair/var/pos/perm/orient/membership" idtf="" shapeColor="193" id="94166121771584" parent="94166124571504" id_b="94166125416224" id_e="94166125153504" b_x="435" b_y="225" e_x="360" e_y="285" dotBBalance="0" dotEBalance="0">
+            <points/>
+        </pair>
+        <contour type="contour/const/perm" idtf="" shapeColor="193" id="94166124571504" parent="0">
+            <points>
+                <point x="330" y="210"/>
+                <point x="630" y="210"/>
+                <point x="630" y="375"/>
+                <point x="330" y="375"/>
+            </points>
+        </contour>
+        <node type="node/const/perm/group" idtf="concept_geometric_point" shapeColor="193" id="94166124317984" parent="94166125733008" left="0" top="0" right="195.156" bottom="25" textColor="244" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="345" y="570" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/var/perm/general" idtf="_X" shapeColor="193" id="94166125221344" parent="94166125733008" left="0" top="0" right="28.5156" bottom="25" textColor="244" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="330" y="465" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/perm/relation" idtf="nrel_between" shapeColor="193" id="94166124209952" parent="94166125733008" left="0" top="0" right="109.609" bottom="25" textColor="244" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="450" y="495" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/var/perm/general" idtf="_Y" shapeColor="193" id="94166124295200" parent="94166125733008" left="0" top="0" right="28.9063" bottom="25" textColor="244" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="480" y="465" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/var/perm/general" idtf="_A" shapeColor="193" id="94166124397968" parent="94166125733008" left="0" top="0" right="28.5469" bottom="25" textColor="244" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="405" y="540" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/var/perm/tuple" idtf="" shapeColor="193" id="94166122492640" parent="94166125733008" x="405" y="465" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <pair type="pair/var/pos/perm/orient/membership" idtf="" shapeColor="193" id="94166121772112" parent="94166125733008" id_b="94166124209952" id_e="94166124208400" b_x="450" b_y="495" e_x="0" e_y="0" dotBBalance="0" dotEBalance="0.336957">
+            <points/>
+        </pair>
+        <pair type="pair/var/-/perm/orient" idtf="" shapeColor="193" id="94166124208400" parent="94166125733008" id_b="94166122492640" id_e="94166124397968" b_x="405" b_y="465" e_x="405" e_y="540" dotBBalance="0" dotEBalance="0">
+            <points/>
+        </pair>
+        <pair type="pair/var/pos/perm/orient/membership" idtf="" shapeColor="193" id="94166124931120" parent="94166125733008" id_b="94166124317984" id_e="94166124397968" b_x="345" b_y="570" e_x="405" e_y="540" dotBBalance="0" dotEBalance="0">
+            <points/>
+        </pair>
+        <pair type="pair/var/pos/perm/orient/membership" idtf="" shapeColor="193" id="94166122803600" parent="94166125733008" id_b="94166122492640" id_e="94166125221344" b_x="405" b_y="465" e_x="330" e_y="465" dotBBalance="0" dotEBalance="0">
+            <points/>
+        </pair>
+        <pair type="pair/var/pos/perm/orient/membership" idtf="" shapeColor="193" id="94166122803360" parent="94166125733008" id_b="94166122492640" id_e="94166124295200" b_x="405" b_y="465" e_x="480" e_y="465" dotBBalance="0" dotEBalance="0">
+            <points/>
+        </pair>
+        <contour type="contour/const/perm" idtf="" shapeColor="193" id="94166125733008" parent="0">
+            <points>
+                <point x="300" y="435"/>
+                <point x="585" y="435"/>
+                <point x="585" y="615"/>
+                <point x="300" y="615"/>
+            </points>
+        </contour>
+        <node type="node/const/perm/general" idtf="axiom_straight_line_pair_of_points_between_geometric_point" shapeColor="193" id="94166125676320" parent="0" left="0" top="0" right="458.125" bottom="25" textColor="244" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="360" y="165" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/perm/role" idtf="rrel_if" shapeColor="193" id="94166125322576" parent="0" left="0" top="0" right="54.6719" bottom="25" textColor="244" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="240" y="240" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/perm/group" idtf="atomic_existence" shapeColor="193" id="94166125656512" parent="0" left="0" top="0" right="137.234" bottom="25" textColor="244" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="645" y="450" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/perm/tuple" idtf="" shapeColor="193" id="94166125655664" parent="0" x="150" y="165" haveBus="true" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/perm/relation" idtf="nrel_implication" shapeColor="193" id="94166125212784" parent="0" left="0" top="0" right="127.906" bottom="25" textColor="244" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="150" y="90" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/perm/role" idtf="rrel_else" shapeColor="193" id="94166125247696" parent="0" left="0" top="0" right="73.3906" bottom="25" textColor="244" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="195" y="465" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/perm/role" idtf="rrel_main_key_sc_element" shapeColor="193" id="94166125400896" parent="0" left="0" top="0" right="200.953" bottom="25" textColor="244" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="315" y="105" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="193" id="94166125077072" parent="0" id_b="94166125322576" id_e="94166125070688" b_x="240" b_y="240" e_x="0" e_y="0" dotBBalance="0" dotEBalance="0.499742">
+            <points/>
+        </pair>
+        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="193" id="94166125075568" parent="0" id_b="94166125212784" id_e="94166125655664" b_x="150" b_y="90" e_x="150" e_y="165" dotBBalance="0" dotEBalance="0">
+            <points/>
+        </pair>
+        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="193" id="94166125074592" parent="0" id_b="94166125656512" id_e="94166124571504" b_x="645" b_y="450" e_x="480" e_y="292.5" dotBBalance="0" dotEBalance="0">
+            <points/>
+        </pair>
+        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="193" id="94166125073616" parent="0" id_b="94166125656512" id_e="94166125733008" b_x="645" b_y="450" e_x="442.5" e_y="525" dotBBalance="0" dotEBalance="0">
+            <points/>
+        </pair>
+        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="193" id="94166125072640" parent="0" id_b="94166125247696" id_e="94166125071664" b_x="195" b_y="465" e_x="0" e_y="0" dotBBalance="0" dotEBalance="0.3">
+            <points/>
+        </pair>
+        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="193" id="94166125071664" parent="0" id_b="94166127047008" id_e="94166125733008" b_x="0" b_y="0" e_x="442.5" e_y="525" dotBBalance="0.821641" dotEBalance="0">
+            <points/>
+        </pair>
+        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="193" id="94166125070688" parent="0" id_b="94166127047008" id_e="94166124571504" b_x="0" b_y="0" e_x="480" e_y="292.5" dotBBalance="0.250892" dotEBalance="0">
+            <points/>
+        </pair>
+        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="193" id="94166125069728" parent="0" id_b="94166125400896" id_e="94166125068848" b_x="315" b_y="105" e_x="0" e_y="0" dotBBalance="0" dotEBalance="0.168508">
+            <points/>
+        </pair>
+        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="193" id="94166125068848" parent="0" id_b="94166125676320" id_e="94166125655664" b_x="360" b_y="165" e_x="150" e_y="165" dotBBalance="0" dotEBalance="0">
+            <points/>
+        </pair>
+        <bus type="" idtf="" shapeColor="193" id="94166127047008" parent="0" owner="94166125655664" b_x="150" b_y="174.5" e_x="150" e_y="600">
+            <points/>
+        </bus>
+    </staticSector>
+</GWF>

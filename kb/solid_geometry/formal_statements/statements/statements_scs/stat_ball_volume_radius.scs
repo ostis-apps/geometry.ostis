@@ -1,0 +1,14 @@
+stat_ball_volume_radius <- statement;;
+
+stat_ball_volume_radius -> rrel_key_sc_element: concept_ball; nrel_volume; nrel_radius;;
+
+stat_ball_volume_radius => nrel_main_idtf: [Утв.(шар; объём*; радиус*)] (* <-lang_ru;; *);;
+stat_ball_volume_radius => nrel_main_idtf: [Stat.(ball; volume*; radius*)] (* <-lang_en;; *);;
+
+
+stat_ball_volume_radius <= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+		[Объём шара радиуса R вычисляется по формуле V=(4*pi*R^3)/3] (* <- lang_ru;; *);;
+		*);;

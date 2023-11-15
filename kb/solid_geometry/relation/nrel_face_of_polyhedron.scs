@@ -1,0 +1,24 @@
+sc_node_norole_relation -> nrel_face_of_polyhedron;;
+
+nrel_face_of_polyhedron => nrel_main_idtf: [грань*](*<-lang_ru;;*);;
+nrel_face_of_polyhedron => nrel_main_idtf: [face of polyhedron*](* <- lang_en;; *);;
+
+nrel_face_of_polyhedron => nrel_definitional_domain: ...
+(*
+	<= nrel_combination:
+		{
+			concept_polyhedron;
+			concept_polygon
+		};;
+*);;
+
+nrel_face_of_polyhedron => nrel_first_domain: concept_polyhedron;;
+nrel_face_of_polyhedron => nrel_second_domain: concept_polygon;;
+
+nrel_face_of_polyhedron <- relation;;
+nrel_face_of_polyhedron <- oriented_relation;;
+nrel_face_of_polyhedron <- binary_relation;;
+nrel_face_of_polyhedron <- antireflexive_relation;;
+nrel_face_of_polyhedron <- antisymmetric_relation;;
+nrel_face_of_polyhedron <- antitransitive_relation;;
+

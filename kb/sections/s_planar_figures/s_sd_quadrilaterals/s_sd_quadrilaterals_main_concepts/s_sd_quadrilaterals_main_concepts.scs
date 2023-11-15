@@ -1,0 +1,36 @@
+s_sd_quadrilaterals_main_concepts
+=> nrel_main_idtf:
+	[Раздел. Основные понятия предметной области четырёхугольников]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Section. Main concepts of subject domain of quadrilaterals]
+	(* <- lang_en;; *);
+
+<- atomic_section;
+
+<= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+		"file://html/s_sd_quadrilaterals_main_concepts_ru.html"
+		(* <- lang_ru;; *);;
+	*);
+
+
+=> nrel_summary:
+	...
+	(*
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[This section discusses the main quadrilaterals concepts.]
+			(* <- lang_en;; *);;
+		*);;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:[В данном разделе рассматриваются основные понятия предметной области четырехугольников.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;

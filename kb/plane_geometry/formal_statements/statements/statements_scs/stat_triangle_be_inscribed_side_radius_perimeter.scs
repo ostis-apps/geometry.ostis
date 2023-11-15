@@ -1,0 +1,24 @@
+stat_triangle_be_inscribed_side_radius_perimeter <- statement;;
+
+stat_triangle_be_inscribed_side_radius_perimeter
+	-> rrel_key_sc_element:
+	concept_triangle;
+	nrel_be_inscribed;
+	nrel_radius;
+	nrel_perimeter;;
+
+stat_triangle_be_inscribed_side_radius_perimeter
+	=> nrel_main_idtf:
+	[Утв.(треугольник;быть вписанным*;радиус*;периметр*)] (*<- lang_ru;;*);;
+
+stat_triangle_be_inscribed_side_radius_perimeter
+	=> nrel_main_idtf:
+	[Stat.(triangle;be inscribed*;radius*;perimeter*)] (*<- lang_en;;*);;
+
+stat_triangle_be_inscribed_side_radius_perimeter <= nrel_sc_text_translation: 
+	... 
+	(* 
+	-> rrel_example: 
+		[Радиус r вписанной окружности вычелсяется по формуле r = (p-a)*tg(α/2) = (p-b)*tg(β/2) = (p-c)*tg(γ/2), где p - полупериметр треугольника, a,b,c - стороны треугольника; альфа, бета, гамма - углы при вершинах треугольника.] 
+		(* <- lang_ru;; *);; 
+	*);;

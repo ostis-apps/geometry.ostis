@@ -1,0 +1,13 @@
+sc_node_not_relation -> concept_non_rectlinear_geometric_figure;;
+
+concept_non_rectlinear_geometric_figure => nrel_main_idtf:
+	[непрямолинейная фигура](* <- lang_ru;;	*);
+	[non rectilinear geometric figure](* <- lang_en;; *);;
+
+concept_non_rectlinear_geometric_figure => nrel_idtf: [Непрямолинейная геометрическая фигура] (* <- lang_ru;; *);;
+concept_non_rectlinear_geometric_figure => nrel_idtf: [Геометрическая фигура, не лежащая на прямой] (* <- lang_ru;; *);;
+concept_non_rectlinear_geometric_figure => nrel_idtf: [Геометрическая фигура, для которой не существует прямой, являющейся её надмножеством] (* <- lang_ru;; *);;
+
+concept_non_rectlinear_geometric_figure => nrel_strict_inclusion: concept_non_rectlinear_three_tuple_of_points;;
+
+concept_non_rectlinear_geometric_figure <=> nrel_antipode: concept_rectilinear_figure;;

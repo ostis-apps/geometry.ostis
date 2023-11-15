@@ -1,0 +1,33 @@
+struct_Straight_angle_A_O_B => nrel_idtf: [Развернутый угол (A; O; B)] (* <- lang_ru;; *);;
+
+struct_Straight_angle_A_O_B => nrel_vertex: struct_Geometric_point_O;;
+
+struct_Straight_angle_A_O_B => nrel_side: struct_Ray_A_O;;
+
+struct_Straight_angle_A_O_B => nrel_side: struct_Ray_O_B;;
+
+struct_Straight_angle_A_O_B <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Факт. утв.(Развернутый угол AOB)] (* <- lang_ru;; *);;
+	<- statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Угол AOB является развернутым. A, O и B являются геометрическими точками. Лучи OA и OB являются сторонами угла AOB. Геометрическая точка O является вершиной угла AOB.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+struct_Straight_angle_A_O_B <- rrel_key_sc_element: 
+	...
+	(*
+	<- illustration;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://images/Straight_angle_A_O_B.png";;
+		*);;
+	*);;

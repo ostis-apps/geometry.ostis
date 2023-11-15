@@ -1,0 +1,46 @@
+s_sd_triangles
+=> nrel_main_idtf:
+	[Раздел. Предметная область треугольников]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Section. Subject domain of triangles]
+	(* <- lang_en;; *);
+
+<- non_atomic_section;
+
+<= nrel_section_decomposition:
+	{
+		s_triangles_classification
+		(*
+		=> nrel_section_base_order: 
+			s_triangles_congruence;;
+		*);
+
+		s_triangles_congruence
+		(*
+		=> nrel_section_base_order: 
+			s_triangles_similarity;;
+		*);
+
+		s_triangles_similarity
+		(*
+		=> nrel_section_base_order: 
+			s_points_lines_associated_with_triangle;;
+		*);
+		
+		s_points_lines_associated_with_triangle
+		(*
+		=> nrel_section_base_order:
+			s_triangles_area;;
+		*);
+		
+		s_triangles_area
+		(*
+		=> nrel_section_base_order: 
+			s_triangles_metric_relations;;
+		*);
+
+		s_triangles_metric_relations
+	};
+
+-> rrel_key_sc_element: subject_domain_of_triangles;;

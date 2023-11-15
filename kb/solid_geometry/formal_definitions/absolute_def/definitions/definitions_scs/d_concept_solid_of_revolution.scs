@@ -1,0 +1,22 @@
+d_concept_solid_of_revolution <- definition;;
+
+d_concept_solid_of_revolution => nrel_main_idtf: [Опр.(тело вращения)] (*<-lang_ru;;*);;
+d_concept_solid_of_revolution => nrel_main_idtf: [Def.(solid of revolution)] (*<-lang_en;;*);;
+
+d_concept_solid_of_revolution -> rrel_key_sc_element: concept_solid_of_revolution;;
+
+d_concept_solid_of_revolution <= nrel_using_constants:
+	{
+	concept_geometric_body;
+	concept_geometric_figure;
+	concept_curved_line;
+	concept_plane;
+	nrel_axis_of_solid_of_revolution	
+	};;
+
+d_concept_solid_of_revolution <= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+		[Тело вращения – это объемное тело, которые возникает при вращении некой плоской фигуры, которая, в свою очередь, ограничена кривой и крутится вокруг оси, лежащей в той же плоскости.] (*<-lang_ru;;*);;
+		*);;

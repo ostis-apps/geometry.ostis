@@ -1,0 +1,25 @@
+stat_congruence_triangle_side_angle_between <- statement;;
+
+//stat_congruence_triangle_side_angle_between <- sc_statement_for_solver;;
+
+stat_congruence_triangle_side_angle_between -> rrel_key_sc_element: concept_triangle; nrel_congruence; nrel_side; nrel_internal_angle;;
+
+stat_congruence_triangle_side_angle_between => nrel_main_idtf: [Утв.(треугольник;конгруэнтность*;сторона*;внутренний угол*)] (* <-lang_ru;; *);;
+stat_congruence_triangle_side_angle_between => nrel_main_idtf: [Stat.(triangle;congruence*;side*;internal angle*)] (* <-lang_en;; *);;
+
+stat_congruence_triangle_side_angle_between => nrel_idtf: [Признак равенства треугольников по двум сторонам и углу между ними] (* <-lang_ru;; *);;
+stat_congruence_triangle_side_angle_between => nrel_idtf: [Sign of equality of triangles. Two sides and included angle] (* <-lang_en;; *);;
+
+stat_congruence_triangle_side_angle_between <= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+		[Если две стороны и угол между ними одного треугольника соответственно равны двум сторонам и углу между ними другого треугольника, то такие треугольники равны.] (* <- lang_ru;; *);;
+		*);;
+
+stat_congruence_triangle_side_angle_between <= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+		[Triangles are congruent if any pair of corresponding sides and their included angles are equal in both triangles.] (* <- lang_en;; *);;
+		*);;

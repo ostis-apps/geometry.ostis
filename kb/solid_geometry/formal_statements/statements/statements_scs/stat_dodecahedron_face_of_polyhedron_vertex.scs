@@ -1,0 +1,13 @@
+stat_dodecahedron_face_of_polyhedron_vertex <- statement;;
+
+stat_dodecahedron_face_of_polyhedron_vertex -> rrel_key_sc_element: concept_dodecahedron; nrel_vertex; nrel_face_of_polyhedron; concept_regular_pentagon;;
+
+stat_dodecahedron_face_of_polyhedron_vertex => nrel_main_idtf: [Утв.(додекаэдр; правильный пятиугольник; грань*; вершина*)] (*<-lang_ru;;*);;
+stat_dodecahedron_face_of_polyhedron_vertex => nrel_main_idtf: [Stat.(dodecahedron; right pentagon; face of polyhedron*; vertex*)] (*<-lang_en;;*);;
+
+stat_dodecahedron_face_of_polyhedron_vertex <= nrel_sc_text_translation: 
+		...
+		(*
+		<- rrel_example: 
+		[Все грани додекаэдра - равностороннние пятиугольники, а каждая его вершина является вершиной трех пятиугольников.] (*<-lang_ru;;*);;
+		*);;

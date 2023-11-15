@@ -1,0 +1,18 @@
+sc_node_not_relation -> concept_non_convex_polyhedron;;
+
+concept_non_convex_polyhedron => nrel_main_idtf: [невыпуклый многогранник] (*<-lang_ru;;*);;
+concept_non_convex_polyhedron => nrel_main_idtf: [non convex polyhedron] (*<-lang_en;;*);;
+
+concept_non_convex_polyhedron <- rrel_key_sc_element: 
+	...
+	(*
+	<- illustration;; 
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: 
+		"file://images/concept_non_convex_polyhedron.gif";;
+		*);;
+	*);;
+
+

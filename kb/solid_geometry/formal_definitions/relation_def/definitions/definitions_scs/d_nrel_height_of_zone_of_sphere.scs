@@ -1,0 +1,20 @@
+d_nrel_height_of_zone_of_sphere <- definition;;
+
+d_nrel_height_of_zone_of_sphere => nrel_main_idtf: [Опр.(высота сферического пояса*)] (*<-lang_ru;;*);;
+d_nrel_height_of_zone_of_sphere => nrel_main_idtf: [Def.(height of zone of sphere*)] (*<-lang_en;;*);;
+
+d_nrel_height_of_zone_of_sphere -> rrel_key_sc_element: nrel_height_of_zone_of_sphere;;
+
+d_nrel_height_of_zone_of_sphere <= nrel_using_constants:
+	{
+	concept_zone_of_sphere;
+	nrel_distance;
+	nrel_cross_section
+	};;
+
+d_nrel_height_of_zone_of_sphere <= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+		[Высота сферического пояса - это расстояние между секущими плоскостями, которые образуют сферический пояс.] (*<-lang_ru;;*);;
+	*);;

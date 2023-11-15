@@ -1,0 +1,36 @@
+sc_node_norole_relation -> nrel_internal_angle;;
+
+nrel_internal_angle => nrel_main_idtf:
+	[внутренний угол*]
+	(* <- lang_ru;; *);
+	[internal angle*]
+	(* <- lang_en;; *);;
+
+nrel_internal_angle => nrel_idtf: [быть внутренним углом*]
+	(* <- lang_ru;; *);;
+
+nrel_internal_angle => nrel_definitional_domain:
+	...
+	(*
+	<= nrel_combination: 
+		{
+		concept_polygon; 
+		concept_planar_angle
+		};;
+	*);;
+
+nrel_internal_angle => nrel_first_domain: 
+	concept_polygon;;
+
+nrel_internal_angle => nrel_second_domain: 
+	concept_planar_angle;;
+
+nrel_internal_angle <- relation;;
+nrel_internal_angle <- binary_relation;;
+nrel_internal_angle <- oriented_relation;;
+nrel_internal_angle <- antireflexive_relation;;
+nrel_internal_angle <- antisymmetric_relation;;
+nrel_internal_angle <- antitransitive_relation;;
+
+
+

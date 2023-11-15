@@ -1,0 +1,29 @@
+s_chords_arcs
+=> nrel_main_idtf:
+	[Раздел. Хорды и дуги]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Section. Сhords and arcs]
+	(* <- lang_en;; *);
+
+<= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+		"file://html/s_chords_arcs_ru.html"
+		(* <- lang_ru;; *);;
+	*);
+
+<- atomic_section;
+
+=> nrel_summary:
+	...
+	(*
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[В данном разделе рассматриваются свойства хорд и дуг.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;

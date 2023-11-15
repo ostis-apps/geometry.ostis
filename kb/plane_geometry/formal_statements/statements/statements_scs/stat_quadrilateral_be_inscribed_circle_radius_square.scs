@@ -1,0 +1,13 @@
+stat_quadrilateral_be_inscribed_circle_radius_square <- statement;;
+
+stat_quadrilateral_be_inscribed_circle_radius_square -> rrel_key_sc_element: concept_quadrilateral; concept_circle; nrel_be_inscribed; nrel_square; nrel_radius;;
+
+stat_quadrilateral_be_inscribed_circle_radius_square => nrel_main_idtf: [Утв.(четырёхугольник; окружность; быть вписанным*; площадь*; радиус*)] (* <-lang_ru;; *);;
+stat_quadrilateral_be_inscribed_circle_radius_square=> nrel_main_idtf: [Stat.(quadrilateral; be inscribed*; circle; radius*; square*)] (* <-lang_en;; *);;
+
+stat_quadrilateral_be_inscribed_circle_radius_square <= nrel_sc_text_translation: 
+	...
+	(*
+		-> rrel_example: 
+		[Площадь S четырёхугольника выражается через стороны a, b, c, d четырёхугольника, вписанного в окружность радиуса R: S=(sqrt((ab+cd)(ac+bd)(ad+bc)))/(4R).] (* <- lang_ru;; *);;
+	*);;

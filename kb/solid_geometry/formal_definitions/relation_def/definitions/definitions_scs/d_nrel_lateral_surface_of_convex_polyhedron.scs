@@ -1,0 +1,19 @@
+d_nrel_lateral_surface_of_convex_polyhedron <- definition;;
+
+d_nrel_lateral_surface_of_convex_polyhedron => nrel_main_idtf: [Опр.(боковая поверхность выпуклого многогранника*)] (*<-lang_ru;;*);;
+d_nrel_lateral_surface_of_convex_polyhedron => nrel_main_idtf: [Def.(lateral surface of convex polyhedron*)] (*<-lang_en;;*);;
+
+d_nrel_lateral_surface_of_convex_polyhedron -> rrel_key_sc_element: nrel_lateral_surface_of_convex_polyhedron;;
+
+d_nrel_lateral_surface_of_convex_polyhedron <= nrel_using_constants:
+	{
+	concept_geometric_figure;
+	nrel_lateral_face_of_convex_polyhedron
+	};;
+
+d_nrel_lateral_surface_of_convex_polyhedron <= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example:
+		[Боковая поверхность выпуклого многогранника - геометрическая фигура, образованная его боковыми гранями.] (*<-lang_ru;;*);;
+	*);;

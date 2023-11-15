@@ -1,0 +1,38 @@
+sc_node_norole_relation -> nrel_tangent;;
+
+nrel_tangent => nrel_main_idtf:
+	[касательная*]
+	(* <- lang_ru;; *);
+	[tangent*]
+	(* <- lang_en;; *);;
+
+nrel_tangent => nrel_idtf: [быть касательной*] (* <- lang_ru;; *);;
+
+nrel_tangent => nrel_idtf: [касательная к окружности*] (* <- lang_ru;; *);;
+
+nrel_tangent => nrel_idtf: [быть касательной к окружности*] (* <- lang_ru;; *);;
+
+nrel_tangent => nrel_definitional_domain: 
+	...
+	(*
+	<= nrel_combination: 
+		{
+		concept_circle;
+		concept_straight_line
+		};;
+	*);;	
+
+nrel_tangent => nrel_first_domain: 
+	concept_circle;;
+
+nrel_tangent => nrel_second_domain: 
+	concept_straight_line;;
+
+nrel_tangent <- relation;;
+nrel_tangent <- binary_relation;;
+nrel_tangent <- oriented_relation;;
+nrel_tangent <- antireflexive_relation;;
+nrel_tangent <- antisymmetric_relation;;
+nrel_tangent <- antitransitive_relation;;
+
+

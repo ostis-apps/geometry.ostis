@@ -1,0 +1,17 @@
+sc_node_not_relation -> concept_icosahedron;;
+
+concept_icosahedron => nrel_main_idtf: [икосаэдр] (*<-lang_ru;;*);;
+concept_icosahedron => nrel_main_idtf: [icosahedron] (*<-lang_en;;*);;
+
+concept_icosahedron => nrel_idtf: [Множество всевозможных икосаэдров] (* <- lang_ru;; *);;
+
+concept_icosahedron <- rrel_key_sc_element: 
+	...
+	(*
+	<- illustration;; 
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: 
+		"file://images/concept_icosahedron.gif";;
+		*);;
+	*);;

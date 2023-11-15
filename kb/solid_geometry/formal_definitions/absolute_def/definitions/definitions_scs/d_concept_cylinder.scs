@@ -1,0 +1,22 @@
+d_concept_cylinder <- definition;;
+
+d_concept_cylinder => nrel_main_idtf: [Опр.(цилиндр)] (*<-lang_ru;;*);;
+d_concept_cylinder => nrel_main_idtf: [Def.(cylinder)] (*<-lang_en;;*);;
+
+d_concept_cylinder -> rrel_key_sc_element: concept_cylinder;;
+
+d_concept_cylinder <= nrel_using_constants:
+	{
+	concept_geometric_body;
+	concept_cylindrical_surface;
+	concept_plane;
+	nrel_generatrix_of_cylindrical_surface;
+	nrel_perpendicularity
+	};;
+
+d_concept_cylinder <= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+		[Цилиндр – геометрическое тело, ограниченное цилиндрической поверхность и двумя плоскостями, которые перпендикулярны к образующим цилиндрической поверхности] (*<-lang_ru;;*);;
+		*);;

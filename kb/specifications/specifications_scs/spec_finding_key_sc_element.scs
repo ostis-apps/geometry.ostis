@@ -1,0 +1,7 @@
+semantic_neighborhood <- rrel_key_sc_element: spec_finding_key_sc_element;;
+
+spec_finding_key_sc_element -> rrel_key_sc_element: rrel_key_sc_element;;
+
+necessary_general_specification -> spec_finding_key_sc_element;;
+
+spec_finding_key_sc_element => nrel_main_idtf: [Необходимая обобщённая спецификация для поиска ключевого sc-элемента семантической окрестности] (* <- lang_ru;; *);;
