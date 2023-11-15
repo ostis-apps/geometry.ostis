@@ -1,0 +1,14 @@
+stat_ball_sphere_radius_diameter <- statement;;
+	
+stat_ball_sphere_radius_diameter -> rrel_key_sc_element: concept_ball; concept_sphere; nrel_radius; nrel_diameter;;
+
+stat_ball_sphere_radius_diameter => nrel_main_idtf: [Утв.(шар; сфера; радиус*; диаметр*)] (* <-lang_ru;; *);;
+stat_ball_sphere_radius_diameter => nrel_main_idtf: [Stat.(ball; sphere; radius*; diameter*)] (* <-lang_en;; *);;
+
+
+stat_ball_sphere_radius_diameter <= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+		[Любой диаметр сферы(шара) радиусом R равен 2R] (*<-lang_ru;; *);;
+		*);;

@@ -1,0 +1,22 @@
+d_nrel_top_surface_of_truncated_cone <- definition;;
+
+d_nrel_top_surface_of_truncated_cone => nrel_main_idtf: [Опр.(верхнее основание усеченного конуса*)] (*<-lang_ru;;*);;
+d_nrel_top_surface_of_truncated_cone => nrel_main_idtf: [Def.(top surface of truncated cone*)] (*<-lang_en;;*);;
+
+d_nrel_top_surface_of_truncated_cone -> rrel_key_sc_element: nrel_top_surface_of_truncated_cone;;
+
+d_nrel_top_surface_of_truncated_cone <= nrel_using_constants:
+	{
+		concept_truncated_cone;
+		concept_cone;
+		concept_round;
+		concept_plane;
+		nrel_cross_section
+	};;
+
+d_nrel_top_surface_of_truncated_cone <= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+	[Верхнее основание усеченного конуса - круг, образованный в сечении исходного конуса плоскостью.] (*<-lang_ru;;*);;
+	*);;

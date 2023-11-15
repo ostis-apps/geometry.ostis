@@ -1,0 +1,21 @@
+sc_node_not_relation -> concept_closed_polyline;;
+
+concept_closed_polyline => nrel_main_idtf:
+	[замкнутая ломаная](* <- lang_ru;; *);
+	[closed polyline](* <- lang_en;; *);;
+
+concept_closed_polyline => nrel_idtf: [понятие замкнутой ломаной] (* <- lang_ru;; *);;
+
+concept_closed_polyline => nrel_strict_inclusion: concept_linear_polygon;;
+
+concept_closed_polyline <- rrel_key_sc_element: 
+	...
+	(*
+	<- illustration;; 
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: 
+		"file://images/concept_closed_polyline.png";;
+
+		*);;
+	*);;

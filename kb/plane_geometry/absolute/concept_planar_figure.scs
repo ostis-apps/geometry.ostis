@@ -1,0 +1,52 @@
+sc_node_not_relation -> concept_planar_figure;;
+
+concept_planar_figure => nrel_main_idtf:
+	[планарная геометрическая фигура](* <- lang_ru;; *);
+	[planar figure](* <- lang_en;; *);;
+
+concept_planar_figure => nrel_idtf: [фигура, лежащая в плоскости] (* <- lang_ru;; *);;
+concept_planar_figure => nrel_idtf: [Класс планарных фигур] (* <- lang_ru;; *);;
+concept_planar_figure => nrel_idtf: [Множество всевозможных планарных фигур] (* <- lang_ru;; *);;
+concept_planar_figure => nrel_idtf: [Множество знаков всевозможных планарных фигур] (* <- lang_ru;; *);;
+
+concept_planar_figure => nrel_strict_inclusion: concept_ray;;
+concept_planar_figure => nrel_strict_inclusion: concept_polygon;;
+concept_planar_figure => nrel_strict_inclusion: concept_planar_angle;;
+concept_planar_figure => nrel_strict_inclusion: concept_linear_angle;;
+concept_planar_figure => nrel_strict_inclusion: concept_circle;;
+concept_planar_figure => nrel_strict_inclusion: concept_round;;
+concept_planar_figure => nrel_strict_inclusion: concept_round_segment;;
+concept_planar_figure => nrel_strict_inclusion: concept_round_sector;;
+concept_planar_figure => nrel_strict_inclusion: concept_segment;;
+concept_planar_figure <= nrel_strict_inclusion: concept_plane;;
+concept_planar_figure => nrel_strict_inclusion: concept_planar_line;;
+
+concept_planar_figure -> rrel_example: struct_Rectilinear_triple_Of_Points_P_Q_R;;
+concept_planar_figure -> rrel_example: struct_Straight_Line_A;;
+concept_planar_figure -> rrel_example: struct_Rectangular_triangle_D_F_G;;
+concept_planar_figure -> rrel_example: struct_Scalene_triangle_K_L_M;;
+concept_planar_figure -> rrel_example: struct_Obtuse_triangle_L_D_K;;
+concept_planar_figure -> rrel_example: struct_Acute_angled_triangle_O_S_T;;
+concept_planar_figure -> rrel_example: struct_Equilateral_triangle_X_Y_Z;;
+concept_planar_figure -> rrel_example: struct_Opened_ray_k;;
+concept_planar_figure -> rrel_example: struct_Regular_Polyhon_A_B_C_D_E_F;;
+concept_planar_figure -> rrel_example: struct_Irregular_polygon_K_A_B_C_D_E;;
+concept_planar_figure -> rrel_example: struct_Polygon_K_L_M_N_E_P;;
+concept_planar_figure -> rrel_example: struct_Non_Convex_Polygon_O_P_R_S_Q_T;;
+concept_planar_figure -> rrel_example: struct_Circle_O_R;;
+concept_planar_figure -> rrel_example: struct_Segment_A_B;;
+concept_planar_figure -> rrel_example: struct_Parallelogram_A_B_C_D;;
+concept_planar_figure -> rrel_example: struct_Plane_P;;
+concept_planar_figure -> rrel_example: struct_Opened_Half_Plane_K1;;
+concept_planar_figure -> rrel_example: struct_Rectangle_B_C_D_E;;
+concept_planar_figure -> rrel_example: struct_Isosceles_trapezoid_K_L_M_N;;
+concept_planar_figure -> rrel_example: struct_Rectangular_Trapezoid_P_Q_R_S;;
+concept_planar_figure -> rrel_example: struct_Versatile_trapezoid_Z_X_C_V;;
+concept_planar_figure -> rrel_example: struct_Non_convex_angle_A_B_K;;
+concept_planar_figure -> rrel_example: struct_Straight_angle_A_O_B;;
+concept_planar_figure -> rrel_example: struct_Acute_Angle_K_L_M;;
+concept_planar_figure -> rrel_example: struct_Zero_Angle_N_K_N;;
+concept_planar_figure -> rrel_example: struct_Full_angle_P_K_P;;
+concept_planar_figure -> rrel_example: struct_Right_Angle_P_T_R;;
+concept_planar_figure -> rrel_example: struct_Obtuse_angle_T_P_R;;
+concept_planar_figure -> rrel_example: struct_Rhomb_E_F_G_H;;

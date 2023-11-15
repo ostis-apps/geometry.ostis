@@ -1,0 +1,24 @@
+sc_node_not_relation -> concept_rhomb;;
+
+concept_rhomb => nrel_main_idtf:
+	[ромб] (* <- lang_ru;; *);
+	[rhombus] (* <- lang_en;; *);;
+
+concept_rhomb => nrel_idtf: [Класс ромбов] (* <- lang_ru;; *);;
+concept_rhomb => nrel_idtf: [Понятие ромба] (* <- lang_ru;; *);;
+concept_rhomb => nrel_idtf: [Множество ромбов] (* <- lang_ru;; *);;
+
+concept_rhomb => nrel_strict_inclusion: concept_square;;
+
+concept_rhomb <- rrel_key_sc_element: 
+	...
+	(*
+	<- illustration;; 
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: 
+		"file://images/concept_rhomb.png";;
+		*);;
+	*);;
+	
+concept_rhomb -> rrel_example: struct_Rhomb_E_F_G_H;;

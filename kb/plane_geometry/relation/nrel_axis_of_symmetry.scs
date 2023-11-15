@@ -1,0 +1,40 @@
+sc_node_norole_relation -> nrel_axis_of_symmetry;;
+
+nrel_axis_of_symmetry => nrel_main_idtf:
+	[ось симметрии*]
+	(* <- lang_ru;;	*);
+	[axis of symmetry*]
+	(* <- lang_en;;	*);;
+	
+nrel_axis_of_symmetry => nrel_idtf: [быть осью симметрии*] (* <- lang_ru;; *);;
+
+nrel_axis_of_symmetry => nrel_definitional_domain:
+	...
+	(*
+	<= nrel_combination: 
+		{
+		concept_geometric_figure;
+		concept_geometric_point;
+		concept_straight_line
+		};;
+	*);;
+
+nrel_axis_of_symmetry => nrel_first_domain: 
+	...
+	(*
+	<= nrel_combination: 
+		{
+		concept_geometric_figure;
+		concept_geometric_point
+		};;
+	*);;
+
+nrel_axis_of_symmetry => nrel_second_domain: 
+	concept_straight_line;;
+
+nrel_axis_of_symmetry <- relation;;
+nrel_axis_of_symmetry <- binary_relation;;
+nrel_axis_of_symmetry <- antireflexive_relation;;
+nrel_axis_of_symmetry <- antisymmetric_relation;;
+nrel_axis_of_symmetry <- antitransitive_relation;;
+

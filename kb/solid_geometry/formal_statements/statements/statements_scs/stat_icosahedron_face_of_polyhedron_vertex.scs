@@ -1,0 +1,13 @@
+stat_icosahedron_face_of_polyhedron_vertex <- statement;;
+
+stat_icosahedron_face_of_polyhedron_vertex -> rrel_key_sc_element: concept_icosahedron; concept_equilateral_triangle; nrel_vertex; nrel_face_of_polyhedron;;
+
+stat_icosahedron_face_of_polyhedron_vertex => nrel_main_idtf: [Утв.(икосаэдр; равносторонний треугольник; грань*; вершина*)] (*<-lang_ru;;*);;
+stat_icosahedron_face_of_polyhedron_vertex => nrel_main_idtf: [Stat.(icosahedron; equilaterial triangle; face of polyhedron*; vertex*)] (*<-lang_en;;*);;
+
+stat_icosahedron_face_of_polyhedron_vertex <= nrel_sc_text_translation: 
+		...
+		(*
+		<- rrel_example: 
+		[Все грани икосаэдра - равностороние треугольники, а каждая его вершина - вершина пяти треугольников.] (*<-lang_ru;;*);;
+		*);;

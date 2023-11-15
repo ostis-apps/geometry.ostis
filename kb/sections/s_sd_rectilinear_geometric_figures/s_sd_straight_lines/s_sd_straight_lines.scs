@@ -1,0 +1,42 @@
+s_sd_straight_lines
+=> nrel_main_idtf:
+	[Раздел. Предметная область прямых]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Section. Subject domain of straight lines]
+	(* <- lang_en;; *);
+
+<- atomic_section;
+
+<= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+		"file://htmls/s_sd_straight_lines_en.html"
+		(* <- lang_en;; *);;
+	*);
+<= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+		"file://htmls/s_sd_straight_lines_ru.html"
+		(* <- lang_ru;; *);;
+	*);
+
+=> nrel_summary:
+	...
+	(*
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[This section covers the basic provisions relating to the term "straight line".]
+			(* <- lang_en;; *);;
+		*);;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:[В данном разделе рассматриваются основные положения, связанные с понятием «прямая», а также аксиомы, связанные с данным понятием.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;

@@ -1,0 +1,19 @@
+d_concept_rectilinear_three_of_points <- definition;;
+
+d_concept_rectilinear_three_of_points => nrel_main_idtf: [Опр.(прямолинейная тройка точек)] (* <- lang_ru;; *);;
+
+d_concept_rectilinear_three_of_points -> rrel_key_sc_element: concept_rectilinear_three_of_points;;
+
+d_concept_rectilinear_three_of_points <= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[Прямолинейная тройка точек - тройка точек, для которой существует такая прямая, которой принадлежат все три точки.]
+		(* <- lang_ru;; *);;
+	*);;
+
+d_concept_rectilinear_three_of_points <= nrel_using_constants:
+	{
+	concept_straight_line;
+	concept_triple_of_points
+	};;

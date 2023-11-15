@@ -1,0 +1,7 @@
+subject_domain <- rrel_key_sc_element: spec_finding_studied_relation;;
+
+spec_finding_studied_relation -> rrel_key_sc_element: rrel_studied_relation;;
+
+general_specification -> spec_finding_studied_relation;;
+
+spec_finding_studied_relation => nrel_main_idtf: [Обобщённая спецификация для поиска исследуемых отношений предметной области] (* <- lang_ru;; *);;

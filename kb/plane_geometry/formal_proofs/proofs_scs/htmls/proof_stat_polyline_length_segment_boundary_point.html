@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Длина ломаной не меньше длины отрезка, соединяющего ее концы</title>
+	<meta charset=utf-8>
+</head>
+<body>
+	<p>
+		<ol>
+			<li>
+				Пусть <i>А<sub>1</sub>А<sub>2</sub>...А<sub>n</sub></i> - данная 
+				<sc_element sys_idtf="concept_polyline">ломаная</sc_element>. 
+
+			</li>
+			<li>
+				Заменим звенья <i>A<sub>1</sub>A<sub>2</sub></i> и <i>А<sub>2</sub>А<sub>3</sub></i> одним звеном <i>А<sub>1   					</sub>А<sub>3</sub></i>. Получим 
+				<sc_element sys_idtf="concept_polyline">ломаную</sc_element> <i>А<sub>1</sub>А<sub>3</sub>А<sub>4              					</sub>...А<sub>n</sub></i>.
+			</li>
+			<li>
+				Т.к. по 
+				<sc_element sys_idtf="stat_triangle_geometric_point_distance_be_more">неравенству треугольника</sc_element> 					<i>А<sub>1</sub>А<sub>3</sub> < A<sub>1</sub>A<sub>2</sub> + A<sub>2</sub>A<sub>3</sub></i>, то 
+				<sc_element sys_idtf="concept_polyline">ломаная</sc_element> <i>А<sub>1</sub>А<sub>3</sub>А<sub>4              					</sub>...А<sub>n</sub></i> имеет 
+				<sc_element sys_idtf="nrel_length">длину</sc_element>, не большую, чем исходная 
+				<sc_element sys_idtf="concept_polyline">ломаная</sc_element>. 
+			</li>
+			<li>
+				Заменяя таким же образом звенья <i>А<sub>1</sub>А<sub>3</sub></i> и <i>А<sub>3</sub>А<sub>4</sub></i> звеном 					<i>А<sub>1</sub>А<sub>4</sub></i>, переходим к 
+				<sc_element sys_idtf="concept_polyline">ломаной</sc_element>
+				<i>А<sub>1</sub>А<sub>4</sub>А<sub>5</sub>...А<sub>n</sub></i> и т.д. 
+			</li>
+			<li>
+				В итоге мы придем к 
+				<sc_element sys_idtf="concept_segment">отрезку</sc_element> <i>А<sub>1</sub>А<sub>n</sub></i>, соединяющему 					концы 
+				<sc_element sys_idtf="concept_polyline">ломаной</sc_element>.
+			</li>
+			<li>
+				Отсюда следует, что исходная 
+				<sc_element sys_idtf="concept_polyline">ломаная</sc_element> имела 
+				<sc_element sys_idtf="nrel_length">длину</sc_element>, не меньшую 
+				<sc_element sys_idtf="nrel_length">длины</sc_element> 
+				<sc_element sys_idtf="concept_segment">отрезка</sc_element> <i>А<sub>1</sub>А<sub>n</sub></i>.
+			</li>
+
+		</ol>
+	</p>
+</body>
+</html>

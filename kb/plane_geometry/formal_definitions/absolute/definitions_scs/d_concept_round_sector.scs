@@ -1,0 +1,22 @@
+d_concept_round_sector <- definition;;
+
+d_concept_round_sector => nrel_main_idtf: [Опр.(круговой сектор)] (* <- lang_ru;; *);;
+
+d_concept_round_sector -> rrel_key_sc_element: concept_round_sector;;
+
+d_concept_round_sector <= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[Круговой сектор - часть круга, ограниченная дугой окружности и двумя радиусами, соединяющими концы дуги с центром круга.]
+		(* <- lang_ru;; *);;
+	*);;
+
+d_concept_round_sector <= nrel_using_constants:
+	{
+	concept_round; 
+	concept_circle_arc;  
+	concept_circle; 
+	nrel_center_of_circle; 
+	nrel_radius
+	};;	

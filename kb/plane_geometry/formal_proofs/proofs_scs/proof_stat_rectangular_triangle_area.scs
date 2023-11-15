@@ -1,0 +1,14 @@
+stat_rectangular_triangle_area <= nrel_main_proof: proof_stat_rectangular_triangle_area;;
+
+proof_stat_rectangular_triangle_area => nrel_main_idtf:
+	 [Док. Утв. (прямоугольник, площадь*, сторона многоугольника*)] (* <- lang_ru;; *);
+	 [Pr. Stat. (rectangle, area*, side of polygon*)] (* <- lang_en;; *);;
+
+proof_stat_rectangular_triangle_area <- rrel_key_sc_element: ...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation: ... 
+		(* 	
+		-> rrel_example: "file://htmls/proof_stat_rectangular_triangle_area.html";; 
+		*);;
+	*);;	

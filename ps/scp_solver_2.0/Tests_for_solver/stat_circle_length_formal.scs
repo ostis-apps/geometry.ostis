@@ -1,0 +1,15 @@
+stat_circle_length_formal <- statement;;
+
+//stat_circle_length_formal <- sc_statement_for_solver;;
+
+stat_circle_length_formal -> rrel_key_sc_element: concept_circle; nrel_radius;;
+
+stat_circle_length_formal => nrel_main_idtf: [Утв.(окружность; радиус*)] (* <-lang_ru;; *);;
+stat_circle_length_formal => nrel_main_idtf: [Stat.(circle; radius*)] (* <-lang_en;; *);;
+
+stat_circle_length_formal <= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+		[Длина окуржности равна удвоенному произведению длины радиуса окружности на число Пи] (* <- lang_ru;; *);;
+		*);;

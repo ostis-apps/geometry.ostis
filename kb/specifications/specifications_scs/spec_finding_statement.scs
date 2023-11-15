@@ -1,0 +1,7 @@
+concept <- rrel_key_sc_element: spec_finding_statement;;
+
+spec_finding_statement -> rrel_key_sc_element: statement;;
+
+general_specification -> spec_finding_explanation;;
+
+spec_finding_statement => nrel_main_idtf: [Обобщённая спецификация для поиска утверждений] (* <- lang_ru;; *);;

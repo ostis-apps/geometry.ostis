@@ -1,0 +1,14 @@
+stat_ball_sphere_radius_center_distance_cross_section <- statement;;
+	
+stat_ball_sphere_radius_center_distance_cross_section -> rrel_key_sc_element: nrel_radius; concept_sphere; concept_ball; nrel_center; nrel_distance; nrel_cross_section;;
+
+stat_ball_sphere_radius_center_distance_cross_section => nrel_main_idtf: [Утв.(шар; сфера; радиус*; центр*; расстояние*; сечение*)] (* <-lang_ru;; *);;
+stat_ball_sphere_radius_center_distance_cross_section => nrel_main_idtf: [Утв.(ball; sphere; radius*; center*; distance*; cross section*)] (* <-lang_en;; *);;
+	
+
+stat_ball_sphere_radius_center_distance_cross_section <= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+		[Если d - расстояние от центра сферы(шара) до секущей плоскости, то радиус окружности(круга), полученного в результате сечения сферы(шара) данной плоскостью, равен r=sqrt(R^2-d^2)] (* <- lang_ru;; *);;
+		*);;

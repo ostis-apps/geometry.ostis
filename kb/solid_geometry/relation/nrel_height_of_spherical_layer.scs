@@ -1,0 +1,23 @@
+sc_node_norole_relation -> nrel_height_of_spherical_layer;;
+
+nrel_height_of_spherical_layer => nrel_main_idtf: [высота шарового слоя*] (*<-lang_ru;;*);;
+nrel_height_of_spherical_layer => nrel_main_idtf: [height of spherical layer*] (*<-lang_en;;*);;
+
+nrel_height_of_spherical_layer => nrel_first_domain: concept_spherical_layer;;
+nrel_height_of_spherical_layer => nrel_second_domain: concept_segment;;
+	
+nrel_height_of_spherical_layer => nrel_definitional_domain:
+	...
+	(*
+	<= nrel_combination: 
+		{
+			concept_spherical_layer;
+			concept_segment
+		};;
+	*);;
+	
+nrel_height_of_spherical_layer <- relation;;	
+nrel_height_of_spherical_layer <- binary_relation;;
+nrel_height_of_spherical_layer <- oriented_relation;;
+nrel_height_of_spherical_layer <- antireflexive_relation; antisymmetric_relation; antitransitive_relation;;
+

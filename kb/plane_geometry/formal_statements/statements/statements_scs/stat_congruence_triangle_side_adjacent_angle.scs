@@ -1,0 +1,25 @@
+stat_congruence_triangle_side_adjacent_angle <- statement;;
+
+//stat_congruence_triangle_side_adjacent_angle <- sc_statement_for_solver;;
+
+stat_congruence_triangle_side_adjacent_angle -> rrel_key_sc_element: concept_triangle; nrel_congruence; nrel_side;nrel_adjacent_angles;;
+
+stat_congruence_triangle_side_adjacent_angle => nrel_main_idtf: [Утв.(треугольник;конгруэнтность*;сторона*; прилежащий угол*)] (* <-lang_ru;; *);;
+stat_congruence_triangle_side_adjacent_angle => nrel_main_idtf: [Stat.(triangle;congruence*;side*;adjacent angles*)] (* <-lang_en;; *);;
+
+stat_congruence_triangle_side_adjacent_angle => nrel_idtf: [Признак равенства по стороне и двум прилежащим к ней углам] (* <-lang_ru;; *);;
+stat_congruence_triangle_side_adjacent_angle => nrel_idtf: [Sign of equality of triangles. Two angles and included side] (* <-lang_en;; *);;
+
+stat_congruence_triangle_side_adjacent_angle <= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+		[Если сторона и прилежащие к ней углы одного треугольника соответственно равны стороне и прилежащим к ней углам другого треугольника, то такие треугольники равны.] (* <- lang_ru;; *);;
+		*);;
+
+stat_congruence_triangle_side_adjacent_angle <= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: 
+		[Triangles are congruent if any two angles and their included side are equal in both triangles.] (* <- lang_en;; *);;
+		*);;

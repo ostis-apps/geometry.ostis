@@ -1,0 +1,25 @@
+stat_triangle_heigth_internal_angle <- statement;;
+
+stat_triangle_heigth_internal_angle
+-> rrel_key_sc_element:
+	concept_triangle;
+	nrel_height;
+	nrel_be_inscribed;
+	nrel_side_of_polygon;
+	nrel_radius;
+	nrel_internal_angle;;
+
+stat_triangle_heigth_internal_angle
+=> nrel_main_idtf:
+	[Утв.(треугольник;высота*;внутренний угол*)] (* <-lang_ru;; *);;
+
+stat_triangle_heigth_internal_angle
+=> nrel_main_idtf:
+	[Stat.(triangle;height*;internal angle*)] (* <-lang_en;; *);;
+
+stat_triangle_heigth_internal_angle <= nrel_sc_text_translation:
+	...
+	(*
+		-> rrel_example: 
+		[Высоту треугольника h_a можно найти через углы при вершинах или через отношение полудлин сторон к радиусу окружности: h_a=b*sin(gamma)=c*sin(beta)=(b*c)/(2*R), где beta и gamma углы при вершинах B и C, R - радиус описанной окружности.] (* <- lang_ru;; *);;
+	*);;

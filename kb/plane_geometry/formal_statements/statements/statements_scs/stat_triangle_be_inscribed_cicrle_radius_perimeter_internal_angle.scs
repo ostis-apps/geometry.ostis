@@ -1,0 +1,25 @@
+stat_triangle_be_inscribed_cicrle_radius_perimeter_internal_angle <- statement;;
+
+stat_triangle_be_inscribed_cicrle_radius_perimeter_internal_angle
+-> rrel_key_sc_element:
+	concept_triangle;
+	nrel_be_inscribed;
+	concept_circle;
+	nrel_radius;
+	nrel_perimeter;
+	nrel_internal_angle;;
+
+stat_triangle_be_inscribed_cicrle_radius_perimeter_internal_angle
+=> nrel_main_idtf:
+	[Утв.(треугольник;быть вписанным*;окружность;радиус*;периметр*;внутренний угол*)] (* <-lang_ru;; *);;
+
+stat_triangle_be_inscribed_cicrle_radius_perimeter_internal_angle
+=> nrel_main_idtf:
+	[Stat.(triangle;be inscribed*;circle;radius*;perimeter*;internal angle*;)] (* <-lang_en;; *);;
+
+stat_triangle_be_inscribed_cicrle_radius_perimeter_internal_angle <= nrel_sc_text_translation: 
+	...
+	(*
+		-> rrel_example: 
+		[Для треугольника имеет место равенство: p=4RCos(alpha/2)Cos(beta/2)Cos(gama/2), где p - полупериметр треугольника AВС, a, b, c - стороны треугольника АВС, alpha, beta, gama - углы при вершинах треугольника АВС, R - радиус описанной окружности около треугольника АВС.] (* <- lang_ru;; *);;
+	*);;

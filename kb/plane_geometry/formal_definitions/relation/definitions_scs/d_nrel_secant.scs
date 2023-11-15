@@ -1,0 +1,17 @@
+d_nrel_secant
+=> nrel_main_idtf: [Опр.(секущая*)]	(* <- lang_ru;; *);
+=> nrel_main_idtf: [Def.(secant*)] (*<- lang_en;;*);
+<- definition;
+-> rrel_key_sc_element: nrel_secant;
+
+<= nrel_using_constants:
+	{
+		concept_circle
+	};
+
+<= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[Секущая - это теоретико-множественное объединение понятий секущей окружности и секущей прямых.] (* <- lang_ru;; *);;
+	*);;

@@ -1,0 +1,7 @@
+statement <- rrel_key_sc_element: spec_finding_using_statements;;
+
+spec_finding_using_statements -> rrel_key_sc_element: nrel_using_statements;;
+
+general_specification -> spec_finding_using_statements;;
+
+spec_finding_using_statements => nrel_main_idtf: [Обобщённая спецификация для поиска используемых утверждений] (* <- lang_ru;; *);;

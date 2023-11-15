@@ -1,0 +1,20 @@
+d_concept_obtuse_triangle <- definition;;
+
+d_concept_obtuse_triangle => nrel_main_idtf: [Опр.(тупоугольный треугольник)] (* <- lang_ru;; *);;
+
+d_concept_obtuse_triangle -> rrel_key_sc_element: concept_obtuse_triangle;;
+
+d_concept_obtuse_triangle <= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[Тупоугольный треугольник – это треугольник, у которого хотя бы один внутренний угол является тупым углом.]
+		(* <- lang_ru;; *);;
+	*);;
+
+d_concept_obtuse_triangle <= nrel_using_constants:
+	{
+	concept_triangle;
+	nrel_internal_angle;
+	concept_obtuse_angle
+	};;

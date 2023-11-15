@@ -1,0 +1,23 @@
+d_nrel_generatrix_of_conical_surface <- definition;;
+
+d_nrel_generatrix_of_conical_surface => nrel_main_idtf: [Опр.(образующая конической поверхности*)] (*<-lang_ru;;*);;
+d_nrel_generatrix_of_conical_surface => nrel_main_idtf: [Def.(generatrix of conical surface*)] (*<-lang_en;;*);;
+
+d_nrel_generatrix_of_conical_surface -> rrel_key_sc_element: nrel_generatrix_of_conical_surface;;
+
+d_nrel_generatrix_of_conical_surface <= nrel_using_constants:
+	{
+	concept_conical_surface;
+	concept_straight_line;
+	concept_geometric_point;
+	concept_circle;
+	concept_plane;
+	nrel_center_of_circle
+	};;
+
+d_nrel_generatrix_of_conical_surface <= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example:
+	[Образующая канонической поверхности - это прямая, проведенная через каждую точку заданной окружности, лежащей в плоскости, и точку, лежащую на прямой, перпендикулярной данной плоскости и проходящей через центр окружности] (*<-lang_ru;;*);;
+	*);;

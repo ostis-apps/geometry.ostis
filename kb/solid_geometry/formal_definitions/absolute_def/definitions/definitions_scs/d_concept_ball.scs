@@ -1,0 +1,21 @@
+d_concept_ball <- definition;;
+
+d_concept_ball -> rrel_key_sc_element: concept_ball;;
+
+d_concept_ball => nrel_main_idtf: [Опр.(шар)] (*<-lang_ru;;*);;
+d_concept_ball => nrel_main_idtf: [Def.(ball)] (*<-lang_en;;*);;
+
+
+d_concept_ball <= nrel_using_constants:
+	{
+	nrel_radius;
+	concept_sphere;
+	nrel_center
+	};;
+
+d_concept_ball <= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+		[Шар с центром в точке O и радиусом R называется геометрическое тело, ограниченное сферой и содержащее её центр.] (*<-lang_ru;;*);;
+		*);;

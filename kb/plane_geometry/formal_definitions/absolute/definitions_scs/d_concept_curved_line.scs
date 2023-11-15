@@ -1,0 +1,20 @@
+d_concept_curved_line <- definition;;
+
+d_concept_curved_line => nrel_main_idtf: [Опр.(кривая)] (* <- lang_ru;; *);;
+ 
+d_concept_curved_line -> rrel_key_sc_element: concept_curved_line;;
+
+d_concept_curved_line <= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[Кривая - линия, для которой не существует такой прямой, все точки которой совпадали бы со всеми точками кривой.]
+		(* <- lang_ru;; *);;
+	*);;
+
+d_concept_curved_line <= nrel_using_constants:
+	{
+	concept_line; 
+	concept_straight_line; 
+	concept_geometric_point
+	};;

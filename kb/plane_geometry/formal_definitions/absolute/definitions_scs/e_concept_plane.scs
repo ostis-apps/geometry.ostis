@@ -1,0 +1,14 @@
+e_concept_plane <- explanation;;
+
+e_concept_plane => nrel_main_idtf: [Поясн.(плоскость)] (* <- lang_ru;; *);;
+e_concept_plane => nrel_main_idtf: [Expl.(plane)] (* <- lang_en;; *);;
+
+e_concept_plane -> rrel_key_sc_element: concept_plane;;
+
+e_concept_plane <= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[Плоскость - идеально ровная и гладкая безграничная поверхность, бесконечно протяженная во всех направлениях.]
+		(* <- lang_ru;; *);;
+	*);;

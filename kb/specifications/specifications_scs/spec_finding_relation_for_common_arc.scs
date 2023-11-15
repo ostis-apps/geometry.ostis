@@ -1,0 +1,7 @@
+sc_arc_common <- rrel_key_sc_element: spec_finding_relation_for_common_arc;;
+
+spec_finding_relation_for_common_arc -> rrel_key_sc_element: relation;;
+
+necessary_general_specification -> spec_finding_relation_for_common_arc;;
+
+spec_finding_relation_for_common_arc => nrel_main_idtf: [Необходимая обобщенная спецификация для поиска отношения для дуги общего вида] (* <- lang_ru;; *);;

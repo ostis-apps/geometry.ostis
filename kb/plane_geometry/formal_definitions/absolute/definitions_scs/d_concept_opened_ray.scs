@@ -1,0 +1,19 @@
+d_concept_opened_ray <- definition;;
+
+d_concept_opened_ray => nrel_main_idtf: [Опр.(открытый луч)] (* <- lang_ru;; *);;
+
+d_concept_opened_ray -> rrel_key_sc_element: concept_opened_ray;;
+
+d_concept_opened_ray <= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[Открытый луч - луч, из которого исключена начальная точка.]
+		(* <- lang_ru;; *);;
+	*);;
+
+d_concept_opened_ray <= nrel_using_constants:
+	{
+	concept_ray; 
+	nrel_boundary_point
+	};;

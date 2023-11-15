@@ -1,0 +1,46 @@
+section_geometric_figures
+=> nrel_main_idtf:
+	[Раздел. Геометрические фигуры]
+	(* <- lang_ru;; *);
+
+=> nrel_main_idtf: [Section. Geometric figures]
+	(* <- lang_en;; *);
+
+<- non_atomic_section;
+
+<= nrel_section_decomposition:
+	{
+		s_sd_geometric_points
+		(*
+		=> nrel_section_base_order: 
+			s_sd_rectilinear_geometric_figures;;
+		*);
+
+		s_sd_rectilinear_geometric_figures
+		(*
+		=> nrel_section_base_order: 
+			s_planar_figures;;
+		*);
+
+		s_planar_figures
+		(*
+		=> nrel_section_base_order: 
+			s_non_planar_figures;;
+		*);
+		
+		s_non_planar_figures
+		(*
+		=> nrel_section_base_order: 
+			s_sd_congruence_geometric_figures;;
+		*);
+
+		s_sd_congruence_geometric_figures
+		(*
+		=> nrel_section_base_order: 
+			s_sd_geometric_figures;;
+		*);
+
+		s_sd_geometric_figures
+	};;
+
+section_geometric_figures <- ui_start_sc_element;;

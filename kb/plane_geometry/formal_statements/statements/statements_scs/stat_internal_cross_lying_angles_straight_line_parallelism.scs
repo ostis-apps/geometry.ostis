@@ -1,0 +1,29 @@
+statement -> stat_internal_cross_lying_angles_straight_line_parallelism;;
+statement -> stat_converse_internal_cross_lying_angles_straight_line_parallelism;;
+
+stat_internal_cross_lying_angles_straight_line_parallelism -> rrel_key_sc_element: concept_angle; nrel_internal_cross_lying_angles; concept_straight_line; nrel_parallelism;;
+stat_converse_internal_cross_lying_angles_straight_line_parallelism -> rrel_key_sc_element: concept_angle; nrel_internal_cross_lying_angles; concept_straight_line; nrel_parallelism;;
+
+stat_converse_internal_cross_lying_angles_straight_line_parallelism => nrel_main_idtf: [Обр.утв.(угол; внутренний угол*; прямая; параллельность*)] (* <- lang_ru;; *);;
+stat_converse_internal_cross_lying_angles_straight_line_parallelism => nrel_main_idtf: [Conv.stat.(angle; internal angle*; straight line; parallelism*)] (* <- lang_en;; *);;
+
+stat_internal_cross_lying_angles_straight_line_parallelism => nrel_main_idtf: [Утв.(угол; внутренний угол*; прямая; параллельность*)] (* <- lang_ru;; *);;
+stat_converse_internal_cross_lying_angles_straight_line_parallelism => nrel_main_idtf: [Stat.(angle; internal angle*; straight line; parallelism*)] (* <- lang_en;; *);;
+
+stat_internal_cross_lying_angles_straight_line_parallelism <= nrel_sc_text_translation: ...
+	(*
+	-> rrel_example:
+		[Если внутренние накрест лежащие углы равны или сумма внутренних односторонних углов равна 180°, то прямые параллельны.] 
+		(* <- lang_ru;; *);;
+	*);;
+
+stat_converse_internal_cross_lying_angles_straight_line_parallelism <= nrel_sc_text_translation: ...
+	(*
+	-> rrel_example:
+		[Если две параллельные прямые пересечены третьей прямой, то внутренние накрест лежащие углы равны, а сумма внутренних односторонних углов равна 180°.] 
+		(* <- lang_ru;; *);;
+	*);;
+
+stat_internal_cross_lying_angles_straight_line_parallelism =>nrel_converse_theorem: stat_converse_internal_cross_lying_angles_straight_line_parallelism;;
+
+stat_converse_internal_cross_lying_angles_straight_line_parallelism => nrel_consequent: stat_straight_line_perpendicularity_parallelism;;

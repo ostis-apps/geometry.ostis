@@ -1,0 +1,42 @@
+sc_node_not_relation -> concept_line;;
+
+concept_line => nrel_main_idtf:
+	[линия](* <- lang_ru;; *);
+	[line](* <- lang_en;; *);;
+
+concept_line => nrel_idtf: [множество линий] (* <- lang_ru;; *);;
+concept_line => nrel_idtf: [Множество всевозможных линий] (* <- lang_ru;; *);;
+concept_line => nrel_idtf: [Множество знаков всевозможных линий] (* <- lang_ru;; *);;
+concept_line => nrel_idtf: [линейная фигура] (* <- lang_ru;; *);;
+
+
+concept_line <= nrel_strict_inclusion: concept_uninterrupted_geometric_figure;;
+concept_line <= nrel_strict_inclusion: concept_geometric_figure_without_boundary_points;;
+
+concept_line <= nrel_subdividing:
+	...
+	(*
+	=> nrel_main_idtf: [Разбиение по признаку взаимного расположения по отношению к плоскости] (* <- lang_ru;; *);;
+	-> concept_planar_line;
+	concept_non_planar_line;;
+	*);;
+
+concept_line <= nrel_subdividing:
+	...
+	(*  
+         => nrel_main_idtf: [Разбиение по признаку прямолинейности] (* <- lang_ru;; *);;
+	-> concept_straight_line;
+	concept_curved_line;;
+	*);;
+
+concept_line <- rrel_key_sc_element: 
+	...
+	(*
+	<- illustration;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			"file://images/concept_curved_line.png";;
+		*);; 
+	*);;

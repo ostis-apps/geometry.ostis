@@ -1,0 +1,21 @@
+sc_node_not_relation -> concept_truncated_cone;;
+
+concept_truncated_cone => nrel_main_idtf: [усеченный конус] (*<-lang_ru;;*);;
+concept_truncated_cone => nrel_main_idtf: [truncated cone] (*<-lang_en;;*);;
+
+concept_truncated_cone => nrel_idtf: [Класс усеченных конусов] (*<-lang_ru;;*);;
+concept_truncated_cone => nrel_idtf: [Множество всевозможных усеченных конусов] (* <- lang_ru;; *);;
+
+concept_truncated_cone <= nrel_strict_inclusion: concept_cone;;
+
+concept_truncated_cone <- rrel_key_sc_element: 
+	...
+	(*
+	<- illustration;; 
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: 
+		"file://images/concept_truncated_cone.png";;
+		*);;
+	*);;

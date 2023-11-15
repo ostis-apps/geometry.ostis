@@ -1,0 +1,13 @@
+sc_node_not_relation -> concept_opened_ray;;
+
+concept_opened_ray => nrel_main_idtf:
+	[открытый луч](* <- lang_ru;; *);
+	[opened ray](* <- lang_en;; *);;
+
+concept_opened_ray => nrel_idtf: [открытая полупрямая] (* <- lang_ru;; *);;
+concept_opened_ray => nrel_idtf: [Класс открытых лучей] (* <- lang_ru;; *);;
+concept_opened_ray => nrel_idtf: [Понятие открытого луча] (* <- lang_ru;; *);;
+concept_opened_ray => nrel_idtf: [Множество всевозможных открытых лучей] (* <- lang_ru;; *);;
+concept_opened_ray => nrel_idtf: [Множество всевозможных знаков открытых лучей] (* <- lang_ru;; *);;
+
+concept_opened_ray -> rrel_example: struct_Opened_ray_k;;

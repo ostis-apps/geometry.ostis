@@ -1,0 +1,15 @@
+stat_rhomb_height_congruence <- statement;;
+
+//stat_rhomb_height_congruence <- statement_for_solver;;
+
+stat_rhomb_height_congruence -> rrel_key_sc_element: concept_rhomb; nrel_height; nrel_congruence;;
+
+stat_rhomb_height_congruence => nrel_main_idtf: [Утв.(ромб; высота*; конгруэнтность*)] (* <-lang_ru;; *);;
+stat_rhomb_height_congruence => nrel_main_idtf: [Stat.(rhomb; height*; congruence*)] (* <-lang_en;; *);;
+
+stat_rhomb_height_congruence <= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+		[Высоты ромба равны.] (* <- lang_ru;; *);;
+		*);;

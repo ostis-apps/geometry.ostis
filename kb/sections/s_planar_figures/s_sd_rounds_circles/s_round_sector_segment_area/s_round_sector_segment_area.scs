@@ -1,0 +1,29 @@
+s_round_sector_segment_area
+=> nrel_main_idtf:
+	[Раздел. Площади круга, сектора и сегмента]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Section. Round's, sector's, segment's area]
+	(* <- lang_en;; *);
+
+<= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+		"file://html/s_round_sector_segment_area_ru.html"
+		(* <- lang_ru;; *);;
+	*);
+
+<- atomic_section;
+
+=> nrel_summary:
+	...
+	(*
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[В данном разделе рассматривается нахождение площади круга, сектора, сегмента.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;

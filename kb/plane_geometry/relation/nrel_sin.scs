@@ -1,0 +1,29 @@
+sc_node_norole_relation -> nrel_sin;;
+
+nrel_sin => nrel_main_idtf:
+	[синус*] 
+	(* <- lang_ru;; *);
+	[sinus*] 
+	(* <- lang_en;; *);;
+
+nrel_sin => nrel_definitional_domain: 
+...
+(*
+	=> nrel_combination:
+	{
+		value;
+		number
+	};;
+*);;
+
+
+nrel_sin => nrel_first_domain: value;;
+
+nrel_sin => nrel_second_domain: number;;
+
+nrel_sin <- relation;;
+nrel_sin <- binary_relation;;
+nrel_sin <- oriented_relation;;
+nrel_sin <- antireflexive_relation;;
+nrel_sin <- antisymmetric_relation;;
+nrel_sin <- antitransitive_relation;;

@@ -1,0 +1,20 @@
+d_concept_pentagon <- definition;;
+
+d_concept_pentagon => nrel_main_idtf: [Опр.(пятиугольник)] (* <- lang_ru;; *);;
+d_concept_pentagon => nrel_main_idtf: [Def.(pentagon)] (* <- lang_en;; *);;
+
+d_concept_pentagon -> rrel_key_sc_element: concept_pentagon;;
+
+d_concept_pentagon <= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[Пятиугольник - это многоугольник с пятью углами.]
+		(* <- lang_ru;; *);;
+	*);;
+
+d_concept_pentagon <= nrel_using_constants:
+	{
+	concept_polygon; 
+	concept_angle	
+	};;

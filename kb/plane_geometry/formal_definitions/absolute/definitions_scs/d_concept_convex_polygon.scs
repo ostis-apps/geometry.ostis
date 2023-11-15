@@ -1,0 +1,22 @@
+d_concept_convex_polygon <- definition;;
+
+d_concept_convex_polygon => nrel_main_idtf: [Опр.(выпуклый многоугольник)] (* <- lang_ru;; *);;
+
+d_concept_convex_polygon -> rrel_key_sc_element: concept_convex_polygon;;
+
+d_concept_convex_polygon <= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+		[Выпуклый многоугольник - многоугольник, для каждой стороны которого он расположен по одну сторону от прямой, проведённой через эту сторону.]
+		(* <- lang_ru;; *);;
+	*);;
+
+d_concept_convex_polygon <= nrel_using_constants:
+	{
+	concept_polygon; 
+	concept_half_plane; 
+	concept_straight_line;
+	nrel_side_of_polygon; 
+	nrel_adjacent_angles
+	};;

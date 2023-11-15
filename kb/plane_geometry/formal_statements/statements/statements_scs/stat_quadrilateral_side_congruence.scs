@@ -1,0 +1,19 @@
+statement -> stat_quadrilateral_side_congruence;;
+statement -> stat_reverse_converse_quadrilateral_side_congruence;;
+
+stat_quadrilateral_side_congruence => nrel_main_idtf: [Утв.(четырёхугольник; сторона*; конгруэнтность*; перпендикулярность*)] (* <- lang_ru;; *);;
+stat_reverse_converse_quadrilateral_side_congruence => nrel_main_idtf: [Прот.обр.утв.(четырёхугольник; сторона*; конгруэнтность*; перпендикулярность*)] (* <- lang_ru;; *);;
+
+stat_quadrilateral_side_congruence <= nrel_sc_text_translation: ...
+	(*
+	-> rrel_example:
+		[Если в четырёхугольнике все стороны равны, то его диагонали взаимно перпендикулярны.] (* <- lang_ru;; *);;
+	*);;
+
+stat_reverse_converse_quadrilateral_side_congruence <= nrel_sc_text_translation: ...
+	(*
+	-> rrel_example:
+		[Если в четырёхугольнике диагонали не взаимно перпендикулярны, то в нем все стороны различной длины.] (* <- lang_ru;; *);;
+	*);;
+
+stat_quadrilateral_side_congruence <=> nrel_reverse_converse_theorem: stat_reverse_converse_quadrilateral_side_congruence;;

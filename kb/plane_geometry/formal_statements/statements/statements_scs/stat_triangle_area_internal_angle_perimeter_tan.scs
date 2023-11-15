@@ -1,0 +1,25 @@
+stat_triangle_area_internal_angle_perimeter_tan <- statement;;
+
+stat_triangle_area_internal_angle_perimeter_tan
+-> rrel_key_sc_element:
+	concept_triangle;
+	nrel_area;
+	nrel_internal_angle;
+	nrel_perimeter;
+	nrel_tan;;
+
+stat_triangle_area_internal_angle_perimeter_tan
+=> nrel_main_idtf:
+	[Утв.(треугольник;площадь*;внутренний угол*;периметр*;тангенс*)] (*<- lang_ru;;*);;
+
+stat_triangle_area_internal_angle_perimeter_tan
+=> nrel_main_idtf:
+	[Stat.(triangle;area*;internal angle*;perimeter*;tan*)] (*<- lang_en;;*);;
+
+stat_triangle_area_internal_angle_perimeter_tan <= nrel_sc_text_translation: 
+	... 
+	(* 
+	-> rrel_example: 
+		[Площадь треугольника находится по формуле S=p^2*tg(alpha/2)*tg(beta/2)*tg(gamma/2), где p - полупериметр треугольника, alpha, beta, gamma - углы треугольника.] 
+		(* <- lang_ru;; *);; 
+	*);;

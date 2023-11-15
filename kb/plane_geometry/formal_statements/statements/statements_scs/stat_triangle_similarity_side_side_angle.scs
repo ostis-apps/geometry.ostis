@@ -1,0 +1,25 @@
+stat_triangle_similarity_side_side_angle <- statement;;
+
+//stat_triangle_similarity_side_side_angle <- sc_statement_for_solver;;
+
+stat_triangle_similarity_side_side_angle -> rrel_key_sc_element: concept_triangle; nrel_similarity; nrel_internal_angle; nrel_side;;
+
+stat_triangle_similarity_side_side_angle => nrel_main_idtf: [Утв.(треугольник;подобие*;внутренний угол*;сторона*)] (* <-lang_ru;; *);;
+stat_triangle_similarity_side_side_angle => nrel_main_idtf: [Stat.(triangle;similarity*;internal angle*;side*)] (* <-lang_en;; *);;
+
+stat_triangle_similarity_side_side_angle => nrel_idtf: [Признак подобия треугольников по двум сторонам и углу между ними] (* <-lang_ru;; *);;
+stat_triangle_similarity_side_side_angle => nrel_idtf: [Sing of similarity of triangles.Two sides and included angle] (* <-lang_en;; *);;
+
+stat_triangle_similarity_side_side_angle <= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+		[Если две стороны одного треугольника пропорциональны двум сторонам другого треугольника и углы, образованные этими сторонами равны, то такие треугольники подобны.] (* <- lang_ru;; *);;
+		*);;
+
+stat_triangle_similarity_side_side_angle <= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+		[Triangles are similar if two sides in one triangle are in the same proportion to the corresponding sides in the other, and the included angle are equal.] (* <- lang_en;; *);;
+		*);;

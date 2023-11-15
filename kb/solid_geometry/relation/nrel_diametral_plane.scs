@@ -1,0 +1,44 @@
+sc_node_norole_relation -> nrel_diametral_plane;;
+
+nrel_diametral_plane => nrel_main_idtf: [диаметральная плоскость*] (*<-lang_ru;;*);;
+nrel_diametral_plane => nrel_main_idtf: [diametral plane*] (*<-lang_en;;*);;
+
+nrel_diametral_plane => nrel_first_domain:
+	...
+	(*
+	<= nrel_combination: 
+		{
+			concept_sphere;
+			concept_ball
+		};;
+	*);;
+nrel_diametral_plane => nrel_second_domain: concept_plane;;
+nrel_diametral_plane => nrel_definitional_domain:
+	...
+	(*
+	<= nrel_combination: 
+		{
+			concept_sphere;
+			concept_ball;
+			concept_plane
+		};;
+	*);;
+	
+nrel_diametral_plane <- relation;;	
+nrel_diametral_plane <- binary_relation;;
+nrel_diametral_plane <- oriented_relation;;
+nrel_diametral_plane <- antireflexive_relation; antisymmetric_relation; antitransitive_relation;;
+
+nrel_diametral_plane <- rrel_key_sc_element: 
+	...
+	(*
+	<- illustration;; 
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: 
+		"file://images/nrel_diametral_plane.jpg";;
+		*);;
+	*);;
+
+

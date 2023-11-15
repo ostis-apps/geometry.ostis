@@ -1,0 +1,17 @@
+sc_node_not_relation -> concept_equilateral_cylinder;;
+
+concept_equilateral_cylinder => nrel_main_idtf: [равносторонний циллиндр] (*<-lang_ru;;*);;
+concept_equilateral_cylinder => nrel_main_idtf: [equilateral cylinder] (*<-lang_en;;*);;
+
+concept_equilateral_cylinder <= nrel_strict_inclusion: concept_cylinder;;
+
+concept_equilateral_cylinder <- rrel_key_sc_element: 
+	...
+	(*
+	<- illustration;; 
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: 
+		"file://images/concept_equilateral_cylinder.png";;
+		*);;
+	*);;

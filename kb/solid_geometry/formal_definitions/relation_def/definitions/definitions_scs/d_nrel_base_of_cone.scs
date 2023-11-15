@@ -1,0 +1,21 @@
+d_nrel_base_of_cone <- definition;;
+
+d_nrel_base_of_cone => nrel_main_idtf: [Опр.(основание конуса*)] (*<-lang_ru;;*);;
+d_nrel_base_of_cone => nrel_main_idtf: [Def.(base of cone*)] (*<-lang_en;;*);;
+
+d_nrel_base_of_cone -> rrel_key_sc_element: nrel_base_of_cone;;
+
+d_nrel_base_of_cone <= nrel_using_constants:
+	{
+		concept_cone;
+		concept_round;
+		concept_conical_surface;
+		concept_plane		
+	};;
+
+d_nrel_base_of_cone <= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+	[Основание конуса – круг, который высекает каноническая поверхность в плоскости.] (*<-lang_ru;;*);;
+	*);;

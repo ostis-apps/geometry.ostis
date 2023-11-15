@@ -1,0 +1,13 @@
+stat_center_of_gravity_of_the_cone <- statement;;
+	
+stat_center_of_gravity_of_the_cone -> rrel_key_sc_element: nrel_center_of_gravity; nrel_volume; concept_cone;;
+
+stat_center_of_gravity_of_the_cone => nrel_main_idtf: [Утв.(центр тяжести*; объём*; конус)] (* <-lang_ru;; *);;
+stat_center_of_gravity_of_the_cone => nrel_main_idtf: [Stat.(center of gravity*; volume*; cone)] (* <-lang_en;; *);;
+
+stat_center_of_gravity_of_the_cone <= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+		[Центр тяжести любого конуса с конечным объёмом лежит на четверти высоты от основания.] (* <- lang_ru;; *);;
+		*);;

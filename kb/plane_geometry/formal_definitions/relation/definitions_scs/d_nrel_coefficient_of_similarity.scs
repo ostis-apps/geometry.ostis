@@ -1,0 +1,21 @@
+d_nrel_coefficient_of_similarity
+=> nrel_main_idtf: [Опр.(коэффициент подобия*)] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Def.(coefficient of similarity*)] (*<-lang_en;;*);
+<- definition; 
+-> rrel_key_sc_element: nrel_coefficient_of_similarity;
+
+<= nrel_using_constants:
+	{
+	concept_geometric_point;
+	nrel_distance;
+	nrel_similarity
+	};
+
+<= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[Коэффициент подобия (k) - величина, характеризующая преобразование подобия, при котором преобразование расстояния между точками изменяется в одно и то же число раз: если A->A' и B->B', то A'B'= k*AB (k>0).]
+		(* <- lang_ru;; *);;
+	*);;
+

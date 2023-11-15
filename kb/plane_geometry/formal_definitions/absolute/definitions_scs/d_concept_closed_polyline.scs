@@ -1,0 +1,19 @@
+d_concept_closed_polyline <- definition;;
+
+d_concept_closed_polyline => nrel_main_idtf: [Опр.(замкнутая ломаная)] (* <- lang_ru;; *);;
+
+d_concept_closed_polyline -> rrel_key_sc_element: concept_closed_polyline;;
+
+d_concept_closed_polyline <= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[Замкнутая ломаная - ломаная, у которой совпадают концы.]
+		(* <- lang_ru;; *);;
+	*);;
+
+d_concept_closed_polyline <= nrel_using_constants:
+	{
+	concept_polyline; 
+	nrel_boundary_point
+	};;

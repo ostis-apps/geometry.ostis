@@ -1,0 +1,21 @@
+d_par_angle_measure <- definition;;
+
+d_par_angle_measure => nrel_main_idtf: [Опр.(мера угла)] (* <- lang_ru;; *);;
+d_par_angle_measure => nrel_main_idtf: [Def.(angle measure)] (* <- lang_en;; *);;
+
+d_par_angle_measure -> rrel_key_sc_element: par_angle_measure;;
+
+d_par_angle_measure <= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[Мера угла - количественный параметр, характеризующий измерения угла.]
+		(* <- lang_ru;; *);;
+	*);;
+
+d_par_angle_measure <= nrel_using_constants:
+	{
+	concept_angle
+	};;
+
+

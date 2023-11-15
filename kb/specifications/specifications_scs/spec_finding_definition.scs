@@ -1,0 +1,7 @@
+concept <- rrel_key_sc_element: spec_finding_definition;;
+
+spec_finding_definition -> rrel_key_sc_element: definition;;
+
+general_specification -> spec_finding_definition;;
+
+spec_finding_definition => nrel_main_idtf: [Обобщённая спецификация для поиска определения] (* <- lang_ru;; *);;

@@ -1,0 +1,26 @@
+stat_quadrilateral_side_area_internal_angle <- statement;;
+
+stat_quadrilateral_side_area_internal_angle
+-> rrel_key_sc_element:
+	concept_quadrilateral;
+	nrel_side;
+	nrel_area;
+	nrel_internal_angle;
+	nrel_opposite;
+	nrel_be_inscribed;;
+
+stat_quadrilateral_side_area_internal_angle
+=> nrel_main_idtf:
+	[Утв.(четырехугольник;сторона*;площадь*;внутренний угол*;противолежащий*;вписанность*)] (*<- lang_ru;;*);;
+
+stat_quadrilateral_side_area_internal_angle
+=> nrel_main_idtf:
+	[Stat.(quadrilateral;side*;area*;internal angle*;opposite*;be inscribed*)] (*<- lang_en;;*);;
+
+stat_quadrilateral_side_area_internal_angle <= nrel_sc_text_translation: 
+	... 
+	(* 
+	-> rrel_example: 
+		[Площадь четырёхугольника S выражается через стороны a, b, c, d и сумму двух противолежащих углов alpha, gamma описанного четырёхугольника: S=sqrt(a*b*c*d)*Sin((alpha+gamma)/2).] 
+		(* <- lang_ru;; *);; 
+	*);;

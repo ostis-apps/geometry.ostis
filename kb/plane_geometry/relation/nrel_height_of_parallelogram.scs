@@ -1,0 +1,43 @@
+sc_node_norole_relation -> nrel_height_of_parallelogram;;
+
+nrel_height_of_parallelogram => nrel_main_idtf:
+	[высота параллелограмма*]
+	(* <- lang_ru;; *);;
+nrel_height_of_parallelogram => nrel_main_idtf: [height of the parallelogram*]
+	(* <- lang_en;; *);;
+
+nrel_height_of_parallelogram => nrel_idtf: [быть высотой параллелограмма*] (* <- lang_ru;; *);;
+
+nrel_height_of_parallelogram => nrel_definitional_domain:
+	...
+	(*
+	<= nrel_combination: 
+		{
+		concept_parallelogram; 
+		concept_segment
+		};;
+	*);;
+
+nrel_height_of_parallelogram => nrel_first_domain:
+	concept_parallelogram;;	
+
+nrel_height_of_parallelogram => nrel_second_domain: 
+	concept_segment;;
+
+nrel_height_of_parallelogram <= nrel_using_constants:
+	{
+	concept_parallelogram; 
+	concept_segment; 
+	nrel_perpendicular; 
+	nrel_opposite; 
+	nrel_side; 
+	concept_straight_line;
+	concept_geometric_point
+	};;
+
+nrel_height_of_parallelogram <- relation;;
+nrel_height_of_parallelogram <- binary_relation;;
+nrel_height_of_parallelogram <- antireflexive_relation;;
+nrel_height_of_parallelogram <- antisymmetric_relation;;
+nrel_height_of_parallelogram <- oriented_relation;;
+nrel_height_of_parallelogram <- antitransitive_relation;;

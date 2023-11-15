@@ -1,0 +1,21 @@
+d_nrel_diametral_plane <- definition;;
+
+d_nrel_diametral_plane => nrel_main_idtf: [Опр.(диаметральная плоскость*)] (*<-lang_ru;;*);;
+d_nrel_diametral_plane => nrel_main_idtf: [Def.(diametral plane*)] (*<-lang_en;;*);;
+
+d_nrel_diametral_plane -> rrel_key_sc_element: nrel_diametral_plane;;
+
+d_nrel_diametral_plane <= nrel_using_constants:
+	{
+		concept_plane;
+		nrel_center;
+		concept_sphere;
+		concept_ball
+	};;
+
+d_nrel_diametral_plane <= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+	[Диаметральная плоскость – плоскость, проходящая через центр сферы (шара).] (*<-lang_ru;;*);;
+	*);;

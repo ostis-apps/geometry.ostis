@@ -1,0 +1,20 @@
+d_concept_rectilinear_figure <- definition;;
+
+d_concept_rectilinear_figure => nrel_main_idtf: [Опр.(прямолинейная фигура)] (* <- lang_ru;; *);;
+
+d_concept_rectilinear_figure -> rrel_key_sc_element: concept_rectilinear_figure;;
+
+d_concept_rectilinear_figure <= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[Прямолинейная фигура - это геометрическая фигура, все точки которой лежат на одной прямой.]
+		(* <- lang_ru;; *);;
+	*);;
+
+d_concept_rectilinear_figure <= nrel_using_constants:
+	{
+	concept_geometric_figure; 
+	concept_geometric_point; 
+	concept_straight_line
+	};;

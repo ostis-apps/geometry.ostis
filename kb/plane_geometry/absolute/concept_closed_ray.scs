@@ -1,0 +1,15 @@
+sc_node_not_relation -> concept_closed_ray;;
+
+concept_closed_ray => nrel_main_idtf:
+	[закрытый луч](* <- lang_ru;; *);
+	[closed ray](* <- lang_en;; *);;
+
+concept_closed_ray => nrel_idtf: [Класс закрытых лучей] (* <- lang_ru;; *);;
+concept_closed_ray => nrel_idtf: [Понятие закрытого луча] (* <- lang_ru;; *);;
+concept_closed_ray => nrel_idtf: [Множество всевозможных закрытых лучей] (* <- lang_ru;; *);;
+concept_closed_ray => nrel_idtf: [Множество всевозможных знаков закрытых лучей] (* <- lang_ru;; *);;
+
+concept_closed_ray <= nrel_strict_inclusion: concept_geometric_figure_with_all_boundary_points;;
+	
+concept_closed_ray <=> nrel_antipode: concept_opened_ray;;
+

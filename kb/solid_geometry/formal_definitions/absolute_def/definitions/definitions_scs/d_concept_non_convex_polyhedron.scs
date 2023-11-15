@@ -1,0 +1,19 @@
+d_concept_non_convex_polyhedron <- definition;;
+
+d_concept_non_convex_polyhedron -> rrel_key_sc_element: concept_non_convex_polyhedron;;
+
+d_concept_non_convex_polyhedron <= nrel_using_constants:
+	{
+	concept_convex_polyhedron;
+	concept_polyhedron
+	};;
+
+d_concept_non_convex_polyhedron => nrel_main_idtf: [Опр.(невыпуклый многогранник)] (*<-lang_ru;;*);;
+d_concept_non_convex_polyhedron => nrel_main_idtf: [Def.(non convex polyhedron)] (*<-lang_en;;*);;
+
+d_concept_non_convex_polyhedron <= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+		[Невыпуклый многогранник - это многогранник, который не является выпуклым.] (*<-lang_ru;;*);;
+		*);;

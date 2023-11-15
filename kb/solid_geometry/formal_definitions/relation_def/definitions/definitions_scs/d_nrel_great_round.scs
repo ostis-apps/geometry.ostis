@@ -1,0 +1,20 @@
+d_nrel_great_round <- definition;;
+
+d_nrel_great_round => nrel_main_idtf: [Опр.(большой круг*)] (*<-lang_ru;;*);;
+d_nrel_great_round => nrel_main_idtf: [Def.(great round*)] (*<-lang_en;;*);;
+
+d_nrel_great_round -> rrel_key_sc_element: nrel_great_round;;
+
+d_nrel_great_round <= nrel_using_constants:
+	{
+		concept_ball;
+		nrel_diametral_plane;
+		nrel_cross_section		
+	};;
+
+d_nrel_great_round <= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+	[Большой круг - сечение шара диаметральной плоскостью.] (*<-lang_ru;;*);;
+	*);;

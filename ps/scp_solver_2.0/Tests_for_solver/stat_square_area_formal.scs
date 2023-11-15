@@ -1,0 +1,15 @@
+stat_square_area_formal <- statement;;
+
+//stat_square_area_formal <- sc_statement_for_solver;;
+
+stat_square_area_formal -> rrel_key_sc_element: concept_square; nrel_side; nrel_area;;
+
+stat_square_area_formal => nrel_main_idtf: [Утв.(квадрат; сторона*; площадь*)] (* <-lang_ru;; *);;
+stat_square_area_formal => nrel_main_idtf: [Stat.(square; side*; area*)] (* <-lang_en;; *);;
+
+stat_square_area_formal <= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+		[Площадь квадрата равна квадрату её стороны.] (* <- lang_ru;; *);;
+		*);;

@@ -1,0 +1,20 @@
+d_nrel_axis_of_truncated_cone <- definition;;
+
+d_nrel_axis_of_truncated_cone => nrel_main_idtf: [Опр.(ось усеченного конуса*)] (*<-lang_ru;;*);;
+d_nrel_axis_of_truncated_cone => nrel_main_idtf: [Def.(axis of truncated cone*)] (*<-lang_en;;*);;
+
+d_nrel_axis_of_truncated_cone -> rrel_key_sc_element: nrel_axis_of_truncated_cone;;
+
+d_nrel_axis_of_truncated_cone <= nrel_using_constants:
+	{
+		concept_truncated_cone;
+		concept_straight_line;
+		nrel_center
+	};;
+
+d_nrel_axis_of_truncated_cone <= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+	[Ось усеченного конуса - это прямая, проходящая через центры оснований усеченного конуса.] (*<-lang_ru;;*);;
+	*);;

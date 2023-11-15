@@ -1,0 +1,14 @@
+e_nrel_area
+=> nrel_main_idtf: [Поясн.(площадь*)] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Expl.(area*)] (*<- lang_en;;*);
+<- explanation;
+-> rrel_key_sc_element: nrel_area;
+
+<= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[Площадь - числовая характеристика, приписываемая конечной плоскости, ограниченной данным многоугольником.]
+		(* <- lang_ru;; *);;
+	*);;
+

@@ -1,0 +1,23 @@
+d_concept_conical_surface <- definition;;
+
+d_concept_conical_surface => nrel_main_idtf: [Опр.(коническая поверхность)] (*<-lang_ru;;*);;
+d_concept_conical_surface => nrel_main_idtf: [Def.(conical surface)] (*<-lang_en;;*);;
+
+d_concept_conical_surface -> rrel_key_sc_element: concept_conical_surface;;
+
+d_concept_conical_surface <= nrel_using_constants:
+	{
+		concept_straight_line;
+		concept_geometric_point;
+		concept_circle;
+		concept_plane;
+		nrel_perpendicularity;
+		nrel_center
+	};;
+
+d_concept_conical_surface <= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+		[Коническая поверхность – совокупность всех прямых, проведенных через каждую точку заданной окружности, лежащей в плоскости, и точку, лежащую на прямой, перпендикулярной данной плоскости и проходящей через центр окружности.] (*<-lang_ru;;*);;
+		*);;

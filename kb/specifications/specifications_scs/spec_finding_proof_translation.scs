@@ -1,0 +1,7 @@
+statement <- rrel_key_sc_element: spec_finding_proof_translation;;
+
+spec_finding_proof_translation -> rrel_key_sc_element: nrel_main_proof_action;;
+
+general_specification -> spec_finding_proof_translation;;
+
+spec_finding_proof_translation => nrel_main_idtf: [Обобщённая спецификация для поиска текста доказательства на внешнем языке] (* <- lang_ru;; *);;

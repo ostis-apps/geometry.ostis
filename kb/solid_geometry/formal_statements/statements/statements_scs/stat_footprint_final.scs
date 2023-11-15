@@ -1,0 +1,13 @@
+stat_footprint_final <- statement;;
+	
+stat_footprint_final -> rrel_key_sc_element: nrel_area; nrel_base; nrel_volume; nrel_height; concept_cone;;
+
+stat_footprint_final => nrel_main_idtf: [Утв.(площадь*; основание*; объём*; высота*; конус)] (* <-lang_ru;; *);;
+stat_footprint_final => nrel_main_idtf: [Stat.(area*; base*; volume*; height*; cone)] (* <-lang_en;; *);;
+
+stat_footprint_final <= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+		[Если площадь основания конечна, то объём конуса также конечен и равен трети произведения высоты на площадь основания.] (* <- lang_ru;; *);;
+		*);;

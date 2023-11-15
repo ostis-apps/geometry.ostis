@@ -1,0 +1,21 @@
+sc_node_norole_relation -> nrel_lateral_face_of_truncated_pyramid;;
+
+nrel_lateral_face_of_truncated_pyramid => nrel_main_idtf: [боковая грань усеченной пирамиды*] (*<-lang_ru;;*);;
+nrel_lateral_face_of_truncated_pyramid => nrel_main_idtf: [lateral face of truncated pyramid*] (*<-lang_en;;*);;
+
+nrel_lateral_face_of_truncated_pyramid => nrel_first_domain: concept_truncated_pyramid;;
+nrel_lateral_face_of_truncated_pyramid => nrel_second_domain: concept_quadrilateral;;
+nrel_lateral_face_of_truncated_pyramid => nrel_definitional_domain:
+	...
+	(*
+	<= nrel_combination: 
+		{
+			concept_truncated_pyramid;
+			concept_quadrilateral
+		};;
+	*);;
+	
+nrel_lateral_face_of_truncated_pyramid <- relation;;	
+nrel_lateral_face_of_truncated_pyramid <- binary_relation;;
+nrel_lateral_face_of_truncated_pyramid <- oriented_relation;;
+nrel_lateral_face_of_truncated_pyramid <- antireflexive_relation; antisymmetric_relation; antitransitive_relation;;

@@ -1,0 +1,77 @@
+sc_node_struct -> struct_Isosceles_trapezoid_K_L_M_N;;
+
+struct_Isosceles_trapezoid_K_L_M_N => nrel_main_idtf:
+	[Равнобедренная трапеция KLMN]
+	(*<- lang_ru;;*);
+	[Isosceles trapezoid KLMN]
+	(*<- lang_en;;*);;
+
+struct_Isosceles_trapezoid_K_L_M_N => nrel_idtf: [Трап-я (K; L; M; N)] (* <- lang_ru;; *);;
+
+struct_Isosceles_trapezoid_K_L_M_N => nrel_idtf: [Равнобедренная трапеция (K; L; M; N)] (* <- lang_ru;; *);;
+
+struct_Isosceles_trapezoid_K_L_M_N => nrel_idtf: [Равнобедренная трапеция, вершинами которой являются Точка K, Точка L, Точка M, Точка N] (* <- lang_ru;; *);;
+
+struct_Isosceles_trapezoid_K_L_M_N  => nrel_vertex: struct_Geometric_point_K;;
+
+struct_Isosceles_trapezoid_K_L_M_N  => nrel_vertex: struct_Geometric_point_L;;
+
+struct_Isosceles_trapezoid_K_L_M_N  => nrel_vertex: struct_Geometric_point_M;;
+
+struct_Isosceles_trapezoid_K_L_M_N  => nrel_vertex: struct_Geometric_point_N;;
+
+struct_Isosceles_trapezoid_K_L_M_N  => nrel_lateral_side: struct_Segment_K_L;;
+
+struct_Isosceles_trapezoid_K_L_M_N  => nrel_lateral_side: struct_Segment_M_N;;
+
+struct_Isosceles_trapezoid_K_L_M_N  => nrel_base: struct_Segment_K_N;;
+
+struct_Isosceles_trapezoid_K_L_M_N  => nrel_base: struct_Segment_L_M;;
+
+struct_Segment_K_L => nrel_boundary_point: struct_Geometric_point_K;;
+
+struct_Segment_K_N => nrel_boundary_point: struct_Geometric_point_K;;
+
+struct_Segment_K_L => nrel_boundary_point: struct_Geometric_point_L;;
+
+struct_Segment_L_M => nrel_boundary_point: struct_Geometric_point_L;;
+
+struct_Segment_L_M => nrel_boundary_point: struct_Geometric_point_M;;
+
+struct_Segment_M_N => nrel_boundary_point: struct_Geometric_point_M;;
+
+struct_Segment_M_N => nrel_boundary_point: struct_Geometric_point_N;;
+
+struct_Segment_K_N => nrel_boundary_point: struct_Geometric_point_N;;
+
+nrel_congruence -> ... (* -> struct_Segment_M_N; struct_Segment_K_L;; *);;
+
+struct_Isosceles_trapezoid_K_L_M_N <- rrel_key_sc_element: 
+	...
+		(*
+		<- illustration;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+			-> rrel_example:
+				"file://images/TrapeciyaKLMN.png";;
+		*);;
+	*);;
+
+struct_Isosceles_trapezoid_K_L_M_N  <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Факт. утв.(Равнобедренная трапеция KLMN)] (* <- lang_ru;; *);;
+	<- statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[KLMN - равнобедренная трапеция.
+			Геометрические точки K, L, M и N являются вершинами Трапеции KLMN. Отрезки l, n являются боковыми сторонами,а отрезки k, m являются основаниями Трапеции KLMN. Точка K является граничной точкой отрезков l, k. Точка L является граничной точкой отрезков l, m. Точка M является граничной точкой отрезков m, n. Точка N является граничной точкой отрезков n, k. Боковые стороны l, n равны.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+
+

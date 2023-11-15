@@ -1,0 +1,20 @@
+d_concept_irregular_polygon <- definition;;
+
+d_concept_irregular_polygon => nrel_main_idtf: [Опр.(неправильный многоугольник)] (* <- lang_ru;; *);;
+ 
+d_concept_irregular_polygon -> rrel_key_sc_element: concept_irregular_polygon;;
+
+d_concept_irregular_polygon <= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[Неправильный многоугольник - выпуклый многоугольник, у которого стороны не равны между собой.]
+		(* <- lang_ru;; *);;
+	*);;
+
+d_concept_irregular_polygon <= nrel_using_constants:
+	{
+	concept_convex_polygon;
+	nrel_congruence;
+	nrel_side
+	};;

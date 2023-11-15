@@ -1,0 +1,76 @@
+sc_node_struct -> struct_Rectangular_triangle_D_F_G;;
+
+struct_Rectangular_triangle_D_F_G => nrel_main_idtf:
+	[Прямоугольный треугольник DFG]
+	(* <- lang_ru;; *);
+	[Rectangular Triangle DFG]
+	(* <- lang_en;; *);;
+
+struct_Rectangular_triangle_D_F_G => nrel_idtf: [Тр-к (D; F; G)] (* <- lang_ru;; *);
+												[Triangle (D; F; G)] (* <- lang_en;; *);;
+
+struct_Rectangular_triangle_D_F_G => nrel_idtf: [Прямоугольный треугольник (D; F; G)] (* <- lang_ru;; *);
+												[Rectangular triangle (D; F; G)] (* <- lang_en;; *);;
+
+struct_Rectangular_triangle_D_F_G => nrel_idtf: [Треугольник, вершинами которого являются Точка D, Точка F, Точка G] (* <- lang_ru;; *);
+												[Triangle that has Point D, Point F, Point G as vertexes.] (* <- lang_en;; *);;
+
+struct_Rectangular_triangle_D_F_G => nrel_vertex: struct_Geometric_point_D;;
+
+struct_Rectangular_triangle_D_F_G => nrel_vertex: struct_Geometric_point_F;;
+
+struct_Rectangular_triangle_D_F_G => nrel_vertex: struct_Geometric_point_G;;
+
+struct_Rectangular_triangle_D_F_G => nrel_side: struct_Segment_F_G;;
+
+struct_Rectangular_triangle_D_F_G => nrel_side: struct_Segment_D_G;;
+
+struct_Rectangular_triangle_D_F_G => nrel_side: struct_Segment_D_F;;
+
+struct_Segment_D_G => nrel_boundary_point: struct_Geometric_point_D;;
+
+struct_Segment_D_F => nrel_boundary_point: struct_Geometric_point_D;;
+
+struct_Segment_D_F => nrel_boundary_point: struct_Geometric_point_F;;
+
+struct_Segment_F_G => nrel_boundary_point: struct_Geometric_point_F;;
+
+struct_Segment_D_G => nrel_boundary_point: struct_Geometric_point_G;;
+
+struct_Segment_F_G => nrel_boundary_point: struct_Geometric_point_G;;
+
+struct_Rectangular_triangle_D_F_G => nrel_hypotenuse: struct_Segment_F_G;;
+
+struct_Rectangular_triangle_D_F_G => nrel_cathetus: struct_Segment_D_G;;
+
+struct_Rectangular_triangle_D_F_G => nrel_cathetus: struct_Segment_D_F;;
+
+struct_Rectangular_triangle_D_F_G <- rrel_key_sc_element: 
+	...
+	(*
+	<- illustration;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://images/Triangle DFG.png";;
+		*);;
+	*);;
+
+struct_Rectangular_triangle_D_F_G <- rrel_key_sc_element:	
+	...
+	(*
+	=> nrel_main_idtf: [Факт.утв.(Прямоугольный треугольник DFG)] (* <- lang_ru;; *);
+					   [Factual Statement(Rectangular triangle DFG)] (* <- lang_en;; *);;
+	<- statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Треугольник DFG является прямоугольным,Геометрические точки D, F и G являются вершинами Треугольника DFG. Отрезки d, f и g являются сторонами Треугольника DFG. Точка D является граничной точкой отрезков f, g. Точка F является граничной точкой отрезков g, d. Точка G является граничной точкой отрезков f, d. Отрезок d является гипотенузой. Отрезки f, g являются катетами.]
+			(* <- lang_ru;; *);
+			[DFG is a rectangular triangle, a geometric point of D, F and G are the vertices of a triangle DFG. The segments d, f and g are the sides of the triangle DFG. Point D is a boundary point of the segment f, g. Point F is a boundary point of the interval g, d. The point G is a boundary point of the segment f, d. The length d is the hypotenuse. Stretches f, g are two sides.]
+			(* <- lang_en;; *);;
+		*);;
+	*);;
+

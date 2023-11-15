@@ -1,0 +1,21 @@
+sc_node_not_relation -> concept_geometric_figure_without_any_boundary_point;;
+
+concept_geometric_figure_without_any_boundary_point => nrel_main_idtf:
+	[геометрическая фигура, не имеющая граничных точек] (* <- lang_ru;; *);
+	[geometric figure without any boundary point] (* <- lang_en;; *);;
+
+concept_geometric_figure_without_any_boundary_point => nrel_idtf: [Класс геометрических фигур, не имеющих граничных точек] (* <- lang_ru;; *);;
+concept_geometric_figure_without_any_boundary_point => nrel_idtf: [Понятие геометрической фигуры, не имеющей граничных точек] (* <- lang_ru;; *);;
+concept_geometric_figure_without_any_boundary_point => nrel_idtf: [Множество всевозможных геометрических фигур, не имеющих граничных точек] (* <- lang_ru;; *);;
+concept_geometric_figure_without_any_boundary_point => nrel_idtf: [Множество знаков всевозможных геометрических фигур, не имеющих граничных точек] (* <- lang_ru;; *);;
+concept_geometric_figure_without_any_boundary_point => nrel_idtf: [geometrical figure without any boundary point] (* <- lang_en;; *);;
+
+concept_geometric_figure_without_any_boundary_point <= nrel_strict_inclusion: concept_geometric_figure;;
+concept_geometric_figure_without_any_boundary_point => nrel_strict_inclusion: concept_line;;
+concept_geometric_figure_without_any_boundary_point => nrel_strict_inclusion: concept_pair_of_points;;
+concept_geometric_figure_without_any_boundary_point => nrel_strict_inclusion: concept_surface;;
+
+concept_geometric_figure_without_any_boundary_point -> rrel_example: struct_Rectilinear_triple_Of_Points_P_Q_R;;
+concept_geometric_figure_without_any_boundary_point -> rrel_example: struct_Plane_P;;
+concept_geometric_figure_without_any_boundary_point -> rrel_example: struct_Straight_Line_A;;
+concept_geometric_figure_without_any_boundary_point -> rrel_example: struct_Circle_O_R;;

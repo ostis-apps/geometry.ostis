@@ -1,0 +1,14 @@
+e_concept_geometric_point <- explanation;;
+
+e_concept_geometric_point => nrel_main_idtf: [Поясн.(геометрическая точка)] (* <- lang_ru;; *);;
+e_concept_geometric_point => nrel_main_idtf: [Expl.(geometric point)] (* <- lang_ru;; *);;
+
+e_concept_geometric_point -> rrel_key_sc_element: concept_geometric_point;;
+
+e_concept_geometric_point <= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+		[Геометрическая точка - то, что не имеет частей и размеров]
+		(* <- lang_ru;; *);;
+	*);;

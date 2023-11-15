@@ -1,0 +1,13 @@
+stat_rectangular_triangle_cathetus_hypotenuse_perimeter<- statement;;
+
+stat_rectangular_triangle_cathetus_hypotenuse_perimeter-> rrel_key_sc_element: concept_rectangular_triangle; nrel_cathetus; nrel_hypotenuse; nrel_perimeter;;
+
+stat_rectangular_triangle_cathetus_hypotenuse_perimeter => nrel_main_idtf: [Утв.(прямоугольный треугольник; катет*; гипотенуза*; периметр*)] (* <-lang_ru;; *);;
+stat_rectangular_triangle_cathetus_hypotenuse_perimeter=> nrel_main_idtf: [Stat.(rectangular triangle; cathetus*; hypotenuse*; perimeter*)] (* <-lang_en;; *);;
+
+stat_rectangular_triangle_cathetus_hypotenuse_perimeter <= nrel_sc_text_translation: 
+	...
+	(*
+		-> rrel_example: 
+		[Cумма катетов прямоугольного треугольника равна сумме гипотенузы и удвоенного радиуса вписанной в треугольник окружности: a+b=c+2r] (* <- lang_ru;; *);;
+	*);;

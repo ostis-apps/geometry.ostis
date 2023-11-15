@@ -1,0 +1,20 @@
+d_concept_complex_polyline <- definition;;
+
+d_concept_complex_polyline => nrel_main_idtf: [Опр.(сложная ломаная)] (* <- lang_ru;; *);;
+   
+d_concept_complex_polyline -> rrel_key_sc_element: concept_complex_polyline;;
+
+d_concept_complex_polyline <= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[Сложная ломаная - это ломаная с самопересечениями.]
+		(* <- lang_ru;; *);;
+	*);;
+
+d_concept_complex_polyline <= nrel_using_constants:
+	{
+	concept_polyline; 
+	nrel_intersection
+	};;
+				

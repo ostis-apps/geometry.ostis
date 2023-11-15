@@ -1,0 +1,21 @@
+d_nrel_edge <- definition;;
+
+d_nrel_edge -> rrel_key_sc_element: nrel_edge;;
+
+d_nrel_edge => nrel_main_idtf: [Опр.(ребро*)] (*<-lang_ru;;*);;
+d_nrel_edge => nrel_main_idtf: [Def.(edge*)] (*<-lang_en;;*);;
+
+
+d_nrel_edge <= nrel_using_constants:
+	{
+	concept_polyhedron;
+	concept_polygon;
+	nrel_side_of_polygon;
+	nrel_face_of_polyhedron
+	};;
+
+d_nrel_edge <= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+		[Ребром многогранника называется каждая из сторон любого многоугольника, ограничивающего многогранник.] (*<-lang_ru;;*);;
+		*);;

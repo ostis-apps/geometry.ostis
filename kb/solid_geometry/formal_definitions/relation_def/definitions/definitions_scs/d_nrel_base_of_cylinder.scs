@@ -1,0 +1,22 @@
+d_nrel_base_of_cylinder <- definition;;
+
+d_nrel_base_of_cylinder => nrel_main_idtf: [Опр.(основание цилиндра*)] (*<-lang_ru;;*);;
+d_nrel_base_of_cylinder => nrel_main_idtf: [Def.(base of cylinder*)] (*<-lang_en;;*);;
+
+d_nrel_base_of_cylinder -> rrel_key_sc_element: nrel_base_of_cylinder;;
+
+d_nrel_base_of_cylinder <= nrel_using_constants:
+	{
+		concept_cylinder;
+		concept_cylindrical_surface;
+		concept_round;
+		concept_plane;
+		nrel_parallelism
+	};;
+
+d_nrel_base_of_cylinder <= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+	[Основание цилиндра – один из двух частей (кругов), отсекаемых цилиндрической поверхностью на параллельных плоскостях. ] (*<-lang_ru;;*);;
+	*);;

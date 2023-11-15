@@ -1,0 +1,18 @@
+d_nrel_vertical_angles
+=> nrel_main_idtf: [Опр.(вертикальные углы*)]	(* <- lang_ru;; *);
+=> nrel_main_idtf: [Def.(vertical angles*)] (*<- lang_en;;*);
+<- definition;
+-> rrel_key_sc_element: nrel_vertical_angles;
+
+<= nrel_using_constants:
+	{
+		concept_angle; 
+		nrel_additional_rays
+	};
+
+<= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[Вертикальные углы - углы, образованные дополнительными лучами.] (* <- lang_ru;; *);;
+	*);;

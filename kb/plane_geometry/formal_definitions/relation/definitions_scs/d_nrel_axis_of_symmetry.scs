@@ -1,0 +1,20 @@
+d_nrel_axis_of_symmetry
+=> nrel_main_idtf: [Опр.(ось симметрии*)] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Def.(axis of symmetry*)] (*<- lang_en;;*);
+<- definition;
+-> rrel_key_sc_element: nrel_axis_of_symmetry;
+
+<= nrel_using_constants:
+	{
+	concept_angle;  
+	concept_geometric_point;
+	concept_straight_line
+	};
+<= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[Ось симметрии - прямая, при повороте вокруг которой на определенный угол фигура или точка совмещается сама с собой]
+		(* <- lang_ru;; *);;
+	*);;
+

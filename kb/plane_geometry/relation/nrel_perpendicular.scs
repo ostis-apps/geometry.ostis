@@ -1,0 +1,46 @@
+sc_node_norole_relation -> nrel_perpendicular;;
+
+nrel_perpendicular => nrel_main_idtf:
+	[перпендикуляр*]
+	(* <- lang_ru;; *);
+	[perpendicular*]
+	(* <- lang_en;; *);;
+
+nrel_perpendicular => nrel_idtf: [быть перпендикуляром*] (* <- lang_ru;; *);;
+
+nrel_perpendicular => nrel_idtf: [быть перпендикуляром, опущенным из точки к прямой или плоскости*] (* <- lang_ru;; *);;
+
+nrel_perpendicular => nrel_definitional_domain: 
+	...
+	(*
+	<= nrel_combination: 
+		{
+		concept_segment;
+		concept_straight_line;
+		concept_plane;
+		concept_geometric_point
+		};;
+	*);;	
+
+nrel_perpendicular => nrel_first_domain: 
+	concept_geometric_point;;
+
+nrel_perpendicular => nrel_second_domain: 
+	...
+	(*
+	<= nrel_combination: 
+		{
+		concept_straight_line;
+		concept_plane
+		};;
+	*);;
+	
+nrel_perpendicular => nrel_third_domain:
+	concept_segment;;
+
+nrel_perpendicular <- relation;;
+nrel_perpendicular <- ternary_relation;;
+
+	
+
+

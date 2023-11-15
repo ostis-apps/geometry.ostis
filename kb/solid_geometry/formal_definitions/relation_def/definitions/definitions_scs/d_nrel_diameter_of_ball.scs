@@ -1,0 +1,21 @@
+d_nrel_diameter_of_ball <- definition;;
+
+d_nrel_diameter_of_ball => nrel_main_idtf: [Опр.(диаметр шара*)] (*<-lang_ru;;*);;
+d_nrel_diameter_of_ball => nrel_main_idtf: [Def.(diameter of ball*)] (*<-lang_en;;*);;
+
+d_nrel_diameter_of_ball -> rrel_key_sc_element: nrel_diameter_of_ball;;
+
+d_nrel_diameter_of_ball <= nrel_using_constants:
+	{
+		concept_ball;
+		concept_sphere;
+		nrel_diameter_of_sphere;
+		nrel_bound
+	};;
+
+d_nrel_diameter_of_ball <= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+	[Диаметром шара называется диаметр сферы, которая является границей данного шара.] (*<-lang_ru;;*);;
+	*);;

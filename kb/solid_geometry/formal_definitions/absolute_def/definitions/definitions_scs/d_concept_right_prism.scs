@@ -1,0 +1,21 @@
+d_concept_right_prism <- definition;;
+
+d_concept_right_prism -> rrel_key_sc_element: concept_right_prism;;
+
+d_concept_right_prism => nrel_main_idtf: [Опр.(прямая призма)] (*<-lang_ru;;*);;
+d_concept_right_prism => nrel_main_idtf: [Def.(right prism)] (*<-lang_en;;*);;
+
+
+d_concept_right_prism <= nrel_using_constants:
+	{
+	concept_prism;
+	nrel_lateral_face_of_polyhedron;
+	concept_rectangle
+	};;
+
+d_concept_right_prism <= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+		[Прямая призма - призма, у которой все боковые грани являются прямоугольниками.] (*<-lang_ru;;*);;
+		*);;

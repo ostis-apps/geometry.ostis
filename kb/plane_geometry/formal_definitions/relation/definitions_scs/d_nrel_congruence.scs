@@ -1,0 +1,21 @@
+d_nrel_congruence 
+=> nrel_main_idtf: [Опр.(конгруэнтность*)] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Def.(congruence*)] (*<-lang_en;;*);
+<- definition;
+-> rrel_key_sc_element: nrel_congruence;
+
+<= nrel_using_constants:
+	{
+	concept_geometric_figure;
+	concept_pair_of_points;
+	nrel_distance
+	};
+
+<= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[Конгруэнтностью называется множество соответствий между любыми парами точек одной геометрической фигуры и соответствующими парами точек другой геометрической фигуры такое, что расстояние между парами этих точек равны.]
+		(* <- lang_ru;; *);;
+	*);;
+

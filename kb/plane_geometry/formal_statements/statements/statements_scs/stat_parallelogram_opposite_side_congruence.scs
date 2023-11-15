@@ -1,0 +1,15 @@
+stat_parallelogram_opposite_side_congruence <- statement;;
+
+//stat_parallelogram_opposite_side_congruence <- sc_statement_for_solver;;
+
+stat_parallelogram_opposite_side_congruence -> rrel_key_sc_element: concept_parallelogram; nrel_side; nrel_congruence; nrel_opposite;;
+
+stat_parallelogram_opposite_side_congruence => nrel_main_idtf: [Утв.(параллелограмм; сторона*; конгруэнтность*; противолежащий*)] (* <-lang_ru;; *);;
+stat_parallelogram_opposite_side_congruence => nrel_main_idtf: [Stat.(parallelogram; side*; congruence*; opposite*)] (* <-lang_en;; *);;
+
+stat_parallelogram_opposite_side_congruence <= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+		[В параллелограмме противолежащие стороны равны.] (* <- lang_ru;; *);;
+		*);;

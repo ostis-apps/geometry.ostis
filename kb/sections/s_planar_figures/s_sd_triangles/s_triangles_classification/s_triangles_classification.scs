@@ -1,0 +1,42 @@
+s_triangles_classification
+=> nrel_main_idtf:
+	[Раздел. Основные понятия. Классификации треугольников]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Section. Classification of triangles]
+	(* <- lang_en;; *);
+
+<- atomic_section;
+
+<= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+		"file://htmls/s_triangles_classification_en.html"
+		(* <- lang_en;; *);;
+	*);
+<= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+		"file://htmls/s_triangles_classification_ru.html"
+		(* <- lang_ru;; *);;
+	*);
+
+=> nrel_summary:
+	...
+	(*
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[This section explains the basic information about triangles and their classification according to various criteria.]
+			(* <- lang_en;; *);;
+		*);;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:[В данном разделе изложена основная информация о треугольниках и их классификация по различным признакам.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;

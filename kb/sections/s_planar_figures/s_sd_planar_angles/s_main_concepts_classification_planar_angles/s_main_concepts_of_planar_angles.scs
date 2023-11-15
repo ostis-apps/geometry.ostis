@@ -1,0 +1,35 @@
+s_main_concepts_classification_planar_angles
+=> nrel_main_idtf:
+	[Раздел. Основные понятия предметной области планарных углов]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Section. The main concepts of subject domain of planar angles. Classification]
+	(* <- lang_en;; *);
+
+<- atomic_section;
+
+<= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+		"file://html/s_main_concepts_planar_angles_ru.html"
+		(* <- lang_ru;; *);;
+	*);
+
+=> nrel_summary:
+	...
+	(*
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[This section discusses the main concepts of planar angles.]
+			(* <- lang_en;; *);;
+		*);;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:[В данном разделе рассматриваются основные понятия плоских углов.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;

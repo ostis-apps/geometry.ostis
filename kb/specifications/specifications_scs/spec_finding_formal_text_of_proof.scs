@@ -1,0 +1,7 @@
+statement <- rrel_key_sc_element: spec_finding_formal_text_of_proof;;
+
+spec_finding_formal_text_of_proof -> rrel_key_sc_element: nrel_main_proof_action; nrel_decomposition_of_action; build_sc_action; logic_sc_action; ariphmetic_sc_action;;
+
+general_specification -> spec_finding_formal_text_of_proof;;
+
+spec_finding_formal_text_of_proof => nrel_main_idtf: [Обобщённая спецификация для поиска формального текста доказательства] (* <- lang_ru;; *);;

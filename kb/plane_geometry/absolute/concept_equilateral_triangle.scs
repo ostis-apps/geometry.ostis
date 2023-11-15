@@ -1,0 +1,33 @@
+sc_node_not_relation -> concept_equilateral_triangle;;
+
+concept_equilateral_triangle => nrel_main_idtf:
+	[равносторонний треугольник](* <- lang_ru;; *);
+	[equilateral triangle](* <- lang_en;; *);;
+
+concept_equilateral_triangle => nrel_idtf: [Правильный треугольник] (* <- lang_ru;; *);;
+concept_equilateral_triangle => nrel_idtf: [Класс равносторонних треугольников] (* <- lang_ru;; *);;
+concept_equilateral_triangle => nrel_idtf: [Класс правильных треугольников] (* <- lang_ru;; *);;
+concept_equilateral_triangle => nrel_idtf: [Понятие равностороннего треугольника] (* <- lang_ru;; *);;
+concept_equilateral_triangle => nrel_idtf: [Понятие правильных треугольника] (* <- lang_ru;; *);;
+concept_equilateral_triangle => nrel_idtf: [Множество всевозможных равносторонних треугольников] (* <- lang_ru;; *);;
+concept_equilateral_triangle => nrel_idtf: [Множество всевозможных правильных треугольников] (* <- lang_ru;; *);;
+concept_equilateral_triangle => nrel_idtf: [Множество знаков всевозможных равносторонних треугольников] (* <- lang_ru;; *);;
+concept_equilateral_triangle => nrel_idtf: [Множество знаков всевозможных правильных треугольников] (* <- lang_ru;; *);;
+concept_equilateral_triangle => nrel_idtf: [Треугольник с тремя равными сторонами] (* <- lang_ru;; *);;
+concept_equilateral_triangle => nrel_idtf: [Равносторонний многоугольник с тремя сторонами] (* <- lang_ru;; *);;
+concept_equilateral_triangle => nrel_idtf: [Правильный многоугольник с тремя сторонами] (* <- lang_ru;; *);;
+
+concept_equilateral_triangle <= nrel_strict_inclusion: concept_isosceles_triangle;;
+
+concept_equilateral_triangle <- rrel_key_sc_element: 
+	...
+	(*
+	<- illustration;; 
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: 
+		"file://images/concept_equilateral_triangle.png";;
+		*);;
+	*);;
+
+concept_equilateral_triangle -> rrel_example: struct_Equilateral_triangle_X_Y_Z;;

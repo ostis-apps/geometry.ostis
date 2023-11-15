@@ -1,0 +1,15 @@
+stat_triangle_center_line_middle_parallelism_half <- statement;;
+
+//stat_triangle_center_line_middle_parallelism_half <- sc_statement_for_solver;;
+
+stat_triangle_center_line_middle_parallelism_half -> rrel_key_sc_element: concept_triangle; nrel_center_line; nrel_parallelism; nrel_side;;
+
+stat_triangle_center_line_middle_parallelism_half => nrel_main_idtf: [Утв.(треугольник; средняя линии*; параллельность*; сторона*)] (* <-lang_ru;; *);;
+stat_triangle_center_line_middle_parallelism_half => nrel_main_idtf: [Stat.(triangle; center line*; parallelism*; side*)] (* <-lang_en;; *);;
+
+stat_triangle_center_line_middle_parallelism_half <= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+		[Средняя линия треугольника, соединяющая серидины двух его сторон, параллельна третьей стороне треугольника и равна её половине.] (* <- lang_ru;; *);;
+		*);;

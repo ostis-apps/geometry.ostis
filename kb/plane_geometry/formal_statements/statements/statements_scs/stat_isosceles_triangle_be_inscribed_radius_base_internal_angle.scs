@@ -1,0 +1,25 @@
+stat_isosceles_triangle_be_inscribed_radius_base_internal_angle <- statement;;
+
+stat_isosceles_triangle_be_inscribed_radius_base_internal_angle
+-> rrel_key_sc_element:
+	concept_isosceles_triangle;
+	nrel_be_inscribed;
+	nrel_radius;
+	nrel_base;
+	nrel_internal_angle;;
+
+stat_isosceles_triangle_be_inscribed_radius_base_internal_angle
+=> nrel_main_idtf:
+	[Утв.(равнобедренный треугольник;быть вписанным*;радиус*;основание*;внутренний угол*)] (*<- lang_ru;;*);;
+
+stat_isosceles_triangle_be_inscribed_radius_base_internal_angle
+=> nrel_main_idtf:
+	[Stat.(isosceles triangle;be inscribed*;radius*;base*;internal angle*)] (*<- lang_en;;*);;
+
+stat_isosceles_triangle_be_inscribed_radius_base_internal_angle <= nrel_sc_text_translation: 
+	...
+	(* 
+	-> rrel_example: 
+		[Радиус окружности, вписанной в равнобедренный треугольник, выражается через его основание и угол alpha при основании по формуле r=(c/2)*tg(alpha/2).] 
+		(* <- lang_ru;; *);; 
+	*);;

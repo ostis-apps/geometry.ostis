@@ -1,0 +1,74 @@
+sc_node_struct -> struct_Rhomb_E_F_G_H;;
+
+struct_Rhomb_E_F_G_H => nrel_main_idtf:
+	[Ромб EFGH]
+	(* <- lang_ru;; *);
+	[Rhomb EFGH]
+	(* <- lang_en;; *);;
+
+struct_Rhomb_E_F_G_H => nrel_idtf: [Ромб (E; F; G; H)] (* <- lang_ru;; *);;
+
+struct_Rhomb_E_F_G_H => nrel_idtf: [Ромб, вершинами которого являются Точка E, Точка F, Точка G и Точка H] (* <- lang_ru;; *);;
+
+struct_Rhomb_E_F_G_H  => nrel_vertex: struct_Geometric_point_E;;
+
+struct_Rhomb_E_F_G_H  => nrel_vertex: struct_Geometric_point_F;;
+
+struct_Rhomb_E_F_G_H  => nrel_vertex: struct_Geometric_point_G;;
+
+struct_Rhomb_E_F_G_H  => nrel_vertex: struct_Geometric_point_H;;
+
+struct_Rhomb_E_F_G_H => nrel_side: struct_Segment_E_H;;
+
+struct_Rhomb_E_F_G_H => nrel_side: struct_Segment_E_F;;
+
+struct_Rhomb_E_F_G_H => nrel_side: struct_Segment_F_G;;
+
+struct_Rhomb_E_F_G_H => nrel_side: struct_Segment_G_H;;
+
+struct_Rhomb_E_F_G_H  => nrel_internal_angle: struct_Angle_Alpha;;
+
+struct_Rhomb_E_F_G_H  => nrel_internal_angle: struct_Angle_Beta;;
+
+struct_Rhomb_E_F_G_H  => nrel_internal_angle: struct_Angle_Gamma;;
+
+struct_Rhomb_E_F_G_H  => nrel_internal_angle: struct_Angle_Sigma;;
+
+struct_Segment_E_H => nrel_boundary_point: struct_Geometric_point_E;;
+
+struct_Segment_E_H => nrel_boundary_point: struct_Geometric_point_H;;
+
+struct_Segment_E_F => nrel_boundary_point: struct_Geometric_point_E;;
+
+struct_Segment_E_F => nrel_boundary_point: struct_Geometric_point_F;;
+
+struct_Segment_G_H => nrel_boundary_point: struct_Geometric_point_G;;
+
+struct_Segment_G_H => nrel_boundary_point: struct_Geometric_point_H;;
+
+struct_Rhomb_E_F_G_H <- rrel_key_sc_element: 
+	...
+	(*
+	<- illustration;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://images/Rhomb_E_F_G_H.png";;
+		*);;
+	*);;
+
+struct_Isosceles_trapezoid_K_L_M_N  <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Факт. утв.(Ромб EFGH)] (* <- lang_ru;; *);;
+	<- statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Геометрические точки E, F, G и H являются вершинами Ромба EFGH. Отрезки e, f, g и h являются сторонами Ромба EFGH. Углы  alpha,  beta,  gamma,  sigma являются внутренним углами Ромба EFGH. Точка E является граничной точкой отрезков e, f. Точка F является граничной точкой отрезков f, g. Точка G является граничной точкой отрезков h, g.
+			Точка H является граничной точкой отрезков e, h.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;

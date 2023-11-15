@@ -1,0 +1,57 @@
+sc_node_not_relation -> concept_convex_polygon;;
+
+concept_convex_polygon => nrel_main_idtf:
+	[выпуклый многоугольник](* <- lang_ru;; *);
+	[convex polygon](* <- lang_en;; *);;
+
+concept_convex_polygon => nrel_idtf: [Класс выпуклых многоугольников] (* <- lang_ru;; *);;
+concept_convex_polygon => nrel_idtf: [Понятие выпуклого многоугольника] (* <- lang_ru;; *);;
+concept_convex_polygon => nrel_idtf: [Множество всевозможных выпуклых многоугольников] (* <- lang_ru;; *);;
+concept_convex_polygon => nrel_idtf: [Множество знаков всевозможных выпуклых многоугольников] (* <- lang_ru;; *);;
+
+concept_convex_polygon <= nrel_subdividing:
+	...
+	(*
+	=> nrel_main_idtf: [Разбиение по признаку количества сторон] (* <- lang_ru;; *);;
+
+	-> concept_triangle;
+	   concept_quadrilateral;
+	   concept_pentagon;	
+	   concept_hexagon;;
+	*);;
+
+concept_convex_polygon <= nrel_subdividing:
+	...
+	(*
+	=> nrel_main_idtf: [Разбиение по признаку конгруэнтности сторон] (* <- lang_ru;; *);;
+	
+	-> concept_regular_polygon;	
+	  concept_irregular_polygon;;
+	*);;
+
+concept_convex_polygon <- rrel_key_sc_element: 
+	...
+	(*
+	<- illustration;; 
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: 
+		"file://images/concept_convex_polygon.png";;
+
+		*);;
+	*);;
+
+concept_convex_polygon -> rrel_example: struct_Polygon_K_A_B_C_D_E;;
+concept_convex_polygon -> rrel_example: struct_Regular_Polyhon_A_B_C_D_E_F;;
+concept_convex_polygon -> rrel_example: struct_Irregular_polygon_K_A_B_C_D_E;;
+concept_convex_polygon -> rrel_example: struct_Rectangular_triangle_D_F_G;;
+concept_convex_polygon -> rrel_example: struct_Scalene_triangle_K_L_M;;
+concept_convex_polygon -> rrel_example: struct_Obtuse_triangle_L_D_K;;
+concept_convex_polygon -> rrel_example: struct_Acute_angled_triangle_O_S_T;;
+concept_convex_polygon -> rrel_example: struct_Equilateral_triangle_X_Y_Z;;
+concept_convex_polygon -> rrel_example: struct_Rhomb_E_F_G_H;;
+concept_convex_polygon -> rrel_example: struct_Isosceles_trapezoid_K_L_M_N;;
+concept_convex_polygon -> rrel_example: struct_Rectangular_Trapezoid_P_Q_R_S;;
+concept_convex_polygon -> rrel_example: struct_Versatile_trapezoid_Z_X_C_V;;
+concept_convex_polygon -> rrel_example: struct_Parallelogram_A_B_C_D;;
+concept_convex_polygon -> rrel_example: struct_Rectangle_B_C_D_E;;

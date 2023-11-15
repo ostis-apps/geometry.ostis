@@ -1,0 +1,22 @@
+d_nrel_axis_of_cylinder <- definition;;
+
+d_nrel_axis_of_cylinder => nrel_main_idtf: [Опр.(ось цилиндра*)] (*<-lang_ru;;*);;
+d_nrel_axis_of_cylinder => nrel_main_idtf: [Def.(axis of cylinder*)] (*<-lang_en;;*);;
+
+d_nrel_axis_of_cylinder -> rrel_key_sc_element: nrel_axis_of_cylinder;;
+
+d_nrel_axis_of_cylinder <= nrel_using_constants:
+	{
+		concept_cylinder;
+		concept_straight_line;
+		nrel_center_of_round;
+		nrel_base_of_cylinder;
+		concept_round
+	};;
+
+d_nrel_axis_of_cylinder <= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+	[Ось цилиндра - это прямая, проходящая через центры кругов, являющихся основаниями цилиндра.] (*<-lang_ru;;*);;
+	*);;

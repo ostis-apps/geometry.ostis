@@ -1,0 +1,38 @@
+sc_node_norole_relation -> nrel_vertical_angles;;
+
+nrel_vertical_angles => nrel_main_idtf:
+	[вертикальные углы*]
+	(* <- lang_ru;; *);
+	[vertical angles*]
+	(* <- lang_en;; *);;
+
+nrel_vertical_angles => nrel_idtf: [быть вертикальными углами*]
+	(* <- lang_ru;; *);;
+
+nrel_vertical_angles => nrel_definitional_domain:
+	concept_planar_angle;;
+	
+nrel_vertical_angles => nrel_first_domain: 
+	concept_planar_angle;;
+
+nrel_vertical_angles => nrel_second_domain: 
+	concept_planar_angle;;
+
+nrel_vertical_angles <- relation;;
+nrel_vertical_angles <- binary_relation;;
+nrel_vertical_angles <- non_oriented_relation;;
+nrel_vertical_angles <- antireflexive_relation;;
+nrel_vertical_angles <- symmetric_relation;;
+nrel_vertical_angles <- antitransitive_relation;;
+
+nrel_vertical_angles <- rrel_key_sc_element: 
+	...
+	(*
+	<- illustration;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			"file://images/Vertical_angles.png";;
+		*);; 
+	*);; 

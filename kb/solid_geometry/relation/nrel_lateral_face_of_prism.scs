@@ -1,0 +1,21 @@
+sc_node_norole_relation -> nrel_lateral_face_of_prism;;
+
+nrel_lateral_face_of_prism => nrel_main_idtf: [боковая грань призмы*] (*<-lang_ru;;*);;
+nrel_lateral_face_of_prism => nrel_main_idtf: [lateral face of prism*] (*<-lang_en;;*);;
+
+nrel_lateral_face_of_prism => nrel_first_domain: concept_prism;;
+nrel_lateral_face_of_prism => nrel_second_domain: concept_parallelogram;;
+nrel_lateral_face_of_prism => nrel_definitional_domain:
+	...
+	(*
+	<= nrel_combination: 
+		{
+			concept_prism;
+			concept_parallelogram
+		};;
+	*);;
+	
+nrel_lateral_face_of_prism <- relation;;	
+nrel_lateral_face_of_prism <- binary_relation;;
+nrel_lateral_face_of_prism <- oriented_relation;;
+nrel_lateral_face_of_prism <- antireflexive_relation; antisymmetric_relation; antitransitive_relation;;

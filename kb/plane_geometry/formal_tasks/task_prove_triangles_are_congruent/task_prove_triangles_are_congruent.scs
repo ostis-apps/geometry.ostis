@@ -1,0 +1,21 @@
+task_prove_triangles_are_congruent => nrel_main_idtf: [Задача 10] (* <-lang_ru;; *);;
+
+task_prove_triangles_are_congruent <= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[Треугольники ABC и ABC1 равнобедренные с общим основанием AB. Докажите равенство треугольников ACC1 и BCC1]
+		(* <- lang_ru;; *);;
+	*);;
+
+task_prove_triangles_are_congruent <- rrel_key_sc_element: 
+	...
+	(*
+	<- illustration;; 
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: "file://task_prove_triangles_are_congruent.png";;
+		*);;
+	*);;
+	

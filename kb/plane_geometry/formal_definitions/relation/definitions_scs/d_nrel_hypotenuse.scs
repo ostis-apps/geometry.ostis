@@ -1,0 +1,21 @@
+d_nrel_hypotenuse
+=> nrel_main_idtf: [Опр.(гипотенуза*)]	(* <- lang_ru;; *);
+=> nrel_main_idtf: [Def.(hypotenuse*)] (*<- lang_en;;*);
+<- definition;
+-> rrel_key_sc_element: nrel_hypotenuse;
+
+<= nrel_using_constants:
+	{
+	nrel_side_of_polygon; 
+	concept_triangle; 
+	nrel_opposite; 
+	concept_right_angle
+	};
+
+<= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[Гипотенуза - сторона треуольника, противолежащая прямому углу.] (* <- lang_ru;; *);;
+	*);;
+

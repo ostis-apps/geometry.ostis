@@ -1,0 +1,13 @@
+stat_ball_geometric_point_center_distance <- statement;;
+
+stat_ball_geometric_point_center_distance -> rrel_key_sc_element: concept_ball; concept_geometric_point; nrel_center; nrel_distance;;
+
+stat_ball_geometric_point_center_distance => nrel_main_idtf: [Утв.(шар; геометрическая точка; центр*; расстояние*)] (* <-lang_ru;; *);;
+stat_ball_geometric_point_center_distance => nrel_main_idtf: [Stat.(ball; geometric point; center*; distance*)] (* <-lang_en;; *);;
+
+stat_ball_geometric_point_center_distance <= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+		[Шар с радиусом R - множество всех точек в пространстве, находящийся от данной точки, называемой центром шара, на расстояние не превосходящем R.] (* <- lang_ru;; *);;
+		*);;

@@ -1,0 +1,20 @@
+d_concept_rectangle <- definition;;
+
+d_concept_rectangle => nrel_main_idtf: [Опр.(прямоугольник)] (* <- lang_ru;; *);;
+d_concept_rectangle => nrel_main_idtf: [Def.(rectangle)] (* <- lang_en;; *);;
+
+d_concept_rectangle -> rrel_key_sc_element: concept_rectangle;;
+
+d_concept_rectangle <= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[Прямоугольник - параллелограмм, у которого все углы прямые.]
+		(* <- lang_ru;; *);;
+	*);;
+
+d_concept_rectangle <= nrel_using_constants:
+	{
+	concept_parallelogram; 
+	concept_right_angle
+	};;

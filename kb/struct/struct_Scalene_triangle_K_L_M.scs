@@ -1,0 +1,62 @@
+sc_node_struct -> struct_Scalene_triangle_K_L_M;;
+
+struct_Scalene_triangle_K_L_M => nrel_main_idtf: [Разносторонний треугольник KLM] (* <- lang_ru;; *);;
+
+struct_Scalene_triangle_K_L_M => nrel_main_idtf: [Scalene triangle KLM] (* <- lang_en;; *);;
+
+struct_Scalene_triangle_K_L_M => nrel_idtf: [Тр-к (K; L; M)] (* <- lang_ru;; *);;
+
+struct_Scalene_triangle_K_L_M => nrel_idtf: [Разносторонний треугольник (K; L; M)] (* <- lang_ru;; *);;
+
+struct_Scalene_triangle_K_L_M => nrel_idtf: [Треугольник, вершинами которого являются Точка K, Точка L, Точка M] (* <- lang_ru;; *);;
+
+struct_Scalene_triangle_K_L_M <- concept_scalene_triangle;;
+
+struct_Scalene_triangle_K_L_M => nrel_vertex: struct_Geometric_point_K;;
+
+struct_Scalene_triangle_K_L_M => nrel_vertex: struct_Geometric_point_L;;
+
+struct_Scalene_triangle_K_L_M => nrel_vertex: struct_Geometric_point_M;;
+
+struct_Scalene_triangle_K_L_M => nrel_side: struct_Segment_L_M;;
+
+struct_Scalene_triangle_K_L_M => nrel_side: struct_Segment_K_M;;
+
+struct_Scalene_triangle_K_L_M => nrel_side: struct_Segment_K_L;;
+
+struct_Segment_K_M => nrel_boundary_point: struct_Geometric_point_K;;
+
+struct_Segment_K_M => nrel_boundary_point: struct_Geometric_point_M;;
+
+struct_Scalene_triangle_K_L_M => nrel_internal_angle: struct_Acute_angle_Alpha;;
+
+struct_Scalene_triangle_K_L_M => nrel_internal_angle: struct_Acute_angle_Beta;;
+
+struct_Scalene_triangle_K_L_M => nrel_internal_angle: struct_Acute_angle_Gamma;;
+
+struct_Scalene_triangle_K_L_M <- rrel_key_sc_element: 
+	...
+	(*
+	<- illustration;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://images/Scalene_triangle_K_L_M.png";;
+		*);;
+	*);;
+
+struct_Scalene_triangle_K_L_M  <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Факт. утв.(Разносторонний треугольник KLM)] (* <- lang_ru;; *);;
+	<- statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Треугольник KLM является разносторонним,
+Геометрические точки K, L и M являются вершинами Треугольника KLM. Отрезки k, l и m являются сторонами Треугольника KLM. Точка K является граничной точкой отрезков m, l. Точка L является граничной точкой отрезков m, k. Точка M является граничной точкой отрезков l, k. Углы  alpha,  beta,  gamma острые углы. Углы  alpha,  beta,  gamma являются внутренним углами Треугольника KLM.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;

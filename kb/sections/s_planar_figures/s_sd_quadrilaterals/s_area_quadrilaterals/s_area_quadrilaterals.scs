@@ -1,0 +1,28 @@
+s_area_quadrilaterals
+=> nrel_main_idtf:
+	[Раздел. Площадь четырёхугольника]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Section. Quadrilateral's area]
+	(* <- lang_en;; *);
+
+<= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+		"file://html/s_area_quadrilaterals_ru.html"
+		(* <- lang_ru;; *);;
+	*);
+
+<- atomic_section;
+
+=> nrel_summary:
+	...
+	(*
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:[В данном разделе рассматриваются формулы нахождения площади четырехугольников.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;

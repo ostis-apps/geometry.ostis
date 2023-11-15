@@ -1,0 +1,35 @@
+sc_node_norole_relation -> nrel_side_of_polygon;;
+
+nrel_side_of_polygon => nrel_main_idtf:
+	[сторона многоугольника*]
+	(* <- lang_ru;; *);
+	[side of the polygon*]
+	(* <- lang_en;; *);;
+
+nrel_side_of_polygon => nrel_idtf: [быть стороной многоугольника*] (* <- lang_ru;; *);;
+
+nrel_side_of_polygon => nrel_definitional_domain:
+	...
+	(*
+	<= nrel_combination: 
+		{
+		concept_polygon;
+		concept_segment
+		};;
+	*);;
+
+nrel_side_of_polygon => nrel_first_domain: 
+	concept_polygon;;
+
+nrel_side_of_polygon => nrel_second_domain: 
+	concept_segment;;
+
+nrel_side_of_polygon <- relation;;
+nrel_side_of_polygon <- binary_relation;;
+nrel_side_of_polygon <- oriented_relation;;
+nrel_side_of_polygon <- antireflexive_relation;;
+nrel_side_of_polygon <- antisymmetric_relation;;
+nrel_side_of_polygon <- antitransitive_relation;;
+
+
+

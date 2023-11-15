@@ -1,0 +1,33 @@
+sc_node_norole_relation -> nrel_bisectrix_of_triangle;;
+
+nrel_bisectrix_of_triangle => nrel_main_idtf:
+	[биссектриса треугольника*]
+	(* <- lang_ru;; *);
+	[bisectrix of triangle*]
+	(* <- lang_en;; *);;
+
+nrel_bisectrix_of_triangle => nrel_idtf: [быть биссектрисой треугольника*]
+	(* <- lang_ru;; *);;
+
+nrel_bisectrix_of_triangle => nrel_definitional_domain:
+	... 
+	(*
+	<= nrel_combination: 
+		{	 
+		concept_triangle;
+		concept_segment
+		};;
+	*);;
+
+nrel_bisectrix_of_triangle => nrel_first_domain: 
+	concept_triangle;;
+
+nrel_bisectrix_of_triangle => nrel_second_domain: 
+	concept_segment;;
+
+nrel_bisectrix_of_triangle <- relation;;
+nrel_bisectrix_of_triangle <- binary_relation;;
+nrel_bisectrix_of_triangle <- oriented_relation;;
+nrel_bisectrix_of_triangle <- antireflexive_relation;;
+nrel_bisectrix_of_triangle <- antisymmetric_relation;;
+nrel_bisectrix_of_triangle <- antitransitive_relation;;

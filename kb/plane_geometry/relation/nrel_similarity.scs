@@ -1,0 +1,37 @@
+sc_node_norole_relation -> nrel_similarity;;
+
+nrel_similarity => nrel_main_idtf:
+	[подобие*]
+	(* <- lang_ru;; *);
+	[similarity*]
+	(* <- lang_en;; *);;
+
+nrel_similarity => nrel_idtf: [быть подобными фигурами*] (* <- lang_ru;; *);;
+
+nrel_similarity => nrel_idtf: [быть подобными геометрическими фигурами*] (* <- lang_ru;; *);;
+
+nrel_similarity => nrel_idtf: [преобразование подобия*] (* <- lang_ru;; *);;
+
+nrel_similarity => nrel_idtf: [геометрическое преобразование подобия*] (* <- lang_ru;; *);;
+
+nrel_similarity => nrel_definitional_domain: 
+	concept_geometric_figure;;
+
+nrel_similarity => nrel_first_domain: 
+	concept_geometric_figure;;
+
+nrel_similarity => nrel_second_domain: 
+	concept_geometric_figure;;
+
+nrel_similarity <- relation;;
+nrel_similarity <- binary_relation;;
+nrel_similarity <- non_oriented_relation;;
+nrel_similarity <- reflexive_relation;;
+nrel_similarity <- symmetric_relation;;
+nrel_similarity <- transitive_relation;;
+
+
+	
+
+
+

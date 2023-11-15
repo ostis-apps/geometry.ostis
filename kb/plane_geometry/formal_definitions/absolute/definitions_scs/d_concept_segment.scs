@@ -1,0 +1,20 @@
+d_concept_segment <- definition;;
+
+d_concept_segment => nrel_main_idtf: [Опр.(отрезок)] (* <- lang_ru;; *);;
+d_concept_segment => nrel_main_idtf: [Def.(segment)] (* <- lang_en;; *);;
+ 
+d_concept_segment -> rrel_key_sc_element: concept_segment;;
+d_concept_segment <= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[Отрезок - часть прямой, которая состоит из всех точек этой прямой, лежащей между двумя данными ее точками, включая эти точки.]
+		(* <- lang_ru;; *);;
+	*);;
+
+d_concept_segment <= nrel_using_constants:
+	{
+	concept_straight_line; 
+	concept_geometric_point; 
+	nrel_between
+	};;

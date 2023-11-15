@@ -1,0 +1,21 @@
+d_nrel_be_described 
+=> nrel_main_idtf: [Опр.(описанность*)] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Def.(be described*)] (*<- lang_en;;*);
+<- definition;
+-> rrel_key_sc_element: nrel_be_described;
+
+<= nrel_using_constants:
+	{
+	nrel_side_of_polygon;  
+	nrel_tangent; 
+	concept_polygon; 
+	concept_circle
+	};
+<= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[Описанный многоугольник - многоугольник, все стороны которого касаются данной окружности.]
+		(* <- lang_ru;; *);;
+	*);;
+	

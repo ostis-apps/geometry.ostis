@@ -1,0 +1,24 @@
+sc_node_not_relation -> concept_straight_parallelepiped;;
+
+concept_straight_parallelepiped => nrel_main_idtf: [прямой параллепипед] (*<-lang_ru;;*);;
+concept_straight_parallelepiped => nrel_main_idtf: [straight parallelepiped] (*<-lang_en;;*);;
+
+concept_straight_parallelepiped => nrel_idtf: [Класс прямых параллепипедов] (*<-lang_ru;;*);;
+concept_straight_parallelepiped => nrel_idtf: [Множество знаков всевозможных прямых параллепипедов ] (*<-lang_ru;;*);;
+concept_straight_parallelepiped => nrel_idtf: [Множество  всевозможных прямых параллепипедов] (*<-lang_ru;;*);;
+
+concept_straight_parallelepiped <= nrel_strict_inclusion: concept_parallelepiped;;
+
+concept_straight_parallelepiped <- rrel_key_sc_element: 
+	...
+	(*
+	<- illustration;; 
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: 
+		"file://images/concept_straight_parallelepiped.png";;
+		*);;
+	*);;
+
+

@@ -1,0 +1,21 @@
+d_nrel_axis_of_conical_surface <- definition;;
+
+d_nrel_axis_of_conical_surface => nrel_main_idtf: [Опр.(ось конической поверхности*)] (*<-lang_ru;;*);;
+d_nrel_axis_of_conical_surface => nrel_main_idtf: [Def.(axis of conical surface*)] (*<-lang_en;;*);;
+
+d_nrel_axis_of_conical_surface -> rrel_key_sc_element: nrel_axis_of_conical_surface;;
+
+d_nrel_axis_of_conical_surface <= nrel_using_constants:
+	{
+		concept_straight_line;
+		concept_conical_surface;		
+		nrel_generatrix_of_conical_surface;
+		concept_circle		
+	};;
+
+d_nrel_axis_of_conical_surface <= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+	[Ось конической поверхности - это прямая, проходящая через вершину конической поверхности и центр окружности, через которую проводятся образующие конической поверхности.] (*<-lang_ru;;*);;
+	*);;

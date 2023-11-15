@@ -1,0 +1,38 @@
+s_convex_quadrilaterals
+=> nrel_main_idtf:
+	[Раздел. Выпуклые четырёхугольники]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Section. Convex quadrilaterals]
+	(* <- lang_en;; *);
+
+<- non_atomic_section;
+
+<= nrel_section_decomposition:
+	{
+		s_sd_parallelograms
+		(*
+		=> nrel_section_base_order: 
+			s_sd_rectangles;;
+		*);
+		
+		s_sd_rectangles
+		(*
+		=> nrel_section_base_order: 
+			s_sd_rhombs;;
+		*);
+
+		s_sd_rhombs
+		(*
+		=> nrel_section_base_order: 
+			s_sd_squares;;
+		*);
+
+		s_sd_squares
+		(*
+		=> nrel_section_base_order: 
+			s_sd_trapezoids;;
+		*);
+		
+		s_sd_trapezoids
+	};;

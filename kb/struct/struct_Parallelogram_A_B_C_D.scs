@@ -1,0 +1,74 @@
+sc_node_struct -> struct_Parallelogram_A_B_C_D;;
+
+struct_Parallelogram_A_B_C_D => nrel_main_idtf:
+	[Параллелограмм ABCD]
+	(* <- lang_ru;; *);
+	[Parallelogram ABCD]
+	(* <- lang_en;; *);;
+
+struct_Parallelogram_A_B_C_D => nrel_idtf: [Параллелограмм (A; B; C; D)] (* <- lang_ru;; *);;
+
+struct_Parallelogram_A_B_C_D => nrel_idtf: [Параллелограмм, вершинами которого являются Точка A, Точка B, Точка С и Точка D] (* <- lang_ru;; *);;
+
+struct_Parallelogram_A_B_C_D  => nrel_vertex: struct_Geometric_point_A;;
+
+struct_Parallelogram_A_B_C_D  => nrel_vertex: struct_Geometric_point_B;;
+
+struct_Parallelogram_A_B_C_D  => nrel_vertex: struct_Geometric_point_C;;
+
+struct_Parallelogram_A_B_C_D  => nrel_vertex: struct_Geometric_point_D;;
+
+struct_Parallelogram_A_B_C_D  => nrel_lateral_side: struct_Segment_A_B;;
+
+struct_Parallelogram_A_B_C_D  => nrel_lateral_side: struct_Segment_C_D;;
+
+nrel_congruence -> ... (* -> struct_Segment_A_B; struct_Segment_C_D;; *);;
+
+struct_Parallelogram_A_B_C_D  => nrel_base: struct_Segment_B_C;;
+
+struct_Parallelogram_A_B_C_D  => nrel_base: struct_Segment_A_D;;
+
+nrel_congruence -> ... (* -> struct_Segment_B_C; struct_Segment_A_D;; *);;
+
+struct_Segment_A_D => nrel_boundary_point: struct_Geometric_point_A;;
+
+struct_Segment_A_D => nrel_boundary_point: struct_Geometric_point_D;;
+
+struct_Parallelogram_A_B_C_D  => nrel_internal_angle: struct_Angle_Alpha;;
+
+struct_Parallelogram_A_B_C_D  => nrel_internal_angle: struct_Angle_Beta;;
+
+struct_Parallelogram_A_B_C_D  => nrel_internal_angle: struct_Angle_Gamma;;
+
+struct_Parallelogram_A_B_C_D  => nrel_internal_angle: struct_Angle_Sigma;;
+
+nrel_congruence -> ... (* -> struct_Angle_Alpha; struct_Angle_Gamma;; *);;
+
+nrel_congruence -> ... (* -> struct_Angle_Sigma; struct_Angle_Beta;; *);;
+
+struct_Parallelogram_A_B_C_D <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Факт.утв.(Параллелограмм ABCD)] (* <- lang_ru;; *);;
+	<- statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[ABCD - параллелограмм, четырехугольник.
+			Геометрические точки A, B, C и D являются вершинами Параллелограмма ABCD. Отрезки a, c являются боковыми сторонами и равны между собой,а отрезки b, d также равны между собой и являются основаниями Параллелограмма ABCD. Точка A является граничной точкой отрезков a, d. Точка B является граничной точкой отрезков b, a. Точка C является граничной точкой отрезков c, b. Точка D является граничной точкой отрезков c, d. Боковые стороны a, c равны. Основания b, d равны. Углы alpha, beta, gamma, sigma являются внутренним углами Трапеции KLMN. Углы alpha и gamma равны. Углы sigma и beta равны.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+struct_Parallelogram_A_B_C_D <- rrel_key_sc_element: 
+	...
+	(*
+	<- illustration;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			"file://images/Parallelogram ABCD.png";;
+		*);; 
+	*);; 

@@ -1,0 +1,21 @@
+d_concept_round_segment <- definition;;
+
+d_concept_round_segment => nrel_main_idtf: [Опр.(сегмент круга)] (* <- lang_ru;; *);;
+
+d_concept_round_segment -> rrel_key_sc_element: concept_round_segment;;
+
+d_concept_round_segment <= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[Круговой сегмент - часть круга, ограниченная дугой окружности и хордой, соединяющей концы дуги.]
+		(* <- lang_ru;; *);;
+	*);;
+
+d_concept_round_segment <= nrel_using_constants:
+	{
+	concept_round;  
+	concept_circle_arc;  
+	concept_circle; 
+	nrel_chord
+	};;	

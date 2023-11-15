@@ -1,0 +1,18 @@
+sc_node_not_relation -> concept_spherical_layer;;
+
+concept_spherical_layer => nrel_main_idtf: [шаровый слой] (*<-lang_ru;;*);;
+concept_spherical_layer => nrel_main_idtf: [spherical layer] (*<-lang_en;;*);;
+
+concept_spherical_layer <= nrel_strict_inclusion: concept_solid_of_revolution;;
+
+concept_spherical_layer <- rrel_key_sc_element: 
+	...
+	(*
+	<- illustration;; 
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: 
+		"file://images/concept_spherical_layer.gif";;
+		*);;
+	*);;

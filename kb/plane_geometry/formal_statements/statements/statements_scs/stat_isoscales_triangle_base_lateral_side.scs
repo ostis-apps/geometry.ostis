@@ -1,0 +1,13 @@
+stat_isoscales_triangle_base_lateral_side <- statement;;
+
+stat_isoscales_triangle_base_lateral_side -> rrel_key_sc_element: concept_isosceles_triangle; nrel_base; nrel_lateral_side;;
+
+stat_isoscales_triangle_base_lateral_side => nrel_main_idtf: [Утв.(равнобедренный треугольник; основание*; боковая сторона*)] (* <-lang_ru;; *);;
+stat_isoscales_triangle_base_lateral_side => nrel_main_idtf: [Stat.(isoscales triangle; base*; lateral side*)] (* <-lang_en;; *);;
+
+stat_isoscales_triangle_base_lateral_side <= nrel_sc_text_translation: 
+	...
+	(*
+		-> rrel_example: 
+		[Основание с равнобедреннего треугольника выражается через его боковую сторону a и угол gamma при вершине по формуле c=2a*Sin(gamma/2).] (* <- lang_ru;; *);;
+	*);;

@@ -1,0 +1,20 @@
+d_nrel_concentric <- definition;;
+
+d_nrel_concentric -> rrel_key_sc_element: nrel_concentric;;
+
+d_nrel_concentric => nrel_main_idtf: [Опр.(концентрические*)] (*<-lang_ru;;*);;
+d_nrel_concentric => nrel_main_idtf: [Def.(concentric*)] (*<-lang_en;;*);;
+
+
+d_nrel_concentric <= nrel_using_constants:
+	{
+	concept_circle;
+	concept_sphere;
+	nrel_center
+	};;
+
+d_nrel_concentric <= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+		[Концентрическими называются окружности(сферы) имеющие общий центр] (*<-lang_ru;;*);;
+		*);;

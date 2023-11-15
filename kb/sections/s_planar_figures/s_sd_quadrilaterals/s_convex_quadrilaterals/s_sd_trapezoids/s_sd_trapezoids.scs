@@ -1,0 +1,26 @@
+s_sd_trapezoids
+=> nrel_main_idtf:
+	[Раздел. Трапеция. Свойства и признаки трапеции]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Section. Trapezoid. Properties and sings of trapezoid]
+	(* <- lang_en;; *);
+
+<- non_atomic_section;
+
+<= nrel_section_decomposition:
+	{
+		s_sd_trapezoids_classification
+		(*
+		=> nrel_section_base_order: 
+			s_sd_trapezoids_arbitrary_trapezoid;;
+		*);
+		
+		s_sd_trapezoids_arbitrary_trapezoid
+		(*
+		=> nrel_section_base_order: 
+			s_sd_trapezoids_isosceles_trapezoid;;
+		*);
+		
+		s_sd_trapezoids_isosceles_trapezoid
+	};;

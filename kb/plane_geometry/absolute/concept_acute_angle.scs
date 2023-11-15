@@ -1,0 +1,38 @@
+sc_node_not_relation -> concept_acute_angle;;
+
+concept_acute_angle => nrel_main_idtf:
+	[острый угол]
+	(* <- lang_ru;; *);
+	[acute angle]
+	(* <- lang_en;;	*);
+	[сүйір бұрыш]
+	(* <- lang_kz;;	*);;
+
+concept_acute_angle => nrel_idtf:
+	[Класс острых углов] (* <- lang_ru;; *);
+	[Category of acute angle] (* <- lang_en;; *);;
+
+concept_acute_angle => nrel_idtf:
+	[Понятие острого угла] (* <- lang_ru;; *);
+	[Concept of acute angle] (* <- lang_en;; *);;
+
+concept_acute_angle => nrel_idtf: [Множество всевозможных острых углов] (* <- lang_ru;; *);;
+
+concept_acute_angle => nrel_idtf:
+	[Множество всевозможных знаков острых углов] (* <- lang_ru;; *);
+	[Set of different signs of acute angles] (* <- lang_en;; *);;
+
+concept_acute_angle <=  nrel_strict_inclusion: concept_planar_angle;;
+	
+concept_acute_angle -> rrel_example: struct_Acute_Angle_K_L_M;;
+
+concept_acute_angle <- rrel_key_sc_element: 
+	...
+	(*
+	<- illustration;; 
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: 
+		"file://images/concept_acute_angle.png";;
+		*);;
+	*);;

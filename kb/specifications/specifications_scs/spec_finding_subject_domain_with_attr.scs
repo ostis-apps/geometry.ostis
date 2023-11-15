@@ -1,0 +1,7 @@
+concept <- rrel_key_sc_element: spec_finding_subject_domain_with_attr;;
+
+spec_finding_subject_domain_with_attr -> rrel_key_sc_element: attribute;;
+
+necessary_general_specification -> spec_finding_subject_domain_with_attr;;
+
+spec_finding_subject_domain_with_attr => nrel_main_idtf: [Необходимая обобщённая спецификация для поиска роли понятия в рамках предметной области] (* <- lang_ru;; *);;

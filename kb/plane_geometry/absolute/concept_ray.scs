@@ -1,0 +1,22 @@
+sc_node_not_relation -> concept_ray;;
+
+concept_ray => nrel_main_idtf:
+	[луч] (* <- lang_ru;; *);
+	[ray] (* <- lang_en;; *);;
+
+concept_ray => nrel_idtf: [Класс лучей] (* <- lang_ru;; *);;
+concept_ray => nrel_idtf: [Понятие луча] (* <- lang_ru;; *);;
+concept_ray => nrel_idtf: [Множество всевозможных лучей] (* <- lang_ru;; *);;
+concept_ray => nrel_idtf: [Множество знаков всевозможных лучей] (* <- lang_ru;; *);;
+concept_ray => nrel_idtf: [полупрямая] (* <- lang_ru;; *);;
+
+concept_ray <= nrel_subdividing:
+	...
+	(*
+	=> nrel_main_idtf: [Разбиение по признаку включения граничной точки в луч] (* <- lang_ru;; *);;
+	-> concept_closed_ray;
+	concept_opened_ray;;
+	*);;
+
+concept_ray -> rrel_example: struct_Opened_ray_k;;
+

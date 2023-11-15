@@ -1,0 +1,21 @@
+d_nrel_surface_area_of_geometric_body <- definition;;
+
+d_nrel_surface_area_of_geometric_body => nrel_main_idtf: [Опр.(полная поверхность геометрического тела*)] (*<-lang_ru;;*);;
+d_nrel_surface_area_of_geometric_body => nrel_main_idtf: [Def.(surface area of geometric body*)] (*<-lang_en;;*);;
+
+d_nrel_surface_area_of_geometric_body -> rrel_key_sc_element: nrel_surface_area_of_geometric_body;;
+
+d_nrel_surface_area_of_geometric_body <= nrel_using_constants:
+	{
+		nrel_surface_area_of_solid_of_revolution;
+		nrel_surface_area_of_polyhedron
+	};;
+
+d_nrel_surface_area_of_geometric_body <= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+	[Полная поверхность геометрического тела - это теоретико-множественное объединение понятий полной поверхности многогранника и полной поверхности тела вращения.] (*<-lang_ru;;*);;
+	*);;
+
+

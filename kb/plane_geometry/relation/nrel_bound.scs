@@ -1,0 +1,43 @@
+sc_node_norole_relation -> nrel_bound;;
+
+nrel_bound => nrel_main_idtf:
+	[граница*]
+	(* <- lang_ru;; *);
+	[bound*]
+	(* <- lang_en;; *);;
+
+nrel_bound => nrel_idtf:
+	[быть границей*]
+	(* <- lang_ru;; *);;
+
+nrel_bound => nrel_idtf:
+	[граница геометрической фигуры*]
+	(* <- lang_ru;; *);;
+
+nrel_bound => nrel_idtf:
+	[быть границей геометрической фигуры*]
+	(* <- lang_ru;; *);;
+
+nrel_bound => nrel_definitional_domain:
+	...
+	(*
+	<= nrel_combination: 
+		{	 
+		concept_geometric_figure_with_boundary_points;
+		concept_linear_figure
+		};;
+	*);;	
+
+nrel_bound => nrel_first_domain: 
+	concept_geometric_figure_with_boundary_points;;
+
+nrel_bound => nrel_second_domain: 
+	concept_linear_figure;;
+
+nrel_bound <- relation;;
+nrel_bound <- binary_relation;;
+nrel_bound <- oriented_relation;;
+nrel_bound <- antireflexive_relation;;
+nrel_bound <- antisymmetric_relation;;
+nrel_bound <- antitransitive_relation;;
+

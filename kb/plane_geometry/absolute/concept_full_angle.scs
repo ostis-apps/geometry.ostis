@@ -1,0 +1,25 @@
+sc_node_not_relation -> concept_full_angle;;
+
+concept_full_angle => nrel_main_idtf:
+	[полный угол](* <- lang_ru;; *);
+	[full angle](* <- lang_en;; *);;
+
+concept_full_angle => nrel_idtf: [Понятие полного угла] (* <- lang_ru;; *);;
+concept_full_angle => nrel_idtf: [Класс полных углов] (* <- lang_ru;; *);;
+concept_full_angle => nrel_idtf: [Множество всевозможных полных углов] (* <- lang_ru;; *);;
+concept_full_angle => nrel_idtf: [Множество знаков всевозможных полных углов] (* <- lang_ru;; *);;
+
+concept_full_angle <= nrel_strict_inclusion: concept_planar_angle;;
+	
+concept_full_angle <- rrel_key_sc_element: 
+	...
+	(*
+	<- illustration;; 
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: 
+		"file://images/concept_full_angle.png";;
+		*);;
+	*);;
+
+concept_full_angle -> rrel_example: struct_Full_angle_P_K_P;;

@@ -1,0 +1,20 @@
+stat_tetrahedron_height <- statement;;
+
+stat_tetrahedron_height-> rrel_key_sc_element: concept_tetrahedron; nrel_height;;
+
+stat_tetrahedron_height => nrel_main_idtf: [Утв.(тетраэдр; высота*)] (* <-lang_ru;; *);;
+stat_tetrahedron_height=> nrel_main_idtf: [Stat.(tetrahedron; height*)] (* <-lang_en;; *);;
+
+stat_tetrahedron_height <= nrel_sc_text_translation: 
+	...
+	(*
+		-> rrel_example: 
+		[Все высоты тетраэдра пересекаются в одной точке.] (* <- lang_ru;; *);;
+	*);;
+
+stat_tetrahedron_height <= nrel_sc_text_translation:
+	...
+	(*
+		-> rrel_example: 
+		[All tetrahedron diagonals intersect in one point.](* <- lang_en;; *);;
+	*);;

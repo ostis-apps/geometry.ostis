@@ -1,0 +1,24 @@
+sc_node_not_relation -> concept_trapezoid;;
+
+concept_trapezoid => nrel_main_idtf:
+	[трапеция] (* <- lang_ru;; *);
+	[trapezoid] (* <- lang_en;; *);;
+
+concept_trapezoid => nrel_idtf: [Класс трапеций] (* <- lang_ru;; *);;
+concept_trapezoid => nrel_idtf: [Понятие трапеции] (* <- lang_ru;; *);;
+concept_trapezoid => nrel_idtf: [Множество всевозможных трапеций] (* <- lang_ru;; *);;
+concept_trapezoid => nrel_idtf: [Множество знаков всевозможных трапеций] (* <- lang_ru;; *);;
+		
+concept_trapezoid <- rrel_key_sc_element: 
+	...
+	(*
+	<- illustration;; 
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: 
+		"file://images/concept_trapezoid.png";;
+		*);;
+	*);;
+
+concept_trapezoid -> rrel_example: struct_Isosceles_trapezoid_K_L_M_N;;
+concept_trapezoid -> rrel_example: struct_Versatile_trapezoid_Z_X_C_V;;

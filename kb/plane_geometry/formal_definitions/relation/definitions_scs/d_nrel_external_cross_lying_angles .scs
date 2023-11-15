@@ -1,0 +1,20 @@
+d_nrel_external_cross_lying_angles
+=> nrel_main_idtf: [Опр.(внешние накрест лежащие углы*)](* <- lang_ru;; *);
+=> nrel_main_idtf: [Def.(external cross lying angles*)] (*<- lang_en;;*);
+<- definition;
+-> rrel_key_sc_element: nrel_external_cross_lying_angles;
+
+<= nrel_using_constants:
+	{
+	concept_angle; 
+	concept_straight_line; 
+	nrel_secant
+	};
+
+<= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[Внешние накрест лежащие углы -  углы, образованные при пересечении двух прямых секущей, лежащие по разные стороны от секущей, но не между прямыми.] (* <- lang_ru;; *);;
+	*);;
+

@@ -1,0 +1,19 @@
+sc_node_not_relation -> concept_Simson_line;;
+
+concept_Simson_line => nrel_main_idtf: [прямая Симсона] (*<-lang_ru;;*);;
+concept_Simson_line => nrel_main_idtf: [Simson_line] (*<-lang_en;;*);;
+
+concept_Simson_line => nrel_idtf: [Класс прямых Симсона] (*<-lang_ru;;*);;
+
+concept_line => nrel_strict_inclusion: concept_Simson_line;;
+
+concept_Simson_line <- rrel_key_sc_element: 
+	...
+	(*
+	<- illustration;; 
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: 
+		"file://images/concept_Simson_line.png";;
+		*);;
+	*);;

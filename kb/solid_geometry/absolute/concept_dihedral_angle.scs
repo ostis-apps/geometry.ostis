@@ -1,0 +1,20 @@
+sc_node_not_relation -> concept_dihedral_angle;;
+
+concept_dihedral_angle => nrel_main_idtf: [двугранный угол] (*<-lang_ru;;*);;
+concept_dihedral_angle => nrel_main_idtf: [dihedral angle] (*<-lang_en;;*);;
+
+concept_dihedral_angle => nrel_idtf: [Множество двугранных углов] (*<-lang_ru;;*);;
+concept_dihedral_angle => nrel_idtf: [Множество знаков всевозможных двугранных углов] (*<-lang_ru;;*);;
+concept_dihedral_angle => nrel_idtf: [Множество  всевозможныхдвугранных углов] (*<-lang_ru;;*);;
+
+concept_dihedral_angle <- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+		(*
+		<- rrel_example: "file://images/concept_dihedral_angle.png";;
+		*);;
+	*);;
+
+

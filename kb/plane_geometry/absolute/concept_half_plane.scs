@@ -1,0 +1,18 @@
+sc_node_not_relation -> concept_half_plane;;
+
+concept_half_plane => nrel_main_idtf:
+	[полуплоскость](* <- lang_ru;; *);
+	[half plane](* <- lang_en;; *);;
+
+concept_half_plane => nrel_idtf: [Класс полуплоскостей] (* <- lang_ru;; *);;
+concept_half_plane => nrel_idtf: [Понятие полуплоскости] (* <- lang_ru;; *);;
+concept_half_plane => nrel_idtf: [Множество всевозможных полуплоскостей] (* <- lang_ru;; *);;
+concept_half_plane => nrel_idtf: [Множество знаков всевозможных полуплоскостей] (* <- lang_ru;; *);;
+
+concept_half_plane <= nrel_strict_inclusion: concept_planar_surface;;
+
+concept_half_plane <=> nrel_analogue: concept_ray;;
+
+concept_half_plane -> rrel_example: struct_Opened_Half_Plane_K1;;
+
+

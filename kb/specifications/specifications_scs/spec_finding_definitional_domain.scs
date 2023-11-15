@@ -1,0 +1,7 @@
+relation <- rrel_key_sc_element: spec_finding_definitional_domain;;
+
+spec_finding_definitional_domain -> rrel_key_sc_element: nrel_definitional_domain;;
+
+necessary_general_specification -> spec_finding_definitional_domain;;
+
+spec_finding_definitional_domain => nrel_main_idtf: [Необходимая обобщенная спецификация для поиска области определения отношения] (* <- lang_ru;; *);;

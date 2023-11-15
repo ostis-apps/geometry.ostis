@@ -1,0 +1,13 @@
+statement -> stat_parallelogram_area_side_of_polygon_height;;
+
+stat_parallelogram_area_side_of_polygon_height -> rrel_key_sc_element: concept_parallelogram: concept_parallelogram; nrel_side_of_polygon; nrel_height;;
+
+stat_parallelogram_area_side_of_polygon_height => nrel_main_idtf: [Утв.(параллелограмм; площадь*; сторона многоугольника*; высота*)] (* <- lang_ru;; *);;
+stat_parallelogram_area_side_of_polygon_height => nrel_main_idtf: [Stat.(parallelogram; area*; side of polygon*; height*)] (*<- lang_en;;*);;
+
+stat_parallelogram_area_side_of_polygon_height <= nrel_sc_text_translation: ...
+	(*
+	-> rrel_example:
+		[Площадь параллелограмма равна произведению его стороны на высоту, проведенную к этой стороне.] 
+		(* <- lang_ru;; *);;
+	*);;

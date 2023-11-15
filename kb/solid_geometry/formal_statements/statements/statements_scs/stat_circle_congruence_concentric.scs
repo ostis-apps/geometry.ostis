@@ -1,0 +1,14 @@
+stat_circle_congruence_concentric <- statement;;
+
+stat_circle_congruence_concentric -> rrel_key_sc_element: nrel_concentric; concept_circle; nrel_congruence;;
+
+stat_circle_congruence_concentric => nrel_main_idtf: [Утв.(окружность; конгруэнтность*; концентрические*)] (* <-lang_ru;; *);;
+stat_circle_congruence_concentric => nrel_main_idtf: [Stat.(circle; congruence*; concentric*)] (* <-lang_en;; *);;
+
+
+stat_circle_congruence_concentric <= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+		[Две равные окружности совпадают, если они концентрические] (* <- lang_ru;; *);;
+		*);;

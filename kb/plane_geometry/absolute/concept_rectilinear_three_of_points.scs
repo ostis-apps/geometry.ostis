@@ -1,0 +1,16 @@
+sc_node_not_relation -> concept_rectilinear_three_of_points;;
+
+concept_rectilinear_three_of_points => nrel_main_idtf:
+	[прямолинейная тройка точек] (* <- lang_ru;; *);
+	[rectilinear three of points] (* <- lang_en;; *);;
+
+concept_rectilinear_three_of_points => nrel_idtf: [Класс прямолинейных троек точек] (* <- lang_ru;; *);;
+concept_rectilinear_three_of_points => nrel_idtf: [Понятие прямолинейной тройки точек] (* <- lang_ru;; *);;
+concept_rectilinear_three_of_points => nrel_idtf: [Множество всевозможных прямолинейных троек точек] (* <- lang_ru;; *);;
+concept_rectilinear_three_of_points => nrel_idtf: [Множество знаков всевозможных прямолинейных троек точек] (* <- lang_ru;; *);;
+concept_rectilinear_three_of_points => nrel_idtf: [тройка точек, лежащих на одной прямой] (* <- lang_ru;; *);;
+concept_rectilinear_three_of_points => nrel_idtf: [тройка геометрических точек, лежащих на одной прямой] (* <- lang_ru;; *);;
+
+concept_rectilinear_three_of_points <= nrel_strict_inclusion: concept_countable_set_of_points;;
+
+concept_rectilinear_three_of_points -> rrel_example: struct_Rectilinear_triple_Of_Points_P_Q_R;;

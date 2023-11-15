@@ -1,0 +1,12 @@
+sc_node_not_relation -> concept_non_planar_surface;;
+
+concept_non_planar_surface => nrel_main_idtf:
+	[непланарная поверхность](* <- lang_ru;; *);
+	[non planar surface](* <- lang_en;; *);;
+
+concept_non_planar_surface => nrel_idtf: [Класс непланарных поверхностей] (* <- lang_ru;; *);;
+concept_non_planar_surface => nrel_idtf: [Множество всевозможных непланарных поверхностей] (* <- lang_ru;; *);;
+concept_non_planar_surface => nrel_idtf: [Множество знаков всевозможных непланарных поверхностей] (* <- lang_ru;; *);;
+				
+concept_non_planar_surface <=> nrel_antipode: concept_planar_surface;;
+

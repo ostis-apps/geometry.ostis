@@ -1,0 +1,20 @@
+task_prove_equilateral_triangles_are_similar => nrel_main_idtf: [Задача 6] (* <-lang_ru;; *);;
+
+task_prove_equilateral_triangles_are_similar <= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[Докажите, что равносторонние треугольники подобны.]
+		(* <- lang_ru;; *);;
+	*);;
+
+task_prove_equilateral_triangles_are_similar <- rrel_key_sc_element: 
+	...
+	(*
+	<- illustration;; 
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: "file://task_prove_equilateral_triangles_are_similar.png";;
+		*);;
+	*);;

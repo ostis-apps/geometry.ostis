@@ -1,0 +1,23 @@
+d_nrel_generatrix_of_cylindrical_surface <- definition;;
+
+d_nrel_generatrix_of_cylindrical_surface => nrel_main_idtf: [Опр.(образующая цилиндрической поверхности*)] (*<-lang_ru;;*);;
+d_nrel_generatrix_of_cylindrical_surface => nrel_main_idtf: [Def.(generatrix of cylindrical surface*)] (*<-lang_en;;*);;
+
+d_nrel_generatrix_of_cylindrical_surface -> rrel_key_sc_element: nrel_generatrix_of_cylindrical_surface;;
+
+d_nrel_generatrix_of_cylindrical_surface <= nrel_using_constants:
+	{
+		concept_cylindrical_surface;
+		concept_straight_line;
+		nrel_boundary_point;
+		concept_circle;
+		concept_plane;
+		nrel_perpendicular
+	};;
+
+d_nrel_generatrix_of_cylindrical_surface <= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+	[Образующая цилиндрической поверхности - это прямая, проведенная через каждую точку окружности, лежащей в некоторой плоскости, перпендикулярно этой плоскости.] (*<-lang_ru;;*);;
+	*);;

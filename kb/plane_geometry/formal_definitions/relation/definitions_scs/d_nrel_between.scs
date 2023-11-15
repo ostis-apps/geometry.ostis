@@ -1,0 +1,21 @@
+d_nrel_between
+=> nrel_main_idtf: [Поясн.(между*)] 
+	(* <- lang_ru;; *);
+=> nrel_main_idtf: [Expl.(between*)] 
+	(*<- lang_en;;*);
+<- definition;
+
+-> rrel_key_sc_element: nrel_between;
+
+<= nrel_using_constants:
+	{
+	concept_rectilinear_three_of_points;
+	concept_geometric_point
+	};
+
+<= nrel_sc_text_translation: ...
+	(*
+	-> rrel_example: 
+		[Быть между - бинарное отношение, заданное на прямолинейной тройке точек, для которых существует такой отрезок, для которого пара точек является граничными точками, а третья точка принадлежит этому отрезку.]
+		(* <- lang_ru;; *);;
+	*);;

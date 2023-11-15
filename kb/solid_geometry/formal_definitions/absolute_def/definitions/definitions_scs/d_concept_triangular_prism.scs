@@ -1,0 +1,21 @@
+d_concept_triangular_prism <- definition;;
+
+d_concept_triangular_prism => nrel_main_idtf: [Опр.(треугольная призма)] (*<-lang_ru;;*);;
+d_concept_triangular_prism => nrel_main_idtf: [Def.(triangular prism)] (*<-lang_en;;*);;
+
+d_concept_triangular_prism -> rrel_key_sc_element: concept_triangular_prism;;
+
+d_concept_triangular_prism <= nrel_using_constants:
+	{
+	concept_prism;
+	nrel_base_of_prism;
+	concept_triangle
+	};;
+
+d_concept_triangular_prism <= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+	[Треугольная призма - это призма, основанием которой является треугольник.] (*<-lang_ru;;*);;
+	*);;
+

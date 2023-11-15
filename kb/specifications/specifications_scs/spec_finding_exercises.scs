@@ -1,0 +1,7 @@
+section <- rrel_key_sc_element: spec_finding_exercises;;
+
+spec_finding_exercises -> rrel_key_sc_element: nrel_exercises;;
+
+general_specification -> spec_finding_exercises;;
+
+spec_finding_exercises => nrel_main_idtf: [Обобщённая спецификация для поиска упражнений] (* <- lang_ru;; *);;

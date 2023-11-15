@@ -1,0 +1,18 @@
+d_nrel_skew_lines <- definition;;
+
+d_nrel_skew_lines -> rrel_key_sc_element: nrel_skew_lines;;
+d_nrel_skew_lines <= nrel_using_constants:
+	{
+	concept_straight_line;
+	concept_plane
+	};;
+
+d_nrel_skew_lines => nrel_main_idtf: [Опр.(скрещивающиеся прямые*)] (*<-lang_ru;;*);;
+d_nrel_skew_lines => nrel_main_idtf: [Def.(skew lines*)] (*<-lang_en;;*);;
+
+d_nrel_skew_lines <= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+	[Скрещивающиеся прямые - это прямые, для которых не существует плоскости, в которой бы они обе лежали.] (*<-lang_ru;;*);;
+	*);;

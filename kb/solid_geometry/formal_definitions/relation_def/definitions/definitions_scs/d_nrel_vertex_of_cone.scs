@@ -1,0 +1,19 @@
+d_nrel_vertex_of_cone <- definition;;
+
+d_nrel_vertex_of_cone => nrel_main_idtf: [Опр.(вершина конуса*)] (*<-lang_ru;;*);;
+d_nrel_vertex_of_cone => nrel_main_idtf: [Def.(vertex of cone*)] (*<-lang_en;;*);;
+
+d_nrel_vertex_of_cone -> rrel_key_sc_element: nrel_vertex_of_cone;;
+
+d_nrel_vertex_of_cone <= nrel_using_constants:
+	{
+	concept_cone;
+	nrel_vertex_of_conical_surface
+	};;
+
+d_nrel_vertex_of_cone <= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example:
+	[Вершина конуса – вершина канонической поверхности, из которой образован данный конус.] (*<-lang_ru;;*);;
+	*);;

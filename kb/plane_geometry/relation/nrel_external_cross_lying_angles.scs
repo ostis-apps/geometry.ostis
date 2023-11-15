@@ -1,0 +1,27 @@
+sc_node_norole_relation -> nrel_external_cross_lying_angles;;
+
+nrel_external_cross_lying_angles => nrel_main_idtf:
+	[внешние накрест лежащие углы*]
+	(* <- lang_ru;; *);
+	[external crosswise lying angles*]
+	(*<- lang_en;;	*);;
+
+nrel_external_cross_lying_angles => nrel_idtf: [быть внешними накрест лежащими углами*]
+	(* <- lang_ru;; *);;
+
+nrel_external_cross_lying_angles => nrel_definitional_domain:
+	concept_planar_angle;;
+
+nrel_external_cross_lying_angles => nrel_first_domain: 
+	concept_planar_angle;;	
+
+nrel_external_cross_lying_angles => nrel_second_domain:
+	concept_planar_angle;;
+
+
+nrel_external_cross_lying_angles <- relation;;
+nrel_external_cross_lying_angles <- binary_relation;;
+nrel_external_cross_lying_angles <- non_oriented_relation;;
+nrel_external_cross_lying_angles <- antireflexive_relation;;
+nrel_external_cross_lying_angles <- symmetric_relation;;
+nrel_external_cross_lying_angles <- antitransitive_relation;;
