@@ -121,7 +121,7 @@ scp_program -> agent_of_calculating_trigonometric_expressions
 			-> rrel_1: rrel_fixed: rrel_scp_var: _message;;
 			-> rrel_2: rrel_fixed: rrel_scp_const: [All parameters were known!];;
 
-			=> nrel_then: .agent_of_calculating_trigonometric_expressions_operator2D6;;
+			=> nrel_then: .agent_of_calculating_trigonometric_expressions_operator_return;;
 			=> nrel_else: .agent_of_calculating_trigonometric_expressions_operator2C2;;
 			*);;
 
@@ -132,7 +132,7 @@ scp_program -> agent_of_calculating_trigonometric_expressions
 			-> rrel_1: rrel_fixed: rrel_scp_var: _message;;
 			-> rrel_2: rrel_fixed: rrel_scp_const: [More than one unknown parameter! This calculation can't be solved!];;
 
-			=> nrel_then: .agent_of_calculating_trigonometric_expressions_operator2E2;;
+			=> nrel_then: .agent_of_calculating_trigonometric_expressions_operator_return;;
 			=> nrel_else: .agent_of_calculating_trigonometric_expressions_operator2C3;;
 			*);;
 
@@ -144,7 +144,7 @@ scp_program -> agent_of_calculating_trigonometric_expressions
 			-> rrel_2: rrel_fixed: rrel_scp_const: [Congratulations! This calculation can be solved!];;
 
 			=> nrel_then: .agent_of_calculating_trigonometric_expressions_operator3A;;
-			=> nrel_else: .agent_of_calculating_trigonometric_expressions_operator2E2;;
+			=> nrel_else: .agent_of_calculating_trigonometric_expressions_operator_return;;
 			*);;
  
 	    	-> .agent_of_calculating_trigonometric_expressions_operator3A
@@ -176,7 +176,7 @@ scp_program -> agent_of_calculating_trigonometric_expressions
 			-> rrel_3: rrel_assign: rrel_scp_var: _second_vertex;;
 
 	        	=> nrel_then: .agent_of_calculating_trigonometric_expressions_operator3D;;
-	        	=> nrel_else: .agent_of_calculating_trigonometric_expressions_operator2E1;;
+	        	=> nrel_else: .agent_of_calculating_trigonometric_expressions_operator_return;;
 	        	*);;
 
 		-> .agent_of_calculating_trigonometric_expressions_operator3D 
