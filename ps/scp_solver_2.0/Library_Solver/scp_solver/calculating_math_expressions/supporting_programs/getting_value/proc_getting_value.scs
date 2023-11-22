@@ -166,7 +166,7 @@ scp_program -> proc_getting_value
 			-> rrel_set_1: rrel_assign: rrel_scp_var: _maybe_units_of_measure2;;
 
 			=> nrel_then: .proc_getting_value_operator2C;;
-			=> nrel_else: .proc_getting_value_operator_message_error;;
+			=> nrel_else: .proc_getting_value_operator_return;;
 			*);;
 
 		-> .proc_getting_value_operator2C
