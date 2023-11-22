@@ -15,12 +15,12 @@ ex6_s_triangles_classification
 <= nrel_sc_text_translation:
 	...
 	(* 
-	-> rrel_example: "file://htmls/ex6_s_triangles_classification_ru.html" (* <-lang_ru;; *);;
+	-> rrel_example: "file://htmls/ex6_s_triangles_classification_ru.html"(* <-lang_ru;; => nrel_format: format_html;;*) ;;
 	*);
 <= nrel_sc_text_translation:
 	...
 	(* 
-	-> rrel_example: "file://htmls/ex6_s_triangles_classification_en.html" (* <-lang_en;; *);;
+	-> rrel_example: "file://htmls/ex6_s_triangles_classification_en.html"(* <-lang_en;; => nrel_format: format_html;;*) ;;
 	*);
 
 <- rrel_key_sc_element: 
@@ -31,6 +31,6 @@ ex6_s_triangles_classification
 		...
 		(*
 		-> rrel_example: 
-		"file://images/ex6_s_triangles_classification.png";;
+		"file://images/ex6_s_triangles_classification.png"(*=> nrel_format: format_png;;*);;
 		*);; 
 	*);;
