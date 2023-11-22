@@ -15,7 +15,7 @@ ex7_s_triangles_area
 <= nrel_sc_text_translation:
 	...
 	(* 
-	-> rrel_example: "file://htmls/ex7_s_triangles_area_ru.html" (* <-lang_ru;; *);;
+	-> rrel_example: "file://htmls/ex7_s_triangles_area_ru.html"(* <-lang_ru;; => nrel_format: format_html;;*) ;;
 	*);
 
 <- rrel_key_sc_element: 
@@ -26,6 +26,6 @@ ex7_s_triangles_area
 	...
 		(*
 		-> rrel_example: 
-		"file://images/ex7_s_triangles_area.png";;
+		"file://images/ex7_s_triangles_area.png"(*=> nrel_format: format_png;;*);;
 		*);; 
 	*);;
