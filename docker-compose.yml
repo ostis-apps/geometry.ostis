@@ -1,21 +1,25 @@
 services:
   web:
     image: ostis/sc-web:0.8.0-Fusion
+    container_name: geometry-web${NAME_SUFFIX:-}
     build:
       context: ./sc-web
     restart: unless-stopped
     ports:
-      - "8000:8000"
+      - "${SC_WEB_PORT:-8000}:8000"
     networks:
-      - sc-machine
+      - geometry
     command:
+      - "--public-url=${PUBLIC_SC_URL:-ws://localhost:8090/ws_json}"
       - "--server-host=machine"
+      - "--server-port=8090"
     depends_on:
       machine:
         condition: service_healthy
 
   machine:
     image: ostis/sc-machine:0.8.0-Fusion
+    container_name: geometry-problem-solver${NAME_SUFFIX:-}
     build:
       context: ./sc-machine
     restart: unless-stopped
@@ -23,9 +27,9 @@ services:
       - ./:/kb
       - kb-binary:/kb.bin
     networks:
-      - sc-machine
+      - geometry
     ports:
-      - "8090:8090"
+      - "${PROBLEM_SOLVER_PORT:-8090}:8090"
     healthcheck:
       test: "python3 /sc-machine/scripts/healthcheck.py"
       interval: 5s
@@ -42,7 +46,11 @@ services:
       - "serve"
 
 volumes:
-  kb-binary: {}
+  kb-binary:
+    name: geometry-kb${NAME_SUFFIX:-}
+    driver: local
 
 networks:
-  sc-machine: {}
+  geometry:
+    name: geometry${NAME_SUFFIX:-}
+    driver: bridge
