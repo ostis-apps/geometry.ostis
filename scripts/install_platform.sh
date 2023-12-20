@@ -18,3 +18,9 @@ stage "Install ostis-web-platform"
 "${PLATFORM_PATH}/scripts/build_kb.sh"
 
 stage "OSTIS-web-platform installed successfully"
+
+CHANGE_LANG_SCRIPT="${CURRENT_DIR}/ChangeDefaultLangToEn.sh"
+
+bash "${CHANGE_LANG_SCRIPT}"
+
+stage "Default language changed to English"
