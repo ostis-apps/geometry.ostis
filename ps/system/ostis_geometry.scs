@@ -19,7 +19,9 @@ rrel_key_sc_element -> (logical_hierarchy_of_statements_of_subject_domain_of_tri
 (* <- rrel_key_sc_element;; *);;
 *);;*);;
 
-knowledge_base_of_Euclidean_geometry => nrel_main_idtf: [База знаний ИСС по геометрии] (*<- lang_ru;; *);;
+knowledge_base_of_Euclidean_geometry 
+	=> nrel_main_idtf: [Knowledge base of IIS of geometry] (*<- lang_en;; *);
+	=> nrel_main_idtf: [База знаний ИСС по геометрии] (*<- lang_ru;; *);;
 documentation_Euclidean_geometry => nrel_main_idtf: [Документация. Геометрия Евклида] (*<- lang_ru;; *);;
 documentation_Ostis_Geometry => nrel_main_idtf: [Документация. ИСС по геометрии] (* <- lang_ru;; *);;
 context_Ostis_Geometry_within_Global_knowledge_base => nrel_main_idtf: [Контекст ИСС по геометрии в рамках Глобальной базы знаний] (*<- lang_ru;; *);;
