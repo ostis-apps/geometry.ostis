@@ -16,9 +16,9 @@ Then open http://127.0.0.1:8002/ in your browser
 ## Installation
 ```sh
 #Terminal
-git clone https://github.com/MakarenkoAI/geometry.ostis.git --recursive
+git clone https://github.com/ostis-apps/geometry.ostis.git --recursive
 cd geometry.ostis
-git checkout feat/new_version
+git checkout develop
 cd scripts
 ./install_platform.sh
 
