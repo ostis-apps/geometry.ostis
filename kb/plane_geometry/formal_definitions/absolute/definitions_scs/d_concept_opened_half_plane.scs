@@ -1,6 +1,7 @@
 d_concept_opened_half_plane <- definition;;
 
-d_concept_opened_half_plane => nrel_main_idtf: [Опр.(открытая полуплоскость)] (* <- lang_ru;; *);;
+d_concept_opened_half_plane => nrel_main_idtf: [Опр.(открытая полуплоскость)] (* <- lang_ru;; *);
+[Def.(open half-plane)](*<- lang_en;;*);;
  
 d_concept_opened_half_plane -> rrel_key_sc_element: concept_opened_half_plane;;
 
@@ -9,7 +10,9 @@ d_concept_opened_half_plane <= nrel_sc_text_translation:
 		(*
 		-> rrel_example: 
 			[Открытая полуплоскость - это полуплоскость, которая не включает в себя прямую, являющуюся ее границей.]
-			(* <- lang_ru;; *);;
+			(* <- lang_ru;; *);
+			[An open half-plane is a planar region consisting of all points on one side of an infinite straight line, excluding the points on the line itself.]
+			(* <-lang_en;; *);;
 		*);;
 
 d_concept_opened_half_plane <= nrel_using_constants:

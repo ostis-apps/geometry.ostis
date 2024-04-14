@@ -1,7 +1,9 @@
 d_concept_opened_ray <- definition;;
 
-d_concept_opened_ray => nrel_main_idtf: [Опр.(открытый луч)] (* <- lang_ru;; *);;
-
+d_concept_opened_ray => nrel_main_idtf: 
+	[Опр.(открытый луч)] (* <- lang_ru;; *);
+	[Def.(open ray)](* <-lang_en;;*);;
+	
 d_concept_opened_ray -> rrel_key_sc_element: concept_opened_ray;;
 
 d_concept_opened_ray <= nrel_sc_text_translation: 
@@ -9,7 +11,9 @@ d_concept_opened_ray <= nrel_sc_text_translation:
 	(*
 	-> rrel_example: 
 		[Открытый луч - луч, из которого исключена начальная точка.]
-		(* <- lang_ru;; *);;
+		(* <- lang_ru;; *);
+		[An open ray is a one-dimensional shape with no boundary that stretches infinitely in one direction, but stops in another direction.]
+		(* <-lang_en;;*);;
 	*);;
 
 d_concept_opened_ray <= nrel_using_constants:
