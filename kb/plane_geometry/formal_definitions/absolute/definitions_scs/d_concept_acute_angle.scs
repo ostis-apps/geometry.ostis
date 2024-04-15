@@ -1,6 +1,10 @@
 d_concept_acute_angle <- definition;;
 
-d_concept_acute_angle => nrel_main_idtf: [Опр.(острый угол)] (* <- lang_ru;; *);;
+d_concept_acute_angle => nrel_main_idtf: 
+	[Опр.(острый угол)] 
+	(* <- lang_ru;; *);
+	[Def.(acute angle)] 
+	(* <- lang_en;; *);;
 
 d_concept_acute_angle -> rrel_key_sc_element: concept_acute_angle;;
 
@@ -8,7 +12,10 @@ d_concept_acute_angle <= nrel_sc_text_translation:
 	...
 	(*
 	-> rrel_example: 
-		[Острый угол - угол, меньший прямого угла (то есть больший 0, но меньший 90 градусов).]	(* <- lang_ru;; *);;
+		[Острый угол - угол, меньший прямого угла (то есть больший 0, но меньший 90 градусов).]
+		(* <- lang_ru;; *);
+		[An acute angle is an angle less than a right angle (greater than 0, but less than 90 degrees).]
+		(* <- lang_en;; *);;
 	*);;
 
 d_concept_acute_angle <= nrel_using_constants:

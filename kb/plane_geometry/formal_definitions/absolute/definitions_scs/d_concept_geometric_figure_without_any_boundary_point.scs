@@ -1,6 +1,10 @@
 d_concept_geometric_figure_without_any_boundary_point <- definition;;
 
-d_concept_geometric_figure_without_any_boundary_point => nrel_main_idtf: [Опр.(геометрическая фигура, не имеющая граничных точек)] (* <- lang_ru;; *);;
+d_concept_geometric_figure_without_any_boundary_point => nrel_main_idtf: 
+	[Опр.(геометрическая фигура, не имеющая граничных точек)] 
+	(* <- lang_ru;; *);
+	[Def.(geometri cfigur ewithout any boundary point)] 
+	(* <- lang_en;; *);;
 
 d_concept_geometric_figure_without_any_boundary_point -> rrel_key_sc_element: concept_geometric_figure_without_any_boundary_point;;
 
@@ -9,7 +13,9 @@ d_concept_geometric_figure_without_any_boundary_point <= nrel_sc_text_translatio
 	(*
 	-> rrel_example:
 		[Геометрическая фигура, не имеющая граничных точек - это фигура, для которой не существует ни одной граничной точки.]
-		(* <- lang_ru;;	*);;
+		(* <- lang_ru;;	*);
+		[A geometric figure that does not have boundary points is a figure for which there are no boundary points.]
+		(* <- lang_en;;	*);;
 	*);;
 
 d_concept_geometric_figure_without_any_boundary_point <= nrel_using_constants:

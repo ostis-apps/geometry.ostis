@@ -1,6 +1,10 @@
 d_concept_non_rectlinear_geometric_figure <- definition;;
 
-d_concept_non_rectlinear_geometric_figure => nrel_main_idtf: [Опр.(непрямолинейная фигура)] (* <- lang_ru;; *);;
+d_concept_non_rectlinear_geometric_figure => nrel_main_idtf: 
+	[Опр.(непрямолинейная фигура)] 
+	(* <- lang_ru;; *);
+	[Def.(non rectlinear geometric figure)] 
+	(* <- lang_en;; *);;
 
 d_concept_non_rectlinear_geometric_figure -> rrel_key_sc_element: concept_non_rectlinear_geometric_figure;;
 
@@ -9,7 +13,9 @@ d_concept_non_rectlinear_geometric_figure <= nrel_sc_text_translation:
 	(*
 	-> rrel_example: 
 		[Непрямолинейная фигура - геометрическая фигура, для которой не существует прямой, являющейся ее надмножеством.]
-		(* <- lang_ru;; *);;
+		(* <- lang_ru;; *);
+		[A non-rectilinear figure is a geometric figure for which there is no straight line that is superset for this figure.]
+		(* <- lang_en;; *);;
 	*);;
 
 d_concept_non_rectlinear_geometric_figure <= nrel_using_constants:

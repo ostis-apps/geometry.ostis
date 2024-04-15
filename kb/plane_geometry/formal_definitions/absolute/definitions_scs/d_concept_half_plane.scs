@@ -1,6 +1,10 @@
 d_concept_half_plane <- definition;; 
 
-d_concept_half_plane => nrel_main_idtf: [Опр.(полуплоскость)] (* <- lang_ru;; *);;
+d_concept_half_plane => nrel_main_idtf: 
+	[Опр.(полуплоскость)] 
+	(* <- lang_ru;; *);
+	[Def.(half plane)] 
+	(* <- lang_en;; *);;
 
 d_concept_half_plane -> rrel_key_sc_element: concept_half_plane;;
 
@@ -9,7 +13,9 @@ d_concept_half_plane <= nrel_sc_text_translation:
 	(*
 	-> rrel_example: 
 		[Полуплоскость - это множество точек плоскости такое, что для любой пары точек выполняется требование: отрезок с концами в этих точках не пересекает прямую, являющуюся границей полуплоскости.]
-		(* <- lang_ru;; *);;
+		(* <- lang_ru;; *);
+		[A half-plane is a set of points on a plane such that for any pair of points the following requirement is met: a segment with ends at these points does not intersect the straight line that is the boundary of the half-plane.]
+		(* <- lang_en;; *);;
 	*);;
 
 d_concept_half_plane <= nrel_using_constants:

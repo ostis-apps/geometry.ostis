@@ -1,6 +1,10 @@
 d_concept_non_planar_line <- definition;;
 
-d_concept_non_planar_line => nrel_main_idtf: [Опр.(непланарная линия)] (* <- lang_ru;; *);;
+d_concept_non_planar_line => nrel_main_idtf: 
+	[Опр.(непланарная линия)] 
+	(* <- lang_ru;; *);
+	[Def.(non planar line)] 
+	(* <- lang_en;; *);;
  
 d_concept_non_planar_line -> rrel_key_sc_element: concept_non_planar_line;;
 
@@ -9,7 +13,9 @@ d_concept_non_planar_line <= nrel_sc_text_translation:
 	(*
 	-> rrel_example: 
 		[Непланарная линия - линия, не все точки которой лежат в одной плоскости.]
-		(* <- lang_ru;; *);;
+		(* <- lang_ru;; *);
+		[A non-planar line is a line in which not all points belong to the same plane.]
+		(* <- lang_en;; *);;
 	*);;
 
 d_concept_non_planar_line <= nrel_using_constants:

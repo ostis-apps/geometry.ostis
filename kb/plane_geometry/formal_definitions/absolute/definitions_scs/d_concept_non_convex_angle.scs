@@ -1,6 +1,10 @@
 d_concept_non_convex_angle <- definition;; 
 
-d_concept_non_convex_angle => nrel_main_idtf: [Опр.(невыпуклый угол)]  (* <- lang_ru;; *);;
+d_concept_non_convex_angle => nrel_main_idtf: 
+	[Опр.(невыпуклый угол)]  
+	(* <- lang_ru;; *);
+	[Def.(non convex angle)]  
+	(* <- lang_en;; *);;
 
 d_concept_non_convex_angle -> rrel_key_sc_element: concept_non_convex_angle;;
 
@@ -9,7 +13,9 @@ d_concept_non_convex_angle <= nrel_sc_text_translation:
 	(*
 	-> rrel_example: 
 		[Угол является невыпуклым углом, когда он имеет величину угла, большую, чем 180 угловых градусов, и меньшую, чем 360 угловых градусов.]
-		(* <- lang_ru;;	*);;
+		(* <- lang_ru;;	*);
+		[An angle is a non-convex angle when it has an angle magnitude greater than 180 arc degrees and less than 360 arc degrees.]
+		(* <- lang_en;;	*);;
 	*);;
 
 d_concept_non_convex_angle <= nrel_using_constants:

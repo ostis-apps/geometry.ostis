@@ -1,6 +1,10 @@
 d_concept_closed_polyline <- definition;;
 
-d_concept_closed_polyline => nrel_main_idtf: [Опр.(замкнутая ломаная)] (* <- lang_ru;; *);;
+d_concept_closed_polyline => nrel_main_idtf:
+	[Опр.(замкнутая ломаная)]
+	(* <- lang_ru;; *);
+	[Def.(concept closed polyline)]
+	(* <- lang_en;; *);;
 
 d_concept_closed_polyline -> rrel_key_sc_element: concept_closed_polyline;;
 
@@ -9,7 +13,9 @@ d_concept_closed_polyline <= nrel_sc_text_translation:
 	(*
 	-> rrel_example: 
 		[Замкнутая ломаная - ломаная, у которой совпадают концы.]
-		(* <- lang_ru;; *);;
+		(* <- lang_ru;; *);
+		[A closed polyline is an open polyline for which the last point is at the same position as the first point.]
+		(* <- lang_en;; *);;
 	*);;
 
 d_concept_closed_polyline <= nrel_using_constants:

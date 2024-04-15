@@ -1,7 +1,10 @@
 d_concept_circle <- definition;;
 
-d_concept_circle => nrel_main_idtf: [Опр.(окружность)] (* <- lang_ru;; *);;
-d_concept_circle => nrel_main_idtf: [Def.(circle)] (* <- lang_en;; *);;
+d_concept_circle => nrel_main_idtf: 
+	[Опр.(окружность)] 
+	(* <- lang_ru;; *);
+ 	[Def.(circle)] 
+ 	(* <- lang_en;; *);;
  
 d_concept_circle -> rrel_key_sc_element: concept_circle;;
 
@@ -9,7 +12,9 @@ d_concept_circle <= nrel_sc_text_translation:
 	...
 	(*
 	-> rrel_example: 
-		[Окружность - геометрическая фигура, состоящая из всех точек плоскости, расположенных на одинаковом расстоянии от некоторой точки, называемой центром окружности]
+		[Окружность - геометрическая фигура, состоящая из всех точек плоскости, расположенных на одинаковом расстоянии от некоторой точки, называемой центром окружности.]
+		(* <- lang_ru;; *);
+		[Circle is a place curve with every point equidistant from the center.]
 		(* <- lang_ru;; *);;
 	*);;
 

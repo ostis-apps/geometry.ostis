@@ -1,6 +1,10 @@
 d_concept_curved_line <- definition;;
 
-d_concept_curved_line => nrel_main_idtf: [Опр.(кривая)] (* <- lang_ru;; *);;
+d_concept_curved_line => nrel_main_idtf:
+	[Опр.(кривая)]
+	(* <- lang_ru;; *);
+	[Def.(curved line)]
+	(* <- lang_en;; *);;
  
 d_concept_curved_line -> rrel_key_sc_element: concept_curved_line;;
 
@@ -9,7 +13,9 @@ d_concept_curved_line <= nrel_sc_text_translation:
 	(*
 	-> rrel_example: 
 		[Кривая - линия, для которой не существует такой прямой, все точки которой совпадали бы со всеми точками кривой.]
-		(* <- lang_ru;; *);;
+		(* <- lang_ru;; *);
+		[A curve is a line for which there is no such straight line, all points of which would coincide with all points of the curve.]
+		(* <- lang_en;; *);;
 	*);;
 
 d_concept_curved_line <= nrel_using_constants:
