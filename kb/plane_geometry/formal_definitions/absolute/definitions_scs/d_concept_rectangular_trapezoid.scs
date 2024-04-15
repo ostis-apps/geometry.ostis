@@ -1,7 +1,11 @@
 d_concept_rectangular_trapezoid <- definition;;
 
-d_concept_rectangular_trapezoid => nrel_main_idtf: [Опр.(прямоугольная трапеция)] (* <- lang_ru;; *);;
- 
+d_concept_rectangular_trapezoid => nrel_main_idtf:
+	[Опр.(прямоугольная трапеция)] 
+	(* <- lang_ru;; *);
+	[Def.(right trapezoid)]
+	(*<-lang_en;;*);;
+
 d_concept_rectangular_trapezoid -> rrel_key_sc_element: concept_rectangular_trapezoid;;
 
 d_concept_rectangular_trapezoid <= nrel_sc_text_translation: 
@@ -9,7 +13,9 @@ d_concept_rectangular_trapezoid <= nrel_sc_text_translation:
 	(*
 	-> rrel_example: 
 		[Прямоугольная трапеция - трапеция, у которой одна из боковых сторон перпендикулярна основаниям.]
-		(* <- lang_ru;; *);;
+		(* <- lang_ru;; *);
+		[A right trapezoid is a quadrilateral with exactly one pair of parallel sides, where one pair of opposite angles are right angles.]
+		(* <-lang_en;;*);;
 	*);;
 
 d_concept_rectangular_trapezoid <= nrel_using_constants:

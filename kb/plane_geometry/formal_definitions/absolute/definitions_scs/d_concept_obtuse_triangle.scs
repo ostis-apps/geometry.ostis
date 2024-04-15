@@ -1,8 +1,10 @@
 d_concept_obtuse_triangle <- definition;;
 
 d_concept_obtuse_triangle => nrel_main_idtf:
-	[Опр.(тупоугольный треугольник)] (* <- lang_ru;; *);
-	[Def.(obtuse-angled triangle)] (* <-lang_en;; *);;
+	[Опр.(тупоугольный треугольник)]
+	(* <- lang_ru;; *);
+	[Def.(obtuse-angled triangle)]
+	(* <-lang_en;; *);;
 d_concept_obtuse_triangle -> rrel_key_sc_element: concept_obtuse_triangle;;
 
 d_concept_obtuse_triangle <= nrel_sc_text_translation: 

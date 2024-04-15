@@ -1,7 +1,10 @@
 e_concept_geometric_body <- explanation;;
 
-e_concept_geometric_body => nrel_main_idtf: [Поясн.(геометрическое тело)] (* <- lang_ru;; *);;
-e_concept_geometric_body => nrel_main_idtf: [Expl.(geometric body)] (* <- lang_en;; *);;
+e_concept_geometric_body => nrel_main_idtf:
+	[Поясн.(геометрическое тело)]
+	(* <- lang_ru;; *);
+	[Expl.(geometric body)]
+	(* <- lang_en;; *);;
  
 e_concept_geometric_body -> rrel_key_sc_element: concept_geometric_body;;
 
@@ -10,5 +13,7 @@ e_concept_geometric_body <= nrel_sc_text_translation:
 	(*
 	-> rrel_example: 
 		[Геометрическое тело - ограниченная часть пространства, имеющая три измерения, которые мы условно называем длиной, шириной и высотой.]
-		(* <- lang_ru;; *);;
+		(* <- lang_ru;; *);
+		[Geometric bodies are three-dimensional figures characterized by length, width, and height.]
+		(* <- lang_en;; *);;
 	*);;

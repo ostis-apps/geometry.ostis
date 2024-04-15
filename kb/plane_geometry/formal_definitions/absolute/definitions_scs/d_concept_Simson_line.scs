@@ -1,7 +1,10 @@
 d_concept_Simson_line <- definition;;
 
-d_concept_Simson_line => nrel_main_idtf: [Опр.(прямая Симсона)] (* <- lang_ru;;*);; 
-d_concept_Simson_line => nrel_main_idtf: [Def.(Simson line)](* <- lang_en;; *);;
+d_concept_Simson_line => nrel_main_idtf: 
+	[Опр.(прямая Симсона)]
+	(* <- lang_ru;;*);
+	[Def.(Simson line)]
+	(* <- lang_en;; *);;
 
 d_concept_Simson_line -> rrel_key_sc_element: concept_Simson_line;; 
 
@@ -10,7 +13,9 @@ d_concept_Simson_line <= nrel_sc_text_translation:
 	(*
 	-> rrel_example:
 		[Прямая Симсона - это прямая, на которой лежат основания перпендикуляров, опущенных из точки описанной окружности треугольника на его стороны или продолжение сторон.]
-		(* <- lang_ru;; *);;
+		(* <- lang_ru;; *);
+		[Simpson Line - a line on which the feet of the perpendiculars dropped from the vertices of a triangle's circumcircle to its sides or their extensions lie.]
+		(* <-lang_en;;*);;
 	*);;
 
 d_concept_Simson_line <= nrel_using_constants:

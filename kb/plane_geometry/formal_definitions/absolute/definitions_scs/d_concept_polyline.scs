@@ -1,7 +1,10 @@
 d_concept_polyline <- definition;;
 
-d_concept_polyline => nrel_main_idtf: [Опр.(ломаная)] (* <- lang_ru;; *);;
-d_concept_polyline => nrel_main_idtf: [Def.(polyline)] (* <- lang_en;; *);;
+d_concept_polyline => nrel_main_idtf:
+	[Опр.(ломаная)]
+	(* <- lang_ru;; *);
+	[Def.(polyline)]
+	(* <- lang_en;; *);;
 
 d_concept_polyline -> rrel_key_sc_element: concept_polyline;;
 
@@ -10,7 +13,9 @@ d_concept_polyline <= nrel_sc_text_translation:
 	(*
 	-> rrel_example: 
 		[Ломаная - это геометрическая фигура, состоящая из множества геометрических точек и множества отрезков, соединяющих эти точки, и граничные точки этих отрезков не лежат на одной прямой.]
-		(* <- lang_ru;; *);;
+		(* <- lang_ru;; *);
+		[A polyline is a list of points, where line segments are drawn between consecutive points.]
+		(* <-lang_en;;*);;
 	*);;
 
 d_concept_polyline <= nrel_using_constants:
