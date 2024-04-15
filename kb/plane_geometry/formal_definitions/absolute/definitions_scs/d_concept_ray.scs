@@ -1,7 +1,10 @@
 d_concept_ray <- definition;;
 
-d_concept_ray => nrel_main_idtf: [Опр.(луч)] (* <- lang_ru;; *);;
-d_concept_ray => nrel_main_idtf: [Def.(ray)] (* <- lang_en;; *);;
+d_concept_ray => nrel_main_idtf:
+	[Опр.(луч)]
+	(* <- lang_ru;; *);
+	[Def.(ray)]
+	(* <- lang_en;; *);;
 
 d_concept_ray -> rrel_key_sc_element: concept_ray;;
 
@@ -10,7 +13,9 @@ d_concept_ray <= nrel_sc_text_translation:
 	(*
 	-> rrel_example: 
 		[Луч - часть прямой, которая состоит из всех точек этой прямой, лежащих по одну сторону от точки, называемой начальной точкой луча.]
-		(* <- lang_ru;; *);;
+		(* <- lang_ru;; *);
+		[A ray is a part of a line that has a fixed starting point but no endpoint.]
+		(* <- lang_en;;*);;
 	*);;
 
 d_concept_ray <= nrel_using_constants:

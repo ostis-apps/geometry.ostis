@@ -1,7 +1,10 @@
 d_concept_polygon <- definition;;
 
-d_concept_polygon => nrel_main_idtf: [Опр.(многоугольник)] (* <- lang_ru;; *);;
-d_concept_polygon => nrel_main_idtf: [Def.(polygon)] (* <- lang_en;; *);;
+d_concept_polygon => nrel_main_idtf:
+	[Опр.(многоугольник)]
+	(* <- lang_ru;; *);
+	[Def.(polygon)]
+	(* <- lang_en;; *);;
 
 d_concept_polygon -> rrel_key_sc_element: concept_polygon;;
 
@@ -10,7 +13,9 @@ d_concept_polygon <= nrel_sc_text_translation:
 	(*
 	-> rrel_example: 
 		[Многоугольник - это геометрическая фигура, которая состоит из замкнутой ломаной без самопересечений и части плоскости, ограниченной этой ломаной.]
-		(* <- lang_ru;; *);;
+		(* <- lang_ru;; *);
+		[A polygon is a flat or planar, two-dimensional closed shape bounded by straight sides.]
+		(* <-lang_en;;*);;
 	*);;
 
 d_concept_polygon <= nrel_using_constants:

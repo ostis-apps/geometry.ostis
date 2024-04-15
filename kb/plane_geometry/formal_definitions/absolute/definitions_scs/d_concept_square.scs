@@ -1,7 +1,10 @@
 d_concept_square <- definition;;
 
-d_concept_square => nrel_main_idtf: [Опр.(квадрат)] (* <- lang_ru;; *);;
-d_concept_square => nrel_main_idtf: [Def.(square)] (* <- lang_en;; *);;
+d_concept_square => nrel_main_idtf: 
+	[Опр.(квадрат)]
+	(* <- lang_ru;; *);
+	[Def.(square)]
+	(* <- lang_en;; *);;
 
 d_concept_square -> rrel_key_sc_element: concept_square;;
 
@@ -10,7 +13,9 @@ d_concept_square <= nrel_sc_text_translation:
 	(*
 	-> rrel_example: 
 		[Квадрат - четырёхугольник, у которого все стороны и все углы равны друг другу]
-		(* <- lang_ru;; *);;
+		(* <- lang_ru;; *);
+		[A square is a regular polygon having four equal sides and equal angles that measure 90° each.]
+		(* <- lang_en;;*);;
 	*);;
 
 d_concept_square <= nrel_using_constants:
@@ -18,5 +23,6 @@ d_concept_square <= nrel_using_constants:
 	concept_quadrilateral;
 	nrel_side_of_polygon; 
 	concept_angle;
+	concept_right_angle;
 	nrel_congruence
 	};;

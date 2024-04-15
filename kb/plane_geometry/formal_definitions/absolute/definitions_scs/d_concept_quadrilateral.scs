@@ -1,7 +1,10 @@
 d_concept_quadrilateral <- definition;;
 
-d_concept_quadrilateral => nrel_main_idtf: [Опр.(четырехугольник)] (* <- lang_ru;; *);;
-d_concept_quadrilateral => nrel_main_idtf: [Def.(quadrilateral)] (* <- lang_en;; *);;
+d_concept_quadrilateral => nrel_main_idtf:
+	[Опр.(четырехугольник)]
+	(* <- lang_ru;; *);
+	[Def.(quadrilateral)]
+	(* <- lang_en;; *);;
 
 d_concept_quadrilateral -> rrel_key_sc_element: concept_quadrilateral;;
 
@@ -10,7 +13,9 @@ d_concept_quadrilateral <= nrel_sc_text_translation:
 	(*
 	-> rrel_example: 
 		[Четырехугольник - замкнутая ломаная линия, обазованная четырьмя различными, но лежащими в одной плоскости точками.]
-		(* <- lang_ru;; *);;
+		(* <- lang_ru;; *);
+		[A quadrilateral is a polygon having four sides, four angles, and four vertices.]
+		(* <-lang_en;;*);;
 	*);;
 
 d_concept_quadrilateral <= nrel_using_constants:

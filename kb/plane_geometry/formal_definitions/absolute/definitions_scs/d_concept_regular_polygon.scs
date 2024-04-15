@@ -1,6 +1,10 @@
 d_concept_regular_polygon <- definition;;
 
-d_concept_regular_polygon => nrel_main_idtf: [Опр.(правильный многоугольник)] (* <- lang_ru;; *);;
+d_concept_regular_polygon => nrel_main_idtf:
+	[Опр.(правильный многоугольник)] 
+	(* <- lang_ru;; *);
+	[Deg.(regular polygon)]
+	(* <-lang_en;;*);;
 
 d_concept_regular_polygon -> rrel_key_sc_element: concept_regular_polygon;;
 
@@ -9,7 +13,9 @@ d_concept_regular_polygon <= nrel_sc_text_translation:
 	(*
 	-> rrel_example: 
 		[Правильный многоугольник - многоугольник, у которого все стороны и все углы равны.]
-		(* <- lang_ru;; *);;
+		(* <- lang_ru;; *);
+		[Regular polygons are polygons where all sides and interior angles are equal. ]
+		(* <-lang_en;; *);;
 	*);;
 
 d_concept_regular_polygon <= nrel_using_constants:

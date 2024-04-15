@@ -1,6 +1,10 @@
 d_concept_planar_surface <- definition;; 
 
-d_concept_planar_surface => nrel_main_idtf: [Опр.(планарная поверхность)] (* <- lang_ru;; *);;
+d_concept_planar_surface => nrel_main_idtf:
+	[Опр.(планарная поверхность)]
+	(* <- lang_ru;; *);
+	[Def.(planer surface)]
+	(* <-lang_en;;*);;
 
 d_concept_planar_surface -> rrel_key_sc_element: concept_planar_surface;;
 
@@ -9,7 +13,10 @@ d_concept_planar_surface <= nrel_sc_text_translation:
 	(*
 	-> rrel_example: 
 		[Планарная поверхность - это пересечение понятия планарной фигуры и понятия поверхности.]
-		(* <- lang_ru;; *);;
+		(* <- lang_ru;; *);
+		[A planar surface is a flat, two-dimensional surface with length and width but no height, conforming to a plane that is straight in two directions.]
+		(* <-lang_en;;*);;
+
 	*);;
 
 d_concept_planar_surface <= nrel_using_constants:
