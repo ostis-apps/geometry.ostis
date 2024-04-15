@@ -31,4 +31,14 @@ nrel_secant_of_circle => nrel_first_domain:
 nrel_secant_of_circle => nrel_second_domain: 
 	concept_straight_line;;
 
-
+nrel_secant_of_circle <- rrel_key_sc_element: 
+	...
+	(*
+	<- illustration;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			"file://images/circle_secant.png"(*=> nrel_format: format_png;;*);;
+		*);; 
+	*);;

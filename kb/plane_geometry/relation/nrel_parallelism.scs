@@ -20,10 +20,28 @@ nrel_parallelism => nrel_definitional_domain:
 	
 
 nrel_parallelism => nrel_first_domain: 
-	concept_plane;;
+  ...
+	(*
+	<= nrel_combination: 
+		{	 
+		concept_plane;
+		concept_ray;
+		concept_segment;
+		concept_straight_line
+		};;
+	*);;
 
 nrel_parallelism => nrel_second_domain: 
-	concept_straight_line;;
+  ...
+	(*
+	<= nrel_combination: 
+		{	 
+		concept_plane;
+		concept_straight_line;
+		concept_segment;
+		concept_ray
+		};;
+	*);;
 
 nrel_parallelism <- relation;;
 nrel_parallelism <- binary_relation;;
