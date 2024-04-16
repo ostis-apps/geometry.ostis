@@ -9,3 +9,14 @@ concept_Apollonius_circle => nrel_idtf: [множесто окружностей
 
 concept_Apollonius_circle <= nrel_strict_inclusion: concept_circle;;
 
+concept_Apollonius_circle <- rrel_key_sc_element: 
+	...
+	(*
+	<- illustration;; 
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: 
+		"file://images/concept_Apollonius_circle.png"(*=> nrel_format: format_png;;*);;
+		*);;
+	*);;
+

@@ -1,6 +1,10 @@
 d_concept_geometric_figure_with_all_boundary_points <- definition;;
 
-d_concept_geometric_figure_with_all_boundary_points => nrel_main_idtf: [Опр.(геометрическая фигура, в состав которой входят все граничные точки)] (* <- lang_ru;; *);;
+d_concept_geometric_figure_with_all_boundary_points => nrel_main_idtf: 
+	[Опр.(геометрическая фигура, в состав которой входят все граничные точки)] 
+	(* <- lang_ru;; *);
+	[Def.(geometric figure with all boundary points)] 
+	(* <- lang_en;; *);;
 
 d_concept_geometric_figure_with_all_boundary_points -> rrel_key_sc_element: concept_geometric_figure_with_all_boundary_points;;
 
@@ -9,7 +13,9 @@ d_concept_geometric_figure_with_all_boundary_points <= nrel_sc_text_translation:
 	(*
 	-> rrel_example: 
 		[Геометрическая фигура, в состав которой входят все граничные точки - это фигура, любая граничная точка которой принадлежит данной фигуре.]
-		(* <- lang_ru;; *);;
+		(* <- lang_ru;; *);
+		[A geometric figure, which includes all boundary points, is a figure, any boundary point of which belongs to this figure.]
+		(* <- lang_en;; *);;
 	*);;
 
 d_concept_geometric_figure_with_all_boundary_points <= nrel_using_constants:

@@ -1,6 +1,10 @@
 d_concept_convex_polygon <- definition;;
 
-d_concept_convex_polygon => nrel_main_idtf: [Опр.(выпуклый многоугольник)] (* <- lang_ru;; *);;
+d_concept_convex_polygon => nrel_main_idtf:
+	[Опр.(выпуклый многоугольник)]
+	(* <- lang_ru;; *);
+	[Опр.(concept convex polygon)]
+	(* <- lang_en;; *);;
 
 d_concept_convex_polygon -> rrel_key_sc_element: concept_convex_polygon;;
 
@@ -9,7 +13,9 @@ d_concept_convex_polygon <= nrel_sc_text_translation:
 	(*
 	-> rrel_example:
 		[Выпуклый многоугольник - многоугольник, для каждой стороны которого он расположен по одну сторону от прямой, проведённой через эту сторону.]
-		(* <- lang_ru;; *);;
+		(* <- lang_ru;; *);
+		[A convex polygon is any shape that has all interior angles that measure less than 180 degrees.]
+		(* <- lang_en;; *);;
 	*);;
 
 d_concept_convex_polygon <= nrel_using_constants:

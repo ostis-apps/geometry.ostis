@@ -1,7 +1,10 @@
 d_concept_hexagon <- definition;;
 
-d_concept_hexagon => nrel_main_idtf: [Опр.(шестиугольник)] (* <- lang_ru;; *);;
-d_concept_hexagon => nrel_main_idtf: [Def.(hexagon)] (* <- lang_en;; *);;
+d_concept_hexagon => nrel_main_idtf: 
+	[Опр.(шестиугольник)] 
+	(* <- lang_ru;; *);
+	[Def.(hexagon)] 
+	(* <- lang_en;; *);;
 
 d_concept_hexagon -> rrel_key_sc_element: concept_hexagon;;
 
@@ -10,7 +13,9 @@ d_concept_hexagon <= nrel_sc_text_translation:
 	(*
 	-> rrel_example: 
 		[Шестиугольник- это многоугольник с шестью сторонами.]
-		(* <- lang_ru;; *);;
+		(* <- lang_ru;; *);
+		[A hexagon is a polygon with six sides.]
+		(* <- lang_en;; *);;
 	*);;
 
 d_concept_hexagon <= nrel_using_constants:

@@ -1,6 +1,10 @@
 d_concept_irregular_polygon <- definition;;
 
-d_concept_irregular_polygon => nrel_main_idtf: [Опр.(неправильный многоугольник)] (* <- lang_ru;; *);;
+d_concept_irregular_polygon => nrel_main_idtf: 
+	[Опр.(неправильный многоугольник)] 
+	(* <- lang_ru;; *);
+	[Def.(irregular polygon)] 
+	(* <- lang_en;; *);;
  
 d_concept_irregular_polygon -> rrel_key_sc_element: concept_irregular_polygon;;
 
@@ -9,7 +13,9 @@ d_concept_irregular_polygon <= nrel_sc_text_translation:
 	(*
 	-> rrel_example: 
 		[Неправильный многоугольник - выпуклый многоугольник, у которого стороны не равны между собой.]
-		(* <- lang_ru;; *);;
+		(* <- lang_ru;; *);
+		[An irregular polygon is a convex polygon that have sides that are not equal to each other.]
+		(* <- lang_en;; *);;
 	*);;
 
 d_concept_irregular_polygon <= nrel_using_constants:

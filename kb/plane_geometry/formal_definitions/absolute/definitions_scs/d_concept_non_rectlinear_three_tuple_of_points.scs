@@ -1,6 +1,10 @@
 d_concept_non_rectlinear_three_tuple_of_points <- definition;;
 
-d_concept_non_rectlinear_three_tuple_of_points => nrel_main_idtf: [Опр.(непрямолинейная тройка точек)] (* <- lang_ru;; *);;
+d_concept_non_rectlinear_three_tuple_of_points => nrel_main_idtf: 
+	[Опр.(непрямолинейная тройка точек)] 
+	(* <- lang_ru;; *);
+	[Def.(non rectlinear three tuple of points)] 
+	(* <- lang_en;; *);;
 
 d_concept_non_rectlinear_three_tuple_of_points -> rrel_key_sc_element: concept_non_rectlinear_three_tuple_of_points;;
 
@@ -9,7 +13,9 @@ d_concept_non_rectlinear_three_tuple_of_points <= nrel_sc_text_translation:
 	(*
 	-> rrel_example: 
 		[Непрямолинейная тройка точек - тройка точек, для которой не существует прямой, на которой лежат все три элемента заданной тройки.]
-		(* <- lang_ru;; *);;
+		(* <- lang_ru;; *);
+		[A non-rectilinear triple of points is a triple of points for which there is no line to which all three elements of the given triple belong.]
+		(* <- lang_en;; *);;
 	*);;
 
 d_concept_non_rectlinear_three_tuple_of_points <= nrel_using_constants:
