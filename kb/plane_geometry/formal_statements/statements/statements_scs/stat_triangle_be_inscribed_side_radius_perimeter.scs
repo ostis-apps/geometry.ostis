@@ -9,10 +9,7 @@ stat_triangle_be_inscribed_side_radius_perimeter
 
 stat_triangle_be_inscribed_side_radius_perimeter
 	=> nrel_main_idtf:
-	[Утв.(треугольник;быть вписанным*;радиус*;периметр*)] (*<- lang_ru;;*);;
-
-stat_triangle_be_inscribed_side_radius_perimeter
-	=> nrel_main_idtf:
+	[Утв.(треугольник;быть вписанным*;радиус*;периметр*)] (*<- lang_ru;;*);
 	[Stat.(triangle;be inscribed*;radius*;perimeter*)] (*<- lang_en;;*);;
 
 stat_triangle_be_inscribed_side_radius_perimeter <= nrel_sc_text_translation: 
@@ -20,5 +17,7 @@ stat_triangle_be_inscribed_side_radius_perimeter <= nrel_sc_text_translation:
 	(* 
 	-> rrel_example: 
 		[Радиус r вписанной окружности вычелсяется по формуле r = (p-a)*tg(α/2) = (p-b)*tg(β/2) = (p-c)*tg(γ/2), где p - полупериметр треугольника, a,b,c - стороны треугольника; альфа, бета, гамма - углы при вершинах треугольника.] 
-		(* <- lang_ru;; *);; 
+		(* <- lang_ru;; *);
+		[The radius r of the inscribed circle of a triangle is calculated by the formula r = (p-a)*tan(α/2) = (p-b)*tan(β/2) = (p-c)*tan(γ/2), where p is the semi-perimeter of the triangle, a, b, c are the sides of the triangle; α, β, γ are the angles at the vertices of the triangle.]
+		(* <- lang_en;; *);;
 	*);;

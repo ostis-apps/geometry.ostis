@@ -4,33 +4,60 @@ statement -> stat_reverse_rhomb_diagonal_perpendicularity_bisectrix_of_polygon;;
 statement -> stat_reverse_converse_rhomb_diagonal_perpendicularity_bisectrix_of_polygon;;
 
 
-stat_rhomb_diagonal_perpendicularity_bisectrix_of_polygon => nrel_main_idtf: [Утв.(ромб; диагональ*; перпендикулярность*)] (* <- lang_ru;; *);;
-stat_converse_rhomb_diagonal_perpendicularity_bisectrix_of_polygon => nrel_main_idtf: [Обр.Утв.(ромб; диагональ*; перпендикулярность*)] (* <- lang_ru;; *);;
-stat_reverse_rhomb_diagonal_perpendicularity_bisectrix_of_polygon => nrel_main_idtf: [Прот.Утв.(ромб; диагональ*; перпендикулярность*)] (* <- lang_ru;; *);;
-stat_reverse_converse_rhomb_diagonal_perpendicularity_bisectrix_of_polygon => nrel_main_idtf: [Прот.обр.утв.(ромб; диагональ*; перпендикулярность*)] (* <- lang_ru;; *);;
+stat_rhomb_diagonal_perpendicularity_bisectrix_of_polygon => nrel_main_idtf:
+	[Утв.(ромб; диагональ*; перпендикулярность*)] (* <- lang_ru;; *);
+	[Stat. (rhombus; diagonal*; perpendicularity*)](* <-lang_en;;*);;
+
+
+stat_converse_rhomb_diagonal_perpendicularity_bisectrix_of_polygon => nrel_main_idtf: 
+	[Обр.Утв.(ромб; диагональ*; перпендикулярность*)] (* <- lang_ru;; *);
+	[Converse stat.(rhombus; diagonal*; perpendicularity*)](* <-lang_en;;*);;
+
+
+stat_reverse_rhomb_diagonal_perpendicularity_bisectrix_of_polygon => nrel_main_idtf:
+	[Прот.Утв.(ромб; диагональ*; перпендикулярность*)] (* <- lang_ru;; *);
+	[Inverse stat.(rhombus; diagonal*; perpendicularity*)](* <-lang_en;;*);;
+
+
+stat_reverse_converse_rhomb_diagonal_perpendicularity_bisectrix_of_polygon => nrel_main_idtf: 
+	[Прот.обр.утв.(ромб; диагональ*; перпендикулярность*)] (* <- lang_ru;; *);
+	[Contrapositive stat.(rhombus; diagonal*; perpendicularity*)](* <-lang_en;;*);;
+
 
 stat_rhomb_diagonal_perpendicularity_bisectrix_of_polygon <= nrel_sc_text_translation: ...
 	(*
 	-> rrel_example:
-		[Диагонали ромба взаимно перпендикулярны и являются биссектрисами его углов.] (* <- lang_ru;; *);;
+		[Диагонали ромба взаимно перпендикулярны и являются биссектрисами его углов.] 
+		(* <- lang_ru;; *);
+		[The diagonals of a rhombus are mutually perpendicular and are the angle bisectors of its angles.]
+		(* <-lang_en;;*);;
 	*);;
 
 stat_converse_rhomb_diagonal_perpendicularity_bisectrix_of_polygon <= nrel_sc_text_translation: ...
 	(*
 	-> rrel_example:
-		[Если диагонали четырёхугольника взаимно перпендикулярны и являются биссектрисами его углов, то четырёхугольник - ромб.] (* <- lang_ru;; *);;
+		[Если диагонали четырёхугольника взаимно перпендикулярны и являются биссектрисами его углов, то четырёхугольник - ромб.] 
+		(* <- lang_ru;; *);
+		[If the diagonals of a quadrilateral are mutually perpendicular and are the angle bisectors of its angles, then the quadrilateral is a rhombus.]
+		(* <-lang_en;;*);;
 	*);;
 
 stat_reverse_rhomb_diagonal_perpendicularity_bisectrix_of_polygon <= nrel_sc_text_translation: ...
 	(*
 	-> rrel_example:
-		[Если четырёхугольник не является ромбом, его диагонили не взаимно перпендикулярны и не являются биссектрисами его углов.] (* <- lang_ru;; *);;
+		[Если четырёхугольник не является ромбом, его диагонили не взаимно перпендикулярны и не являются биссектрисами его углов.] 
+		(* <- lang_ru;; *);
+		[If a quadrilateral is not a rhombus, its diagonals are not mutually perpendicular and are not the angle bisectors of its angles.]
+		(* <-lang_en;;*);;
 	*);;
 
 stat_reverse_converse_rhomb_diagonal_perpendicularity_bisectrix_of_polygon <= nrel_sc_text_translation: ...
 	(*
 	-> rrel_example:
-		[Если диагонали четырёхугольника не взаимно перпендикулярны и являются биссектрисами его углов, то четырёхугольник - не ромб.] (* <- lang_ru;; *);;
+		[Если диагонали четырёхугольника не взаимно перпендикулярны и являются биссектрисами его углов, то четырёхугольник - не ромб.]
+		(* <- lang_ru;; *);
+		[If the diagonals of a quadrilateral are not mutually perpendicular but are the angle bisectors of its angles, then the quadrilateral is not a rhombus.]
+		(* <-lang_en;;*);;
 	*);;
 
 stat_rhomb_diagonal_perpendicularity_bisectrix_of_polygon <=> nrel_converse_theorem: stat_converse_rhomb_diagonal_perpendicularity_bisectrix_of_polygon;;

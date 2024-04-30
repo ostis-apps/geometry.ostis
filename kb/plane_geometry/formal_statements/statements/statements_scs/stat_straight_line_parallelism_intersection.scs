@@ -8,10 +8,7 @@ stat_straight_line_parallelism_intersection
 
 stat_straight_line_parallelism_intersection
 => nrel_main_idtf:
-	[Утв.(прямая;параллельность*;пересечение*)] (*<- lang_ru;;*);;
-
-stat_straight_line_parallelism_intersection
-=> nrel_main_idtf:
+	[Утв.(прямая;параллельность*;пересечение*)] (*<- lang_ru;;*);
 	[Stat.(straight line;parallelism*;intersection*)] (*<- lang_en;;*);;
 
 stat_straight_line_parallelism_intersection <= nrel_sc_text_translation: 
@@ -19,5 +16,7 @@ stat_straight_line_parallelism_intersection <= nrel_sc_text_translation:
 	(* 
 	-> rrel_example: 
 		[Если прямая пересекает одну из двух параллельных прямых, то она пересекает другую прямую.] 
-		(* <- lang_ru;; *);; 
+		(* <- lang_ru;; *);
+		[If a line intersects one of two parallel lines, then it also intersects the other parallel line.]
+		(*<- lang_en;;*);;
 	*);;

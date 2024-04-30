@@ -3,33 +3,50 @@ statement -> stat_converse_triangle_side_opposite_angle_congruence;;
 statement -> stat_reverse_triangle_side_opposite_angle_congruence;;
 statement -> stat_reverse_converse_triangle_side_opposite_angle_congruence;;
 
-stat_triangle_side_opposite_angle_congruence => nrel_main_idtf: [Утв.(треугольник; сторона*; конгруэнтность*; внутренний угол*)] (* <- lang_ru;; *);;
-stat_converse_triangle_side_opposite_angle_congruence => nrel_main_idtf: [Обр.утв.(треугольник; сторона*; конгруэнтность*; внутренний угол*)] (* <- lang_ru;; *);;
-stat_reverse_triangle_side_opposite_angle_congruence => nrel_main_idtf: [Прот.утв.(треугольник; сторона*; конгруэнтность*; внутренний угол*)] (* <- lang_ru;; *);;
-stat_reverse_converse_triangle_side_opposite_angle_congruence => nrel_main_idtf: [Прот.обр.утв.(треугольник; сторона*; конгруэнтность*; внутренний угол*)] (* <- lang_ru;; *);;
+stat_triangle_side_opposite_angle_congruence => nrel_main_idtf:
+	[Утв.(треугольник; сторона*; конгруэнтность*; внутренний угол*)] (* <- lang_ru;; *);
+	[Stat.(triangle; side*; congruence*; interior angle*)](* <lang_en;;*);;
+
+
+stat_converse_triangle_side_opposite_angle_congruence => nrel_main_idtf:
+	[Обр.утв.(треугольник; сторона*; конгруэнтность*; внутренний угол*)] (* <- lang_ru;; *);
+	[Converse stat.(triangle; side*; congruence*; interior angle*)](* <-lang_en;;*);;
+
+
+stat_reverse_triangle_side_opposite_angle_congruence => nrel_main_idtf:
+	[Прот.утв.(треугольник; сторона*; конгруэнтность*; внутренний угол*)] (* <- lang_ru;; *);
+	[Inverse stat.(triangle; side*; congruence*; interior angle*)](* <-lang_en;;*);;
+
+stat_reverse_converse_triangle_side_opposite_angle_congruence => nrel_main_idtf:
+	[Прот.обр.утв.(треугольник; сторона*; конгруэнтность*; внутренний угол*)] (* <- lang_ru;; *);
+	[Contrapositive stat.(triangle; side*; congruence*; interior angle*)](* <-lang_en;;*);;
 
 stat_triangle_side_opposite_angle_congruence <= nrel_sc_text_translation: ...
 	(*
 	-> rrel_example: 
-		[Во всяком треугольнике против равных сторон лежат равные углы.](* <- lang_ru;; *);;
+		[Во всяком треугольнике против равных сторон лежат равные углы.](* <- lang_ru;; *);
+		[In any triangle, angles opposite equal sides are equal.](* <-lang_en;;*);;
 	*);;
 
 stat_converse_triangle_side_opposite_angle_congruence <= nrel_sc_text_translation: ...
 	(*
 	-> rrel_example:
-		[Во всяком треугольнике против равных углов лежат равные стороны.](* <- lang_ru;; *);;
+		[Во всяком треугольнике против равных углов лежат равные стороны.](* <- lang_ru;; *);
+		[In any triangle, opposite equal angles correspond to equal sides.](* <-lang_en;;*);;
 	*);;
 
 stat_reverse_triangle_side_opposite_angle_congruence <= nrel_sc_text_translation: ...
 	(*
 	-> rrel_example:
-		[Во всяком треугольнике против не равных сторон лежат не равные углы.](* <- lang_ru;; *);;
+		[Во всяком треугольнике против не равных сторон лежат не равные углы.](* <- lang_ru;; *);
+		[In any triangle, opposite unequal sides correspond to unequal angles.](* <-lang_en;;*);;
 	*);;
 
 stat_reverse_converse_triangle_side_opposite_angle_congruence <= nrel_sc_text_translation: ...
 	(*
 	-> rrel_example:
-		[Во всяком треугольнике против не равных углов лежат не равный стороны.](* <- lang_ru;; *);;
+		[Во всяком треугольнике против не равных углов лежат не равный стороны.](* <- lang_ru;; *);
+		[In every triangle, unequal angles lie opposite unequal sides.](* <-lang_en;;*);;
 	*);;
 
 stat_triangle_side_opposite_angle_congruence <=> nrel_converse_theorem: stat_converse_triangle_side_opposite_angle_congruence;;
@@ -38,3 +55,4 @@ stat_triangle_side_opposite_angle_congruence <=> nrel_reverse_theorem: stat_reve
 stat_converse_triangle_side_opposite_angle_congruence <=> nrel_reverse_theorem: stat_reverse_converse_triangle_side_opposite_angle_congruence;;
 stat_triangle_side_opposite_angle_congruence <=> nrel_reverse_converse_theorem: stat_reverse_triangle_side_opposite_angle_congruence;;
 stat_converse_triangle_side_opposite_angle_congruence <=> nrel_reverse_converse_theorem: stat_reverse_converse_triangle_side_opposite_angle_congruence;;
+

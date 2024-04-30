@@ -8,10 +8,7 @@ stat_straight_line_parallelism_perpendicularity
 
 stat_straight_line_parallelism_perpendicularity
 => nrel_main_idtf:
-	[Утв.(прямая;параллельность*;перпендикулярность*)] (*<- lang_ru;;*);;
-
-stat_straight_line_parallelism_perpendicularity
-=> nrel_main_idtf:
+	[Утв.(прямая;параллельность*;перпендикулярность*)] (*<- lang_ru;;*);
 	[Stat.(straight line;parallelism*;perpendicularity*)] (*<- lang_en;;*);;
 
 stat_straight_line_parallelism_perpendicularity <= nrel_sc_text_translation: 
@@ -19,5 +16,7 @@ stat_straight_line_parallelism_perpendicularity <= nrel_sc_text_translation:
 	(* 
 	-> rrel_example: 
 		[Если две различные прямые перпендикулярны третьей прямой, то они параллельны.] 
-		(* <- lang_ru;; *);; 
+		(* <- lang_ru;; *);
+		[If two distinct lines are perpendicular to a third line, then they are parallel to each other.]
+		(*<- lang_en;;*);;
 	*);;

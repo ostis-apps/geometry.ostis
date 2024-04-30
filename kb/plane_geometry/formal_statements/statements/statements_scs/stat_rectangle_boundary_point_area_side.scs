@@ -9,15 +9,13 @@ stat_rectangle_boundary_point_area_side
 
 stat_rectangle_boundary_point_area_side
 => nrel_main_idtf:
-	[Утв.(прямоугольник;площадь*;сторона*)] (* <-lang_ru;; *);;
-
-stat_rectangle_boundary_point_area_side
-=> nrel_main_idtf:
+	[Утв.(прямоугольник;площадь*;сторона*)] (* <-lang_ru;; *);
 	[Stat.(rectangle;area*;side*)] (* <-lang_en;; *);;
 
 stat_rectangle_boundary_point_area_side <= nrel_sc_text_translation: 
 	...
 	(*
 		-> rrel_example: 
-		[Площадь прямоугольника равна произведению его смежных сторон.] (* <- lang_ru;; *);;
+		[Площадь прямоугольника равна произведению его смежных сторон.] (* <- lang_ru;; *);
+		[The area of a rectangle is equal to the product of its adjacent sides.] (* <- lang_en;; *);;
 	*);;

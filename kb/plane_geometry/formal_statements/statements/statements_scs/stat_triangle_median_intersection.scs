@@ -8,10 +8,7 @@ stat_triangle_median_intersection
 
 stat_triangle_median_intersection
 => nrel_main_idtf:
-	[Утв.(треугольник;медиана*;пересечение*)] (*<- lang_ru;;*);;
-	
-stat_triangle_median_intersection
-=> nrel_main_idtf:
+	[Утв.(треугольник;медиана*;пересечение*)] (*<- lang_ru;;*);
 	[Stat.(triangle;median*;intersection*)] (*<- lang_en;;*);;
 
 stat_triangle_median_intersection <= nrel_sc_text_translation: 
@@ -19,5 +16,7 @@ stat_triangle_median_intersection <= nrel_sc_text_translation:
 	(* 
 	-> rrel_example: 
 		[Медианы треугольника пересекаются в одной точке.] 
-		(* <- lang_ru;; *);; 
+		(* <- lang_ru;; *);
+		[The medians of a triangle intersect at one point.] 
+		(* <- lang_en;; *);;
 	*);;

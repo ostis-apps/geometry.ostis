@@ -8,14 +8,15 @@ stat_triangle_straigt_line_intersection
 
 stat_triangle_straigt_line_intersection
 	=> nrel_main_idtf:
-	[Утв.(треугольник; прямая линия; пересечение*)] (* <-lang_ru;; *);;
-stat_triangle_straigt_line_intersection
-	=> nrel_main_idtf:
-	[Stat.(triangle; straight line; intersection*)] (* <-lang_en;; *);;
+		[Утв.(треугольник; прямая линия; пересечение*)] (* <-lang_ru;; *);
+		[Stat.(triangle; straight line; intersection*)] (* <-lang_en;; *);;
 
 stat_triangle_straigt_line_intersection <= nrel_sc_text_translation: 
 	...
 	(*
 		-> rrel_example: 
-		[Пусть на стороне АВ и продолжении стороны АС за точку С треугольника АВС выбраны соотвественно точки D и K, такие, что BD/DA=k/q, АК/CK=lambda и пусть Е - точка пересечения прямой DK со стороной BC. Тогда BE/EC=(lambda*k)/q.] (* <- lang_ru;; *);;
+		[Пусть на стороне АВ и продолжении стороны АС за точку С треугольника АВС выбраны соотвественно точки D и K, такие, что BD/DA=k/q, АК/CK=lambda и пусть Е - точка пересечения прямой DK со стороной BC. Тогда BE/EC=(lambda*k)/q.]
+		(* <- lang_ru;; *);
+		[Let points D and K be selected on side AB and the extension of side AC beyond point C of triangle ABC, respectively, such that BD/DA=k/q, AK/CK=lambda, and let E be the point of intersection of line DK with side BC. Then BE/EC=(lambda*k)/q.]
+		(* <-lang_en;;*);;
 	*);;

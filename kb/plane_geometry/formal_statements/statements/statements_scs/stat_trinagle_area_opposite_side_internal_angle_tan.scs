@@ -11,15 +11,15 @@ stat_trinagle_area_opposite_side_internal_angle_tan
 
 stat_trinagle_area_opposite_side_internal_angle_tan
 => nrel_main_idtf:
-	[Утв.(треугольник;площадь*;противолежащий*;сторона*;внутренний угол*;тангенс*)] (* <-lang_ru;; *);;
-
-stat_trinagle_area_opposite_side_internal_angle_tan
-=> nrel_main_idtf:
+	[Утв.(треугольник;площадь*;противолежащий*;сторона*;внутренний угол*;тангенс*)] (* <-lang_ru;; *);
 	[Stat.(triangle;area*;opposite*;side*;internal angle*;tan*)] (* <-lang_en;; *);;
 
 stat_trinagle_area_opposite_side_internal_angle_tan <= nrel_sc_text_translation: 
 	...
 	(*
 		-> rrel_example: 
-		[Для треугольника имеет место равенство: tg(alpha/2)=sqrt(((p-b)(p-c))/(p(p-a))), где p - полупериметр треугольника AВС, a, b, c - стороны треугольника АВС, alpha - угол, противолежащий стороне а.] (* <- lang_ru;; *);;
+		[Для треугольника имеет место равенство: tg(alpha/2)=sqrt(((p-b)(p-c))/(p(p-a))), где p - полупериметр треугольника AВС, a, b, c - стороны треугольника АВС, alpha - угол, противолежащий стороне а.]
+		(* <- lang_ru;; *);
+		[For a triangle, the equality holds: tg(α/2) = sqrt(((p-b)(p-c))/(p(p-a))), where p is the semiperimeter of triangle ABC, a, b, c are the sides of triangle ABC, α is the angle opposite side a.]
+		(* <-lang_en;;*);;
 	*);;

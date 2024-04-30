@@ -2,12 +2,15 @@ statement -> stat_round_area_bound_circle_length_radius;;
 
 stat_round_area_bound_circle_length_radius -> rrel_key_sc_element: concept_round; nrel_area; nrel_bound; concept_circle; nrel_length; nrel_radius;;
 
-stat_round_area_bound_circle_length_radius => nrel_main_idtf: [Утв.(круг; площадь*; граница*; длина*; радиус*)] (* <- lang_ru;; *);;
-stat_round_area_bound_circle_length_radius => nrel_main_idtf: [Stat.(round; area*; bound*; length*; radius*)] (*<- lang_en;;*);;
+stat_round_area_bound_circle_length_radius => nrel_main_idtf:
+	[Утв.(круг; площадь*; граница*; длина*; радиус*)] (* <- lang_ru;; *);
+	[Stat.(round; area*; bound*; length*; radius*)] (*<- lang_en;;*);;
 
 stat_round_area_bound_circle_length_radius <= nrel_sc_text_translation: ...
 	(*
 	-> rrel_example:
 		[Площадь круга равна половине произведения длины ограничивающей его окружности на радиус.] 
-		(* <- lang_ru;; *);;
+		(* <- lang_ru;; *);
+		[The area of a circle is equal to half the product of the length of its circumference and the radius.]
+		(*<- lang_en;;*);;
 	*);;

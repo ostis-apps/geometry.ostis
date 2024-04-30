@@ -18,12 +18,15 @@ stat_triangle_cos_angle_side_opposite
 
 stat_triangle_cos_angle_side_opposite
 	=> nrel_idtf:
-	[Теорема о проекциях] (*<- lang_ru;;*);;
+	[Теорема о проекциях] (*<- lang_ru;;*);
+	[Theorem of Projections](* <- lang_en;; *);;
 
 stat_triangle_cos_angle_side_opposite <= nrel_sc_text_translation: 
 	...
 	(* 
 	-> rrel_example: 
 		[В треугольнике длина стороны c определяется по формуле c=a*Cos(β)+b*Cos(α), где a и b - другие стороны треугольника, а α и β - углы, им противолежащие.] 
-		(* <- lang_ru;; *);; 
+		(* <- lang_ru;; *);
+		[In a triangle, the length of the side c is determined by the formula c = aCos(β) + bCos(α), where a and b are the other sides of the triangle, and α and β are the angles opposite to them.] 
+		(* <- lang_en;; *);;
 	*);;

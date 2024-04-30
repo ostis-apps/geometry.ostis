@@ -2,12 +2,15 @@ statement -> stat_straight_line_intersection_triangle_side_of_polygon;;
 
 stat_straight_line_intersection_triangle_side_of_polygon -> rrel_key_sc_element: concept_triangle; concept_straight_line; nrel_side_of_polygon;;
 
-stat_straight_line_intersection_triangle_side_of_polygon => nrel_main_idtf: [Утв.(треугольник; прямая; пересечение*; сторона многоугольника*)] (* <- lang_ru;; *);;
-stat_straight_line_intersection_triangle_side_of_polygon => nrel_main_idtf: [Stat.(triangle; straight line; intersection*; side of polygon*)] (* <- lang_en;; *);;
+stat_straight_line_intersection_triangle_side_of_polygon => nrel_main_idtf: 
+	[Утв.(треугольник; прямая; пересечение*; сторона многоугольника*)] (* <- lang_ru;; *);
+	[Stat.(triangle; straight line; intersection*; side of polygon*)] (* <- lang_en;; *);;
 
 stat_straight_line_intersection_triangle_side_of_polygon <= nrel_sc_text_translation: ...
 	(*
 	-> rrel_example:
 		[Если прямая, не проходящая ни через одну из вершин треугольника, пересекает одну из его сторон, то она пересекает только одну из двух других сторон.] 
-		(* <- lang_ru;; *);;
+		(* <- lang_ru;; *);
+		[If a line, not passing through any of the vertices of a triangle, intersects one of its sides, then it intersects only one of the other two sides.]
+		(* <- lang_en;; *);;
 	*);;

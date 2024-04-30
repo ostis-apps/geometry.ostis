@@ -3,33 +3,53 @@ statement -> stat_converse_rectangle_angle_congruence;;
 statement -> stat_reverse_rectangle_angle_congruence;;
 statement -> stat_reverse_converse_rectangle_angle_congruence;;
 
-stat_rectangle_angle_congruence => nrel_main_idtf: [Утв.(прямоугольник; угол; конгруэнтность*)] (* <- lang_ru;; *);;
-stat_converse_rectangle_angle_congruence => nrel_main_idtf: [Обр.утв.(прямоугольник; угол; конгруэнтность*)] (* <- lang_ru;; *);;
-stat_reverse_rectangle_angle_congruence => nrel_main_idtf: [Прот.утв.(прямоугольник; угол; конгруэнтность*)] (* <- lang_ru;; *);;
-stat_reverse_converse_rectangle_angle_congruence => nrel_main_idtf: [Прот.обр.утв.(прямоугольник; угол; конгруэнтность*)] (* <- lang_ru;; *);;
+stat_rectangle_angle_congruence => nrel_main_idtf:
+	[Утв.(прямоугольник; угол; конгруэнтность*)] (* <- lang_ru;; *);
+	[Stat. (rectangle; angle; congruence*)](* <-lang_en;;*);;
+
+
+stat_converse_rectangle_angle_congruence => nrel_main_idtf:
+	[Обр.утв.(прямоугольник; угол; конгруэнтность*)] (* <- lang_ru;; *);
+	[Converse stat.((rectangle; angle; congruence*)](* <-lang_en;;*);;
+
+
+stat_reverse_rectangle_angle_congruence => nrel_main_idtf:
+	[Прот.утв.(прямоугольник; угол; конгруэнтность*)] (* <- lang_ru;; *);
+	[Inverse stat.(rectangle; angle; congruence*)](* <-lang_en;;*);;
+
+
+stat_reverse_converse_rectangle_angle_congruence => nrel_main_idtf:
+	[Прот.обр.утв.(прямоугольник; угол; конгруэнтность*)] (* <- lang_ru;; *);
+	[Contrapositive stat.(rectangle; angle; congruence*)](* <-lang_en;;*);;
+
+
 
 stat_rectangle_angle_congruence <= nrel_sc_text_translation: ...
 	(*
 	-> rrel_example:
-		[У прямоугольника все углы равны.] (* <- lang_ru;; *);;
+		[У прямоугольника все углы равны.] (* <- lang_ru;; *);
+		[In a rectangle, all angles are equal.] (* <- lang_en;; *);;
 	*);;
 
 stat_converse_rectangle_angle_congruence <= nrel_sc_text_translation: ...
 	(*
 	-> rrel_example:
-		[Если все углы четырёхугольника равны, то четырёхугольник является прямоугольником.] (* <- lang_ru;; *);;
+		[Если все углы четырёхугольника равны, то четырёхугольник является прямоугольником.] (* <- lang_ru;; *);
+		[If all angles of a quadrilateral are equal, then the quadrilateral is a rectangle.] (* <- lang_en;; *);;
 	*);;
 
 stat_reverse_rectangle_angle_congruence <= nrel_sc_text_translation: ...
 	(*
 	-> rrel_example:
-		[Если четырёхугольник не является прямоугольником, все углы имеют разную величину.] (* <- lang_ru;; *);;
+		[Если четырёхугольник не является прямоугольником, все углы имеют разную величину.] (* <- lang_ru;; *);
+		[If a quadrilateral is not a rectangle, all angles have different measures.] (* <- lang_en;; *);;
 	*);;
 
 stat_reverse_converse_rectangle_angle_congruence <= nrel_sc_text_translation: ...
 	(*
 	-> rrel_example:
-		[Если все углы четырёхугольника имеют разную величину, то четырёхугольник не является прямоугольником.] (* <- lang_ru;; *);;
+		[Если все углы четырёхугольника имеют разную величину, то четырёхугольник не является прямоугольником.] (* <- lang_ru;; *);
+		[If all angles of a quadrilateral have different measures, then the quadrilateral is not a rectangle.] (* <- lang_en;; *);;
 	*);;
 
 stat_rectangle_angle_congruence <=> nrel_converse_theorem: stat_converse_rectangle_angle_congruence;;

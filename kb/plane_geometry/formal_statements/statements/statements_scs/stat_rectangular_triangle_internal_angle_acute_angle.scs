@@ -8,15 +8,15 @@ stat_rectangular_triangle_internal_angle_acute_angle
 
 stat_rectangular_triangle_internal_angle_acute_angle
 => nrel_main_idtf:
-	[Утв.(прямоугольный треугольник; внутрениий угол*; острый угол)] (* <-lang_ru;; *);;
-
-stat_rectangular_triangle_internal_angle_acute_angle
-=> nrel_main_idtf:
+	[Утв.(прямоугольный треугольник; внутрениий угол*; острый угол)] (* <-lang_ru;; *);
 	[Stat.(rectangular triangle; internal angle*; acute angle)] (* <-lang_en;; *);;
 
 stat_rectangular_triangle_internal_angle_acute_angle <= nrel_sc_text_translation: 
 	...
 	(*
 		-> rrel_example: 
-		[Сумма острых углов прямоугольного треугольника равна 90°.] (* <- lang_ru;; *);;
+		[Сумма острых углов прямоугольного треугольника равна 90°.] 
+		(* <- lang_ru;; *);
+		[The sum of the acute angles in a right triangle equals 90°.]
+		(* <-lang_en;; *);;
 	*);;

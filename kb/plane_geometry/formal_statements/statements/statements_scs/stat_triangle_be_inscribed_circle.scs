@@ -8,15 +8,15 @@ stat_triangle_be_inscribed_circle
 
 stat_triangle_be_inscribed_circle
 => nrel_main_idtf:
-	[Утв.(треугольник;быть вписанным*;окружность)] (* <-lang_ru;; *);;
-
-stat_triangle_be_inscribed_circle
-=> nrel_main_idtf:
+	[Утв.(треугольник;быть вписанным*;окружность)] (* <-lang_ru;; *);
 	[Stat.(triangle;be inscribed*;circle)] (* <-lang_en;; *);;
 
 stat_triangle_be_inscribed_circle <= nrel_sc_text_translation: 
 	...
 	(*
 		-> rrel_example: 
-		[Около каждого треугольника можно описать окружность и притом только одну.] (* <- lang_ru;; *);;
+		[Около каждого треугольника можно описать окружность и притом только одну.]
+		 (* <- lang_ru;; *);
+		[Around each triangle, it is possible to circumscribe a circle, and only one.]
+		(* <- lang_en;; *);;
 	*);;
