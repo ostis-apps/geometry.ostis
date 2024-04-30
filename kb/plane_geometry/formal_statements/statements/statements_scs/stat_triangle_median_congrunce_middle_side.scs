@@ -3,33 +3,56 @@ statement -> stat_converse_triangle_median_congrunce_middle_side;;
 statement -> stat_reverse_triangle_median_congrunce_middle_side;;
 statement -> stat_reverse_converse_triangle_median_congrunce_middle_side;;
 
-stat_triangle_median_congrunce_middle_side => nrel_main_idtf: [Утв.(точка; перпендикуляр*; середина*; отрезок; прямая)] (* <- lang_ru;; *);;
-stat_converse_triangle_median_congrunce_middle_side => nrel_main_idtf: [Обр.утв.(точка; перпендикуляр*; середина*; отрезок; прямая)] (* <- lang_ru;; *);;
-stat_reverse_triangle_median_congrunce_middle_side => nrel_main_idtf: [Прот.утв.(точка; перпендикуляр*; середина*; отрезок; прямая)] (* <- lang_ru;; *);;
-stat_reverse_converse_triangle_median_congrunce_middle_side => nrel_main_idtf: [Прот.обр.утв.(точка; перпендикуляр*; середина*; отрезок; прямая)] (* <- lang_ru;; *);;
+stat_triangle_median_congrunce_middle_side => nrel_main_idtf:
+	[Утв.(точка; перпендикуляр*; середина*; отрезок; прямая)] (* <- lang_ru;; *);
+	[Stat.(Point; perpendicular*; midpoint*; segment; line)] (* <- lang_en;; *);;
+
+stat_converse_triangle_median_congrunce_middle_side => nrel_main_idtf:
+	[Обр.утв.(точка; перпендикуляр*; середина*; отрезок; прямая)] (* <- lang_ru;; *);
+	[Converse stat.(Point; perpendicular*; midpoint*; segment; line)] (* <- lang_en;; *);;
+
+stat_reverse_triangle_median_congrunce_middle_side => nrel_main_idtf:
+	[Прот.утв.(точка; перпендикуляр*; середина*; отрезок; прямая)] (* <- lang_ru;; *);
+	[Inverse stat.(Point; perpendicular*; midpoint*; segment; line)] (* <- lang_en;; *);;
+
+stat_reverse_converse_triangle_median_congrunce_middle_side => nrel_main_idtf:
+	[Прот.обр.утв.(точка; перпендикуляр*; середина*; отрезок; прямая)] (* <- lang_ru;; *);
+	[Contrapositive stat.(Point; perpendicular*; midpoint*; segment; line)] (* <- lang_en;; *);;
 
 stat_triangle_median_congrunce_middle_side <= nrel_sc_text_translation: ...
 	(*
 	-> rrel_example:
-		[Если медиана треугольника равна половине стороны, которую делит пополам, то треугольник является прямоугольным.] (* <- lang_ru;; *);;
+		[Если медиана треугольника равна половине стороны, которую делит пополам, то треугольник является прямоугольным.]
+		(* <- lang_ru;; *);
+		[If a median of a triangle is equal to half of the side it bisects, then the triangle is right-angled.]
+		(* <- lang_en;; *);;
 	*);;
 
 stat_converse_triangle_median_congrunce_middle_side <= nrel_sc_text_translation: ...
 	(*
 	-> rrel_example:
-		[Если треугольник является прямоугольным, то медиана треугольника равна половине стороны, которую делит пополам.] (* <- lang_ru;; *);;
+		[Если треугольник является прямоугольным, то медиана треугольника равна половине стороны, которую делит пополам.] 
+		(* <- lang_ru;; *);
+		[If the triangle is right-angled, then the median of the triangle is equal to half of the side it bisects.]
+		 (* <- lang_en;; *);;
 	*);;
 
 stat_reverse_triangle_median_congrunce_middle_side <= nrel_sc_text_translation: ...
 	(*
 	-> rrel_example:
-		[Если медиана треугольника не равна половине стороны, которую делит пополам, то треугольник не является прямоугольным.] (* <- lang_ru;; *);;
+		[Если медиана треугольника не равна половине стороны, которую делит пополам, то треугольник не является прямоугольным.]
+		(* <- lang_ru;; *);
+		[If the median of a triangle is not equal to half of the side it bisects, then the triangle is not right-angled.]
+		(* <- lang_en;; *);;
 	*);;
 
 stat_reverse_converse_triangle_median_congrunce_middle_side <= nrel_sc_text_translation: ...
 	(*
 	-> rrel_example:
-		[Если треугольник не является прямоугольным, то медиана треугольника не равна половине стороны, которую делит пополам.] (* <- lang_ru;; *);;
+		[Если треугольник не является прямоугольным, то медиана треугольника не равна половине стороны, которую делит пополам.]
+		(* <- lang_ru;; *);
+		[f the triangle is not right-angled, then the median of the triangle is not equal to half of the side it bisects.]
+		(* <- lang_en;; *);;
 	*);;
 
 stat_triangle_median_congrunce_middle_side <=> nrel_converse_theorem: stat_converse_triangle_median_congrunce_middle_side;;

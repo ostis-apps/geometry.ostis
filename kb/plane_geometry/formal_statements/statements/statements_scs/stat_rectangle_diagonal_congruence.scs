@@ -1,19 +1,32 @@
 statement -> stat_rectangle_diagonal_congruence;;
 statement -> stat_reverse_converse_rectangle_diagonal_congruence;;
 
-stat_rectangle_diagonal_congruence => nrel_main_idtf: [Утв.(прямоугольник; диагональ*; конгруэнтность*)] (* <- lang_ru;; *);;
-stat_reverse_converse_rectangle_diagonal_congruence => nrel_main_idtf: [Прот.обр.утв.(прямоугольник; диагональ*; конгруэнтность*)] (* <- lang_ru;; *);;
+stat_rectangle_diagonal_congruence => nrel_main_idtf:
+	[Утв.(прямоугольник; диагональ*; конгруэнтность*)] (* <- lang_ru;; *);
+	[Stat. (rectangle; diagonal*; congruence*)](* <-lang_en;;*);;
+
+
+stat_reverse_converse_rectangle_diagonal_congruence => nrel_main_idtf:
+	[Прот.обр.утв.(прямоугольник; диагональ*; конгруэнтность*)] (* <- lang_ru;; *);
+	[Contrapositive stat.(rectangle; diagonal*; congruence*)](* <-lang_en;;*);;
+
 
 stat_rectangle_diagonal_congruence <= nrel_sc_text_translation: ...
 	(*
 	-> rrel_example:
-		[Диагонали прямоугольника равны.] (* <- lang_ru;; *);;
+		[Диагонали прямоугольника равны.] 
+		(* <- lang_ru;; *);
+		[The diagonals of a rectangle are equal.]
+		(* <-lang_en;;*);;
 	*);;
 
 stat_reverse_converse_rectangle_diagonal_congruence <= nrel_sc_text_translation: ...
 	(*
 	-> rrel_example:
-		[Если диагонали четырёхугольника не равны, то четырёхугольник не является прямоугольником.] (* <- lang_ru;; *);;
+		[Если диагонали четырёхугольника не равны, то четырёхугольник не является прямоугольником.] 
+		(* <- lang_ru;; *);
+		[If the diagonals of a quadrilateral are not equal, then the quadrilateral is not a rectangle.]
+		(* <-lang_en;;*);;
 	*);;
 
 stat_rectangle_diagonal_congruence <=> nrel_reverse_converse_theorem: stat_reverse_converse_rectangle_diagonal_congruence;;

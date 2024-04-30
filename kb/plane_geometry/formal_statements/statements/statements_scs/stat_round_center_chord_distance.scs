@@ -3,34 +3,60 @@ statement ->  stat_converse_round_center_chord_distance;;
 statement -> stat_reverse_round_center_chord_distance;;
 statement -> stat_reverse_converse_round_center_chord_distance;;
 
-stat_round_center_chord_distance => nrel_main_idtf: [Утв.(круг; расстояние*; хорда*; быть больше*)] (* <- lang_ru;; *);;
-stat_converse_round_center_chord_distance => nrel_main_idtf: [Обр.утв.(круг; расстояние*; хорда*; быть больше*)] (* <- lang_ru;; *);;
-stat_reverse_round_center_chord_distance => nrel_main_idtf: [Прот.утв.(круг; расстояние*; хорда*; быть больше*)] (* <- lang_ru;; *);;
-stat_reverse_converse_round_center_chord_distance => nrel_main_idtf: [Прот.обр.утв.(круг; расстояние*; хорда*; быть больше*)] (* <- lang_ru;; *);;
+stat_round_center_chord_distance => nrel_main_idtf:
+ 	[Утв.(круг; расстояние*; хорда*; быть больше*)] (* <- lang_ru;; *);
+	[Stat. (circle; distance*; chord*; to be longer*)](* <-lang_en;;*);;
+
+
+stat_converse_round_center_chord_distance => nrel_main_idtf:
+ 	[Обр.утв.(круг; расстояние*; хорда*; быть больше*)] (* <- lang_ru;; *);
+	[Converse stat.(circle; distance*; chord*; to be longer*)](* <-lang_en;;*);;
+
+
+stat_reverse_round_center_chord_distance => nrel_main_idtf:
+ 	[Прот.утв.(круг; расстояние*; хорда*; быть больше*)] (* <- lang_ru;; *);
+	[Inverse stat.(circle; distance*; chord*; to be longer*)](* <-lang_en;;*);;
+
+
+stat_reverse_converse_round_center_chord_distance => nrel_main_idtf:
+	[Прот.обр.утв.(круг; расстояние*; хорда*; быть больше*)] (* <- lang_ru;; *);
+	[Contrapositive stat.(circle; chord*; equidistant*; congruence*)](* <-lang_en;;*);;
 
 
 stat_round_center_chord_distance <= nrel_sc_text_translation: ...
 	(*
 	-> rrel_example:
-		[В одном и том же или равных кругах большая хорда ближе к центру.](* <- lang_ru;; *);;
+		[В одном и том же или равных кругах большая хорда ближе к центру.]
+		(* <- lang_ru;; *);
+		[In the same or equal circles, a longer chord is closer to the center.]
+		(* <-lang_en;;*);;
 	*);;
 
  stat_converse_round_center_chord_distance <= nrel_sc_text_translation: ...
 	(*
 	-> rrel_example:
-		[В одном и том же или равных кругах, хорда, которая ближе к центру, является большей.](* <- lang_ru;; *);;
+		[В одном и том же или равных кругах, хорда, которая ближе к центру, является большей.]
+		(* <- lang_ru;; *);
+		[In the same or equal circles, the chord that is closer to the center is longer.]
+		(* <-lang_en;;*);;
 	*);;
 
 stat_reverse_round_center_chord_distance <= nrel_sc_text_translation: ...
 	(*
 	-> rrel_example:
-		[В одном и том же или равных кругах не большая хорда не ближе к центру.](* <- lang_ru;; *);;
+		[В одном и том же или равных кругах не большая хорда не ближе к центру.]
+		(* <- lang_ru;; *);
+		[In the same or equal circles, a shorter chord is not closer to the center.]
+		(* <-lang_en;;*);;
 	*);;
 
 stat_reverse_converse_round_center_chord_distance <= nrel_sc_text_translation: ...
 	(*
 	-> rrel_example:
-		[В одном и том же или равных кругах, хорда, которая не ближе к центру, не является большей.](* <- lang_ru;; *);;
+		[В одном и том же или равных кругах, хорда, которая не ближе к центру, не является большей.]
+		(* <- lang_ru;; *);
+		[In the same or equal circles, the chord that is not closer to the center is not longer.]
+		(* <-lang_en;;*);;
 	*);;
 
 stat_round_center_chord_distance <=> nrel_converse_theorem:  stat_converse_round_center_chord_distance;;

@@ -4,12 +4,16 @@ stat_rectangular_triangle_area <- statement;;
 
 stat_rectangular_triangle_area -> rrel_key_sc_element: concept_rectangular_triangle; nrel_cathetus; nrel_hypotenuse; nrel_height; nrel_area;;
 
-stat_rectangular_triangle_area => nrel_main_idtf: [Утв.(прямоугольный треугольник; катет*; гипотенуза*; высота*; площадь*)] (* <-lang_ru;; *);;
-stat_rectangular_triangle_area => nrel_main_idtf: [Stat.(rectangular triangle; cathetus*; hypotenuse*; height*; area*)] (* <-lang_en;; *);;
+stat_rectangular_triangle_area => nrel_main_idtf:
+	[Утв.(прямоугольный треугольник; катет*; гипотенуза*; высота*; площадь*)] (* <-lang_ru;; *);
+	 [Stat.(rectangular triangle; cathetus*; hypotenuse*; height*; area*)] (* <-lang_en;; *);;
 
 stat_rectangular_triangle_area <= nrel_sc_text_translation: 
 		...
 		(*
 		-> rrel_example: 
-		[Площадь прямоугольного треугольника равна половине произведения его катетов или половине произведения гипотенузы на высоту, опущенную из вершины прямого угла.] (* <- lang_ru;; *);;
+		[Площадь прямоугольного треугольника равна половине произведения его катетов или половине произведения гипотенузы на высоту, опущенную из вершины прямого угла.] 
+		(* <- lang_ru;; *);
+		[The area of a right triangle is equal to half the product of its legs or half the product of the hypotenuse and the altitude dropped from the vertex of the right angle.]
+		(* <-lang_en;; *);;
 		*);;

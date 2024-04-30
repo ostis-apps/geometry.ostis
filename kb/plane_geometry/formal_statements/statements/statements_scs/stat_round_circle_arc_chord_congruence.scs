@@ -3,33 +3,61 @@ statement -> stat_converse_round_circle_arc_chord_congruence;;
 statement -> stat_reverse_round_circle_arc_chord_congruence;;
 statement -> stat_reverse_converse_round_circle_arc_chord_congruence;;
 
-stat_round_circle_arc_chord_congruence => nrel_main_idtf: [Утв.(круг; дуга; конгруэнтность*; стягивающая хорда*)] (* <- lang_ru;; *);;
-stat_converse_round_circle_arc_chord_congruence => nrel_main_idtf: [Обр.утв.(круг; дуга; конгруэнтность*; стягивающая хорда*)] (* <- lang_ru;; *);;
-stat_reverse_round_circle_arc_chord_congruence => nrel_main_idtf: [Прот.утв.(круг; дуга; конгруэнтность*; стягивающая хорда*)] (* <- lang_ru;; *);;
-stat_reverse_converse_round_circle_arc_chord_congruence => nrel_main_idtf: [Прот.обр.утв.(круг; дуга; конгруэнтность*; стягивающая хорда*)] (* <- lang_ru;; *);;
+stat_round_circle_arc_chord_congruence => nrel_main_idtf: 
+	[Утв.(круг; дуга; конгруэнтность*; стягивающая хорда*)] (* <- lang_ru;; *);
+	[Stat.(Circle; arc; congruence*; chord of constrained arc*)](* <-lang_en;;*);;
+
+stat_converse_round_circle_arc_chord_congruence => nrel_main_idtf: 
+	[Обр.утв.(круг; дуга; конгруэнтность*; стягивающая хорда*)] (* <- lang_ru;; *);
+	[Converse stat.(Circle; arc; congruence*; chord of constrained arc*)](* <-lang_en;;*);;
+
+
+
+stat_reverse_round_circle_arc_chord_congruence => nrel_main_idtf: 
+	[Прот.утв.(круг; дуга; конгруэнтность*; стягивающая хорда*)] (* <- lang_ru;; *);
+	[Inverse stat.(Circle; arc; congruence*; chord of constrained arc*)](* <-lang_en;;*);;
+
+
+stat_reverse_converse_round_circle_arc_chord_congruence => nrel_main_idtf:
+	[Прот.обр.утв.(круг; дуга; конгруэнтность*; стягивающая хорда*)] (* <- lang_ru;; *);
+	[Contrapositive stat.(Circle; arc; congruence*; chord of constrained arc*)](* <-lang_en;;*);;
+
+
 
 stat_round_circle_arc_chord_congruence <= nrel_sc_text_translation: ...
 	(*
 	-> rrel_example:
-		[Если две дуги одного круга равны, то стягивающие стягивающие их хорды равны.] (* <- lang_ru;; *);;
+		[Если две дуги одного круга равны, то стягивающие стягивающие их хорды равны.] 
+		(* <- lang_ru;; *);
+		[If two arcs of the same circle are equal, then the chords that constrain those arcs are also equal.]
+		(* <-lang_en;;*);;
 	*);;
 
 stat_converse_round_circle_arc_chord_congruence <= nrel_sc_text_translation: ...
 	(*
 	-> rrel_example:
-		[Если две стягивающие хорды одной окружности равны, то равны и эти дуги.] (* <- lang_ru;; *);;
+		[Если две стягивающие хорды одной окружности равны, то равны и эти дуги.]
+		(* <- lang_ru;; *);
+		[If two chords constraining arcs on the same circle are equal, then the arcs themselves are also equal.]
+		(* <-lang_en;;*);;
 	*);;
 
 stat_reverse_round_circle_arc_chord_congruence <= nrel_sc_text_translation: ...
 	(*
 	-> rrel_example:
-		[Если две дуги одного круга  не равны, то стягивающие стягивающие их хорды не равны.] (* <- lang_ru;; *);;
+		[Если две дуги одного круга  не равны, то стягивающие стягивающие их хорды не равны.] 
+		(* <- lang_ru;; *);
+		[If two arcs of the same circle are not equal, then the chords that constrain those arcs are also not equal.]
+		(* <-lang_en;;*);;
 	*);;
 
 stat_reverse_converse_round_circle_arc_chord_congruence <= nrel_sc_text_translation: ...
 	(*
 	-> rrel_example:
-		[Если две стягивающие хорды одной окружности не  равны, то не равны и эти дуги.] (* <- lang_ru;; *);;
+		[Если две стягивающие хорды одной окружности не  равны, то не равны и эти дуги.]
+		(* <- lang_ru;; *);
+		[If two chords constraining arcs on the same circle are not equal, then the arcs themselves are also not equal.]	
+		(* <-lang_en;;*);;
 	*);;
 
 stat_round_circle_arc_chord_congruence <=> nrel_converse_theorem: stat_converse_round_circle_arc_chord_congruence;;

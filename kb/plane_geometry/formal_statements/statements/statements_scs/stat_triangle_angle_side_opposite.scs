@@ -3,33 +3,52 @@ statement -> stat_converse_triangle_angle_side_opposite;;
 statement -> stat_reverse_triangle_angle_side_opposite;;
 statement -> stat_reverse_converse_triangle_angle_side_opposite;;
 
-stat_triangle_angle_side_opposite => nrel_main_idtf: [Утв.(треугольник; быть больше*; сторона*; внутренний угол*)] (* <- lang_ru;; *);;
-stat_converse_triangle_angle_side_opposite => nrel_main_idtf: [Обр.утв.(треугольник; быть больше*; сторона*; внутренний угол*)] (* <- lang_ru;; *);;
-stat_reverse_triangle_angle_side_opposite => nrel_main_idtf: [Прот.утв.(треугольник; быть больше*; сторона*; внутренний угол*)] (* <- lang_ru;; *);;
-stat_reverse_converse_triangle_angle_side_opposite => nrel_main_idtf: [Прот.обр.утв.(треугольник; быть больше*; сторона*; внутренний угол*)] (* <- lang_ru;; *);;
+stat_triangle_angle_side_opposite => nrel_main_idtf:
+	[Утв.(треугольник; быть больше*; сторона*; внутренний угол*)] (* <- lang_ru;; *);
+	[Stat.(triangle; be greater*; side*; internal angle*)] (* <- lang_en;; *);;
+
+stat_converse_triangle_angle_side_opposite => nrel_main_idtf:
+	[Обр.утв.(треугольник; быть больше*; сторона*; внутренний угол*)] (* <- lang_ru;; *);
+	[Converse stat.(triangle; be greater*; side*; internal angle*)] (* <- lang_en;; *);;
+
+
+stat_reverse_triangle_angle_side_opposite => nrel_main_idtf:
+	[Прот.утв.(треугольник; быть больше*; сторона*; внутренний угол*)] (* <- lang_ru;; *);
+	[Inverse stat.(triangle; be greater*; side*; internal angle*)] (* <- lang_en;; *);;
+
+
+stat_reverse_converse_triangle_angle_side_opposite => nrel_main_idtf: 
+	[Прот.обр.утв.(треугольник; быть больше*; сторона*; внутренний угол*)] (* <- lang_ru;; *);
+	[Contrapositive stat.(triangle; be greater*; side*; internal angle*)] (* <- lang_en;; *);;
+
 
 stat_triangle_angle_side_opposite <= nrel_sc_text_translation: ...
 	(*
 	-> rrel_example:
-		[Во всяком треугольнике против большей стороны лежит больший угол.] (* <- lang_ru;; *);;
+		[Во всяком треугольнике против большей стороны лежит больший угол.] (* <- lang_ru;; *);
+		[In any triangle, the greater side lies opposite the greater angle.](* <- lang_en;; *);;
 	*);;
 
 stat_triangle_angle_side_opposite <= nrel_sc_text_translation: ...
 	(*
 	-> rrel_example:
-		[Во всяком треугольнике против большего угла лежит большая сторона.] (* <- lang_ru;; *);;
+		[Во всяком треугольнике против большего угла лежит большая сторона.] (* <- lang_ru;; *);
+		[In any triangle, the greater angle lies opposite the greater side.](* <- lang_en;; *);;
 	*);;
 
 stat_reverse_triangle_angle_side_opposite <= nrel_sc_text_translation: ...
 	(*
 	-> rrel_example:
-		[Во всяком треугольнике против не большей стороны лежит не больший угол.] (* <- lang_ru;; *);;
+		[Во всяком треугольнике против не большей стороны лежит не больший угол.] (* <- lang_ru;; *);
+		[In any triangle, the side that is not greater lies opposite the angle that is not greater.](* <- lang_en;; *);;
 	*);;
+	
 
 stat_reverse_converse_triangle_angle_side_opposite <= nrel_sc_text_translation: ...
 	(*
 	-> rrel_example:
-		[Во всяком треугольнике против не большего угла лежит не большая сторона.] (* <- lang_ru;; *);;
+		[Во всяком треугольнике против не большего угла лежит не большая сторона.] (* <- lang_ru;; *);
+		[In any triangle, the angle that is not greater lies opposite the side that is not greater.](* <- lang_en;; *);;
 	*);;
 
 stat_triangle_angle_side_opposite  <=> nrel_converse_theorem: stat_triangle_angle_side_opposite;;

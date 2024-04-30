@@ -2,11 +2,17 @@ stat_triangle_congruence_side_side_opposite_angle <- statement;;
 //stat_triangle_congruence_side_side_opposite_angle <- sc_statement_for_solver;;
 stat_triangle_congruence_side_side_opposite_angle -> rrel_key_sc_element: concept_triangle; nrel_congruence; nrel_internal_angle; nrel_side; nrel_opposite;;
 
-stat_triangle_congruence_side_side_opposite_angle => nrel_main_idtf: [Утв.(треугольник;конгруэнтность*;сторона*;внутренний угол*;противолежащий*)] (* <-lang_ru;; *);;
-stat_triangle_congruence_side_side_opposite_angle => nrel_main_idtf: [Stat.(triangle;congruence*;side*;internal angle*;opposite*)] (* <-lang_en;; *);;
+stat_triangle_congruence_side_side_opposite_angle => nrel_main_idtf:
+	[Утв.(треугольник;конгруэнтность*;сторона*;внутренний угол*;противолежащий*)]
+	(* <-lang_ru;; *);
+	[Stat.(triangle;congruence*;side*;internal angle*;opposite*)]
+	(* <-lang_en;; *);;
 
-stat_triangle_congruence_side_side_opposite_angle => nrel_idtf: [Признак равенства по двум сторонам и углу, противолежащему большей стороне] (* <-lang_ru;; *);;
-stat_triangle_congruence_side_side_opposite_angle => nrel_idtf: [Sign of equality of triangles. Two angles and an opposite side] (* <-lang_en;; *);;
+stat_triangle_congruence_side_side_opposite_angle => nrel_idtf: 
+	[Признак равенства по двум сторонам и углу, противолежащему большей стороне] 
+	(* <-lang_ru;; *);
+	[Sign of equality of triangles. Two angles and an opposite side] 
+	(* <-lang_en;; *);;
 
 stat_triangle_congruence_side_side_opposite_angle <= nrel_sc_text_translation: 
 		...

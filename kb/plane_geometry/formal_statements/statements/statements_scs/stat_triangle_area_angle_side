@@ -1,16 +1,24 @@
 stat_triangle_area_angle_side <- statement;;
 
-/*stat_triangle_area_angle_side <- sc_statement_for_solver;;*/
+/* stat_triangle_area_angle_side <- sc_statement_for_solver;;*/
 
-stat_triangle_area_angle_side -> rrel_key_sc_element: concept_triangle; concept_angle; nrel_side; nrel_area;;
+stat_triangle_area_angle_side 
+-> rrel_key_sc_element: 
+	concept_triangle;
+	concept_angle; 
+	nrel_side; 
+	nrel_area;;
 
-stat_triangle_area_angle_side => nrel_main_idtf: [Утв.(треугольник; площадь*; угол; сторона*)] (*<- lang_ru;;*);;
-stat_triangle_area_angle_side => nrel_main_idtf: [Stat.(triangle; area*; angle; side*)] (*<- lang_en;;*);;
+stat_triangle_area_angle_side => nrel_main_idtf: 
+	[Утв.(треугольник; площадь*; угол; сторона*)] (*<- lang_ru;;*);
+	[Stat.(triangle; area*; angle; side*)] (*<- lang_en;;*);;
 
 stat_triangle_area_angle_side <= nrel_sc_text_translation: 
 		... 
 		(* 
 		-> rrel_example: 
 			[Если угол одного треугольника равен углу второго треугольника, то площади этих треугольников относятся как произведения длин сторон, заключающих равные углы.] 
-			(* <- lang_ru;; *);; 
+			(* <- lang_ru;; *);
+			[If the angle of one triangle is equal to the angle of a second triangle, then the areas of these triangles are related as the product of the lengths of the sides enclosing the equal angles.]
+			(*<- lang_en;;*);;
 		*);;

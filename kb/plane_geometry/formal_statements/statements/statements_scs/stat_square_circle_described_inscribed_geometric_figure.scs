@@ -9,10 +9,7 @@ stat_square_circle_described_inscribed_geometric_figure
 
 stat_square_circle_described_inscribed_geometric_figure
 	=> nrel_main_idtf:
-	[Утв.(квадрат;окружность;радиус*;вписанность*)] (*<- lang_ru;;*);;
-
-stat_square_circle_described_inscribed_geometric_figure
-	=> nrel_main_idtf:
+	[Утв.(квадрат;окружность;радиус*;вписанность*)] (*<- lang_ru;;*);
 	[Stat.(square;circle;radius*;inscribed*)] (*<- lang_en;;*);;
 
 stat_square_circle_described_inscribed_geometric_figure <= nrel_sc_text_translation: 
@@ -20,5 +17,8 @@ stat_square_circle_described_inscribed_geometric_figure <= nrel_sc_text_translat
 	(* 
 	-> rrel_example: 
 		[Связь между радиусами описанной и вписанной окружности квадрата: R=sqrt(2)*r.] 
-		(* <- lang_ru;; *);; 
+		(* <- lang_ru;; *);
+		[The relationship between the radii of the circumscribed and inscribed circles of a square is: R = √2 * r, where R is the radius of the circumscribed circle and r is the radius of the inscribed circle.]
+		(*<- lang_en;;*);;
+
 	*);;

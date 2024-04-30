@@ -2,12 +2,14 @@ statement -> stat_triangle_geometric_point_distance_be_more;;
 
 stat_triangle_geometric_point_distance_be_more -> rrel_key_sc_element: concept_triangle; concept_geometric_point; nrel_distance; nrel_be_more;;
 
-stat_triangle_geometric_point_distance_be_more => nrel_main_idtf: [Утв.(треугольник; геометрическая точка; расстояние*; быть больше*)] (* <- lang_ru;; *);;
-stat_triangle_geometric_point_distance_be_more => nrel_main_idtf: [Stat.(triangle; geometric point; distance*; be more*)] (* <- lang_en;; *);;
+stat_triangle_geometric_point_distance_be_more => nrel_main_idtf:
+	[Утв.(треугольник; геометрическая точка; расстояние*; быть больше*)] (* <- lang_ru;; *);
+	[Stat.(triangle; geometric point; distance*; be more*)] (* <- lang_en;; *);;
 
 stat_triangle_geometric_point_distance_be_more <= nrel_sc_text_translation: ...
 	(*
 	-> rrel_example:
 		[Каковы бы ни были три точки, расстояние между любыми двумя из этих точек не больше суммы расстояний от них до третьей точки.] 
-		(* <- lang_ru;; *);;
+		(* <- lang_ru;; *);
+		[No matter what three points are chosen, the distance between any two of these points is no greater than the sum of the distances from them to the third point.] (* <- lang_en;; *);;
 	*);;

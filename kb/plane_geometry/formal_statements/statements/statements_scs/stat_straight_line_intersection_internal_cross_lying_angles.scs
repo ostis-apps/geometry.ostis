@@ -3,34 +3,59 @@ statement -> stat_converse_straight_line_intersection_internal_cross_lying_angle
 statement -> stat_reverse_straight_line_intersection_internal_cross_lying_angles;;
 statement -> stat_reverse_converce_straight_line_intersection_internal_cross_lying_angles;;
 
-stat_straight_line_intersection_internal_cross_lying_angles => nrel_main_idtf: [Утв.(прямая; параллельность*; угол; накрестлежащий*)] (* <- lang_ru;; *);;
-stat_converse_straight_line_intersection_internal_cross_lying_angles => nrel_main_idtf: [Обр.утв.(прямая; параллельность*; угол; накрестлежащий*)] (* <- lang_ru;; *);;
-stat_reverse_straight_line_intersection_internal_cross_lying_angles => nrel_main_idtf: [Прот.утв.(прямая; параллельность*; угол; накрестлежащий*)] (* <- lang_ru;; *);;
-stat_reverse_converce_straight_line_intersection_internal_cross_lying_angles => nrel_main_idtf: [Прот.обр.утв.(прямая; параллельность*; угол; накрестлежащий*)] (* <- lang_ru;; *);;
+stat_straight_line_intersection_internal_cross_lying_angles => nrel_main_idtf:
+	 [Утв.(прямая; параллельность*; угол; накрестлежащий*)] (* <- lang_ru;; *);
+	[Stat.(line; parallelism*; angle; alternate interior angle*)](* <-lang_en;;*);;
+
+stat_converse_straight_line_intersection_internal_cross_lying_angles => nrel_main_idtf:
+	[Обр.утв.(прямая; параллельность*; угол; накрестлежащий*)] (* <- lang_ru;; *);
+	[Converse stat.(line; parallelism*; angle; alternate interior angle*)](* <-lang_en;;*);;
+
+stat_reverse_straight_line_intersection_internal_cross_lying_angles => nrel_main_idtf: 
+	[Прот.утв.(прямая; параллельность*; угол; накрестлежащий*)] (* <- lang_ru;; *);
+	[Inverse stat.(line; parallelism*; angle; alternate interior angle*)](* <-lang_en;;*);;
+
+stat_reverse_converce_straight_line_intersection_internal_cross_lying_angles => nrel_main_idtf:
+	[Прот.обр.утв.(прямая; параллельность*; угол; накрестлежащий*)] (* <- lang_ru;; *);
+	[Contrapositive stat.(line; parallelism*; angle; alternate interior angle*)](* <-lang_en;;*);;
+
 
 
 stat_straight_line_intersection_internal_cross_lying_angles <= nrel_sc_text_translation: ...
 	(*
 	-> rrel_example:
-		[Если две параллельные прямые пересечены третьей, то внутренние накрест лежащие углы равны.] (* <- lang_ru;; *);;
+		[Если две параллельные прямые пересечены третьей, то внутренние накрест лежащие углы равны.]
+		 (* <- lang_ru;; *);
+		[If two parallel lines are intersected by a third line, then the alternate interior angles are equal.]
+		(* <-lang_en;;*);;
 	*);;
 
 stat_converse_straight_line_intersection_internal_cross_lying_angles <= nrel_sc_text_translation: ...
 	(*
 	-> rrel_example:
-		[Если две прямые пересечены третьей, и внутренние накрест лежащие углы равны, то эти прямые параллельны.] (* <- lang_ru;; *);;
+		[Если две прямые пересечены третьей, и внутренние накрест лежащие углы равны, то эти прямые параллельны.] 
+		(* <- lang_ru;; *);
+		[If two lines are intersected by a third line, and the alternate interior angles are equal, then those two lines are parallel.]
+		(* <-lang_en;;*);;
 	*);;
 
 stat_reverse_straight_line_intersection_internal_cross_lying_angles <= nrel_sc_text_translation: ...
 	(*
 	-> rrel_example:
-		[Если две не параллельные  прямые пересечены третьей, то внутренние накрест лежащие углы не равны.] (* <- lang_ru;; *);;
+		[Если две не параллельные  прямые пересечены третьей, то внутренние накрест лежащие углы не равны.]
+		(* <- lang_ru;; *);
+		[If two non-parallel lines are intersected by a third line, then the alternate interior angles are not equal.]
+		(* <-lang_en;;*);;
 	*);;
 
 stat_reverse_converce_straight_line_intersection_internal_cross_lying_angles <= nrel_sc_text_translation: ...
 	(*
 	-> rrel_example:
-		[Если две прямые пересечены третьей, и внутренние накрест лежащие углы не равны, то эти прямые не параллельны.] (* <- lang_ru;; *);;
+		[Если две прямые пересечены третьей, и внутренние накрест лежащие углы не равны, то эти прямые не параллельны.] 
+		(* <- lang_ru;; *);
+		[If two lines are intersected by a third line, and the alternate interior angles are not equal, then those lines are not parallel.]
+		(* <-lang_en;;*);;
+
 	*);;
 
 stat_straight_line_intersection_internal_cross_lying_angles  <=> nrel_converse_theorem: stat_converse_straight_line_intersection_internal_cross_lying_angles;;
