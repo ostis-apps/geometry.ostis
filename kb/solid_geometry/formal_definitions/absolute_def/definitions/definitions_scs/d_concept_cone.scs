@@ -2,11 +2,12 @@ d_concept_cone <- definition;;
 
 d_concept_cone -> rrel_key_sc_element: concept_cone;;
 
-d_concept_cone => nrel_main_idtf: [Опр.(конус)] (*<-lang_ru;;*);;
-d_concept_cone => nrel_main_idtf: [Def.(cone)] (*<-lang_en;;*);;
+d_concept_cone => nrel_main_idtf:
+	[Опр.(конус)] (*<-lang_ru;;*);
+	[Def.(cone)] (*<-lang_en;;*);;
 
 
-d_concept_cone <= nrel_using_constants:
+_concept_cone <= nrel_using_constants:
 	{
 	concept_geometric_body;
 	concept_round;
@@ -21,6 +22,7 @@ d_concept_cone <= nrel_sc_text_translation:
 		...
 		(*
 		-> rrel_example: 
-		[Конус (круговой конус) - тело, которое состоит из круга - основание конуса, точки, не принадлежащей плоскости этого круга, - вершины конуса и всех отрезков, соединяющих вершину конуса и точки окружности основания.] (*<-lang_ru;;*);;
+		[Конус (круговой конус) - тело, которое состоит из круга - основание конуса, точки, не принадлежащей плоскости этого круга, - вершины конуса и всех отрезков, соединяющих вершину конуса и точки окружности основания.] (*<-lang_ru;;*);
+		[A cone (circular cone) is a solid consisting of a circle - the base of the cone, a point not belonging to the plane of this circle - the vertex of the cone, and all line segments connecting the vertex of the cone and the points of the circumference of the base.] (*<-lang_en;;*);;
 		*);; 
-			
+		

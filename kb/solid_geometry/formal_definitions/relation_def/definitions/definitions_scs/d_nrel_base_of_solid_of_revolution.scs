@@ -1,7 +1,8 @@
 d_nrel_base_of_solid_of_revolution <- definition;;
 
-d_nrel_base_of_solid_of_revolution => nrel_main_idtf: [Опр.(основание тела вращения*)] (*<-lang_ru;;*);;
-d_nrel_base_of_solid_of_revolution => nrel_main_idtf: [Def.(base of solid of revolution*)] (*<-lang_en;;*);;
+d_nrel_base_of_solid_of_revolution => nrel_main_idtf:
+	[Опр.(основание тела вращения*)] (*<-lang_ru;;*);
+	[Def.(base of solid of revolution*)] (*<-lang_en;;*);;
 
 d_nrel_base_of_solid_of_revolution -> rrel_key_sc_element: nrel_base_of_solid_of_revolution;;
 
@@ -20,5 +21,6 @@ d_nrel_base_of_solid_of_revolution <= nrel_sc_text_translation:
 	...
 	(*
 	-> rrel_example:
-	[Основание тела вращения - это теоретико-множественное объединение понятий основания цилиндра, основания конуса, основания усеченного конуса, основания сферического пояса, основания шарового слоя, основания шарового сегмента и основания сферического сегмента.] (*<-lang_ru;;*);;
+	[Основание тела вращения - это теоретико-множественное объединение понятий основания цилиндра, основания конуса, основания усеченного конуса, основания сферического пояса, основания шарового слоя, основания шарового сегмента и основания сферического сегмента.] (*<-lang_ru;;*);
+	[The base of a solid of revolution is the set-theoretic union of the concepts of the base of a cylinder, the base of a cone, the base of a truncated cone, the base of a spherical zone, the base of a spherical shell, the base of a spherical segment, and the base of a spherical segment.](*<-lang_en;;*);;
 	*);;

@@ -1,12 +1,8 @@
 d_nrel_ball_base_layer <- definition;;
 
 d_nrel_ball_base_layer => nrel_main_idtf: 
-	[Опр. (основание шарового слоя*)] 
-	(* <- lang_ru;;*);;
-
-d_nrel_ball_base_layer => nrel_main_idtf: 
-	[Def. (ball base layer*)] 
-	(* <- lang_en;;*);;
+	[Опр. (основание шарового слоя*)] (* <- lang_ru;;*);
+	[Def. (ball base layer*)] (* <- lang_en;;*);;
 
 d_nrel_ball_base_layer -> rrel_key_sc_element: nrel_ball_base_layer;;
 
@@ -19,6 +15,8 @@ d_nrel_ball_base_layer <= nrel_using_constants: ...
 
 d_nrel_ball_base_layer <= nrel_sc_text_translation: ...
 	(*
-	-> [Основаниями шарового слоя называются сечения шара, образовавшиеся в результате пересечения шара двумя параллельными плоскостями.] (* <- lang_ru;;*);;
+		-> rrel_example:
+		[Основаниями шарового слоя называются сечения шара, образовавшиеся в результате пересечения шара двумя параллельными плоскостями.] (* <- lang_ru;;*);
+		[The bases of a spherical shell are called the cross-sections of the sphere formed by the intersection of the sphere with two parallel planes.](*<-lang_en;;*);;
 	*);;
 

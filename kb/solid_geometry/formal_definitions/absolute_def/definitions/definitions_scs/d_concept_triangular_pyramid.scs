@@ -1,7 +1,8 @@
 d_concept_triangular_pyramid <- definition;;
 
-d_concept_triangular_pyramid => nrel_main_idtf: [Опр.(треугольная пирамида)] (*<-lang_ru;;*);;
-d_concept_triangular_pyramid => nrel_main_idtf: [Def.(triangular pyramid)] (*<-lang_en;;*);;
+d_concept_triangular_pyramid => nrel_main_idtf:
+	[Опр.(треугольная пирамида)] (*<-lang_ru;;*);
+	[Def.(triangular pyramid)] (*<-lang_en;;*);;
 
 d_concept_triangular_pyramid -> rrel_key_sc_element: concept_triangular_pyramid;;
 
@@ -16,6 +17,7 @@ d_concept_triangular_pyramid <= nrel_sc_text_translation:
 	...
 	(*
 	-> rrel_example: 
-	[Треугольная пирамида - это пирамида, все четыре грани которой - треугольники.] (*<-lang_ru;;*);;
+	[Треугольная пирамида - это пирамида, все четыре грани которой - треугольники.] (*<-lang_ru;;*);
+	[A triangular pyramid is a pyramid where all four faces are triangles.](*<-lang_en;;*);;
 	*);;
 

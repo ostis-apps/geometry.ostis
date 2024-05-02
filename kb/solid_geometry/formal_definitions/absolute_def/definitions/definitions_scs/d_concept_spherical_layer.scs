@@ -1,7 +1,8 @@
 d_concept_spherical_layer <- definition;;
 
-d_concept_spherical_layer => nrel_main_idtf: [Опр.(шаровый слой)] (*<-lang_ru;;*);;
-d_concept_spherical_layer => nrel_main_idtf: [Def.(spherical layer)] (*<-lang_en;;*);;
+d_concept_spherical_layer => nrel_main_idtf: 
+	[Опр.(шаровый слой)] (*<-lang_ru;;*);
+	[Def.(spherical layer)] (*<-lang_en;;*);;
 
 d_concept_spherical_layer -> rrel_key_sc_element: concept_spherical_layer;;
 
@@ -16,5 +17,6 @@ d_concept_spherical_layer <= nrel_sc_text_translation:
 	...
 	(*
 	-> rrel_example: 
-	[Шаровой слой – это часть шара, расположенная между двумя параллельными секущими плоскостями.] (*<-lang_ru;;*);;
+	[Шаровой слой – это часть шара, расположенная между двумя параллельными секущими плоскостями.] (*<-lang_ru;;*);
+	[A spherical shell is the portion of a sphere that lies between two parallel planes that intersect the sphere.](*<-lang_en;;*);;
 	*);;

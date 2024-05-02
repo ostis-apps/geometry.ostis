@@ -1,11 +1,18 @@
 sc_node_not_relation -> concept_ball;;
 
-concept_ball => nrel_main_idtf: [шар] (*<-lang_ru;;*);;
-concept_ball => nrel_main_idtf: [ball] (*<-lang_en;;*);;
+concept_ball => nrel_main_idtf: 
+	[шар] (*<-lang_ru;;*);
+	[ball] (*<-lang_en;;*);;
 
-concept_ball => nrel_idtf: [Класс шаров] (*<-lang_ru;;*);;
-concept_ball => nrel_idtf: [Множество всевозможных шаров] (* <- lang_ru;; *);;
-concept_ball => nrel_idtf: [Множество знаков всевозможных шаров] (* <- lang_ru;; *);;
+concept_ball => nrel_idtf:
+	[Класс шаров] (*<-lang_ru;;*);
+	[Class of balls] (*<-lang_en;;*);;
+concept_ball => nrel_idtf:
+	[Множество всевозможных шаров] (* <- lang_ru;; *);
+	[Set of all possible balls] (* <- lang_en;; *);;
+concept_ball => nrel_idtf:
+ 	[Множество знаков всевозможных шаров] (* <- lang_ru;; *);
+	[Set of signs of all possible balls] (* <- lang_en;; *);;
 
 concept_ball <= nrel_strict_inclusion: concept_solid_of_revolution;;
 

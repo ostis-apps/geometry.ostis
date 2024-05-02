@@ -1,7 +1,8 @@
 d_nrel_base_of_prism <- definition;;
 
-d_nrel_base_of_prism => nrel_main_idtf: [Опр.(основание призмы*)] (*<-lang_ru;;*);;
-d_nrel_base_of_prism => nrel_main_idtf: [Def.(base of prism*)] (*<-lang_en;;*);;
+d_nrel_base_of_prism => nrel_main_idtf:
+	[Опр.(основание призмы*)] (*<-lang_ru;;*);
+	[Def.(base of prism*)] (*<-lang_en;;*);;
 
 d_nrel_base_of_prism -> rrel_key_sc_element: nrel_base_of_prism;;
 
@@ -18,5 +19,6 @@ d_nrel_base_of_prism <= nrel_sc_text_translation:
 	...
 	(*
 	-> rrel_example:
-	[Основанием призмы называется одна из двух равных граней, которые являются многоугольниками, с соответственно параллельными сторонами.] (*<-lang_ru;;*);;
+	[Основанием призмы называется одна из двух равных граней, которые являются многоугольниками, с соответственно параллельными сторонами.] (*<-lang_ru;;*);
+	[The base of a prism is defined as one of the two equal faces that are polygons with correspondingly parallel sides.] (*<-lang_en;;*);;
 	*);;

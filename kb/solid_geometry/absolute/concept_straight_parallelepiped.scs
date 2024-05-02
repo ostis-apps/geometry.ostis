@@ -3,9 +3,19 @@ sc_node_not_relation -> concept_straight_parallelepiped;;
 concept_straight_parallelepiped => nrel_main_idtf: [прямой параллепипед] (*<-lang_ru;;*);;
 concept_straight_parallelepiped => nrel_main_idtf: [straight parallelepiped] (*<-lang_en;;*);;
 
-concept_straight_parallelepiped => nrel_idtf: [Класс прямых параллепипедов] (*<-lang_ru;;*);;
-concept_straight_parallelepiped => nrel_idtf: [Множество знаков всевозможных прямых параллепипедов ] (*<-lang_ru;;*);;
-concept_straight_parallelepiped => nrel_idtf: [Множество  всевозможных прямых параллепипедов] (*<-lang_ru;;*);;
+concept_straight_parallelepiped => nrel_idtf:
+	[Класс прямых параллепипедов] (*<-lang_ru;;*);
+	[Class of right parallelepipeds] (*<-lang_en;;*);;
+
+
+concept_straight_parallelepiped => nrel_idtf:
+	[Множество знаков всевозможных прямых параллепипедов ] (*<-lang_ru;;*);
+	[Set of signs of all possible right parallelepipeds] (*<-lang_en;;*);;
+
+
+concept_straight_parallelepiped => nrel_idtf:
+	 [Множество  всевозможных прямых параллепипедов] (*<-lang_ru;;*);
+	[Set of all possible right parallelepipeds] (*<-lang_en;;*);;
 
 concept_straight_parallelepiped <= nrel_strict_inclusion: concept_parallelepiped;;
 
@@ -20,5 +30,3 @@ concept_straight_parallelepiped <- rrel_key_sc_element:
 		"file://images/concept_straight_parallelepiped.png"(*=> nrel_format: format_png;;*);;
 		*);;
 	*);;
-
-

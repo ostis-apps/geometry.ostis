@@ -1,7 +1,8 @@
 d_nrel_base_of_pyramid <- definition;;
 
-d_nrel_base_of_pyramid => nrel_main_idtf: [Опр.(основание пирамиды*)] (*<-lang_ru;;*);;
-d_nrel_base_of_pyramid => nrel_main_idtf: [Def.(base of pyramid*)] (*<-lang_en;;*);;
+d_nrel_base_of_pyramid => nrel_main_idtf:
+	[Опр.(основание пирамиды*)] (*<-lang_ru;;*);
+	[Def.(base of pyramid*)] (*<-lang_en;;*);;
 
 d_nrel_base_of_pyramid -> rrel_key_sc_element: nrel_base_of_pyramid;;
 
@@ -16,5 +17,6 @@ d_nrel_base_of_pyramid <= nrel_sc_text_translation:
 	...
 	(*
 	-> rrel_example:
-	[Основанием пирамиды называется грань, которая является многоугольником и которой не принадлежит вершина пирамиды.] (*<-lang_ru;;*);;
+	[Основанием пирамиды называется грань, которая является многоугольником и которой не принадлежит вершина пирамиды.] (*<-lang_ru;;*);
+	[The base of a pyramid is defined as the face that is a polygon, to which the vertex of the pyramid does not belong.](*<-lang_en;;*);;
 	*);;

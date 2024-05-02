@@ -11,14 +11,12 @@ d_par_total_surface_area <= nrel_using_constants: ...
 		*);;
 
 d_par_total_surface_area => nrel_main_idtf:
-	[Опр. (Площадь полной поверхности)] 
-	(* <- lang_ru;;*);;
-	
-d_par_total_surface_area => nrel_main_idtf:
-	[Def. (total surface area )] 
-	(* <- lang_ru;;*);;
+	[Опр. (Площадь полной поверхности)] (* <- lang_ru;;*);
+	[Def. (total surface area )] (* <- lang_ru;;*);;
 
 d_par_total_surface_area <= nrel_sc_text_translation: ...
 	(*
-	-> [Площадь полной поверхности - сумма площадей всех граней фигуры.] (* <- lang_ru;;*);;
+		-> rrel_example:
+		[Площадь полной поверхности - сумма площадей всех граней фигуры.] (* <- lang_ru;;*);
+		[The total surface area is the sum of the areas of all faces of the figure.](* <-lang_en;;*);;
 	*);;

@@ -1,7 +1,8 @@
 d_nrel_axis_of_solid_of_revolution <- definition;;
 
-d_nrel_axis_of_solid_of_revolution => nrel_main_idtf: [Опр.(ось тела вращения*)] (*<-lang_ru;;*);;
-d_nrel_axis_of_solid_of_revolution => nrel_main_idtf: [Def.(axis of solid of revolution*)] (*<-lang_en;;*);;
+d_nrel_axis_of_solid_of_revolution => nrel_main_idtf:
+	[Опр.(ось тела вращения*)] (*<-lang_ru;;*);
+	[Def.(axis of solid of revolution*)] (*<-lang_en;;*);;
 
 d_nrel_axis_of_solid_of_revolution -> rrel_key_sc_element: nrel_axis_of_solid_of_revolution;;
 
@@ -16,5 +17,6 @@ d_nrel_axis_of_solid_of_revolution <= nrel_sc_text_translation:
 	...
 	(*
 	-> rrel_example:
-	[Ось тела вращения - это теоретико-множественное объединение понятий оси цилиндра, оси конуса и оси усеченного конуса.] (*<-lang_ru;;*);;
+	[Ось тела вращения - это теоретико-множественное объединение понятий оси цилиндра, оси конуса и оси усеченного конуса.] (*<-lang_ru;;*);
+	[The axis of a solid of revolution is the set-theoretic union of the concepts of the axis of a cylinder, the axis of a cone, and the axis of a truncated cone.](*<-lang_en;;*);;
 	*);;

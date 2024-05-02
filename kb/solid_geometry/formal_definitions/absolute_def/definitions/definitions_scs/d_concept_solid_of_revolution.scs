@@ -1,7 +1,8 @@
 d_concept_solid_of_revolution <- definition;;
 
-d_concept_solid_of_revolution => nrel_main_idtf: [Опр.(тело вращения)] (*<-lang_ru;;*);;
-d_concept_solid_of_revolution => nrel_main_idtf: [Def.(solid of revolution)] (*<-lang_en;;*);;
+d_concept_solid_of_revolution => nrel_main_idtf: 
+	[Опр.(тело вращения)] (*<-lang_ru;;*);
+	[Def.(solid of revolution)] (*<-lang_en;;*);;
 
 d_concept_solid_of_revolution -> rrel_key_sc_element: concept_solid_of_revolution;;
 
@@ -14,9 +15,11 @@ d_concept_solid_of_revolution <= nrel_using_constants:
 	nrel_axis_of_solid_of_revolution	
 	};;
 
-d_concept_solid_of_revolution <= nrel_sc_text_translation: 
+d_concept_segment_of_sphere <= nrel_sc_text_translation: 
 		...
 		(*
 		-> rrel_example: 
-		[Тело вращения – это объемное тело, которые возникает при вращении некой плоской фигуры, которая, в свою очередь, ограничена кривой и крутится вокруг оси, лежащей в той же плоскости.] (*<-lang_ru;;*);;
+		[Сферическим сегментом называется часть сферы, отсекаемая от нее плоскостью.] (*<-lang_ru;;*);
+		[A spherical segment is the part of a sphere that is cut off by a plane.](*<-lang_en;;*);;
 		*);;
+

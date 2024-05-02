@@ -9,11 +9,12 @@ d_par_volume => nrel_using_constants: ...
 	*);;
 
 d_par_volume => nrel_main_idtf:
-	[Опр.(объём)] 
-	(* <- lang_ru;; *);;
+	[Опр.(объём)] (* <- lang_ru;; *);
+	[Def.(Volume)] (* <-lang_en;;*);;
 
 d_par_volume <= nrel_sc_text_translation: ...
 	(*
-		-> [Объемом тела называется положительная величина, характеризующая часть пространства, занимаемую телом.]
-			(* <-lang_ru ;; *);;
+		-> rrel_example:
+		[Объемом тела называется положительная величина, характеризующая часть пространства, занимаемую телом.] (* <-lang_ru ;; *);
+		[The volume of a solid is a positive quantity that characterizes the portion of space occupied by the solid.](*<-lang_en;;*);;
 	*);;

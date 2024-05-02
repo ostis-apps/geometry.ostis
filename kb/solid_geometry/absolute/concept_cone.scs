@@ -4,9 +4,15 @@ concept_cone => nrel_main_idtf:
 	[конус] (* <- lang_ru;;	*);
 	[cone] (* <- lang_en;;	*);;
 
-concept_cone => nrel_idtf: [Множество всевозможных конусов] (* <- lang_ru;; *);;
-concept_cone => nrel_idtf: [Класс конусов] (* <- lang_ru;; *);;
-concept_cone => nrel_idtf: [Множество знаков всевозможных конусов] (* <- lang_ru;; *);;
+concept_cone => nrel_idtf: 
+	[Множество всевозможных конусов] (* <- lang_ru;; *);
+	[Set of all possible cones] (* <- lang_en;; *);;
+concept_cone => nrel_idtf: 
+	[Класс конусов] (*<-lang_ru;; *);
+	[Class of cones] (* <- lang_en;; *);;
+concept_cone => nrel_idtf: 
+	[Множество знаков всевозможных конусов] (* <- lang_ru;; *);
+	[Set of signs of all possible cones] (* <- lang_en;; *);;
 
 concept_cone <= nrel_strict_inclusion: concept_solid_of_revolution;;
 
