@@ -1,13 +1,20 @@
 sc_node_not_relation -> concept_cube;;
 
-concept_cube => nrel_main_idtf: [куб] (*<-lang_ru;;*);;
-concept_cube => nrel_main_idtf: [cube] (*<-lang_en;;*);;
+concept_cube => nrel_main_idtf:
+	[куб] (*<-lang_ru;;*);
+	[cube] (*<-lang_en;;*);;
 
-concept_cube => nrel_idtf: [Класс кубов] (*<-lang_ru;;*);;
+concept_cube => nrel_idtf: 
+	[Класс кубов] (*<-lang_ru;;*);
+	[Class of cubes] (*<-lang_en;;*);;
 
-concept_cube => nrel_idtf: [Множество всевозможных кубов] (* <- lang_ru;; *);;
+concept_cube => nrel_idtf:
+	[Множество всевозможных кубов] (* <- lang_ru;; *);
+	[Set of all possible cubes] (* <- lang_en;; *);;
 
-concept_cube => nrel_idtf: [Множество знаков всевозможных кубов] (* <- lang_ru;; *);;
+concept_cube => nrel_idtf:
+	[Множество знаков всевозможных кубов] (* <- lang_ru;; *);
+	[Set of signs of all possible cubes] (* <- lang_en;; *);;
 
 concept_cube <- rrel_key_sc_element: 
 	...

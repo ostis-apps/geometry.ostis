@@ -1,7 +1,8 @@
 sc_node_not_relation -> concept_equilateral_cylinder;;
 
-concept_equilateral_cylinder => nrel_main_idtf: [равносторонний циллиндр] (*<-lang_ru;;*);;
-concept_equilateral_cylinder => nrel_main_idtf: [equilateral cylinder] (*<-lang_en;;*);;
+concept_equilateral_cylinder => nrel_main_idtf: 
+	[равносторонний циллиндр] (*<-lang_ru;;*);
+	[equilateral cylinder] (*<-lang_en;;*);;
 
 concept_equilateral_cylinder <= nrel_strict_inclusion: concept_cylinder;;
 

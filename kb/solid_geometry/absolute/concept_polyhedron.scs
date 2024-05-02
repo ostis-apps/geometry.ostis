@@ -1,14 +1,18 @@
 sc_node_not_relation -> concept_polyhedron;;
 
-concept_polyhedron => nrel_main_idtf: [многогранник] (*<-lang_ru;;*);;
-concept_polyhedron => nrel_main_idtf: [polyhedron] (*<-lang_en;;*);;
+concept_polyhedron => nrel_main_idtf:
+	[многогранник] (*<-lang_ru;;*);
+	[polyhedron] (*<-lang_en;;*);;
 
 concept_polyhedron <= nrel_strict_inclusion: concept_geometric_body;;
 
 concept_polyhedron <= nrel_subdividing:
 	... 
 	(*
-	=> nrel_main_idtf: [Разбиение по признаку выпуклости] (* <- lang_ru;; *);;
+	=> nrel_main_idtf:
+		[Разбиение по признаку выпуклости] (* <- lang_ru;; *);
+		[Subdivision by convexity] (* <- lang_en;; *);;
+		
 	-> concept_convex_polyhedron; concept_non_convex_polyhedron;;
 	*);;
 

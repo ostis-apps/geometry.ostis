@@ -8,12 +8,14 @@ d_concept_inclined_parallelepiped <= nrel_using_constants:
 	concept_straight_parallelepiped
 	};;
 
-d_concept_inclined_parallelepiped => nrel_main_idtf: [Опр.(наклонный параллелепипед)] (*<-lang_ru;;*);;
-d_concept_inclined_parallelepiped => nrel_main_idtf: [Def.(inclined parallelepiped)] (*<-lang_en;;*);;
+d_concept_inclined_parallelepiped => nrel_main_idtf:
+	[Опр.(наклонный параллелепипед)] (*<-lang_ru;;*);
+	[Def.(inclined parallelepiped)] (*<-lang_en;;*);;
 
 d_concept_inclined_parallelepiped <= nrel_sc_text_translation: 
 		...
 		(*
 		-> rrel_example: 
-		[Наклонный параллелепипед - это параллелепипед, который не является прямым.] (*<-lang_ru;;*);;
+		[Наклонный параллелепипед - это параллелепипед, который не является прямым.] (*<-lang_ru;;*);
+		[An oblique parallelepiped is a parallelepiped that is not a rectangular parallelepiped.] (*<-lang_en;;*);;
 		*);;

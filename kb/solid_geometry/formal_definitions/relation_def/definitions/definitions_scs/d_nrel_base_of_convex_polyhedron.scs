@@ -1,7 +1,8 @@
 d_nrel_base_of_convex_polyhedron <- definition;;
 
-d_nrel_base_of_convex_polyhedron => nrel_main_idtf: [Опр.(основание выпуклого многогранника*)] (*<-lang_ru;;*);;
-d_nrel_base_of_convex_polyhedron => nrel_main_idtf: [Def.(base of convex polyhedron*)] (*<-lang_en;;*);;
+d_nrel_base_of_convex_polyhedron => nrel_main_idtf: 
+	[Опр.(основание выпуклого многогранника*)] (*<-lang_ru;;*);
+	[Def.(base of convex polyhedron*)] (*<-lang_en;;*);;
 
 d_nrel_base_of_convex_polyhedron -> rrel_key_sc_element: nrel_base_of_convex_polyhedron;;
 
@@ -16,5 +17,6 @@ d_nrel_base_of_convex_polyhedron <= nrel_sc_text_translation:
 	...
 	(*
 	-> rrel_example:
-	[Основание выпуклого многогранника - это теоретико-множественное объединение понятий основания призмы, основания пирамиды и основания усеченной пирамиды.] (*<-lang_ru;;*);;
+	[Основание выпуклого многогранника - это теоретико-множественное объединение понятий основания призмы, основания пирамиды и основания усеченной пирамиды.] (*<-lang_ru;;*);
+	[The base of a convex polyhedron is the set-theoretic union of the concepts of the base of a prism, the base of a pyramid, and the base of a truncated pyramid.](*<-lang_en;;*);;
 	*);;

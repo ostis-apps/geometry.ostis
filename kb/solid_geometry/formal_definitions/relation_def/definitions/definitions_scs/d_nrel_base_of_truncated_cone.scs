@@ -1,7 +1,8 @@
 d_nrel_base_of_truncated_cone <- definition;;
 
-d_nrel_base_of_truncated_cone => nrel_main_idtf: [Опр.(основание усеченного конуса*)] (*<-lang_ru;;*);;
-d_nrel_base_of_truncated_cone => nrel_main_idtf: [Def.(base of truncated cone*)] (*<-lang_en;;*);;
+d_nrel_base_of_truncated_cone => nrel_main_idtf: 
+	[Опр.(основание усеченного конуса*)] (*<-lang_ru;;*);
+	[Def.(base of truncated cone*)] (*<-lang_en;;*);;
 
 d_nrel_base_of_truncated_cone -> rrel_key_sc_element: nrel_base_of_truncated_cone;;
 
@@ -15,5 +16,6 @@ d_nrel_base_of_truncated_cone <= nrel_using_constants:
 d_nrel_base_of_truncated_cone <= nrel_sc_text_translation: ...
 		(*
 		-> rrel_example:
-		[Основание усеченного конуса - это теоретико-множественное объединение понятий нижнего основания усеченного конуса и верхнего основания усеченного конуса.] (*<-lang_ru;;*);;
+		[Основание усеченного конуса - это теоретико-множественное объединение понятий нижнего основания усеченного конуса и верхнего основания усеченного конуса.] (*<-lang_ru;;*);
+		[The base of a truncated cone is the set-theoretic union of the concepts of the lower base of the truncated cone and the upper base of the truncated cone.](*<-lang_en;;*);;
 		*);;

@@ -1,7 +1,7 @@
 sc_node_norole_relation -> nrel_cross_section;;
 
-nrel_cross_section => nrel_main_idtf: [сечение*] (*<-lang_ru;;*);;
-nrel_cross_section => nrel_main_idtf: [cross section*] (*<-lang_en;;*);;
+nrel_cross_section => nrel_main_idtf: [(сечение*)] (*<-lang_ru;;*);;
+nrel_cross_section => nrel_main_idtf: [(cross section*)] (*<-lang_en;;*);;
 
 nrel_cross_section => nrel_first_domain: concept_geometric_body;;
 nrel_cross_section => nrel_second_domain: concept_plane;;

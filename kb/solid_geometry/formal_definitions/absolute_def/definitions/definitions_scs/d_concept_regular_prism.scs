@@ -1,21 +1,27 @@
-d_concept_regular_prism <- definition;;
+d_concept_regular_pyramid <- definition;;
 
-d_concept_regular_prism -> rrel_key_sc_element: concept_regular_prism;;
+d_concept_regular_pyramid -> rrel_key_sc_element: concept_regular_pyramid;;
 
-d_concept_regular_prism => nrel_main_idtf: [Опр.(правильная призма)] (*<-lang_ru;;*);;
-d_concept_regular_prism => nrel_main_idtf: [Def.(regular prism)] (*<-lang_en;;*);;
+d_concept_regular_pyramid => nrel_main_idtf:
+	[Опр.(правильная пирамида)] (*<-lang_ru;;*);
+	[Def.(regular pyramid)] (*<-lang_en;;*);;
 
 
-d_concept_regular_prism <= nrel_using_constants:
+d_concept_regular_pyramid <= nrel_using_constants:
 	{
-	concept_right_prism;
+	concept_pyramid;
 	nrel_base;
-	concept_regular_polygon
+	concept_regular_polygon;
+	nrel_face_of_polyhedron;
+	nrel_edge;
+	nrel_congruence
 	};;
 
-d_concept_regular_prism <= nrel_sc_text_translation: 
-		...
-		(*
-		-> rrel_example: 
-		[́Правильной призмой называется прямая призма, основаниями которой являются правильные многоугольники.] (*<-lang_ru;;*);;
-		*);;
+
+d_concept_regular_pyramid <= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+	[́Правильной называется пирамида, основание которой - правильный n-угольник, а все боковые ребра равны.] (*<-lang_ru;;*);
+	[A regular pyramid is one whose base is a regular n-gon and all its lateral edges are equal in length.](*<-lang_en;;*);;
+	*);;

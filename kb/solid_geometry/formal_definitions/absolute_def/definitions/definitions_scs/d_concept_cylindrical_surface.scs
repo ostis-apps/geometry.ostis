@@ -1,7 +1,8 @@
 d_concept_cylindrical_surface <- definition;;
 
-d_concept_cylindrical_surface => nrel_main_idtf: [Опр.(цилиндрическая поверхность)] (*<-lang_ru;;*);;
-d_concept_cylindrical_surface => nrel_main_idtf: [Def.(cylindrical surface)] (*<-lang_en;;*);;
+d_concept_cylindrical_surface => nrel_main_idtf:
+	[Опр.(цилиндрическая поверхность)] (*<-lang_ru;;*);
+	[Def.(cylindrical surface)] (*<-lang_en;;*);;
 
 d_concept_cylindrical_surface -> rrel_key_sc_element: concept_cylindrical_surface;;
 
@@ -17,5 +18,6 @@ d_concept_cylindrical_surface <= nrel_sc_text_translation:
 		...
 		(*
 		-> rrel_example: 
-		[Цилиндрическая поверхность – это совокупность всех прямых, проведенных через каждую точку окружности, лежащей в некоторой плоскости, перпендикулярно этой плоскости.] (*<-lang_ru;;*);;
+		[Цилиндрическая поверхность – это совокупность всех прямых, проведенных через каждую точку окружности, лежащей в некоторой плоскости, перпендикулярно этой плоскости.] (*<-lang_ru;;*);
+		[A cylindrical surface is a set of all straight lines drawn through each point of a circle lying in a plane, perpendicular to that plane.] (*<-lang_en;;*);;
 		*);;

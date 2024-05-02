@@ -1,7 +1,8 @@
 sc_node_not_relation -> concept_triangular_pyramid;;
 
-concept_triangular_pyramid => nrel_main_idtf: [треугольная пирамида] (*<-lang_ru;;*);;
-concept_triangular_pyramid => nrel_main_idtf: [triangular pyramid] (*<-lang_en;;*);;
+concept_triangular_pyramid => nrel_main_idtf: 
+	[треугольная пирамида] (*<-lang_ru;;*);
+	[triangular pyramid] (*<-lang_en;;*);;
 
 concept_triangular_pyramid <= nrel_strict_inclusion: concept_pyramid;;
 
@@ -25,7 +26,7 @@ concept_triangular_pyramid <- rrel_key_sc_element:
 		...
 		(*
 		   -> rrel_example:
-		    [Любую из четырех граней треугольной пирамиды можно принять за основание.] (*<-lang_ru;;*);;
+		    [Любую из четырех граней треугольной пирамиды можно принять за основание.] (*<-lang_ru;;*);
+			[Any of the four faces of a triangular pyramid can be taken as the base.] (*<-lang_en;;*);;
 		*);;	
 	*);;
-

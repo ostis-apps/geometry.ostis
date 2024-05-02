@@ -2,8 +2,9 @@ d_concept_octahedron <- definition;;
 
 d_concept_octahedron -> rrel_key_sc_element: concept_octahedron;;
 
-d_concept_octahedron => nrel_main_idtf: [Опр.(октаэдр)] (*<-lang_ru;;*);;
-d_concept_octahedron => nrel_main_idtf: [Def.(octahedron)] (*<-lang_en;;*);;
+d_concept_octahedron => nrel_main_idtf:
+	[Опр.(октаэдр)] (*<-lang_ru;;*);
+	[Def.(octahedron)] (*<-lang_en;;*);;
 
 d_concept_octahedron <= nrel_using_constants:
 	{
@@ -15,5 +16,6 @@ d_concept_octahedron <= nrel_sc_text_translation:
 		...
 		(*
 		-> rrel_example: 
-		[́Октаэдр - правильный многогранник с восемью гранями.] (*<-lang_ru;;*);;
+		[́Октаэдр - правильный многогранник с восемью гранями.] (*<-lang_ru;;*);
+		[An octahedron is a regular polyhedron with eight faces.] (*<-lang_en;;*);;
 		*);;

@@ -1,7 +1,8 @@
 d_concept_truncated_pyramid <- definition;;
 
-d_concept_truncated_pyramid => nrel_main_idtf: [Опр.(усеченная пирамида)] (*<-lang_ru;;*);;
-d_concept_truncated_pyramid => nrel_main_idtf: [Def.(truncated pyramid)] (*<-lang_en;;*);;
+d_concept_truncated_pyramid => nrel_main_idtf:
+	[Опр.(усеченная пирамида)] (*<-lang_ru;;*);
+	[Def.(truncated pyramid)] (*<-lang_en;;*);;
 
 d_concept_truncated_pyramid -> rrel_key_sc_element: concept_truncated_pyramid;;
 
@@ -20,5 +21,6 @@ d_concept_truncated_pyramid <= nrel_sc_text_translation:
 	...
 	(*
 	-> rrel_example: 
-	[Усеченная пирамида - многогранник, гранями которого являются два многоугольника и n четырехугольников, которые отсекаются от пирамиды плоскостью, параллельной плоскости основания пирамиды и пересекающей ее боковые ребра.] (*<-lang_ru;;*);;
+	[Усеченная пирамида - многогранник, гранями которого являются два многоугольника и n четырехугольников, которые отсекаются от пирамиды плоскостью, параллельной плоскости основания пирамиды и пересекающей ее боковые ребра.] (*<-lang_ru;;*);
+	[A truncated pyramid is a polyhedron whose faces consist of two polygons and n quadrilaterals, which are cut off from the pyramid by a plane parallel to the base plane of the pyramid and intersecting its lateral edges.](*<-lang_en;;*);;
 	*);;

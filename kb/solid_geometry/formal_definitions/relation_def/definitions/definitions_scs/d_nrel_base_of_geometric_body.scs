@@ -1,7 +1,8 @@
 d_nrel_base_of_geometric_body <- definition;;
 
-d_nrel_base_of_geometric_body => nrel_main_idtf: [Опр.(основание геометрического тела*)] (*<-lang_ru;;*);;
-d_nrel_base_of_geometric_body => nrel_main_idtf: [Def.(base of geometric body*)] (*<-lang_en;;*);;
+d_nrel_base_of_geometric_body => nrel_main_idtf:
+	[Опр.(основание геометрического тела*)] (*<-lang_ru;;*);
+	[Def.(base of geometric body*)] (*<-lang_en;;*);;
 
 d_nrel_base_of_geometric_body -> rrel_key_sc_element: nrel_base_of_geometric_body;;
 
@@ -15,7 +16,8 @@ d_nrel_base_of_geometric_body <= nrel_sc_text_translation:
 	...
 	(*
 	-> rrel_example:
-	[Основание геометрического тела - это теоретико-множественное объединение понятий основания выпуклого многогранника и основания тела вращения.] (*<-lang_ru;;*);;
+	[Основание геометрического тела - это теоретико-множественное объединение понятий основания выпуклого многогранника и основания тела вращения.] (*<-lang_ru;;*);
+	[The base of a geometric solid is the set-theoretic union of the concepts of the base of a convex polyhedron and the base of a solid of revolution.](*<-lang_en;;*);;
 	*);;
 
 

@@ -1,7 +1,8 @@
 sc_node_not_relation -> concept_rectangular_parallelepiped;;
 
-concept_rectangular_parallelepiped => nrel_main_idtf: [прямоугольный параллелепипед] (*<-lang_ru;;*);;
-concept_rectangular_parallelepiped => nrel_main_idtf: [rectangular parallelepiped] (*<-lang_en;;*);;
+concept_rectangular_parallelepiped => nrel_main_idtf: 
+	[прямоугольный параллелепипед] (*<-lang_ru;;*);
+	[rectangular parallelepiped] (*<-lang_en;;*);;
 
 concept_rectangular_parallelepiped <= nrel_strict_inclusion: concept_straight_parallelepiped;;
 

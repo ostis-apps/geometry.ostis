@@ -1,7 +1,8 @@
 d_concept_convex_polyhedron <- definition;;
 
-d_concept_convex_polyhedron => nrel_main_idtf: [Опр.(выпуклый многогранник)] (*<-lang_ru;;*);;
-d_concept_convex_polyhedron => nrel_main_idtf: [Def.(convex polyhedron)] (*<-lang_en;;*);;
+d_concept_convex_polyhedron => nrel_main_idtf:
+	[Опр.(выпуклый многогранник)] (*<-lang_ru;;*);
+	[Def.(convex polyhedron)] (*<-lang_en;;*);;
 
 d_concept_convex_polyhedron -> rrel_key_sc_element: concept_convex_polyhedron;;
 
@@ -16,5 +17,6 @@ d_concept_convex_polyhedron <= nrel_sc_text_translation:
 		...
 		(*
 		-> rrel_example: 
-		[Многогранник называется выпуклым, если он лежит по одну сторону от плоскости каждой своей грани.] (*<-lang_ru;;*);;
+		[Многогранник называется выпуклым, если он лежит по одну сторону от плоскости каждой своей грани.] (*<-lang_ru;;*);
+		[A polyhedron is called convex if it lies on one side of the plane of each of its faces.] (*<-lang_en;;*);;
 		*);;

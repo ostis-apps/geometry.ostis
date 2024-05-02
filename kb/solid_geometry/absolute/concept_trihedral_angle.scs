@@ -1,11 +1,17 @@
 sc_node_not_relation -> concept_trihedral_angle;;
 
-concept_trihedral_angle => nrel_main_idtf: [трехгранный угол] (*<-lang_ru;;*);;
-concept_trihedral_angle => nrel_main_idtf: [trihedral angle] (*<-lang_en;;*);;
+concept_trihedral_angle => nrel_main_idtf: 
+	[трехгранный угол] (*<-lang_ru;;*);
+	[trihedral angle] (*<-lang_en;;*);;
 
-concept_trihedral_angle => nrel_idtf: [Класс трехгранных углов] (*<-lang_ru;;*);;
+concept_trihedral_angle => nrel_idtf: 
+	[Класс трехгранных углов] (*<-lang_ru;;*);
+	[Class of trihedral angles] (*<-lang_en;;*);;
 
-concept_trihedral_angle => nrel_idtf: [Множество всевозможных трехгранных углов] (* <- lang_ru;; *);;
+concept_trihedral_angle => nrel_idtf:
+	[Множество всевозможных трехгранных углов] (* <- lang_ru;; *);
+	[Set of all possible trihedral angles] (*<-lang_en;;*);;
+
 
 concept_trihedral_angle <- rrel_key_sc_element: 
 	...
