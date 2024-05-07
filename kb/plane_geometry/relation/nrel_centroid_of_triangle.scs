@@ -1,9 +1,11 @@
 sc_node_norole_relation -> nrel_centroid_of_triangle;;
 
-nrel_centroid_of_triangle => nrel_main_idtf:[центроид*](* <- lang_ru;; *);;
-nrel_centroid_of_triangle => nrel_main_idtf:[centroid*](*<-lang_en;;*);;
+nrel_centroid_of_triangle => nrel_main_idtf:[центроид треугольника*](* <- lang_ru;; *);;
+nrel_centroid_of_triangle => nrel_main_idtf:[centroid of triangle*](*<-lang_en;;*);;
 
-nrel_centroid_of_triangle => nrel_idtf:[быть центроидом*](* <- lang_ru;; *);;
+nrel_centroid_of_triangle => nrel_idtf:[быть центроидом треугольника*](* <- lang_ru;; *);;
+
+nrel_centroid_of_triangle <= nrel_strict_inclusion: nrel_centroid;;
 
 nrel_centroid_of_triangle => nrel_first_domain: concept_triangle;;
 
