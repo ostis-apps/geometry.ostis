@@ -4,18 +4,18 @@ d_concept_Morley_triangle -> rrel_key_sc_element: concept_Morley_triangle;;
 
 d_concept_Morley_triangle => nrel_main_idtf: 
 	[Опр.(треугольник Морлея)] 
-	(*<-lang_ru;;*);
+	(* <- lang_ru;; *);
 	[Def.(Morley's triangles)] 
-	(*<-lang_en;;*);;
+	(* <- lang_en;; *);;
 
 d_concept_Morley_triangle <= nrel_sc_text_translation: 
 		...
 		(*
 		-> rrel_example: 
 			[Треугольник Морлея - это равносторонний треугольник, вершинами которого являются точки пересечения смежных триссектрис углов произвольного треугольника.] 
-			(*<-lang_ru;;*);
+			(* <- lang_ru;; *);
 			[A Morley triangle is an equilateral triangle whose vertices are the intersection points of adjacent trisectors of the angles of an arbitrary triangle.] 
-			(*<-lang_en;;*);;
+			(* <- lang_en;; *);;
 		*);;
 
 d_concept_Morley_triangle <= nrel_using_constants: 
