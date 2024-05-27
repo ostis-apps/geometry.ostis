@@ -3,8 +3,8 @@ d_concept_zero_angle <- definition;;
 d_concept_zero_angle => nrel_main_idtf:
 	[Опр.(нулевой угол)]
 	(* <- lang_ru;; *);
-	[Def.(Full Rotation)]
-	(*<-lang_en;;*);;
+	[Def.(zero angle )]
+	(*<- lang_en;; *);;
 
 d_concept_zero_angle -> rrel_key_sc_element: concept_zero_angle;;
 
@@ -14,8 +14,8 @@ d_concept_zero_angle <= nrel_sc_text_translation:
 	-> rrel_example: 
 		[Нулевой угол - угол, у которого совпадают образующие лучи (то есть равный 0 градусов)]
 		(* <- lang_ru;; *);
-		[A full rotation is an angle of 360 degrees]
-		(* <-lang_en;;*);;
+		[A zero angle is an angle in which the generating rays coincide (that is, equal to 0 degrees).]
+		(* <- lang_en;; *);;
 	*);;
 
 d_concept_zero_angle <= nrel_using_constants:

@@ -3,8 +3,8 @@ d_concept_round <- definition;;
 d_concept_round => nrel_main_idtf:
 	[Опр.(круг)]
 	(* <- lang_ru;; *);
-	[Def.]
-	(* <- lang_en;;*);;
+	[Def.(circle)]
+	(* <- lang_en;; *);;
 
 d_concept_round -> rrel_key_sc_element: concept_round;;
 
@@ -14,8 +14,8 @@ d_concept_round <= nrel_sc_text_translation:
 	-> rrel_example: 
 		[Круг - часть плоскости, ограниченная окружностью.]
 		(* <- lang_ru;; *);
-		[A circle is a round-shaped figure that has no corners or edges.]
-		(* <-lang_en;;*);;
+		[A circle is a part of a plane bounded by a circumference.]
+		(* <- lang_en;; *);;
 	*);;
 
 d_concept_round <= nrel_using_constants:

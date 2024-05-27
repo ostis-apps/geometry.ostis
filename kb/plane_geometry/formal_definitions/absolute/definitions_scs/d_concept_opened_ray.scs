@@ -4,7 +4,7 @@ d_concept_opened_ray => nrel_main_idtf:
 	[Опр.(открытый луч)]
 	(* <- lang_ru;; *);
 	[Def.(open ray)]
-	(* <-lang_en;;*);;
+	(* <- lang_en;; *);;
 	
 d_concept_opened_ray -> rrel_key_sc_element: concept_opened_ray;;
 
@@ -14,8 +14,8 @@ d_concept_opened_ray <= nrel_sc_text_translation:
 	-> rrel_example: 
 		[Открытый луч - луч, из которого исключена начальная точка.]
 		(* <- lang_ru;; *);
-		[An open ray is a one-dimensional shape with no boundary that stretches infinitely in one direction, but stops in another direction.]
-		(* <-lang_en;;*);;
+		[An open ray is a ray from which the initial point has been excluded.]
+		(* <- lang_en;; *);;
 	*);;
 
 d_concept_opened_ray <= nrel_using_constants:

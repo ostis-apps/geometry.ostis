@@ -4,7 +4,7 @@ d_concept_rectilinear_figure => nrel_main_idtf:
 	[Опр.(прямолинейная фигура)] 
 	(* <- lang_ru;; *);
 	[Def.(liner figure)]
-	(* <-lang_en;;*);;
+	(* <- lang_en;; *);;
 
 d_concept_rectilinear_figure -> rrel_key_sc_element: concept_rectilinear_figure;;
 
@@ -14,8 +14,8 @@ d_concept_rectilinear_figure <= nrel_sc_text_translation:
 	-> rrel_example: 
 		[Прямолинейная фигура - это геометрическая фигура, все точки которой лежат на одной прямой.]
 		(* <- lang_ru;; *);
-		[A linear figure is a geometric shape in which all points lie on a single straight line.]
-		(* <-lang_en;;*);;
+		[A rectilinear figure is a geometric figure, all points of which lie on one straight line.]
+		(* <- lang_en;; *);;
 	*);;
 
 d_concept_rectilinear_figure <= nrel_using_constants:
