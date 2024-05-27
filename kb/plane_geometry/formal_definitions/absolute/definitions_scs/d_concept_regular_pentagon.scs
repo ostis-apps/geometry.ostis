@@ -4,7 +4,7 @@ d_concept_regular_pentagon => nrel_main_idtf:
 	[Опр.(правильный пятиугольник)]
 	(* <- lang_ru;; *);
 	[Def.(regular pentagon)]
-	(* <lang_en;;*);;
+	(* <- lang_en;; *);;
 
 d_concept_regular_pentagon -> rrel_key_sc_element: concept_regular_pentagon;;
 
@@ -14,8 +14,8 @@ d_concept_regular_pentagon <= nrel_sc_text_translation:
 	-> rrel_example: 
 		[Правильный пятиугольник - это пятиугольник с равными сторонами.]
 		(* <- lang_ru;; *);
-		[A regular pentagon is a polygon with five sides of equal length and five angles of equal measure.]
-		(* <lang_en;;*);;
+		[A regular pentagon is a pentagon with equal sides.]
+		(* <- lang_en;; *);;
 	*);;
 
 d_concept_regular_pentagon <= nrel_using_constants:

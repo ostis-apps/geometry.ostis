@@ -4,7 +4,7 @@ d_concept_triple_of_points => nrel_main_idtf:
 	[Опр.(тройка точек)]
 	(* <- lang_ru;; *);
 	[Def.(point triplet)]
-	(* <-lang_en;;*);;
+	(* <- lang_en;; *);;
 
 d_concept_triple_of_points -> rrel_key_sc_element: concept_triple_of_points;;
 
@@ -14,8 +14,8 @@ d_concept_triple_of_points <= nrel_sc_text_translation:
 	-> rrel_example: 
 		[Тройка точек - множество, являющееся тройкой, каждый элемент которой является геометрической точкой.]
 		(* <- lang_ru;;	*);
-		[A point triplet, also known as the discrete space of three points, is a shape made up of three disconnected points.]
-		(* <-lang_en;;*);;
+		[A triple of points is a set that is a triple, each element of which is a geometric point.]
+		(* <- lang_en;; *);;
 	*);;
 
 d_concept_triangle <= nrel_using_constants:

@@ -4,7 +4,7 @@ d_concept_obtuse_angle => nrel_main_idtf:
   [Опр.(тупой угол)]
   (* <- lang_ru;; *);
   [Def.(obtuse angle)]
-  (* <-lang_en;; *);;
+  (* <- lang_en;; *);;
 
 d_concept_obtuse_angle -> rrel_key_sc_element: concept_obtuse_angle;;
 
@@ -14,8 +14,8 @@ d_concept_obtuse_angle <= nrel_sc_text_translation:
   -> rrel_example: 
       [Тупой угол - угол, больший прямого и меньший развернутого (то есть больший 90, но меньший 180 градусов).] 
       (* <- lang_ru;; *);
-      [An obtuse angle is an angle which is greater than 90° and less than 180°]
-      (* <-lang_en;; *);;
+      [An obtuse angle is an angle greater than a right angle (90 degrees) but less than a straight angle (180 degrees).]
+      (* <- lang_en;; *);;
   *);;
 
 d_concept_obtuse_angle <= nrel_using_constants:

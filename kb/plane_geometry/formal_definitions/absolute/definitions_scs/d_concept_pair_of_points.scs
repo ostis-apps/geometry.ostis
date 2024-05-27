@@ -4,7 +4,7 @@ d_concept_pair_of_points => nrel_main_idtf:
 	[Опр.(пара точек)]
 	(* <- lang_ru;; *);
 	[Def.(A pair of points)]
-	(* <-lang_en;;*);;
+	(* <- lang_en;; *);;
 
 
 d_concept_pair_of_points -> rrel_key_sc_element: concept_pair_of_points;;
@@ -15,9 +15,8 @@ d_concept_pair_of_points <= nrel_sc_text_translation:
 	-> rrel_example: 
 		[Пара точек - пара, каждый элемент которой является геометрической точкой.]
 		(* <- lang_ru;; *);
-		[An ordered pair refers to two numbers written in a certain order.
-		We generally use ordered pairs in the context of coordinates of a point in a 2D plane.]
-		(* <-lang_en;;*);;
+		[A pair of points is a pair, each element of which is a geometric point.]
+		(* <- lang_en;; *);;
 	*);;
 
 d_concept_pair_of_points <= nrel_using_constants:

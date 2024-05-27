@@ -4,7 +4,7 @@ d_concept_rectangular_triangle => nrel_main_idtf:
 	[Опр.(прямоугольный треугольник)]
 	(* <- lang_ru;; *);
 	[Def.(right triangle)]
-	(* <-lang_en;;*);;
+	(* <- lang_en;; *);;
 
 d_concept_rectangular_triangle -> rrel_key_sc_element: concept_rectangular_triangle;;
 
@@ -14,8 +14,8 @@ d_concept_rectangular_triangle <= nrel_sc_text_translation:
 	-> rrel_example: 
 		[Прямоугольный треугольник – это треугольник, у которого хотя бы один внутренний угол является прямым углом.]
 		(* <- lang_ru;; *);
-		[Right triangle is a triangle in which one of the interior angles is 90° right triangle.]
-		(* <-lang_en;;*);;
+		[A right-angled triangle is a triangle in which at least one internal angle is a right angle.]
+		(* <- lang_en;; *);;
 	*);;
 
 d_concept_rectangular_triangle <= nrel_using_constants:
