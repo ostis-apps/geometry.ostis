@@ -1,0 +1,27 @@
+sc_node_norole_relation -> nrel_centroid;;
+
+nrel_centroid => nrel_main_idtf: [центроид*] (*<-lang_ru;;*);;
+nrel_centroid => nrel_idtf: [барицентр*] (*<-lang_ru;;*);;
+nrel_centroid => nrel_idtf: [центр масс*] (*<-lang_ru;;*);;
+nrel_centroid => nrel_idtf: [геометрический центр*] (*<-lang_ru;;*);;
+nrel_centroid => nrel_main_idtf: [centroid*] (*<-lang_en;;*);;
+nrel_centroid => nrel_idtf: [barycenter*] (*<-lang_en;;*);;
+nrel_centroid => nrel_idtf: [center of mass*] (*<-lang_en;;*);;
+nrel_centroid => nrel_idtf: [geometric center*] (*<-lang_en;;*);;
+
+nrel_centroid => nrel_first_domain: concept_geometric_figure;;
+nrel_centroid => nrel_second_domain: concept_geometric_point;;
+nrel_centroid => nrel_definitional_domain: 
+	...
+	(*
+	<= nrel_combination: 
+		{
+			concept_geometric_figure;
+			concept_geometric_point
+		};;
+	*);;
+	
+nrel_centroid <- relation;;	
+nrel_centroid <- binary_relation;;
+nrel_centroid <- oriented_relation;;
+nrel_centroid <- antireflexive_relation; antisymmetric_relation; antitransitive_relation;;

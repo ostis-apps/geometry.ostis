@@ -18,7 +18,7 @@ concept_planar_figure => nrel_strict_inclusion: concept_round;;
 concept_planar_figure => nrel_strict_inclusion: concept_round_segment;;
 concept_planar_figure => nrel_strict_inclusion: concept_round_sector;;
 concept_planar_figure => nrel_strict_inclusion: concept_segment;;
-concept_planar_figure <= nrel_strict_inclusion: concept_plane;;
+concept_planar_figure => nrel_strict_inclusion: concept_plane;;
 concept_planar_figure => nrel_strict_inclusion: concept_planar_line;;
 
 concept_planar_figure -> rrel_example: struct_Rectilinear_triple_Of_Points_P_Q_R;;
