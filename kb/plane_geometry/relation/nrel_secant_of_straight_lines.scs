@@ -20,3 +20,15 @@ nrel_side <- oriented_relation;;
 nrel_side <- antireflexive_relation;;
 nrel_side <- antisymmetric_relation;;
 nrel_side <- antitransitive_relation;;
+
+nrel_secant_of_straight_lines <- rrel_key_sc_element: 
+	...
+	(*
+	<- illustration;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			"file://images/line_secant.png"(*=> nrel_format: format_png;;*);;
+		*);; 
+	*);;
