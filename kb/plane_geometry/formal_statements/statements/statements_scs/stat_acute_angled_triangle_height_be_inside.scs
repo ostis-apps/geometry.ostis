@@ -12,12 +12,14 @@ stat_acute_angled_triangle_height_be_inside
 
 stat_acute_angled_triangle_height_be_inside
 	=> nrel_main_idtf:
-	[Stat.(acute angled triangle;height*;be inside*)] (*<- lang_en;;*);;
+	[Stat.(acute angled triangle;altitude*;be inside*)] (*<- lang_en;;*);;
 
 stat_acute_angled_triangle_height_be_inside <= nrel_sc_text_translation: 
 	... 
 	(* 
 	-> rrel_example: 
 		[В остроугольном треугольнике все три высоты лежат внутри треугольника.]
-		(* <- lang_ru;; *);; 
+		(* <- lang_ru;; *); 
+		[In acute triangle, all of it's altitudes lie inside it.]
+		(* <- lang_en;; *);;
 	*);;
