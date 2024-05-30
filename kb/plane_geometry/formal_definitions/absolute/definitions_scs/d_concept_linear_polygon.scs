@@ -1,6 +1,10 @@
 d_concept_linear_polygon <- definition;; 
 
-d_concept_linear_polygon => nrel_main_idtf: [Опр.(линейный многоугольник)] (* <- lang_ru;; *);;
+d_concept_linear_polygon => nrel_main_idtf: 
+	[Опр.(линейный многоугольник)] 
+	(* <- lang_ru;; *);
+	[Def.(linear polygon)] 
+	(* <- lang_en;; *);;
 
 d_concept_linear_polygon -> rrel_key_sc_element: concept_linear_polygon;;
 
@@ -9,7 +13,9 @@ d_concept_linear_polygon <= nrel_sc_text_translation:
 		(*
 		-> rrel_example: 
 			[Линейный многоугольник - это простая ломаная, у которой совпадают граничные точки.]
-			(* <- lang_ru;; *);;
+			(* <- lang_ru;; *);
+			[A linear angle is an angle formed by two rays that have a common origin, while the points of the plane lying between these two rays do not belong to this angle.]
+			(* <- lang_en;; *);;
 		*);;
 
 d_concept_linear_polygon <= nrel_using_constants:

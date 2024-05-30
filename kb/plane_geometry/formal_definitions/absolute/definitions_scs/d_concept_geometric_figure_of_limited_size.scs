@@ -1,6 +1,10 @@
 d_concept_geometric_figure_of_limited_size <- definition;;
 
-d_concept_geometric_figure_of_limited_size => nrel_main_idtf: [Опр.(геометрическая фигура ограниченного размера)] (* <- lang_ru;; *);;
+d_concept_geometric_figure_of_limited_size => nrel_main_idtf: 
+	[Опр.(геометрическая фигура ограниченного размера)] 
+	(* <- lang_ru;; *);
+	[Def.(geometric figure of limited size)] 
+	(* <- lang_en;; *);;
 
 d_concept_geometric_figure_of_limited_size -> rrel_key_sc_element: concept_geometric_figure_of_limited_size;;
 
@@ -9,7 +13,9 @@ d_concept_geometric_figure_of_limited_size <= nrel_sc_text_translation:
 	(*
 	-> rrel_example:
 		[Геометрическая фигура ограниченного размера - непрерывная геометрическая фигура, для которой существует шар, включающий в себя эту фигуру.]
-		(* <- lang_ru;; *);;
+		(* <- lang_ru;; *);
+		[A geometric figure of limited size is a continuous geometric figure for which there is a sphere that includes this figure.]
+		(* <- lang_en;; *);;
 	*);;
 
 d_concept_geometric_figure_of_limited_size <= nrel_using_constants:

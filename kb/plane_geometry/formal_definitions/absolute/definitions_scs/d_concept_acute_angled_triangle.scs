@@ -1,7 +1,10 @@
 d_concept_acute_angled_triangle <- definition;;
 
-d_concept_acute_angled_triangle => nrel_main_idtf: [Опр.(остроугольный треугольник)] (* <- lang_ru;; *);;
-d_concept_acute_angled_triangle => nrel_main_idtf: [Def.(acute triangle)] (* <- lang_en;; *);;
+d_concept_acute_angled_triangle => nrel_main_idtf: 
+	[Опр.(остроугольный треугольник)]
+	(* <- lang_ru;; *);
+	[Def.(acute triangle)]
+	 (* <- lang_en;; *);;
 
 d_concept_acute_angled_triangle -> rrel_key_sc_element: concept_acute_angled_triangle;;
 
@@ -10,7 +13,9 @@ d_concept_acute_angled_triangle <= nrel_sc_text_translation:
 	(*
 	-> rrel_example: 
 		[Остроугольный треугольник – это треугольник, все внутренние углы которого являются острыми углами.]
-		(* <- lang_ru;; *);;
+		(* <- lang_ru;; *);
+		[Acute triangle is triangle in which each angle is acute, or less than 90 degrees.]
+		(* <- lang_en;; *);;
 	*);;
 
 d_concept_acute_angled_triangle <= nrel_using_constants:

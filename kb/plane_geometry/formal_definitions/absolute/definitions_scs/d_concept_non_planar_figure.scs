@@ -1,6 +1,10 @@
 d_concept_non_planar_figure <- definition;;
 
-d_concept_non_planar_figure => nrel_main_idtf: [Опр.(непланарная фигура)] (* <- lang_ru;; *);;
+d_concept_non_planar_figure => nrel_main_idtf: 
+	[Опр.(непланарная фигура)] 
+	(* <- lang_ru;; *);
+	[Def.(non planar figure)] 
+	(* <- lang_en;; *);;
 
 d_concept_non_planar_figure -> rrel_key_sc_element: concept_non_planar_figure;;
 
@@ -9,7 +13,9 @@ d_concept_non_planar_figure <= nrel_sc_text_translation:
 	(*
 	-> rrel_example: 
 		[Непланарная фигура - это геометрическая фигура, у которой хотя бы одна из геометрических точек, принадлежащих ей, не лежит в одной плоскости.]
-		(* <- lang_ru;; *);;
+		(* <- lang_ru;; *);
+		[A non-planar figure is a geometric figure in that have at least one of the geometric points belonging to it does not belong to the same plane with other points, that belong to this figure.]
+		(* <- lang_en;; *);;
 	*);;
 
 d_concept_non_planar_figure <= nrel_using_constants:

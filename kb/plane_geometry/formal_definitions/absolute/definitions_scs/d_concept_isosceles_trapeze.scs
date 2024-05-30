@@ -1,6 +1,10 @@
 d_concept_isosceles_trapezoid <- definition;;
 
-d_concept_isosceles_trapezoid => nrel_main_idtf: [Опр.(равнобедренная трапеция)] (* <- lang_ru;; *);;
+d_concept_isosceles_trapezoid => nrel_main_idtf: 
+	[Опр.(равнобедренная трапеция)] 
+	(* <- lang_ru;; *);
+	[Def.(isosceles trapezoid)] 
+	(* <- lang_en;; *);;
  
 d_concept_isosceles_trapezoid -> rrel_key_sc_element: concept_isosceles_trapezoid;;
 
@@ -9,7 +13,9 @@ d_concept_isosceles_trapezoid <= nrel_sc_text_translation:
 	(*
 	-> rrel_example: 
 		[Равнобедренная трапеция - трапеция, у которой  боковые стороны равны.]
-		(* <- lang_ru;; *);;
+		(* <- lang_ru;; *);
+		[An isosceles trapezoid is a trapezoid that have equal sides.]
+		(* <- lang_en;; *);;
 	*);;
 
 d_concept_isosceles_trapezoid <= nrel_using_constants:

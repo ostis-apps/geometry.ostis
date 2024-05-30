@@ -4,4 +4,8 @@ spec_finding_statement -> rrel_key_sc_element: statement;;
 
 general_specification -> spec_finding_explanation;;
 
-spec_finding_statement => nrel_main_idtf: [Обобщённая спецификация для поиска утверждений] (* <- lang_ru;; *);;
+spec_finding_statement => nrel_main_idtf:
+    [Обобщённая спецификация для поиска утверждений] 
+    (* <- lang_ru;; *);
+    [A generalized specification for finding statement] 
+    (* <- lang_en;; *);;
