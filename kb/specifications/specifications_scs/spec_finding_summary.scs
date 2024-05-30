@@ -4,4 +4,8 @@ spec_finding_summary -> rrel_key_sc_element: nrel_summary;;
 
 general_specification -> spec_finding_summary;;
 
-spec_finding_summary => nrel_main_idtf: [Обобщённая спецификация для поиска аннотации раздела] (* <- lang_ru;; *);;
+spec_finding_summary => nrel_main_idtf:
+    [Обобщённая спецификация для поиска аннотации раздела] 
+    (* <- lang_ru;; *);
+    [A generalized specification for finding section summary] 
+    (* <- lang_en;; *);;
