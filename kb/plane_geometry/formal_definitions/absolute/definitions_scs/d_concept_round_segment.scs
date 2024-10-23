@@ -3,7 +3,7 @@ d_concept_round_segment <- definition;;
 d_concept_round_segment => nrel_main_idtf:
 	[Опр.(сегмент круга)]
 	(* <- lang_ru;; *);
-	[Def.(circular segment )]
+	[Def.(round segment)]
 	(* <- lang_en;; *);;
 
 d_concept_round_segment -> rrel_key_sc_element: concept_round_segment;;
@@ -14,7 +14,7 @@ d_concept_round_segment <= nrel_sc_text_translation:
 	-> rrel_example: 
 		[Круговой сегмент - часть круга, ограниченная дугой окружности и хордой, соединяющей концы дуги.]
 		(* <- lang_ru;; *);
-		[A circular segment is a part of a circle bounded by an arc of the circle and a chord connecting the endpoints of the arc.]
+		[A round segment is a part of a circle bounded by an arc of the circle and a chord connecting the endpoints of the arc.]
 		(* <- lang_en;; *);;
 	*);;
 

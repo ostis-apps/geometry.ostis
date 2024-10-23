@@ -1,14 +1,9 @@
 sc_node_norole_relation -> nrel_adjacent_faces;;
- 
-nrel_adjacent_faces => nrel_main_idtf:
-	[(смежные грани*)](*<-lang_ru;;*);
-	[(adjacent_faces*)](*<lang_en;;*);;
 
+nrel_adjacent_faces => nrel_main_idtf: [смежные грани*] (* <- lang_ru;; *);;
+nrel_adjacent_faces => nrel_main_idtf: [adjacent_faces*] (* <- lang_en;; *);; 
 
-nrel_adjacent_faces => nrel_idtf:
-	[(быть смежными гранями*)] (* <- lang_ru;; *);
-	[(to be adjacent faces*)] (* <- lang_en;; *);; 
-
+nrel_adjacent_faces => nrel_idtf: [быть смежными гранями*] (* <- lang_ru;; *);;
 
 nrel_adjacent_faces => nrel_first_domain: concept_polygon;;
 
@@ -31,7 +26,6 @@ nrel_adjacent_faces <- rrel_key_sc_element: ...
 					"file://images/adjacent.png"(*=> nrel_format: format_png;;*);;
 		*);;
 	*);;
-
 
 
 

@@ -3,7 +3,7 @@ d_concept_simple_broken_line <- definition;;
 d_concept_simple_broken_line => nrel_main_idtf:
 	[Опр.(простая ломаная)]
 	(* <- lang_ru;; *);
-	[Def.(simple polygonal)]
+	[Def.(simple broken line)]
 	(* <- lang_en;; *);;
 
 d_concept_simple_broken_line -> rrel_key_sc_element: concept_simple_broken_line;;
@@ -14,7 +14,7 @@ d_concept_simple_broken_line <= nrel_sc_text_translation:
 	-> rrel_example: 
 		[Простая ломаная - это ломаная, которая не имеет самопересечений.]
 		(* <- lang_ru;; *);
-		[A simple polygonal line is a polygonal line that does not have any self-intersections.]
+		[A simple broken line is a polygonal line that does not have any self-intersections.]
 		(* <- lang_en;; *);;
 	*);;
 

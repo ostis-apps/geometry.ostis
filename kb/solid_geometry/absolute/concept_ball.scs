@@ -5,14 +5,14 @@ concept_ball => nrel_main_idtf:
 	[ball] (*<-lang_en;;*);;
 
 concept_ball => nrel_idtf:
-	[Класс шаров] (*<-lang_ru;;*);
-	[Class of balls] (*<-lang_en;;*);;
+	[класс шаров] (*<-lang_ru;;*);
+	[class of balls] (*<-lang_en;;*);;
 concept_ball => nrel_idtf:
-	[Множество всевозможных шаров] (* <- lang_ru;; *);
-	[Set of all possible balls] (* <- lang_en;; *);;
+	[множество всевозможных шаров] (* <- lang_ru;; *);
+	[set of all possible balls] (* <- lang_en;; *);;
 concept_ball => nrel_idtf:
- 	[Множество знаков всевозможных шаров] (* <- lang_ru;; *);
-	[Set of signs of all possible balls] (* <- lang_en;; *);;
+ 	[множество знаков всевозможных шаров] (* <- lang_ru;; *);
+	[set of signs of all possible balls] (* <- lang_en;; *);;
 
 concept_ball <= nrel_strict_inclusion: concept_solid_of_revolution;;
 

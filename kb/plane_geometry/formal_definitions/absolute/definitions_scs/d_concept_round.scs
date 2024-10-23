@@ -3,7 +3,7 @@ d_concept_round <- definition;;
 d_concept_round => nrel_main_idtf:
 	[Опр.(круг)]
 	(* <- lang_ru;; *);
-	[Def.(circle)]
+	[Def.(round)]
 	(* <- lang_en;; *);;
 
 d_concept_round -> rrel_key_sc_element: concept_round;;
@@ -14,13 +14,12 @@ d_concept_round <= nrel_sc_text_translation:
 	-> rrel_example: 
 		[Круг - часть плоскости, ограниченная окружностью.]
 		(* <- lang_ru;; *);
-		[A circle is a part of a plane bounded by a circumference.]
+		[A round is a part of a plane bounded by a circumference.]
 		(* <- lang_en;; *);;
 	*);;
 
 d_concept_round <= nrel_using_constants:
 	{
 	concept_circle; 
-	concept_planar_figure;
 	concept_plane
 	};;
