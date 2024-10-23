@@ -1,7 +1,8 @@
 d_concept_conical_surface <- definition;;
 
-d_concept_conical_surface => nrel_main_idtf: [Опр.(коническая поверхность)] (*<-lang_ru;;*);;
-d_concept_conical_surface => nrel_main_idtf: [Def.(conical surface)] (*<-lang_en;;*);;
+d_concept_conical_surface => nrel_main_idtf:
+	[Опр.(коническая поверхность)] (*<-lang_ru;;*);
+	[Def.(conical surface)] (*<-lang_en;;*);;
 
 d_concept_conical_surface -> rrel_key_sc_element: concept_conical_surface;;
 
@@ -19,5 +20,6 @@ d_concept_conical_surface <= nrel_sc_text_translation:
 		...
 		(*
 		-> rrel_example: 
-		[Коническая поверхность – совокупность всех прямых, проведенных через каждую точку заданной окружности, лежащей в плоскости, и точку, лежащую на прямой, перпендикулярной данной плоскости и проходящей через центр окружности.] (*<-lang_ru;;*);;
+		[Коническая поверхность – совокупность всех прямых, проведенных через каждую точку заданной окружности, лежащей в плоскости, и точку, лежащую на прямой, перпендикулярной данной плоскости и проходящей через центр окружности.] (*<-lang_ru;;*);
+		[A conical surface is the set of all straight lines passing through each point of a given circle lying in a plane, and a point lying on a line perpendicular to the given plane and passing through the center of the circle.] (*<-lang_en;;*);;
 		*);;

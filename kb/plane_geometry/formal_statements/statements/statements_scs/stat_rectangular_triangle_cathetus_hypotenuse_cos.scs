@@ -10,15 +10,15 @@ stat_rectangular_triangle_cathetus_hypotenuse_cos
 
 stat_rectangular_triangle_cathetus_hypotenuse_cos
 => nrel_main_idtf:
-	[Утв.(прямоугольный треугольник;прилежащий*;катет*;гипотенуза*;косинус*)] (* <-lang_ru;; *);;
-
-stat_rectangular_triangle_cathetus_hypotenuse_cos
-=> nrel_main_idtf:
+	[Утв.(прямоугольный треугольник;прилежащий*;катет*;гипотенуза*;косинус*)] (* <-lang_ru;; *);
 	[Stat.(rectangular triangle;adjacent*;cathetus*;hypotenuse*;cos*)] (* <-lang_en;; *);;
 
 stat_rectangular_triangle_cathetus_hypotenuse_cos <= nrel_sc_text_translation: 
 	...
 	(*
 		-> rrel_example: 
-		[В прямоугольном треугольнике каждый катет равен гипотенузе, умноженной на косинус прилежащего к этому катету угла.] (* <- lang_ru;; *);;
+		[В прямоугольном треугольнике каждый катет равен гипотенузе, умноженной на косинус прилежащего к этому катету угла.] 
+		(* <- lang_ru;; *);
+		[In a right triangle, each leg is equal to the hypotenuse multiplied by the cosine of the angle adjacent to that leg.]
+		(* <-lang_en;; *);;
 	*);;

@@ -6,14 +6,14 @@ d_concept_rectangular_parallelepiped => nrel_main_idtf: [Def.(rectangular parall
 d_concept_rectangular_parallelepiped -> rrel_key_sc_element: concept_rectangular_parallelepiped;;
 
 d_concept_rectangular_parallelepiped <= nrel_using_constants:
-	{
-	concept_rectangle;
-	concept_parallelepiped;
-	nrel_face_of_polyhedron
-	};;
+{
+concept_rectangle;
+concept_parallelepiped;
+nrel_face_of_polyhedron
+};;
 
-d_concept_rectangular_parallelepiped <= nrel_sc_text_translation: 
-		...
+d_concept_rectangular_parallelepiped <= nrel_sc_text_translation:
+...
 		(*
 		-> rrel_example: 
 		[Прямоугольный параллелепипед - это параллелепипед, у которого все грани - прямоугольники.] (*<-lang_ru;;*);;

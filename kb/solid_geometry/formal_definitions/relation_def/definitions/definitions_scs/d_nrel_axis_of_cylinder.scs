@@ -1,7 +1,8 @@
 d_nrel_axis_of_cylinder <- definition;;
 
-d_nrel_axis_of_cylinder => nrel_main_idtf: [Опр.(ось цилиндра*)] (*<-lang_ru;;*);;
-d_nrel_axis_of_cylinder => nrel_main_idtf: [Def.(axis of cylinder*)] (*<-lang_en;;*);;
+d_nrel_axis_of_cylinder => nrel_main_idtf:
+	[Опр.(ось цилиндра*)] (*<-lang_ru;;*);
+	[Def.(axis of cylinder*)] (*<-lang_en;;*);;
 
 d_nrel_axis_of_cylinder -> rrel_key_sc_element: nrel_axis_of_cylinder;;
 
@@ -18,5 +19,6 @@ d_nrel_axis_of_cylinder <= nrel_sc_text_translation:
 	...
 	(*
 	-> rrel_example:
-	[Ось цилиндра - это прямая, проходящая через центры кругов, являющихся основаниями цилиндра.] (*<-lang_ru;;*);;
+	[Ось цилиндра - это прямая, проходящая через центры кругов, являющихся основаниями цилиндра.] (*<-lang_ru;;*);
+	[The axis of a cylinder is the straight line passing through the centers of the circles that form the bases of the cylinder.](*<-lang_en;;*);;
 	*);;

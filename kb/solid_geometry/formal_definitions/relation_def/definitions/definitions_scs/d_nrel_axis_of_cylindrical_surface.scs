@@ -1,7 +1,8 @@
 d_nrel_axis_of_cylindrical_surface <- definition;;
 
-d_nrel_axis_of_cylindrical_surface => nrel_main_idtf: [Опр.(ось цилиндрической поверхности*)] (*<-lang_ru;;*);;
-d_nrel_axis_of_cylindrical_surface => nrel_main_idtf: [Def.(axis of cylindrical surface*)] (*<-lang_en;;*);;
+d_nrel_axis_of_cylindrical_surface => nrel_main_idtf:
+	[Опр.(ось цилиндрической поверхности*)] (*<-lang_ru;;*);
+	[Def.(axis of cylindrical surface*)] (*<-lang_en;;*);;
 
 d_nrel_axis_of_cylindrical_surface -> rrel_key_sc_element: nrel_axis_of_cylindrical_surface;;
 
@@ -20,5 +21,6 @@ d_nrel_axis_of_cylindrical_surface <= nrel_sc_text_translation:
 	...
 	(*
 	-> rrel_example:
-	[Ось цилиндрической поверхности – прямая, параллельная образующим цилиндрической поверхности и проходящая через центр окружности, лежащей в некоторой плоскости.] (*<-lang_ru;;*);;
+	[Ось цилиндрической поверхности – прямая, параллельная образующим цилиндрической поверхности и проходящая через центр окружности, лежащей в некоторой плоскости.] (*<-lang_ru;;*);
+	[The axis of a cylindrical surface is a straight line parallel to the generators of the cylindrical surface and passing through the center of a circle lying in some plane.](*<-lang_en;;*);;
 	*);;

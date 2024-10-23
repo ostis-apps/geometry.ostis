@@ -1,7 +1,8 @@
 d_nrel_axis_of_truncated_cone <- definition;;
 
-d_nrel_axis_of_truncated_cone => nrel_main_idtf: [Опр.(ось усеченного конуса*)] (*<-lang_ru;;*);;
-d_nrel_axis_of_truncated_cone => nrel_main_idtf: [Def.(axis of truncated cone*)] (*<-lang_en;;*);;
+d_nrel_axis_of_truncated_cone => nrel_main_idtf:
+	[Опр.(ось усеченного конуса*)] (*<-lang_ru;;*);
+	[Def.(axis of truncated cone*)] (*<-lang_en;;*);;
 
 d_nrel_axis_of_truncated_cone -> rrel_key_sc_element: nrel_axis_of_truncated_cone;;
 
@@ -16,5 +17,6 @@ d_nrel_axis_of_truncated_cone <= nrel_sc_text_translation:
 	...
 	(*
 	-> rrel_example:
-	[Ось усеченного конуса - это прямая, проходящая через центры оснований усеченного конуса.] (*<-lang_ru;;*);;
+	[Ось усеченного конуса - это прямая, проходящая через центры оснований усеченного конуса.] (*<-lang_ru;;*);
+	[The axis of a truncated cone is the straight line passing through the centers of the bases of the truncated cone.](*<-lang_en;;*);;
 	*);;

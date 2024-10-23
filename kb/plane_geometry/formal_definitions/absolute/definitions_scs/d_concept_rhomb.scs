@@ -1,7 +1,10 @@
 d_concept_rhomb <- definition;;
 
-d_concept_rhomb => nrel_main_idtf: [Опр.(ромб)] (* <- lang_ru;; *);;
-d_concept_rhomb => nrel_main_idtf: [Def.(rhomb)] (* <- lang_en;; *);;
+d_concept_rhomb => nrel_main_idtf: 
+	[Опр.(ромб)]
+	(* <- lang_ru;; *);
+	[Def.(rhomb)]
+	(* <- lang_en;; *);;
 
 d_concept_rhomb -> rrel_key_sc_element: concept_rhomb;;
    
@@ -10,7 +13,9 @@ d_concept_rhomb <= nrel_sc_text_translation:
 	(*
 	-> rrel_example: 
 		[Ромб - параллелограмм, у которого все стороны равны.]
-		(* <- lang_ru;; *);;
+		(* <- lang_ru;; *);
+		[A rhomb is a parallelogram with all sides equal.]
+		(* <- lang_en;; *);;
 	*);;
 
 d_concept_rhomb <= nrel_using_constants:

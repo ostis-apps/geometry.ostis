@@ -1,7 +1,8 @@
 d_concept_cylinder <- definition;;
 
-d_concept_cylinder => nrel_main_idtf: [Опр.(цилиндр)] (*<-lang_ru;;*);;
-d_concept_cylinder => nrel_main_idtf: [Def.(cylinder)] (*<-lang_en;;*);;
+d_concept_cylinder => nrel_main_idtf:
+	[Опр.(цилиндр)] (*<-lang_ru;;*);
+	[Def.(cylinder)] (*<-lang_en;;*);;
 
 d_concept_cylinder -> rrel_key_sc_element: concept_cylinder;;
 
@@ -18,5 +19,6 @@ d_concept_cylinder <= nrel_sc_text_translation:
 		...
 		(*
 		-> rrel_example: 
-		[Цилиндр – геометрическое тело, ограниченное цилиндрической поверхность и двумя плоскостями, которые перпендикулярны к образующим цилиндрической поверхности] (*<-lang_ru;;*);;
+		[Цилиндр – геометрическое тело, ограниченное цилиндрической поверхность и двумя плоскостями, которые перпендикулярны к образующим цилиндрической поверхности] (*<-lang_ru;;*);
+		[A cylinder is a geometric solid bounded by a cylindrical surface and two planes that are perpendicular to the generators of the cylindrical surface.] (*<-lang_en;;*);;
 		*);;

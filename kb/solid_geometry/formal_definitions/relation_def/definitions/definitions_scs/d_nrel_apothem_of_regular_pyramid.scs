@@ -1,7 +1,8 @@
 d_nrel_apothem_of_regular_pyramid <- definition;;
 
-d_nrel_apothem_of_regular_pyramid => nrel_main_idtf: [Опр.(апофема правильной пирамиды*)] (*<-lang_ru;;*);;
-d_nrel_apothem_of_regular_pyramid => nrel_main_idtf: [Def.(apothem of regular pyramid*)] (*<-lang_en;;*);;
+d_nrel_apothem_of_regular_pyramid => nrel_main_idtf:
+	[Опр.(апофема правильной пирамиды*)] (*<-lang_ru;;*);
+	[Def.(apothem of regular pyramid*)] (*<-lang_en;;*);;
 
 d_nrel_apothem_of_regular_pyramid -> rrel_key_sc_element: nrel_apothem_of_regular_pyramid;;
 
@@ -18,5 +19,6 @@ d_nrel_apothem_of_regular_pyramid <= nrel_sc_text_translation:
 	...
 	(*
 	-> rrel_example:
-	[Апофема правильной пирамиды - это высота ее боковой грани, проведенная к стороне ее основания.] (*<-lang_ru;;*);;
+	[Апофема правильной пирамиды - это высота ее боковой грани, проведенная к стороне ее основания.] (*<-lang_ru;;*);
+	[The apothem of a regular pyramid is the height of its lateral face drawn perpendicular to the side of its base.](*<-lang_en;;*);;
 	*);;

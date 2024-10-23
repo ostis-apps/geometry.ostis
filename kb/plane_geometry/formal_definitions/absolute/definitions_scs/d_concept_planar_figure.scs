@@ -1,6 +1,10 @@
 d_concept_planar_figure <- definition;;
 
-d_concept_planar_figure => nrel_main_idtf: [Опр.(планарная фигура)] (* <- lang_ru;; *);;
+d_concept_planar_figure => nrel_main_idtf:
+	[Опр.(планарная фигура)] 
+	(* <- lang_ru;; *);
+	[Def.(plane figure)]
+	(* <- lang_en;; *);;
 
 d_concept_planar_figure -> rrel_key_sc_element: concept_planar_figure;;
 
@@ -9,7 +13,9 @@ d_concept_planar_figure <= nrel_sc_text_translation:
 	(*
 	-> rrel_example: 
 		[Планарная геометрическая фигура - это геометрическая фигура, все точки которой лежат в одной плоскости.]
-		(* <- lang_ru;; *);;
+		(* <- lang_ru;; *);
+		[A planar geometric figure is a geometric figure whose all points lie in a single plane.]
+		(* <- lang_en;; *);;
 	*);;
 
 d_concept_planar_figure <= nrel_using_constants:

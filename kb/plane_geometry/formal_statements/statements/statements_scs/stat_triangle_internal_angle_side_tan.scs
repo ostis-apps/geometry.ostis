@@ -17,16 +17,20 @@ stat_triangle_internal_angle_side_tan
 
 stat_triangle_internal_angle_side_tan
 	=> nrel_idtf:
-	[Теорема Региомонтана] (*<- lang_ru;;*);;
+	[Теорема Региомонтана] (*<- lang_ru;;*);
+	[The Regiomontanus theorem](*<-lang_en;;*);;
 
 stat_triangle_internal_angle_side_tan
 	=> nrel_idtf:
-	[Теорема тангенсов для треугольника] (*<- lang_ru;;*);;
+	[Теорема тангенсов для треугольника] (*<- lang_ru;;*);
+	[The tangent theorem for a triangle] (* <-lang_en;;*);;
 
 stat_triangle_internal_angle_side_tan <= nrel_sc_text_translation: 
 	... 
 	(* 
 	-> rrel_example: 
 		[(a+b)/(a-b)=tg((α+β)/2)/tg((α-β)/2), где a и b - стороны треугольника, а α и β - углы, им противолежащие.] 
-		(* <- lang_ru;; *);; 
+		(* <- lang_ru;; *);
+		[The tangent theorem for a triangle states that (a+b)/(a-b) = tan((α+β)/2) / tan((α-β)/2), where a and b are the sides of the triangle, and α and β are the angles opposite to them.]
+		(* <- lang_en;; *);;
 	*);;

@@ -10,15 +10,15 @@ stat_rectangular_triangle_cathetus_hypotenuse_sin
 
 stat_rectangular_triangle_cathetus_hypotenuse_sin
 => nrel_main_idtf:
-	[Утв.(прямоугольный треугольник;противолежащий*;катет*;гипотенуза*;синус*)] (* <-lang_ru;; *);;
-
-stat_rectangular_triangle_cathetus_hypotenuse_sin
-=> nrel_main_idtf:
+	[Утв.(прямоугольный треугольник;противолежащий*;катет*;гипотенуза*;синус*)] (* <-lang_ru;; *);
 	[Stat.(rectangular triangle;opposite*;cathetus*;hypotenuse*;sin*)] (* <-lang_en;; *);;
 
 stat_rectangular_triangle_cathetus_hypotenuse_sin <= nrel_sc_text_translation: 
 	...
 	(*
 		-> rrel_example: 
-		[В прямоугольном треугольнике каждый катет равен гипотенузе, умноженной на синус противолежащего этому катету угла.] (* <- lang_ru;; *);;
+		[В прямоугольном треугольнике каждый катет равен гипотенузе, умноженной на синус противолежащего этому катету угла.]
+		 (* <- lang_ru;; *);
+		[In a right triangle, each leg is equal to the hypotenuse multiplied by the sine of the angle opposite that leg.]
+		 (* <-lang_en;; *);;
 	*);;

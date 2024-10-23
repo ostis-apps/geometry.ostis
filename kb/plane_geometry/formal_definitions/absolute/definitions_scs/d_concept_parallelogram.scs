@@ -1,7 +1,10 @@
 d_concept_parallelogram <- definition;;
 
-d_concept_parallelogram => nrel_main_idtf: [Опр.(параллелограмм)] (* <- lang_ru;; *);;
-d_concept_parallelogram => nrel_main_idtf: [Def.(parallelogram)] (* <- lang_en;; *);;
+d_concept_parallelogram => nrel_main_idtf: 
+	[Опр.(параллелограмм)]
+	(* <- lang_ru;; *);
+	[Def.(parallelogram)]
+	(* <- lang_en;; *);;
 
 d_concept_parallelogram -> rrel_key_sc_element: concept_parallelogram;;
 
@@ -10,7 +13,9 @@ d_concept_parallelogram <= nrel_sc_text_translation:
 	(*
 	-> rrel_example: 
 		[Параллелограмм - это четырёхугольник, у которого противоположные стороны попарно параллельны.]
-		(* <- lang_ru;; *);;
+		(* <- lang_ru;; *);
+		[A parallelogram is a quadrilateral in which the opposite sides are parallel in pairs.]
+		(* <- lang_en;; *);;
 	*);;
 
 d_concept_parallelogram <= nrel_using_constants:

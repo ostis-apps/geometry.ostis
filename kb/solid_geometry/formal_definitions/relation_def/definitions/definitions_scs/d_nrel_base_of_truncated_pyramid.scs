@@ -1,7 +1,8 @@
 d_nrel_base_of_truncated_pyramid <- definition;;
 
-d_nrel_base_of_truncated_pyramid => nrel_main_idtf: [Опр.(основание усеченной пирамиды*)] (*<-lang_ru;;*);;
-d_nrel_base_of_truncated_pyramid => nrel_main_idtf: [Def.(base of truncated pyramid*)] (*<-lang_en;;*);;
+d_nrel_base_of_truncated_pyramid => nrel_main_idtf: 
+	[Опр.(основание усеченной пирамиды*)] (*<-lang_ru;;*);
+	[Def.(base of truncated pyramid*)] (*<-lang_en;;*);;
 
 d_nrel_base_of_truncated_pyramid -> rrel_key_sc_element: nrel_base_of_truncated_pyramid;;
 
@@ -19,5 +20,6 @@ d_nrel_base_of_truncated_pyramid <= nrel_sc_text_translation:
 	...
 	(*
 	-> rrel_example:
-		[Основанием усеченной пирамиды называется одна из двух параллельных граней, которые являются многоугольниками и называются нижним и верхним основаниями усеченной пирамиды.] (*<-lang_ru;;*);;
+		[Основанием усеченной пирамиды называется одна из двух параллельных граней, которые являются многоугольниками и называются нижним и верхним основаниями усеченной пирамиды.] (*<-lang_ru;;*);
+		[The base of a truncated pyramid is one of the two parallel faces, which are polygons and are called the lower and upper bases of the truncated pyramid.](*<-lang_en;;*);;
 	*);;

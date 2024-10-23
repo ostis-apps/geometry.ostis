@@ -1,7 +1,8 @@
 sc_node_not_relation -> concept_zone_of_sphere;;
 
-concept_zone_of_sphere => nrel_main_idtf: [сферический пояс] (*<-lang_ru;;*);;
-concept_zone_of_sphere => nrel_main_idtf: [zone of sphere] (*<-lang_en;;*);;
+concept_zone_of_sphere => nrel_main_idtf:
+	[сферический пояс] (*<-lang_ru;;*);
+	[zone of sphere] (*<-lang_en;;*);;
 
 concept_zone_of_sphere <= nrel_strict_inclusion: concept_solid_of_revolution;;
 

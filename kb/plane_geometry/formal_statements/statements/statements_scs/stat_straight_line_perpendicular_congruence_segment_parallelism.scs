@@ -10,15 +10,15 @@ stat_straight_line_perpendicular_congruence_segment_parallelism
 
 stat_straight_line_perpendicular_congruence_segment_parallelism
 => nrel_main_idtf:
-	[Утв.(прямая;перпендикуляр*;конгруэнтность*;отрезок;параллельность*)] (* <-lang_ru;; *);;
-
-stat_straight_line_perpendicular_congruence_segment_parallelism
-=> nrel_main_idtf:
+	[Утв.(прямая;перпендикуляр*;конгруэнтность*;отрезок;параллельность*)] (* <-lang_ru;; *);
 	[Stat.(straight line;perpendicular*;congruence*;segment;parallelism*)] (* <-lang_en;; *);;
 
 stat_straight_line_perpendicular_congruence_segment_parallelism <= nrel_sc_text_translation:
 	...
 	(*
 		-> rrel_example: 
-		[Расстояние от всех точек данной прямой до прямой, параллельной ей, равны т.е. параллельные прямые равноотстоящие.] (* <- lang_ru;; *);;
+		[Расстояние от всех точек данной прямой до прямой, параллельной ей, равны т.е. параллельные прямые равноотстоящие.] 
+		(* <- lang_ru;; *);
+		[The distance from all points on a given line to a line parallel to it are equal, i.e. parallel lines are equidistant.]
+		(* <-lang_en;; *);;
 	*);;

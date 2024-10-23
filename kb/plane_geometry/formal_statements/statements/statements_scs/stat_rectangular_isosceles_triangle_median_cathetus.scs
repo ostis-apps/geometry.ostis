@@ -9,16 +9,15 @@ stat_rectangular_isosceles_triangle_median_cathetus
 
 stat_rectangular_isosceles_triangle_median_cathetus
 	=> nrel_main_idtf:
-	[Утв.(прямоугольный треугольник;равнобедренный треугольник;катет*;медиана*)] (*<- lang_ru;;*);;
-
-stat_rectangular_isosceles_triangle_median_cathetus
-	=> nrel_main_idtf:
+	[Утв.(прямоугольный треугольник;равнобедренный треугольник;катет*;медиана*)] (*<- lang_ru;;*);
 	[Stat.(rectangular triangle;isosceles triangle;median*;cathetus*)] (*<- lang_en;;*);;
 
 stat_rectangular_isosceles_triangle_median_cathetus <= nrel_sc_text_translation: 
 	... 
 	(* 
 	-> rrel_example: 
-		[Для равнобедренного прямоугольного треугольника справедливо равенство m_a=m_b=a*sqrt(5)/2, где m_a, m_b - медианы, проведённые к катетам a и b соответственно.] 
-		(* <- lang_ru;; *);; 
+		[Для равнобедренного прямоугольного треугольника справедливо равенство m_a = m_b = a*sqrt(5)/2, где m_a, m_b - медианы, проведённые к катетам a и b соответственно.] 
+		(* <- lang_ru;; *);
+		[For an isosceles right triangle, the following equality holds: m_a = m_b = a*sqrt(5)/2, where m_a and m_b are the medians drawn to the legs a and b, respectively.]
+		(*<- lang_en;;*);;
 	*);;

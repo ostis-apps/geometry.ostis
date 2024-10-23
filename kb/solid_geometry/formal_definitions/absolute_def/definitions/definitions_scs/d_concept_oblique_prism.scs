@@ -1,7 +1,8 @@
 d_concept_oblique_prism <- definition;;
 
-d_concept_oblique_prism => nrel_main_idtf: [Опр.(наклонная призма)] (*<-lang_ru;;*);;
-d_concept_oblique_prism => nrel_main_idtf: [Def.(oblique prism)] (*<-lang_en;;*);;
+d_concept_oblique_prism => nrel_main_idtf:
+	[Опр.(наклонная призма)] (*<-lang_ru;;*);
+	[Def.(oblique prism)] (*<-lang_en;;*);;
 
 d_concept_oblique_prism -> rrel_key_sc_element: concept_oblique_prism;;
 
@@ -15,5 +16,6 @@ d_concept_oblique_prism <= nrel_sc_text_translation:
 	...
 	(*
 	-> rrel_example: 
-	[Наклонная призма - это призма, которая не является прямой.] (*<-lang_ru;;*);;
+	[Наклонная призма - это призма, которая не является прямой.] (*<-lang_ru;;*);
+	[An oblique prism is a prism that is not a right prism.] (*<-lang_en;;*);;
 	*);;

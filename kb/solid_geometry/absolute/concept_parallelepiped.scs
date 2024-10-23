@@ -1,7 +1,8 @@
 sc_node_not_relation -> concept_parallelepiped;;
 
-concept_parallelepiped => nrel_main_idtf: [параллелепипед] (*<-lang_ru;;*);;
-concept_parallelepiped => nrel_main_idtf: [parallelepiped](*<-lang_en;;*);;
+concept_parallelepiped => nrel_main_idtf: 
+	[параллелепипед] (*<-lang_ru;;*);
+	[parallelepiped](*<-lang_en;;*);;
 
 concept_parallelepiped <= nrel_strict_inclusion: concept_prism;;
 

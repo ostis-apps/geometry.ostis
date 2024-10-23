@@ -19,5 +19,10 @@ stat_triangle_bisectrix_side_segment <= nrel_sc_text_translation:
 	...
 	(*
 		-> rrel_example: 
-		[Отрезки, на которые биссектриса делит сторону треугольника можно найти по формуле: пусть биссектриса АА1 делит сторону а на отрезки b1 и c1, причём b1 находится ближе к стороне b, а c1 - к стороне c. Тогда справедливы формулы: c1=(a*c)/(b+c); b1=(a*b)/(b+c).] (* <- lang_ru;; *);;
+		[Отрезки, на которые биссектриса делит сторону треугольника можно найти по формуле: пусть биссектриса АА1 делит сторону а на отрезки b1 и c1, причём b1 находится ближе к стороне b, а c1 - к стороне c. Тогда справедливы формулы: c1=(a*c)/(b+c); b1=(a*b)/(b+c).] 
+		(* <- lang_ru;; *);
+		[The segments into which the bisector of a side of a triangle divides that side can be found using the formula: let the bisector AA1 divide the side a into segments b1 and c1, where b1 is closer to side b, and c1 is closer to side c. Then the following formulas hold true: 
+		c1 = (ac)/(b+c);
+        b1 = (ab)/(b+c).]
+		(* <- lang_en;; *);;
 	*);;

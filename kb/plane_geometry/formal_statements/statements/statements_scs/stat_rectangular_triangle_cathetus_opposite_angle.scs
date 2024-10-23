@@ -9,35 +9,59 @@ stat_reverse_rectangular_triangle_cathetus_opposite_angle -> rrel_key_sc_element
 stat_reverse_converse_rectangular_triangle_cathetus_opposite_angle -> rrel_key_sc_element: concept_rectangular_triangle; nrel_cathetus; nrel_hypotenuse; nrel_internal_angle; nrel_opposite;;
 
 
-stat_rectangular_triangle_cathetus_opposite_angle => nrel_main_idtf: [Утв.(прямоугольный треугольник; катет*; число)] (* <- lang_ru;; *);;
-stat_rectangular_triangle_cathetus_opposite_angle => nrel_idtf: [Теорема о катете лежащем против угла в 30 градусов.] (* <- lang_ru;; *);;
-stat_converse_rectangular_triangle_cathetus_opposite_angle => nrel_main_idtf: [ Прот.утв.(прямоугольный треугольник; катет*; число)] (* <- lang_ru;; *);;
-stat_converse_rectangular_triangle_cathetus_opposite_angle => nrel_idtf: [Теорема, обратная теореме о катете лежащем против угла в 30 градусов] (* <- lang_ru;; *);;
-stat_reverse_rectangular_triangle_cathetus_opposite_angle => nrel_main_idtf: [Прот.утв.(прямоугольный треугольник; катет*; число)] (* <- lang_ru;; *);;
-stat_reverse_converse_rectangular_triangle_cathetus_opposite_angle => nrel_main_idtf: [Прот.обр.утв.(прямоугольный треугольник; катет*; число)] (* <- lang_ru;; *);;
+stat_rectangular_triangle_cathetus_opposite_angle => nrel_main_idtf: 
+	[Утв.(прямоугольный треугольник; катет*; число)] (* <- lang_ru;; *);
+	[Stat. (rectangular triangle; leg*; number)](* <-lang_en;;*);;
+
+
+stat_rectangular_triangle_cathetus_opposite_angle => nrel_idtf: 
+	[Теорема о катете лежащем против угла в 30 градусов.] (* <- lang_ru;; *);
+	[Theorem about the leg opposite the 30-degree angle.] (* <- lang_en;; *);;
+
+stat_converse_rectangular_triangle_cathetus_opposite_angle => nrel_main_idtf:
+	[Обр.утв.(прямоугольный треугольник; катет*; число)] (* <- lang_ru;; *);
+	[Converse stat.(rectangular triangle; leg*; number)](* <-lang_en;;*);;
+
+
+stat_converse_rectangular_triangle_cathetus_opposite_angle => nrel_idtf:
+	[Теорема, обратная теореме о катете лежащем против угла в 30 градусов] (* <- lang_ru;; *);
+	[The converse theorem of the theorem about the leg opposite the 30-degree angle.] (* <- lang_en;; *);;
+
+stat_reverse_rectangular_triangle_cathetus_opposite_angle => nrel_main_idtf:
+	[Прот.утв.(прямоугольный треугольник; катет*; число)] (* <- lang_ru;; *);
+	[Inverse stat.(rectangular triangle; leg*; number)](* <-lang_en;;*);;
+
+
+stat_reverse_converse_rectangular_triangle_cathetus_opposite_angle => nrel_main_idtf:
+	[Прот.обр.утв.(прямоугольный треугольник; катет*; число)] (* <- lang_ru;; *);
+	[Contrapositive stat.(rectangular triangle; leg*; number)](* <-lang_en;;*);;
 
 stat_rectangular_triangle_cathetus_opposite_angle <= nrel_sc_text_translation: ...
 	(*
 	-> rrel_example:
-		[Если в прямоугольном треугольнике катет составляет половину гипотенузы, то угол лежащий против этого катета, равен тридцати градусам.](* <- lang_ru;; *);;
+		[Если в прямоугольном треугольнике катет составляет половину гипотенузы, то угол лежащий против этого катета, равен тридцати градусам.](* <- lang_ru;; *);
+		[If in a right triangle, the leg is half of the hypotenuse, then the angle opposite that leg is thirty degrees.] (* <- lang_en;; *);;
 	*);;
 
 stat_converse_rectangular_triangle_cathetus_opposite_angle <= nrel_sc_text_translation: ...
 	(*
 	-> rrel_example:
-		[Если в прямоугольном треугольнике угол лежащий против катета, равен тридцати градусам, то катет составляет половину гипотенузы.](* <- lang_ru;; *);;
+		[Если в прямоугольном треугольнике угол лежащий против катета, равен тридцати градусам, то катет составляет половину гипотенузы.](* <- lang_ru;; *);
+		[If in a right triangle, the angle opposite the leg is thirty degrees, then the leg is half of the hypotenuse.] (* <- lang_en;; *);;
 	*);;
 
 stat_reverse_rectangular_triangle_cathetus_opposite_angle <= nrel_sc_text_translation: ...
 	(*
 	-> rrel_example:
-		[Если в прямоугольном треугольнике катет не составляет половину гипотенузы, то угол лежащий против этого катета, не равен тридцати градусам.](* <- lang_ru;; *);;
+		[Если в прямоугольном треугольнике катет не составляет половину гипотенузы, то угол лежащий против этого катета, не равен тридцати градусам.](* <- lang_ru;; *);
+		[If in a right triangle, the leg is not half of the hypotenuse, then the angle opposite that leg is not equal to thirty degrees.] (* <- lang_en;; *);;
 	*);;
 
 stat_reverse_converse_rectangular_triangle_cathetus_opposite_angle <= nrel_sc_text_translation: ...
 	(*
 	-> rrel_example:
-		[Если в прямоугольном треугольнике угол лежащий против катета, не равен тридцати градусам, то катет не составляет половину гипотенузы.](* <- lang_ru;; *);;
+		[Если в прямоугольном треугольнике угол лежащий против катета, не равен тридцати градусам, то катет не составляет половину гипотенузы.](* <- lang_ru;; *);
+		[If in a right triangle, the angle opposite the leg is not equal to thirty degrees, then the leg is not half of the hypotenuse.] (* <- lang_en;; *);;
 	*);;
 
 stat_rectangular_triangle_cathetus_opposite_angle <=> nrel_converse_theorem: stat_converse_rectangular_triangle_cathetus_opposite_angle;;

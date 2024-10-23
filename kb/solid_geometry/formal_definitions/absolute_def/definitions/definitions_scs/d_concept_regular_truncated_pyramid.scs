@@ -1,7 +1,8 @@
 d_concept_regular_truncated_pyramid <- definition;;
 
-d_concept_regular_truncated_pyramid => nrel_main_idtf: [Опр.(правильная усеченная пирамида)] (*<-lang_ru;;*);;
-d_concept_regular_truncated_pyramid => nrel_main_idtf: [Def.(regular truncated pyramid)] (*<-lang_en;;*);;
+d_concept_regular_truncated_pyramid => nrel_main_idtf:
+	[Опр.(правильная усеченная пирамида)] (*<-lang_ru;;*);
+	[Def.(regular truncated pyramid)] (*<-lang_en;;*);;
 
 d_concept_regular_truncated_pyramid -> rrel_key_sc_element: concept_regular_truncated_pyramid;;
 
@@ -20,5 +21,6 @@ d_concept_regular_truncated_pyramid <= nrel_sc_text_translation:
 		...
 		(*
 		-> rrel_example: 
-		[Правильная усеченная пирамида - многогранник, гранями которого являются два многоугольника и n четырехугольников, которые отсекаются от правильной пирамиды плоскостью, параллельной плоскости основания пирамиды и пересекающей ее боковые ребра.] (*<-lang_ru;;*);;
+		[Правильная усеченная пирамида - многогранник, гранями которого являются два многоугольника и n четырехугольников, которые отсекаются от правильной пирамиды плоскостью, параллельной плоскости основания пирамиды и пересекающей ее боковые ребра.] (*<-lang_ru;;*);
+		[A regular truncated pyramid is a polyhedron whose faces consist of two polygons and n quadrilaterals, formed by cutting off a regular pyramid with a plane parallel to the base, intersecting the lateral edges.](*<-lang_en;;*);;
 		*);;

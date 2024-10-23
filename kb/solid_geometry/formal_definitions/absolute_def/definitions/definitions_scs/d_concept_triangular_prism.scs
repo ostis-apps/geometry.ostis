@@ -1,7 +1,8 @@
 d_concept_triangular_prism <- definition;;
 
-d_concept_triangular_prism => nrel_main_idtf: [Опр.(треугольная призма)] (*<-lang_ru;;*);;
-d_concept_triangular_prism => nrel_main_idtf: [Def.(triangular prism)] (*<-lang_en;;*);;
+d_concept_triangular_prism => nrel_main_idtf:
+	[Опр.(треугольная призма)] (*<-lang_ru;;*);
+	[Def.(triangular prism)] (*<-lang_en;;*);;
 
 d_concept_triangular_prism -> rrel_key_sc_element: concept_triangular_prism;;
 
@@ -16,6 +17,7 @@ d_concept_triangular_prism <= nrel_sc_text_translation:
 	...
 	(*
 	-> rrel_example: 
-	[Треугольная призма - это призма, основанием которой является треугольник.] (*<-lang_ru;;*);;
+	[Треугольная призма - это призма, основанием которой является треугольник.] (*<-lang_ru;;*);
+	[A triangular prism is a prism whose base is a triangle.](*<-lang_en;;*);;
 	*);;
 

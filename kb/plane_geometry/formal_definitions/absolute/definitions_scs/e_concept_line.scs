@@ -1,7 +1,10 @@
 e_concept_line <- explanation;;
 
-e_concept_line => nrel_main_idtf: [Поясн.(линия)] (* <- lang_ru;; *);;
-e_concept_line => nrel_main_idtf: [Expl.(line)] (* <- lang_ru;; *);;
+e_concept_line => nrel_main_idtf:
+	[Опр.(линия)]
+	(* <- lang_ru;; *);
+	[Def.(line)]
+	(* <- lang_ru;; *);;
 
 e_concept_line -> rrel_key_sc_element: concept_line;;
 
@@ -10,5 +13,7 @@ e_concept_line <= nrel_sc_text_translation:
 	(*
 	-> rrel_example: 
 		[Линия - образ границы любой геометрической фигуры.]
-		(* <- lang_ru;; *);;
+		(* <- lang_ru;; *);
+		[A line is the image of the boundary of any geometric figure.]
+		(* <- lang_en;; *);;
 	*);;

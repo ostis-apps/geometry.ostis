@@ -1,7 +1,8 @@
 sc_node_not_relation -> concept_cylinder;;
 
-concept_cylinder => nrel_main_idtf: [цилиндр] (*<-lang_ru;;*);;
-concept_cylinder => nrel_main_idtf: [cylinder] (*<-lang_en;;*);;
+concept_cylinder => nrel_main_idtf: 
+	[цилиндр] (*<-lang_ru;;*);
+	[cylinder] (*<-lang_en;;*);;
 
 concept_cylinder <= nrel_strict_inclusion: concept_solid_of_revolution;;
 

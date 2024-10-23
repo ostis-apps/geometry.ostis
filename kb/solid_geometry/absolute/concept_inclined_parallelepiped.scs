@@ -1,7 +1,8 @@
 sc_node_not_relation -> concept_inclined_parallelepiped;;
 
-concept_inclined_parallelepiped => nrel_main_idtf: [наклонный параллелепипед] (*<-lang_ru;;*);;
-concept_inclined_parallelepiped => nrel_main_idtf: [inclined parallelepiped] (*<-lang_en;;*);;
+concept_inclined_parallelepiped => nrel_main_idtf: 
+	[наклонный параллелепипед] (*<-lang_ru;;*);
+	[inclined parallelepiped] (*<-lang_en;;*);;
 
 concept_inclined_parallelepiped <= nrel_strict_inclusion: concept_parallelepiped;;
 

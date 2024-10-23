@@ -1,6 +1,10 @@
 e_concept_uninterrupted_geometric_figure <- explanation;;
 
-e_concept_uninterrupted_geometric_figure => nrel_main_idtf: [Поясн.(непрерывная геометрическая фигура)] (* <- lang_ru;; *);;
+e_concept_uninterrupted_geometric_figure => nrel_main_idtf:
+	[Опр.(непрерывная геометрическая фигура)]
+	(* <- lang_ru;; *);
+	[Def.(uninterrupted geometric figure )]
+	(* <- lang_en;; *);;
 
 e_concept_uninterrupted_geometric_figure -> rrel_key_sc_element: concept_uninterrupted_geometric_figure;;
 
@@ -9,5 +13,7 @@ e_concept_uninterrupted_geometric_figure <= nrel_sc_text_translation:
 	(*
 	-> rrel_example: 
 		[Непрерывная геометрическая фигура - геометрическая фигура, которая не содержит в себе точек разрыва.]
-		(* <- lang_ru;; *);;
+		(* <- lang_ru;; *);
+		[A uninterrupted geometric figure is a geometric figure that does not contain any points of discontinuity.]
+		(* <- lang_en;; *);;
 	*);;

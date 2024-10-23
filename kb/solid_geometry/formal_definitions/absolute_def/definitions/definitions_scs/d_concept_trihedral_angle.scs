@@ -2,8 +2,9 @@ d_concept_trihedral_angle <- definition;;
 
 d_concept_trihedral_angle -> rrel_key_sc_element: concept_trihedral_angle;;
 
-d_concept_trihedral_angle => nrel_main_idtf: [Опр.(трехгранный угол)] (*<-lang_ru;;*);;
-d_concept_trihedral_angle => nrel_main_idtf: [Def.(trihedral angle)] (*<-lang_en;;*);;
+d_concept_trihedral_angle => nrel_main_idtf:
+	[Опр.(трехгранный угол)] (*<-lang_ru;;*);
+	[Def.(trihedral angle)] (*<-lang_en;;*);;
 
 
 d_concept_trihedral_angle <= nrel_using_constants:
@@ -18,5 +19,6 @@ d_concept_trihedral_angle <= nrel_sc_text_translation:
 		...
 		(*
 		-> rrel_example: 
-		[́Трехгранным углом называется фигура, образованная тремя лучами, которые имеют общую начальную точку и не лежат в одной плоскости, и заключенным между этими лучами частями плоскостей.] (*<-lang_ru;;*);;
+		[́Трехгранным углом называется фигура, образованная тремя лучами, которые имеют общую начальную точку и не лежат в одной плоскости, и заключенным между этими лучами частями плоскостей.] (*<-lang_ru;;*);
+		[A trihedral angle is a figure formed by three rays that share a common starting point and do not lie in the same plane, and the portions of planes enclosed between these rays.](*<-lang_en;;*);;
 		*);;

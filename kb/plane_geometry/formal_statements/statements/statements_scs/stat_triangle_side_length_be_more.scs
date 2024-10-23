@@ -2,11 +2,13 @@ stat_triangle_side_length_be_more <- statement;;
 
 stat_triangle_side_length_be_more -> rrel_key_sc_element: concept_triangle; nrel_side; nrel_length;;
 
-stat_triangle_side_length_be_more => nrel_main_idtf: [Утв.(треугольник; сторона*; длина*)] (* <-lang_ru;; *);;
-stat_triangle_side_length_be_more => nrel_main_idtf: [Stat.(triangle; side*; length*)] (* <-lang_en;; *);;
+stat_triangle_side_length_be_more => nrel_main_idtf: 
+	[Утв.(треугольник; сторона*; длина*)] (* <-lang_ru;; *);
+	[Stat.(triangle; side*; length*)] (* <-lang_en;; *);;
 
-stat_triangle_side_length_be_more => nrel_idtf: [Неравенство треугольника] (* <-lang_ru;; *);;
-stat_triangle_side_length_be_more => nrel_idtf: [Triangle inequality] (* <-lang_en;; *);;
+stat_triangle_side_length_be_more => nrel_idtf:
+	[Неравенство треугольника] (* <-lang_ru;; *);
+	[Triangle inequality] (* <-lang_en;; *);;
 
 stat_triangle_side_length_be_more <= nrel_sc_text_translation: 
 	...

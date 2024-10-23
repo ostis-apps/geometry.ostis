@@ -1,7 +1,10 @@
 d_concept_square <- definition;;
 
-d_concept_square => nrel_main_idtf: [Опр.(квадрат)] (* <- lang_ru;; *);;
-d_concept_square => nrel_main_idtf: [Def.(square)] (* <- lang_en;; *);;
+d_concept_square => nrel_main_idtf: 
+	[Опр.(квадрат)]
+	(* <- lang_ru;; *);
+	[Def.(square)]
+	(* <- lang_en;; *);;
 
 d_concept_square -> rrel_key_sc_element: concept_square;;
 
@@ -9,8 +12,10 @@ d_concept_square <= nrel_sc_text_translation:
 	...
 	(*
 	-> rrel_example: 
-		[Квадрат - четырёхугольник, у которого все стороны и все углы равны друг другу]
-		(* <- lang_ru;; *);;
+		[Квадрат - четырёхугольник, у которого все стороны и все углы равны друг другу.]
+		(* <- lang_ru;; *);
+		[A square is a four-sided figure in which all sides and all angles are equal to each other.]
+		(* <- lang_en;; *);;
 	*);;
 
 d_concept_square <= nrel_using_constants:

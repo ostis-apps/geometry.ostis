@@ -1,7 +1,8 @@
 d_concept_spheric_sector <- definition;;
 
-d_concept_spheric_sector => nrel_main_idtf: [Опр.(шаровой сектор)] (*<-lang_ru;;*);;
-d_concept_spheric_sector => nrel_main_idtf: [Def.(spheric sector)] (*<-lang_en;;*);;
+d_concept_spheric_sector => nrel_main_idtf:
+	[Опр.(шаровой сектор)] (*<-lang_ru;;*);
+	[Def.(spheric sector)] (*<-lang_en;;*);;
 
 d_concept_spheric_sector -> rrel_key_sc_element: concept_spheric_sector;;
 
@@ -19,5 +20,6 @@ d_concept_spheric_sector <= nrel_sc_text_translation:
 	...
 	(*
 	-> rrel_example: 
-	[Шаровым сектором называется геометрическое тело, полученное вращением кругового сектора с углом, меньше 90 градусов, вокруг прямой, проходящей через один из радиусов, ограничивающих данный круговой сектор.] (*<-lang_ru;;*);;
+	[Шаровым сектором называется геометрическое тело, полученное вращением кругового сектора с углом, меньше 90 градусов, вокруг прямой, проходящей через один из радиусов, ограничивающих данный круговой сектор.] (*<-lang_ru;;*);
+	[A spherical sector is a geometric solid formed by rotating a circular sector with an angle less than 90 degrees around a straight line passing through one of the radii that bounds the given circular sector.](*<-lang_en;;*);;
 	*);;

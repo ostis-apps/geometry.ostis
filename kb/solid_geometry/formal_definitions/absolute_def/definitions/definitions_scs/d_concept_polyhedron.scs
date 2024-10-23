@@ -1,7 +1,8 @@
 d_concept_polyhedron <- definition;;
 
-d_concept_polyhedron => nrel_main_idtf: [Опр.(многогранник)] (*<-lang_ru;;*);;
-d_concept_polyhedron => nrel_main_idtf: [Def.(polyhedron)] (*<-lang_en;;*);;
+d_concept_polyhedron => nrel_main_idtf:
+	[Опр.(многогранник)] (*<-lang_ru;;*);
+	[Def.(polyhedron)] (*<-lang_en;;*);;
 
 d_concept_polyhedron -> rrel_key_sc_element: concept_polyhedron;;
 
@@ -16,5 +17,6 @@ d_concept_polyhedron <= nrel_sc_text_translation:
 		...
 		(*
 		-> rrel_example: 
-		[Многогранник - это геометрическое тело, ограниченное конечным числом плоских многоугольников, из которых любые два не лежат в одной плоскости.] (*<-lang_ru;;*);;
+		[Многогранник - это геометрическое тело, ограниченное конечным числом плоских многоугольников, из которых любые два не лежат в одной плоскости.] (*<-lang_ru;;*);
+		[A polyhedron is a geometric solid bounded by a finite number of flat polygons, where any two do not lie in the same plane.] (*<-lang_en;;*);;
 		*);;

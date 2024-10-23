@@ -9,10 +9,7 @@ stat_triangle_area_height_side
 
 stat_triangle_area_height_side
 => nrel_main_idtf:
-	[Утв.(треугольник;площадь*;высота*;сторона*)] (*<- lang_ru;;*);;
-
-stat_triangle_area_height_side
-=> nrel_main_idtf:
+	[Утв.(треугольник;площадь*;высота*;сторона*)] (*<- lang_ru;;*);
 	[Stat.(triangle;area*;height*;side*)] (*<- lang_en;;*);;
 
 stat_triangle_area_height_side <= nrel_sc_text_translation: 
@@ -20,5 +17,7 @@ stat_triangle_area_height_side <= nrel_sc_text_translation:
 	(* 
 	-> rrel_example: 
 		[Площадь треугольника равна половине произведения его стороны на опущенную на неё высоту S=a*h_a/2.] 
-		(* <- lang_ru;; *);; 
+		(* <- lang_ru;; *);
+		[The area of a triangle is equal to half the product of its side and the perpendicular height dropped onto that side: S = a * h_a / 2.]
+		 (* <-lang_en;; *);;
 	*);;

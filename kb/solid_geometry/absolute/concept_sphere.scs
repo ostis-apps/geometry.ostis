@@ -1,11 +1,21 @@
 sc_node_not_relation -> concept_sphere;;
 
-concept_sphere => nrel_main_idtf: [сфера] (*<-lang_ru;;*);;
-concept_sphere => nrel_main_idtf: [sphere] (*<-lang_en;;*);;
+concept_sphere => nrel_main_idtf:
+	[сфера] (*<-lang_ru;;*);
+	[sphere] (*<-lang_en;;*);;
 
-concept_sphere => nrel_idtf: [Класс сфер] (*<-lang_ru;;*);;
-concept_sphere => nrel_idtf: [Множество знаков всевозможных сфер] (*<-lang_ru;;*);;
-concept_sphere => nrel_idtf: [Множество  всевозможных сфер] (*<-lang_ru;;*);;
+concept_sphere => nrel_idtf: 
+	[Класс сфер] (*<-lang_ru;;*);
+	[Class of spheres] (*<-lang_en;;*);;
+
+concept_sphere => nrel_idtf: 
+	[Множество знаков всевозможных сфер] (*<-lang_ru;;*);
+	[Set of signs of all possible spheres] (*<-lang_en;;*);;
+
+
+concept_sphere => nrel_idtf:
+	[Множество  всевозможных сфер] (*<-lang_ru;;*);
+	[Set of all possible spheres] (*<-lang_en;;*);;
 
 concept_sphere <= nrel_strict_inclusion: concept_solid_of_revolution;;
 
@@ -13,10 +23,9 @@ concept_sphere <- rrel_key_sc_element:
 	...
 	(*
 	<- illustration;;
-	<= nrel_sc_text_translation:
-		...
+	<= nrel_sc_text_translation: ...
 		(*
-		<- rrel_example: "file://images/concept_sphere.jpg"(*=> nrel_format: format_png;;*);;
+		-> rrel_example: "file://images/concept_sphere.jpg"(*=> nrel_format: format_png;;*);;
 		*);;
 	*);;
 

@@ -1,7 +1,10 @@
 e_concept_straight_line <- explanation;;
 
-e_concept_straight_line => nrel_main_idtf: [Поясн.(прямая)] (* <- lang_ru;; *);;
-e_concept_straight_line => nrel_main_idtf: [Expl.(straight line)] (* <- lang_en;; *);;
+e_concept_straight_line => nrel_main_idtf: 
+	[Опр.(прямая)]
+	(* <- lang_ru;; *);
+	[Def.(straight line)]
+	(* <- lang_en;; *);;
 
 e_concept_straight_line -> rrel_key_sc_element: concept_straight_line;;
 
@@ -10,5 +13,7 @@ e_concept_straight_line <= nrel_sc_text_translation:
 	(*
 	-> rrel_example: 
 		[Прямая - идеально ровная и безграничная линия, бесконечно протяженная в двух направлениях.]
-		(* <- lang_ru;; *);;
+		(* <- lang_ru;; *);
+		[A straight line is an ideally straight and boundless line, infinitely extended in two directions.]
+		(* <- lang_en;; *);;
 	*);;

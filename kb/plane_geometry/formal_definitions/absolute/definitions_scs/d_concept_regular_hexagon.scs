@@ -1,6 +1,10 @@
 d_concept_regular_hexagon <- definition;;
 
-d_concept_regular_hexagon => nrel_main_idtf: [Опр.(правильный шестиугольник)] (* <- lang_ru;; *);;
+d_concept_regular_hexagon => nrel_main_idtf:
+	[Опр.(правильный шестиугольник)]
+	(* <- lang_ru;; *);
+	[Def.(regular hexagon)]
+	(* <- lang_en;; *);;
 
 d_concept_regular_hexagon -> rrel_key_sc_element: concept_regular_hexagon;;
 
@@ -9,7 +13,9 @@ d_concept_regular_hexagon <= nrel_sc_text_translation:
 	(*
 	-> rrel_example: 
 		[Правильный шестиугольник- это шестиугольник с равными сторонами.]
-		(* <- lang_ru;; *);;
+		(* <- lang_ru;; *);
+		[A regular hexagon is a hexagon with equal sides.]
+		(* <- lang_en;; *);;
 	*);;
 
 d_concept_regular_hexagon <= nrel_using_constants:

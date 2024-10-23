@@ -1,7 +1,8 @@
 d_nrel_apothem <- definition;;
 
-d_nrel_apothem => nrel_main_idtf: [Опр.(апофема*)] (*<-lang_ru;;*);;
-d_nrel_apothem => nrel_main_idtf: [Def.(apothem*)] (*<-lang_en;;*);;
+d_nrel_apothem => nrel_main_idtf:
+	[Опр.(апофема*)] (*<-lang_ru;;*);
+	[Def.(apothem*)] (*<-lang_en;;*);;
 
 d_nrel_apothem -> rrel_key_sc_element: nrel_apothem;;
 
@@ -15,7 +16,8 @@ d_nrel_apothem <= nrel_sc_text_translation:
 	...
 	(*
 	-> rrel_example:
-	[Апофема - это теоретико-множественное объединение понятий апофемы правильной пирамиды и апофемы правильной усеченной пирамиды.] (*<-lang_ru;;*);;
+	[Апофема - это теоретико-множественное объединение понятий апофемы правильной пирамиды и апофемы правильной усеченной пирамиды.] (*<-lang_ru;;*);
+	[The apothem is the theoretical set union of the concepts of the apothem of a regular pyramid and the apothem of a regular truncated pyramid.](*<-lang_en;;*);;
 	*);;
 
 

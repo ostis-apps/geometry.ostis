@@ -10,10 +10,7 @@ stat_triangle_area_internal_angle_perimeter_tan
 
 stat_triangle_area_internal_angle_perimeter_tan
 => nrel_main_idtf:
-	[Утв.(треугольник;площадь*;внутренний угол*;периметр*;тангенс*)] (*<- lang_ru;;*);;
-
-stat_triangle_area_internal_angle_perimeter_tan
-=> nrel_main_idtf:
+	[Утв.(треугольник;площадь*;внутренний угол*;периметр*;тангенс*)] (*<- lang_ru;;*);
 	[Stat.(triangle;area*;internal angle*;perimeter*;tan*)] (*<- lang_en;;*);;
 
 stat_triangle_area_internal_angle_perimeter_tan <= nrel_sc_text_translation: 
@@ -21,5 +18,7 @@ stat_triangle_area_internal_angle_perimeter_tan <= nrel_sc_text_translation:
 	(* 
 	-> rrel_example: 
 		[Площадь треугольника находится по формуле S=p^2*tg(alpha/2)*tg(beta/2)*tg(gamma/2), где p - полупериметр треугольника, alpha, beta, gamma - углы треугольника.] 
-		(* <- lang_ru;; *);; 
+		(* <- lang_ru;; *);
+		[The area of a triangle is found by the formula S = p^2 * tan(α/2) * tan(β/2) * tan(γ/2), where p is the semi-perimeter of the triangle, and α, β, γ are the angles of the triangle.]
+		(* <-lang_en;; *);;
 	*);;

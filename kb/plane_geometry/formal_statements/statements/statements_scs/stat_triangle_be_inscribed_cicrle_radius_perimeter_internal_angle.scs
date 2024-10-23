@@ -11,15 +11,15 @@ stat_triangle_be_inscribed_cicrle_radius_perimeter_internal_angle
 
 stat_triangle_be_inscribed_cicrle_radius_perimeter_internal_angle
 => nrel_main_idtf:
-	[Утв.(треугольник;быть вписанным*;окружность;радиус*;периметр*;внутренний угол*)] (* <-lang_ru;; *);;
-
-stat_triangle_be_inscribed_cicrle_radius_perimeter_internal_angle
-=> nrel_main_idtf:
+	[Утв.(треугольник;быть вписанным*;окружность;радиус*;периметр*;внутренний угол*)] (* <-lang_ru;; *);
 	[Stat.(triangle;be inscribed*;circle;radius*;perimeter*;internal angle*;)] (* <-lang_en;; *);;
 
 stat_triangle_be_inscribed_cicrle_radius_perimeter_internal_angle <= nrel_sc_text_translation: 
 	...
 	(*
 		-> rrel_example: 
-		[Для треугольника имеет место равенство: p=4RCos(alpha/2)Cos(beta/2)Cos(gama/2), где p - полупериметр треугольника AВС, a, b, c - стороны треугольника АВС, alpha, beta, gama - углы при вершинах треугольника АВС, R - радиус описанной окружности около треугольника АВС.] (* <- lang_ru;; *);;
+		[Для треугольника имеет место равенство: p=4RCos(alpha/2)Cos(beta/2)Cos(gama/2), где p - полупериметр треугольника AВС, a, b, c - стороны треугольника АВС, alpha, beta, gama - углы при вершинах треугольника АВС, R - радиус описанной окружности около треугольника АВС.] 
+		(* <- lang_ru;; *);
+		[For a triangle, the following equality holds: p=4RCos(α/2)Cos(β/2)Cos(γ/2), where p is the semi-perimeter of the triangle ABC, a, b, c are the sides of the triangle ABC, α, β, γ are the angles at the vertices of the triangle ABC, and R is the radius of the circumscribed circle around the triangle ABC.]
+		(* <-lang_en;; *);;
 	*);;

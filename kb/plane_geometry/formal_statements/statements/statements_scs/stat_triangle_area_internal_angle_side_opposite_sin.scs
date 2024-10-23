@@ -10,15 +10,15 @@ stat_triangle_area_internal_angle_side_opposite_sin
 
 stat_triangle_area_internal_angle_side_opposite_sin
 => nrel_main_idtf:
-	[Утв.(треугольник;площадь*;противолежащий*;сторона*;внутренний угол*;синус*)] (* <-lang_ru;; *);;
-
-stat_triangle_area_internal_angle_side_opposite_sin
-=> nrel_main_idtf:
+	[Утв.(треугольник;площадь*;противолежащий*;сторона*;внутренний угол*;синус*)] (* <-lang_ru;; *);
 	[Stat.(triangle;area*;opposite*;side*;internal angle*;sin*)] (* <-lang_en;; *);;
 
 stat_triangle_area_internal_angle_side_opposite_sin <= nrel_sc_text_translation: 
 	...
 	(*
 		-> rrel_example: 
-		[Площадь треугольника находится по формуле S=a^2*Sin(beta)*Sin(gamma)/(2*Sin(alpha)), где а - сторона треугольника, alpha - угол, лежащий напротив стороны а, beta и gamma два других угла треугольника.] (* <- lang_ru;; *);;
+		[Площадь треугольника находится по формуле S=a^2*Sin(beta)*Sin(gamma)/(2*Sin(alpha)), где а - сторона треугольника, alpha - угол, лежащий напротив стороны а, beta и gamma два других угла треугольника.] 
+		(* <- lang_ru;; *);
+		[The area of a triangle is found by the formula S=a^2*Sin(β)Sin(γ)/(2*Sin(α)), where a is a side of the triangle, α is the angle opposite the side a, and β and γ are the other two angles of the triangle.]
+		(* <-lang_en;; *);;
 	*);;
