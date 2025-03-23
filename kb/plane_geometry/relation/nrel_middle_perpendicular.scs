@@ -1,14 +1,14 @@
-sc_node_non_role_relation -> nrel_middle_perpendicular;;
+sc_node_non_role_relation -> nrel_perpendicular_bisector;;
 
-nrel_middle_perpendicular => nrel_main_idtf:
+nrel_perpendicular_bisector => nrel_main_idtf:
 	[серединный перпендикуляр*]
 	(* <- lang_ru;; *);
 	[middle perpendicular*]
 	(* <- lang_en;; *);;
 
-nrel_middle_perpendicular => nrel_idtf: [медиатриса*] (* <- lang_ru;; *);;
+nrel_perpendicular_bisector => nrel_idtf: [медиатриса*] (* <- lang_ru;; *);;
 
-nrel_middle_perpendicular => nrel_definitional_domain: 
+nrel_perpendicular_bisector => nrel_definitional_domain: 
 	...
 	(*
 	<= nrel_combination: 
@@ -18,17 +18,17 @@ nrel_middle_perpendicular => nrel_definitional_domain:
 		};;
 	*);;
 
-nrel_middle_perpendicular => nrel_first_domain: 
+nrel_perpendicular_bisector => nrel_first_domain: 
 	concept_segment;;
 
-nrel_middle_perpendicular => nrel_second_domain: 
+nrel_perpendicular_bisector => nrel_second_domain: 
 	concept_straight_line;;
 
-nrel_middle_perpendicular <- relation;;
-nrel_middle_perpendicular <- binary_relation;;
-nrel_middle_perpendicular <- oriented_relation;;
-nrel_middle_perpendicular <- antireflexive_relation;;
-nrel_middle_perpendicular <- antisymmetric_relation;;
-nrel_middle_perpendicular <- antitransitive_relation;;
+nrel_perpendicular_bisector <- relation;;
+nrel_perpendicular_bisector <- binary_relation;;
+nrel_perpendicular_bisector <- oriented_relation;;
+nrel_perpendicular_bisector <- antireflexive_relation;;
+nrel_perpendicular_bisector <- antisymmetric_relation;;
+nrel_perpendicular_bisector <- antitransitive_relation;;
 
 
