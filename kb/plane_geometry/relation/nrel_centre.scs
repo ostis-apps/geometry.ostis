@@ -20,7 +20,7 @@ nrel_center <= nrel_combination:
 	{
 	nrel_center_of_regular_polygon; 
 	nrel_center_of_circle;
-	nrel_center_of_round
+	nrel_center_of_disk
 	};;
 	
 
@@ -30,7 +30,7 @@ nrel_center <= nrel_definitional_domain:
 	<= nrel_combination: 
 		{
 		concept_circle; 
-		concept_round;
+		concept_disk;
 		concept_regular_polygon;
 		concept_geometric_point
 		};;
@@ -42,7 +42,7 @@ nrel_center => nrel_first_domain:
 	<= nrel_combination: 
 		{
 		concept_circle; 
-		concept_round;
+		concept_disk;
 		concept_regular_polygon
 		};;
 	*);;
@@ -54,6 +54,6 @@ nrel_center <= nrel_using_constants:
 	{
 	nrel_center_of_circle; 
 	nrel_center_of_regular_polygon; 
-	nrel_center_of_round
+	nrel_center_of_disk
 	};;
 
