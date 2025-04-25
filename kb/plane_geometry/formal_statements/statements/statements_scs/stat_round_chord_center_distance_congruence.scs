@@ -1,25 +1,25 @@
-statement -> stat_round_chord_center_distance_congruence;;
-statement -> stat_converse_round_chord_center_distance_congruence;;
-statement -> stat_reverse_round_chord_center_distance_congruence;;
-statement -> stat_reverse_converse_round_chord_center_distance_congruence;;
+statement -> stat_disk_chord_center_distance_congruence;;
+statement -> stat_converse_disk_chord_center_distance_congruence;;
+statement -> stat_reverse_disk_chord_center_distance_congruence;;
+statement -> stat_reverse_converse_disk_chord_center_distance_congruence;;
 
-stat_round_chord_center_distance_congruence => nrel_main_idtf:
+stat_disk_chord_center_distance_congruence => nrel_main_idtf:
 	[Утв.(круг; хорда*; равноудаленный*; конгруэнтность*)] (* <- lang_ru;; *);
 	[Stat. (circle; chord*; equidistant*; congruence*)](* <-lang_en;;*);;
 
-stat_converse_round_chord_center_distance_congruence => nrel_main_idtf:
+stat_converse_disk_chord_center_distance_congruence => nrel_main_idtf:
 	[Обр.утв.(круг; хорда*; равноудаленный*; конгруэнтность*)] (* <- lang_ru;; *);
 	[Converse stat.(circle; chord*; equidistant*; congruence*)](* <-lang_en;;*);;
 
- stat_reverse_round_chord_center_distance_congruence => nrel_main_idtf:
+ stat_reverse_disk_chord_center_distance_congruence => nrel_main_idtf:
 	[Прот.утв.(круг; хорда*; равноудаленный*; конгруэнтность*)] (* <- lang_ru;; *);
 	[Inverse stat.(circle; chord*; equidistant*; congruence*)](* <-lang_en;;*);;
 
-stat_reverse_converse_round_chord_center_distance_congruence => nrel_main_idtf:
+stat_reverse_converse_disk_chord_center_distance_congruence => nrel_main_idtf:
 	[Прот.обр.утв.(круг; хорда*; равноудаленный*; конгруэнтность*)] (* <- lang_ru;; *);
 	[Contrapositive stat.(circle; chord*; equidistant*; congruence*)](* <-lang_en;;*);;
 
-stat_round_chord_center_distance_congruence <= nrel_sc_text_translation: ...
+stat_disk_chord_center_distance_congruence <= nrel_sc_text_translation: ...
 	(*
 	-> rrel_example:
 		[Если хорды одного круга одинаково отдалены от центра круга, то они равны.] 
@@ -29,7 +29,7 @@ stat_round_chord_center_distance_congruence <= nrel_sc_text_translation: ...
 	*);;
 
 
-stat_converse_round_chord_center_distance_congruence <= nrel_sc_text_translation: ...
+stat_converse_disk_chord_center_distance_congruence <= nrel_sc_text_translation: ...
 	(*
 	-> rrel_example:
 		[Если хорды одного круга равны, то они одинаково отдалены от центра круга.] 
@@ -38,7 +38,7 @@ stat_converse_round_chord_center_distance_congruence <= nrel_sc_text_translation
 		(* <-lang_en;;*);;
 	*);;
 
-stat_reverse_round_chord_center_distance_congruence <= nrel_sc_text_translation: ...
+stat_reverse_disk_chord_center_distance_congruence <= nrel_sc_text_translation: ...
 	(*
 	-> rrel_example:
 		[Если хорды одного круга отдалены от центра круга на различное расстояние, то они не равны.]
@@ -47,7 +47,7 @@ stat_reverse_round_chord_center_distance_congruence <= nrel_sc_text_translation:
 		(* <-lang_en;;*);;
 	*);;
 
-stat_reverse_converse_round_chord_center_distance_congruence<=nrel_sc_text_translation: ...
+stat_reverse_converse_disk_chord_center_distance_congruence<=nrel_sc_text_translation: ...
 	(*
 	-> rrel_example:
 		[Если хорды одного круга не равны, то они отдалены от центра круга на различное расстояние.]
@@ -56,9 +56,9 @@ stat_reverse_converse_round_chord_center_distance_congruence<=nrel_sc_text_trans
 		(* <-lang_en;;*);;
 	*);;
 
-stat_round_chord_center_distance_congruence <=> nrel_converse_theorem: stat_converse_round_chord_center_distance_congruence;;
-stat_reverse_round_chord_center_distance_congruence <=> nrel_converse_theorem: stat_reverse_converse_round_chord_center_distance_congruence;;
-stat_round_chord_center_distance_congruence <=> nrel_reverse_theorem: stat_reverse_round_chord_center_distance_congruencee;;
-stat_converse_round_chord_center_distance_congruence <=> nrel_reverse_theorem: stat_reverse_converse_round_chord_center_distance_congruence;;
-stat_round_chord_center_distance_congruence <=> nrel_reverse_converse_theorem: stat_reverse_round_chord_center_distance_congruence;;
-stat_converse_round_chord_center_distance_congruence <=> nrel_reverse_converse_theorem: stat_reverse_converse_round_chord_center_distance_congruence;;
+stat_disk_chord_center_distance_congruence <=> nrel_converse_theorem: stat_converse_disk_chord_center_distance_congruence;;
+stat_reverse_disk_chord_center_distance_congruence <=> nrel_converse_theorem: stat_reverse_converse_disk_chord_center_distance_congruence;;
+stat_disk_chord_center_distance_congruence <=> nrel_reverse_theorem: stat_reverse_disk_chord_center_distance_congruencee;;
+stat_converse_disk_chord_center_distance_congruence <=> nrel_reverse_theorem: stat_reverse_converse_disk_chord_center_distance_congruence;;
+stat_disk_chord_center_distance_congruence <=> nrel_reverse_converse_theorem: stat_reverse_disk_chord_center_distance_congruence;;
+stat_converse_disk_chord_center_distance_congruence <=> nrel_reverse_converse_theorem: stat_reverse_converse_disk_chord_center_distance_congruence;;

@@ -1,11 +1,11 @@
-sc_node_non_role_relation -> nrel_great_round;;
+sc_node_non_role_relation -> nrel_great_disk;;
 
-nrel_great_round => nrel_main_idtf: [большой круг*] (*<-lang_ru;;*);;
-nrel_great_round => nrel_main_idtf: [great round*] (*<-lang_en;;*);;
+nrel_great_disk => nrel_main_idtf: [большой круг*] (*<-lang_ru;;*);;
+nrel_great_disk => nrel_main_idtf: [great disk*] (*<-lang_en;;*);;
 
-nrel_great_round => nrel_first_domain: concept_ball;;
-nrel_great_round => nrel_second_domain: concept_disk;;
-nrel_great_round => nrel_definitional_domain:
+nrel_great_disk => nrel_first_domain: concept_ball;;
+nrel_great_disk => nrel_second_domain: concept_disk;;
+nrel_great_disk => nrel_definitional_domain:
 	...
 	(*
 	<= nrel_combination: 
@@ -15,8 +15,8 @@ nrel_great_round => nrel_definitional_domain:
 		};;
 	*);;
 	
-nrel_great_round <- relation;;	
-nrel_great_round <- binary_relation;;
-nrel_great_round <- oriented_relation;;
-nrel_great_round <- antireflexive_relation; antisymmetric_relation; antitransitive_relation;;
+nrel_great_disk <- relation;;	
+nrel_great_disk <- binary_relation;;
+nrel_great_disk <- oriented_relation;;
+nrel_great_disk <- antireflexive_relation; antisymmetric_relation; antitransitive_relation;;
 
