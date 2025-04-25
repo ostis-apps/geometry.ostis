@@ -4,7 +4,7 @@ nrel_base_of_cylinder => nrel_main_idtf: [основание цилиндра*] 
 nrel_base_of_cylinder => nrel_main_idtf: [base of cylinder*] (*<-lang_en;;*);;
 
 nrel_base_of_cylinder => nrel_first_domain: concept_cylinder;;
-nrel_base_of_cylinder => nrel_second_domain: concept_round;;
+nrel_base_of_cylinder => nrel_second_domain: concept_disk;;
 	
 nrel_base_of_cylinder => nrel_definitional_domain:
 	...
@@ -12,7 +12,7 @@ nrel_base_of_cylinder => nrel_definitional_domain:
 	<= nrel_combination: 
 		{
 			concept_cylinder;
-			concept_round
+			concept_disk
 		};;
 	*);;
 	

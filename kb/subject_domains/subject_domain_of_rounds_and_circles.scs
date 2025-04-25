@@ -9,19 +9,19 @@ subject_domain_of_rounds_and_circles
 	
 subject_domain_of_rounds_and_circles -> rrel_maximum_studied_object_class: concept_circle;;
 
-subject_domain_of_rounds_and_circles -> rrel_maximum_studied_object_class: concept_round;;
+subject_domain_of_rounds_and_circles -> rrel_maximum_studied_object_class: concept_disk;;
 
 subject_domain_of_rounds_and_circles -> rrel_not_maximum_studied_object_class: 
-	concept_round_sector; 
-	concept_round_segment; 
-	concept_circle_arc;;
+	concept_circular_sector; 
+	concept_circular_segment; 
+	concept_circular_arc;;
 
 subject_domain_of_rounds_and_circles <- subject_domain;;
 
 subject_domain_of_rounds_and_circles -> rrel_explored_relation:
 	nrel_be_inscribed;
 	nrel_center_of_circle;
-	nrel_center_of_round;
+	nrel_center_of_disk;
 	nrel_central_angle;
 	nrel_chord;
 	nrel_diameter;

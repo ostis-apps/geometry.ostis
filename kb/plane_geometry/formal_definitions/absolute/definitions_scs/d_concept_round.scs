@@ -1,14 +1,14 @@
-d_concept_round <- definition;;
+d_concept_disk <- definition;;
 
-d_concept_round => nrel_main_idtf:
+d_concept_disk => nrel_main_idtf:
 	[Опр.(круг)]
 	(* <- lang_ru;; *);
 	[Def.(round)]
 	(* <- lang_en;; *);;
 
-d_concept_round -> rrel_key_sc_element: concept_round;;
+d_concept_disk -> rrel_key_sc_element: concept_disk;;
 
-d_concept_round <= nrel_sc_text_translation: 
+d_concept_disk <= nrel_sc_text_translation: 
 	...
 	(*
 	-> rrel_example: 
@@ -18,7 +18,7 @@ d_concept_round <= nrel_sc_text_translation:
 		(* <- lang_en;; *);;
 	*);;
 
-d_concept_round <= nrel_using_constants:
+d_concept_disk <= nrel_using_constants:
 	{
 	concept_circle; 
 	concept_plane

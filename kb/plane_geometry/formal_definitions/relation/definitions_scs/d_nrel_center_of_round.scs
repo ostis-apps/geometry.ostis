@@ -1,15 +1,15 @@
-d_nrel_center_of_round 
+d_nrel_center_of_disk 
 => nrel_main_idtf:[Опр.(центр круга*)] (* <- lang_ru;; *);
 => nrel_main_idtf: [Def.(center of round*)] (*<- lang_en;;*);
 <- definition;
--> rrel_key_sc_element: nrel_center_of_round;
+-> rrel_key_sc_element: nrel_center_of_disk;
 
 <= nrel_using_constants:
 	{
 	concept_geometric_point; 
 	concept_plane; 
 	nrel_bound; 
-	concept_round	
+	concept_disk	
 	};
 
 <= nrel_sc_text_translation: 
