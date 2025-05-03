@@ -1,0 +1,34 @@
+sc_node_class -> concept_polygonal_chain;;
+
+concept_polygonal_chain => nrel_main_idtf:
+	[ломаная](* <- lang_ru;; *);
+	[polyline](* <- lang_en;; *);;
+
+concept_polygonal_chain => nrel_idtf: [Цепь отрезков] (* <- lang_ru;; *);;
+concept_polygonal_chain => nrel_idtf: [Класс ломаная] (* <- lang_ru;; *);;
+concept_polygonal_chain => nrel_idtf: [Понятие ломаной] (* <- lang_ru;; *);;
+concept_polygonal_chain => nrel_idtf: [Множество ломаных] (* <- lang_ru;; *);;
+concept_polygonal_chain => nrel_idtf: [Множество всевозможных ломаных] (* <- lang_ru;; *);;
+concept_polygonal_chain => nrel_idtf: [Множество разных ломаных] (* <- lang_ru;; *);;
+
+concept_polygonal_chain <= nrel_subdividing:
+	...
+	(*
+	=> nrel_main_idtf: [Разбиение по признаку наличия самопересечений] (* <- lang_ru;; *);;
+	-> concept_simple_broken_line;
+	concept_complex_polygonal_chain;;
+	*);;
+	
+concept_polygonal_chain <- rrel_key_sc_element: 
+	...
+	(*
+	<- illustration;; 
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: 
+		"file://images/concept_polygonal_chain.png"(*=> nrel_format: format_png;;*);;
+		*);;
+	*);;
+
+
+

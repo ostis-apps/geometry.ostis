@@ -1,14 +1,14 @@
-d_concept_polyline <- definition;;
+d_concept_polygonal_chain <- definition;;
 
-d_concept_polyline => nrel_main_idtf:
+d_concept_polygonal_chain => nrel_main_idtf:
 	[Опр.(ломаная)]
 	(* <- lang_ru;; *);
 	[Def.(polyline)]
 	(* <- lang_en;; *);;
 
-d_concept_polyline -> rrel_key_sc_element: concept_polyline;;
+d_concept_polygonal_chain -> rrel_key_sc_element: concept_polygonal_chain;;
 
-d_concept_polyline <= nrel_sc_text_translation: 
+d_concept_polygonal_chain <= nrel_sc_text_translation: 
 	...
 	(*
 	-> rrel_example: 
@@ -18,7 +18,7 @@ d_concept_polyline <= nrel_sc_text_translation:
 		(* <- lang_en;; *);;
 	*);;
 
-d_concept_polyline <= nrel_using_constants:
+d_concept_polygonal_chain <= nrel_using_constants:
 	{
 	concept_geometric_point; 
 	concept_geometric_figure; 
