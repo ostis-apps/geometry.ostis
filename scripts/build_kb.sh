@@ -8,5 +8,4 @@ fi
 
 "${SC_MACHINE_PATH}/build/Release/bin/sc-builder" -i "${REPO_PATH_FILE}" -c "${CONFIG_PATH}" --clear
 
-# "${PLATFORM_PATH}/scripts/build_kb.sh" "$@"
 echo "knowledge base was built successfully"
