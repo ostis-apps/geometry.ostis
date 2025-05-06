@@ -1,27 +1,27 @@
-d_concept_round_sector <- definition;;
+d_concept_circular_sector <- definition;;
 
-d_concept_round_sector => nrel_main_idtf:
+d_concept_circular_sector => nrel_main_idtf:
 	[Опр.(круговой сектор)]
 	(* <- lang_ru;; *);
-	[Def.(round sector)]
+	[Def.(circular sector)]
 	(* <- lang_en;; *);;
 
-d_concept_round_sector -> rrel_key_sc_element: concept_round_sector;;
+d_concept_circular_sector -> rrel_key_sc_element: concept_circular_sector;;
 
-d_concept_round_sector <= nrel_sc_text_translation: 
+d_concept_circular_sector <= nrel_sc_text_translation: 
 	...
 	(*
 	-> rrel_example: 
-		[Круговой сектор - часть круга, ограниченная дугой окружности и двумя радиусами, соединяющими концы дуги с центром круга.]
-		(* <- lang_ru;; *);
-		[A round sector is a part of a circle bounded by an arc of the circle and two radii connecting the endpoints of the arc to the center of the circle.]
+		[Круговой сектор - часть круга, ограниченная дугой окружности и двумя радиусами, соединящими концы дуги с центром круга.]
+		(* <- lang_ru;; *);	
+		[A circular sector is a part of a disk bounded by a circular arc and two radii connecting the endpoints of the arc to the center of the disk.]
 		(* <- lang_en;; *);;
 	*);;
 
-d_concept_round_sector <= nrel_using_constants:
+d_concept_circular_sector <= nrel_using_constants:
 	{
-	concept_round; 
-	concept_circle_arc;  
+	concept_disk; 
+	concept_circular_arc;  
 	concept_circle; 
 	nrel_center_of_circle; 
 	nrel_radius
