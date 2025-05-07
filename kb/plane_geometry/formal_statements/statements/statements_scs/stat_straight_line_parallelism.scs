@@ -20,14 +20,14 @@ stat_straight_line_parallelism <= nrel_sc_text_translation:
 		(*<- lang_en;;*);;
 	*);;
 
-stat_reverse_converse_straight_line_parallelism <- statement;;
+stat_contrapositive_straight_line_parallelism <- statement;;
 
-stat_reverse_converse_straight_line_parallelism
+stat_contrapositive_straight_line_parallelism
 => nrel_main_idtf:
 	[Прот.обр.утв.(прямая; параллельность*)] (* <- lang_ru;; *);
 	[Contrapositive stat.(straight line;parallelism*)] 	(*<- lang_en;;*);;
 
-stat_reverse_converse_straight_line_parallelism <= nrel_sc_text_translation:
+stat_contrapositive_straight_line_parallelism <= nrel_sc_text_translation:
 	...
 	(*
 	-> rrel_example:
@@ -35,4 +35,4 @@ stat_reverse_converse_straight_line_parallelism <= nrel_sc_text_translation:
 		[If lines are not parallel to each other, then they are not parallel to a third line.]	(*<- lang_en;;*);;
 	*);;
 
-stat_straight_line_parallelism <=> nrel_reverse_converse_theorem: stat_reverse_converse_straight_line_parallelism;;
+stat_straight_line_parallelism <=> nrel_contrapositive_theorem: stat_contrapositive_straight_line_parallelism;;

@@ -1,5 +1,5 @@
 statement -> stat_triangle_obtuse_angle_right_angle;;
-statement -> stat_reverse_converse_obtuse_angle_right_angle;;
+statement -> stat_contrapositive_obtuse_angle_right_angle;;
 
 stat_triangle_obtuse_angle_right_angle => nrel_main_idtf:
 	[Утв.(треугольник; сторона*;внутренний угол*; быть больше*)] (* <- lang_ru;; *);
@@ -12,11 +12,11 @@ stat_triangle_obtuse_angle_right_angle <= nrel_sc_text_translation: ...
 		[If one angle in a triangle is obtuse or right, then the other two are acute.] (* <- lang_en;; *);;
 	*);;
 
-stat_reverse_converse_obtuse_angle_right_angle <= nrel_sc_text_translation: ...
+stat_contrapositive_obtuse_angle_right_angle <= nrel_sc_text_translation: ...
 	(*
 	-> rrel_example:
 		[Если в треугольнике два угла не острые, то третий угол не тупой и не прямой.] (* <- lang_ru;; *);
 		[If two angles in a triangle are not acute, then the third angle is neither obtuse nor right.] (* <- lang_en;; *);;
 	*);;
 
-stat_triangle_obtuse_angle_right_angle <=> nrel_reverse_converse_theorem: stat_reverse_converse_obtuse_angle_right_angle;;
+stat_triangle_obtuse_angle_right_angle <=> nrel_contrapositive_theorem: stat_contrapositive_obtuse_angle_right_angle;;

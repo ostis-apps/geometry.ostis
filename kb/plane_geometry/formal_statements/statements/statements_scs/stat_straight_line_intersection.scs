@@ -1,11 +1,11 @@
 statement -> stat_straight_line_intersection;;
-statement -> stat_reverse_converse_straight_line_intersection;;
+statement -> stat_contrapositive_straight_line_intersection;;
 
 stat_straight_line_intersection => nrel_main_idtf:
 	[Утв.(прямая; параллельность*; пересечение*)] (* <- lang_ru;; *);
 	[Stat.(straight line; parallelism*; intersection*)](* <-lang_en;;*);;
 
-stat_reverse_converse_straight_line_intersection => nrel_main_idtf:
+stat_contrapositive_straight_line_intersection => nrel_main_idtf:
 [Прот.обр.утв.(прямая; параллельность*; пересечение*)] (* <- lang_ru;; *);
 [Contrapositive stat.(straight line; parallelism*; intersection*)] (* <-lang_en;;*);;
 
@@ -17,7 +17,7 @@ stat_straight_line_intersection <= nrel_sc_text_translation: ...
 
 	*);;
 
-stat_reverse_converse_straight_line_intersection <= nrel_sc_text_translation: ...
+stat_contrapositive_straight_line_intersection <= nrel_sc_text_translation: ...
 	(*
 	-> rrel_example:
 		[Если прямая не пересекает одну линию,то она не пересекает и другую или те линии не параллельны.] (* <- lang_ru;; *);
@@ -25,4 +25,4 @@ stat_reverse_converse_straight_line_intersection <= nrel_sc_text_translation: ..
 
 	*);;
 
-stat_straight_line_intersection <=> nrel_reverse_converse_theorem: stat_reverse_converse_straight_line_intersection;;
+stat_straight_line_intersection <=> nrel_contrapositive_theorem: stat_contrapositive_straight_line_intersection;;

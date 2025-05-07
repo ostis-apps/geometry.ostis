@@ -1,7 +1,7 @@
 statement -> stat_round_circle_arc_chord_congruence;;
 statement -> stat_converse_round_circle_arc_chord_congruence;;
-statement -> stat_reverse_round_circle_arc_chord_congruence;;
-statement -> stat_reverse_converse_round_circle_arc_chord_congruence;;
+statement -> stat_inverse_round_circle_arc_chord_congruence;;
+statement -> stat_contrapositive_round_circle_arc_chord_congruence;;
 
 stat_round_circle_arc_chord_congruence => nrel_main_idtf: 
 	[Утв.(круг; дуга; конгруэнтность*; стягивающая хорда*)] (* <- lang_ru;; *);
@@ -13,12 +13,12 @@ stat_converse_round_circle_arc_chord_congruence => nrel_main_idtf:
 
 
 
-stat_reverse_round_circle_arc_chord_congruence => nrel_main_idtf: 
+stat_inverse_round_circle_arc_chord_congruence => nrel_main_idtf: 
 	[Прот.утв.(круг; дуга; конгруэнтность*; стягивающая хорда*)] (* <- lang_ru;; *);
 	[Inverse stat.(Circle; arc; congruence*; chord of constrained arc*)](* <-lang_en;;*);;
 
 
-stat_reverse_converse_round_circle_arc_chord_congruence => nrel_main_idtf:
+stat_contrapositive_round_circle_arc_chord_congruence => nrel_main_idtf:
 	[Прот.обр.утв.(круг; дуга; конгруэнтность*; стягивающая хорда*)] (* <- lang_ru;; *);
 	[Contrapositive stat.(Circle; arc; congruence*; chord of constrained arc*)](* <-lang_en;;*);;
 
@@ -42,7 +42,7 @@ stat_converse_round_circle_arc_chord_congruence <= nrel_sc_text_translation: ...
 		(* <-lang_en;;*);;
 	*);;
 
-stat_reverse_round_circle_arc_chord_congruence <= nrel_sc_text_translation: ...
+stat_inverse_round_circle_arc_chord_congruence <= nrel_sc_text_translation: ...
 	(*
 	-> rrel_example:
 		[Если две дуги одного круга  не равны, то стягивающие стягивающие их хорды не равны.] 
@@ -51,7 +51,7 @@ stat_reverse_round_circle_arc_chord_congruence <= nrel_sc_text_translation: ...
 		(* <-lang_en;;*);;
 	*);;
 
-stat_reverse_converse_round_circle_arc_chord_congruence <= nrel_sc_text_translation: ...
+stat_contrapositive_round_circle_arc_chord_congruence <= nrel_sc_text_translation: ...
 	(*
 	-> rrel_example:
 		[Если две стягивающие хорды одной окружности не  равны, то не равны и эти дуги.]
@@ -61,8 +61,8 @@ stat_reverse_converse_round_circle_arc_chord_congruence <= nrel_sc_text_translat
 	*);;
 
 stat_round_circle_arc_chord_congruence <=> nrel_converse_theorem: stat_converse_round_circle_arc_chord_congruence;;
-stat_reverse_round_circle_arc_chord_congruence <=> nrel_converse_theorem: stat_reverse_converse_round_circle_arc_chord_congruence;;
-stat_round_circle_arc_chord_congruence <=> nrel_reverse_theorem: stat_reverse_round_circle_arc_chord_congruence;;
-stat_converse_round_circle_arc_chord_congruence <=> nrel_reverse_theorem: stat_reverse_converse_round_circle_arc_chord_congruence;;
-stat_round_circle_arc_chord_congruence <=> nrel_reverse_converse_theorem: stat_reverse_converse_round_circle_arc_chord_congruence;;
-stat_converse_round_circle_arc_chord_congruence <=> nrel_reverse_converse_theorem: stat_reverse_round_circle_arc_chord_congruence;;
+stat_inverse_round_circle_arc_chord_congruence <=> nrel_converse_theorem: stat_contrapositive_round_circle_arc_chord_congruence;;
+stat_round_circle_arc_chord_congruence <=> nrel_inverse_theorem: stat_inverse_round_circle_arc_chord_congruence;;
+stat_converse_round_circle_arc_chord_congruence <=> nrel_inverse_theorem: stat_contrapositive_round_circle_arc_chord_congruence;;
+stat_round_circle_arc_chord_congruence <=> nrel_contrapositive_theorem: stat_contrapositive_round_circle_arc_chord_congruence;;
+stat_converse_round_circle_arc_chord_congruence <=> nrel_contrapositive_theorem: stat_inverse_round_circle_arc_chord_congruence;;

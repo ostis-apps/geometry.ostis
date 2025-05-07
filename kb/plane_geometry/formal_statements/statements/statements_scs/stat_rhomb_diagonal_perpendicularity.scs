@@ -1,7 +1,7 @@
 statement -> stat_rhomb_diagonal_perpendicularity_bisectrix_of_polygon;;
 statement -> stat_converse_rhomb_diagonal_perpendicularity_bisectrix_of_polygon;;
-statement -> stat_reverse_rhomb_diagonal_perpendicularity_bisectrix_of_polygon;;
-statement -> stat_reverse_converse_rhomb_diagonal_perpendicularity_bisectrix_of_polygon;;
+statement -> stat_inverse_rhomb_diagonal_perpendicularity_bisectrix_of_polygon;;
+statement -> stat_contrapositive_rhomb_diagonal_perpendicularity_bisectrix_of_polygon;;
 
 
 stat_rhomb_diagonal_perpendicularity_bisectrix_of_polygon => nrel_main_idtf:
@@ -14,12 +14,12 @@ stat_converse_rhomb_diagonal_perpendicularity_bisectrix_of_polygon => nrel_main_
 	[Converse stat.(rhombus; diagonal*; perpendicularity*)](* <-lang_en;;*);;
 
 
-stat_reverse_rhomb_diagonal_perpendicularity_bisectrix_of_polygon => nrel_main_idtf:
+stat_inverse_rhomb_diagonal_perpendicularity_bisectrix_of_polygon => nrel_main_idtf:
 	[Прот.Утв.(ромб; диагональ*; перпендикулярность*)] (* <- lang_ru;; *);
 	[Inverse stat.(rhombus; diagonal*; perpendicularity*)](* <-lang_en;;*);;
 
 
-stat_reverse_converse_rhomb_diagonal_perpendicularity_bisectrix_of_polygon => nrel_main_idtf: 
+stat_contrapositive_rhomb_diagonal_perpendicularity_bisectrix_of_polygon => nrel_main_idtf: 
 	[Прот.обр.утв.(ромб; диагональ*; перпендикулярность*)] (* <- lang_ru;; *);
 	[Contrapositive stat.(rhombus; diagonal*; perpendicularity*)](* <-lang_en;;*);;
 
@@ -42,7 +42,7 @@ stat_converse_rhomb_diagonal_perpendicularity_bisectrix_of_polygon <= nrel_sc_te
 		(* <-lang_en;;*);;
 	*);;
 
-stat_reverse_rhomb_diagonal_perpendicularity_bisectrix_of_polygon <= nrel_sc_text_translation: ...
+stat_inverse_rhomb_diagonal_perpendicularity_bisectrix_of_polygon <= nrel_sc_text_translation: ...
 	(*
 	-> rrel_example:
 		[Если четырёхугольник не является ромбом, его диагонили не взаимно перпендикулярны и не являются биссектрисами его углов.] 
@@ -51,7 +51,7 @@ stat_reverse_rhomb_diagonal_perpendicularity_bisectrix_of_polygon <= nrel_sc_tex
 		(* <-lang_en;;*);;
 	*);;
 
-stat_reverse_converse_rhomb_diagonal_perpendicularity_bisectrix_of_polygon <= nrel_sc_text_translation: ...
+stat_contrapositive_rhomb_diagonal_perpendicularity_bisectrix_of_polygon <= nrel_sc_text_translation: ...
 	(*
 	-> rrel_example:
 		[Если диагонали четырёхугольника не взаимно перпендикулярны и являются биссектрисами его углов, то четырёхугольник - не ромб.]
@@ -61,8 +61,8 @@ stat_reverse_converse_rhomb_diagonal_perpendicularity_bisectrix_of_polygon <= nr
 	*);;
 
 stat_rhomb_diagonal_perpendicularity_bisectrix_of_polygon <=> nrel_converse_theorem: stat_converse_rhomb_diagonal_perpendicularity_bisectrix_of_polygon;;
-stat_reverse_rhomb_diagonal_perpendicularity_bisectrix_of_polygon <=> nrel_converse_theorem: stat_reverse_converse_rhomb_diagonal_perpendicularity_bisectrix_of_polygon;;
-stat_rhomb_diagonal_perpendicularity_bisectrix_of_polygon <=> nrel_reverse_theorem: stat_reverse_rhomb_diagonal_perpendicularity_bisectrix_of_polygon;;
-stat_converse_rhomb_diagonal_perpendicularity_bisectrix_of_polygon <=> nrel_reverse_theorem: stat_reverse_converse_rhomb_diagonal_perpendicularity_bisectrix_of_polygon;;
-stat_rhomb_diagonal_perpendicularity_bisectrix_of_polygon <=> nrel_reverse_converse_theorem: stat_reverse_converse_rhomb_diagonal_perpendicularity_bisectrix_of_polygon;;
-stat_converse_rhomb_diagonal_perpendicularity_bisectrix_of_polygon <=> nrel_reverse_converse_theorem: stat_reverse_rhomb_diagonal_perpendicularity_bisectrix_of_polygon;;
+stat_inverse_rhomb_diagonal_perpendicularity_bisectrix_of_polygon <=> nrel_converse_theorem: stat_contrapositive_rhomb_diagonal_perpendicularity_bisectrix_of_polygon;;
+stat_rhomb_diagonal_perpendicularity_bisectrix_of_polygon <=> nrel_inverse_theorem: stat_inverse_rhomb_diagonal_perpendicularity_bisectrix_of_polygon;;
+stat_converse_rhomb_diagonal_perpendicularity_bisectrix_of_polygon <=> nrel_inverse_theorem: stat_contrapositive_rhomb_diagonal_perpendicularity_bisectrix_of_polygon;;
+stat_rhomb_diagonal_perpendicularity_bisectrix_of_polygon <=> nrel_contrapositive_theorem: stat_contrapositive_rhomb_diagonal_perpendicularity_bisectrix_of_polygon;;
+stat_converse_rhomb_diagonal_perpendicularity_bisectrix_of_polygon <=> nrel_contrapositive_theorem: stat_inverse_rhomb_diagonal_perpendicularity_bisectrix_of_polygon;;
