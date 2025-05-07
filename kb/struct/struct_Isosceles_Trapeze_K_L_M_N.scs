@@ -28,21 +28,21 @@ struct_Isosceles_trapezoid_K_L_M_N  => nrel_base: struct_Segment_K_N;;
 
 struct_Isosceles_trapezoid_K_L_M_N  => nrel_base: struct_Segment_L_M;;
 
-struct_Segment_K_L => nrel_boundary_point: struct_Geometric_point_K;;
+struct_Segment_K_L -> rrel_boundary_point: struct_Geometric_point_K;;
 
-struct_Segment_K_N => nrel_boundary_point: struct_Geometric_point_K;;
+struct_Segment_K_N -> rrel_boundary_point: struct_Geometric_point_K;;
 
-struct_Segment_K_L => nrel_boundary_point: struct_Geometric_point_L;;
+struct_Segment_K_L -> rrel_boundary_point: struct_Geometric_point_L;;
 
-struct_Segment_L_M => nrel_boundary_point: struct_Geometric_point_L;;
+struct_Segment_L_M -> rrel_boundary_point: struct_Geometric_point_L;;
 
-struct_Segment_L_M => nrel_boundary_point: struct_Geometric_point_M;;
+struct_Segment_L_M -> rrel_boundary_point: struct_Geometric_point_M;;
 
-struct_Segment_M_N => nrel_boundary_point: struct_Geometric_point_M;;
+struct_Segment_M_N -> rrel_boundary_point: struct_Geometric_point_M;;
 
-struct_Segment_M_N => nrel_boundary_point: struct_Geometric_point_N;;
+struct_Segment_M_N -> rrel_boundary_point: struct_Geometric_point_N;;
 
-struct_Segment_K_N => nrel_boundary_point: struct_Geometric_point_N;;
+struct_Segment_K_N -> rrel_boundary_point: struct_Geometric_point_N;;
 
 nrel_congruence -> ... (* -> struct_Segment_M_N; struct_Segment_K_L;; *);;
 

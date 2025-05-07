@@ -35,13 +35,13 @@ struct_Acute_angled_triangle_O_S_T => nrel_internal_angle: struct_Acute_angle_Be
 
 struct_Acute_angled_triangle_O_S_T => nrel_internal_angle: struct_Acute_angle_Gamma;;
 
-struct_Segment_O_S => nrel_boundary_point: struct_Geometric_point_O;;
+struct_Segment_O_S -> rrel_boundary_point: struct_Geometric_point_O;;
 
-struct_Segment_O_S => nrel_boundary_point: struct_Geometric_point_S;;
+struct_Segment_O_S -> rrel_boundary_point: struct_Geometric_point_S;;
 
-struct_Segment_S_T => nrel_boundary_point: struct_Geometric_point_S;;
+struct_Segment_S_T -> rrel_boundary_point: struct_Geometric_point_S;;
 
-struct_Segment_S_T => nrel_boundary_point: struct_Geometric_point_T;;
+struct_Segment_S_T -> rrel_boundary_point: struct_Geometric_point_T;;
 
 struct_Acute_angled_triangle_O_S_T <- rrel_key_sc_element:
 	...

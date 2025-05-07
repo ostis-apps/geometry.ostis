@@ -1,8 +1,8 @@
-d_nrel_boundary_point
-=> nrel_main_idtf: [Опр.(граничная точка*)] (* <- lang_ru;; *);
-=> nrel_main_idtf: [Def.(boundary point*)] (*<- lang_en;;*);	
+d_rrel_boundary_point
+=> nrel_main_idtf: [Опр.(граничная точка')] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Def.(boundary point')] (*<- lang_en;;*);	
 <- definition;
--> rrel_key_sc_element: nrel_boundary_point;
+-> rrel_key_sc_element: rrel_boundary_point;
 
 <= nrel_using_constants:
 	{

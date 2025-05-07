@@ -33,13 +33,13 @@ struct_Obtuse_triangle_L_D_K => nrel_internal_angle: struct_Obtuse_angle_Beta;;
 
 struct_Obtuse_triangle_L_D_K => nrel_internal_angle: struct_Obtuse_angle_Gamma;;
 
-struct_Segment_D_L => nrel_boundary_point: struct_Geometric_point_L;;
+struct_Segment_D_L -> rrel_boundary_point: struct_Geometric_point_L;;
 
-struct_Segment_D_L => nrel_boundary_point: struct_Geometric_point_D;;
+struct_Segment_D_L -> rrel_boundary_point: struct_Geometric_point_D;;
 
-struct_Segment_D_K => nrel_boundary_point: struct_Geometric_point_D;;
+struct_Segment_D_K -> rrel_boundary_point: struct_Geometric_point_D;;
 
-struct_Segment_D_K => nrel_boundary_point: struct_Geometric_point_K;;
+struct_Segment_D_K -> rrel_boundary_point: struct_Geometric_point_K;;
 
 struct_Obtuse_triangle_L_D_K <- rrel_key_sc_element: 
 	...

@@ -38,9 +38,9 @@ struct_Regular_Polygon_A_B_C_D_E_F => nrel_side: struct_Segment_D_E;;
 
 nrel_congruence -> ... (* -> struct_Segment_A_B; struct_Segment_B_C; struct_Segment_C_D; struct_Segment_D_E; struct_Segment_E_F; struct_Segment_A_F;; *);;
 
-struct_Segment_A_F => nrel_boundary_point: struct_Geometric_point_F;;
+struct_Segment_A_F -> rrel_boundary_point: struct_Geometric_point_F;;
 
-struct_Segment_A_F => nrel_boundary_point: struct_Geometric_point_A;;
+struct_Segment_A_F -> rrel_boundary_point: struct_Geometric_point_A;;
 
 struct_Regular_Polygon_A_B_C_D_E_F <- rrel_key_sc_element: 
 	...

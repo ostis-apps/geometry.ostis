@@ -32,9 +32,9 @@ struct_Rectangle_B_C_D_E  => nrel_side: struct_Segment_B_E;;
 
 nrel_congruence -> ... (* -> struct_Segment_B_C; struct_Segment_C_D; struct_Segment_D_E; struct_Segment_B_E;;*);;
 
-struct_Segment_B_E => nrel_boundary_point: struct_Geometric_point_B;;
+struct_Segment_B_E -> rrel_boundary_point: struct_Geometric_point_B;;
 
-struct_Segment_B_E => nrel_boundary_point: struct_Geometric_point_E;;
+struct_Segment_B_E -> rrel_boundary_point: struct_Geometric_point_E;;
 
 struct_Rectangle_B_C_D_E <- rrel_key_sc_element: 
 	...

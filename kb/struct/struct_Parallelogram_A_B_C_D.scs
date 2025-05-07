@@ -30,9 +30,9 @@ struct_Parallelogram_A_B_C_D  => nrel_base: struct_Segment_A_D;;
 
 nrel_congruence -> ... (* -> struct_Segment_B_C; struct_Segment_A_D;; *);;
 
-struct_Segment_A_D => nrel_boundary_point: struct_Geometric_point_A;;
+struct_Segment_A_D -> rrel_boundary_point: struct_Geometric_point_A;;
 
-struct_Segment_A_D => nrel_boundary_point: struct_Geometric_point_D;;
+struct_Segment_A_D -> rrel_boundary_point: struct_Geometric_point_D;;
 
 struct_Parallelogram_A_B_C_D  => nrel_internal_angle: struct_Angle_Alpha;;
 

@@ -46,25 +46,25 @@ struct_Irregular_polygon_K_A_B_C_D_E  => nrel_internal_angle: struct_Angle_Epsil
 
 struct_Irregular_polygon_K_A_B_C_D_E  => nrel_internal_angle: struct_Angle_Sigma;;
 
-struct_Segment_K_E => nrel_boundary_point: struct_Geometric_point_K;;
+struct_Segment_K_E -> rrel_boundary_point: struct_Geometric_point_K;;
 
-struct_Segment_A_K => nrel_boundary_point: struct_Geometric_point_K;;
+struct_Segment_A_K -> rrel_boundary_point: struct_Geometric_point_K;;
 
-struct_Segment_A_K => nrel_boundary_point: struct_Geometric_point_A;;
+struct_Segment_A_K -> rrel_boundary_point: struct_Geometric_point_A;;
 
-struct_Segment_B_C => nrel_boundary_point: struct_Geometric_point_B;;
+struct_Segment_B_C -> rrel_boundary_point: struct_Geometric_point_B;;
 
-struct_Segment_B_C => nrel_boundary_point: struct_Geometric_point_C;;
+struct_Segment_B_C -> rrel_boundary_point: struct_Geometric_point_C;;
 
-struct_Segment_C_D => nrel_boundary_point: struct_Geometric_point_C;;
+struct_Segment_C_D -> rrel_boundary_point: struct_Geometric_point_C;;
 
-struct_Segment_C_D => nrel_boundary_point: struct_Geometric_point_D;;
+struct_Segment_C_D -> rrel_boundary_point: struct_Geometric_point_D;;
 
-struct_Segment_D_E => nrel_boundary_point: struct_Geometric_point_D;;
+struct_Segment_D_E -> rrel_boundary_point: struct_Geometric_point_D;;
 
-struct_Segment_D_E => nrel_boundary_point: struct_Geometric_point_E;;
+struct_Segment_D_E -> rrel_boundary_point: struct_Geometric_point_E;;
 
-struct_Segment_K_E => nrel_boundary_point: struct_Geometric_point_E;;
+struct_Segment_K_E -> rrel_boundary_point: struct_Geometric_point_E;;
 
 struct_Irregular_polygon_K_A_B_C_D_E <- rrel_key_sc_element:
 	...
