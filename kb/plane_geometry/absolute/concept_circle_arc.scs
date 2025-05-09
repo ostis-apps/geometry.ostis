@@ -1,24 +1,24 @@
-sc_node_class -> concept_circle_arc;;
+sc_node_class -> concept_circular_arc;;
 
-concept_circle_arc => nrel_main_idtf:
-	[дуга](* <- lang_ru;;*);
-	[circle arc](* <- lang_en;; *);;
+concept_circular_arc => nrel_main_idtf:
+	[дуга окружности](* <- lang_ru;;*);
+	[сircular arc](* <- lang_en;; *);;
 
-concept_circle_arc => nrel_idtf: [Класс дуг] (* <- lang_ru;; *);;
-concept_circle_arc => nrel_idtf: [Понятие дуги] (* <- lang_ru;; *);;
-concept_circle_arc => nrel_idtf: [Множество всевозможных дуг] (* <- lang_ru;; *);;
-concept_circle_arc => nrel_idtf: [Множество знаков всевозможных дуг] (* <- lang_ru;; *);;
+concept_circular_arc => nrel_idtf: [Класс дуг окружности] (* <- lang_ru;; *);;
+concept_circular_arc => nrel_idtf: [Понятие дуги окружности] (* <- lang_ru;; *);;
+concept_circular_arc => nrel_idtf: [Множество всевозможных дуг окружности] (* <- lang_ru;; *);;
+concept_circular_arc => nrel_idtf: [Множество знаков всевозможных дуг окружности] (* <- lang_ru;; *);;
 
-concept_circle_arc <= nrel_strict_inclusion: concept_circle;;
+concept_circular_arc <= nrel_strict_inclusion: concept_circle;;
 
-concept_circle_arc <- rrel_key_sc_element: 
+concept_circular_arc <- rrel_key_sc_element: 
 	...
 	(*
 	<- illustration;; 
 	<= nrel_sc_text_translation: ...
 		(*
 		-> rrel_example: 
-		"file://images/concept_circle_arc.png"(*=> nrel_format: format_png;;*);;
+		"file://images/concept_circular_arc.png"(*=> nrel_format: format_png;;*);;
 
 		*);;
 	*);;

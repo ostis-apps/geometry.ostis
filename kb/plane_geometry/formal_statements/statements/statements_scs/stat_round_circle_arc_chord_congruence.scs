@@ -1,68 +1,64 @@
-statement -> stat_round_circle_arc_chord_congruence;;
-statement -> stat_converse_round_circle_arc_chord_congruence;;
-statement -> stat_inverse_round_circle_arc_chord_congruence;;
-statement -> stat_contrapositive_round_circle_arc_chord_congruence;;
+statement -> stat_disk_circular_arc_chord_congruence;;
+statement -> stat_converse_disk_circular_arc_chord_congruence;;
+statement -> stat_inverse_disk_circular_arc_chord_congruence;;
+statement -> stat_contrapositive_disk_circular_arc_chord_congruence;;
 
-stat_round_circle_arc_chord_congruence => nrel_main_idtf: 
-	[Утв.(круг; дуга; конгруэнтность*; стягивающая хорда*)] (* <- lang_ru;; *);
-	[Stat.(Circle; arc; congruence*; chord of constrained arc*)](* <-lang_en;;*);;
+stat_disk_circular_arc_chord_congruence => nrel_main_idtf: 
+	[Утв.(круг; дуга окружности; конгруэнтность*; стягивающая хорда*)] (* <- lang_ru;; *);
+	[Stat.(Disk; arc; congruence*; chord of constricted arc*)](* <-lang_en;;*);;
 
-stat_converse_round_circle_arc_chord_congruence => nrel_main_idtf: 
-	[Обр.утв.(круг; дуга; конгруэнтность*; стягивающая хорда*)] (* <- lang_ru;; *);
-	[Converse stat.(Circle; arc; congruence*; chord of constrained arc*)](* <-lang_en;;*);;
+stat_converse_disk_circular_arc_chord_congruence => nrel_main_idtf: 
+	[Обр.утв.(круг; дуга окружности; конгруэнтность*; стягивающая хорда*)] (* <- lang_ru;; *);
+	[Converse stat.(Disk; arc; congruence*; chord of constricted arc*)](* <-lang_en;;*);;
 
+stat_inverse_disk_circular_arc_chord_congruence => nrel_main_idtf: 
+	[Прот.утв.(круг; дуга окружности; конгруэнтность*; стягивающая хорда*)] (* <- lang_ru;; *);
+	[Inverse stat.(Disk; arc; congruence*; chord of constricted arc*)](* <-lang_en;;*);;
 
-
-stat_inverse_round_circle_arc_chord_congruence => nrel_main_idtf: 
-	[Прот.утв.(круг; дуга; конгруэнтность*; стягивающая хорда*)] (* <- lang_ru;; *);
-	[Inverse stat.(Circle; arc; congruence*; chord of constrained arc*)](* <-lang_en;;*);;
-
-
-stat_contrapositive_round_circle_arc_chord_congruence => nrel_main_idtf:
-	[Прот.обр.утв.(круг; дуга; конгруэнтность*; стягивающая хорда*)] (* <- lang_ru;; *);
-	[Contrapositive stat.(Circle; arc; congruence*; chord of constrained arc*)](* <-lang_en;;*);;
+stat_contrapositive_disk_circular_arc_chord_congruence => nrel_main_idtf:
+	[Прот.обр.утв.(круг; дуга окружности; конгруэнтность*; стягивающая хорда*)] (* <- lang_ru;; *);
+	[Contrapositive stat.(Disk; arc; congruence*; chord of constricted arc*)](* <-lang_en;;*);;
 
 
-
-stat_round_circle_arc_chord_congruence <= nrel_sc_text_translation: ...
+stat_disk_circular_arc_chord_congruence <= nrel_sc_text_translation: ...
 	(*
 	-> rrel_example:
-		[Если две дуги одного круга равны, то стягивающие стягивающие их хорды равны.] 
+		[Если две дуги окружности одного круга равны, то стягивающие их хорды равны.] 
 		(* <- lang_ru;; *);
-		[If two arcs of the same circle are equal, then the chords that constrain those arcs are also equal.]
+		[If two circular arcs of the same disk are equal, then the chords that constrain those circular arcs are also equal.]
 		(* <-lang_en;;*);;
 	*);;
 
-stat_converse_round_circle_arc_chord_congruence <= nrel_sc_text_translation: ...
+stat_converse_disk_circular_arc_chord_congruence <= nrel_sc_text_translation: ...
 	(*
 	-> rrel_example:
-		[Если две стягивающие хорды одной окружности равны, то равны и эти дуги.]
+		[Если две стягивающие хорды одного круга равны, то равны и эти дуги окружности.]
 		(* <- lang_ru;; *);
-		[If two chords constraining arcs on the same circle are equal, then the arcs themselves are also equal.]
+		[If two chords constraining arcs on the same disk are equal, then the arcs themselves are also equal.]
 		(* <-lang_en;;*);;
 	*);;
 
-stat_inverse_round_circle_arc_chord_congruence <= nrel_sc_text_translation: ...
+stat_inverse_disk_circular_arc_chord_congruence <= nrel_sc_text_translation: ...
 	(*
 	-> rrel_example:
-		[Если две дуги одного круга  не равны, то стягивающие стягивающие их хорды не равны.] 
+		[Если две дуги окружности одного круга не равны, то стягивающие их хорды не равны.] 
 		(* <- lang_ru;; *);
-		[If two arcs of the same circle are not equal, then the chords that constrain those arcs are also not equal.]
+		[If two arcs of the same disk are not equal, then the chords that constrain those arcs are also not equal.]
 		(* <-lang_en;;*);;
 	*);;
 
-stat_contrapositive_round_circle_arc_chord_congruence <= nrel_sc_text_translation: ...
+stat_contrapositive_disk_circular_arc_chord_congruence <= nrel_sc_text_translation: ...
 	(*
 	-> rrel_example:
-		[Если две стягивающие хорды одной окружности не  равны, то не равны и эти дуги.]
+		[Если две стягивающие хорды одного круга не равны, то не равны и эти дуги окружности.]
 		(* <- lang_ru;; *);
-		[If two chords constraining arcs on the same circle are not equal, then the arcs themselves are also not equal.]	
+		[If two chords constraining arcs on the same disk are not equal, then the circular arcs themselves are also not equal.]	
 		(* <-lang_en;;*);;
 	*);;
 
-stat_round_circle_arc_chord_congruence <=> nrel_converse_theorem: stat_converse_round_circle_arc_chord_congruence;;
-stat_inverse_round_circle_arc_chord_congruence <=> nrel_converse_theorem: stat_contrapositive_round_circle_arc_chord_congruence;;
-stat_round_circle_arc_chord_congruence <=> nrel_inverse_theorem: stat_inverse_round_circle_arc_chord_congruence;;
-stat_converse_round_circle_arc_chord_congruence <=> nrel_inverse_theorem: stat_contrapositive_round_circle_arc_chord_congruence;;
-stat_round_circle_arc_chord_congruence <=> nrel_contrapositive_theorem: stat_contrapositive_round_circle_arc_chord_congruence;;
-stat_converse_round_circle_arc_chord_congruence <=> nrel_contrapositive_theorem: stat_inverse_round_circle_arc_chord_congruence;;
+stat_disk_circular_arc_chord_congruence <=> nrel_converse_theorem: stat_converse_disk_circular_arc_chord_congruence;;
+stat_inverse_disk_circular_arc_chord_congruence <=> nrel_converse_theorem: stat_contrapositive_disk_circular_arc_chord_congruence;;
+stat_disk_circular_arc_chord_congruence <=> nrel_inverse_theorem: stat_inverse_disk_circular_arc_chord_congruence;;
+stat_inverse_disk_circular_arc_chord_congruence <=> nrel_inverse_theorem: stat_contrapositive_disk_circular_arc_chord_congruence;;
+stat_disk_circular_arc_chord_congruence <=> nrel_contrapositive_theorem: stat_contrapositive_disk_circular_arc_chord_congruence;;
+stat_converse_disk_circular_arc_chord_congruence <=> nrel_contrapositive_theorem: stat_inverse_disk_circular_arc_chord_congruence;;
