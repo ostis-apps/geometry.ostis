@@ -1,12 +1,12 @@
 statement-> stat_rectangle_circle_be_inscribed;;
-statement-> stat_reverse_converse_rectangle_circle_be_inscribed;;
+statement-> stat_contrapositive_rectangle_circle_be_inscribed;;
 
 stat_rectangle_circle_be_inscribed => nrel_main_idtf:
 	[Утв.(прямоугольник; окружность; быть вписанным*)] (* <- lang_ru;; *);
 	[Stat. (rectangle; circle; to be inscribed*)](* <-lang_en;;*);;
 
 
-stat_reverse_converse_rectangle_circle_be_inscribed => nrel_main_idtf:
+stat_contrapositive_rectangle_circle_be_inscribed => nrel_main_idtf:
 	[Прот.обр.утв.(прямоугольник; окружность; быть вписанным*)] (* <- lang_ru;; *);
 	[Contrapositive stat.(rectangle; circle; to be inscribed*)](* <-lang_en;;*);;
 
@@ -21,7 +21,7 @@ stat_rectangle_circle_be_inscribed<=nrel_sc_text_translation: ...
 		 (* <-lang_en;;*);;
 	*);;
 
-stat_reverse_converse_rectangle_circle_be_inscribed<=nrel_sc_text_translation: ...
+stat_contrapositive_rectangle_circle_be_inscribed<=nrel_sc_text_translation: ...
 	(*
 	-> rrel_example:
 		[Если вокруг четырёхугольника нельзя описать окружность, он не является прямоугольником.] 
@@ -30,4 +30,4 @@ stat_reverse_converse_rectangle_circle_be_inscribed<=nrel_sc_text_translation: .
 		(* <-lang_en;;*);;
 	*);;
 
-stat_rectangle_circle_be_inscribed <=>nrel_reverse_converse_theorem:stat_reverse_converse_rectangle_circle_be_inscribed;;
+stat_rectangle_circle_be_inscribed <=>nrel_contrapositive_theorem:stat_contrapositive_rectangle_circle_be_inscribed;;

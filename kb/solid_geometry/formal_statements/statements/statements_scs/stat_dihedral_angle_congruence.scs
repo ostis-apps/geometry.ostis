@@ -1,7 +1,7 @@
 statement -> stat_dihedral_angle_congruence ;;
 statement -> stat_converse_dihedral_angle_congruence;;
-statement -> stat_reverse_dihedral_angle_congruence ;;
-statement -> stat_reverse_converse_dihedral_angle_congruence;;
+statement -> stat_inverse_dihedral_angle_congruence ;;
+statement -> stat_contrapositive_dihedral_angle_congruence;;
 
 stat_dihedral_angle_congruence => nrel_main_idtf: 
 	[Утв.(двугранный угол; линейный угол; конгруэнтность*)] (* <- lang_ru;; *);
@@ -11,11 +11,11 @@ stat_converse_dihedral_angle_congruence => nrel_main_idtf:
 	[Обр.утв.(двугранный угол; линейный угол; конгруэнтность**)] (* <- lang_ru;; *);
 	[Converse stat.(dihedral angle; linear angle; congruence*)](* <-lang_en;;*);;
 
-stat_reverse_dihedral_angle_congruence => nrel_main_idtf:
+stat_inverse_dihedral_angle_congruence => nrel_main_idtf:
 	[Прот.утв.(двугранный угол; линейный угол; конгруэнтность*)] (* <- lang_ru;; *);
 	[Inverse stat.(dihedral angle; linear angle; congruence*)](* <-lang_en;;*);;
 
-stat_reverse_converse_dihedral_angle_congruence => nrel_main_idtf:
+stat_contrapositive_dihedral_angle_congruence => nrel_main_idtf:
 	[Прот.обр.утв.(двугранный угол; линейный угол; конгруэнтность*)] (* <- lang_ru;; *);
 	[Contrapositive stat.(dihedral angle; linear angle; congruence*)](* <-lang_en;;*);;
 
@@ -23,11 +23,11 @@ stat_converse_dihedral_angle_congruence => nrel_main_idtf:
 	[Обр.утв.(двугранный угол; линейный угол; конгруэнтность**)] (* <- lang_ru;; *);
 	[Converse stat.(dihedral angle; linear angle; congruence*)](* <-lang_en;;*);;
 
-stat_reverse_dihedral_angle_congruence => nrel_main_idtf:
+stat_inverse_dihedral_angle_congruence => nrel_main_idtf:
 	[Прот.утв.(двугранный угол; линейный угол; конгруэнтность*)] (* <- lang_ru;; *);
 	[Inverse stat.(dihedral angle; linear angle; congruence*)](* <-lang_en;;*);;
 
-stat_reverse_converse_dihedral_angle_congruence => nrel_main_idtf:
+stat_contrapositive_dihedral_angle_congruence => nrel_main_idtf:
 	[Прот.обр.утв.(двугранный угол; линейный угол; конгруэнтность*)] (* <- lang_ru;; *);
 	[Contrapositive stat.(dihedral angle; linear angle; congruence*)](* <-lang_en;;*);;
 
@@ -45,14 +45,14 @@ stat_converse_dihedral_angle_congruence<= nrel_sc_text_translation: ...
 		[If the linear angles of dihedral angles are equal, then the dihedral angles themselves are also equal.] (*<-lang_en;;*);;
 	*);;
 
-stat_reverse_dihedral_angle_congruence <= nrel_sc_text_translation: ...
+stat_inverse_dihedral_angle_congruence <= nrel_sc_text_translation: ...
 	(*
 	-> rrel_example:
 		[Если двугранные углы не равны, то не равны так же и их линейные углы.] (* <- lang_ru;; *);
 		[If the dihedral angles are not equal, then their linear angles are also not equal.] (*<-lang_en;;*);;
 	*);;
 
-stat_reverse_converse_dihedral_angle_congruence <= nrel_sc_text_translation: ...
+stat_contrapositive_dihedral_angle_congruence <= nrel_sc_text_translation: ...
 	(*
 	-> rrel_example:
 		[Если не равны линейные углы двугранных углов, то не равны и сами двугранные углы.] (* <- lang_ru;; *);
@@ -60,8 +60,8 @@ stat_reverse_converse_dihedral_angle_congruence <= nrel_sc_text_translation: ...
 	*);;
 
 stat_dihedral_angle_congruence  <=> nrel_converse_theorem: stat_converse_dihedral_angle_congruence;;
-stat_reverse_dihedral_angle_congruence  <=> nrel_converse_theorem: stat_reverse_converse_dihedral_angle_congruence;;
-stat_dihedral_angle_congruence  <=> nrel_reverse_theorem: stat_reverse_dihedral_angle_congruence ;;
-stat_converse_dihedral_angle_congruence <=> nrel_reverse_theorem: stat_reverse_converse_dihedral_angle_congruence;;
-stat_dihedral_angle_congruence  <=> nrel_reverse_converse_theorem: stat_reverse_converse_dihedral_angle_congruence;;
-stat_converse_dihedral_angle_congruence<=> nrel_reverse_converse_theorem: stat_reverse_dihedral_angle_congruence ;;
+stat_inverse_dihedral_angle_congruence  <=> nrel_converse_theorem: stat_contrapositive_dihedral_angle_congruence;;
+stat_dihedral_angle_congruence  <=> nrel_inverse_theorem: stat_inverse_dihedral_angle_congruence ;;
+stat_converse_dihedral_angle_congruence <=> nrel_inverse_theorem: stat_contrapositive_dihedral_angle_congruence;;
+stat_dihedral_angle_congruence  <=> nrel_contrapositive_theorem: stat_contrapositive_dihedral_angle_congruence;;
+stat_converse_dihedral_angle_congruence<=> nrel_contrapositive_theorem: stat_inverse_dihedral_angle_congruence ;;
