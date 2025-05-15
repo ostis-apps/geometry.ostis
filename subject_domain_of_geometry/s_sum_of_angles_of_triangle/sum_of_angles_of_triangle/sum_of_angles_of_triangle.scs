@@ -2,3 +2,26 @@ sc_node -> sum_of_angles_of_triangle;;
 
 sum_of_angles_of_triangle
 => nrel_main_idtf: [§19. Сумма углов треугольника] (* <- lang_ru;;*); [§19. Sum of angles of triangle] (* <- lang_en;;*);;
+
+theorem_triangle_angle_sum <- statement;;
+
+theorem_triangle_angle_sum <- rrel_theorem: sum_of_angles_of_triangle;;
+
+theorem_triangle_angle_sum => nrel_main_idtf: [Теор.(треугольник; сумма углов*)] (*<- lang_ru;;*);;  
+theorem_triangle_angle_sum => nrel_main_idtf: [Th.(triangle; angle sum*)] (*<- lang_en;;*);;
+
+theorem_triangle_angle_sum <= nrel_sc_text_translation: 
+    ... 
+    (* 
+    -> rrel_example:
+      {
+        [Сумма углов треугольника равна 180°.] (* <- lang_ru;; *);
+        [The sum of the angles of a triangle is 180°.] (* <- lang_en;; *)
+      };;
+    *);;
+
+theorem_triangle_angle_sum <= nrel_using_constants:  
+{
+   concept_triangle; 
+   concept_angle
+};;  

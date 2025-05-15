@@ -2,3 +2,195 @@ sc_node -> angle_and_types_of_angles;;
 
 angle_and_types_of_angles
 => nrel_main_idtf: [§5. Угол. Виды углов] (* <- lang_ru;; *); [§5. Angle. Types of angles] (* <- lang_en;; *);;
+
+sc_node -> d_angle;;
+
+d_angle <- definition;;
+
+d_angle
+=> nrel_main_idtf: [Опр.(Угол)] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Def.(Angle)] (* <- lang_en;; *);;
+
+d_angle  <= nrel_sc_text_translation: 
+  ...
+  (*
+  -> rrel_example:
+    {
+        [Угол — это геометрическая фигура, образованная двумя лучами, выходящими из одной точки, и частью плоскости, которую они ограничивают.]
+        (* <- lang_ru;; *);
+        [An angle is a geometric shape formed by two rays coming from the same point and a part of the plane they delimit.]
+        (* <- lang_en;; *)
+    };;
+  *);;
+
+d_angle <= nrel_using_constants:
+  {
+  concept_geometric_figure; 
+  concept_ray; 
+  concept_plane;
+  concept_point
+  };;
+
+sc_node -> d_equal_angles;;
+
+d_equal_angles <- definition;;
+
+d_equal_angles
+=> nrel_main_idtf: [Опр.(Равные углы)] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Def.(Equal angles)] (* <- lang_en;; *);;
+
+d_equal_angles  <= nrel_sc_text_translation: 
+  ...
+  (*
+  -> rrel_example:
+    {
+        [Два угла называются равными, если их можно совместить наложением.]
+        (* <- lang_ru;; *);
+        [Two angles are called equal if they can be combined by overlapping.]
+        (* <- lang_en;; *)
+    };;
+  *);;
+
+sc_node -> d_bisector_of_angle;;
+
+d_bisector_of_angle <- definition;;
+
+d_bisector_of_angle
+=> nrel_main_idtf: [Опр.(Биссектриса угла)] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Def.(Bisector of angle)] (* <- lang_en;; *);;
+
+d_bisector_of_angle  <= nrel_sc_text_translation:
+  ...
+  (*
+  -> rrel_example:
+    {
+        [Биссектрисой угла называется луч, который выходит из вершины угла и делит его на два равных угла.]
+        (* <- lang_ru;; *);
+        [The bisector of an angle is a ray that it goes out from the top of the corner and divides it into two equal corners.]
+        (* <- lang_en;; *)
+    };;
+  *);;
+
+d_bisector_of_angle <= nrel_using_constants:
+  {
+    concept_angle; 
+    concept_ray
+  };;
+
+sc_node -> d_straight_angle;;
+
+d_straight_angle <- definition;;
+
+d_straight_angle
+=> nrel_main_idtf: [Опр.(Прямой угол)] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Def.(Straight angle)] (* <- lang_en;; *);;
+
+d_straight_angle  <= nrel_sc_text_translation:
+  ...
+  (*
+  -> rrel_example:
+    {
+        [Угол, равный 90°, называется прямым.]
+        (* <- lang_ru;; *);
+        [An angle equal to 90° is called a straight line.]
+        (* <- lang_en;; *)
+    };;
+  *);;
+
+sc_node -> d_acute_angle;;
+
+d_acute_angle <- definition;;
+
+d_acute_angle
+=> nrel_main_idtf: [Опр.(Биссектриса угла)] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Def.(Bisector of angle)] (* <- lang_en;; *);;
+
+d_acute_angle  <= nrel_sc_text_translation:
+  ...
+  (*
+  -> rrel_example:
+    {
+        [Угол меньший 90 градусов называется острым.]
+        (* <- lang_ru;; *);
+        [An angle less than 90 degrees is called an acute angle.]
+        (* <- lang_en;; *)
+    };;
+  *);;
+
+sc_node -> d_obtuse_angle;;
+
+d_obtuse_angle <- definition;;
+
+d_obtuse_angle
+=> nrel_main_idtf: [Опр.(Тупой угол)] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Def.(Obtuse angle)] (* <- lang_en;; *);;
+
+d_obtuse_angle  <= nrel_sc_text_translation:
+  ...
+  (*
+  -> rrel_example:
+    {
+        [Угол больший 90 градусов называется тупым.]
+        (* <- lang_ru;; *);
+        [An angle greater than 90 degrees is called obtuse.]
+        (* <- lang_en;; *)
+    };;
+  *);;
+
+axiom_angle_split <- statement;;
+
+axiom_angle_split <- rrel_axiom: angle_and_types_of_angles;;
+
+axiom_angle_split => nrel_main_idtf: [Акс.(угол; луч; мера угла*)] (*<- lang_ru;;*);;
+axiom_angle_split => nrel_main_idtf: [Ax.(angle; ray; angle measure*)] (*<- lang_en;;*);;
+
+axiom_angle_split <= nrel_sc_text_translation: 
+    ... 
+    (* 
+    -> rrel_example: 
+      {
+        [Если внутри угла из его вершины провести луч, то он разобьет данный угол на два угла, сумма градусных мер которых равна градусной мере данного угла.] (* <- lang_ru;; *);
+        [If a ray is drawn from the vertex inside an angle, it divides the angle into two angles whose sum of degree measures equals the measure of the original angle.] (* <- lang_en;; *)
+      };;
+    *);;
+
+axiom_angle_laying <= nrel_using_constants:
+  {
+    concept_angle;
+    concept_ray;
+    concept_angle_measure
+  };;
+
+axiom_angle_laying <- statement;;
+
+axiom_angle_laying <- rrel_axiom: angle_and_types_of_angles;;
+
+axiom_angle_laying => nrel_main_idtf: [Акс.(луч; угол; мера угла; полуплоскость*)] (*<- lang_ru;;*);;
+axiom_angle_laying => nrel_main_idtf: [Ax.(ray; angle; angle measure; half-plane*)] (*<- lang_en;;*);;
+
+axiom_angle_laying <= nrel_sc_text_translation: 
+    ... 
+    (* 
+    -> rrel_example: 
+      {
+        [От любого луча в данную полуплоскость можно отложить угол данной градусной меры, и притом только один.] (* <- lang_ru;; *);
+        [From any ray into a given half-plane, an angle of a given degree measure can be laid off, and only one.] (* <- lang_en;; *)
+      };;
+    *);;
+
+axiom_angle_laying <= nrel_using_constants:
+  {
+    concept_ray;
+    concept_angle;
+    concept_angle_measure;
+    concept_half_plane
+  };;
+
+angle_and_types_of_angles <- rrel_key_sc_element:
+    {
+        d_angle;
+        d_equal_angles;
+        d_obtuse_angle;
+        d_bisector_of_angle;
+        d_acute_angle
+    };;

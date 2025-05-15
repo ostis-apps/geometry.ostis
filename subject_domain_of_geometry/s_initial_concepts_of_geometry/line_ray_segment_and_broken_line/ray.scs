@@ -1,0 +1,58 @@
+sc_node -> ray;;
+
+ray
+=> nrel_main_idtf: [3.2. Луч] (* <- lang_ru;;*); [3.2 Ray] (* <- lang_en;;*);;
+
+sc_node -> d_ray_3;;
+
+d_ray_3 <- definition;;
+
+d_ray_3  => nrel_main_idtf: [Опр.(Луч)] (* <- lang_ru;; *);
+         => nrel_main_idtf: [Def.(Ray)] (* <- lang_en;; *);;
+
+d_ray_3  <= nrel_sc_text_translation: 
+  ...
+  (*
+    -> rrel_example:
+    {
+        [Луч - часть прямой, ограниченная одной точкой.]
+        (* <- lang_ru;; *);
+        [A ray is a part of a straight line limited by one point.]
+        (* <- lang_en;; *)
+    };;
+  *);;
+
+d_ray_3 <= nrel_using_constants:
+  {
+    concept_straight_line;
+    concept_point
+  };;
+
+sc_node -> d_additional_ray;;
+
+d_additional_ray <- definition;;
+
+d_additional_ray  => nrel_main_idtf: [Опр.(Дополнительный луч)] (* <- lang_ru;; *);
+                  => nrel_main_idtf: [Def.(Additional ray)] (* <- lang_en;; *);;
+
+d_additional_ray  <= nrel_sc_text_translation: 
+  ...
+  (*
+    -> rrel_example:
+    {
+        [Два луча называются дополнительными (противоположными), если они имеют общее начало и лежат на одной прямой.] (* <- lang_ru;; *);
+        [Two rays are called complementary (opposite) if they have a common origin and lie on the same line.] (* <- lang_en;; *)
+    };;
+  *);;
+
+d_additional_ray <= nrel_using_constants:
+  {
+    concept_ray;
+    concept_straight_line
+  };;
+
+ray <- rrel_key_sc_element: 
+    {
+        d_ray_3;
+        d_additional_ray
+    };;

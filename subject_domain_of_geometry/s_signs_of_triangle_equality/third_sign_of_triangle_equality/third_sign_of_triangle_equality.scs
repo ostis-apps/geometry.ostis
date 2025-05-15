@@ -2,3 +2,27 @@ sc_node -> third_sign_of_triangle_equality;;
 
 third_sign_of_triangle_equality
 => nrel_main_idtf: [§13. Третий признак равенства треугольников] (* <- lang_ru;;*); [§13. Third sign of triangle equality] (* <- lang_en;;*);;
+
+theorem_triangle_SSS <- statement;;
+
+theorem_triangle_SSS <- rrel_theorem: third_sign_of_triangle_equality;;
+
+theorem_triangle_SSS => nrel_main_idtf: [Теор.(сторона; треугольник; равенство*)] (*<- lang_ru;;*);;  
+theorem_triangle_SSS => nrel_main_idtf: [Th.(side; triangle; congruence*)] (*<- lang_en;;*);;
+
+theorem_triangle_SSS <= nrel_sc_text_translation: 
+    ... 
+    (* 
+    -> rrel_example: 
+      {
+        [Если три стороны одного треугольника соответственно равны трем сторонам другого треугольника, то такие треугольники равны.] (* <- lang_ru;; *);
+        [If three sides of one triangle are respectively equal to three sides of another triangle, then the triangles are congruent.] (* <- lang_en;; *)
+      };;
+    *);;
+
+theorem_triangle_SSS <= nrel_using_constants:  
+{
+   concept_side; 
+   concept_triangle; 
+   concept_congruence
+};;  

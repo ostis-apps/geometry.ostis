@@ -1,4 +1,26 @@
 sc_node -> triangles;;
 
 triangles
-=> nrel_main_idtf: [§8. Треугольники] (* <- lang_ru;;*); [§8. Triangles] (* <- lang_en;;*);;
+=> nrel_main_idtf: [§8. Треугольники] (* <- lang_ru;;*); [§8. Triangles] (* <- lang_en;;*);
+
+-> triangle
+	(*
+	=> nrel_section_base_order: 
+		equal_triangles;;
+	*);
+
+-> equal_triangles
+	(*
+	=> nrel_section_base_order: 
+		triangle_species;;
+	*);
+
+triangle_species;;
+
+triangles => nrel_task_to_be_solved: 
+	{
+		task_find_perimeter_of_quadrilateral;
+		task_find_side_measure;
+		task_find_angle_measures;
+		task_find_side_measures
+	};;

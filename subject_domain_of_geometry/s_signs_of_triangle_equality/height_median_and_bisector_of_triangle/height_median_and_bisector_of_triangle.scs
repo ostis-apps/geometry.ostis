@@ -2,3 +2,95 @@ sc_node -> height_median_and_bisector_of_triangle;;
 
 height_median_and_bisector_of_triangle
 => nrel_main_idtf: [§10. Высота, медиана и биссектриса треугольника] (* <- lang_ru;;*); [§10. Height, median and bisector of triangle] (* <- lang_en;;*);;
+
+sc_node -> d_triangle_height;;
+
+d_triangle_height <- definition;;
+
+d_triangle_height  
+=> nrel_main_idtf: [Опр.(Высота треугольника)] (* <- lang_ru;; *); 
+=> nrel_main_idtf: [Def.(Altitude of a triangle)] (* <- lang_en;; *);;  
+
+d_triangle_height <= nrel_sc_text_translation:  
+  ...  
+  (*  
+  -> rrel_example:  
+{  
+    [Высотой треугольника называется перпендикуляр, опущенный из вершины треугольника на противоположную сторону или на ее продолжение (отрезок BH).]  
+    (* <- lang_ru;; *);  
+    [The altitude of a triangle is a perpendicular dropped from a vertex of the triangle to the opposite side or its extension (segment BH).]  
+    (* <- lang_en;; *)  
+};;  
+  *);;  
+
+d_triangle_height <= nrel_using_constants:  
+  {  
+    concept_perpendicular;  
+    concept_triangle_vertex;  
+    concept_triangle_side;  
+    concept_segment  
+  };;
+
+sc_node -> d_triangle_median;;
+
+d_triangle_median <- definition;;
+
+d_triangle_median  
+=> nrel_main_idtf: [Опр.(Медиана треугольника)] (* <- lang_ru;; *); 
+=> nrel_main_idtf: [Def.(Median of a triangle)] (* <- lang_en;; *);;  
+
+d_triangle_median <= nrel_sc_text_translation:  
+  ...  
+  (*  
+  -> rrel_example:  
+{  
+    [Медианой треугольника называется отрезок, который соединяет вершину треугольника с серединой противоположной стороны (отрезок BM).]  
+    (* <- lang_ru;; *);  
+    [A median of a triangle is a segment that connects a vertex of the triangle to the midpoint of the opposite side (segment BM).]  
+    (* <- lang_en;; *)  
+};;  
+  *);;  
+
+d_triangle_median <= nrel_using_constants:  
+  {  
+  concept_segment;  
+  concept_triangle_vertex;  
+  concept_midpoint;  
+  concept_triangle_side  
+  };;
+
+sc_node -> d_triangle_bisector;;
+
+d_triangle_bisector <- definition;;
+
+d_triangle_bisector  
+=> nrel_main_idtf: [Опр.(Биссектриса треугольника)] (* <- lang_ru;; *); 
+=> nrel_main_idtf: [Def.(Triangle bisector)] (* <- lang_en;; *);;  
+
+d_triangle_bisector <= nrel_sc_text_translation:  
+  ...  
+  (*  
+  -> rrel_example:  
+{  
+    [Биссектрисой треугольника называется отрезок биссектрисы угла треугольника, соединяющий вершину треугольника с точкой пересечения биссектрисы с противоположной стороной (отрезок BK).]  
+    (* <- lang_ru;; *);  
+    [A bisector of a triangle is a segment of the angle bisector that connects the vertex of the triangle to the point where the bisector intersects the opposite side (segment BK).]  
+    (* <- lang_en;; *)  
+};;  
+  *);;  
+
+d_triangle_bisector <= nrel_using_constants:  
+  {  
+    concept_angle_bisector;  
+    concept_triangle_vertex;  
+    concept_intersection_point;  
+    concept_triangle_side;  
+    concept_segment  
+  };;
+
+height_median_and_bisector_of_triangle <- rrel_key_sc_element:
+    {
+       d_triangle_height;
+       d_triangle_bisector;
+       d_triangle_median
+    };;

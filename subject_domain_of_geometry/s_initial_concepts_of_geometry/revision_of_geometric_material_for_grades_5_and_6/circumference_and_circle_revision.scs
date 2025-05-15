@@ -1,0 +1,80 @@
+sc_node -> circumference_and_circle_revision;;
+
+circumference_and_circle_revision
+=> nrel_main_idtf: [1.3. Окружность и круг] (* <- lang_ru;;*); [1.3. Circumference and circle] (* <- lang_en;;*);;
+
+sc_node -> d_circle_revision;;
+
+d_circle_revision <- definition;;
+
+d_circle_revision  => nrel_main_idtf: [Опр.(Круг)] (* <- lang_ru;; *);
+                   => nrel_main_idtf: [Def.(Circle)] (* <- lang_en;; *);;
+
+d_circle_revision  <= nrel_sc_text_translation: 
+  ...
+  (*
+  -> rrel_example: 
+        [Круг — это внутренняя часть плоскости, ограниченная окружностью.]
+        (* <- lang_ru;; *);
+        [A circle is the interior of a plane bounded by a circumference.]
+        (* <- lang_en;; *);;
+  *);;
+
+d_circle_revision <= nrel_using_constants:
+  {
+    concept_plane;
+    concept_circumference
+  };;
+
+sc_node -> d_circumference_revision;;
+
+d_circumference_revision <- definition;;
+
+d_circumference_revision  => nrel_main_idtf: [Опр.(Окружность)] (* <- lang_ru;; *);
+                          => nrel_main_idtf: [Def.(Circumference)] (* <- lang_en;; *);;
+
+d_circumference_revision  <= nrel_sc_text_translation: 
+  ...
+  (*
+  -> rrel_example: 
+    [Окружность - это замкнутая линия на плоскости, все точки которой находятся на одинаковом расстоянии от одной точки — центра окружности.]
+    (* <- lang_ru;; *);
+    [A circumference is a closed line on a plane, all points of which are at the same distance from one point - the center of the circle.]
+    (* <- lang_en;; *);;
+  *);;
+
+d_circumference_revision <= nrel_using_constants:
+  {
+    concept_plane;
+    concept_geometric_point
+  };;
+
+sc_node -> d_radius_revision;;
+
+d_radius_revision <- definition;;
+
+d_radius_revision  => nrel_main_idtf: [Опр.(Радиус)] (* <- lang_ru;; *);
+                   => nrel_main_idtf: [Def.(Radius)] (* <- lang_en;; *);;
+
+d_radius_revision  <= nrel_sc_text_translation: 
+  ...
+  (*
+    -> rrel_example: 
+        [Радиус - это отрезок, который соединяет центр с точкой на окружности.]
+        (* <- lang_ru;; *);
+        [The radius is the segment that connects the center to a point on the circle.]
+        (* <- lang_en;; *);;
+  *);;
+
+d_radius_revision <= nrel_using_constants:
+  {
+    concept_segment;
+    concept_geometric_point
+  };;
+
+circumference_and_circle_revision <- rrel_key_sc_element:
+    {
+        d_radius_revision;
+        d_circumference_revision;
+        d_circle_revision
+    };;

@@ -2,3 +2,75 @@ sc_node -> signs_of_isosceles_triangle;;
 
 signs_of_isosceles_triangle
 => nrel_main_idtf: [§12. Признаки равнобедренного треугольника] (* <- lang_ru;;*); [§12. Signs of isosceles triangle] (* <- lang_en;;*);;
+
+theorem_altitude_median_isosceles <- statement;;
+
+theorem_altitude_median_isosceles <- rrel_theorem: signs_of_isosceles_triangle;;
+
+theorem_altitude_median_isosceles => nrel_main_idtf: [Теор.(высота; медиана; равнобедренный треугольник*)] (*<- lang_ru;;*);;  
+theorem_altitude_median_isosceles => nrel_main_idtf: [Th.(altitude; median; isosceles triangle*)] (*<- lang_en;;*);;
+
+theorem_altitude_median_isosceles <= nrel_sc_text_translation: 
+    ... 
+    (* 
+    -> rrel_example: 
+      {
+        [Если в треугольнике высота является медианой, то треугольник равнобедренный.] (* <- lang_ru;; *);
+        [If in a triangle the altitude is also a median, then the triangle is isosceles.] (* <- lang_en;; *) 
+      };;
+    *);;
+
+theorem_altitude_median_isosceles <= nrel_using_constants:  
+{
+   concept_altitude; 
+   concept_median; 
+   concept_isosceles_triangle
+};;
+
+theorem_altitude_bisector_isosceles <- statement;;
+
+theorem_altitude_bisector_isosceles <- rrel_theorem: signs_of_isosceles_triangle;;
+
+theorem_altitude_bisector_isosceles => nrel_main_idtf: [Теор.(высота; биссектриса; равнобедренный треугольник*)] (*<- lang_ru;;*);;  
+theorem_altitude_bisector_isosceles => nrel_main_idtf: [Th.(altitude; bisector; isosceles triangle*)] (*<- lang_en;;*);;
+
+theorem_altitude_bisector_isosceles <= nrel_sc_text_translation: 
+    ... 
+    (* 
+    -> rrel_example: 
+      {
+        [Если в треугольнике высота является биссектрисой, то треугольник равнобедренный.] (* <- lang_ru;; *);
+        [If in a triangle the altitude is also a bisector, then the triangle is isosceles.] (* <- lang_en;; *)
+      };;
+    *);;
+
+theorem_altitude_bisector_isosceles <= nrel_using_constants:  
+{
+   concept_altitude; 
+   concept_bisector; 
+   concept_isosceles_triangle
+};;
+
+theorem_median_bisector_isosceles <- statement;;
+
+theorem_median_bisector_isosceles <- rrel_theorem: signs_of_isosceles_triangle;;
+
+theorem_median_bisector_isosceles => nrel_main_idtf: [Теор.(медиана; биссектриса; равнобедренный треугольник*)] (*<- lang_ru;;*);;  
+theorem_median_bisector_isosceles => nrel_main_idtf: [Th.(median; bisector; isosceles triangle*)] (*<- lang_en;;*);;
+
+theorem_median_bisector_isosceles <= nrel_sc_text_translation: 
+    ... 
+    (* 
+    -> rrel_example: 
+      {
+        [Если в треугольнике медиана является биссектрисой, то треугольник равнобедренный.] (* <- lang_ru;; *);
+        [If in a triangle the median is also a bisector, then the triangle is isosceles.] (* <- lang_en;; *)
+      };;
+    *);;
+
+theorem_median_bisector_isosceles <= nrel_using_constants:  
+{
+   concept_median; 
+   concept_bisector; 
+   concept_isosceles_triangle
+};;  

@@ -2,3 +2,136 @@ sc_node -> perpendicular_lines;;
 
 perpendicular_lines
 => nrel_main_idtf: [§7. Перпендикулярные прямые] (* <- lang_ru;; *); [§7. Perpendicular lines] (* <- lang_en;; *);;
+
+sc_node -> d_perpendicular_lines;;
+
+d_perpendicular_lines <- definition;;
+
+d_perpendicular_lines  
+=> nrel_main_idtf: [Опр.(Перпендикулярные прямые)] (* <- lang_ru;; *);  
+=> nrel_main_idtf: [Def.(Perpendicular lines)] (* <- lang_en;; *);;  
+
+d_perpendicular_lines <= nrel_sc_text_translation:  
+  ...  
+  (*  
+  -> rrel_example:  
+    {  
+        [Две прямые называются перпендикулярными, если они пересекаются под прямым углом.]  
+        (* <- lang_ru;; *);  
+        [Two lines are called perpendicular if they intersect at a right angle.]  
+        (* <- lang_en;; *)  
+    };;  
+  *);;  
+
+d_perpendicular_lines <= nrel_using_constants:  
+  {  
+    concept_line;  
+    concept_right_angle  
+  };;
+
+sc_node -> d_perpendicular_segment;;
+
+d_perpendicular_segment <- definition;;
+
+d_perpendicular_segment  
+=> nrel_main_idtf: [Опр.(Перпендикуляр)] (* <- lang_ru;; *);  
+=> nrel_main_idtf: [Def.(Perpendicular)] (* <- lang_en;; *);;  
+
+d_perpendicular_segment <= nrel_sc_text_translation:  
+  ...  
+  (*  
+  -> rrel_example:  
+{  
+    [Перпендикуляром к данной прямой называется отрезок, который лежит на прямой, перпендикулярной данной, один из концов которого (основание перпендикуляра) является точкой пересечения этих прямых.]  
+    (* <- lang_ru;; *);  
+    [A perpendicular to a given line is a segment that lies on a line perpendicular to the given one, one of whose endpoints (the base of the perpendicular) is the intersection point of these lines.]  
+    (* <- lang_en;; *)  
+};;  
+  *);;  
+
+d_perpendicular_segment <= nrel_using_constants:  
+  {  
+    concept_line;  
+    concept_segment;  
+    concept_intersection_point  
+  };;
+
+theorem_perpendicular_line_on_point <- statement;;
+
+theorem_perpendicular_line_on_point <- rrel_theorem: perpendicular_lines;;
+
+theorem_perpendicular_line_on_point => nrel_main_idtf: [Теор.(точка; прямая; перпендикуляр*)] (*<- lang_ru;;*);;  
+theorem_perpendicular_line_on_point => nrel_main_idtf: [Th.(point; line; perpendicular*)] (*<- lang_en;;*);;
+
+theorem_perpendicular_line_on_point <= nrel_sc_text_translation: 
+    ... 
+    (* 
+    -> rrel_example: 
+      {
+        [Через точку, лежащую на данной прямой, можно провести прямую, перпендикулярную этой прямой, и только одну.] (* <- lang_ru;; *);
+        [Through a point lying on a given line, one can draw a line perpendicular to this line, and only one.] (* <- lang_en;; *)
+      };;
+    *);;
+
+theorem_perpendicular_line_on_point <= nrel_using_constants:  
+{
+   concept_point; 
+   concept_line;
+   concept_perpendicular
+};;  
+
+
+theorem_perpendicular_line_off_point <- statement;;
+
+theorem_perpendicular_line_off_point <- rrel_theorem: perpendicular_lines;;
+
+theorem_perpendicular_line_off_point => nrel_main_idtf: [Теор.(точка; прямая; перпендикуляр*)] (*<- lang_ru;;*);;  
+theorem_perpendicular_line_off_point => nrel_main_idtf: [Th.(point; line; perpendicular*)] (*<- lang_en;;*);;
+
+theorem_perpendicular_line_off_point <= nrel_sc_text_translation: 
+    ... 
+    (* 
+    -> rrel_example: 
+      {
+        [Через точку, не лежащую на данной прямой, можно провести прямую, перпендикулярную этой прямой, и притом только одну.] (* <- lang_ru;; *);
+        [Through a point not lying on a given line, one can draw a line perpendicular to this line, and only one.] (* <- lang_en;; *)
+      };;
+    *);;
+
+theorem_perpendicular_line_off_point <= nrel_using_constants:  
+{
+   concept_point; 
+   concept_line; 
+   concept_perpendicular
+};;  
+
+theorem_parallel_perpendicular_lines <- statement;;
+
+theorem_parallel_perpendicular_lines <- rrel_theorem: perpendicular_lines;;
+
+theorem_parallel_perpendicular_lines => nrel_main_idtf: [Теор.(плоскость; прямая; перпендикуляр; параллельные прямые*)] (*<- lang_ru;;*);;  
+theorem_parallel_perpendicular_lines => nrel_main_idtf: [Th.(plane; line; perpendicular; parallel lines*)] (*<- lang_en;;*);;
+
+theorem_parallel_perpendicular_lines <= nrel_sc_text_translation: 
+    ... 
+    (* 
+    -> rrel_example: 
+      {
+        [На плоскости две прямые, перпендикулярные третьей, параллельны между собой.] (* <- lang_ru;; *);
+        [On a plane, two lines perpendicular to a third line are parallel to each other.] (* <- lang_en;; *)
+      };;
+    *);;
+
+theorem_parallel_perpendicular_lines <= nrel_using_constants:  
+{
+   concept_plane; 
+   concept_line; 
+   concept_perpendicular; 
+   concept_parallel_lines
+};;  
+
+perpendicular_lines <- rrel_key_sc_element:
+    {
+        d_perpendicular_lines;
+        d_perpendicular_segment
+    };;

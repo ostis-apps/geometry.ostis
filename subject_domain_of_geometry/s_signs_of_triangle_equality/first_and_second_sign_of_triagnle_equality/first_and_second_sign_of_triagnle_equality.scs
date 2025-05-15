@@ -2,3 +2,54 @@ sc_node -> first_and_second_sign_of_triagnle_equality;;
 
 first_and_second_sign_of_triagnle_equality
 => nrel_main_idtf: [§9. Первый и второй признаки равенства треугольников] (* <- lang_ru;;*); [§9. First and second sign of triagnle equality] (* <- lang_en;;*);;
+
+theorem_triangle_SAS <- statement;;
+
+theorem_triangle_SAS <- rrel_theorem: first_and_second_sign_of_triagnle_equality;;
+
+theorem_triangle_SAS => nrel_main_idtf: [Теор.(сторона; угол; равенство треугольников*)] (*<- lang_ru;;*);;  
+theorem_triangle_SAS => nrel_main_idtf: [Th.(side; angle; triangle congruence*)] (*<- lang_en;;*);;
+
+theorem_triangle_SAS <= nrel_sc_text_translation: 
+    ... 
+    (* 
+    -> rrel_example: 
+      {
+        [Если две стороны и угол между ними одного треугольника соответственно равны двум сторонам и углу между ними другого треугольника, то такие треугольники равны.] (* <- lang_ru;; *);
+        [If two sides and the included angle of one triangle are respectively equal to two sides and the included angle of another triangle, then the triangles are congruent.] (* <- lang_en;; *)
+      };;
+    *);;
+
+theorem_triangle_SAS <= nrel_using_constants:  
+{
+   concept_side; 
+   concept_angle; 
+   concept_triangle; 
+   concept_congruence
+};;
+
+
+theorem_triangle_ASA <- statement;;
+
+theorem_triangle_ASA <- rrel_theorem: first_and_second_sign_of_triagnle_equality;;
+
+theorem_triangle_ASA => nrel_main_idtf: [Теор.(сторона; угол; равенство треугольников*)] (*<- lang_ru;;*);;  
+theorem_triangle_ASA => nrel_main_idtf: [Th.(side; angle; triangle congruence*)] (*<- lang_en;;*);;
+
+theorem_triangle_ASA <= nrel_sc_text_translation: 
+    ... 
+    (* 
+    -> rrel_example: 
+      {
+        [Если сторона и два прилежащих к ней угла одного треугольника соответственно равны стороне и двум прилежащим к ней углам другого треугольника, то такие треугольники равны.] (* <- lang_ru;; *);
+        [If a side and two adjacent angles of one triangle are respectively equal to a side and two adjacent angles of another triangle, then the triangles are congruent.] (* <- lang_en;; *)
+      };;
+    *);;
+
+theorem_triangle_ASA <= nrel_using_constants:  
+{
+   concept_side; 
+   concept_angle; 
+   concept_triangle; 
+   concept_congruence
+};;  

@@ -2,3 +2,134 @@ sc_node -> circumference_and_circle;;
 
 circumference_and_circle
 => nrel_main_idtf: [§4. Окружность и круг] (* <- lang_ru;; *); [§4. Сircumference and circle] (* <- lang_en;; *);;
+
+sc_node -> d_circumference;;
+
+d_circumference <- definition;;
+
+d_circumference  => nrel_main_idtf: [Опр.(Окружность)] (* <- lang_ru;; *);;
+
+d_circumference  <= nrel_sc_text_translation: 
+  ...
+  (*
+  -> rrel_example: 
+    [Окружность - геометрическая фи
+гура, состоящая из всех точек плоскости, рав
+ноудаленных от данной точки, которая назы
+вается центром окружности.]
+    (* <- lang_ru;; *);;
+  *);;
+  
+d_circumference <= nrel_using_constants:
+    {
+    concept_geometric_figure;
+    concept_plane;
+    concept_point
+    };;
+
+sc_node -> d_radius;;
+
+d_radius <- definition;;
+
+d_radius  => nrel_main_idtf: [Опр.(Радиус)] (* <- lang_ru;; *);;
+
+d_radius  <= nrel_sc_text_translation: 
+  ...
+  (*
+    -> rrel_example: 
+        [Радиус - отрезок, соединяющий центр окружности с любой точкой на окружности (или длина этого отрезка).] (* <- lang_ru;; *);;
+  *);;
+
+d_radius <= nrel_using_constants:
+  {
+    concept_section;
+    concept_circumference
+  };;
+
+sc_node -> d_chord;;
+
+d_chord <- definition;;
+
+d_chord  => nrel_main_idtf: [Опр.(Хорда)] (* <- lang_ru;; *);;
+
+d_chord  <= nrel_sc_text_translation: 
+  ...
+  (*
+    -> rrel_example: 
+        [Хорда - отрезок, соединяющий две точки окружности.] (* <- lang_ru;; *);;
+  *);;
+
+d_chord <= nrel_using_constants:
+  {
+    concept_section;
+    concept_circumference;
+    concept_point
+  };;
+
+sc_node -> d_diameter;;
+
+d_diameter <- definition;;
+
+d_diameter  => nrel_main_idtf: [Опр.(Диаметр)] (* <- lang_ru;; *);;
+
+d_diameter  <= nrel_sc_text_translation: 
+  ...
+  (*
+    -> rrel_example: 
+        [Диаметр - хорда, проходящая через центр окружности.] (* <- lang_ru;; *);;
+  *);;
+
+d_diameter <= nrel_using_constants:
+  {
+    concept_chord;
+    concept_circumference
+  };;
+
+sc_node -> d_arc;;
+
+d_arc <- definition;;
+
+d_arc  => nrel_main_idtf: [Опр.(Дуга окружности)] (* <- lang_ru;; *);;
+
+d_arc  <= nrel_sc_text_translation: 
+  ...
+  (*
+    -> rrel_example: 
+        [Дуга - часть окружности, ограниченная двумя точками.] (* <- lang_ru;; *);;
+  *);;
+
+d_arc <= nrel_using_constants:
+  {
+    concept_point
+  };;
+
+sc_node -> d_circle;;
+
+d_circle <- definition;;
+
+d_circle  => nrel_main_idtf: [Опр.(Круг)] (* <- lang_ru;; *);;
+
+d_circle  <= nrel_sc_text_translation: 
+  ...
+  (*
+    -> rrel_example: 
+        [Круг - часть плоскости, ограниченная окружностью.] (* <- lang_ru;; *);;
+  *);;
+
+d_circle <= nrel_using_constants:
+  {
+    concept_geometric_plane;
+    concept_circumference
+  };;
+
+circumference_and_circle <- rrel_key_sc_element: 
+  {
+    d_circumference;
+    d_radius;
+    d_chord;
+    d_diameter;
+    d_arc;
+    d_circle
+  };;
+
+circumference_and_circle => nrel_task_to_be_solved: task_find_length_of_the_polygonal_chain;;

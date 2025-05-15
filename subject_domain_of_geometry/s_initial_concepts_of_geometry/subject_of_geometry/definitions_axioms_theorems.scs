@@ -1,0 +1,48 @@
+sc_node -> definitions_axioms_theorems;;
+
+definitions_axioms_theorems
+=> nrel_main_idtf: [2.3. Определения, аксиомы, теоремы] (* <- lang_ru;;*); [2.3. Definitions, axioms, theorems] (* <- lang_en;;*);;
+
+sc_node -> d_axiom;;
+
+d_axiom <- definition;;
+
+d_axiom  => nrel_main_idtf: [Опр.(Аксиома)] (* <- lang_ru;; *);
+         => nrel_main_idtf: [Def.(Axiom)] (* <- lang_en;; *);;
+
+d_axiom  <= nrel_sc_text_translation: 
+  ...
+  (*
+    -> rrel_example:
+    {
+        [Аксиома — это утверждение, которое принимается без доказательства.]
+        (* <- lang_ru;; *);
+        [An axiom is a statement that is accepted without proof.]
+        (* <- lang_en;; *)
+    };;
+  *);;
+
+sc_node -> d_theorem;;
+
+d_theorem <- definition;;
+
+d_theorem  => nrel_main_idtf: [Опр.(Теорема)] (* <- lang_ru;; *);
+           => nrel_main_idtf: [Def.(Theorem)] (* <- lang_en;; *);;
+
+d_theorem  <= nrel_sc_text_translation: 
+  ...
+  (*
+    -> rrel_example:
+    {
+        [Теорема - это утверждение, которое требует доказательства.]
+        (* <- lang_ru;; *);
+        [A theorem is a statement that requires proof.]
+        (* <- lang_en;; *)
+    };;
+  *);;
+
+definitions_axioms_theorems <- rrel_key_sc_element:
+    {
+        d_axiom;
+        d_theorem
+    };;

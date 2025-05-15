@@ -2,3 +2,129 @@ sc_node -> isosceles_triangle;;
 
 isosceles_triangle
 => nrel_main_idtf: [§11. Равнобедренный треугольник] (* <- lang_ru;;*); [§11. Isosceles triangle] (* <- lang_en;;*);;
+
+isosceles_triangle => nrel_task_to_be_solved: task_find_perimeter;;
+
+sc_node -> d_isosceles_triangle;;
+
+d_isosceles_triangle <- definition;;
+
+d_isosceles_triangle  
+=> nrel_main_idtf: [Опр.(Равнобедренный треугольник)] (* <- lang_ru;; *); 
+=> nrel_main_idtf: [Def.(Isosceles triangle)] (* <- lang_en;; *);;  
+
+d_isosceles_triangle <= nrel_sc_text_translation:  
+  ...  
+  (*  
+  -> rrel_example:  
+{  
+    [Треугольник называется равнобедренным, если у него две стороны равны.]  
+    (* <- lang_ru;; *);  
+    [A triangle is called isosceles if it has two equal sides.]  
+    (* <- lang_en;; *)  
+};;  
+  *);;  
+
+d_isosceles_triangle <= nrel_using_constants:  
+  {  
+    concept_triangle;  
+    concept_equal_sides  
+  };;
+
+isosceles_triangle <- rrel_key_sc_element: d_isosceles_triangle;;
+
+theorem_isosceles_base_angles <- statement;;
+
+theorem_isosceles_base_angles <- rrel_theorem: isosceles_triangle;;
+
+theorem_isosceles_base_angles => nrel_main_idtf: [Теор.(равнобедренный треугольник; угол при основании*)] (*<- lang_ru;;*);;  
+theorem_isosceles_base_angles => nrel_main_idtf: [Th.(isosceles triangle; base angle*)] (*<- lang_en;;*);;
+
+theorem_isosceles_base_angles <= nrel_sc_text_translation: 
+    ... 
+    (* 
+    -> rrel_example: 
+      {
+        [В равнобедренном треугольнике углы при основании равны.] (* <- lang_ru;; *);
+        [In an isosceles triangle, the base angles are equal.] (* <- lang_en;; *)
+      };;
+    *);;
+
+theorem_isosceles_base_angles <= nrel_using_constants:  
+{
+   concept_isosceles_triangle; 
+   concept_base_angle; 
+   concept_equality
+};;
+
+theorem_isosceles_bisector <- statement;;
+
+theorem_isosceles_bisector <- rrel_theorem: isosceles_triangle;;
+
+theorem_isosceles_bisector => nrel_main_idtf: [Теор.(равнобедренный треугольник; биссектриса; медиана; высота*)] (*<- lang_ru;;*);;  
+theorem_isosceles_bisector => nrel_main_idtf: [Th.(isosceles triangle; bisector; median; altitude*)] (*<- lang_en;;*);;
+
+theorem_isosceles_bisector <= nrel_sc_text_translation: 
+    ... 
+    (* 
+    -> rrel_example: 
+      {
+        [В равнобедренном треугольнике биссектриса, проведенная к основанию, является его медианой и высотой.] (* <- lang_ru;; *);
+        [In an isosceles triangle, the bisector drawn to the base is its median and altitude.] (* <- lang_en;; *)
+      };;
+    *);;
+
+theorem_isosceles_bisector <= nrel_using_constants:  
+{
+   concept_isosceles_triangle; 
+   concept_bisector; 
+   concept_median; 
+   concept_altitude
+};;
+
+theorem_angles_to_isosceles <- statement;;
+
+theorem_angles_to_isosceles <- rrel_theorem: isosceles_triangle;;
+
+theorem_angles_to_isosceles => nrel_main_idtf: [Теор.(треугольник; равные углы; равнобедренность*)] (*<- lang_ru;;*);;  
+theorem_angles_to_isosceles => nrel_main_idtf: [Th.(triangle; equal angles; isosceles*)] (*<- lang_en;;*);;
+
+theorem_angles_to_isosceles <= nrel_sc_text_translation: 
+    ... 
+    (* 
+    -> rrel_example: 
+      {
+        [Если в треугольнике два угла равны, то он равнобедренный.] (* <- lang_ru;; *);
+        [If a triangle has two equal angles, then it is isosceles.] (* <- lang_en;; *)
+      };;
+    *);;
+
+theorem_angles_to_isosceles <= nrel_using_constants:  
+{
+   concept_triangle; 
+   concept_equal_angles; 
+   concept_isosceles_triangle
+};;
+
+theorem_isosceles_to_angles <- statement;;
+
+theorem_isosceles_to_angles <- rrel_theorem: isosceles_triangle;;
+
+theorem_isosceles_to_angles => nrel_main_idtf: [Теор.(равнобедренный треугольник; угол при основании*)] (*<- lang_ru;;*);;  
+theorem_isosceles_to_angles => nrel_main_idtf: [Th.(isosceles triangle; base angle*)] (*<- lang_en;;*);;
+
+theorem_isosceles_to_angles <= nrel_sc_text_translation: 
+    ... 
+    (* 
+    -> rrel_example: 
+      {
+        [Если треугольник равнобедренный, то углы при его основании равны.] (* <- lang_ru;; *);
+        [If a triangle is isosceles, then its base angles are equal.] (* <- lang_en;; *)
+      };;
+    *);;
+
+theorem_isosceles_to_angles <= nrel_using_constants:  
+{
+   concept_isosceles_triangle; 
+   concept_base_angle
+};;  
