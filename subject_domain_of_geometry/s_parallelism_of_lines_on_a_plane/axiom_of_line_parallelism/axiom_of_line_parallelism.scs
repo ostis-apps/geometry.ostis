@@ -1,0 +1,77 @@
+sc_node -> axiom_of_line_parallelism;;
+
+axiom_of_line_parallelism
+=> nrel_main_idtf: [§16. Аксиома параллельности прямых] (* <- lang_ru;;*); [§16. Axiom of line parallelism] (* <- lang_en;;*);;
+
+axiom_parallel_line_unique <- statement;;
+
+axiom_parallel_line_unique <- rrel_axiom: axiom_of_line_parallelism;;
+
+axiom_parallel_line_unique => nrel_main_idtf: [Акс.(точка; прямая; параллельные прямые*)] (*<- lang_ru;;*);;
+axiom_parallel_line_unique => nrel_main_idtf: [Ax.(point; line; parallel lines*)] (*<- lang_en;;*);;
+
+axiom_parallel_line_unique <= nrel_sc_text_translation: 
+    ... 
+    (* 
+    -> rrel_example: 
+      {
+        [Через точку, не лежащую на данной прямой, можно провести только одну прямую, параллельную данной.] (* <- lang_ru;; *);
+        [Through a point not lying on a given line, only one line can be drawn parallel to the given one.] (* <- lang_en;; *)
+      };;
+    *);;
+
+axiom_parallel_line_unique <= nrel_using_constants:
+{
+    concept_point;
+    concept_line;
+    concept_parallel_lines
+};;
+
+theorem_parallel_transitivity <- statement;;
+
+theorem_parallel_transitivity <- rrel_theorem: axiom_of_line_parallelism;;
+
+theorem_parallel_transitivity => nrel_main_idtf: [Теор.(плоскость; параллельные прямые*)] (*<- lang_ru;;*);;  
+theorem_parallel_transitivity => nrel_main_idtf: [Th.(plane; parallel lines*)] (*<- lang_en;;*);;
+
+theorem_parallel_transitivity <= nrel_sc_text_translation: 
+    ... 
+    (* 
+    -> rrel_example: 
+      {
+        [На плоскости две прямые, параллельные третьей, параллельны между собой.] (* <- lang_ru;; *);
+        [On a plane, two lines parallel to a third line are parallel to each other.] (* <- lang_en;; *)
+      };;
+    *);;
+
+theorem_parallel_transitivity <= nrel_using_constants:  
+{
+   concept_plane; 
+   concept_parallel_lines
+};;
+
+theorem_parallel_intersection <- statement;;
+
+theorem_parallel_intersection <- rrel_theorem: axiom_of_line_parallelism;;
+
+theorem_parallel_intersection => nrel_main_idtf: [Теор.(параллельные прямые; пересечение*)] (*<- lang_ru;;*);;  
+theorem_parallel_intersection => nrel_main_idtf: [Th.(parallel lines; intersection*)] (*<- lang_en;;*);;
+
+theorem_parallel_intersection <= nrel_sc_text_translation: 
+    ... 
+    (* 
+    -> rrel_example: 
+      {
+        [Если на плоскости прямая пересекает одну из двух параллельных прямых, то она пересекает и другую прямую.] (* <- lang_ru;; *);
+        [If a line intersects one of two parallel lines on a plane, then it intersects the other line as well.] (* <- lang_en;; *) 
+      };;
+    *);;
+
+theorem_parallel_intersection <= nrel_using_constants:  
+{
+   concept_parallel_lines; 
+   concept_line; 
+   concept_intersection
+};;  
+
+
