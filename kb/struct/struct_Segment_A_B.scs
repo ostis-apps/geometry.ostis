@@ -1,8 +1,8 @@
 struct_Segment_A_B => nrel_idtf: [Отрезок(A; B)] (* <- lang_ru;; *);;
 
-struct_Segment_A_B => nrel_boundary_point: struct_Geometric_point_A;;
+struct_Segment_A_B -> rrel_boundary_point: struct_Geometric_point_A;;
 
-struct_Segment_A_B => nrel_boundary_point: struct_Geometric_point_B;;
+struct_Segment_A_B -> rrel_boundary_point: struct_Geometric_point_B;;
 
 struct_Segment_A_B -> struct_Geometric_point_A;;
 

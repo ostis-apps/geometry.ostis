@@ -30,21 +30,21 @@ struct_Versatile_trapezoid_Z_X_C_V  => nrel_base: struct_Segment_V_Z;;
 
 struct_Versatile_trapezoid_Z_X_C_V  => nrel_base: struct_Segment_C_X;;
 
-struct_Segment_X_Z => nrel_boundary_point: struct_Geometric_point_X;;
+struct_Segment_X_Z -> rrel_boundary_point: struct_Geometric_point_X;;
 
-struct_Segment_C_X => nrel_boundary_point: struct_Geometric_point_X;;
+struct_Segment_C_X -> rrel_boundary_point: struct_Geometric_point_X;;
 
-struct_Segment_C_X => nrel_boundary_point: struct_Geometric_point_C;;
+struct_Segment_C_X -> rrel_boundary_point: struct_Geometric_point_C;;
 
-struct_Segment_C_V => nrel_boundary_point: struct_Geometric_point_C;;
+struct_Segment_C_V -> rrel_boundary_point: struct_Geometric_point_C;;
 
-struct_Segment_C_V => nrel_boundary_point: struct_Geometric_point_V;;
+struct_Segment_C_V -> rrel_boundary_point: struct_Geometric_point_V;;
 
-struct_Segment_V_Z => nrel_boundary_point: struct_Geometric_point_V;;
+struct_Segment_V_Z -> rrel_boundary_point: struct_Geometric_point_V;;
 
-struct_Segment_V_Z => nrel_boundary_point: struct_Geometric_point_Z;;
+struct_Segment_V_Z -> rrel_boundary_point: struct_Geometric_point_Z;;
 
-struct_Segment_X_Z => nrel_boundary_point: struct_Geometric_point_Z;;
+struct_Segment_X_Z -> rrel_boundary_point: struct_Geometric_point_Z;;
 
 struct_Versatile_trapezoid_Z_X_C_V  => nrel_internal_angle: struct_Angle_Alpha;;
 

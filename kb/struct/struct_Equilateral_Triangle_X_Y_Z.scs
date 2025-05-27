@@ -40,13 +40,13 @@ struct_Equilateral_triangle_X_Y_Z => nrel_internal_angle: struct_Angle_Gamma;;
 
 nrel_congruence -> ... (* -> struct_Angle_Alpha; struct_Angle_Gamma; struct_Angle_Beta;;*);;
 
-struct_Segment_X_Y => nrel_boundary_point: struct_Geometric_point_X;;
+struct_Segment_X_Y -> rrel_boundary_point: struct_Geometric_point_X;;
 
-struct_Segment_Y_Z => nrel_boundary_point: struct_Geometric_point_Y;;
+struct_Segment_Y_Z -> rrel_boundary_point: struct_Geometric_point_Y;;
 
-struct_Segment_X_Y => nrel_boundary_point: struct_Geometric_point_Y;;
+struct_Segment_X_Y -> rrel_boundary_point: struct_Geometric_point_Y;;
 
-struct_Segment_Y_Z => nrel_boundary_point: struct_Geometric_point_Z;;
+struct_Segment_Y_Z -> rrel_boundary_point: struct_Geometric_point_Z;;
 
 struct_Equilateral_triangle_X_Y_Z <- rrel_key_sc_element: 
 	...

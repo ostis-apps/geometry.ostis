@@ -2,7 +2,7 @@ struct_Opened_ray_k => nrel_idtf: [Полупрямая k] (* <- lang_ru;; *);;
 
 struct_Opened_ray_k => nrel_idtf: [Открытая полупрямая k] (* <- lang_ru;; *);;
 
-struct_Opened_ray_k => nrel_boundary_point: struct_Geometric_point_A;;
+struct_Opened_ray_k -> rrel_boundary_point: struct_Geometric_point_A;;
 
 struct_Opened_ray_k -|> struct_Geometric_point_A;;
 

@@ -24,9 +24,9 @@ struct_Scalene_triangle_K_L_M => nrel_side: struct_Segment_K_M;;
 
 struct_Scalene_triangle_K_L_M => nrel_side: struct_Segment_K_L;;
 
-struct_Segment_K_M => nrel_boundary_point: struct_Geometric_point_K;;
+struct_Segment_K_M -> rrel_boundary_point: struct_Geometric_point_K;;
 
-struct_Segment_K_M => nrel_boundary_point: struct_Geometric_point_M;;
+struct_Segment_K_M -> rrel_boundary_point: struct_Geometric_point_M;;
 
 struct_Scalene_triangle_K_L_M => nrel_internal_angle: struct_Acute_angle_Alpha;;
 

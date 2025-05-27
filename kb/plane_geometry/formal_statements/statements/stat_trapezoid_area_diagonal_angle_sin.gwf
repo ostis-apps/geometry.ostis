@@ -4,7 +4,7 @@
         <node type="node/var/perm/general" idtf="_C" shapeColor="193" id="94166014409520" parent="94166007264288" left="0" top="0" right="27.0313" bottom="25" textColor="244" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="285" y="885" haveBus="false" idtf_pos="0">
             <content type="0" mime_type="" content_visibility="false" file_name=""/>
         </node>
-        <node type="node/const/perm/relation" idtf="nrel_boundary_point" shapeColor="193" id="94166014619472" parent="94166007264288" left="0" top="0" right="161.703" bottom="25" textColor="244" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="510" y="600" haveBus="false" idtf_pos="0">
+        <node type="node/const/perm/role" idtf="rrel_boundary_point" shapeColor="193" id="94166014619472" parent="94166007264288" left="0" top="0" right="161.703" bottom="25" textColor="244" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="510" y="600" haveBus="false" idtf_pos="0">
             <content type="0" mime_type="" content_visibility="false" file_name=""/>
         </node>
         <node type="node/const/perm/group" idtf="concept_geometric_point" shapeColor="193" id="94166014550128" parent="94166007264288" left="0" top="0" right="195.156" bottom="25" textColor="244" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="1500" y="1020" haveBus="false" idtf_pos="0">
@@ -67,7 +67,7 @@
         <node type="node/var/perm/tuple" idtf="" shapeColor="193" id="94166013649008" parent="94166007264288" x="900" y="735" haveBus="false" idtf_pos="0">
             <content type="0" mime_type="" content_visibility="false" file_name=""/>
         </node>
-        <node type="node/const/perm/relation" idtf="nrel_boundary_point" shapeColor="193" id="94166014603024" parent="94166007264288" left="0" top="0" right="161.703" bottom="25" textColor="244" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="1380" y="945" haveBus="false" idtf_pos="0">
+        <node type="node/const/perm/role" idtf="rrel_boundary_point" shapeColor="193" id="94166014603024" parent="94166007264288" left="0" top="0" right="161.703" bottom="25" textColor="244" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="1380" y="945" haveBus="false" idtf_pos="0">
             <content type="0" mime_type="" content_visibility="false" file_name=""/>
         </node>
         <node type="node/const/perm/relation" idtf="nrel_intersection" shapeColor="193" id="94166014096176" parent="94166007264288" left="0" top="0" right="134.625" bottom="25" textColor="244" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="960" y="795" haveBus="false" idtf_pos="0">
@@ -229,12 +229,12 @@
         <pair type="pair/var/-/perm/orient" idtf="" shapeColor="193" id="94166012236544" parent="94166007264288" id_b="94166013765408" id_e="94166013956752" b_x="1365" b_y="810" e_x="1365" e_y="690" dotBBalance="0" dotEBalance="0">
             <points/>
         </pair>
-        <pair type="pair/var/-/perm/orient" idtf="" shapeColor="193" id="94166014784416" parent="94166007264288" id_b="94166013816992" id_e="94166014426816" b_x="1590" b_y="690" e_x="1650" e_y="945" dotBBalance="0" dotEBalance="0">
+        <pair type="pair/var/pos/perm/orient/membership" idtf="" shapeColor="193" id="94166014784416" parent="94166007264288" id_b="94166013816992" id_e="94166014426816" b_x="1590" b_y="690" e_x="1650" e_y="945" dotBBalance="0" dotEBalance="0">
             <points>
                 <point x="1650" y="825"/>
             </points>
         </pair>
-        <pair type="pair/var/-/perm/orient" idtf="" shapeColor="193" id="94166014788384" parent="94166007264288" id_b="94166013956752" id_e="94166014584960" b_x="1365" b_y="690" e_x="1290" e_y="945" dotBBalance="0" dotEBalance="0">
+        <pair type="pair/var/pos/perm/orient/membership" idtf="" shapeColor="193" id="94166014788384" parent="94166007264288" id_b="94166013956752" id_e="94166014584960" b_x="1365" b_y="690" e_x="1290" e_y="945" dotBBalance="0" dotEBalance="0">
             <points>
                 <point x="1290" y="825"/>
             </points>
@@ -245,12 +245,12 @@
         <pair type="pair/var/-/perm/orient" idtf="" shapeColor="193" id="94166014792480" parent="94166007264288" id_b="94166013990624" id_e="94166014322928" b_x="615" b_y="780" e_x="615" e_y="915" dotBBalance="0" dotEBalance="0">
             <points/>
         </pair>
-        <pair type="pair/var/-/perm/orient" idtf="" shapeColor="193" id="94166010871968" parent="94166007264288" id_b="94166013956752" id_e="94166014514624" b_x="1365" b_y="690" e_x="1230" e_y="945" dotBBalance="0" dotEBalance="0">
+        <pair type="pair/var/pos/perm/orient/membership" idtf="" shapeColor="193" id="94166010871968" parent="94166007264288" id_b="94166013956752" id_e="94166014514624" b_x="1365" b_y="690" e_x="1230" e_y="945" dotBBalance="0" dotEBalance="0">
             <points>
                 <point x="1230" y="825"/>
             </points>
         </pair>
-        <pair type="pair/var/-/perm/orient" idtf="" shapeColor="193" id="94166010872208" parent="94166007264288" id_b="94166013816992" id_e="94166014479568" b_x="1590" b_y="690" e_x="1740" e_y="945" dotBBalance="0" dotEBalance="0">
+        <pair type="pair/var/pos/perm/orient/membership" idtf="" shapeColor="193" id="94166010872208" parent="94166007264288" id_b="94166013816992" id_e="94166014479568" b_x="1590" b_y="690" e_x="1740" e_y="945" dotBBalance="0" dotEBalance="0">
             <points>
                 <point x="1695" y="825"/>
             </points>
@@ -266,12 +266,12 @@
         <pair type="pair/var/-/perm/orient" idtf="" shapeColor="193" id="94166014793392" parent="94166007264288" id_b="94166013649008" id_e="94166014113168" b_x="900" b_y="735" e_x="1005" e_y="735" dotBBalance="0" dotEBalance="0">
             <points/>
         </pair>
-        <pair type="pair/var/-/perm/orient" idtf="" shapeColor="193" id="94166014797424" parent="94166007264288" id_b="94166013990624" id_e="94166014462272" b_x="615" b_y="780" e_x="690" e_y="870" dotBBalance="0" dotEBalance="0">
+        <pair type="pair/var/pos/perm/orient/membership" idtf="" shapeColor="193" id="94166014797424" parent="94166007264288" id_b="94166013990624" id_e="94166014462272" b_x="615" b_y="780" e_x="690" e_y="870" dotBBalance="0" dotEBalance="0">
             <points>
                 <point x="690" y="780"/>
             </points>
         </pair>
-        <pair type="pair/var/-/perm/orient" idtf="" shapeColor="193" id="94166014781296" parent="94166007264288" id_b="94166013887296" id_e="94166014409520" b_x="375" b_y="780" e_x="285" e_y="885" dotBBalance="0" dotEBalance="0">
+        <pair type="pair/var/pos/perm/orient/membership" idtf="" shapeColor="193" id="94166014781296" parent="94166007264288" id_b="94166013887296" id_e="94166014409520" b_x="375" b_y="780" e_x="285" e_y="885" dotBBalance="0" dotEBalance="0">
             <points>
                 <point x="285" y="780"/>
             </points>

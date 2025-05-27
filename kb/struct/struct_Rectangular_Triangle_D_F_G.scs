@@ -27,17 +27,17 @@ struct_Rectangular_triangle_D_F_G => nrel_side: struct_Segment_D_G;;
 
 struct_Rectangular_triangle_D_F_G => nrel_side: struct_Segment_D_F;;
 
-struct_Segment_D_G => nrel_boundary_point: struct_Geometric_point_D;;
+struct_Segment_D_G -> rrel_boundary_point: struct_Geometric_point_D;;
 
-struct_Segment_D_F => nrel_boundary_point: struct_Geometric_point_D;;
+struct_Segment_D_F -> rrel_boundary_point: struct_Geometric_point_D;;
 
-struct_Segment_D_F => nrel_boundary_point: struct_Geometric_point_F;;
+struct_Segment_D_F -> rrel_boundary_point: struct_Geometric_point_F;;
 
-struct_Segment_F_G => nrel_boundary_point: struct_Geometric_point_F;;
+struct_Segment_F_G -> rrel_boundary_point: struct_Geometric_point_F;;
 
-struct_Segment_D_G => nrel_boundary_point: struct_Geometric_point_G;;
+struct_Segment_D_G -> rrel_boundary_point: struct_Geometric_point_G;;
 
-struct_Segment_F_G => nrel_boundary_point: struct_Geometric_point_G;;
+struct_Segment_F_G -> rrel_boundary_point: struct_Geometric_point_G;;
 
 struct_Rectangular_triangle_D_F_G => nrel_hypotenuse: struct_Segment_F_G;;
 

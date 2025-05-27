@@ -34,17 +34,17 @@ struct_Rhomb_E_F_G_H  => nrel_internal_angle: struct_Angle_Gamma;;
 
 struct_Rhomb_E_F_G_H  => nrel_internal_angle: struct_Angle_Sigma;;
 
-struct_Segment_E_H => nrel_boundary_point: struct_Geometric_point_E;;
+struct_Segment_E_H -> rrel_boundary_point: struct_Geometric_point_E;;
 
-struct_Segment_E_H => nrel_boundary_point: struct_Geometric_point_H;;
+struct_Segment_E_H -> rrel_boundary_point: struct_Geometric_point_H;;
 
-struct_Segment_E_F => nrel_boundary_point: struct_Geometric_point_E;;
+struct_Segment_E_F -> rrel_boundary_point: struct_Geometric_point_E;;
 
-struct_Segment_E_F => nrel_boundary_point: struct_Geometric_point_F;;
+struct_Segment_E_F -> rrel_boundary_point: struct_Geometric_point_F;;
 
-struct_Segment_G_H => nrel_boundary_point: struct_Geometric_point_G;;
+struct_Segment_G_H -> rrel_boundary_point: struct_Geometric_point_G;;
 
-struct_Segment_G_H => nrel_boundary_point: struct_Geometric_point_H;;
+struct_Segment_G_H -> rrel_boundary_point: struct_Geometric_point_H;;
 
 struct_Rhomb_E_F_G_H <- rrel_key_sc_element: 
 	...

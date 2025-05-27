@@ -30,21 +30,21 @@ struct_Rectangular_Trapezoid_P_Q_R_S  => nrel_base: struct_Segment_P_S;;
 
 struct_Rectangular_Trapezoid_P_Q_R_S  => nrel_base: struct_Segment_Q_R;;
 
-struct_Segment_P_S => nrel_boundary_point: struct_Geometric_point_P;;
+struct_Segment_P_S -> rrel_boundary_point: struct_Geometric_point_P;;
 
-struct_Segment_P_Q => nrel_boundary_point: struct_Geometric_point_P;;
+struct_Segment_P_Q -> rrel_boundary_point: struct_Geometric_point_P;;
 
-struct_Segment_Q_R => nrel_boundary_point: struct_Geometric_point_R;;
+struct_Segment_Q_R -> rrel_boundary_point: struct_Geometric_point_R;;
 
-struct_Segment_R_S => nrel_boundary_point: struct_Geometric_point_R;;
+struct_Segment_R_S -> rrel_boundary_point: struct_Geometric_point_R;;
 
-struct_Segment_P_Q => nrel_boundary_point: struct_Geometric_point_Q;;
+struct_Segment_P_Q -> rrel_boundary_point: struct_Geometric_point_Q;;
 
-struct_Segment_Q_R => nrel_boundary_point: struct_Geometric_point_Q;;
+struct_Segment_Q_R -> rrel_boundary_point: struct_Geometric_point_Q;;
 
-struct_Segment_R_S => nrel_boundary_point: struct_Geometric_point_S;;
+struct_Segment_R_S -> rrel_boundary_point: struct_Geometric_point_S;;
 
-struct_Segment_P_S => nrel_boundary_point: struct_Geometric_point_S;;
+struct_Segment_P_S -> rrel_boundary_point: struct_Geometric_point_S;;
 
 struct_Rectangular_Trapezoid_P_Q_R_S <- rrel_key_sc_element: 
 	...

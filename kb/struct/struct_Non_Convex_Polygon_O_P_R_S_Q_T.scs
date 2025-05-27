@@ -46,25 +46,25 @@ struct_Non_Convex_Polygon_O_P_R_S_Q_T  => nrel_internal_angle: struct_Angle_Epsi
 
 struct_Non_Convex_Polygon_O_P_R_S_Q_T  => nrel_internal_angle: struct_Angle_Sigma;;
 
-struct_Segment_O_T => nrel_boundary_point: struct_Geometric_point_O;;
+struct_Segment_O_T -> rrel_boundary_point: struct_Geometric_point_O;;
 
-struct_Segment_O_P => nrel_boundary_point: struct_Geometric_point_O;;
+struct_Segment_O_P -> rrel_boundary_point: struct_Geometric_point_O;;
 
-struct_Segment_O_P => nrel_boundary_point: struct_Geometric_point_P;;
+struct_Segment_O_P -> rrel_boundary_point: struct_Geometric_point_P;;
 
-struct_Segment_P_R => nrel_boundary_point: struct_Geometric_point_P;;
+struct_Segment_P_R -> rrel_boundary_point: struct_Geometric_point_P;;
 
-struct_Segment_P_R => nrel_boundary_point: struct_Geometric_point_R;;
+struct_Segment_P_R -> rrel_boundary_point: struct_Geometric_point_R;;
 
-struct_Segment_S_Q => nrel_boundary_point: struct_Geometric_point_S;;
+struct_Segment_S_Q -> rrel_boundary_point: struct_Geometric_point_S;;
 
-struct_Segment_S_Q => nrel_boundary_point: struct_Geometric_point_Q;;
+struct_Segment_S_Q -> rrel_boundary_point: struct_Geometric_point_Q;;
 
-struct_Segment_Q_T => nrel_boundary_point: struct_Geometric_point_Q;;
+struct_Segment_Q_T -> rrel_boundary_point: struct_Geometric_point_Q;;
 
-struct_Segment_Q_T => nrel_boundary_point: struct_Geometric_point_T;;
+struct_Segment_Q_T -> rrel_boundary_point: struct_Geometric_point_T;;
 
-struct_Segment_O_T => nrel_boundary_point: struct_Geometric_point_T;;
+struct_Segment_O_T -> rrel_boundary_point: struct_Geometric_point_T;;
 
 struct_Non_Convex_Polygon_O_P_R_S_Q_T <- rrel_key_sc_element:
 	...
