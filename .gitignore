@@ -1,15 +1,21 @@
-kb.bin
-sc-machine
-scp-machine
-sc-web
-ims.ostis.kb
-ims.ostis.kb_copy
-geometry.drawings
-bin
-cmake-build-debug
-*.idea
+.idea
+.vscode
+
+bin/
+build/
+install/
+*.bin
+repo
+
+.cache/
+*.db
+*.txt
+!conanfile.txt
+!requirements.txt
 *.log
+*.scdb
 
-*.*~
+__pycache__
 
-.env
+ConanPresets.json
+.venv

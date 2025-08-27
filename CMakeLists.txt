@@ -1,44 +1,38 @@
-cmake_minimum_required(VERSION 3.11)
-project(ostis-geometry)
+cmake_minimum_required(VERSION 3.24)
 set(CMAKE_CXX_STANDARD 17)
+project(ostis-geometry VERSION 0.1.0 LANGUAGES C CXX)
+message(STATUS "Current project version: ${CMAKE_PROJECT_VERSION}")
+cmake_policy(SET CMP0048 NEW)
 
-option(SC_BUILD_TESTS "Flag to build unit tests" OFF)
-option(SC_CLANG_FORMAT_CODE "Flag to add clangformat and clangformat_check targets" OFF)
+set(CMAKE_MODULE_PATH "${CMAKE_CURRENT_LIST_DIR}/cmake")
 
-if(NOT SC_BIN_PATH)
-    set(SC_BIN_PATH "${CMAKE_BINARY_DIR}/../bin")
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
+set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
+
+option(AUTO_CCACHE "Use ccache to speed up rebuilds" ON)
+
+option(SC_BUILD_TESTS "Build project tests" OFF)
+
+if(${SC_BUILD_TESTS})
+    include(CTest)
+    include(GoogleTest)
+    find_package(GTest REQUIRED)
+    include(${CMAKE_MODULE_PATH}/tests.cmake)
 endif()
-set(SC_EXTENSIONS_DIRECTORY "${SC_BIN_PATH}/extensions")
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${SC_BIN_PATH})
-set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${SC_EXTENSIONS_DIRECTORY})
-link_directories(${SC_BIN_PATH} ${SC_EXTENSIONS_DIRECTORY})
-
-set(SC_MACHINE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/ostis-web-platform/sc-machine")
-set(CMAKE_MODULE_PATH "${SC_MACHINE_PATH}/cmake")
 
 if(${SC_CLANG_FORMAT_CODE})
     include(${CMAKE_MODULE_PATH}/ClangFormat.cmake)
 endif()
 
-set(SC_MEMORY_SRC "${SC_MACHINE_PATH}/sc-memory/sc-memory/include")
-set(SC_AGENTS_COMMON_PATH "${SC_MACHINE_PATH}/sc-kpm/sc-agents-common/include")
-set(SC_CORE_PATH "${SC_MACHINE_PATH}/sc-memory/sc-core/include")
-set(SC_BUILDER_PATH "${SC_MACHINE_PATH}/sc-tools/sc-builder/include")
-set(SC_CONFIG_PATH "${SC_MACHINE_PATH}/sc-tools/sc-config/include")
-
-include("${CMAKE_CURRENT_SOURCE_DIR}/dependencies.cmake")
-sc_target_dependencies()
-
-# for multi-config builds (e.g. msvc)
-foreach(OUTPUT_CONFIG ${CMAKE_CONFIGURATION_TYPES})
-    string(TOUPPER ${OUTPUT_CONFIG} OUTPUT_CONFIG)
-    set(CMAKE_RUNTIME_OUTPUT_DIRECTORY_${OUTPUT_CONFIG} ${SC_EXTENSIONS_DIRECTORY})
-    set(CMAKE_LIBRARY_OUTPUT_DIRECTORY_${OUTPUT_CONFIG} ${SC_EXTENSIONS_DIRECTORY})
-endforeach(OUTPUT_CONFIG)
-
-if(${SC_BUILD_TESTS})
-    include(${CMAKE_MODULE_PATH}/tests.cmake)
-    add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/thirdparty)
+find_program(CCACHE_PROGRAM ccache)
+if(CCACHE_PROGRAM AND ${AUTO_CCACHE})
+    message(STATUS "Using ${CCACHE_PROGRAM} as compiler launcher")
+    set(CMAKE_CXX_COMPILER_LAUNCHER "${CCACHE_PROGRAM}")
+    set(CMAKE_C_COMPILER_LAUNCHER "${CCACHE_PROGRAM}")
 endif()
 
-add_subdirectory(problem-solver)
+find_package(sc-machine REQUIRED)
+find_package(scl-machine REQUIRED)
+find_package(ps-common-lib REQUIRED)
+
+add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/problem-solver)
