@@ -204,6 +204,16 @@ Steps for installing and running the application directly on your system.
     
     Installs the necessary dependencies for the web interface. `npm install` downloads JavaScript packages, and `npm run build` compiles the web interface.
 
+
+10.  **Install py libraries:**
+
+    ```sh
+    cd problem-solver/py/
+    python3 -m venv .venv
+    source .venv/bin/activate && pip3 install -r requirements.txt
+    cd ../..
+    ```
+
 ## Building ostis-system
 
 1.  **Build problem solver:**
@@ -247,7 +257,16 @@ Steps for installing and running the application directly on your system.
     
     Starts the `sc-web`. `source .venv/bin/activate` activates the virtual environment for `sc-web`, and `python3 server/app.py` starts the web server.
 
-3.  **Access interface:** Open `localhost:8000` in your web browser.
+3. **Start 'py-sc-server' (in a separate terminal):**
+
+    ```sh
+    cd problem-solver/py/
+    source .venv/bin/activate && python3 server.py
+    ```
+
+    Starts the `py-sc-server`. `source .venv/bin/activate` activates the virtual environment for `py-sc-server`, and `python3 server.py` starts the py server.
+
+4.  **Access interface:** Open `localhost:8000` in your web browser.
 
     ![Example Screenshot](https://i.imgur.com/6SehI5s.png)
 
