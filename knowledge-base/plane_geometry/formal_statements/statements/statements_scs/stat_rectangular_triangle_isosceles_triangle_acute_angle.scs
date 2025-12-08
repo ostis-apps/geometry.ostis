@@ -3,14 +3,14 @@ stat_rectangular_triangle_isosceles_triangle_acute_angle <- statement;;
 stat_rectangular_triangle_isosceles_triangle_acute_angle
 -> rrel_key_sc_element:
 	concept_rectangular_triangle;
-	concept_isoscales_triangle;
+	concept_isosceles_triangle;
 	concept_acute_angle;
 	nrel_angle_measure;;
 
 stat_rectangular_triangle_isosceles_triangle_acute_angle
 => nrel_main_idtf:
 	[Утв.(прямоугольный треугольник;равнобедренный треугольник;острый угол;мера угла*)] (* <-lang_ru;; *);
-	[Stat.(rectangular triangle;isoscales triangle;acute angle;angle measure*)] (* <-lang_en;; *);;
+	[Stat.(rectangular triangle;isosceles triangle;acute angle;angle measure*)] (* <-lang_en;; *);;
 
 stat_rectangular_triangle_isosceles_triangle_acute_angle <= nrel_sc_text_translation: 
 	...
