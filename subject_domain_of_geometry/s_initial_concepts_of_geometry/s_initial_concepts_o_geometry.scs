@@ -1,0 +1,36 @@
+sc_node_struct -> s_initial_concepts_of_geometry;;
+
+s_initial_concepts_of_geometry
+=> nrel_main_idtf: [Глава 1. Базовые понятия геометрии] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Chapter 1. Initial concepts of geometry] (* <- lang_en;; *);
+	
+=> nrel_section_decomposition:
+	{
+		geometry_subject
+		(*
+		=> nrel_section_base_order: 
+			circumference_and_circle;;
+		*);
+		circumference_and_circle
+		(*
+		=> nrel_section_base_order: 
+			line_ray_segment_and_broken_line;;
+		*);
+		line_ray_segment_and_broken_line
+		(*
+		=> nrel_section_base_order: 
+			angle_and_types_of_angles;;
+		*);
+		angle_and_types_of_angles
+		(*
+		=> nrel_section_base_order: 
+			adjacent_and_vertical_angles;;
+		*);
+		adjacent_and_vertical_angles
+		(*
+		=> nrel_section_base_order: 
+			perpendicular_lines;;
+		*);
+		
+		perpendicular_lines
+	};;

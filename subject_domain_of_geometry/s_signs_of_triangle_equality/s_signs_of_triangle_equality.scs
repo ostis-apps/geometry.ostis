@@ -1,0 +1,46 @@
+sc_node_struct -> s_signs_of_triangle_equality;;
+
+s_signs_of_triangle_equality
+=> nrel_main_idtf: [Глава 2. Признаки равенства треугольников] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Chapter 2. Signs of triangle equality] (* <- lang_en;; *);
+	
+=> nrel_section_decomposition:
+	{
+		triangles
+		(*
+		=> nrel_section_base_order: 
+			first_and_second_sign_of_triagnle_equality;;
+		*);
+		
+		first_and_second_sign_of_triagnle_equality
+		(*
+		=> nrel_section_base_order: 
+			height_median_and_bisector_of_triangle;;
+		*);
+		
+		height_median_and_bisector_of_triangle
+		(*
+		=> nrel_section_base_order: 
+			isosceles_triangle;;
+		*);
+		
+		isosceles_triangle
+		(*
+		=> nrel_section_base_order: 
+			signs_of_isosceles_triangle;;
+		*);
+		
+		signs_of_isosceles_triangle
+		(*
+		=> nrel_section_base_order: 
+			third_sign_of_triangle_equality;;
+		*);
+		
+		third_sign_of_triangle_equality
+		(*
+		=> nrel_section_base_order: 
+			perpendicular_bisector_of_segment;;
+		*);
+		
+		perpendicular_bisector_of_segment
+	};;

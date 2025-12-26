@@ -1,0 +1,29 @@
+sc_node_struct -> s_parallelism_of_lines_on_a_plane;;
+
+s_parallelism_of_lines_on_a_plane
+=> nrel_main_idtf: [Глава 3. Параллельность прямых на плоскости] (* <- lang_ru;;*);
+=> nrel_main_idtf: [Chapter 3. Parallelism of lines on a plane] (* <- lang_en;;*);
+
+=> nrel_section_decomposition:
+	{
+		signs_of_line_parallelism
+		(*
+		=> nrel_section_base_order: 
+			axiom_of_line_parallelism;;
+		*);
+		
+		axiom_of_line_parallelism
+		(*
+		=> nrel_section_base_order: 
+			properties_of_line_parallelism;;
+		*);
+		
+		properties_of_line_parallelism
+		(*
+		=> nrel_section_base_order: 
+			angles_with_respectively_parallel_and_perpedicular_lines;;
+		*);
+		
+		angles_with_respectively_parallel_and_perpedicular_lines
+	
+	};;
