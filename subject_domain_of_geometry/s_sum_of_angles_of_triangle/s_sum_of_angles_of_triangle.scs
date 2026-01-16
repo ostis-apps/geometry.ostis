@@ -1,0 +1,52 @@
+sc_node_struct -> s_sum_of_angles_of_triangle;;
+
+s_sum_of_angles_of_triangle
+=> nrel_main_idtf: [Глава 4. Сумма углов треугольника] (* <- lang_ru;;*);
+=> nrel_main_idtf: [Chapter 4. Sum of angles of triangle] (* <- lang_en;;*);
+
+=> nrel_section_decomposition:
+	{
+		sum_of_angles_of_triangle
+		(*
+		=> nrel_section_base_order: 
+			outer_angle_of_triangle;;
+		*);
+		
+		outer_angle_of_triangle
+		(*
+		 => nrel_section_base_order: 
+			ratio_between_sides_and_angles;;
+		*);
+		    
+		ratio_between_sides_and_angles
+		(*
+		=> nrel_section_base_order: 
+			triangle_inequality;;
+		*);
+		    
+		triangle_inequality
+		(*
+		=> nrel_section_base_order: 
+			signs_of_equality_of_rectangular_triangles;;
+		*);
+		    
+		signs_of_equality_of_rectangular_triangles
+		(*
+		=> nrel_section_base_order: 
+			property_of_angle_bisector_points;;
+		*);
+		    
+		property_of_angle_bisector_points
+		(*
+		=> nrel_section_base_order: 
+		property_of_the_cathetus_of_rectangular_triangle_lying_opposite_an_angle_of_30_degrees;;
+		*);
+		    
+		property_of_the_cathetus_of_rectangular_triangle_lying_opposite_an_angle_of_30_degrees
+		(*
+		=> nrel_section_base_order: 
+			distance_between_parallel_lines;;
+		*);
+		    
+		distance_between_parallel_lines
+  };;

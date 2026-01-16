@@ -1,0 +1,84 @@
+sc_node -> straight_line;;
+
+straight_line
+=> nrel_main_idtf: [3.1. Прямая] (* <- lang_ru;;*); [3.1. Straight line] (* <- lang_en;;*);;
+
+sc_node -> d_intersecting_lines;;
+
+d_intersecting_lines <- definition;;
+
+d_intersecting_lines  => nrel_main_idtf: [Опр.(Пересекающиеся прямые)] (* <- lang_ru;; *);
+                      => nrel_main_idtf: [Def.(Intersecting lines)] (* <- lang_en;; *);; 
+
+d_intersecting_lines  <= nrel_sc_text_translation: 
+  ...
+  (*
+  -> rrel_example:
+    {
+        [Пересекающиеся прямые - две прямые, имеющие общую точку.] (* <- lang_ru;; *);
+        [Intersecting lines - two lines that have a common point.] (* <- lang_en;; *)
+    };;
+  *);;
+
+d_parallel_lines <= nrel_using_constants:
+  {
+    concept_strainght_line; 
+    concept_geometric_point
+  };;
+
+sc_node -> d_parallel_lines;;
+
+d_parallel_lines <- definition;;
+
+d_parallel_lines  => nrel_main_idtf: [Опр.(Параллельные прямые)] (* <- lang_ru;; *);
+                  => nrel_main_idtf: [Def.(Parallel lines)] (* <- lang_en;; *);;
+
+d_parallel_lines  <= nrel_sc_text_translation: 
+  ...
+  (*
+  -> rrel_example:
+    {
+        [Параллельные прямые - две прямые, лежащие в одной плоскости и не пересекающиеся.]
+        (* <- lang_ru;; *);
+        [Parrarel lines - two straight lines lying in the same plane and not intersecting.]
+        (* <- lang_en;; *)
+    };;
+  *);;
+
+d_parallel_lines <= nrel_using_constants:
+  {
+    concept_strainght_line; 
+    concept_plane
+  };;
+
+axiom_two_points_line <- statement;;
+
+axiom_two_points_line -> rrel_key_sc_element: concept_point; concept_line; concept_plane;; 
+
+axiom_two_points_line <- rrel_axiom: straight_line;;
+
+axiom_two_points_line => nrel_main_idtf: [Акс.(точка; прямая; плоскость*)] (*<- lang_ru;;*);;
+axiom_two_points_line => nrel_main_idtf: [Ax.(point; line; plane*)] (*<- lang_en;;*);;
+
+axiom_two_points_line <= nrel_sc_text_translation: 
+    ... 
+    (* 
+    -> rrel_example: 
+      {
+        [Через любые две точки плоскости можно провести прямую, и притом только одну.] (* <- lang_ru;; *);
+        [Through any two points of the plane, a straight line can be drawn, and only one.] (* <- lang_en;; *)
+      };;
+    *);;
+
+axiom_two_points_line <= nrel_using_constants:
+  {
+    concept_strainght_line; 
+    concept_geometric_point;
+    concept_plane
+  };;
+
+straight_line <- rrel_key_sc_element:
+    {
+        d_intersecting_lines;
+        d_parallel_lines
+    };;

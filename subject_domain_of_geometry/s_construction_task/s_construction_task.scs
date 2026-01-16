@@ -1,0 +1,34 @@
+sc_node_struct -> s_construction_task;;
+
+s_construction_task
+=> nrel_main_idtf: [Глава 5. Задачи на построение] (* <- lang_ru;;*);
+=> nrel_main_idtf: [Chapter 5. Construction tasks] (* <- lang_en;;*);
+
+=> nrel_section_decomposition:
+	{
+		about_construction_tasks
+		(*
+		=> nrel_section_base_order: 
+			construction_of_a_triangle_by_three_sides_construction_of_an_angle_equal_to_the_given_one;;
+		*);
+
+		construction_of_a_triangle_by_three_sides_construction_of_an_angle_equal_to_the_given_one
+		(*
+		=> nrel_section_base_order:
+			angle_bisector_contruction_segment_center_construction;;
+		*);
+
+		angle_bisector_contruction_segment_center_construction
+		(*
+		=> nrel_section_base_order: 
+			construction_of_a_line_perpendicular_to_the_given_line;;
+		*);
+		    
+		construction_of_a_line_perpendicular_to_the_given_line
+		(*
+		=> nrel_section_base_order: 
+			geometric_location_of_points;;
+		*);
+		    
+		geometric_location_of_points
+	};;

@@ -1,0 +1,81 @@
+sc_node-> straight_line_ray_section;;
+
+straight_line_ray_section
+=> nrel_main_idtf: [1.1. Прямая, луч, отрезок] (* <- lang_ru;;*); [1.1. Straight line, ray, section] (* <- lang_en;;*);;
+
+sc_node -> d_straight_line_revision;;
+
+d_straight_line_revision <- definition;;
+
+d_straight_line_revision  => nrel_main_idtf: [Опр.(Прямая)] (* <- lang_ru;; *);
+                          => nrel_main_idtf: [Def.(Straight line)] (* <- lang_en;; *);;
+
+d_straight_line_revision  <= nrel_sc_text_translation: 
+  ...
+  (*
+    -> rrel_example: 
+        [Прямая - это туго натянутая нить, бесконечная в обе стороны. Изображается отрезком, который может быть продолжен в обе стороны.]
+        (* <- lang_ru;; *);
+        [A straight line is a tightly stretched thread that is infinite in both directions. It depicts a segment that can be extended in both directions.]
+        (* <- lang_en;; *);;
+  *);;
+
+d_straight_line <= nrel_using_constants:
+  {
+    concept_segment
+  };;
+
+sc_node -> d_segment_revision;;
+
+d_segment_revision <- definition;;
+
+d_segment_revision  => nrel_main_idtf: [Опр.(Отрезок)] (* <- lang_ru;; *);
+                    => nrel_main_idtf: [Def.(Segment)] (* <- lang_en;; *);;
+
+d_segment_revision  <= nrel_sc_text_translation: 
+  ...
+  (*
+    -> rrel_example: 
+        [Отрезок - это часть прямой. Отрезок можно представить как карандаш. Отрезок состоит из двух точек прямой (концов отрезка) и всех ее точек, лежащих между двумя данными точками.]
+        (* <- lang_ru;; *);
+        [A segment is a part of a line. A segment can be thought of as a pencil. A segment consists of two points of the line (the ends of the segment) and all its points lying between these two points.]
+        (* <- lang_en;; *);;
+  *);;
+
+d_segment_revision <= nrel_using_constants:
+  {
+    concept_straight_line;
+    concept_segment
+  };;
+
+sc_node -> d_ray_revision;;
+
+d_ray_revision <- definition;;
+
+d_ray_revision  => nrel_main_idtf: [Опр.(Луч)] (* <- lang_ru;; *);
+                => nrel_main_idtf: [Def.(Ray)] (* <- lang_en;; *);;
+
+d_ray_revision  <= nrel_sc_text_translation: 
+  ...
+  (*
+    -> rrel_example: 
+        [Луч - это часть прямой. Луч можно представить как луч от фонарика. Луч состоит из точки прямой(начало луча) и всех ее точек, лежащих по одну сторону от данной точки.]
+        (* <- lang_ru;; *);
+        [A ray is a part of a straight line. A ray can be imagined as a beam from a flashlight. A ray consists of a point on the line (the beginning of the ray) and all its points lying on one side of this point.]
+        (* <- lang_en;; *);;
+  *);;
+
+d_ray_revision <= nrel_using_constants:
+  {
+    concept_straight_line;
+    concept_segment
+  };;
+
+straight_line_ray_section <- rrel_key_sc_element:
+    {
+        d_ray_revision;
+        d_segment_revision;
+        d_straight_line_revision
+    };;
+
+

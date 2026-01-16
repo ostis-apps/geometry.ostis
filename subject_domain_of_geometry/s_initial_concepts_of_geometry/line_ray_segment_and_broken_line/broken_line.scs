@@ -1,0 +1,92 @@
+sc_node -> broken_line;;
+
+broken_line
+=> nrel_main_idtf: [3.4. Ломаная] (* <- lang_ru;;*); [3.4. Broken line] (* <- lang_en;;*);;
+
+sc_node -> d_broken_line;;
+
+d_broken_line <- definition;;
+
+d_broken_line  => nrel_main_idtf: [Опр.(Ломаная линия)] (* <- lang_ru;; *);
+               => nrel_main_idtf: [Def.(Broken line)] (* <- lang_en;; *);;
+
+d_broken_line  <= nrel_sc_text_translation: 
+  ...
+  (*
+  -> rrel_example:
+    {
+        [Ломаная - геометрическая фигура, образованная отрезками, последовательно со
+        единенными своими концами, у которой никакие два соседних звена не лежат на одной 
+        прямой. Длиной ломаной называется сумма длин ее звеньев.]
+        (* <- lang_ru;; *);
+        [A broken line is a geometric figure formed by segments successively connected
+        at their ends, in which no two adjacent links lie on the same straight line.
+        The length of a broken line is the sum of the lengths of its links.]
+        (* <- lang_en;; *)
+    };;
+  *);;
+d_broken_line <= nrel_using_constants:
+  {
+    concept_geometric_figure;
+    concept_section
+  };;
+
+sc_node -> d_simple_broken_line;;
+
+d_simple_broken_line <- definition;;
+
+d_simple_broken_line  => nrel_main_idtf: [Опр.(Простая ломаная линия)] (* <- lang_ru;; *);
+                      => nrel_main_idtf: [Def.(Simple broken line)] (* <- lang_en;; *);;
+
+d_simple_broken_line  <= nrel_sc_text_translation: 
+  ...
+  (*
+    -> rrel_example:
+    {
+        [Ломаная называется простой, если она не имеет самопересечений и никакие два 
+        ее звена, кроме соседних, не имеют общих точек. В противном случае она называется не
+        простой.]
+        (* <- lang_ru;; *);
+        [A broken line is called simple if it has no self-intersections and no two of its links,
+        except for adjacent ones, have common points. Otherwise, it is called non-simple.]
+        (* <- lang_en;; *)
+    };;
+  *);;
+
+d_simple_broken_line <= nrel_using_constants:
+  {
+    concept_broken_line
+  };;
+
+sc_node -> d_closed_broken_line;;
+
+d_closed_broken_line <- definition;;
+
+d_closed_broken_line  => nrel_main_idtf: [Опр.(Замкнутая ломаная линия)] (* <- lang_ru;; *);
+                      => nrel_main_idtf: [Def.(Closed broken line)] (* <- lang_en;; *);;
+
+d_closed_broken_line  <= nrel_sc_text_translation: 
+  ...
+  (*
+    -> rrel_example:
+    {
+        [Ломаная называется замкнутой, если начало ее первого звена совпадает с
+        концом последнего. В противном случае она называется незамкнутой.]
+        (* <- lang_ru;; *);
+        [A broken line is called closed if the beginning of its first link
+        coincides with the end of its last. Otherwise, it is called open.]
+        (* <- lang_en;; *)
+    };;
+  *);;
+
+d_closed_broken_line <= nrel_using_constants:
+  {
+    concept_broken_line
+  };;
+
+broken_line <- rrel_key_sc_element:
+    {
+        d_broken_line;
+        d_closed_broken_line;
+        d_simple_broken_line
+    };;

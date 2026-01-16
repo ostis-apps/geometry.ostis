@@ -1,0 +1,113 @@
+sc_node -> adjacent_and_vertical_angles;;
+
+adjacent_and_vertical_angles
+=> nrel_main_idtf: [§6. Смежные углы. Вертикальные углы] (* <- lang_ru;; *); [§6. Adjacent angles. Vertical angles] (* <- lang_en;; *);;
+
+adjacent_and_vertical_angles => nrel_task_to_be_solved: task_find_angular_measure;;
+
+sc_node -> d_adjacent_corner;;
+
+d_adjacent_corner <- definition;;
+
+d_adjacent_corner
+=> nrel_main_idtf: [Опр.(Смежный угол)] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Def.(Adjacent corner)] (* <- lang_en;; *);;
+
+d_adjacent_corner <= nrel_sc_text_translation:
+  ...
+  (*
+  -> rrel_example:
+    {
+        [Два угла называются смежными, если у них одна сторона общая, а две другие являются дополнительными лучами.]
+        (* <- lang_ru;; *);
+        [Two corners are called adjacent if they have one side in common, and the other two are additional beams.]
+        (* <- lang_en;; *)
+    };;
+  *);;
+
+d_adjacent_corner <= nrel_using_constants:
+  {
+    concept_angle; 
+    concept_side
+  };;
+
+sc_node -> d_vertical_corner;;
+
+d_vertical_corner <- definition;;
+
+d_vertical_corner
+=> nrel_main_idtf: [Опр.(Вертикальный угол)] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Def.(Vertical corner)] (* <- lang_en;; *);;
+
+d_vertical_corner  <= nrel_sc_text_translation:
+  ...
+  (*
+  -> rrel_example:
+    {
+        [Два угла называются вертикальными, если стороны одного угла являются дополнительными лучами к сторонам другого.]
+        (* <- lang_ru;; *);
+        [Two angles are called vertical if The sides of one corner are complementary rays to the sides of the other.]
+        (* <- lang_en;; *)
+    };;
+  *);;
+
+d_vertical_corner <= nrel_using_constants:
+  {
+    concept_angle; 
+    concept_side
+  };;
+
+
+theorem_adjacent_angles_sum <- statement;;
+
+theorem_adjacent_angles_sum <- rrel_theorem: adjacent_and_vertical_angles;;
+
+theorem_adjacent_angles_sum => nrel_main_idtf: [Теор.(смежные углы; сумма углов*)] (*<- lang_ru;;*);;
+theorem_adjacent_angles_sum => nrel_main_idtf: [Th.(adjacent angles; angle sum*)] (*<- lang_en;;*);;
+
+theorem_adjacent_angles_sum <= nrel_sc_text_translation: 
+    ... 
+    (* 
+    -> rrel_example: 
+      {
+        [Сумма смежных углов равна 180°.] (* <- lang_ru;; *);
+        [The sum of adjacent angles is 180°.] (* <- lang_en;; *)
+      };;
+    *);;
+
+theorem_adjacent_angles_sum <= nrel_using_constants:  
+{
+   concept_adjacent_angle; 
+   concept_angle_measure
+};;  
+
+theorem_vertical_angles <- statement;;
+
+theorem_vertical_angles <- rrel_theorem: adjacent_and_vertical_angles;;
+
+theorem_vertical_angles => nrel_main_idtf: [Теор.(угол; вертикальные углы*)] (*<- lang_ru;;*);;
+theorem_vertical_angles => nrel_main_idtf: [Th.(angle; vertical angles*)] (*<- lang_en;;*);;
+
+theorem_vertical_angles <= nrel_sc_text_translation: 
+    ... 
+    (* 
+    -> rrel_example: 
+      {
+        [Вертикальные углы равны.] (* <- lang_ru;; *);
+        [Vertical angles are equal.] (* <- lang_en;; *)
+      };;
+    *);;
+
+theorem_vertical_angles <= nrel_using_constants:  
+{
+    concept_angle;
+    concept_vertical_angles
+};;
+
+adjacent_and_vertical_angles <- rrel_key_sc_element:
+    {
+        d_vertical_corner;
+        d_adjacent_corner
+    };;
+
+  

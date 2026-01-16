@@ -1,0 +1,28 @@
+sc_node -> triangle_inequality;;
+
+triangle_inequality
+=> nrel_main_idtf: [§22. Неравенство треугольника] (* <- lang_ru;;*); [§22. Triangle inequality] (* <- lang_en;;*);;
+
+theorem_triangle_inequality <- statement;;
+
+theorem_triangle_inequality <- rrel_theorem: triangle_inequality;;
+
+theorem_triangle_inequality => nrel_main_idtf: [Теор.(треугольник; сторона; сумма*)] (*<- lang_ru;;*);;  
+theorem_triangle_inequality => nrel_main_idtf: [Th.(triangle; side; sum*)] (*<- lang_en;;*);;
+
+theorem_triangle_inequality <= nrel_sc_text_translation: 
+    ... 
+    (* 
+    -> rrel_example: 
+      {
+        [Любая сторона треугольника меньше суммы двух других его сторон.] (* <- lang_ru;; *);
+        [Any side of a triangle is less than the sum of the other two sides.] (* <- lang_en;; *)
+      };;
+    *);;
+
+theorem_triangle_inequality <= nrel_using_constants:  
+{
+   concept_triangle; 
+   concept_side; 
+   concept_sum
+};;  

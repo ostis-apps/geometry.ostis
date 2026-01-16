@@ -1,0 +1,31 @@
+sc_node -> triangle;;
+
+triangle
+=> nrel_main_idtf: [8.1. Треугольник] (* <- lang_ru;;*); [8.1. Triangle] (* <- lang_en;;*);;
+
+sc_node -> d_triangle;;
+
+d_triangle <- definition;;
+
+d_triangle  
+=> nrel_main_idtf: [Опр.(Треугольник)] (* <- lang_ru;; *);  
+=> nrel_main_idtf: [Def.(Triangle)] (* <- lang_en;; *);;  
+
+d_triangle <= nrel_sc_text_translation:  
+  ...  
+  (*  
+  -> rrel_example:  
+{  
+    [Треугольником называется трехзвенная замкнутая ломаная вместе с частью плоскости, которую она ограничивает.]  
+    (* <- lang_ru;; *);  
+    [A triangle is a three-link closed polyline along with the part of the plane it bounds.]  
+    (* <- lang_en;; *)  
+};;  
+  *);;  
+
+d_triangle <= nrel_using_constants:  
+  {  
+    concept_polyline;  
+    concept_plane_part  
+  };;
+

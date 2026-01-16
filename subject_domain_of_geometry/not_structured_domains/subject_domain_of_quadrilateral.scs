@@ -1,0 +1,31 @@
+sc_node_struct -> subject_domain_of_quadrilaterals;;
+
+subject_domain_of_quadrilaterals
+=> nrel_main_idtf:
+	[Предметная область четырехугольников]
+	(* <- lang_ru;; *);
+	[Subject domain of quadrilaterals]
+	(* <- lang_en;; *);;
+	
+subject_domain_of_quadrilaterals -> rrel_maximum_studied_object_class: concept_quadrilateral;;
+
+subject_domain_of_quadrilaterals -> rrel_not_maximum_studied_object_class: 
+	concept_trapezoid;
+	concept_parallelogram;
+	concept_isosceles_trapezoid;
+	concept_rectangular_trapezoid;;
+
+subject_domain_of_quadrilaterals -> rrel_explored_relation:
+	nrel_area;
+	nrel_base;
+	nrel_bound;
+	nrel_congruence;
+	nrel_diagonal;
+	nrel_external_angle;
+	nrel_height;
+	nrel_internal_angle;
+	nrel_perimeter;
+	nrel_side;
+	nrel_vertex;;
+
+subject_domain_of_quadrilaterals <- subject_domain;;

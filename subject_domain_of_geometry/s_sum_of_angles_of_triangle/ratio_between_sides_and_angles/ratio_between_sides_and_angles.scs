@@ -1,0 +1,145 @@
+sc_node -> ratio_between_sides_and_angles;;
+
+ratio_between_sides_and_angles
+=> nrel_main_idtf: [§21. Соотношение между сторонами и углами треугольника] (* <- lang_ru;;*); [§21. Ratio between sides and angles of a triangle] (* <- lang_en;;*);;
+
+sc_node -> d_distance_point_to_line;;
+
+d_distance_point_to_line <- definition;;
+
+d_distance_point_to_line  
+=> nrel_main_idtf: [Опр.(Расстояние от точки до прямой)] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Def.(Distance from a point to a line)] (* <- lang_en;; *);;  
+
+d_distance_point_to_line <= nrel_sc_text_translation:  
+  ...  
+  (*  
+  -> rrel_example:  
+{  
+    [Расстоянием от точки до прямой называется длина перпендикуляра, опущенного из точки на прямую.]  
+    (* <- lang_ru;; *);  
+    [The distance from a point to a line is the length of the perpendicular dropped from the point to the line.]  
+    (* <- lang_en;; *)  
+};;  
+  *);;  
+
+d_distance_point_to_line <= nrel_using_constants:  
+  {  
+    concept_length;  
+    concept_perpendicular;  
+    concept_point;  
+    concept_line  
+  };;
+
+sc_node -> d_slope;;
+
+d_slope <- definition;;
+
+d_slope  
+=> nrel_main_idtf: [Опр.(Наклонная)] (* <- lang_ru;; *);  
+=> nrel_main_idtf: [Def.(Slope)] (* <- lang_en;; *);;  
+
+d_slope <= nrel_sc_text_translation:  
+  ...  
+  (*  
+  -> rrel_example:  
+{  
+    [Если AC — перпендикуляр к прямой a, точка B принадлежит прямой a и не совпадает с точкой C, то отрезок AB называется наклонной, проведенной из точки A к прямой a.]  
+    (* <- lang_ru;; *);  
+    [If AC is a perpendicular to line a, point B lies on line a and does not coincide with point C, then segment AB is called a slope drawn from point A to line a.]  
+    (* <- lang_en;; *)  
+};;  
+  *);;  
+
+d_slope <= nrel_using_constants:  
+  {  
+    concept_perpendicular;  
+    concept_line;  
+    concept_point;  
+    concept_segment  
+  };;
+
+sc_node -> d_slope_base;;
+
+d_slope_base <- definition;;
+
+d_slope_base  
+=> nrel_main_idtf: [Опр.(Основание наклонной)] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Def.(Base of the slope)] (* <- lang_en;; *);;  
+
+d_slope_base <= nrel_sc_text_translation:  
+  ...  
+  (*  
+  -> rrel_example:  
+{  
+    [Точка B называется основанием наклонной.]  
+    (* <- lang_ru;; *);  
+    [Point B is called the base of the slope.]  
+    (* <- lang_en;; *)  
+};;  
+  *);;  
+
+d_slope_base <= nrel_using_constants:  
+  {  
+    concept_point  
+  };;
+
+sc_node -> d_slope_projection;;
+
+d_slope_projection <- definition;;
+
+d_slope_projection  
+=> nrel_main_idtf: [Опр.(Проекция наклонной)] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Def.(Projection of the slope)] (* <- lang_en;; *);;  
+
+d_slope_projection <= nrel_sc_text_translation:  
+  ...  
+  (*  
+  -> rrel_example:  
+{  
+    [Отрезок BC, соединяющий основание наклонной и основание перпендикуляра, называется проекцией наклонной AB на прямую a.]  
+    (* <- lang_ru;; *);  
+    [Segment BC, connecting the base of the slope and the base of the perpendicular, is called the projection of slope AB onto line a.]  
+    (* <- lang_en;; *)  
+};;  
+  *);;  
+
+d_slope_projection <= nrel_using_constants:  
+  {  
+    concept_segment;  
+    concept_base_of_perpendicular;  
+    concept_base_of_slope  
+  };;
+
+ratio_between_sides_and_angles <- rrel_key_sc_element:
+    {
+        d_slope_projection;
+        d_slope_base;
+        d_distance_point_to_line;
+        d_slope
+    };;
+
+theorem_side_angle_relationship <- statement;;
+
+theorem_side_angle_relationship <- rrel_theorem: ratio_between_sides_and_angles;;
+
+theorem_side_angle_relationship => nrel_main_idtf: [Теор.(треугольник; сторона; угол; неравенство*)] (*<- lang_ru;;*);;  
+theorem_side_angle_relationship => nrel_main_idtf: [Th.(triangle; side; angle; inequality*)] (*<- lang_en;;*);;
+
+theorem_side_angle_relationship <= nrel_sc_text_translation: 
+    ... 
+    (* 
+    -> rrel_example: 
+      {
+        [В треугольнике против большей стороны лежит больший угол, а против большего угла лежит большая сторона.] (* <- lang_ru;; *);
+        [In a triangle, the larger side is opposite the larger angle, and the larger angle is opposite the larger side.] (* <- lang_en;; *)
+      };;
+    *);;
+
+theorem_side_angle_relationship <= nrel_using_constants:  
+{
+   concept_triangle; 
+   concept_side; 
+   concept_angle; 
+   concept_inequality
+};;  

@@ -1,0 +1,19 @@
+sc_node_struct -> subject_domain_of_inscribed_planar_figures;;
+
+subject_domain_of_inscribed_planar_figures
+=> nrel_main_idtf:
+	[Предметная область вписанных планарных фигур]
+	(* <- lang_ru;; *);
+	[Subject domain of inscribed planar figures]
+	(* <- lang_en;; *);;
+		
+subject_domain_of_inscribed_planar_figures -> rrel_maximum_studied_object_class: concept_geometric_figure;;
+
+subject_domain_of_inscribed_planar_figures -> rrel_not_maximum_studied_object_class: 
+	concept_polygon; 
+	concept_angle; 
+	concept_circle;;
+
+subject_domain_of_inscribed_planar_figures -> rrel_explored_relation: nrel_be_inscribed;;
+
+subject_domain_of_inscribed_planar_figures <- subject_domain;;

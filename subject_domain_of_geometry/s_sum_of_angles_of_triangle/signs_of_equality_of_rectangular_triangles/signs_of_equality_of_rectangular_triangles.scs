@@ -1,0 +1,128 @@
+sc_node -> signs_of_equality_of_rectangular_triangles;;
+
+signs_of_equality_of_rectangular_triangles
+=> nrel_main_idtf: [§23. Признаки равенства прямоугольных треугольников] (* <- lang_ru;;*); [§23. Signs of equality of rectangular triangles] (* <- lang_en;;*);;
+
+theorem_right_triangle_cathetus_cathetus <- statement;;
+
+theorem_right_triangle_cathetus_cathetus <- rrel_theorem: signs_of_equality_of_rectangular_triangles;;
+
+theorem_right_triangle_cathetus_cathetus => nrel_main_idtf: [Теор.(прямоугольный треугольник; катет; равенство*)] (*<- lang_ru;;*);;  
+theorem_right_triangle_cathetus_cathetus => nrel_main_idtf: [Th.(right triangle; cathetus; congruence*)] (*<- lang_en;;*);;
+
+theorem_right_triangle_cathetus_cathetus <= nrel_sc_text_translation: 
+    ... 
+    (* 
+    -> rrel_example: 
+      {
+        [Если катеты одного прямоугольного треугольника соответственно равны двум катетам другого прямоугольного треугольника, то такие треугольники равны.] (* <- lang_ru;; *);
+        [If the legs of one right triangle are respectively equal to the legs of another right triangle, then the triangles are congruent.] (* <- lang_en;; *)
+      };;
+    *);;
+
+theorem_right_triangle_cathetus_cathetus <= nrel_using_constants:  
+{
+   concept_right_triangle; 
+   concept_cathetus; 
+   concept_congruence
+};;
+
+theorem_right_triangle_cathetus_adjacent_angle <- statement;;
+
+theorem_right_triangle_cathetus_adjacent_angle <- rrel_theorem: signs_of_equality_of_rectangular_triangles;;
+
+theorem_right_triangle_cathetus_adjacent_angle => nrel_main_idtf: [Теор.(прямоугольный треугольник; катет; прилежащий угол*)] (*<- lang_ru;;*);;  
+theorem_right_triangle_cathetus_adjacent_angle => nrel_main_idtf: [Th.(right triangle; cathetus; adjacent angle*)] (*<- lang_en;;*);;
+
+theorem_right_triangle_cathetus_adjacent_angle <= nrel_sc_text_translation: 
+    ... 
+    (* 
+    -> rrel_example: 
+      {
+        [Если катет и прилежащий к нему острый угол одного прямоугольного треугольника соответственно равны катету и прилежащему к нему острому углу другого прямоугольного треугольника, то такие треугольники равны.] (* <- lang_ru;; *);
+        [If a leg and the adjacent acute angle of one right triangle are respectively equal to a leg and the adjacent acute angle of another right triangle, then the triangles are congruent.] (* <- lang_en;; *)
+      };;
+    *);;
+
+theorem_right_triangle_cathetus_adjacent_angle <= nrel_using_constants:  
+{
+   concept_right_triangle; 
+   concept_cathetus; 
+   concept_adjacent_angle; 
+   concept_congruence
+};;
+
+theorem_right_triangle_cathetus_opposite_angle <- statement;;
+
+theorem_right_triangle_cathetus_opposite_angle <- rrel_theorem: signs_of_equality_of_rectangular_triangles;;
+
+theorem_right_triangle_cathetus_opposite_angle => nrel_main_idtf: [Теор.(прямоугольный треугольник; катет; противолежащий угол*)] (*<- lang_ru;;*);;  
+theorem_right_triangle_cathetus_opposite_angle => nrel_main_idtf: [Th.(right triangle; cathetus; opposite angle*)] (*<- lang_en;;*);;
+
+theorem_right_triangle_cathetus_opposite_angle <= nrel_sc_text_translation: 
+    ... 
+    (* 
+    -> rrel_example: 
+      {
+        [Если катет и противолежащий острый угол одного прямоугольного треугольника соответственно равны катету и противолежащему острому углу другого прямоугольного треугольника, то такие треугольники равны.] (* <- lang_ru;; *);
+        [If a leg and the opposite acute angle of one right triangle are respectively equal to a leg and the opposite acute angle of another right triangle, then the triangles are congruent.] (* <- lang_en;; *)
+      };;
+    *);;
+
+theorem_right_triangle_cathetus_opposite_angle <= nrel_using_constants:  
+{
+   concept_right_triangle; 
+   concept_cathetus; 
+   concept_opposite_angle; 
+   concept_congruence
+};;
+
+theorem_right_triangle_hypotenuse_angle <- statement;;
+
+theorem_right_triangle_hypotenuse_angle <- rrel_theorem: signs_of_equality_of_rectangular_triangles;;
+
+theorem_right_triangle_hypotenuse_angle => nrel_main_idtf: [Теор.(гипотенуза; острый угол; равенство треугольников*)] (*<- lang_ru;;*);;  
+theorem_right_triangle_hypotenuse_angle => nrel_main_idtf: [Th.(hypotenuse; acute angle; triangle congruence*)] (*<- lang_en;;*);;
+
+theorem_right_triangle_hypotenuse_angle <= nrel_sc_text_translation: 
+    ... 
+    (* 
+    -> rrel_example: 
+      {
+        [Если гипотенуза и острый угол одного прямоугольного треугольника соответственно равны гипотенузе и острому углу другого прямоугольного треугольника, то такие треугольники равны.] (* <- lang_ru;; *);
+        [If the hypotenuse and an acute angle of one right triangle are respectively equal to the hypotenuse and an acute angle of another right triangle, then the triangles are congruent.] (* <- lang_en;; *)
+      };;
+    *);;
+
+theorem_right_triangle_hypotenuse_angle <= nrel_using_constants:  
+{
+   concept_hypotenuse; 
+   concept_acute_angle; 
+   concept_right_triangle; 
+   concept_congruence
+};;
+
+theorem_right_triangle_leg_hypotenuse <- statement;;
+
+theorem_right_triangle_leg_hypotenuse <- rrel_theorem: signs_of_equality_of_rectangular_triangles;;
+
+theorem_right_triangle_leg_hypotenuse => nrel_main_idtf: [Теор.(катет; гипотенуза; равенство треугольников*)] (*<- lang_ru;;*);;  
+theorem_right_triangle_leg_hypotenuse => nrel_main_idtf: [Th.(cathetus; hypotenuse; triangle congruence*)] (*<- lang_en;;*);;
+
+theorem_right_triangle_leg_hypotenuse <= nrel_sc_text_translation: 
+    ... 
+    (* 
+    -> rrel_example: 
+      {
+        [Если катет и гипотенуза одного прямоугольного треугольника соответственно равны катету и гипотенузе другого прямоугольного треугольника, то такие треугольники равны.] (* <- lang_ru;; *);
+        [If a leg and the hypotenuse of one right triangle are respectively equal to a leg and the hypotenuse of another right triangle, then the triangles are congruent.] (* <- lang_en;; *)
+      };;
+    *);;
+
+theorem_right_triangle_leg_hypotenuse <= nrel_using_constants:  
+{
+   concept_cathetus; 
+   concept_hypotenuse; 
+   concept_right_triangle; 
+   concept_congruence
+};;  

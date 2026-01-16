@@ -1,0 +1,23 @@
+sc_node_struct -> subject_domain_of_geometric_points;;
+
+subject_domain_of_geometric_points
+=> nrel_main_idtf:
+	[Предметная область геометрических точек]
+	(* <- lang_ru;; *);
+	[Subject domain of geometric points]
+	(* <- lang_en;; *);;
+
+subject_domain_of_geometric_points -> rrel_maximum_studied_object_class: concept_geometric_point;;
+
+subject_domain_of_geometric_points -> rrel_not_maximum_studied_object_class: 
+	concept_non_rectlinear_three_tuple_of_points;
+	concept_rectilinear_three_of_points;
+	concept_triple_of_points;
+	concept_pair_of_points;;
+
+subject_domain_of_geometric_points <- subject_domain;;
+
+subject_domain_of_geometric_points -> rrel_explored_relation:
+		nrel_between;
+		nrel_distance;
+		nrel_congruence_of_pair_of_points;;

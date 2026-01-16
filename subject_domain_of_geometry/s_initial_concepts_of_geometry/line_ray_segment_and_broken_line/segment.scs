@@ -1,0 +1,109 @@
+sc_node -> segment;;
+
+segment
+=> nrel_main_idtf: [3.3. Отрезок] (* <- lang_ru;;*); [3.3. Segment] (* <- lang_en;;*);;
+
+sc_node -> d_equal_segment;;
+
+d_equal_segment <- definition;;
+
+d_equal_segment  => nrel_main_idtf: [Опр.(равные отрезки)] (* <- lang_ru;; *);
+                 => nrel_main_idtf: [Def.(Equal segments)] (* <- lang_en;; *);;
+
+d_equal_segment  <= nrel_sc_text_translation: 
+  ...
+  (*
+    -> rrel_example:
+    {
+        [Два отрезка называются равными, если их можно совместить наложением.]
+        (* <- lang_ru;; *);
+        [Two segments are called equal if they can be combined by superposition.]
+        (* <- lang_en;; *)
+    };;
+  *);;
+
+d_equal_segment <= nrel_using_constants:
+  {
+    concept_straight_line;
+    concept_geometric_point
+  };;
+
+sc_node -> d_segment;;
+
+d_sectd_segmention <- definition;;
+
+d_segment
+=> nrel_main_idtf: [Опр.(отрезок)] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Def.(section)] (* <- lang_en;; *);;
+
+d_segment  <= nrel_sc_text_translation:
+  ...
+  (*
+  -> rrel_example:
+    {
+        [Отрезком называется часть прямой, ограниченная двумя точками.]
+        (* <- lang_ru;; *);
+        [A segment is a part of a straight line bounded by two points.]
+        (* <- lang_en;; *)
+    };;
+  *);;
+
+d_segment <= nrel_using_constants:
+  {
+    concept_straight_line; 
+    concept_point
+  };;
+
+axiom_segment_split <- statement;;
+
+axiom_segment_split <- rrel_axiom: segment;;
+
+axiom_segment_split => nrel_main_idtf: [Акс.(точка; отрезок; длина*)] (*<- lang_ru;;*);;
+axiom_segment_split => nrel_main_idtf: [Ax.(point; segment; length*)] (*<- lang_en;;*);;
+
+axiom_segment_split <= nrel_sc_text_translation: 
+    ... 
+    (* 
+    -> rrel_example: 
+      {
+        [Если на отрезке взять точку, то она разобьет данный отрезок на два отрезка, сумма длин которых равна длине данного отрезка.] (* <- lang_ru;; *);
+        [If a point is taken on a segment, it divides the segment into two parts, the sum of whose lengths equals the length of the original segment.] (* <- lang_en;; *) 
+      };;
+    *);;
+
+axiom_segment_split <= nrel_using_constants:
+  {
+    concept_length; 
+    concept_point;
+    concept_segment
+  };;
+
+axiom_ray_segment <- statement;;
+
+axiom_ray_segment <- rrel_axiom: segment;;
+
+axiom_ray_segment => nrel_main_idtf: [Акс.(луч; отрезок; длина*)] (*<- lang_ru;;*);;
+axiom_ray_segment => nrel_main_idtf: [Ax.(ray; segment; length*)] (*<- lang_en;;*);;
+
+axiom_ray_segment <= nrel_sc_text_translation: 
+    ... 
+    (* 
+    -> rrel_example: 
+      {
+        [На любом луче от его вершины можно отложить отрезок данной длины, и притом только один.] (* <- lang_ru;; *);
+        [On any ray from its vertex, a segment of a given length can be laid off, and only one.] (* <- lang_en;; *)
+      };;
+    *);;
+
+axiom_ray_segment <= nrel_using_constants:
+  {
+    concept_ray; 
+    concept_segment;
+    concept_length
+  };;
+
+segment <- rrel_key_sc_element:
+    {
+        d_equal_segment;
+        d_segment
+    };;

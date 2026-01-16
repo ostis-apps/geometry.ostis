@@ -1,0 +1,24 @@
+sc_node -> line_ray_segment_and_broken_line;;
+
+line_ray_segment_and_broken_line
+=> nrel_main_idtf: [§3. Прямая. Луч. Отрезок. Ломаная] (* <- lang_ru;; *); [§3. Line. Ray. Segment. Broken line] (* <- lang_en;; *);
+
+-> straight_line
+	(*
+	=> nrel_section_base_order: 
+		ray;;
+	*);
+
+-> ray
+	(*
+	=> nrel_section_base_order: 
+		segment;;
+	*);
+
+-> segment
+	(*
+	=> nrel_section_base_order: 
+		broken_line;;
+	*);
+
+broken_line;;

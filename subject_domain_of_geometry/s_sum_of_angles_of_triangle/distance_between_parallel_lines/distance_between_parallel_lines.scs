@@ -1,0 +1,56 @@
+sc_node -> distance_between_parallel_lines;;
+
+distance_between_parallel_lines
+=> nrel_main_idtf: [§26. Расстояние между параллельными прямыми] (* <- lang_ru;;*); [§26. Distance between parallel lines] (* <- lang_en;;*);;
+
+sc_node -> d_distance_parallel_lines;;
+
+d_distance_parallel_lines <- definition;;
+
+d_distance_parallel_lines  
+=> nrel_main_idtf: [Опр.(Расстояние между параллельными прямыми)] (* <- lang_ru;; *);  
+=> nrel_main_idtf: [Def.(Distance between parallel lines)] (* <- lang_en;; *);;  
+
+d_distance_parallel_lines <= nrel_sc_text_translation:  
+  ...  
+  (*  
+  -> rrel_example:  
+{  
+    [Расстоянием между параллельными прямыми называется расстояние от точки одной из этих прямых до другой прямой.]  
+    (* <- lang_ru;; *);  
+    [The distance between parallel lines is the distance from a point on one of these lines to the other line.]  
+    (* <- lang_en;; *)  
+};;  
+  *);;  
+
+d_distance_parallel_lines <= nrel_using_constants:  
+  {  
+    concept_parallel_lines;  
+    concept_distance_point_to_line  
+  };; 
+
+distance_between_parallel_lines <- rrel_key_sc_element: d_distance_parallel_lines;;
+
+theorem_parallel_lines_equidistant <- statement;;
+
+theorem_parallel_lines_equidistant <- rrel_theorem: distance_between_parallel_lines;;
+
+theorem_parallel_lines_equidistant => nrel_main_idtf: [Теор.(параллельные прямые; равноудаленность*)] (*<- lang_ru;;*);;  
+theorem_parallel_lines_equidistant => nrel_main_idtf: [Th.(parallel lines; equidistant*)] (*<- lang_en;;*);;
+
+theorem_parallel_lines_equidistant <= nrel_sc_text_translation: 
+    ... 
+    (* 
+    -> rrel_example: 
+      {
+        [Все точки каждой из двух параллельных прямых равноудалены от другой прямой.] (* <- lang_ru;; *);
+        [All points on each of two parallel lines are equidistant from the other line.] (* <- lang_en;; *)
+      };;
+    *);;
+
+theorem_parallel_lines_equidistant <= nrel_using_constants:  
+{
+   concept_parallel_lines; 
+   concept_point; 
+   concept_equidistant
+};;  

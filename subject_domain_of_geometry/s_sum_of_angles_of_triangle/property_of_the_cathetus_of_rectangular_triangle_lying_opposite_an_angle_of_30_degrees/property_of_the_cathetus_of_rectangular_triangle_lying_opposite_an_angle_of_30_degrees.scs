@@ -1,0 +1,54 @@
+sc_node -> property_of_the_cathetus_of_rectangular_triangle_lying_opposite_an_angle_of_30_degrees;;
+
+property_of_the_cathetus_of_rectangular_triangle_lying_opposite_an_angle_of_30_degrees
+=> nrel_main_idtf: [§25. Свойство катета прямоугольного треугольника, лежащего против угла в 30°] (* <- lang_ru;;*); [§25. Property of the cathetus of rectangular triangle lying opposite an angle of 30°] (* <- lang_en;;*);;
+
+theorem_30_degree_cathetus <- statement;;
+
+theorem_30_degree_cathetus <- rrel_theorem: property_of_the_cathetus_of_rectangular_triangle_lying_opposite_an_angle_of_30_degrees;;
+
+theorem_30_degree_cathetus => nrel_main_idtf: [Теор.(прямоугольный треугольник; катет; 30°; гипотенуза*)] (*<- lang_ru;;*);;  
+theorem_30_degree_cathetus => nrel_main_idtf: [Th.(right triangle; cathetus; 30°; hypotenuse*)] (*<- lang_en;;*);;
+
+theorem_30_degree_cathetus <= nrel_sc_text_translation: 
+    ... 
+    (* 
+    -> rrel_example: 
+      {
+        [Катет прямоугольного треугольника, лежащий против угла в 30°, равен половине гипотенузы.] (* <- lang_ru;; *);
+        [In a right triangle, the leg opposite the 30° angle is equal to half the hypotenuse.] (* <- lang_en;; *)
+      };;
+    *);;
+
+theorem_30_degree_cathetus <= nrel_using_constants:  
+{
+   concept_right_triangle; 
+   concept_cathetus;
+   concept_hypotenuse; 
+   concept_half
+};;
+
+theorem_half_hypotenuse_30_degree <- statement;;
+
+theorem_half_hypotenuse_30_degree <- rrel_theorem: property_of_the_cathetus_of_rectangular_triangle_lying_opposite_an_angle_of_30_degrees;;
+
+theorem_half_hypotenuse_30_degree => nrel_main_idtf: [Теор.(гипотенуза; катет; 30°; прямоугольный треугольник*)] (*<- lang_ru;;*);;  
+theorem_half_hypotenuse_30_degree => nrel_main_idtf: [Th.(hypotenuse; cathetus; 30°; right triangle*)] (*<- lang_en;;*);;
+
+theorem_half_hypotenuse_30_degree <= nrel_sc_text_translation: 
+    ... 
+    (* 
+    -> rrel_example: 
+      {
+        [Если в прямоугольном треугольнике катет равен половине гипотенузы, то этот катет лежит против угла в 30°.] (* <- lang_ru;; *);
+        [If a leg in a right triangle is half the hypotenuse, then it lies opposite the 30° angle.] (* <- lang_en;; *)
+      };;
+    *);;
+
+theorem_half_hypotenuse_30_degree <= nrel_using_constants:  
+{
+   concept_right_triangle; 
+   concept_cathetus; 
+   concept_hypotenuse; 
+   concept_half
+};;  

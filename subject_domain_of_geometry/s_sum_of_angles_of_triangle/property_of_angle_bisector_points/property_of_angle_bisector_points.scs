@@ -1,0 +1,29 @@
+sc_node -> property_of_angle_bisector_points;;
+
+property_of_angle_bisector_points
+=> nrel_main_idtf: [§24. Свойство точек биссектрисы угла] (* <- lang_ru;;*); [§24. Property of angle bisector points] (* <- lang_en;;*);;
+
+theorem_bisector_equidistant_bidirectional <- statement;;
+
+theorem_bisector_equidistant_bidirectional <- rrel_theorem: property_of_angle_bisector_points;;
+
+theorem_bisector_equidistant_bidirectional => nrel_main_idtf: [Теор.(биссектриса; равноудаленность; угол*)] (*<- lang_ru;;*);;  
+theorem_bisector_equidistant_bidirectional => nrel_main_idtf: [Th.(bisector; equidistant; angle*)] (*<- lang_en;;*);;
+
+theorem_bisector_equidistant_bidirectional <= nrel_sc_text_translation: 
+    ... 
+    (* 
+    -> rrel_example: 
+      {
+        [Любая точка биссектрисы угла равноудалена от сторон угла. Если точка внутри угла равноудалена от сторон угла, то она лежит на биссектрисе этого угла.] (* <- lang_ru;; *);
+        [Any point on the bisector of an angle is equidistant from the sides of the angle. If a point inside an angle is equidistant from its sides, then it lies on the bisector of that angle.] (* <- lang_en;; *) 
+      };;
+    *);;
+
+theorem_bisector_equidistant_bidirectional <= nrel_using_constants:  
+{
+   concept_bisector; 
+   concept_angle; 
+   concept_equidistant; 
+   concept_point
+};;  

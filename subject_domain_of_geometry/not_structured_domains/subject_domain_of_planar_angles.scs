@@ -1,0 +1,48 @@
+sc_node_struct -> subject_domain_of_planar_angles;;
+
+subject_domain_of_planar_angles
+=> nrel_main_idtf:
+	[Предметная область планарных углов]
+	(* <- lang_ru;; *);
+	[Subject domain of planar angles]
+	(* <- lang_en;; *);;
+	
+subject_domain_of_planar_angles -> rrel_maximum_studied_object_class: concept_planar_angle;;
+
+subject_domain_of_planar_angles -> rrel_not_maximum_studied_object_class: 
+	concept_acute_angle;
+	concept_full_angle;
+	concept_linear_angle;
+	concept_obtuse_angle;
+	concept_right_angle;
+	concept_straight_angle;
+	concept_zero_angle;;
+
+subject_domain_of_planar_angles <- subject_domain;;
+
+subject_domain_of_planar_angles -> rrel_explored_relation:
+	nrel_adjacent_angles;
+	nrel_adjacent;
+	nrel_angle_measure;
+	nrel_bisectrix_of_angle;
+	nrel_central_angle;
+	nrel_corresponding_angles;
+	nrel_external_angle;
+	nrel_external_sided_angles;
+	nrel_external_cross_lying_angles;
+	nrel_internal_cross_lying_angles;
+	nrel_internal_sided_angles;
+	nrel_internal_angle;
+	nrel_side_of_angle;
+	nrel_vertex_of_angle;
+	nrel_vertical_angles;;
+	
+subject_domain_of_planar_angles -> rrel_example:
+	struct_Acute_Angle_K_L_M;
+	struct_Full_angle_P_K_P;
+	struct_Non_convex_angle_A_B_K;
+	struct_Obtuse_angle_T_P_R;
+	struct_Right_Angle_P_T_R;
+	struct_Straight_angle_A_O_B;
+	struct_Zero_Angle_N_K_N;;
+	

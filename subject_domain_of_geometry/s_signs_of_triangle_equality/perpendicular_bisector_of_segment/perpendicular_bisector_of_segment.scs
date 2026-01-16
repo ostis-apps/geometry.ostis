@@ -1,0 +1,64 @@
+sc_node -> perpendicular_bisector_of_segment;;
+
+perpendicular_bisector_of_segment
+=> nrel_main_idtf: [§14. Серединный перпендикуляр отрезка] (* <- lang_ru;;*); [§14. Perpendicular bisector of a segment] (* <- lang_en;;*);;
+
+perpendicular_bisector_of_segment => nrel_task_to_be_solved: 
+    {
+        task_find_segment_length;
+        task_find_perimeter_of_quadrilateral
+    };;
+
+sc_node -> d_perpendicular_bisector;;
+
+d_perpendicular_bisector <- definition;;
+
+d_perpendicular_bisector  
+=> nrel_main_idtf: [Опр.(Серединный перпендикуляр)] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Def.(Perpendicular bisector)] (* <- lang_en;; *);;  
+
+d_perpendicular_bisector <= nrel_sc_text_translation:  
+  ...  
+  (*  
+  -> rrel_example:  
+{  
+    [Серединным перпендикуляром к отрезку называется прямая, перпендикулярная этому отрезку и проходящая через его середину.]  
+    (* <- lang_ru;; *);  
+    [A perpendicular bisector of a segment is a line that is perpendicular to the segment and passes through its midpoint.]  
+    (* <- lang_en;; *)  
+};;  
+  *);;  
+
+d_perpendicular_bisector <= nrel_using_constants:  
+  {  
+    concept_line;  
+    concept_perpendicular;  
+    concept_segment;  
+    concept_midpoint  
+  };;
+
+perpendicular_bisector_of_segment <- rrel_key_sc_element: d_perpendicular_bisector;;
+
+theorem_perpendicular_bisector_equidistant <- statement;;
+
+theorem_perpendicular_bisector_equidistant <- rrel_theorem: perpendicular_bisector_of_segment;;
+
+theorem_perpendicular_bisector_equidistant => nrel_main_idtf: [Теор.(серединный перпендикуляр; равноудаленность*)] (*<- lang_ru;;*);;  
+theorem_perpendicular_bisector_equidistant => nrel_main_idtf: [Th.(perpendicular bisector; equidistant*)] (*<- lang_en;;*);;
+
+theorem_perpendicular_bisector_equidistant <= nrel_sc_text_translation: 
+    ... 
+    (* 
+    -> rrel_example: 
+      {
+        [Любая точка серединного перпендикуляра к отрезку равноудалена от концов этого отрезка.] (* <- lang_ru;; *);
+        [Any point on the perpendicular bisector of a segment is equidistant from the endpoints of that segment.] (* <- lang_en;; *)
+      };;
+    *);;
+
+theorem_perpendicular_bisector_equidistant <= nrel_using_constants:  
+{
+   concept_perpendicular_bisector; 
+   concept_point; 
+   concept_equidistant
+};;  
