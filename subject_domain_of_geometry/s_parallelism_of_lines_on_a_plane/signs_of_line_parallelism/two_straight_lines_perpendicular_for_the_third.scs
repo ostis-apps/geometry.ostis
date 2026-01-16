@@ -1,0 +1,58 @@
+sc_node -> two_straight_lines_perpendicular_for_the_third;;
+
+two_straight_lines_perpendicular_for_the_third
+=> nrel_main_idtf: [15.1. Две прямые, перпендикулярные
+третьей] (* <- lang_ru;;*); [15.1 Two straight lines, perpendicular for the third] (* <- lang_en;;*);;
+
+sc_node -> d_parallel_lines;;
+
+d_parallel_lines <- definition;;
+
+d_parallel_lines  
+=> nrel_main_idtf: [Опр.(Параллельные прямые)] (* <- lang_ru;; *);  
+=> nrel_main_idtf: [Def.(Parallel lines)] (* <- lang_en;; *);;  
+
+d_parallel_lines <= nrel_sc_text_translation:  
+  ...  
+  (*  
+  -> rrel_example:  
+{  
+    [Две прямые называются параллельными, если они лежат в одной плоскости и не пересекаются.]  
+    (* <- lang_ru;; *);  
+    [Two lines are called parallel if they lie in the same plane and do not intersect.]  
+    (* <- lang_en;; *)  
+};;  
+  *);;  
+
+d_parallel_lines <= nrel_using_constants:  
+  {  
+  concept_line;  
+  concept_plane;  
+  concept_non_intersecting  
+  };;
+
+two_straight_lines_perpendicular_for_the_third <- rrel_key_sc_element: d_parallel_lines;;
+
+theorem_parallel_line_point <- statement;;
+
+theorem_parallel_line_point <- rrel_theorem: two_straight_lines_perpendicular_for_the_third;;
+
+theorem_parallel_line_point => nrel_main_idtf: [Теор.(точка; прямая; параллельные прямые*)] (*<- lang_ru;;*);;  
+theorem_parallel_line_point => nrel_main_idtf: [Th.(point; line; parallel lines*)] (*<- lang_en;;*);;
+
+theorem_parallel_line_point <= nrel_sc_text_translation: 
+    ... 
+    (* 
+    -> rrel_example: 
+      {
+        [Через точку, не лежащую на данной прямой, можно провести прямую, параллельную данной.] (* <- lang_ru;; *);
+        [Through a point not lying on a given line, a line parallel to the given one can be drawn.] (* <- lang_en;; *)
+      };;
+    *);;
+
+theorem_parallel_line_point <= nrel_using_constants:  
+{
+   concept_point; 
+   concept_line; 
+   concept_parallel_lines
+};;  

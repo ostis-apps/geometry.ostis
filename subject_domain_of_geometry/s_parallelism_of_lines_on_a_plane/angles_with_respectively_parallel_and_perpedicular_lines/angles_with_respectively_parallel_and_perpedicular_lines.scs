@@ -1,0 +1,58 @@
+sc_node -> angles_with_respectively_parallel_and_perpedicular_lines;;
+
+angles_with_respectively_parallel_and_perpedicular_lines
+=> nrel_main_idtf: [§18*. Углы с соответственно параллельными и соответственно перпендикулярными сторонами] (* <- lang_ru;;*); [§18*. Angles with respectively parallel and respectively perpedicular lines] (* <- lang_en;;*);;
+
+angles_with_respectively_parallel_and_perpedicular_lines => nrel_task_to_be_solved: task_find_angular_measure;;
+
+theorem_angles_parallel_sides <- statement;;
+
+theorem_angles_parallel_sides <- rrel_theorem: angles_with_respectively_parallel_and_perpedicular_lines;;
+
+theorem_angles_parallel_sides => nrel_main_idtf: [Теор.(угол; параллельные стороны; равенство; сумма углов*)] (*<- lang_ru;;*);;
+theorem_angles_parallel_sides => nrel_main_idtf: [Th.(angle; parallel sides; equality; angle sum*)] (*<- lang_en;;*);;
+
+theorem_angles_parallel_sides <= nrel_sc_text_translation: 
+    ... 
+    (* 
+    -> rrel_example: 
+      {
+        [Углы с соответственно параллельными сторонами или равны (если оба острые или оба тупые), или в сумме составляют 180° (если один острый, а другой тупой).] (* <- lang_ru;; *);
+        [Angles with respectively parallel sides are either equal (if both are acute or both are obtuse) or add up to 180° (if one is acute and the other is obtuse).] (* <- lang_en;; *)
+      };;
+    *);;
+
+theorem_angles_parallel_sides <= nrel_using_constants:  
+{
+   concept_angle; 
+   concept_parallel_sides; 
+   concept_equality; 
+   concept_acute_angle; 
+   concept_obtuse_angle
+};;
+
+theorem_angles_perpendicular_sides <- statement;;
+
+theorem_angles_perpendicular_sides <- rrel_theorem: angles_with_respectively_parallel_and_perpedicular_lines;;
+
+theorem_angles_perpendicular_sides => nrel_main_idtf: [Теор.(угол; перпендикулярные стороны; равенство; сумма углов*)] (*<- lang_ru;;*);;
+theorem_angles_perpendicular_sides => nrel_main_idtf: [Th.(angle; perpendicular sides; equality; angle sum*)] (*<- lang_en;;*);;
+
+theorem_angles_perpendicular_sides <= nrel_sc_text_translation: 
+    ... 
+    (* 
+    -> rrel_example: 
+      {
+        [Углы с соответственно перпендикулярными сторонами или равны (если оба острые или оба тупые), или в сумме составляют 180° (если один острый, а другой тупой).] (* <- lang_ru;; *);
+        [Angles with respectively perpendicular sides are either equal (if both are acute or both are obtuse) or add up to 180° (if one is acute and the other is obtuse).] (* <- lang_en;; *)
+      };;
+    *);;
+
+theorem_angles_perpendicular_sides <= nrel_using_constants:  
+{
+   concept_angle; 
+   concept_perpendicular_sides; 
+   concept_equality; 
+   concept_acute_angle; 
+   concept_obtuse_angle
+};;

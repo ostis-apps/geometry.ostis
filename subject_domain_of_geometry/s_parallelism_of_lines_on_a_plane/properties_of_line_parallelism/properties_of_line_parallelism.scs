@@ -1,0 +1,76 @@
+sc_node -> properties_of_line_parallelism;;
+
+properties_of_line_parallelism
+=> nrel_main_idtf: [§17. Свойства параллельности прямых] (* <- lang_ru;;*); [§17. Properties of line parallelism] (* <- lang_en;;*);;
+
+theorem_parallel_alternate_angles <- statement;;
+
+theorem_parallel_alternate_angles <- rrel_theorem: properties_of_line_parallelism;;
+
+theorem_parallel_alternate_angles => nrel_main_idtf: [Теор.(параллельные прямые; секущая; накрест лежащие углы*)] (*<- lang_ru;;*);;
+theorem_parallel_alternate_angles => nrel_main_idtf: [Th.(parallel lines; transversal; alternate interior angles*)] (*<- lang_en;;*);;
+
+theorem_parallel_alternate_angles <= nrel_sc_text_translation: 
+    ... 
+    (* 
+    -> rrel_example: 
+      {
+        [Если две параллельные прямые пересечены секущей, то внутренние накрест лежащие углы равны.] (* <- lang_ru;; *);
+        [If two parallel lines are cut by a transversal, then the alternate interior angles are equal.] (* <- lang_en;; *)
+      };;
+    *);;
+
+theorem_parallel_alternate_angles <= nrel_using_constants:  
+{
+   concept_parallel_lines; 
+   concept_transversal; 
+   concept_alternate_interior_angles
+};;
+
+theorem_parallel_corresponding_angles <- statement;;
+
+theorem_parallel_corresponding_angles <- rrel_theorem: properties_of_line_parallelism;;
+
+theorem_parallel_corresponding_angles => nrel_main_idtf: [Теор.(параллельные прямые; секущая; соответственные углы*)] (*<- lang_ru;;*);; 
+theorem_parallel_corresponding_angles => nrel_main_idtf: [Th.(parallel lines; transversal; corresponding angles*)] (*<- lang_en;;*);;
+
+theorem_parallel_corresponding_angles <= nrel_sc_text_translation: 
+    ... 
+    (* 
+    -> rrel_example: 
+      {
+        [Если две параллельные прямые пересечены секущей, то соответственные углы равны.] (* <- lang_ru;; *);
+        [If two parallel lines are cut by a transversal, then the corresponding angles are equal.] (* <- lang_en;; *)
+      };;
+    *);;
+
+theorem_parallel_corresponding_angles <= nrel_using_constants:  
+{
+   concept_parallel_lines; 
+   concept_transversal; 
+   concept_corresponding_angles
+};;
+
+theorem_parallel_consecutive_angles_sum <- statement;;
+
+theorem_parallel_consecutive_angles_sum <- rrel_theorem: properties_of_line_parallelism;;
+
+theorem_parallel_consecutive_angles_sum => nrel_main_idtf: [Теор.(параллельные прямые; секущая; односторонние углы*)] (*<- lang_ru;;*);;  
+theorem_parallel_consecutive_angles_sum => nrel_main_idtf: [Th.(parallel lines; transversal; consecutive interior angles*)] (*<- lang_en;;*);;
+
+theorem_parallel_consecutive_angles_sum <= nrel_sc_text_translation: 
+    ... 
+    (* 
+    -> rrel_example: 
+      {
+        [Если две параллельные прямые пересечены секущей, то сумма внутренних односторонних углов равна 180°.] (* <- lang_ru;; *);
+        [If two parallel lines are cut by a transversal, then the sum of consecutive interior angles is 180°.] (* <- lang_en;; *)
+      };;
+    *);;
+
+theorem_parallel_consecutive_angles_sum <= nrel_using_constants:  
+{
+   concept_parallel_lines; 
+   concept_transversal; 
+   concept_consecutive_interior_angles
+};;  
